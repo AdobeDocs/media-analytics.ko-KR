@@ -1,0 +1,140 @@
+---
+seo-title: Roku 설정
+title: Roku 설정
+uuid: 904 DFDA 0-4782-41 DA-B 4 AB -212 E 81156633
+translation-type: tm+mt
+source-git-commit: bb3a303edba724c8f444d612b3be9d7250eea363
+
+---
+
+
+# Roku 설정{#set-up-roku}
+
+## 전제 조건
+
+* **하트비트에**
+대한 유효한 구성 매개 변수 획득미디어 분석 계정을 설정한 후 Adobe 담당자로부터 이러한 매개 변수를 얻을 수 있습니다.
+* **미디어 플레이어에 다음 기능을 제공합니다.**
+   * _플레이어 이벤트에 가입할 API_ - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
+   * _플레이어 정보를 제공하는 API_ - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
+
+Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 
+
+[Adobe Mobile Services 문서에서 자세한 내용을 살펴보십시오.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+
+Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작성된 Roku 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 사용 및 수집하고, 비디오 하트비트를 통해 비디오 참여를 측정할 수 있습니다.
+
+## SDK 구현
+
+1. [다운로드한](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku 라이브러리를 프로젝트에 추가합니다.
+
+   1. `AdobeMobileLibrary-2.*-Roku.zip` 다운로드 파일은 다음 소프트웨어 구성 요소로 구성됩니다.
+
+      * `adbmobile.brs`: 이 라이브러리 파일은 Roku 앱 소스 폴더에 포함됩니다.
+
+      * `ADBMobileConfig.json`: 앱에 맞게 사용자 지정된 SDK 구성 파일입니다.
+   1. 라이브러리 파일 및 json 구성 파일을 프로젝트 소스에 추가합니다.
+
+      Adobe Mobile을 구성하는 데 사용되는 JSON에는 `mediaHeartbeat`라는 미디어 하트비트에 대한 배타 키가 있습니다. 여기에 미디어 하트비트에 대한 구성 매개 변수가 속해 있습니다.
+
+      >[!TIP]
+      >
+      >A sample `ADBMobileConfig` JSON file is provided with the package. 설정에 대해서는 Adobe 담당자에게 문의하십시오.
+
+      예:
+
+      ```
+      {
+        "version":"1.0", 
+        "analytics":{
+          "rsids":"",
+          "server":"",
+          "charset":"UTF-8", 
+          "ssl":false, 
+          "offlineEnabled":false, 
+          "lifecycleTimeout":30, 
+          "batchLimit":50, 
+          "privacyDefault":"optedin", 
+          "poi":[ ]
+      },
+      "marketingCloud":{
+        "org":""
+      },
+      "target":{ 
+        "clientCode":"", 
+        "timeout":5
+      },
+      "audienceManager":{ 
+        "server":""
+      },
+      "acquisition":{ 
+        "server":"example.com",
+        "appid":"sample-app-id"
+      },
+      
+      "mediaHeartbeat":{ 
+         "server":"example.com", 
+         "publisher":"sample-publisher", 
+         "channel":"sample-channel", 
+         "ssl":false,
+         "ovp":"sample-ovp", 
+         "sdkVersion":"sample-sdk", 
+         "playerName":"roku"
+         }    
+      }
+      ```
+
+      | 구성 매개 변수 | 설명     |
+      | --- | --- |
+      | `server` | 백엔드에 대한 추적 끝점의 URL을 나타내는 문자열입니다. |
+      | `publisher` | 컨텐츠 게시자 고유 식별자를 나타내는 문자열입니다. |
+      | `channel` | 컨텐츠 배포 채널의 이름을 나타내는 문자열입니다. |
+      | `ssl` | 추적 호출에 SSL을 사용해야 하는지 여부를 나타내는 부울입니다. |
+      | `ovp` | 비디오 플레이어 공급자의 이름을 나타내는 문자열입니다. |
+      | `sdkversion` | 앱/SDK의 현재 버전을 나타내는 문자열입니다. |
+      | `playerName` | 플레이어의 이름을 나타내는 문자열입니다. |
+
+      >[!IMPORTANT]
+      >
+      >If `mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls.
+
+
+1. Experience Cloud 방문자 ID를 구성합니다.
+
+   Experience Cloud 방문자 ID 서비스는 Experience Cloud 솔루션 전반에 유니버설 방문자 ID를 제공합니다. 방문자 ID 서비스는 비디오 하트비트 및 다른 Marketing Cloud 통합에 필요합니다.
+
+   `ADBMobileConfig` 구성에 `marketingCloud` 조직 ID가 포함되어 있는지 확인합니다.
+
+   ```
+   "marketingCloud": {
+       "org": YOUR-MCORG-ID"
+   }
+   ```
+
+   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: `016D5C175213CCA80A490D05@AdobeOrg`.
+
+   >[!IMPORTANT]
+   >
+   >`@AdobeOrg`반드시 포함해야 합니다.
+
+   구성이 완료되면 Experience Cloud 방문자 ID가 생성되고, 모든 히트 수에 포함됩니다. `custom` AND `automatically-generated`와 같은 다른 방문자 ID는 각 히트와 함께 계속 전송됩니다.
+
+   **Experience Cloud 방문자 ID 서비스 메서드**
+
+   >[!TIP]
+   >
+   >Experience Cloud Visitor ID methods are prefixed with `visitor`.
+
+   |  메서드   | 설명 |
+   | --- | --- |
+   | `visitorMarketingCloudID` | 방문자 ID 서비스에서 Experience Cloud 방문자 ID를 검색합니다.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
+   | `visitorSyncIdentifiers` | Experience Cloud 방문자 ID를 사용하면 각 방문자와 연결할 수 있는 추가 고객 ID를 설정할 수 있습니다. 방문자 API는 여러 다른 고객 ID의 범위를 구분하기 위해 동일한 방문자의 여러 고객 ID와 고객 유형 식별자를 허용합니다. This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | SDK에서 광고 (RIDA) 를 위한 Roku ID를 설정하는 데 사용됩니다. 예: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>`"<sample_roku_identifier_for_advertising>")`<br/><br/><br/>Roku SDK [Getrida ()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API를 사용하여 광고 (RIDA) 의 Roku ID를 받습니다. |
+
+   <!--
+    Roku Api Reference: 
+    * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
+    * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
+    -->
+
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
