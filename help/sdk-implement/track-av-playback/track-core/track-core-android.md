@@ -1,0 +1,175 @@
+---
+seo-title: Android에서 코어 재생 추적
+title: Android에서 코어 재생 추적
+uuid: ab 5 fab 95-76 ed -4 ae 6-aedb -2 e 66 eece 7607
+translation-type: tm+mt
+source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+
+---
+
+
+# Android에서 코어 재생 추적{#track-core-playback-on-android}
+
+>[!IMPORTANT]
+>이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](../../../sdk-implement/download-sdks.md)에서 Android용 1.x 개발자 안내서를 다운로드할 수 있습니다.
+
+1. **초기 추적 설정**
+
+   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+
+   [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
+
+   | 변수 이름 | 설명 | 필수 여부 |
+   | --- | --- | :---: |
+   | `name` | 미디어 이름 | 예 |
+   | `mediaId` | 미디어 고유 식별자 | 예 |
+   | `length` | 미디어 길이 | 예 |
+   | `streamType` | Stream type (see _StreamType constants_ below) | 예 |
+   | `mediaType` | Media type (see _MediaType constants_ below) | 예 |
+
+   **`StreamType`상수:**
+
+   | 상수 이름 | 설명 |
+   |---|---|
+   | `VOD` | Video on Demand에 대한 스트림 유형입니다. |
+   | `LIVE` | 라이브 컨텐츠에 대한 스트림 유형입니다. |
+   | `LINEAR` | 선형 컨텐츠에 대한 스트림 유형입니다. |
+   | `AOD` | Audio On Demand에 대한 스트림 유형입니다. |
+   | `AUDIOBOOK` | 오디오북에 대한 스트림 유형입니다. |
+   | `PODCAST` | 팟캐스트에 대한 스트림 유형입니다. |
+
+   **`MediaType`상수:**
+
+   | 상수 이름 | 설명 |
+   |---|---|
+   | `Audio` | 오디오 스트림에 대한 미디어 유형입니다. |
+   | `Video` | 비디오 스트림에 대한 미디어 유형입니다. |
+
+   ```
+   MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
+     <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);
+   ```
+
+1. **메타데이터 첨부**
+
+   선택적으로 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 메타데이터 개체를 추적 세션에 첨부할 수 있습니다.
+
+   * **표준 메타데이터**
+
+      [Android에서 표준 메타데이터 구현](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+
+      >[!NOTE]
+      >
+      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+
+      * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * [오디오 및 비디오 매개 변수](../../../metrics-and-metadata/audio-video-parameters.md)에서 사용 가능한 비디오 메타데이터에 대한 종합 세트를 참조하십시오.
+   * **사용자 지정 메타데이터**
+
+      사용자 정의 변수의 사전을 만들고 이 미디어의 데이터로 채웁니다. 예:
+
+      ```java
+      HashMap<String, String> mediaMetadata =  
+        new HashMap<String, String>(); 
+      mediaMetadata.put("isUserLoggedIn", "false"); 
+      mediaMetadata.put("tvStation", "Sample TV Station"); 
+      mediaMetadata.put("programmer", "Sample programmer");
+      ```
+
+
+1. **재생을 시작할 의도를 추적합니다.**
+
+   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. 예:
+
+   ```java
+   public void onVideoLoad(Observable observable, Object data) {  
+       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+   }
+   ```
+
+   >[!TIP]
+   >
+   >두 번째 값은 2 단계에서 만든 사용자 지정 미디어 메타데이터 개체 이름입니다.
+
+   >[!IMPORTANT]
+   >
+   >`trackSessionStart` 재생 시작이 아닌 사용자의 재생 의도를 추적합니다. 이 API는 미디어 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`과 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
+
+   >[!NOTE]
+   >
+   >If you are not using custom media metadata, simply send an empty object for the second argument in `trackSessionStart`.
+
+1. **실제 재생 시작 추적**
+
+   Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
+
+   ```java
+   // Video is rendered on the screen) and call trackPlay.  
+   public void onVideoPlay(Observable observable, Object data) { 
+       _heartbeat.trackPlay(); 
+   }
+   ```
+
+1. **재생 완료 추적**
+
+   Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`:
+
+   ```java
+   public void onVideoComplete(Observable observable, Object data) { 
+       _heartbeat.trackComplete(); 
+   }
+   ```
+
+1. **세션 종료 추적**
+
+   Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
+
+   ```java
+   // Closes the media and/or the media completed and unloaded,  
+   // and call trackSessionEnd().  
+   public void onMainVideoUnload(Observable observable, Object data) {  
+       _heartbeat.trackSessionEnd(); 
+   }
+   ```
+
+   >[!IMPORTANT]
+   >
+   >`trackSessionEnd` 미디어 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
+
+1. **가능한 일시 중지 시나리오 모두 추적**
+
+   Identify the event from the media player for media pause and call `trackPause`:
+
+   ```java
+   public void onVideoPause(Observable observable, Object data) {  
+       _heartbeat.trackPause(); 
+   }
+   ```
+
+   **일시 중지 시나리오**
+
+   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
+
+   * 사용자가 앱에서 일시 정지를 명시적으로 누릅니다.
+   * 플레이어가 일시 정지 상태로 전환합니다.
+   * (*모바일 앱*) - 백그라운드로 전환된 애플리케이션의 세션을 열어 두려고 합니다.
+   * (*모바일 앱*) - 애플리케이션을 백그라운드로 전환하는 시스템 인터럽트 유형이 발생합니다. 예를 들어 사용자가 호출을 받거나 다른 애플리케이션에서 팝업이 발생하지만 애플리케이션이 중단 지점에서 사용자가 미디어를 재개할 수 있도록 세션을 종료되지 않은 상태로 유지할 수 있습니다.
+
+1. 플레이어에서 미디어 재생 및/또는 일시 중지에서 미디어 재개를 위한 이벤트를 식별하고 `trackPlay`를 호출합니다.
+
+   ```java
+   // trackPlay() 
+   public void onVideoPlay(Observable observable, Object data) {  
+       _heartbeat.trackPlay(); 
+   }
+   ```
+
+   >[!TIP]
+   >
+   >이것은 4 단계에서 사용한 것과 동일한 이벤트 소스일 수 있습니다. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
+
+코어 재생 추적에 대한 자세한 내용은 다음을 참조하십시오.
+
+* 추적 시나리오: [광고가 없는 VOD 재생](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 전체 추적 예를 제공하기 위해 Android SDK에 포함된 샘플 플레이어.
+
