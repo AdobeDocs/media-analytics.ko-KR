@@ -1,0 +1,49 @@
+---
+seo-title: SDK 다운로드
+title: SDK 다운로드
+uuid: a 619 FBB 8-693 e -4583-8 DAD -0 FF 875 E 715 F 8
+translation-type: tm+mt
+source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
+
+---
+
+
+# SDK 다운로드{#download-sdks}
+
+## 2.x Media SDK 다운로드 {#section_551A10AD7880426BB29AE52482BB4211}
+
+| 2. x 미디어 SDK  | 최신 미디어 SDK 다운로드 |  API   |  설명서  |
+| --- | --- | --- | --- |
+| Android/FireTV | [Android v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](../sdk-implement/setup/set-up-android.md) |
+| iOS/AppleTV | [iOS v 2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) 용 Media SDK (기존 2.0 SDK를 얻으려면 [고객 지원 센터에 ](https://helpx.adobe.com/marketing-cloud/contact-support.html) 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](../sdk-implement/setup/set-up-ios.md) |
+| JavaScript | [JS v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 설정](../sdk-implement/setup/set-up-js.md) |
+| Roku | [Roku v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Roku 설정](../sdk-implement/setup/set-up-roku.md) |
+| Chromecast | [Chromecast v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](../sdk-implement/setup/set-up-chromecast.md) |
+
+<!--
+## Download the Adobe Nielsen 2.x SDKs {#section_ih5_vpz_p1b}
+
+|  &nbsp;Adobe Nielsen 2.x SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads&nbsp; | Nielsen&nbsp;Implementation&nbsp;Guides&nbsp; |
+|---|---|---|
+| **Android** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [Android 2.1](../nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
+| **iOS** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [iOS 2.1](../nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |
+| **JavaScript** | [VHL for JavaScript v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [JavaScript 2.1](../nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md) |
+-->
+
+## Media Analytics Launch 확장 {#section_o54_gsd_12b}
+
+| MA Launch 구성 요소   | 다운로드 | 설명서 |
+|---|---|---|
+| **MA Launch 확장** | [샘플 HTML5 Player 확장 프로그램](https://github.com/adobe/reactor-adobe-va-sample-player) | [오디오 및 비디오 확장을 위한 Adobe Media Analytics](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
+
+## 1.x Media SDK 다운로드 {#section_B91B3A02E68B4B42917E392AAE666522}
+
+| 1. x SDK  | 미디어 SDK 다운로드  | 시작 안내서  |
+| --- | --- | --- |
+| Android | [Android v1.5.8용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [시작하기 - Android용 Media 1.x](setup/vhl-dev-guide-v15_android.pdf) |
+| iOS | [iOS v1.5.9용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [시작하기 - iOS용 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [JavaScript v1.5.7용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [시작하기 - JS용 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
+| TVML | [TVML v1.0.0용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [시작하기 - TVML용 Media 1.x](setup/vhl_tvml.pdf) |
+| Apple TV | SDK for Apple TV v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [시작하기 - Apple TV용 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK for Chromecast v1.0.0 (Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to obtain legacy 1.x SDK) | [시작하기 - Chromecast용 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
+
