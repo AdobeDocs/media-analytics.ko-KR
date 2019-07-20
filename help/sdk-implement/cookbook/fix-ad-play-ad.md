@@ -1,0 +1,80 @@
+---
+seo-title: 광고 간 기본 재생 문제 해결
+title: 광고 간 기본 재생 문제 해결
+uuid: 228 B 4812-C 23 E -40 C 8-AE 2 B-E 15 CA 69 B 0 BC 2
+translation-type: tm+mt
+source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+
+---
+
+
+# 광고 사이에 표시되는 main:play 해결{#resolving-main-play-appearing-between-ads}
+
+## 문제
+
+일부 광고 추적 시나리오에서는 한 광고가 끝나고 다음 광고가 시작되는 사이에 예기치 않게 `main:play` 호출이 발생할 수 있습니다. If the delay between the ad complete call and the next ad start call is greater than 250 milliseconds, the Media SDK will fall back to sending `main:play` calls. 프리롤 광고 브레이크 중에`main:play`로 이 폴백이 발생하면 컨텐츠 시작 지표가 초기에 설정될 수 있습니다.
+
+위에서 설명한 것과 같은 광고 사이의 간격은 광고 컨텐츠로 겹치지 않으므로 Media SDK에 의해 기본 컨텐츠로 해석됩니다. Media SDK에는 광고 정보가 설정되어 있지 않으며, 플레이어가 재생 중 상태에 있습니다. 광고 정보가 없고 플레이어 상태가 재생 중인 경우, Media SDK는 기본적으로 기본 컨텐츠에 대한 간격 기간을 크레딧합니다. null 광고 정보에 대한 재생 기간을 크레딧할 수 없습니다.
+
+## 식별
+
+Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하는 동안 사전 롤 광고 중단 시 다음 하트비트 호출이 표시되는 경우:
+
+* 세션 시작: `s:event:type=start` &amp; `s:asset:type=main`
+* 광고 시작: `s:event:type=start` &amp; `s:asset:type=ad`
+* 광고 재생: `s:event:type=play` &amp; `s:asset:type=ad`
+* 광고 완료: `s:event:type=complete` &amp; `s:asset:type=ad`
+* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+
+* 광고 시작: `s:event:type=start` &amp; `s:asset:type=ad`
+* 광고 재생: `s:event:type=play` &amp; `s:asset:type=ad`
+* 광고 완료: `s:event:type=complete` &amp; `s:asset:type=ad`
+* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+
+## 해결 방법
+
+***광고 완료 호출 트리거를 지연시킵니다.***
+
+첫 번째 광고에 대해 `trackEvent:AdComplete`를 늦게 호출한 후 두 번째 광고에 대해 `trackEvent:AdStart`를 바로 호출하여 플레이어 내에서 간격을 처리합니다. 첫 번째 광고가 완료된 후에 `AdComplete` 이벤트 호출 시 앱을 시작하지 않아야 합니다. 광고 브레이크에서 마지막 광고에 대한 `trackEvent:AdComplete`를 호출하십시오. 플레이어가 현재 광고 자산이 광고 브레이크에서 마지막 자산임을 식별할 수 있는 경우 `trackEvent:AdComplete`를 즉시 호출합니다. 이 해결 방법으로 인해 이전 광고 단위와 관련된 추가 광고 소요 시간이 1초 미만이 됩니다.
+
+**프리롤을 포함하여 광고 브레이크 시작 시:**
+
+* 광고 브레이크에 대한 `adBreak` 개체 인스턴스(예: `adBreakObject`)를 만듭니다.
+
+* 호출 `trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);`.
+
+**모든 광고 자산 시작 시:**
+
+* **call`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+
+   >[!NOTE]
+   >
+   >이전 광고가 완료되지 않은 경우에만 이를 호출합니다. 이전 광고에 대한 "`isinAd`" 상태를 유지 관리하려면 부울 값을 고려하십시오.
+
+* 광고 자산에 대한 광고 개체 인스턴스(예: `adObject`)를 만듭니다.
+* Populate the ad metadata, `adCustomMetadata`.
+* 호출 `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);`.
+* Call `trackPlay()` if this is the first ad in a pre-roll ad break.
+
+**모든 광고 자산 완료 시:**
+
+* **전화 걸기 안 함**
+
+   >[!NOTE]
+   >
+   >If the application knows it is the last ad in the ad break, call `trackEvent:AdComplete` here and skip setting `trackEvent:AdComplete` in the `trackEvent:AdBreakComplete`
+
+**광고를 건너뛸 때:**
+
+* 호출 `trackEvent(MediaHeartbeat.Event.AdSkip);`.
+
+**광고 브레이크 완료 시:**
+
+* **call`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+
+   >[!NOTE]
+   >
+   >If this step is already performed above as part of the last `trackEvent:AdComplete` call then this can be skipped.
+
+* 호출 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
+
