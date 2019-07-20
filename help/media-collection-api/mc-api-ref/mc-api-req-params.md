@@ -1,0 +1,164 @@
+---
+seo-title: 요청 매개 변수
+title: 요청 매개 변수
+uuid: F 83 E 9 EF 1-803 D -4152-A 6 C 7-ACAA 325036 B 9
+translation-type: tm+mt
+source-git-commit: 4c5fe469d5ef858e1caa65a25cc23d2a84637144
+
+---
+
+
+# 요청 매개 변수{#request-parameters}
+
+## 분석 데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 서버의 URL |
+| `analytics.reportSuite` | Y | `sessionStart` | Analytics 보고 데이터를 식별하는 ID |
+| `analytics.enableSSL` | N | `sessionStart` | SSL을 사용할 True 또는 False |
+| `analytics.visitorId` | N | `sessionStart` | Adobe 방문자 ID는 여러 Adobe 애플리케이션에서 사용할 수 있는 사용자 지정 ID 입니다. The Heartbeat `visitorId` equals the Analytics `VID.` |
+
+## 방문자 데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | Experience Cloud 사용자 ID (ECID) 입니다. 대부분의 시나리오에서는 사용자를 식별하는 데 사용해야 하는 ID 입니다. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. 기술적으로 필수 사항은 아니지만, Experience Cloud 제품군에 액세스하려면 이 매개 변수가 필요합니다. |
+| `visitor.aamLocationHint` | N | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 |
+| `appInstallationId` | N | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
+
+## 컨텐츠 데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `media.id` | Y | `sessionStart` | 컨텐츠에 대한 고유 식별자 |
+| `media.name` | N | `sessionStart` | 사용자가 읽을 수 있는 컨텐츠 이름 |
+| `media.length` | Y | `sessionStart` | 컨텐츠 길이(초) |
+| `media.contentType` | Y | `sessionStart` | 스트림 형식(임의의 문자열일 수 있으며, "Live", "VOD" 또는 "Linear" 값이 권장됨) |
+| `media.playerName` | Y | `sessionStart` | 컨텐츠 렌더링을 담당하는 플레이어의 이름 |
+| `media.channel` | Y | `sessionStart` | 컨텐츠의 배포 채널. 모바일 애플리케이션 이름 또는 웹 사이트 이름, 속성 이름일 수 있습니다. |
+| `media.resume` | N | `sessionStart` | 사용자가 이전 세션을 다시 시작하는지 여부를 나타냅니다 (새 세션을 시작하지 않은 경우). |
+| `media.sdkVersion` | N | `sessionStart` | 플레이어에서 사용하는 SDK 버전 |
+
+## 컨텐츠 표준 메타데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `media.show` | N | `sessionStart` | 프로그램 또는 시리즈 이름 |
+| `media.season` | N | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
+| `media.episode` | N | `sessionStart` | 에피소드의 번호 |
+| `media.assetId` | N | `sessionStart` | TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 비디오 자산 컨텐츠에 대한 고유 식별자. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 권한에서 파생됩니다. 이러한 식별자는 다른 소유 시스템이나 사내 시스템에서 파생될 수도 있습니다. |
+| `media.genre` | N | `sessionStart` | 컨텐츠 생성자에서 정의한 컨텐츠의 유형 |
+| `media.firstAirDate` | N | `sessionStart` | 컨텐츠가 TV에 처음 방송된 날짜 |
+| `media.firstDigitalDate` | N | `sessionStart` | 컨텐츠가 디지털 플랫폼에서 처음으로 방송된 날짜 |
+| `media.rating` | N | `sessionStart` | TV 유해 컨텐츠 가이드라인으로 정의된 등급 |
+| `media.originator` | N | `sessionStart` | 컨텐츠 작성자 |
+| `media.network` | N | `sessionStart` | 네트워크/채널 이름 |
+| `media.showType` | N | `sessionStart` | 0과 3 사이의 정수로 표시되는 컨텐츠의 유형 <ul> <li>0 - 전체 에피소드 </li> <li>1 - 미리 보기 </li> <li>2 - 클립 </li> <li>3 - 기타 </li> </ul> |
+| `media.adLoad` | N | `sessionStart` | 로드된 광고 유형 |
+| `media.pass.mvpd` | N | `sessionStart` | Adobe 인증에서 제공한 MVPD |
+| `media.pass.auth` | N | `sessionStart` | Adobe 인증을 통해 사용자가 인증되었음을 나타냄(설정된 경우에만 true일 수 있음) |
+| `media.dayPart` | N | `sessionStart` | 컨텐츠가 브로드캐스트된 시간 |
+| `media.feed` | N | `sessionStart` | 피드 유형(예: "West-HD") |
+
+## 광고 데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `media.ad.podFriendlyName` | N | `adBreakStart` | 친숙한 광고 브레이크 이름 |
+| `media.ad.podIndex` | Y | `adBreakStart` | 비디오에 있는 광고 pod 인덱스 |
+| `media.ad.podSecond` | Y | `adBreakStart` | pod가 시작된 시간(초) |
+| `media.ad.podPosition` | Y | `adStart` | 광고 브레이크 내에 있는 광고 인덱스(1부터 시작) |
+| `media.ad.name` | N | `adStart` | 친숙한 광고 이름 |
+| `media.ad.id` | Y | `adStart` | 광고 이름 |
+| `media.ad.length` | Y | `adStart` | 비디오 광고 길이(초) |
+| `media.ad.playerName` | Y | `adStart` | 광고를 렌더링하는 플레이어의 이름 |
+
+## 광고 표준 메타데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `media.ad.advertiser` | N | `adStart` | 광고에서 다루고 있는 제품의 회사 또는 브랜드입니다 |
+| `media.ad.campaignId` | N | `adStart` | 광고 캠페인의 ID |
+| `media.ad.creativeId` | N | `adStart` | 광고 문안 ID |
+| `media.ad.siteId` | N | `adStart` | 광고 사이트의 ID |
+| `media.ad.creativeURL` | N | `adStart` | 광고 문안 URL |
+| `media.ad.placementId` | N | `adStart` | 광고 배치 ID |
+
+## 챕터 데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `media.chapter.index` | Y | `chapterStart` | 컨텐츠에서 챕터의 위치 식별 |
+| `media.chapter.offset` | Y | `chapterStart` | 재생에서 챕터가 시작되는 시간(초) |
+| `media.chapter.length` | Y | `chapterStart` | 챕터의 길이(초) |
+| `media.chapter.friendlyName` | N | `chapterStart` | 친숙한 챕터 이름 |
+
+## 품질 데이터
+
+| 요청 키  | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `media.qoe.bitrate` | N | Any | 스트림의 비트율 |
+| `media.qoe.droppedFrames` | N | Any | 스트림에서 삭제된 프레임 수 |
+| `media.qoe.framesPerSecond` | N | Any | 초당 프레임 수 |
+| `media.qoe.timeToStart` | N | Any | 사용자가 재생을 시작하고 컨텐츠가 로드되고 재생을 시작하는 사이에 경과된 시간(밀리 초) |
+
+## 추가 세부 정보 {#section_ryt_ccy_lcb}
+
+### visitor.marketingCloudUserId
+
+Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. 이 기능은 다른 Experience Cloud 제품과 이미 통합하고 MCID를 가져온 경우에 유용합니다.
+
+>[!NOTE]
+>
+>Media Analytics (MA) 는 Experience Cloud 제품군 (Adobe Analytics, Audience Manager, Target 등) 와 통합됩니다. 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _ECID는 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 합니다._
+
+### appInstallationId
+
+* **값을 전달하지 않는&#x200B;*경우, MA*`appInstallationId`백엔드는** 더 이상 MCID를 생성하지 않지만 대신 Adobe Analytics에 의존하게 됩니다. Media Collection API에서 MCID를 생성하여 모든 요청 시 보낼 수 있도록 가능한 경우 MCID를 보내거나 `appInstallationId`(필수 `marketingCloudOrgId`와 함께 사용)를 보내는 것이 좋습니다.
+
+* ***값을*전달하는`appInstallationId`경우 -** 값 및 *(필수)* `appInstallationId``marketingCloudOrgId` 매개 변수에 값을 전달할 경우 MA 백엔드에 의해 MCID를 생성할 수 있습니다. `appInstallationId`를 직접 전달하는 경우 클라이언트 측에서 해당 값을 유지해야 합니다. 이는 장치의 앱에 고유해야 하며, 앱이 다시 설치되지 않는 한 유지되어야 합니다.
+
+>[!NOTE]
+>
+>The `appInstallationId` uniquely identifies the app *and the device*. 각 장치의 각 앱에 대해 고유해야 합니다. 즉, 다른 장치에서 동일한 앱의 동일한 버전을 사용하는 두 명의 사용자가 각각 다른(고유) `appInstallationId`를 보내야 합니다.
+
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
+\<ul id="ul_iwc_fqt_pbb"\> 
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+</ul> -->
+
+### visitor.marketingCloudOrgId
+
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](../../federated-analytics.md))
+
+### Analytics 기존 사용 ID(aid) 및 선언된 사용자 ID(customerIDs)
+
+* **Analytics. aid:**
+
+   이 키의 값은 Analytics 기존 사용자 ID를 나타내는 문자열이어야 합니다.
+* **visitor. customerids:**
+
+   이 키의 값은 다음 형식의 개체여야 합니다.
+
+   ```js
+   "<<insert your ID name here>>": {  
+     "id": " <<insert your id here>>",  
+      "authState": <<insert one of 0, 1, 2>> 
+   }
+   ```
+
+`visitor.customerIDs` 값은 제공된 형식의 개체를 임의의 수만큼 가질 수 있습니다.
+
+### visitor.aamLocationHint
+
+이 매개 변수는 Adobe Analytics가 고객 데이터를 Audience Manager로 보낼 때 어떤 Adobe Audience Manager (AAM) 가장자리가 히트될지를 나타냅니다. 이 매개 변수를 전달하지 않으면 Adobe가 이를 1로 하드코딩합니다. 이는 최종 사용자가 지리적으로 먼 위치(예: 미국 동부, 미국 서부, 유럽, 아시아)에 있는 장치를 사용하려는 경우에 특히 중요합니다. 그렇지 않으면 사용자 데이터가 여러 AAM Edges에 분산됩니다.
+
+### media.resume
+
+세션이 닫히고 나중에 재개되었다고 판단되면(예: 사용자가 비디오를 나갔지만 결국 다시 플레이어에서 비디오가 중단된 플레이헤드부터 비디오를 재개한 경우) **호출 시 params 버킷 내에 선택적 부울** media.resume`sessionStart` 매개 변수를 보낼 수 있습니다.
+
+<!--
+| `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |
+-->
