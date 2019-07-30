@@ -3,7 +3,7 @@ seo-title: 설정 개요
 title: 설정 개요
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x 미디어 SDK에 적용됩니다. Media SDK의 1.x 버전을 구현하는 경우 [1.x Media SDK 설명서를 참조하십시오.](../download-sdks.md) Primetime 통합업체의 경우 아래의 _Primetime Media SDK 설명서를_ 참조하십시오.
+>다음 지침은 2. x 미디어 SDK에 적용됩니다. Media SDK의 1.x 버전을 구현하는 경우 [1.x Media SDK 설명서를 참조하십시오.](/help/sdk-implement/download-sdks.md) Primetime 통합업체의 경우 아래의 _Primetime Media SDK 설명서를_ 참조하십시오.
 
 
 ## Minimum Platform Version Support {#minimum-platform-version}
