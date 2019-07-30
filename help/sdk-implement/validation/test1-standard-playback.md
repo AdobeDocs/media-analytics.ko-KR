@@ -3,7 +3,7 @@ seo-title: Test 1 Standard 재생
 title: Test 1 Standard 재생
 uuid: C 4 B 3 FEAD -1 B 27-484 B-AB 6 A -39 F 1 AE 0 F 03 F 2
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. 비디오 분석 시작
    1. 하트비트 시작
    1. 하트비트 분석 시작
-   위의 처음 두 호출에는 추가 메타데이터 및 변수가 포함되어 있습니다. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   위의 처음 두 호출에는 추가 메타데이터 및 변수가 포함되어 있습니다. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **가능한 경우 광고 브레이크 보기**
 
@@ -93,7 +93,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. 비디오 광고 분석 시작
    1. 하트비트 광고 시작
    1. 하트비트 광고 분석 시작
-   처음 두 호출에는 추가 메타데이터 및 변수가 포함됩니다. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   처음 두 호출에는 추가 메타데이터 및 변수가 포함됩니다. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **광고 재생**
 
@@ -122,7 +122,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    * 플레이헤드 위치는 모든 재생 호출에서 10씩 증가해야 합니다.
    * `l:event:duration` 값은 마지막 추적 호출 이후의 시간(밀리초)을 나타내며 각 10초 호출에서 거의 동일한 값이어야 합니다.
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **재생 도중 적어도 30초 동안 일시 정지.** 비디오 플레이어를 일시 정지하면 일시 정지 이벤트 호출이 10초마다 전송됩니다. 일시 정지가 종료되면 재생 이벤트가 재개되어야 합니다.
 
