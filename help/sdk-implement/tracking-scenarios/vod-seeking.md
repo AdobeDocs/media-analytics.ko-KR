@@ -3,7 +3,7 @@ seo-title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
 title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
 uuid: 5 C 2392 F 6-9 B 9 C -42 F 5-833 F -77423 D 1 E 6222
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 이 시나리오는 재생 중 주 컨텐츠에서의 이동으로 구성됩니다.
 
-이 시나리오는 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일하지만, 컨텐츠의 일부가 스크러빙되고 주 컨텐츠의 한 지점에서 다른 지점으로 이동이 완료됩니다.
+이 시나리오는 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일하지만, 컨텐츠의 일부가 스크러빙되고 주 컨텐츠의 한 지점에서 다른 지점으로 이동이 완료됩니다.
 
 | 트리거   | 하트비트 메서드   | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지를 인식하지 않으므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지를 인식하지 않으므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 컨텐츠의 첫 번째 프레임이 재생됨 | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠보다 먼저 재생되는 경우 챕터가 시작될 때 하트비트가 시작됩니다. |
-| 컨텐츠 재생 |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠 재생 |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 사용자가 컨텐츠에서 이동 작업을 시작함 | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
 | 이동 작업이 완료됨 | `trackSeekComplete` |  | 이동이 완료되었으므로 하트비트가 시작됩니다.  팁: 플레이헤드 값은 이동 후 올바른 새 플레이헤드를 나타냅니다. |
-| 컨텐츠가 완료됨 | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠가 완료됨 | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션 종료 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 샘플 코드 {#section_q2d_wcj_x2b}
