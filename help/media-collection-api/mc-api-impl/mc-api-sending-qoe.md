@@ -3,7 +3,7 @@ seo-title: QoE 데이터 보내기
 title: QoE 데이터 보내기
 uuid: 52 A 02 D 92-195 D -4 CE 8-8 CE 3-585 ED 68969 F 9
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,5 +14,5 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 >[!NOTE]
 >
->You should check the [JSON validation schemas](../../media-collection-api/mc-api-impl/mc-api-validate-reqs.md) to verify parameter types and whether they are mandatory or optional.
+>You should check the [JSON validation schemas](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md) to verify parameter types and whether they are mandatory or optional.
 
