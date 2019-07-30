@@ -3,7 +3,7 @@ seo-title: iOS에서 광고 추적
 title: iOS에서 광고 추적
 uuid: E 979 E 679-CDE 5-4 C 30-8 F 34-867 FECEAC 13 A
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 광고 추적 상수
 
@@ -76,7 +76,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. 선택적으로 컨텍스트 데이터 변수를 통해 표준 및/또는 광고 메타데이터를 미디어 추적 세션에 첨부할 수 있습니다.
 
-   * [iOS에서 표준 광고 메타데이터 구현](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [iOS에서 표준 광고 메타데이터 구현](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **사용자 지정 광고 메타데이터 -**&#x200B;사용자 지정 메타데이터의 경우 사용자 지정 데이터 변수에 대한 변수 개체를 만들고, 현재 광고의 데이터로 채웁니다.
 
       ```
@@ -129,4 +129,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    }
    ```
 
-자세한 내용은 추적 시나리오 [프리롤 광고와 함께 VOD 재생](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)을 참조하십시오.
+자세한 내용은 추적 시나리오 [프리롤 광고와 함께 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)을 참조하십시오.
