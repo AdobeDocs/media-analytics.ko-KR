@@ -3,7 +3,7 @@ seo-title: Android에서 코어 재생 추적
 title: Android에서 코어 재생 추적
 uuid: ab 5 fab 95-76 ed -4 ae 6-aedb -2 e 66 eece 7607
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Android에서 코어 재생 추적{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](../../../sdk-implement/download-sdks.md)에서 Android용 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 Android용 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -56,14 +56,14 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **표준 메타데이터**
 
-      [Android에서 표준 메타데이터 구현](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      [Android에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
       >[!NOTE]
       >
       >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
       * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * [오디오 및 비디오 매개 변수](../../../metrics-and-metadata/audio-video-parameters.md)에서 사용 가능한 비디오 메타데이터에 대한 종합 세트를 참조하십시오.
+      * [오디오 및 비디오 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)에서 사용 가능한 비디오 메타데이터에 대한 종합 세트를 참조하십시오.
    * **사용자 지정 메타데이터**
 
       사용자 정의 변수의 사전을 만들고 이 미디어의 데이터로 채웁니다. 예:
@@ -170,6 +170,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 코어 재생 추적에 대한 자세한 내용은 다음을 참조하십시오.
 
-* 추적 시나리오: [광고가 없는 VOD 재생](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 전체 추적 예를 제공하기 위해 Android SDK에 포함된 샘플 플레이어.
 
