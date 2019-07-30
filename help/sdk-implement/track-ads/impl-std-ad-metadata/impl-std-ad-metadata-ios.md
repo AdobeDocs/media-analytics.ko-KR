@@ -5,7 +5,7 @@ seo-title: iOS에서 표준 광고 메타데이터 구현
 title: iOS에서 표준 광고 메타데이터 구현
 uuid: F 15 FB 727-5 A 5 B -46 C 5-BF 12-93 B 376 C 10 FD 1
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,4 +31,4 @@ NSMutableDictionary *standardAdMetadata = [[NSMutableDictionary alloc] init];
 [adObject setValue:standardAdMetadata forKey:ADBMediaObjectKeyStandardAdMetadata];
 ```
 
-[iOS 메타데이터 키](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+[iOS 메타데이터 키](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
