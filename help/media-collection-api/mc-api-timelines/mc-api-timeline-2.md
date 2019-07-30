@@ -3,7 +3,7 @@ seo-title: 타임라인 2 - 사용자가 세션을 중단함
 title: 타임라인 2 - 사용자가 세션을 중단함
 uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
 
 **구현 세부 정보**
 
-이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. [필수 세션 매개 변수](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다.  백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
+이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. [필수 세션 매개 변수](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다.  백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
 
 **샘플 요청 본문**
 
