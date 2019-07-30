@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ Media Collection API는 고객 측 Media SDK에 대한 Adobe의 RESTful 대안�
 
    이 기능은 사용자가 온라인으로 돌아올 때까지 이벤트 데이터의 로컬 저장을 통해 오프라인 상태일 때 미디어를 추적하는 기능을 제공합니다. (자세한 내용은 [다운로드한 컨텐츠 추적](track-downloaded-content.md)을 참조하십시오.)
 
-Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, 미디어 SDK 설명서의 일부 측면도 미디어 컬렉션 API와 관련이 있음을 의미합니다. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, 미디어 SDK 설명서의 일부 측면도 미디어 컬렉션 API와 관련이 있음을 의미합니다. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## 미디어 추적 데이터 흐름 {#section_pwq_n34_qbb}
 
