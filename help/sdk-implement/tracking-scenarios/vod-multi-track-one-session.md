@@ -3,7 +3,7 @@ seo-title: VOD 여러 세션에 대한 1개의 추적기
 title: VOD 여러 세션에 대한 1개의 추적기
 uuid: 355 C 83 F 4-52 BD -4 BDD -92 DC-AB 506 E 412 D 0 A
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 이 시나리오에서는 `MediaHeartbeat` 인스턴스가 두 개의 별도 세션을 순서대로 생성하는 데 사용됩니다.
 
-이 시나리오는 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.
+이 시나리오는 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.
 
 ## 매개 변수 {#section_D52B325B99DA42108EF560873907E02C}
 
