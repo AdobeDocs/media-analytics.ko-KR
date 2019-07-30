@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: 3 FE 32425-5 E 2 A -4886-8 FEA-D 91 D 15671 BB 0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 사용자 지정 미디어 장이나 세그먼트에 대해 장 및 세그먼트 추적을 사용할 수 있습니다. 장 추적의 일반적인 용도는 미디어 컨텐츠 (예: 야구 인닝) 를 기반으로 사용자 지정 세그먼트를 정의하거나 광고 휴식 시간 사이의 컨텐츠 세그먼트를 정의하는 것입니다. Chapter tracking is **not** required for core media tracking implementations.
 
