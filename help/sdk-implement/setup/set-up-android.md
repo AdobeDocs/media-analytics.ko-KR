@@ -3,7 +3,7 @@ seo-title: Android 설정
 title: Android 설정
 uuid: 3 ffe 3276-a 104-4182-9220-038729 e 9 f 3 d 5
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 ## SDK 구현
 
-1. [다운로드한](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK를 프로젝트에 추가합니다.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK를 프로젝트에 추가합니다.
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -130,4 +130,4 @@ Media SDK를 사용하는 앱에서는 추적 호출에서 데이터를 전송�
 
 버전 2.x에서는 모든 공개 메서드가 개발자가 쉽게 만들 수 있도록 `com.adobe.primetime.va.simple.MediaHeartbeat` 클래스에 통합되어 있습니다. 또한 모든 구성이 이제 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
