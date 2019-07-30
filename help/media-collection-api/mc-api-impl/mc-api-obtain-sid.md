@@ -3,14 +3,14 @@ seo-title: 세션 ID 가져오기
 title: 세션 ID 가져오기
 uuid: fc 8712 fa -848 f -4564-af 5 d -5 dd 9 d 6 b 088 d 8
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # 세션 ID 가져오기{#obtaining-a-session-id}
 
-This code snippet from the Reference Player shows one way of coding a [Sessions request,](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response:
+This code snippet from the Reference Player shows one way of coding a [Sessions request,](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response:
 
 ```js
 var  
