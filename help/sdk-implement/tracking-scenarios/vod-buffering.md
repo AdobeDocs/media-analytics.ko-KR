@@ -3,7 +3,7 @@ seo-title: 버퍼링이 있는 VOD 재생
 title: 버퍼링이 있는 VOD 재생
 uuid: 958 F 7692-7193-40 FB-A 8 E 7-2 FF 4 FA 805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 이 시나리오에서는 VOD 컨텐츠가 재생될 때 약간의 버퍼링이 발생합니다.
 
-명시하지 않은 경우, 이 시나리오의 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다.
+명시하지 않은 경우, 이 시나리오의 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다.
 
 | 트리거   | 하트비트 메서드   | 네트워크 호출   | 참고   |
 |---|---|---|---|
