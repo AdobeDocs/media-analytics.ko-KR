@@ -3,7 +3,7 @@ seo-title: iOS에서 버퍼링 추적
 title: iOS에서 버퍼링 추적
 uuid: 4 F 4 DB 23 A -489 B -4 B 41-BB 6 E -393 EC 64 D 52 A 2
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../../sdk-implement/download-sdks.md)
+>다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 버퍼링 추적 상수
 
@@ -44,4 +44,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    }
    ```
 
-자세한 내용은 추적 시나리오 [버퍼링이 있는 VOD 재생](../../../sdk-implement/tracking-scenarios/vod-buffering.md)을 참조하십시오.
+자세한 내용은 추적 시나리오 [버퍼링이 있는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-buffering.md)을 참조하십시오.
