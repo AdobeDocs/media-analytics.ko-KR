@@ -3,7 +3,7 @@ seo-title: Chromecast에서 광고 추적
 title: Chromecast에서 광고 추적
 uuid: 7 B 1 F 584 A -3472-416 C -944 C -5 F 5 EA 0 EE 5529
 translation-type: tm+mt
-source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 광고 추적 상수
 
@@ -74,4 +74,4 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
    ```
 
-자세한 내용은 추적 시나리오 [프리롤 광고와 함께 VOD 재생](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)을 참조하십시오.
+자세한 내용은 추적 시나리오 [프리롤 광고와 함께 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)을 참조하십시오.
