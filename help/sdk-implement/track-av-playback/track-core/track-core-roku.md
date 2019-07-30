@@ -3,7 +3,7 @@ seo-title: Roku에서 코어 재생 추적
 title: Roku에서 코어 재생 추적
 uuid: A 8 AA 7 B 3 C -2 D 39-44 D 7-8 EBC-B 101 D 130101 F
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Roku에서 코어 재생 추적{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](../../../sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -97,7 +97,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **표준 메타데이터**
 
-      [JavaScript에서 표준 메타데이터 구현](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [JavaScript에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -105,7 +105,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
       * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **사용자 지정 메타데이터**
 
       사용자 지정 변수에 대한 변수 개체를 만들고 이 미디어의 데이터로 채웁니다. 예:
@@ -182,7 +182,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **표준 비디오 메타데이터**
 
-      [Roku에서 표준 메타데이터 구현](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
@@ -267,6 +267,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >[!TIP]
    >이것은 4 단계에서 사용한 것과 동일한 이벤트 소스일 수 있습니다. 비디오 재생이 다시 시작될 때 각 `trackPause()` API 호출이 다음 `trackPlay()` API 호출과 연결되는지 확인하십시오.
 
-* 추적 시나리오: [광고가 없는 VOD 재생](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 전체 추적 예를 제공하기 위해 Roku SDK에 포함된 샘플 플레이어.
 
