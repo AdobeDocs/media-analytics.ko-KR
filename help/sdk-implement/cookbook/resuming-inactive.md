@@ -3,7 +3,7 @@ seo-title: 비활성 세션 다시 시작
 title: 비활성 세션 다시 시작
 uuid: 3 FF 1205 D -7 BBE -4016-9 BD 7-6 E 34 B 7862 C 4 C
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -19,7 +19,7 @@ Media SDK는 미디어 재생이 다음 비활성 상태 중 하나인 기간을
 * 정지
 * 버퍼링
 
-미디어 추적 세션이 30 분 이상 비활성 상태이면 세션이 자동으로 닫힙니다. 이전의 비활성 비디오 추적 세션(`trackPlay`) 이후 사용자가 다시 시작하면 미디어 하트비트가 이전에 사용한 비디오 정보와 메타데이터를 사용하여 새 비디오 세션을 자동으로 생성하고, 하트비트 다시 시작 이벤트를 보냅니다. For more information, see [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+미디어 추적 세션이 30 분 이상 비활성 상태이면 세션이 자동으로 닫힙니다. 이전의 비활성 비디오 추적 세션(`trackPlay`) 이후 사용자가 다시 시작하면 미디어 하트비트가 이전에 사용한 비디오 정보와 메타데이터를 사용하여 새 비디오 세션을 자동으로 생성하고, 하트비트 다시 시작 이벤트를 보냅니다. For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## 이전에 닫은 세션을 수동으로 재개
 
