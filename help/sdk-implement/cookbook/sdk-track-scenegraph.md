@@ -3,7 +3,7 @@ seo-title: SceneGraph에서 추적(Roku)
 title: SceneGraph에서 추적(Roku)
 uuid: fa 85 e 546-c 79 b -4 df 4-8 c 03-d 6593 fa 296 d 5
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -186,8 +186,8 @@ Input: None\
 | 버전 매기기 | `version` | AdobeMobileLibrary 버전 정보를 검색하기 위한 상수 |
 | 개인 정보/옵트아웃 | `PRIVACY_STATUS_OPT_IN` | 개인 정보 상태 옵트인에 대한 상수 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 개인 정보 상태 옵트아웃에 대한 상수 |
-| MediaHeartbeat 상수 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](../../sdk-implement/track-av-playback/track-core/track-core-roku.md) | Mediaheartbeat API에서 이러한 상수 사용 |
-| 표준 메타데이터 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 이러한 상수를 사용하여 MediaHeartbeat API에 표준 비디오/광고 메타데이터를 첨부합니다. |
+| MediaHeartbeat 상수 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Mediaheartbeat API에서 이러한 상수 사용 |
+| 표준 메타데이터 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 이러한 상수를 사용하여 MediaHeartbeat API에 표준 비디오/광고 메타데이터를 첨부합니다. |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. 이러한 메서드에 대한 자세한 내용은 아래 표를 참조하십시오.
 
