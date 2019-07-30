@@ -3,7 +3,7 @@ seo-title: 구현 경로
 title: 구현 경로
 uuid: 8400 c 938-E 77 E -4 c 88-B 23 B -5 F 5977 A 5316 C
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
 
 * **클라이언트측 -** 미디어 분석 전용 통합입니다. 비디오 하트비트 SDK 및/또는 Media Collection API 통합을 선택할 수 있습니다. 이 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 비디오 플레이어에서 사용할 수 있습니다.
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and the [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
@@ -34,6 +34,6 @@ source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
    * TVSDK의 원활한 광고 삽입 모델을 통해 광고 재생을 직접 측정하는 분석이 가능하므로 정확도가 높아집니다.
    * 모바일에서의 QoS 버퍼링 또는 모바일 연결 중단 문제와 최종 사용자 상호 작용(예: 찾기, 일시 정지, 백그라운드 작업)의 정확성을 보장하기 위한 강력한 이벤트 및 메타데이터 세트입니다.
    * Nielsen DTVR(선형)과 ID3 메타데이터 통합 및 DCR과 CMS 메타데이터 통합을 지원합니다.
-   TVSDK는 이미 미디어 맬웨어 (하트 비트) SDK와 통합되어 있으므로 지원되는 모든 플랫폼에서 훨씬 쉽고 빠르게 구현할 수 있습니다. Primetime은 또한 Nielsen과 파트너십을 지원합니다. Primetime을 활용하려면 현재 플랫폼에 대한 다음 문서와 함께 [고객측](../../intro-to-ava/implementation-paths/client-side-path.md)에 나와 있는 것과 동일한 지침 및 사전 요구 사항을 따르십시오. [Primetime 사용 안내서.](https://helpx.adobe.com/primetime/user-guide.html)
+   TVSDK는 이미 미디어 맬웨어 (하트 비트) SDK와 통합되어 있으므로 지원되는 모든 플랫폼에서 훨씬 쉽고 빠르게 구현할 수 있습니다. Primetime은 또한 Nielsen과 파트너십을 지원합니다. Primetime을 활용하려면 현재 플랫폼에 대한 다음 문서와 함께 [고객측](/help/intro-to-ava/implementation-paths/client-side-path.md)에 나와 있는 것과 동일한 지침 및 사전 요구 사항을 따르십시오. [Primetime 사용 안내서.](https://helpx.adobe.com/primetime/user-guide.html)
 
    또한 영업 담당자/계정 관리자에게 문의하여 TVSDK를 구입하기 위해 해야 할 작업에 대해 논의해야 합니다.
