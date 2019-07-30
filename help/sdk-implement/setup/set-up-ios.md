@@ -3,7 +3,7 @@ seo-title: iOS 설정
 title: iOS 설정
 uuid: a 1 c 6 be 79-a 6 dc -47 b 6-93 b 3-ac 7 b 42 f 1 f 3 eb
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -28,7 +28,7 @@ iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용�
 
 ## SDK 구현
 
-1. [다운로드한](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK를 프로젝트에 추가합니다.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK를 프로젝트에 추가합니다.
 
    1. 다음 소프트웨어 구성 요소가 `libs` 디렉토리에 있는지 확인합니다.
 
@@ -138,7 +138,7 @@ iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용�
 
 버전 2.x에서 모든 공개 메서드는 개발자가 쉽게 만들 수 있도록 `ADBMediaHeartbeat` 클래스에 통합되어 있습니다. 모든 구성은 `ADBMediaHeartbeatConfig` 클래스에 통합되었습니다.
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 ## tvOS용 기본 앱 구성
 
