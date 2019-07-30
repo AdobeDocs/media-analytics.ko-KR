@@ -3,7 +3,7 @@ seo-title: 챕터를 건너뛰고 VOD 재생
 title: 챕터를 건너뛰고 VOD 재생
 uuid: 19 FB 020 C-EB 7 A -4942-9212-94 F 4 D 47195 B 9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 이 시나리오에서는 사용자가 주 컨텐츠의 챕터를 건너뜁니다.
 
-이 시나리오는 사용자가 챕터를 건너뛰어 주 컨텐츠로 이동하려고 한다는 점을 제외하고, [한 개의 챕터가 있는 VOD 재생](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) 시나리오와 동일합니다.
+이 시나리오는 사용자가 챕터를 건너뛰어 주 컨텐츠로 이동하려고 한다는 점을 제외하고, [한 개의 챕터가 있는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 시나리오와 동일합니다.
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고 |
 |---|---|---|---|
@@ -31,7 +31,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ## 매개 변수 {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
 ## 샘플 코드 {#section_fyl_ncj_x2b}
 
