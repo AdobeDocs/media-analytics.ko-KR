@@ -3,7 +3,7 @@ seo-title: VOD 여러 추적기 동시 실행
 title: VOD 여러 추적기 동시 실행
 uuid: 6 E 25 DD 92-522 F -455 C -8 E 71-99 D 71 D 352 E 06
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
-This scenario is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. 이러한 각 세션은 `MediaHeartbeat`의 별도 인스턴스를 사용합니다.
+This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. 이러한 각 세션은 `MediaHeartbeat`의 별도 인스턴스를 사용합니다.
 
-명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.
+명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.
 
 ## 매개 변수 {#section_45D7B10031524411B91E2C569F7818B0}
 
