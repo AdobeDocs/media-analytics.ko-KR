@@ -3,7 +3,7 @@ seo-title: 순차적 추적을 사용하는 라이브 주 컨텐츠
 title: 순차적 추적을 사용하는 라이브 주 컨텐츠
 uuid: B 03477 B 6-9 BE 8-4 B 67-A 5 A 0-4 CEF 3 CF 262 AB
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,13 +14,13 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 이 시나리오에는 라이브 스트림에 참여한 후 40초 동안 광고가 재생되지 않는 라이브 자산이 한 개 있습니다.
 
-이 시나리오는 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일하지만, 컨텐츠의 일부가 스크러빙되고 주 컨텐츠의 한 지점에서 다른 지점으로 이동이 완료됩니다.
+이 시나리오는 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일하지만, 컨텐츠의 일부가 스크러빙되고 주 컨텐츠의 한 지점에서 다른 지점으로 이동이 완료됩니다.
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지를 인식하지 않으므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지를 인식하지 않으므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 컨텐츠의 첫 번째 프레임이 재생됨 | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠보다 먼저 재생되는 경우 챕터가 시작될 때 하트비트가 시작됩니다. |
-| 컨텐츠 재생 |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠 재생 |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션1 종료 (에피소드1이 종료됨) | `trackComplete` `trackSessionEnd` | 하트비트 컨텐츠 완료 | 완료는 첫 번째 에피소드의 세션1에 도달했으며 완전히 시청했음을 의미합니다. 다음 에피소드에 대한 세션을 시작하기 전에 이 세션을 종료해야 합니다. |
 | 에피소드2가 시작됨 (세션2 시작) | `trackSessionStart` | Analytics 컨텐츠 하트비트 컨텐츠 시작 시작 | 이는 사용자가 첫 번째 에피소드를 시청하고 다른 에피소드를 계속 시청했기 때문입니다. |
 | 미디어의 첫 번째 프레임 | `trackPlay` | 하트비트 컨텐츠 재생 | 이 메서드는 타이머를 트리거하며, 이 시점부터 재생이 계속 진행되는 한 10초마다 하트비트가 전송됩니다. |
