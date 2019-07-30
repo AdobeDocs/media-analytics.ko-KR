@@ -3,7 +3,7 @@ seo-title: 챕터 매개 변수
 title: 챕터 매개 변수
 uuid: 2 A 6 B 9247-A 694-46 E 9-98 E 1-424 C 08 C 27 EC 2
 translation-type: tm+mt
-source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
+source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 ---
 
@@ -73,13 +73,13 @@ source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨  </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>챕터 시작 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>장 수가 시작됩니다. 중요: 이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. chapter.<br/>view) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = chapter_ start) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/> 챕터 시작 G </li> <li> **컨텍스트 데이터:**<br/> (a. Media. chapter.<br/>view) </li> <li> **데이터 피드:**<br/>videochapterstart </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. chapter.<br/>view) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨  </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>챕터 시작 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>장 수가 시작됩니다. **중요:** 이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. chapter.<br/>view) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = chapter_ start) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/> 챕터 시작 G </li> <li> **컨텍스트 데이터:**<br/> (a. Media. chapter.<br/>view) </li> <li> **데이터 피드:**<br/>videochapterstart </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. chapter.<br/>view) </li> </ul> |
 
 ### 챕터 완료
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨  </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 장 (chapter) 닫기 </li> <li> **최소. SDK 버전:** 1.3</li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>장 수가 완료됩니다. 중요: 이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. chapter.<br/>완료됨) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = chapter_ complete) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/> 챕터가 G 완료 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. chapter.<br/>완료됨) </li> <li> **데이터 피드:**<br/>videochaptercomplete </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. chapter.<br/>완료됨) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨  </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 장 (chapter) 닫기 </li> <li> **최소. SDK 버전:** 1.3</li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>장 수가 완료됩니다. **중요:** 이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. chapter.<br/>완료됨) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = chapter_ complete) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/> 챕터가 G 완료 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. chapter.<br/>완료됨) </li> <li> **데이터 피드:**<br/>videochaptercomplete </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. chapter.<br/>완료됨) </li> </ul> |
 
 ### 챕터 체류 시간
 
