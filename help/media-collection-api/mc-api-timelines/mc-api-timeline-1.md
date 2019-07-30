@@ -3,7 +3,7 @@ seo-title: 타임라인 1 - 컨텐츠 끝까지 보기
 title: 타임라인 1 - 컨텐츠 끝까지 보기
 uuid: 0 FF 591 D 3-FA 99-4123-9 E 09-C 4 E 71 EA 1060 B
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
 **구현 세부 사항**
 
-이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. <br/><br/>세션 내의 모든 후속 추적 호출을 식별하는 데 사용되는 클라이언트에 세션 ID ( `{sid}`) 를 반환합니다. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. <br/><br/>[필수 세션 매개 변수](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다. <br/><br/>백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
+이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. <br/><br/>세션 내의 모든 후속 추적 호출을 식별하는 데 사용되는 클라이언트에 세션 ID ( `{sid}`) 를 반환합니다. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. <br/><br/>[필수 세션 매개 변수](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다. <br/><br/>백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
 
 **샘플 요청 본문**
 
