@@ -5,18 +5,18 @@ description: 이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 
 seo-description: Adobe Media Analytics의 이 시나리오에서는 사전 롤 광고가 기본 컨텐츠 앞에 삽입되었습니다.
 uuid: 5 D 1022 A 8-88 CB -40 AA -919 C -60 DD 592 A 639 E
 translation-type: tm+mt
-source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # 프리롤 광고가 있는 VOD 재생{#vod-playback-with-pre-roll-ads}
 
-이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 삽입되었습니다. 명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출이 동시에 발생하지만 페이로드가 다릅니다.
+이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 삽입되었습니다. 명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출이 동시에 발생하지만 페이로드가 다릅니다.
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | 광고가 시작됨. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고 1의 프레임이 재생됨. | `trackPlay` | 하트비트 광고 재생 | 광고 컨텐츠가 주 컨텐츠 전에 재생되고, 광고가 시작될 때 하트비트가 시작됩니다. |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
@@ -24,8 +24,8 @@ source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
 | 광고 2의 첫 번째 프레임이 재생됨. | `trackEvent:AdStart` | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
 | 광고 2 재생이 완료됨. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 하트비트 광고 완료 | 광고 및 pod의 끝에 도달합니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 매개 변수 {#section_33CDFB6CB230437480B67A3D149EC44E}
