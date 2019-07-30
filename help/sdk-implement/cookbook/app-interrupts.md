@@ -3,7 +3,7 @@ seo-title: 재생 중 애플리케이션 중단 처리
 title: 재생 중 애플리케이션 중단 처리
 uuid: 1 CCB 4507-BDA 6-462 D-BF 67-E 22978 A 4 DB 3 D
 translation-type: tm+mt
-source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,5 +31,5 @@ source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
 
 * _동일한 세션을 다시 시작하는 것은 어떻습니까?_ 
 
-   추적 세션을 다시 시작하는 방법에 대한 자세한 지침은 [비활성화 세션 다시 시작 페이지를 참조하십시오.](../../sdk-implement/cookbook/resuming-inactive.md) SDK가 재개 ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
+   추적 세션을 다시 시작하는 방법에 대한 자세한 지침은 [비활성화 세션 다시 시작 페이지를 참조하십시오.](/help/sdk-implement/cookbook/resuming-inactive.md) SDK가 재개 ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
 
