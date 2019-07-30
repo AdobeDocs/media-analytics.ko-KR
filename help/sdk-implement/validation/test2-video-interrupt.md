@@ -3,7 +3,7 @@ seo-title: Test 2 비디오 중단
 title: Test 2 비디오 중단
 uuid: Eeccd 534-63 fd -4 dd 3-b 096-0431 bc 9 a 11 ff
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -23,7 +23,7 @@ Download the certification request here: [Certification Request Form.](cert_req_
    1. Media Analytics 시작
    1. 하트비트 시작
    1. 하트비트 분석 시작
-   위의 처음 두 호출에는 추가 메타데이터 및 변수가 포함되어 있습니다. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   위의 처음 두 호출에는 추가 메타데이터 및 변수가 포함되어 있습니다. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **적어도 5분 동안 중단되지 않은 상태로 기본 컨텐츠 비디오 재생**
 
@@ -31,9 +31,9 @@ Download the certification request here: [Certification Request Form.](cert_req_
 
    기본 컨텐츠 재생 중에 하트비트 호출은 10초마다 하트비트 서버로 전송됩니다.
 
-   For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-   Also see your platform's [Track Ads](../../sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
 1. **앱 또는 브라우저를 백그라운드로 이동**
 
@@ -45,7 +45,7 @@ Download the certification request here: [Certification Request Form.](cert_req_
 
 1. **적어도 5분 동안 중단되지 않은 상태로 기본 컨텐츠 비디오 재생**
 
-   For call parameters and metadata, see [Test Call Details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **비디오 플레이어 닫기**
 
