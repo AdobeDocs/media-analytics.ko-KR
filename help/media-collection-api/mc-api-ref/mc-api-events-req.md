@@ -3,7 +3,7 @@ seo-title: 이벤트 요청
 title: 이벤트 요청
 uuid: B 237 F 0 A 0-DC 29-418 B -89 EE -04 C 596 A 27 F 39
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI 매개 변수
 
-`sid`: 세션 요청에서 반환된 [세션 ID.](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: 세션 요청에서 반환된 [세션 ID.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## 요청 본문
 
@@ -44,7 +44,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 * `customMetadata` (옵션; 이벤트 유형에만 `adStart``chapterStart` 전송)
 * `qoeData` (선택 사항입니다)
 
-For a list of valid event types for this release, see [Event types and descriptions.](../../media-collection-api/mc-api-ref/mc-api-event-types.md)
+For a list of valid event types for this release, see [Event types and descriptions.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | HTTP 응답 코드 | 설명 | 고객 작업 항목 |
 |---|---|---|
 | **204** | **컨텐츠 없음.**<br/><br/>하트비트 호출이 성공했습니다. | 해당 없음 |
-| **400** | **잘못된 요청.** <br/><br/>요청의 형식이 잘못되었습니다. | [JSON 유효성 검사 스키마](../../media-collection-api/mc-api-ref/mc-api-json-validation.md)에서 요청 유형을 확인하십시오. |
-| **404** | **발견되지 않음.**<br/><br/>미디어 세션에 대한 세션 ID를 백엔드 서비스에서 찾을 수 없습니다. | 고객 애플리케이션은 [세션 요청](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
-| **410** | **제거됨.**<br/><br/>The media session was found in the 백엔드 service but the client can no longer report activity on it. | 고객 애플리케이션은 [세션 요청](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
+| **400** | **잘못된 요청.** <br/><br/>요청의 형식이 잘못되었습니다. | [JSON 유효성 검사 스키마](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)에서 요청 유형을 확인하십시오. |
+| **404** | **발견되지 않음.**<br/><br/>미디어 세션에 대한 세션 ID를 백엔드 서비스에서 찾을 수 없습니다. | 고객 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
+| **410** | **제거됨.**<br/><br/>The media session was found in the 백엔드 service but the client can no longer report activity on it. | 고객 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **500** | **서버 오류** | 해당 없음 |
 
