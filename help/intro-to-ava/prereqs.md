@@ -3,7 +3,7 @@ seo-title: 전제 조건
 title: 전제 조건
 uuid: 4 C 0 B 37 F 3-8615-4 CC 0-B 9 C 9-EEB 029067064
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
    Adobe Experience Platform Identity Service를 구현해야 합니다.
 
-   ID 서비스는 People 코어 서비스에서 Experience Cloud 핵심 서비스, 솔루션, 고객 속성 및 고객에 대한 공통 식별 프레임워크를 활성화합니다. 이는 영구적인 고유 ID를 사이트 방문자에게 할당하여 작동됩니다. 조직에서 ID 서비스를 구현하면 이 ID를 통해 다른 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다.
+    Identity 서비스를 통해 사용자 핵심 서비스의 Experience Cloud 핵심 서비스, 솔루션, 고객 속성 및 대상에 공통된 ID 프레임워크를 사용할 수 있습니다. 이는 영구적인 고유 ID를 사이트 방문자에게 할당하여 작동됩니다. 조직에서 ID 서비스를 구현하면 이 ID를 통해 다른 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다.
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -48,5 +48,5 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
 1. **Adobe Analytics 보고서를 사용할 수 있도록 설정.**
 
-   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](../media-reports/media-reports-enable.md)
+   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](/help/media-reports/media-reports-enable.md)
 
