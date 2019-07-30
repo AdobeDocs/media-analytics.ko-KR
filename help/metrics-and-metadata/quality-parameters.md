@@ -3,7 +3,7 @@ seo-title: 품질 매개 변수
 title: 품질 매개 변수
 uuid: 0 D 9 FA 764-EDEF -4178-8650-90 C 9 A 0852 A 57
 translation-type: tm+mt
-source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
+source-git-commit: 6e6ecdcb7309e06410a443247df5d5b49b083ea7
 
 ---
 
@@ -60,7 +60,7 @@ source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>droppedFrames </li> <li> **API 키:**<br/>media.qoe.droppedFrames </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/>숫자 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 3 </li><li> **설명:**<br/>드롭된 프레임 수 (정수). 이 값은 재생 세션 중에 드롭된 모든 프레임의 합계로 계산됩니다. 이 값은 (l: 스트림: dropped_ frames.)  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>Droppedframecount) </li> <li> **하트비트:**<br/> (L: 스트림:<br/>dropped_ frames) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>삭제된 프레임 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>Droppedframecount) </li> <li> **데이터 피드:**<br/>videoqoedroppedframecountevar </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>Droppedframecount) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>droppedFrames </li> <li> **API 키:**<br/>media.qoe.droppedFrames </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/>숫자 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 3 </li><li> **설명:**<br/>드롭된 프레임 (정수) 의 수입니다. 이 값은 재생 세션 중에 드롭된 모든 프레임의 합계로 계산됩니다. 이 값은 (l: 스트림: dropped_ frames).  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>Droppedframecount) </li> <li> **하트비트:**<br/> (L: 스트림:<br/>dropped_ frames) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>삭제된 프레임 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>Droppedframecount) </li> <li> **데이터 피드:**<br/>videoqoedroppedframecountevar </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>Droppedframecount) </li> </ul> |
 
 
 
@@ -205,7 +205,7 @@ source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>비트 전송률 변경이 발생한 스트림의 수입니다. 이 지표는 재생 세션 중에 하나 이상의 비트율 변경 이벤트가 발생한 경우에만 1로 설정됩니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>Bitratechange) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = bitrate_ change) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>버퍼 변경 영향을 받은 스트림 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>Bitratechange) </li> <li> **데이터 피드:**<br/>videoqoebitratechange </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>Bitratechange) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>비트 전송률 변경이 발생한 스트림의 수입니다. 이 지표는 재생 세션 중에 하나 이상의 비트율 변경 이벤트가 발생한 경우에만 1로 설정됩니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>Bitratechange) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = bitrate_ change) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/> 영향을 받은 스트림 변경 사항 스트림 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>Bitratechange) </li> <li> **데이터 피드:**<br/>videoqoebitratechange </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>Bitratechange) </li> </ul> |
 
 
 
@@ -224,7 +224,7 @@ source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>오류 이벤트가 발생한 스트림의 수가 재생 `trackError` 세션 중에 호출되었으며 `type=error` 하트비트 호출이 생성되었습니다. </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = error) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>오류 영향을 받은 스트림 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **데이터 피드:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>오류 이벤트가 발생한 스트림 수 (즉, 재생 세션 중에 `trackError` 호출되었고 `type=error` 하트비트 호출이 생성되었음). </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = error) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>오류 영향을 받은 스트림 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **데이터 피드:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> </ul> |
 
 
 
