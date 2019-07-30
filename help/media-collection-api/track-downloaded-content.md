@@ -3,7 +3,7 @@ seo-title: 다운로드한 컨텐츠 추적
 title: 다운로드한 컨텐츠 추적
 uuid: 0718689 D -9602-4 E 3 F -833 C -8297 AAE 1 D 909
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Downloaded Content API에서는 사용자가 오프라인 상태인 동안에 �
 
 ### 이벤트 스키마
 
-다운로드한 컨텐츠 API는 미디어 컬렉션 API를 기반으로 하므로 플레이어에서 배치와 센드가 필요한 이벤트 데이터는 동일한 이벤트 스키마가 미디어 컬렉션 API와 같이 사용되어야 합니다. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+다운로드한 컨텐츠 API는 미디어 컬렉션 API를 기반으로 하므로 플레이어에서 배치와 센드가 필요한 이벤트 데이터는 동일한 이벤트 스키마가 미디어 컬렉션 API와 같이 사용되어야 합니다. For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 이벤트 순서
 
