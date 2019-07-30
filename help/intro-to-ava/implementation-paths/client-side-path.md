@@ -3,7 +3,7 @@ seo-title: 고객측
 title: 고객측
 uuid: BA 0496 E 2-585 A -4176-B 583-C 705726 FECC 6
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루�
 
 고객측 통합은 Media Analytics로만 구현됩니다. Media SDK나 Media Collection API(또는 둘 다)를 구현하도록 선택할 수 있습니다. 이 고객측 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 플레이어에서 사용할 수 있습니다.
 
-If Media Analytics is your intended path, see [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+If Media Analytics is your intended path, see [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >
