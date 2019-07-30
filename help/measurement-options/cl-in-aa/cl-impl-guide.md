@@ -3,7 +3,7 @@ seo-title: 사용자 지정 링크 구현 안내서
 title: 사용자 지정 링크 구현 안내서
 uuid: 83315 E 73-20 CA -4 DB 5-9 D 43-33 DAADE 45 A 13
 translation-type: tm+mt
-source-git-commit: 530973abc12fcb2567a3742c202d992944048b8b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 530973abc12fcb2567a3742c202d992944048b8b
 사용자 지정 비디오 추적은 Analytics [ 내에서 ](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html)사용자 지정 링크 코드를 사용한 수동 링크 추적`appMeasurement`을 활용합니다. 대개 사용자 지정 비디오 링크 비디오 추적은 최소한의 비디오 측정이 필요한 플랫폼 및 장치에서 사용됩니다.
 
 * In JavaScript: `s.tl()` function
-* 모바일 앱에서: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](../../sdk-implement/analytics-with-ott/track-app-actions.md)
+* 모바일 앱에서: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
