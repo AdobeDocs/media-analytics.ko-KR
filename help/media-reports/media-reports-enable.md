@@ -3,7 +3,7 @@ seo-title: 미디어 보고서 지원
 title: 미디어 보고서 지원
 uuid: D 306068 D-A 308-4 B 6 E -8 A 72-742 DDA 0 DE 428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". 미디어 분류는 미디어 추적에 대해 보고서 세트가 활성화되어 있을 때 정의됩니다. Adobe는 때때로 새 속성을 추가하며, 이 경우 고객은 보고서 세트를 다시 활성화하여 새 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 동안 Adobe는 변수의 이름을 검사하여 분류를 사용할지 여부를 결정합니다. 누락된 경우 누락된 항목이 추가됩니다.
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". 미디어 분류는 미디어 추적에 대해 보고서 세트가 활성화되어 있을 때 정의됩니다. Adobe는 때때로 새 속성을 추가하며, 이 경우 고객은 보고서 세트를 다시 활성화하여 새 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 동안 Adobe는 변수의 이름을 검사하여 분류를 사용할지 여부를 결정합니다. 누락된 경우 누락된 항목이 추가됩니다.
