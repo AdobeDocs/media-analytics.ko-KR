@@ -3,7 +3,7 @@ seo-title: 한 개의 챕터가 있는 VOD 재생
 title: 한 개의 챕터가 있는 VOD 재생
 uuid: 1566 A 6 F 5-CF 22-42 E 7-8 E 1 A -6976 C 6 C 4 E 649
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 이 시나리오에서는 VOD 컨텐츠 부분이 챕터로 표시됩니다.
 
-명시하지 않은 경우, 이 시나리오의 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출이 동시에 발생하지만 페이로드가 다릅니다.
+명시하지 않은 경우, 이 시나리오의 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출이 동시에 발생하지만 페이로드가 다릅니다.
 
 | 트리거   | 하트비트 메서드   | 네트워크 호출   | 참고   |
 |---|---|---|---|
@@ -23,8 +23,8 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠보다 먼저 재생되는 경우 챕터가 시작될 때 하트비트가 시작됩니다. |
 | 챕터가 재생됨. |  | 챕터 하트비트 |  |
 | 챕터가 완료됨. | `trackEvent:trackChapterComplete` | 하트비트 챕터 완료 | 이는 챕터의 끝에 도달한 때입니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 끝에 도달했음을 의미합니다. 사용자가 미디어 완료 상태를 지켜보지 못하는 경우에도 이 API를 호출해야 합니다. |
 
 ## 매개 변수 {#section_869319D99A474FEA8EA840415EA97FBD}
