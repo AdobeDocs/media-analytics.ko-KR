@@ -3,7 +3,7 @@ seo-title: JavaScript에서 체감 품질 추적
 title: JavaScript에서 체감 품질 추적
 uuid: 3 BC 762 A 2-9706-4 B 62-AA 91-747 F 461 DD 13 D
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 구현 QOS
 
@@ -55,7 +55,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    >QoS 개체를 업데이트하고 모든 비트 전송률 변경 시 비트 전송률 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
 
 1. `getQoSObject()` 메서드가 업데이트된 최신 QoS 정보를 반환하는지 확인합니다.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. [(개요](../../sdk-implement/track-errors/track-errors-overview.md)참조)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. [(개요](/help/sdk-implement/track-errors/track-errors-overview.md)참조)
 
    >[!TIP]
    >
