@@ -3,7 +3,7 @@ seo-title: 코드 비교 1. x ~ 2. x
 title: 코드 비교 1. x ~ 2. x
 uuid: 9 F 0 A 1660-2100-446 D-AB 75-AFDF 966478 B 3
 translation-type: tm+mt
-source-git-commit: ee073531814b446ba0ae4a86fc1011f063886561
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -840,4 +840,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-2.x를 사용하여 비디오를 추적하는 방법에 대한 자세한 내용은 [코어 비디오 재생 추적](../../sdk-implement/track-av-playback/track-core-overview.md)을 참조하십시오.
+2.x를 사용하여 비디오를 추적하는 방법에 대한 자세한 내용은 [코어 비디오 재생 추적](/help/sdk-implement/track-av-playback/track-core-overview.md)을 참조하십시오.
