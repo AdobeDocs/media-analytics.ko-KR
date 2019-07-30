@@ -3,7 +3,7 @@ seo-title: 품질 매개 변수
 title: 품질 매개 변수
 uuid: 0 D 9 FA 764-EDEF -4178-8650-90 C 9 A 0852 A 57
 translation-type: tm+mt
-source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 ---
 
@@ -224,7 +224,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>비트 전송률 변경이 발생한 스트림의 수입니다. 이 지표는 재생 세션 중에 하나 이상의 비트율 변경 이벤트가 발생한 경우에만 1로 설정됩니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = error) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>오류 영향을 받은 스트림 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **데이터 피드:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **보낸 사람:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> true </li><li> **설명:**<br/>오류 이벤트가 발생한 스트림의 수가 재생 `trackError` 세션 중에 호출되었으며 `type=error` 하트비트 호출이 생성되었습니다. </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **하트비트:**<br/> (s: 이벤트:<br/>type = error) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>오류 영향을 받은 스트림 </li> <li> **컨텍스트 데이터:**<br/> (a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> <li> **데이터 피드:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. Media. qoe.<br/>라는 오류가 표시됩니다) </li> </ul> |
 
 
 
