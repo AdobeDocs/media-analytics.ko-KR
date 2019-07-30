@@ -3,7 +3,7 @@ seo-title: JavaScript 설정
 title: JavaScript 설정
 uuid: 0269 D 8 AD -0 AF 8-4 BF 1-9 D 15-E 06 C 2952 A 005
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -22,7 +22,7 @@ JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 J
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
 
-1. [다운로드한](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) 라이브러리를 프로젝트에 추가합니다. 편의상 클래스에 대한 로컬 참조를 작성하십시오.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) 라이브러리를 프로젝트에 추가합니다. 편의상 클래스에 대한 로컬 참조를 작성하십시오.
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
    1. `MediaSDK.min.js` 파일이 `libs` 디렉토리에 있는지 확인합니다.
@@ -117,4 +117,4 @@ JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 J
 
 버전 2.x에서 모든 공개 메서드는 개발자가 쉽게 만들 수 있도록 `ADB.va.MediaHeartbeat` 클래스에 통합되어 있습니다. 또한 모든 구성이 이제 `ADB.va.MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
