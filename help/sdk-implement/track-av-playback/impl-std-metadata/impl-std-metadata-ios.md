@@ -5,7 +5,7 @@ seo-title: iOS에서 표준 메타데이터 구현
 title: iOS에서 표준 메타데이터 구현
 uuid: 75 A 80 F 08-4 A 95-49 D 4-A 27 A -8 CE 531 D 64 D 31
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 ## 구현
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [IOS 메타데이터 키](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [IOS 메타데이터 키](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. 메타데이터에 표준 메타데이터 상수를 사용하여 `MediaInfo``ADBMediaObject`   인스턴스에 표준 메타데이터 사전을 설정합니다.
 
