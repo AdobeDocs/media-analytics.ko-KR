@@ -3,7 +3,7 @@ seo-title: 추적 개요
 title: 추적 개요
 uuid: 7 B 8 E 2 F 76-BC 4 E -4721-8933-3 E 4453 B 01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 플레이어 이벤트
 
@@ -59,7 +59,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!TIP]
 >
->재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 구현 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
       표준 메타데이터 개체를 인스턴스화하고, 원하는 변수를 채우고, 미디어 하트비트 개체에서 메타데이터 개체를 설정합니다.
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+      See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **사용자 지정 메타데이터 -** 사용자 지정 변수에 대한 변수 개체를 만들고, 이 컨텐츠의 데이터로 채웁니다.
 
