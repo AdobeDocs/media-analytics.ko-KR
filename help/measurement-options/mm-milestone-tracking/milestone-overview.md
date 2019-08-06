@@ -3,7 +3,7 @@ seo-title: 이정표 개요
 title: 이정표 개요
 uuid: 2 F 9 EC 6 BB -8860-4863-98 BC -5 CFFB 356 CCC 5
 translation-type: tm+mt
-source-git-commit: bb5478b0934e0a3bf27def86ff70c7f92af67e6a
+source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
 
 ---
 
@@ -30,7 +30,8 @@ source-git-commit: bb5478b0934e0a3bf27def86ff70c7f92af67e6a
 
 To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Admin &gt; Report Suite Manager].** 보고서 세트를 선택한 다음 **[!UICONTROL 비디오 관리 &gt; 비디오 보고를 선택합니다].**
 
-![](assets/0clip_image002_1537416456.png){width = "248"}
+<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+![](assets/rs1.png)
 
 첫 번째 화면에서는 이정표 데이터로 비디오 코어만 작동됩니다. **[!UICONTROL 비디오 코어]**&#x200B;를 선택하고 **[!UICONTROL 저장]을 클릭합니다.**
 
@@ -38,11 +39,13 @@ To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Ad
 
 다음 화면에서는 **[!UICONTROL 사용자 지정 변수 사용을 선택합니다].**
 
-![](assets/0clip_image006_-1561510960.png){width = "470"}
+<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+![](assets/rs2.png)
 
 마지막 화면에서는 비디오 측정에 사용할 2개의 eVar와 3개의 이벤트를 선택하십시오.
 
-![](assets/0clip_image008_-92166399.png)
+<!--![](assets/0clip_image008_-92166399.png)-->
+![](assets/rs3.png)
 
 ## 비디오 변수 참조 {#section_emg_c1z_cfb}
 
@@ -50,8 +53,8 @@ To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Ad
 
 | 비디오 지표 | 변수 유형 | 설명 |
 | --- | --- | --- |
-| 컨텐츠 | eVar <br/>Default expiration: Visit | (필수) 구현에 지정된 대로 비디오의 이름을 수집합니다. |
-| 컨텐츠 유형 | eVar <br/>Default expiration: Page view | 방문자가 본 컨텐츠 유형에 대한 데이터를 수집합니다. Hits sent by video measurement are assigned a content type of `video.` <br/>This variable does not need to be reserved exclusively for video tracking. 다른 컨텐츠 보고서 컨텐츠 유형을 이와 동일한 변수를 사용하면 여러 유형의 컨텐츠에 걸쳐 방문자의 분포를 분석할 수 있습니다. 예를 들어 이 변수를 사용하여 `article` 또는 `product page`와 같은 값을 사용하는 다른 컨텐츠 유형에 태그를 지정할 수 있습니다. <br/>비디오 측정 관점에서 *컨텐츠 유형*&#x200B;을 사용하면 비디오 방문자를 식별할 수 있고 비디오 전환율을 계산할 수 있습니다. |
+| 컨텐츠 | Evar <br/>기본 만료: visit | (필수) 구현에 지정된 대로 비디오의 이름을 수집합니다. |
+| 컨텐츠 유형 | eVar <br/>Default expiration: Page view | 방문자가 본 컨텐츠 유형에 대한 데이터를 수집합니다. 비디오 측정에 의해 전송된 히트는 `video.`<br/>이 변수의 컨텐츠 유형을 비디오 추적용으로만 예약할 필요가 없습니다. 다른 컨텐츠 보고서 컨텐츠 유형을 이와 동일한 변수를 사용하면 여러 유형의 컨텐츠에 걸쳐 방문자의 분포를 분석할 수 있습니다. 예를 들어 이 변수를 사용하여 `article` 또는 `product page`와 같은 값을 사용하는 다른 컨텐츠 유형에 태그를 지정할 수 있습니다. <br/>비디오 측정 관점에서 *컨텐츠 유형*&#x200B;을 사용하면 비디오 방문자를 식별할 수 있고 비디오 전환율을 계산할 수 있습니다. |
 | 컨텐츠 체류 시간 | Event <br/>Type: Counter | 마지막 데이터 컬렉션 처리(이미지 요청) 이후 비디오를 시청하는 데 걸린 시간(초)을 계산합니다. |
 | 비디오 시작 | Event <br/>Type: Counter | 방문자가 비디오를 일정 부분 보았음을 나타냅니다. 그러나 방문자가 비디오에서 본 내용이나 분량에 대한 정보는 제공하지 않습니다. |
 | 비디오 완료 | 이벤트 <br/>유형:카운터 | 사용자가 비디오 전체를 보았음을 의미합니다. 기본적으로 완료 이벤트는 비디오 종료 1초 전에 측정됩니다.  <br/>구현 중에 비디오 종료 몇 초 전을 보기 완료로 고려할 것인지 지정할 수 있습니다. 정의된 끝이 없는 라이브 비디오 및 기타 스트림의 경우 완료를 측정할 사용자 지정 지점을 지정할 수 있습니다. 예를 들어 특정 시간을 시청한 후로 지정할 수 있습니다. |
@@ -62,7 +65,7 @@ To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Ad
 
 | 변수    | 설명 |
 | --- | --- |
-| `Media.trackUsingContextData` | **구문:** <br/><br/> `s.Media.trackUsingContextData = true;` <br/>이 옵션은 통합된 비디오 추적을 활성화합니다. When set to true, the media module generates context data for media tracking, instead of the legacy `pev3`. <br/>`Media.contextDataMapping`을 사용하여 컨텍스트 데이터를 선택한 eVar와 이벤트에 매핑합니다.<br/>기본값: `false` |
+| `Media.trackUsingContextData` | **구문:** <br/><br/> `s.Media.trackUsingContextData = true;` <br/>이 옵션은 통합된 비디오 추적을 활성화합니다. true로 설정되면 미디어 모듈은 레거시 대신 미디어 추적을 위한 컨텍스트 데이터를 생성합니다 `pev3`. <br/>`Media.contextDataMapping`을 사용하여 컨텍스트 데이터를 선택한 eVar와 이벤트에 매핑합니다.<br/>기본값: `false` |
 | `Media.contextDataMapping` | **구문:** <br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};` <br/><br/>비디오 측정에 사용할 eVar와 이벤트에 대한 변수 매핑을 정의하는 개체입니다. The object must map the following fields: <br/><br/> **a.media.name:** (필수) 변수를 비디오 이름으로 채웁니다. 비디오 이름을 저장하기 위해 선택한 eVar와 비디오 경로 지정에 사용할 사용자 지정 통찰력 비디오 변수(`s.prop`)를 제공합니다. 쉼표로 구분된 목록으로 값을 제공합니다. <br/><br/> **a.media.segment:** (선택 사항) 미디어 세그먼트 이름을 저장할 eVar입니다. a.contentType: (선택 사항) 비디오 값을 저장할 eVar로, 비디오 방문 횟수 및 방문자 보고를 생성하기 위해 활성화된 방문 횟수 및 방문자 추적을 포함합니다. 선택한 변수는 문서 슬라이드 쇼 또는 제품 페이지와 같은 데이터를 저장하는 데 이미 사용되었을 수 있습니다.<br/><br/> **a.media.view:** (필수) 미디어 보기를 카운트할 이벤트입니다. <br/><br/> **a.media.segmentView:** (선택 사항) 세그먼트 보기를 카운트할 이벤트입니다. <br/><br/> **a.media.complete:** (선택 사항) 완료 보기를 카운트할 이벤트입니다. <br/><br/> **a.media.timePlayed:** (선택 사항, 권장) 비디오 재생 시간(초)을 저장할 숫자 이벤트입니다. <br/><br/> **a.media.milestones:** (선택 사항) s.Media.trackMilestones 이정표를 카운터 이벤트에 매핑하는 개체입니다. 이정표를 정의하는 경우 Media.segmentByMilestones을 true로 설정해야 합니다. <br/><br/> **광고 추적을 추적하려면** 다음 컨텍스트 데이터 변수를 사용할 수 있습니다. <br/> **a.media.ad.name:** (필수) 변수를 광고 이름으로 채웁니다. 광고 이름을 저장하기 위해 선택한 eVar와 경로 지정에 사용할 사용자 지정 통찰력 비디오 변수(`s.prop`)를 제공합니다. 쉼표로 구분된 목록으로 값을 제공합니다. <br/><br/> **a.media.ad.pod:** 기본 컨텐츠에서 광고가 재생되는 위치입니다. <br/><br/> **a.media.ad.podPosition**: Pod 내에서 광고가 재생되는 위치입니다. <br/><br/> **a.media.ad.CPM**: 이 재생에 적용되는 CPM 또는 암호화된 CPM(앞에 "~"가 붙음)입니다. <br/><br/> **a.media.ad.vi EW:** 동일한 `a.media.view`<br/><br/> **a.media.ad.clicked**: 광고 클릭 수를 카운트합니다(`Media.click` 호출) <br/><br/> **a.media.ad.ti Meplay:** 동일한 `a.media.timePlayed`<br/><br/> **a.media.ad.com Plete:** `a.media.complete` a.media.ad.se 증가: 동일한 `a.media.segment`<br/><br/> **a.media.ad.se Gmentview:** 동일한 `a.media.segmentView`<br/><br/> **a.media.ad.mi Lestones:** 동일한 `a.media.milestones`<br/><br/> **a.media.ad.of Fsetmilestones:** 동일한 `a.media.offsetMilestones` |
 | `Media.trackVars` | **구문:** <br/><br/> `s.Media.trackVars =` <br/>    `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>비디오 추적 코드에 설정되어 있으며, 쉼표로 구분된 모든 변수의 목록입니다. |
 | `Media.trackEvents` | **구문:** <br/><br/> `s.Media.trackEvents =` <br/>    `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>비디오 추적 코드에 설정되어 있으며, 쉼표로 구분된 모든 이벤트의 목록입니다. |
@@ -106,7 +109,7 @@ To set-up video reporting for a Milestone implementation, go to **[!UICONTROL Ad
 | `Media.openAd` | **구문:** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   `parentPod, parentPodPosition, CPM)` <br/><br/>광고 추적 데이터를 수집하도록 미디어 모듈을 준비합니다. 이 메서드는 다음 매개 변수를 사용합니다. <ul> <li> **name:** (필수) 광고 이름 또는 ID입니다.  </li> <li> **length:** (필수) 광고 길이입니다.  </li> <li> **playerName:** (필수) 광고를 보는 데 사용되는 미디어 플레이어의 이름입니다.  </li> <li> **parentName:** 광고가 포함된 기본 컨텐츠의 이름 또는 ID입니다.  </li> <li> **parentPod:** 기본 컨텐츠에서 광고가 재생되는 위치입니다.  </li> <li> **parentPodPosition:** Pod 내에서 광고가 재생되는 위치입니다.  </li> <li> **CPM:** 이 재생에 적용되는 CPM 또는 암호화된 CPM(앞에 "~"가 붙음)입니다.  </li> </ul> |
 | `Media.click` | **구문:** <br/><br/> `s.Media.click(name, offset)` <br/><br/>비디오에서 광고를 클릭할 때 추적합니다. 이 메서드는 다음 매개 변수를 사용합니다. <ul> <li> **name:** 광고 이름입니다. 이 이름은 Media.openAd에 사용된 이름과 일치해야 합니다.  </li> <li> **offset:** 클릭이 발생했을 때 광고에 대한 오프셋입니다.  </li> </ul> |
 | `Media.close` | **구문:** <br/><br/> `s.Media.close(mediaName)` <br/><br/>비디오 데이터 컬렉션을 종료하고 정보를 Adobe 데이터 컬렉션 서버로 전송합니다. 비디오 종료 시 이 메서드를 호출합니다. 이 메서드는 다음 매개 변수를 사용합니다. <br/><br/> **mediaName:** 비디오 이름입니다. 이 이름은 `Media.open`에 사용된 이름과 일치해야 합니다. |
-| `Media.complete` | **구문:** <br/><br/> `s.Media.complete(name, offset)` <br/><br/>이 메서드는 완료 이벤트를 수동으로 추적합니다. 이 메서드는 `Media.completeByCloseOffset`을 사용하여 처리할 수 없는 특수한 논리를 사용하여 이벤트를 트리거해야 하는 경우에 사용됩니다. <br/><br/>예를 들어 정의된 끝이 없는 라이브 스트림을 측정하는 경우 사용자가 X초 동안 라이브 스트림을 시청한 후 완료를 트리거할 수 있습니다. 컨텐츠 길이 및 유형을 기반으로 한 비율 계산을 사용하여 완료를 측정할 수 있습니다. 이 메서드는 다음 매개 변수를 사용합니다. <ul> <li> **mediaName:** 비디오 이름입니다. 이 이름은 Media.open에 사용된 이름과 일치해야 합니다.  </li> <li> **mediaOffset:** 비디오에 완료 이벤트를 전송해야 하는 시간(초 수)입니다. 두 번째 0에서 시작하는 비디오를 기반으로 하여 오프셋을 지정합니다. <br/><br/>미디어 플레이어가 밀리초를 사용하여 추적하는 경우 Media.complete를 호출하기 전에 값이 초로 변환되었는지 확인하십시오.  </li> </ul> If you plan to call complete manually, set <br/><br/> `s.Media.completeByCloseOffset = false`를 참조하십시오. |
+| `Media.complete` | **구문:** <br/><br/> `s.Media.complete(name, offset)` <br/><br/>이 메서드는 완료 이벤트를 수동으로 추적합니다. 이 메서드는 `Media.completeByCloseOffset`을 사용하여 처리할 수 없는 특수한 논리를 사용하여 이벤트를 트리거해야 하는 경우에 사용됩니다. <br/><br/>예를 들어 정의된 끝이 없는 라이브 스트림을 측정하는 경우 사용자가 X초 동안 라이브 스트림을 시청한 후 완료를 트리거할 수 있습니다. 컨텐츠 길이 및 유형을 기반으로 한 비율 계산을 사용하여 완료를 측정할 수 있습니다. 이 메서드는 다음 매개 변수를 사용합니다. <ul> <li> **mediaName:** 비디오 이름입니다. 이 이름은 Media.open에 사용된 이름과 일치해야 합니다.  </li> <li> **mediaOffset:** 비디오에 완료 이벤트를 전송해야 하는 시간(초 수)입니다. 두 번째 0에서 시작하는 비디오를 기반으로 하여 오프셋을 지정합니다. <br/><br/>미디어 플레이어가 밀리초를 사용하여 추적하는 경우 Media.complete를 호출하기 전에 값이 초로 변환되었는지 확인하십시오.  </li> </ul> 수작업으로 Complete를 호출하려면 <br/><br/> `s.Media.completeByCloseOffset = false`를 참조하십시오. |
 | `Media.play` | **구문:** <br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)` <br/><br/>비디오가 재생을 시작할 때 언제든지 이 메서드를 호출합니다. 수동 비디오 측정 사용 시 비디오 측정 데이터를 전송할 때 현재 세그먼트 데이터를 제공할 수 있습니다.  <br/><br/>어떤 이유에서든 플레이어가 한 세그먼트에서 다른 세그먼트로 변경되면 `Media.stop``Media.play`호출해야 합니다. <br/><br/>이 메소드는 다음 매개 변수를 사용합니다. <br/><br/> **mediaName:** 비디오 이름입니다. 이 이름은 Media.open에 사용된 이름과 일치해야 합니다.  <br/><br/> **mediaOffset:** 비디오에 재생이 시작되는 초 수입니다. 두 번째 0에서 시작하는 비디오를 기반으로 하여 오프셋을 지정합니다. 미디어 플레이어가 밀리초를 사용하여 추적하는 경우 Media.play를 호출하기 전에 값이 초로 변환되었는지 확인하십시오.  <br/><br/> **segmentNum:** (선택 사항) 마케팅 보고서에서 보고서에 세그먼트 표시 순서를 지정하는 데 사용하는 현재 세그먼트 번호입니다. segmentNum 매개 변수는 0보다 커야 합니다.  <br/><br/> **segment:** (선택 사항) 현재 세그먼트 이름입니다.  <br/><br/> **Segmentlength:** (선택 사항) <br/><br/>현재 세그먼트 길이 (초) 입니다. <br/><br/>예: <br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
 | `Media.stop` | **구문:** <br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>지정된 비디오에 대한 중지 이벤트(중지, 일시 중지 등)를 추적합니다. 이 메서드는 다음 매개 변수를 사용합니다. <ul> <li> **mediaName:** 비디오 이름입니다. 이 이름은 `Media.open`에 사용된 이름과 일치해야 합니다.  </li> <li> **mediaOffset:** 비디오에 중지 또는 일시 중지 이벤트가 발생하는 초 수입니다. 두 번째 0에서 시작하는 비디오를 기반으로 하여 오프셋을 지정합니다.   </li> </ul> |
 | `Media.monitor` | **구문:** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 구문:** <br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight 앱 미디어 모니터는 Objective-C 위임 디자인 패턴을 구현합니다. `myMediaMonitor` 클래스 메서드는 `s` AND `media` 매개 변수를 사용합니다. <br/><br/>이 메서드를 사용하여 추가 비디오 지표를 전송합니다. 추가 변수(Prop, eVar, Event)를 설정하고, 재생 중인 비디오의 현재 상태에 따라 `Media.track`을 사용하여 전송할 수 있습니다. <br/><br/>Media. monitor를 사용하여 추가 지표 [측정을 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html)<br/><br/>이 메소드는 다음 매개 변수를 사용합니다. <br/><br/>  **s:** `AppMeasurement` 인스턴스 (또는 JavaScript `s` 오브젝트) 입니다. <br/><br/> **미디어:** 비디오 상태를 제공하는 구성원을 갖는 개체. 이러한 구성원은 다음과 같습니다.  <ul><li> `media.name:` 비디오의 이름입니다. This must match the name used in `Media.open`; </li><li> `media.length:` 호출에서 지정된 비디오 길이 `Media.open`(초); </li><li> `media.playerName:` 호출에 지정된 미디어 플레이어의 이름 `Media.open`; </li><li> `media.openTime:` when data containing data about when `Media.open` been called; </li><li> `media.offset:` 비디오의 현재 오프셋(초)(비디오의 실제 지점)입니다. 오프셋은 0에서 시작합니다(비디오의 시작 초는 0초임); </li><li> `media.percent:` 비디오 길이 및 현재 오프셋을 기반으로 한, 재생된 비디오의 현재 비율입니다.;  </li><li> `media.timePlayed:` 지금까지 재생된 총 시간(초 수)입니다;  </li><li> `media.eventFirstTime:` 이 비디오에 대해 이 미디어 이벤트가 처음 호출되었는지를 나타냅니다; </li><li> `media.mediaEvent:` 모니터 호출을 발생시킨 이벤트 이름이 들어 있는 문자열입니다. </li></ul> |
