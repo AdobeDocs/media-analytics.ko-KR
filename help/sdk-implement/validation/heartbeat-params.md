@@ -3,21 +3,21 @@ seo-title: 하트비트 매개 변수 설명
 title: 하트비트 매개 변수 설명
 uuid: E 9 DDDA 32-0952-43 D 0-A 702-49 F 5 B 1 BFD 8 CF
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# 하트비트 매개 변수 설명{#heartbeat-parameter-descriptions}
+# Media Analytics (하트비트) 매개 변수 설명{#heartbeat-parameter-descriptions}
 
-Adobe가 하트비트 서버에서 수집하고 처리하는 하트비트 매개 변수 목록입니다:
+Adobe가 하트 비트 서버에서 수집하고 처리하는 미디어 분석 매개 변수 목록:
 
 ## 모든 이벤트
 
 | 이름 | 필수/선택적 | 데이터 소스 | 설명   |
 | ---  | :---: | --- | --- |
 | `s:event:type` | R | Media SDK | 추적 중인 이벤트 유형입니다. 이벤트 유형: <ul> <li> `s:event:type=start` </li> <li> `s:event:type=complete` </li> <li> `s:event:type=chapter_start` </li> <li> `s:event:type=chapter_complete` </li> <li> `s:event:type=buffer` </li> <li> `s:event:type=pause` </li> <li> `s:event:type=resume` </li> <li> `s:event:type=bitrate_change` </li> <li> `s:event:type=aa_start` </li> <li> `s:event:type=stall` </li> <li> `s:event:type=end` </li> </ul> |
-| `l:event:prev_ts` | R | Media SDK | 이 세션에서 같은 유형의 마지막 이벤트의 타임스탬프입니다. The value is `-1` |
+| `l:event:prev_ts` | R | Media SDK | 이 세션에서 같은 유형의 마지막 이벤트의 타임스탬프입니다. 값은 다음과 같습니다. `-1` |
 | `l:event:ts` | R | Media SDK | 이벤트의 타임스탬프입니다. |
 | `l:event:duration` | R | Media SDK | 이 값은 플레이어가 아닌 VHL 라이브러리에 의해 내부적으로 설정됩니다(밀리초). 백엔드에서 보낸 지표 시간을 계산하는 데 사용됩니다. `a.media.totalTimePlayed``type=play` 예를 들면 다음과 같습니다. 전송된 일부 HB에 대해 이 매개 변수를 "상태 변경 이벤트" (예: `type=complete``type=chapter_complete``type=bitrate_change` |
 | `l:event:playhead` | R | `VideoInfo` | 플레이헤드는 이벤트가 기록될 때 현재 활성 자산(주 자산 또는 광고 자산) 내부에 있었습니다. |
@@ -33,8 +33,8 @@ Adobe가 하트비트 서버에서 수집하고 처리하는 하트비트 매개
 | `s:cuser:customer_user_ids_x` | O | `MediaHeartbeatConfig` | Audience Manager에 설정된 모든 고객 사용자 ID입니다. |
 | `l:aam:loc_hint` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
 | `s:aam:blob` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:sc:rsid` | R | 보고서 세트 ID | 보고서를 전송해야 하는 SiteCatalyst RSID. |
-| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | SiteCatalyst 추적 서버. |
+| `s:sc:rsid` | R | 보고서 세트 ID | Adobe Analytics RSID 보고서를 전송해야 합니다. |
+| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Adobe Analytics 추적 서버. |
 | `h:sc:ssl` | R | `MediaHeartbeatConfig` | 트래픽이 HTTPS를 통해 전송되는지(1로 설정된 경우) 또는 HTTP를 통해 전송되는지(0으로 설정된 경우) 여부입니다. |
 | `s:sp:ovp` | O | `MediaHeartbeatConfig` | Primetime 플레이어의 경우 "primetime"으로 설정되고, 다른 플레이어의 경우 실제 OVP로 설정됩니다. |
 | `s:sp:sdk` | R | `MediaHeartbeatConfig` | OVP 버전 문자열입니다. |
