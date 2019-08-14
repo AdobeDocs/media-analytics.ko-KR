@@ -3,7 +3,7 @@ seo-title: 유효성 검사 개요
 title: 유효성 검사 개요
 uuid: BBC 6 B 6 D 6-1899-45 B 9-9 FB 7-8031 F 07563 F 6
 translation-type: tm+mt
-source-git-commit: 1c56217d2185e737388b45bad38e146aee9d2ddf
+source-git-commit: ca9347feb6175ade56a0a02af32bf3c8908481b7
 
 ---
 
@@ -14,4 +14,4 @@ source-git-commit: 1c56217d2185e737388b45bad38e146aee9d2ddf
 각 이벤트 및 메타데이터 매개 변수에 대해 예상 결과가 있습니다.
 
 * [테스트 1: 표준 재생](test1-standard-playback.md)
-* [테스트 2: 비디오 중단](test2-video-interrupt.md)
+* [테스트 2: 비디오 중단](test2-media-interrupt.md)
