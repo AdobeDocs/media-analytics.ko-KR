@@ -3,19 +3,19 @@ seo-title: 설정 개요
 title: 설정 개요
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# Setup Overview{#setup-overview}
+# 설정 개요{#setup-overview}
 
 >[!IMPORTANT]
 >
 >다음 지침은 2. x 미디어 SDK에 적용됩니다. Media SDK의 1.x 버전을 구현하는 경우 [1.x Media SDK 설명서를 참조하십시오.](/help/sdk-implement/download-sdks.md) Primetime 통합업체의 경우 아래의 _Primetime Media SDK 설명서를_ 참조하십시오.
 
 
-## Minimum Platform Version Support {#minimum-platform-version}
+## 최소 플랫폼 버전 지원 {#minimum-platform-version}
 
 다음 표는 2019 년 2 월 19 일부터 각 SDK에 대해 지원되는 최소 플랫폼 버전에 대해 설명합니다.
 
@@ -49,7 +49,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `ssl` | 호출이 HTTPS를 통해 수행돼야 하는지 여부를 나타냅니다. | 아니오 | false |
    | `debugLogging` | 디버그 로깅이 사용되는지 여부를 나타냅니다. | 아니오 | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. 을 구현합니다 `MediaHeartbeatDelegate`.
 
    |  메서드 이름  |  설명  | 필수 여부 |
    | --- | --- | :---: |
@@ -91,7 +91,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    
    //Media Heartbeat Config 
    var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "namespace.hb.omtrdc.net"; 
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
    mediaConfig.playerName = "HTML5 Basic"; 
    mediaConfig.channel = "Video Channel"; 
    mediaConfig.debugLogging = true; 
@@ -137,10 +137,10 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* **하트 비트 (Media Analytics)**
-는 항상 "`[namespace].hb.omtrdc.net`, 여기서"`[namespace]`형식을 가지며 Adobe에서 제공하는 형식입니다.
+* ** 미디어 분석 (하트 비트)**
+이 형식은 항상 형식을 갖습니다`[your_namespace].hb.omtrdc.net`. " 의 값은 회사를`[your_namespace]`지정하며 Adobe에서 제공합니다.
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## SDK 1. x 설명서 {#section_acj_tkk_t2b}
 
 | Video Analytics 1. x SDK  | 개발자 안내서 (PDF만 해당) |
 | --- | --- |
