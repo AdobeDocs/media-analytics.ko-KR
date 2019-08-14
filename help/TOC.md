@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 최종 사용자
 user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [이정표에서 사용자 지정 링크로의 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics의 사용자 지정 링크 {#cl-in-aa}
       + [사용자 지정 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}
++ 오디오 및 비디오 분석 소개 {#intro-to-ava}
    + [전제 조건](intro-to-ava/prereqs.md)
    + 구현 경로 {#implementation-paths}
       + [개요](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -113,7 +113,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
    + 유효성 검사 {#validation}
       + [유효성 검사 개요](sdk-implement/validation/validation-overview.md)
       + [테스트 1: 표준 재생](sdk-implement/validation/test1-standard-playback.md)
-      + [테스트 2: 비디오 중단](sdk-implement/validation/test2-video-interrupt.md)
+      + [테스트 2: 미디어 중단](sdk-implement/validation/test2-media-interrupt.md)
       + [테스트 호출 세부 사항](sdk-implement/validation/test-call-details.md)
       + [하트비트 매개 변수 설명](sdk-implement/validation/heartbeat-params.md)
       + 디버깅 {#debugging}
@@ -136,7 +136,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [마이그레이션 개요](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [코드 비교: 1.x와 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [1.x에서 2.x API로 전환](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ Media Collection API (restful) {#media-collection-api}
    + [개요](media-collection-api/mc-api-overview.md)
    + API 참조 {#mc-api-ref}
       + [세션 요청](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
