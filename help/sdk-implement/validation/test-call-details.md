@@ -3,7 +3,7 @@ seo-title: 테스트 호출 세부 사항
 title: 테스트 호출 세부 사항
 uuid: D 3 A 0 E 62 F -2 FC 3-413 D-AC 56-ADBBC 9 B 3 E 983
 translation-type: tm+mt
-source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -57,15 +57,15 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 | `s:meta:custom.[value]` | 사용자 지정 메타데이터 필드 |
 | `s:meta:a.media.[value]` | 표준 메타데이터 필드 |
 
-### Media Analytics 시작 호출의 비디오 메타데이터
+### Media Analytics 시작 호출의 미디어 메타데이터
 
 | 매개 변수 | 값(샘플)   |
 |---|---|
@@ -84,13 +84,13 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | aa_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-### 하트비트 시작 호출의 비디오 메타데이터
+### 하트비트 시작 호출의 미디어 메타데이터
 
 | 매개 변수 | 값(샘플)   |
 |---|---|
@@ -150,14 +150,14 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 | `s:meta:custom.[value]` | 사용자 지정 메타데이터 필드 |
 | `s:meta:a.media.[value]` | 표준 메타데이터 필드 |
 
-### Media Analytics 광고 시작 호출의 비디오 메타데이터
+### Media Analytics 광고 시작 호출의 미디어 메타데이터
 
 | 매개 변수 | 값(샘플)   |
 |---|---|
@@ -195,12 +195,12 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | aa_ad_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### 하트비트 광고 시작 호출의 비디오 메타데이터
+### 하트비트 광고 시작 호출의 미디어 메타데이터
 
 | 매개 변수 | 값(샘플)   |
 |---|---|
@@ -238,9 +238,9 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | complete |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
 ### 하트비트 광고 재생 호출
@@ -250,9 +250,9 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | play |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
 ## 주 컨텐츠 재생 {#section_u1l_1gf_f2b}
@@ -264,10 +264,10 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | play |
 | `l:event:playhead` | 29 |
 | `l:event:duration` | 10189 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | vod |
+| `s:stream:type` | vod |
 | `s:asset:type` | main |
 
 **참고:**
