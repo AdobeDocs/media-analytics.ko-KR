@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: 1607798 B-C 6 EF -4 D 60-8 E 40-E 958 C 345 B 09 C
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 주요 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 주요 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 전체 메타데이터 목록을 확인하십시오. [광고 매개 변수.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## 플레이어 이벤트 {#player-events}
 
 
 ### 광고 휴식 시간
@@ -46,7 +46,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 광고 브레이크 완료를 위해 `trackEvent`를 호출합니다.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 광고 추적 구현 {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### 광고 추적 상수
 
@@ -100,7 +100,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). 이렇게 하면 컨텐츠 체류 시간 지표에 부정적인 영향이 미칠 수 있습니다.
+>광고 재생 () 동안 Content Player playhead (`l:event:playhead``s:asset:type=ad`) 를 증분시키지 않아야 합니다. 이렇게 하면 컨텐츠 체류 시간 지표에 부정적인 영향이 미칠 수 있습니다.
 
 다음 샘플 코드는 HTML 5 미디어 플레이어에 JavaScript 2. x SDK를 활용합니다.
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## 유효성 검사 {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### 광고 시작
-
-개별 광고 재생 시작 시 세 가지 주요 호출이 다음 순서로 전송됩니다.
-
-1. 비디오 광고 분석 시작
-1. 하트비트 광고 시작
-1. 하트비트 분석 시작
-
-호출 1 및 2에는 사용자 지정과 표준에 대한 추가 메타데이터 변수가 모두 포함되어 있습니다.
-
-### 광고 재생
-
-광고 재생 중에 하트비트 광고 재생은 1초마다 하트비트 서버로 전송됩니다.
-
-### 광고 완료
-
-광고의 100% 포인트에서 하트비트 광고 전체 호출이 전송됩니다.
-
-### 광고 건너뛰기
-
-광고를 건너뛰면 이벤트가 전송되지 않으므로 추적 호출에 광고 정보가 포함되지 않습니다.
-
->[!TIP]
->
->광고 Break Start와 광고 Break Complete를 통해 고유한 호출이 전송되지 않습니다.
 
