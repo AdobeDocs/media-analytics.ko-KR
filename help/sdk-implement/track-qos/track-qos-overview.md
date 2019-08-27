@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: 4 d 73 c 47 f-d 0 a 4-4228-9040-d 6432311 c 9 eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 미디어 플레이어 API를 사용하여 QoS 및 오류 추적과 관련된 변수를 식별할 수 있습니다. 다음은 경험 추적 품질의 핵심 요소입니다.
 
-## Player events {#player-events}
+## 플레이어 이벤트 {#player-events}
 
 ### QoS 지표 변경 사항이 있을 경우:
 
@@ -71,12 +71,3 @@ if (e.type == "bitrate_change") {
 };
 ```
 
-## 유효성 검사 {#section_F3174831408947A893F7E8C15659E5AA}
-
-### 비트율 변경
-
-각 비트율 변경 시 하트비트 `bitrate_change` 호출이 전송됩니다.
-
-### 오류
-
-플레이어 오류 시 오류 값이 포함된 하트비트 오류 호출이 전송됩니다.
