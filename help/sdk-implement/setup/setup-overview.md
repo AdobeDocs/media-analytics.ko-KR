@@ -3,7 +3,7 @@ seo-title: 설정 개요
 title: 설정 개요
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,15 +121,13 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ## 유효성 검사 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-미디어 구현은 다음과 같은 두 가지 유형의 추적 호출로 구성됩니다.
+미디어 분석 추적 구현은 두 가지 유형의 추적 호출을 생성합니다.
 
-* 미디어 및 광고 시작 호출은 AppMeasurement 서버에 직접 전송됩니다.
-* 하트 비트 호출은 시작 시, 컨텐츠에 대해서는 10초마다, 광고에 대해서는 1초마다 하트비트 추적 서버로 전송됩니다.
+* 미디어 및 광고 시작 호출은 Adobe Analytics (appmeasurement) 서버로 바로 전송됩니다.
+* 하트비트 호출은 미디어 분석 (하트 비트) 추적 서버로 전송되어 처리되고 Adobe Analytics 서버로 전달됩니다.
 
-미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 오디오 추적은 현재 모바일 플랫폼에서 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
-
-* **Appmeasurement (Analytics)**
-추적 서버 옵션에 대한 자세한 내용은 [Trackingserver 및 trackingserversecure 변수 올바로 채우기를 참조하십시오.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Adobe Analytics (appmeasurement) 서버**
+추적 서버 옵션에 대한 자세한 내용은 trackingserver 및 trackingserversecure 변수 올바로 채우기를 참조하십시오 [.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -137,8 +135,10 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** 미디어 분석 (하트 비트)**
-이 형식은 항상 형식을 갖습니다`[your_namespace].hb.omtrdc.net`. " 의 값은 회사를`[your_namespace]`지정하며 Adobe에서 제공합니다.
+* ** Media Analytics (하트 비트) 서버**
+에는 항상 형식이 있습니다`[your_namespace].hb.omtrdc.net`. " 의 값은 회사를`[your_namespace]`지정하며 Adobe에서 제공합니다.
+
+미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 오디오 추적은 현재 모바일 플랫폼에서 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
 
 ## SDK 1. x 설명서 {#section_acj_tkk_t2b}
 
