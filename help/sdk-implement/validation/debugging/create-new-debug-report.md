@@ -3,7 +3,7 @@ seo-title: 새 디버그 보고서 만들기
 title: 새 디버그 보고서 만들기
 uuid: 438 FDE 3 D -98 F 9-46 D 1-9672-75 D 204361568
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
          * [!UICONTROL Analytics &gt; 관리 &gt; 사용자 관리 &gt; 사용자 &gt; 개별 사용자 설정] 새 사용자에 대한 웹 서비스 API 자격 증명을 작성하려면 [!UICONTROL 사용자 관리]에서 사용자를 **웹 서비스 액세스** 사용자 그룹에 추가합니다.
       * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며 변경할 수 없습니다.
       * [!UICONTROL extra endpoint] `CNAMES`- `metrics.companyname.com`
-   * **미디어 하트 비트**
+   * **비디오 하트비트 (Media Analytics)**
 
       * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며 변경할 수 없습니다.
       * [!UICONTROL extra endpoints] - add `CNAMES`(if you use them, for your tracking server, e. g., `metrics.companyname.com`).
