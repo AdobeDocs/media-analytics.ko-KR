@@ -3,7 +3,7 @@ seo-title: 라이브 주 컨텐츠
 title: 라이브 주 컨텐츠
 uuid: E 92 E 99 F 4-C 395-48 AA -8 A 30-CBDD 2 F 5 FC 07 C
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Analytics 컨텐츠 시작 호출 시 표시되는 같은 값의 대부분
 
 ## 컨텐츠 하트비트 {#section_7B387303851A43E5993F937AE2B146FE}
 
-미디어 재생 중에 10 초마다 하나 이상의 하트 비트를 보내는 타이머가 있습니다. 이러한 하트비트에는 재생, 광고, 버퍼링 및 기타 여러 가지에 대한 정보가 포함되어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나며, 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 확인하는 것이 중요합니다.
+미디어 재생 중에 메인 컨텐츠의 경우 10 초마다 하트비트 (또는 ping) 를 하나 이상 보내는 타이머가 있고, 광고에 대해서는 매 초 동안 전송됩니다. 이러한 하트비트에는 재생, 광고, 버퍼링 및 기타 여러 가지에 대한 정보가 포함되어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나며, 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 확인하는 것이 중요합니다.
 
 컨텐츠 하트비트에서 다음 몇 가지 특정 항목을 찾으십시오.
 
@@ -59,13 +59,13 @@ Adobe Analytics 컨텐츠 시작 호출 시 표시되는 같은 값의 대부분
 
 ### at start
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. 재생 헤드를 "0" 로 설정하는 VOD 와는 다릅니다.
+라이브 미디어의 경우 사용자가 스트림 재생을 시작할 때 현재 오프셋을 초 단위로 설정해야 `l:event:playhead` 합니다. 재생 헤드를 "0" 로 설정하는 VOD 와는 다릅니다.
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). 그런 다음 사용자가 오후 12 시에 해당 라이브 스트림을 재생한다고 가정해 보십시오. In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+예를 들어 실시간 스트리밍 이벤트는 자정에 시작되고 24 시간 동안 실행됩니다 (`a.media.length=86400`; `l:asset:length=86400`). 그런 다음 사용자가 오후 12 시에 해당 라이브 스트림을 재생한다고 가정해 보십시오. 이 시나리오에서는 43200 (12 시간) 로 설정해야 `l:event:playhead` 합니다.
 
 ### 일시 중지 시
 
-사용자가 재생을 일시 중지하면 재생 시작에 적용된 동일한 "실시간 재생 헤드" 로직이 적용되어야 합니다. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+사용자가 재생을 일시 중지하면 재생 시작에 적용된 동일한 "실시간 재생 헤드" 로직이 적용되어야 합니다. 사용자가 라이브 스트림 재생으로 돌아오면 `l:event:playhead` 사용자가 라이브 스트림을 일시 중지한 지점이 _아니라_ 새로운 오프셋 재생 헤드 위치로 값을 설정해야 합니다.
 
 ## 샘플 코드 {#section_vct_j2j_x2b}
 
