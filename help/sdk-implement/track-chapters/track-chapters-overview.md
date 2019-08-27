@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: 3 FE 32425-5 E 2 A -4886-8 FEA-D 91 D 15671 BB 0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 호출 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 챕터 추적 구현 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## 유효성 검사 {#section_07EC2811BE3249249494596BFE9BF869}
-
-### 챕터 시작
-
-개별 장 (chapter) 재생이 시작되면 하나의 키 호출이 전송됩니다.
-
-* 하트비트 장 시작 (이 호출에는 추가 장 메타데이터 변수가 포함되어 있습니다.)
-
-### 챕터 완료
-
-챕터 경계 끝에서 하트비트 챕터 완료 호출이 전송합니다.
-
-### 챕터 건너뛰기
-
-챕터를 건너뛰면 하트비트 챕터 건너뛰기 호출이 전송됩니다.
