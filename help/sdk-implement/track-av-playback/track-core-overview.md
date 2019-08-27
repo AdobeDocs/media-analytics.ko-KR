@@ -3,12 +3,12 @@ seo-title: 추적 개요
 title: 추적 개요
 uuid: 7 B 8 E 2 F 76-BC 4 E -4721-8933-3 E 4453 B 01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# 추적 개요{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 미디어 개체 만들기
 * 메타데이터 채우기
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* 호출 `trackSessionStart`; 예를 들면 다음과 같습니다. `trackSessionStart(mediaObject, contextData)`
 
 ### 미디어 시작 시
 
@@ -59,7 +59,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 `getCurrentPlayheadTime`내용은 [개요: 일반 구현 지침.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 구현 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## 유효성 검사 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### 컨텐츠 시작
+구현 확인에 대한 자세한 내용은 [유효성 검사를 참조하십시오.](/help/sdk-implement/validation/validation-overview.md)
 
-미디어 플레이어 시작 시 다음과 같은 주요 호출이 다음 순서로 전송됩니다.
-
-1. Media Analytics 시작
-1. 하트비트 시작
-1. 하트비트 분석 시작
-
-호출 1 및 2에는 사용자 지정과 표준에 대한 추가 메타데이터 변수가 모두 포함되어 있습니다.
-
-### 컨텐츠 재생
-
-기본 컨텐츠 재생 중에 하트비트 호출은 10초마다 하트비트 서버로 전송됩니다.
-
-### 컨텐츠 완료
-
-컨텐츠의 100% 포인트에서 또는 선형 스트림의 프로그램 경계에서 하트비트 전체 호출이 전송됩니다.
-
-### 컨텐츠 일시 정지
-
-플레이어가 일시 정지되면 플레이어의 일시 정지 이벤트 호출이 10초마다 전송됩니다. 일시 정지가 종료되면 재생 이벤트가 재개되어야 합니다.
-
-### 컨텐츠 스크럽/찾기
-
-플레이헤드를 스크럽할 때 특별한 추적 호출이 전송되지 않습니다. 그러나 스크럽한 후 재생이 재개되면 플레이헤드 값이 기본 컨텐츠의 새로운 위치를 반영해야 합니다.
-
-### 컨텐츠 버퍼
-
-미디어 플레이어가 버퍼링되면 플레이어 버퍼 이벤트 호출이 10초마다 전송됩니다. 버퍼링이 종료되면 재생 이벤트가 재개됩니다.
