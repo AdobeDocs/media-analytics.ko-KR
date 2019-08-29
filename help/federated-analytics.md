@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: A 82 ACE 81-C 2 F 6-4799-9 A 62-4 C 6 A 737 A 7 DAB
 translation-type: tm+mt
-source-git-commit: 5e067a664a97292902c847af5e913584a2b62fc8
+source-git-commit: 2760ff12ef9125f724cc98d263ba0d6961ffe35c
 
 ---
 
@@ -41,7 +41,7 @@ Federated Analytics 서비스는 두 파트너 간에 Adobe Media(오디오와 �
 
 1. 보낸 사람과 받은 사람은 함께 페더레이션 규칙 계약 양식을 작성합니다.
 
-   **양식의 현재 버전을 다운로드하십시오.**
+   **현재 버전의 양식을 다운로드하십시오.**
 
    [Federation Rules Agreement](federated_analytics_form.pdf)
 
