@@ -3,12 +3,12 @@ seo-title: 사용자 지정 링크 구현 안내서
 title: 사용자 지정 링크 구현 안내서
 uuid: 83315e73-2 파섹
 translation-type: tm+mt
-source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
+source-git-commit: f790d60c7c19dc203ea5dd48e1e55ec20a341900
 
 ---
 
 
-# 사용자 지정 링크 구현 안내서{#custom-link-implementation-guide}
+# Custom Link Implementation Guide{#custom-link-implementation-guide}
 
 Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 대개 사용자 지정 비디오 링크 비디오 추적은 최소한의 비디오 측정이 필요한 플랫폼 및 장치에서 사용됩니다.
 
