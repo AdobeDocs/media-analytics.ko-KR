@@ -1,9 +1,9 @@
 ---
 seo-title: Roku에서 체감 품질 추적
 title: Roku에서 체감 품질 추적
-uuid: A 8 B 242 AB-DA 3 C -4297-9 EEF-F 0 B 9684 EF 56 A
+uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 구현 QOS
+## QOS 구현
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
+1. 미디어 재생 중에 비트 전송률이 변경되는 경우를 식별하고 API를 사용하여 `mediaUpdateQoS` 미디어 SDK의 QoS 정보를 업데이트합니다.
 
    QoSObject 변수:
 
    >[!TIP]
    >
-   >이 변수는 QoS를 추적하는 경우에만 필요합니다.
+   >이러한 변수는 QoS를 추적하는 경우에만 필요합니다.
 
    | 변수 | 설명 | 필수 여부 |
    | --- | --- | :---: |
@@ -55,15 +55,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed.
+1. 재생이 비트 전송률을 전환할 `trackEvent(BitrateChange)` 때 Media SDK에 비트 전송률이 변경되었음을 알리는 호출을 참조하십시오.
 
    ```
-   ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
    ```
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >업데이트된 비트 전송률 `updateQoSObject` 값으로 전화해야 합니다.
 
    <!--
     ```
@@ -76,7 +76,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. [(개요](/help/sdk-implement/track-errors/track-errors-overview.md)참조)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
