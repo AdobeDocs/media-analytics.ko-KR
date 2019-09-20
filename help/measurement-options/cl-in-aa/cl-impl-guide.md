@@ -3,7 +3,7 @@ seo-title: 사용자 지정 링크 구현 안내서
 title: 사용자 지정 링크 구현 안내서
 uuid: 83315e73-2 파섹
 translation-type: tm+mt
-source-git-commit: 799199b2891558dca72aa167c0061066578802ca
+source-git-commit: d325f3184932b179bbd6cde0d3e82cb2e278dd2a
 
 ---
 
@@ -31,7 +31,7 @@ Custom Video Tracking utilizes [manual link tracking using custom link code](htt
 /* Call on video complete */ 
  
 if (e.type == "ended") {  
-    s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15’; 
+    s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15'; 
     s.linkTrackEvents = 'event3'; 
     s.prop10 = mediaName; 
     s.eVar10 = mediaName; 
