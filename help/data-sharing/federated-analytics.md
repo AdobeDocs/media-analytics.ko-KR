@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ef6e37791cd365b12d964b2a06831a563f605104
 
 ---
 
@@ -33,15 +33,15 @@ Federated Analytics 서비스는 두 파트너 간에 Adobe Media(오디오와 �
 
 * **Media 스트림 계약:** 보낸 사람과 받는 사람은 Adobe Analytics 내의 오디오 및 비디오 데이터에 액세스하려면 Adobe Analytics for Media Streams에 등록해야 합니다. 자세한 내용은 계정 팀에 문의하십시오.
 * **페더레이션 추록:**&#x200B;보낸 사람과 받는 사람은 각각 데이터를 보내거나 받기 전에 Adobe와 함께 서명한 추록이 있어야 합니다. 파트너십 당 하나의 추록이 아니라, 고객 당 하나의 추록이 필요합니다. 자세한 내용은 계정 팀에 문의하십시오.
-* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. See documentation: [Measuring audio and video in Adobe Analytics](media-overview.md)
+* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe Consulting Contract:**&#x200B;보낸 사람과 받은 사람 간의 초기 페더레이션 규칙 설정의 경우 컨설팅 서비스 팀과 함께 작업하여 데이터를 검토하고 데이터 공유 계약을 작성하는 것이 중요합니다.
 
 ## 프로세스 {#section_byb_kb3_vbb}
 
 1. 보낸 사람과 받은 사람은 함께 페더레이션 규칙 계약 양식을 작성합니다.
-1. 양식의 현재 버전은 다음 사이트에서 다운로드할 수 있습니다.페더레이션 [규칙 계약 양식.](/assets/federated_analytics_form.pdf)
-1. Federated Rules Agreement 양식에는 엔지니어링 팀을 위한 특수 필드가 포함되어 있으며 Adobe Acrobat을 사용해서만 편집해야 합니다. [Acrobat을 무료로 다운로드합니다.](https://get.adobe.com/reader/)
+1. Download the current version of the form here: [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
+1. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Acrobat을 무료로 다운로드합니다.](https://get.adobe.com/reader/)
 1. 데이터 파일이 있다면, 컨설팅 서비스는 보낸 사람의 플레이어에서 실제 데이터가 있는 받는 사람에게 샘플 데이터 파일을 제공하여 올바른 데이터 공유 규칙이 정의되어 있는지 확인합니다.
 1. 보낸 사람과 받는 사람은 데이터 공유 계약이 두 당사자 간의 계약 요구 사항을 모두 충족하는지 확인합니다.
 1. 컨설팅 서비스는 작성된 양식을 Adobe 엔지니어링 부서로 보내어 데이터 공유 규칙을 설정합니다.
