@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: a80097ac92c422bcf9c04a18ee91a20d3d383af4
+source-git-commit: 02f68cf887011e64a2f1a0e84d1e2bad1569b0e7
 
 ---
 
@@ -39,9 +39,9 @@ Federated Analytics 서비스는 두 파트너 간에 Adobe Media(오디오와 �
 
 ## 프로세스 {#section_byb_kb3_vbb}
 
-1. 보낸 사람과 받은 사람은 함께 페더레이션 규칙 계약 양식을 작성합니다. **** 양식의 현재 버전은 다음 사이트에서 다운로드할 수 있습니다.페더레이션 [규칙 계약 양식.](/assets/federated_analytics_form.pdf)
-
-   [!참고 이 양식에는 엔지니어링 팀을 위한 특수 필드가 포함되어 있으며 Adobe Acrobat을 사용해서만 편집해야 합니다. [Acrobat을 무료로 다운로드합니다.](https://get.adobe.com/reader/)
+1. 보낸 사람과 받은 사람은 함께 페더레이션 규칙 계약 양식을 작성합니다.
+1. Download the current version of the form here: [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
+1. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Acrobat을 무료로 다운로드합니다.](https://get.adobe.com/reader/)
 1. 데이터 파일이 있다면, 컨설팅 서비스는 보낸 사람의 플레이어에서 실제 데이터가 있는 받는 사람에게 샘플 데이터 파일을 제공하여 올바른 데이터 공유 규칙이 정의되어 있는지 확인합니다.
 1. 보낸 사람과 받는 사람은 데이터 공유 계약이 두 당사자 간의 계약 요구 사항을 모두 충족하는지 확인합니다.
 1. 컨설팅 서비스는 작성된 양식을 Adobe 엔지니어링 부서로 보내어 데이터 공유 규칙을 설정합니다.
