@@ -1,7 +1,7 @@
 ---
 seo-title: 미디어 작업 공간 템플릿
 title: 미디어 작업 공간 템플릿
-uuid: 0024 b 06 a-EAF 5-4 d 2 e-be 45-AEDA 9 D 0554 c 1
+uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
