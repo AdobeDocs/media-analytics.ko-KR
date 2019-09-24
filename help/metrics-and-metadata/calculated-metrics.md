@@ -1,7 +1,7 @@
 ---
 seo-title: 계산된 지표
 title: 계산된 지표
-uuid: 9 DD 35155-58 AA -4 F 05-896 E-C 5 CBC 4 B 13 D 59
+uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 translation-type: tm+mt
 source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
@@ -12,13 +12,13 @@ source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
 >[!NOTE]
 >
->이 계산된 지표는 9/13/18에 도입되었습니다.
+>이러한 계산된 지표는 2018년 9월 13일에 도입되었습니다.
 
 | 지표 | 설명 | 공식 |
 |---|---|---|
-| 미디어 스트림당 평균 광고 | 미디어당 광고 시작 시작 | `Ad Starts / Media Starts` |
-| 미디어 스트림당 장 평균 챕터 | 미디어당 챕터 시작 시작 | `Chapter Start / Media Starts` |
-| 평균 미디어 사용 시간 | 미디어당 총 체류 시간 (HH: MM: ss) | `Media Time Spent / Media Starts` |
+| 미디어 스트림당 평균 광고 | 미디어 시작당 광고 시작 | `Ad Starts / Media Starts` |
+| 미디어 스트림당 장 평균 챕터 | 미디어 시작당 장 시작 | `Chapter Start / Media Starts` |
+| 평균 미디어 사용 시간 | 미디어 시작당 총 체류 시간(HH:MM:SS) | `Media Time Spent / Media Starts` |
 | 평균 컨텐츠 체류 시간 | 컨텐츠 시작당 컨텐츠 체류 시간(HH:MM:SS) | `Content Time Spent / Content Start` |
 | 평균 광고 체류 시간 | 광고 시작당 광고 체류 시간(HH:MM:SS) | `Ad Time Spent / Ad Start` |
 | 평균 챕터 체류 시간 | 챕터 시작당 챕터 체류 시간(HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
