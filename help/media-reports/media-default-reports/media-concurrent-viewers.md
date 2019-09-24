@@ -1,7 +1,7 @@
 ---
 seo-title: 미디어 Concurrent Viewer
 title: 미디어 Concurrent Viewer
-uuid: E 61 C 50 E 5-8196-4538-B 67 C-EBC 01 C 6 E 6 BA 7
+uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
@@ -14,7 +14,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 >[!TIP]
 >
->선택한 간격이 전체 일이 아닐 경우 데이터가 표시되지 않습니다.
+>선택한 간격이 하루 중 일부가 아닌 경우 데이터가 표시되지 않습니다.
 
 ![](assets/video-concurrent-viewers.png)
 
