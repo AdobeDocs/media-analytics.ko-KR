@@ -1,7 +1,7 @@
 ---
 seo-title: 이정표에서 사용자 지정 링크로의 마이그레이션
 title: 이정표에서 사용자 지정 링크로의 마이그레이션
-uuid: 1 c 8 edde 5-0 ef 1-4 bc 0-a 62 d -1747 f 4907 f 09
+uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -95,8 +95,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  Trackusingcontextdata 
- = true;
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -104,11 +103,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events, 
-contextdata. video. name '; 
-s. contextdata [' video. name ']
- = medianame;
+s.linkTrackVars = 'events, contextData.video.name';
+s.contextData['video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -119,23 +115,7 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  Contextdatamapping = {"a. Media. Name":
- " evar 2, prop 2 ","
- a. media. segment ":
- " Evar 3 ","
- a. contenttype ":
- " Evar 1 ","
- a. Media. timeplayed ":
- " event 3 ","
- a. media. view ":
- " event 1 ","
- a. media. segmentview ":
- " event 2 ","
- a. media. complete ":
- " event 7 ","
- a. media. milestone ": {25: " event 4 ",
- 50: " event 5 ",
- 75: " event 6 "}};
+  contextDataMapping = { "a.media.name":    "eVar2,prop2", "a.media.segment":    "eVar3", "a.contentType":    "eVar1", "a.media.timePlayed":    "event3", "a.media.view":    "event1", "a.media.segmentView":    "event2", "a.media.complete":    "event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>해당 없음
@@ -149,12 +129,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackvars
- = "events,
- prop 2,
- evar 1,
- evar 2,
- evar 3";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>
@@ -162,17 +137,9 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 13,
- evar 15,
- contextdata.
- video. name,
- contextdata.
- video. view ';
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
+       video.name, contextData.
+       video.view';
 </pre>
 </td>
 </tr>
@@ -182,14 +149,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackevents
- = "event 1,
- event 2,
- event 3,
- event 4,
- event 5,
- event 6,
- event 7"
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>
@@ -197,8 +157,7 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s. linktrackevents
- =' event 2 ';
+s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
@@ -226,8 +185,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  Trackusingcontextdata 
- = true;
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -235,11 +193,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events, 
-contextdata. video. name '; 
-s. contextdata [' video. name ']
- = medianame;
+s.linkTrackVars = 'events, contextData.video.name';
+s.contextData['video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -249,16 +204,7 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s. Media. contextdatamapping = {"a. Media. name": " evar 2, prop 2 ","
- a. media. segment ": " Evar 3 ","
- a. contenttype ": " Evar 1 ","
- a. Media. timeplayed ": " event 3 ","
- a. media. view ": " event 1 ","
- a. media. segmentview ": " event 2 ","
- a. media. complete ": " event 7 ","
- a. media. milestone ": {25: " event 4 ",
- 50: " event 5 ",
- 75: " event 6 "}};
+s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.media segmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>해당 없음
@@ -272,12 +218,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackvars
- = "events,
- prop 2,
- evar 1,
- evar 2,
- evar 3";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>
@@ -285,17 +226,9 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 13,
- evar 15,
- contextdata.
- video. name,
- contextdata.
- video. view ';
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
+       video.name, contextData.
+       video.view';
 </pre>
 </td>
 </tr>
@@ -305,14 +238,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackevents
- = "event 1,
- event 2,
- event 3,
- event 4,
- event 5,
- event 6,
- event 7"
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>
@@ -320,8 +246,7 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s. linktrackevents
- =' event 2 ';
+s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
@@ -393,8 +318,7 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  Completecloseoffsetthreshold
- = 1
+  completeCloseOffsetThreshold = 1
 </pre>
 </td>
 <td>해당 없음
@@ -416,8 +340,7 @@ s.Media.playerName = "Custom Player Name"
 </td>
 <td>
 <pre>
-s. contextdata [' video. player ']
- =» customplayer Name»;
+s.contextData['video.player'] ="CustomPlayer Name";
 </pre>
 </td>
 </tr>
@@ -484,8 +407,7 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Segmentbyoffsetmilestones
- = true;
+  segmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>해당 없음
@@ -547,8 +469,7 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Adtrackoffsetmilestones 
- = "20,40,60";
+  adTrackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>해당 없음
@@ -563,8 +484,7 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  Adsegmentbymilestones
- = true;
+  adSegmentByMilestones = true;
 </pre>
 </td>
 <td>해당 없음
@@ -579,8 +499,7 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Adsegmentbyoffsetmilestones
- = true;
+  adSegmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>해당 없음
@@ -617,44 +536,17 @@ s.Media.open(mediaName,mediaLength,mediaPlayerName)
 <td>s.tl()</td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 15,
- contextdata. video. name,
- contextdata. video. view ';
-s. linktrackevents 
- =' event 2 ';
-s. prop 10 
- = Medianame;
-s. evar 10 
- = Medianame;
-s. evar 12 
- = "video";
-s. evar 15 
- = Mediaplayername;
-s. events 
- =' event 2 ';
-s. contextdata [' video. name '] 
- = Medianame;
-s. contextdata [' video. view '] 
- =' true ';
-s. tl (this,' o ',' Video Start ');
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.view';s.linkTrackEvents = 'event2';s.prop10 = mediaName;s.eVar10 = mediaName;s.eVar12 = "video";s.eVar15 = mediaPlayerName;s.events = 'event2';s.contextData['video.name'] = mediaName;s.contextData['video.view'] = 'true';s.tl(this,'o','비디오 시작');
 </pre>
 </td>
 </tr>
 <tr>
 <td>mediaName</td>
-<td><b>Medianame:</b> (필수) 비디오 보고서에 표시할 비디오의 이름입니다.</td>
+<td><b></b> mediaName:(필수) 비디오 보고서에 표시할 비디오의 이름입니다.</td>
 <td>링크 호출에서 eVar 또는 컨텍스트 데이터 변수를 설정합니다.</td>
 <td>
 <pre>
-s. prop 10 = medianame;
-s. evar 10 = medianame;
-s. contextdata [' video. name ']
- = medianame;
+s.prop10 = mediaName;s.eVar10 = mediaName;s.contextData['video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -663,15 +555,14 @@ s. contextdata [' video. name ']
 mediaLength
 </td>
 <td>
-<b>Medialength:</b> (필수) 비디오의 길이 (단위: 초)
+<b></b> mediaLength:(필수) 비디오 길이(초)입니다.
 </td>
 <td>
 링크 호출에서 eVar 또는 컨텍스트 데이터 변수를 설정합니다.
 </td>
 <td>
 <pre>
-s. contextdata [' video. length ']
- =» 90»;
+s.contextData['video.length'] ="90";
 </pre>
 </td>
 </tr>
@@ -680,17 +571,14 @@ s. contextdata [' video. length ']
 mediaPlayerName
 </td>
 <td>
-<b>Mediaplayername:</b> (필수) 비디오
-보고서에 표시되기 원하는 방식으로 비디오를 보는 데 사용되는 미디어 플레이어의
-이름입니다.
+<b></b> mediaPlayerName:(필수) 비디오를 비디오에 표시할 미디어 플레이어의 이름입니다.
 </td>
 <td>
 링크 호출에서 eVar 또는 컨텍스트 데이터 변수를 설정합니다.
 </td>
 <td>
 <pre>
-s. contextdata [' video. player ']
- =» customplayer Name»;
+s.contextData['video.player'] ="CustomPlayer Name";
 </pre>
 </td>
 </tr>
@@ -709,7 +597,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 </tr>
 <tr>
 <td>이름</td>
-<td><b>이름:</b> (필수) 광고의 이름 또는 ID 입니다.</td>
+<td><b></b> name:(필수) 광고의 이름 또는 ID.</td>
 <td>해당 없음</td>
 <td>사용할 수 없음</td>
 </tr>
@@ -718,7 +606,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 length
 </td>
 <td>
-<b>길이:</b> (필수) 광고의 길이입니다.
+<b></b> 길이:(필수) 광고의 길이
 </td>
 <td>해당 없음
 </td>
@@ -730,8 +618,7 @@ length
 playerName
 </td>
 <td>
-<b>playername:</b> (필수) 광고를 보는 데 사용되는
-미디어 플레이어의 이름입니다.
+<b></b> playerName:(필수) 광고를 보는 데 사용되는 미디어 플레이어의 이름입니다.
 </td>
 <td>해당 없음
 </td>
@@ -831,33 +718,9 @@ s.tl()
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 15,
- contextdata.
- video. name,
- contextdata.
- video. complete ';
-s. linktrackevents 
- =' event 3 ';
-s. prop 10 
- = Medianame;
-s. evar 10 
- = Medianame;
-s. evar 12 
- = "video";
-s. evar 15 
- = Mediaplayername;
-s. events 
- =' event 3 ';
-s. contextdata [' video. name ']
- = medianame;
-s. contextdata [' video. complete ']
- =' true ';
-s. tl (this,' o ',' video complete ');
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.
+       video.name, contextData.
+       video.complete';s.linkTrackEvents = 'event3';s.prop10 = mediaName;s.eVar10 = mediaName;s.eVar12 = "video";s.eVar15 = mediaPlayerName;s.events = 'event3';s.contextData['video.name'] = mediaName;s.contextData['video.complete'] = 'true';s.tl(this,'o','Video Complete');
 </pre>
 </td>
 </tr>
@@ -903,17 +766,9 @@ s.Media.monitor(s, media)
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 15,
- contextdata.
- video. name,
- contextdata.
- video. view ';
-s. linktrackevents =' event 2 ';
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.
+       video.name, contextData.
+       video.view';s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
