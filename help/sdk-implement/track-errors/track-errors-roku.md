@@ -1,7 +1,7 @@
 ---
 seo-title: Roku에서 오류 추적
 title: Roku에서 오류 추적
-uuid: 4 E 0165 F 9-9169-47 ED -9 F 11-EA 8 A 8778 F 663
+uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
