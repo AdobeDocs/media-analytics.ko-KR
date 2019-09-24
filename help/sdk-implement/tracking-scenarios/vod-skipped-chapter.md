@@ -1,7 +1,7 @@
 ---
 seo-title: 챕터를 건너뛰고 VOD 재생
 title: 챕터를 건너뛰고 VOD 재생
-uuid: 19 FB 020 C-EB 7 A -4942-9212-94 F 4 D 47195 B 9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고 |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 인식하지 못합니다. 이러한 네트워크 호출은 여전히 [iOS](vod-no-intrs-details.md) 시나리오 중단 없이 재생할 수 있습니다. |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 인식하지 못합니다. 이러한 네트워크 호출은 여전히 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | 챕터가 시작됨. | `trackEvent:ChapterStart` | 하트비트 챕터 시작 |  |
 | 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 챕터 재생 | 챕터 컨텐츠가 주 컨텐츠 전에 재생되는 경우 챕터가 시작될 때 하트비트를 시작하려고 합니다. |
 | 챕터가 재생됨. |  | 챕터 하트비트 |  |
@@ -27,7 +27,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 애플리케이션이 사용자가 정규 챕터 경계를 벗어나 이동했음을 인식함. | `trackEvent:trackChapterSkip` |  |  |
 | 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 |  |
 | 컨텐츠 재생이 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 사용자가 미디어 완료 상태를 지켜보지 못하는 경우에도 이 API를 호출해야 합니다. |
+| 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 이 API는 사용자가 완료할 미디어를 보지 않는 경우에도 호출해야 합니다. |
 
 ## 매개 변수 {#section_1874F6B7880B43C5856BD11FF85B382E}
 
