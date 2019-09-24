@@ -1,7 +1,7 @@
 ---
 seo-title: 타임라인 2 - 사용자가 세션을 중단함
 title: 타임라인 2 - 사용자가 세션을 중단함
-uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, 프리롤 광고, 미드롤 광고, 사용자가 일찍 컨텐츠를 중단함
 
-다음 다이어그램에서는 재생 헤드 타임라인과 사용자 동작의 해당 타임라인을 보여 줍니다. 각 작업에 대한 세부 사항과 그에 수반되는 요청이 아래에 나와 있습니다.
+다음 다이어그램은 재생 헤드 타임라인과 사용자 작업의 해당 타임라인을 보여 줍니다. 각 작업 및 추가 요청에 대한 세부 사항은 아래에 나와 있습니다.
 
 
 ![](assets/va_api_content_2.png)
@@ -23,7 +23,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 작업 세부 사항
 
-### Action 1 - Start session {#Action-1}
+### 작업 1 - 세션 시작 {#Action-1}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -58,7 +58,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### 동작 2 - Ping 타이머 시작 {#Action-2}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 정보**
 
-앱의 Ping 타이머를 시작합니다. 사전 롤 광고가 있는 경우 첫 번째 ping 이벤트가 1 초 이내에 실행되고 그렇지 않으면 10 초가 발생합니다.
+Start your app's ping timer. 그러면 첫 번째 핑 이벤트는 프리롤 광고가 있는 경우 1초, 그 외의 경우에는 10초입니다.
 
-### Action 3 - Ad break start {#Action-3}
+### 작업 3 - 광고 중단 시작 {#Action-3}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -94,7 +94,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### 동작 4 - 광고 시작 {#Action-4}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -129,7 +129,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### 동작 5 - 광고 핑 {#Action-5}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -137,7 +137,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 정보**
 
-1 초 간격으로 백엔드를 ping 합니다. (편의상 표시되지 않는 후속 광고 ping.)
+Ping the backend every 1 second. (간결한 관계로 이어지는 광고 게시물은 표시되지 않습니다.)
 
 **샘플 요청 본문**
 
@@ -151,7 +151,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 작업 6 - 광고 완료 {#Action-6}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -173,7 +173,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### 작업 7 - 광고 중단 완료 {#Action-7}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -195,7 +195,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### 동작 8 - 컨텐츠 재생 {#Action-8}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -218,7 +218,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### 동작 9 - Ping {#Action-9}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -240,7 +240,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### 동작 10 - Ping {#Action-10}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### 작업 11 - 오류 {#Action-11}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### 동작 12 - 컨텐츠 재생 {#Action-12}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -305,7 +305,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### 동작 13 - Ping {#Action-13}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -327,7 +327,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### 작업 14 - 광고 중단 시작 {#Action-14}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -353,7 +353,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### 동작 15 - 광고 시작 {#Action-15}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### 동작 16 - 앱 닫기 {#Action-16}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
