@@ -1,7 +1,7 @@
 ---
 seo-title: OTT와 Audience Manager
 title: OTT와 Audience Manager
-uuid: D 228 DB 63-59 C 2-4624-99 C 6-6 B 49 DC 17 F 48 E
+uuid: d228db63-59c2-4624-99c6-6b49dc17f48e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
