@@ -1,7 +1,7 @@
 ---
 seo-title: Android에서 버퍼링 추적
 title: Android에서 버퍼링 추적
-uuid: F 16 CE 76 D -1 DB 3-4 B 51-8 C 98-54 CB 781 F 71 D 7
+uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
