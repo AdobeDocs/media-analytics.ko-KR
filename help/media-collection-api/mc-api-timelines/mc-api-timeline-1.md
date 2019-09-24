@@ -1,7 +1,7 @@
 ---
 seo-title: 타임라인 1 - 컨텐츠 끝까지 보기
 title: 타임라인 1 - 컨텐츠 끝까지 보기
-uuid: 0 FF 591 D 3-FA 99-4123-9 E 09-C 4 E 71 EA 1060 B
+uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, 프리롤 광고, 일시 정지, 버퍼링, 컨텐츠 끝까지 보기
 
-다음 다이어그램에서는 사용자의 동작에 대한 재생 헤드 타임라인과 코믹한 타임라인을 보여줍니다. 각 작업에 대한 세부 사항과 그에 수반되는 요청이 아래에 나와 있습니다.
+다음 다이어그램은 재생 헤드 타임라인과 사용자 작업의 해당 타임라인을 보여 줍니다. 각 작업 및 추가 요청에 대한 세부 사항은 아래에 나와 있습니다.
 
 
 ![](assets/va_api_content.png)
@@ -23,7 +23,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 작업 세부 사항
 
-### Action 1 - Start session {#Action-1}
+### 작업 1 - 세션 시작 {#Action-1}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -31,7 +31,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. <br/><br/>세션 내의 모든 후속 추적 호출을 식별하는 데 사용되는 클라이언트에 세션 ID ( `{sid}`) 를 반환합니다. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. <br/><br/>[필수 세션 매개 변수](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다. <br/><br/>백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
+이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. <br/><br/>세션 내의 모든 후속 추적 호출을 식별하는 데 사용되는 클라이언트에 세션 ID( `{sid}`)를 반환합니다. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. <br/><br/>[필수 세션 매개 변수](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다. <br/><br/>백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
 
 **샘플 요청 본문**
 
@@ -57,7 +57,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### 동작 2 - Ping 타이머 시작 {#Action-2}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -65,9 +65,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 정보**
 
-앱의 Ping 타이머를 시작합니다. 사전 롤 광고가 있는 경우 첫 번째 ping 이벤트가 1 초 이내에 실행되고 그렇지 않으면 10 초가 발생합니다.
+앱의 Ping 타이머를 시작합니다. 그러면 첫 번째 핑 이벤트는 프리롤 광고가 있는 경우 1초, 그 외의 경우에는 10초입니다.
 
-### Action 3 - Ad break start {#Action-3}
+### 작업 3 - 광고 중단 시작 {#Action-3}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### 동작 4 - 광고 시작 {#Action-4}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -133,9 +133,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### 동작 5 - 광고 핑 {#Action-5}
 
-#### Action 5.1 - Ad ping 1 {#Action-5-1}
+#### 동작 5.1 - 광고 Ping 1 {#Action-5-1}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -143,7 +143,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-광고 내에서 1 초 간격으로 백엔드를 ping 합니다.
+광고 내에서 1초마다 백 엔드를 ping합니다.
 
 **샘플 요청 본문**
 
@@ -157,7 +157,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-#### Action 5.2 - Ad ping 2 {#Action-5-2}
+#### 동작 5.2 - 광고 Ping 2 {#Action-5-2}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -165,7 +165,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-광고 내에서 1 초 간격으로 백엔드를 ping 합니다.
+광고 내에서 1초마다 백 엔드를 ping합니다.
 
 **샘플 요청 본문**
 
@@ -179,7 +179,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-#### Action 5.3 - Ad ping 3 {#Action-5-3}
+#### 동작 5.3 - 광고 Ping 3 {#Action-5-3}
 
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
@@ -188,12 +188,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-광고 내에서 1 초 간격으로 백엔드를 ping 합니다.
+광고 내에서 1초마다 백 엔드를 ping합니다.
 
 >[!NOTE]
 >
->타임라인의 후속 광고는 1 초 ping 시리즈 표시 생략
->편리성
+>타임라인의 후속 광고는 1초 단위로 연속된 게시물을 표시하지 않습니다
+>...을 위해.
 
 **샘플 요청 본문**
 
@@ -207,7 +207,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 작업 6 - 광고 완료 {#Action-6}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -229,7 +229,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 7 - Ad start {#Action-7}
+### 작업 7 - 광고 시작 {#Action-7}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -264,7 +264,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 8 - Ad pings {#Action-8}
+### 작업 8 - 광고 핑 {#Action-8}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -272,7 +272,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-1 초 간격으로 백엔드를 ping 합니다.
+1초마다 백 엔드를 ping합니다.
 
 **샘플 요청 본문**
 
@@ -286,7 +286,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### 동작 9 - 광고 완료 {#Action-9}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -308,7 +308,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 10 - Ad break complete {#Action-10}
+### 작업 10 - 광고 중단 완료 {#Action-10}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -330,7 +330,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 11 - Play content {#Action-11}
+### 동작 11 - 컨텐츠 재생 {#Action-11}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -352,7 +352,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 12 - Ping {#Action-12}
+### 동작 12 - Ping {#Action-12}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -374,7 +374,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 13 - Buffer start {#Action-13}
+### 작업 13 - 버퍼 시작 {#Action-13}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -395,7 +395,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 14 - Buffer end {#Action-14}
+### 작업 14 - 버퍼 끝 {#Action-14}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -403,7 +403,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-버퍼링은 3초 후에 종료되므로 플레이어를 "재생 중" 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **After After`play``bufferStart`A는 백엔드에 대한 "bufferend" 호출을 호출하므로** `bufferEnd` 이벤트를 할 필요가 없습니다.
+버퍼링은 3초 후에 종료되므로 플레이어를 "재생 중" 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **뒤에 오는`play`호출은`bufferStart`백엔드 "bufferEnd" 호출을 포함하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
@@ -417,7 +417,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 15 - Ping {#Action-15}
+### 동작 15 - Ping {#Action-15}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -438,7 +438,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 16 - Ad break start {#Action-16}
+### 작업 16 - 광고 중단 시작 {#Action-16}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -465,7 +465,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 17 - Ad start {#Action-17}
+### 동작 17 - 광고 시작 {#Action-17}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -500,7 +500,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 18 - Ad ping {#Action-18}
+### 동작 18 - 광고 핑 {#Action-18}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -521,7 +521,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 19 - Ad complete {#Action-19}
+### 작업 19 - 광고 완료 {#Action-19}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -543,7 +543,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 20 - Ad break complete {#Action-20}
+### 작업 20 - 광고 중단 완료 {#Action-20}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -565,7 +565,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 21 - Ping {#Action-21}
+### 동작 21 - Ping {#Action-21}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -587,7 +587,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 22 - Pause {#Action-22}
+### 동작 22 - 일시 중지 {#Action-22}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -609,7 +609,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 23 - Ping {#Action-23}
+### 동작 23 - Ping {#Action-23}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -630,7 +630,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 24 - Play {#Action-24}
+### 동작 24 - 재생 {#Action-24}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -638,7 +638,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 사항**
 
-재생 상태를 "재생 중"으로 이동합니다.  **a`play`call after a`pauseStart`infers a "resume" call to the back end,** so there is no `resume` need.
+재생 상태를 "재생 중"으로 이동합니다.  **뒤에 오는`play`호출은`pauseStart`백엔드 "이력서" 호출을 포함하므로,** `resume` 이벤트가 없어도 됩니다.
 
 **샘플 요청 본문**
 
@@ -651,7 +651,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 25 - Ping {#Action-25}
+### 동작 25 - Ping {#Action-25}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -672,7 +672,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 26 - Session complete {#Action-26}
+### 작업 26 - 세션 완료 {#Action-26}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -695,5 +695,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->**이벤트를 찾을 수 없습니까?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 스크럽할 때 특정 플레이어가 그러한 수많은 이벤트를 생성하므로 수많은 사용자가 백엔드 서비스의 네트워크 대역폭을 쉽게 병목 현상이 발생하기 때문입니다. Adobe는 플레이헤드 위치가 아닌 장치 타임스탬프를 기반으로 한 하트비트 기간을 계산하여 찾기 이벤트에 대한 명시적인 지원을 제공합니다.
+>**검색 이벤트 없음?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 스크럽할 때 특정 플레이어가 그러한 수많은 이벤트를 생성하므로 수많은 사용자가 백엔드 서비스의 네트워크 대역폭을 쉽게 병목 현상이 발생하기 때문입니다. Adobe는 플레이헤드 위치가 아닌 장치 타임스탬프를 기반으로 한 하트비트 기간을 계산하여 찾기 이벤트에 대한 명시적인 지원을 제공합니다.
 
