@@ -1,7 +1,7 @@
 ---
 seo-title: Roku에서 찾기 추적
 title: Roku에서 찾기 추적
-uuid: 0572252 B -397 F -4 AA 2-B 4 B 5-C 5346 B 75244 A
+uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
