@@ -2,8 +2,8 @@
 seo-title: 프리롤 광고가 있는 VOD 재생
 title: 프리롤 광고가 있는 VOD 재생
 description: 이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 삽입되었습니다.
-seo-description: Adobe Media Analytics의 이 시나리오에서는 사전 롤 광고가 기본 컨텐츠 앞에 삽입되었습니다.
-uuid: 5 D 1022 A 8-88 CB -40 AA -919 C -60 DD 592 A 639 E
+seo-description: Adobe Media Analytics의 이 시나리오에서는 프리롤 광고가 주 컨텐츠 앞에 삽입되었습니다.
+uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,13 +24,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 광고 2의 첫 번째 프레임이 재생됨. | `trackEvent:AdStart` | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
 | 광고 2 재생이 완료됨. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 하트비트 광고 완료 | 광고 및 pod의 끝에 도달합니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
+| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 매개 변수 {#section_33CDFB6CB230437480B67A3D149EC44E}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+When ad playback begins, a  call is sent. `Heartbeat Ad Start` If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
 ### 하트비트 광고 시작
 
@@ -39,7 +39,7 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning o
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call.
+Ads follow the same basic model as , so the  call is similar to the  call.`Content Heartbeats``Ad Play``Content Play`
 
 ### 하트비트 광고 재생 호출
 
@@ -74,7 +74,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android Android** 에서 이 시나리오를 보려면 다음 코드를 설정합니다.
+* **Android** Android에서 이 시나리오를 보려면 다음 코드를 설정하십시오.
 
    ```java
    // Set up  mediaObject 
@@ -178,7 +178,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS -** iOS에서 이 시나리오를 보려면 다음 코드를 설정합니다.
+* **iOS - iOS에서** 이 시나리오를 보려면 다음 코드를 설정하십시오.
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript JavaScript** 에서 이 시나리오를 보려면 다음 텍스트를 입력합니다.
+* **JavaScript** JavaScript에서 이 시나리오를 보려면 다음 텍스트를 입력합니다.
 
    ```js
    // Set up mediaObject 
@@ -384,7 +384,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android Android** 에서 이 시나리오를 보려면 다음 코드를 설정합니다.
+* **Android** Android에서 이 시나리오를 보려면 다음 코드를 설정하십시오.
 
    ```java
    // Set up mediaObject 
@@ -561,7 +561,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS** 에서 이 시나리오를 보려면 다음 코드를 설정합니다.
+* **iOS** iOS에서 이 시나리오를 보려면 다음 코드를 설정하십시오.
 
    ```
    //  Set up mediaObject 
@@ -748,7 +748,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript JavaScript** 에서 이 시나리오를 보려면 다음 텍스트를 입력합니다.
+* **JavaScript** JavaScript에서 이 시나리오를 보려면 다음 텍스트를 입력합니다.
 
    ```js
    // Set up mediaObject 
