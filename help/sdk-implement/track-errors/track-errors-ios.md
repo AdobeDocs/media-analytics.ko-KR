@@ -1,7 +1,7 @@
 ---
 seo-title: iOS에서 오류 추적
 title: iOS에서 오류 추적
-uuid: 18 EA 93 D 3-5948-4375-BCDB -72309268 E 38 D
+uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
