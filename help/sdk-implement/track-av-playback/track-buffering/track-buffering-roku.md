@@ -1,7 +1,7 @@
 ---
 seo-title: Roku에서 버퍼링 추적
 title: Roku에서 버퍼링 추적
-uuid: 6666 B 270-9 AA 3-42 FF -95 A 8-F 12502022 D 47
+uuid: 666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
