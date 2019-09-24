@@ -1,7 +1,7 @@
 ---
 seo-title: 앱 작업 추적
 title: 앱 작업 추적
-uuid: 9 CDC 048 A -419 A -4725-BD 61-6 CA 6 D 909 CF 10
+uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
