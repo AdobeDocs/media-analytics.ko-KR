@@ -1,7 +1,7 @@
 ---
 seo-title: 비활성 세션 다시 시작
 title: 비활성 세션 다시 시작
-uuid: 3 FF 1205 D -7 BBE -4016-9 BD 7-6 E 34 B 7862 C 4 C
+uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,18 +12,18 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 긴 일시 중지
 
-Media SDK는 미디어 재생이 다음 비활성 상태 중 하나인 기간을 자동으로 추적합니다.
+미디어 SDK는 미디어 재생이 다음 비활성 상태 중 하나에 있는 기간을 자동으로 추적합니다.
 
 * 일시 정지됨
 * 이동
 * 정지
 * 버퍼링
 
-미디어 추적 세션이 30 분 이상 비활성 상태이면 세션이 자동으로 닫힙니다. 이전의 비활성 비디오 추적 세션(`trackPlay`) 이후 사용자가 다시 시작하면 미디어 하트비트가 이전에 사용한 비디오 정보와 메타데이터를 사용하여 새 비디오 세션을 자동으로 생성하고, 하트비트 다시 시작 이벤트를 보냅니다. For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+미디어 추적 세션이 30분 이상 비활성 상태로 유지되면 세션이 자동으로 닫힙니다. 이전의 비활성 비디오 추적 세션(`trackPlay`) 이후 사용자가 다시 시작하면 미디어 하트비트가 이전에 사용한 비디오 정보와 메타데이터를 사용하여 새 비디오 세션을 자동으로 생성하고, 하트비트 다시 시작 이벤트를 보냅니다. For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## 이전에 닫은 세션을 수동으로 재개
 
-응용 프로그램이 닫히지 않은 경우 Media SDK는 세션을 자동으로 다시 시작합니다. 응용 프로그램이 사용자 데이터를 저장하고 이전에 닫힌 미디어를 다시 시작하는 기능을 가지고 있는 경우 수동으로 Resume 이벤트를 트리거할 수 있습니다. 비디오 추적 세션을 시작할 때 선택 사항인 비디오 재개됨 속성을 설정하십시오.
+The Media SDK will only automatically resume sessions if the application was not closed. 응용 프로그램이 사용자 데이터를 저장하고 이전에 닫은 미디어를 다시 시작할 수 있는 기능을 가지고 있는 경우 다시 시작 이벤트를 수동으로 트리거할 수 있습니다. 비디오 추적 세션을 시작할 때 선택 사항인 비디오 재개됨 속성을 설정하십시오.
 
 ### Android
 
