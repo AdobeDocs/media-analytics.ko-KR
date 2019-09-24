@@ -1,7 +1,7 @@
 ---
-seo-title: 광고 간 기본 재생 문제 해결
-title: 광고 간 기본 재생 문제 해결
-uuid: 228 B 4812-C 23 E -40 C 8-AE 2 B-E 15 CA 69 B 0 BC 2
+seo-title: 광고 사이에 나타나는 기본 재생 문제 해결
+title: 광고 사이에 나타나는 기본 재생 문제 해결
+uuid: 228b4812-c23e-4 파섹
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 ## 식별
 
-Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하는 동안 사전 롤 광고 중단 시 다음 하트비트 호출이 표시되는 경우:
+Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하는 동안 프리롤 광고 중단 동안 다음 하트비트 호출이 이 순서로 표시되는 경우:
 
 * 세션 시작: `s:event:type=start` &amp; `s:asset:type=main`
 * 광고 시작: `s:event:type=start` &amp; `s:asset:type=ad`
 * 광고 재생: `s:event:type=play` &amp; `s:asset:type=ad`
 * 광고 완료: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* 기본 컨텐츠 재생: `s:event:type=play` &amp; `s:asset:type=main`**(예기치 않은)**
 
 * 광고 시작: `s:event:type=start` &amp; `s:asset:type=ad`
 * 광고 재생: `s:event:type=play` &amp; `s:asset:type=ad`
 * 광고 완료: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* 기본 컨텐츠 재생: `s:event:type=play` &amp; `s:asset:type=main`**(필수)**
 
 ## 해결 방법
 
@@ -45,11 +45,11 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 **모든 광고 자산 시작 시:**
 
-* **call`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **전화 문의`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >이전 광고가 완료되지 않은 경우에만 이를 호출합니다. 이전 광고에 대한 "`isinAd`" 상태를 유지 관리하려면 부울 값을 고려하십시오.
+   >Call this only if the previous ad wasn’t complete. 이전 광고에 대한 "`isinAd`" 상태를 유지 관리하려면 부울 값을 고려하십시오.
 
 * 광고 자산에 대한 광고 개체 인스턴스(예: `adObject`)를 만듭니다.
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 **모든 광고 자산 완료 시:**
 
-* **전화 걸기 안 함**
+* **전화 걸지 않음**
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 **광고 브레이크 완료 시:**
 
-* **call`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **전화 문의`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
