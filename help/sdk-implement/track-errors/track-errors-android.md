@@ -1,7 +1,7 @@
 ---
 seo-title: Android에서 오류 추적
 title: Android에서 오류 추적
-uuid: 7 D 0 C 77 E 5-924 C -4619-8 E 29-3484748 AB 736
+uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,5 +24,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
 
