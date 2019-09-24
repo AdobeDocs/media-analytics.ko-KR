@@ -1,7 +1,7 @@
 ---
 seo-title: 이정표에서 Media Analytics로의 마이그레이션
 title: 이정표에서 Media Analytics로의 마이그레이션
-uuid: FDC 96146-AF 63-48 CE-B 938-C 0 CA 70729277
+uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 개요 {#section_ihl_nbz_cfb}
 
-비디오 측정의 핵심 개념은 이정표 추적과 Media Analytics 추적에 대해 동일하며, 이러한 추적에서는 비디오 플레이어 이벤트를 가져와서 이를 분석 메서드에 매핑하고, 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. Media Analytics 솔루션은 이정표에서 발전된 것이므로 많은 메서드와 지표가 동일하지만 구성 접근 방식과 코드는 크게 변경되었습니다. 새로운 Media Analytics 메서드를 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. See [SDK Overview](/help/sdk-implement/setup/setup-overview.md) and [Tracking Overview](/help/sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+비디오 측정의 핵심 개념은 이정표 추적과 Media Analytics 추적에 대해 동일하며, 이러한 추적에서는 비디오 플레이어 이벤트를 가져와서 이를 분석 메서드에 매핑하고, 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. Media Analytics 솔루션은 이정표에서 발전된 것이므로 많은 메서드와 지표가 동일하지만 구성 접근 방식과 코드는 크게 변경되었습니다. 새로운 Media Analytics 메서드를 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. Media [Analytics](/help/sdk-implement/setup/setup-overview.md) 구현에 대한 자세한 내용은 SDK [](/help/sdk-implement/track-av-playback/track-core-overview.md) 개요 및 추적 개요를 참조하십시오.
 
 다음 표는 이정표 솔루션과 Media Analytics 솔루션 간의 변환 내용을 제공합니다.
 
@@ -64,16 +64,7 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s. Media. contextdatamapping = {"a. Media. name": " evar 2, prop 2 ","
- a. media. segment ": " Evar 3 ","
- a. contenttype ": " Evar 1 ","
- a. Media. timeplayed ": " event 3 ","
- a. media. view ": " event 1 ","
- a. media. segmentview ": " event 2 ","
- a. media. complete ": " event 7 ","
- a. media. milestone ": {25: " event 4 ",
- 50: " event 5 ",
- 75: " event 6 "}};
+s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.media segmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>해당 없음
@@ -87,12 +78,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackvars = 
- " events,
- prop 2,
- evar 1,
- evar 2,
- evar 3 ";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>해당 없음
@@ -106,14 +92,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackevents = 
- " event 1,
- event 2,
- event 3,
- event 4,
- event 5,
- event 6,
- event 7 "
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>해당 없음
@@ -161,8 +140,7 @@ Media.autoTrackNetStreams
 <td>
 <pre>
 s.Media.
-  Autotracknetstreams
- = true
+  autoTrackNetStreams = true
 </pre>
 </td>
 <td>해당 없음
@@ -177,8 +155,7 @@ Media.completeByCloseOffset
 <td>
 <pre>
 s.Media.
-  Completebycloseoffset
- = true
+  completeByCloseOffset = true
 </pre>
 </td>
 <td>해당 없음
@@ -193,8 +170,7 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  Completecloseoffsetthreshold
- = 1
+  completeCloseOffsetThreshold = 1
 </pre>
 </td>
 <td>해당 없음
@@ -212,8 +188,8 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-SDK 키: playername; 
-API 키: media. playername
+SDK 키:playerName;
+API 키:media.playerName
 </td>
 <td>
 <pre>
@@ -230,8 +206,7 @@ Media.trackSeconds
 <td>
 <pre>
 s.Media.
-  Trackseconds
- = 15
+  trackSeconds = 15
 </pre>
 </td>
 <td>해당 없음
@@ -246,8 +221,7 @@ Media.trackMilestones
 <td>
 <pre>
 s.Media.
-  trackmilestones
- = "25,50,75";
+  trackMilestones = "25,50,75";
 </pre>
 </td>
 <td>해당 없음
@@ -262,8 +236,7 @@ Media.trackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Trackoffsetmilestones
- = "20,40,60";
+  trackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>해당 없음
@@ -292,8 +265,7 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Segmentbyoffsetmilestones
- = true;
+  segmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>해당 없음
@@ -327,8 +299,7 @@ Media.adTrackSeconds
 <td>
 <pre>
 s.Media.
-  Adtrackseconds
- = 15
+  adTrackSeconds = 15
 </pre>
 </td>
 <td>해당 없음
@@ -343,8 +314,7 @@ Media.adTrackMilestones
 <td>
 <pre>
 s.Media.
-  Adtrackmilestones
- = "25,50,75";
+  adTrackMilestones = "25,50,75";
 </pre>
 </td>
 <td>해당 없음
@@ -359,8 +329,7 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Adtrackoffsetmilestones
- = "20,40,60";
+  adTrackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>해당 없음
@@ -375,8 +344,7 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  Adsegmentbymilestones
- = true;
+  adSegmentByMilestones = true;
 </pre>
 </td>
 <td>해당 없음
@@ -391,8 +359,7 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  Adsegmentbyoffsetmilestones
- = true;
+  adSegmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>해당 없음
@@ -435,14 +402,13 @@ trackSessionStart
 </td>
 <td>
 <pre>
-Tracksessionstart (mediaobject, 
- Contextdata)
+trackSessionStart( mediaObject, contextData)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-Medianame - (필수) 비디오 보고서에 표시할 비디오의 이름입니다.
+mediaName - (필수) 비디오 보고서에 표시할 비디오의 이름입니다.
 </td>
 <td>
 <pre>
@@ -456,17 +422,13 @@ mediaName
 </td>
 <td>
 <pre>
-Createmediaobject (name, 
- Mediaid, 
- length, 
- Streamtype)
+createMediaObject( name, mediaId, length, streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-Medialength - (필수) 비디오의
-길이 (초).
+mediaLength - (필수) 비디오의 길이(초)입니다.
 </td>
 <td>
 <pre>
@@ -480,16 +442,14 @@ length
 </td>
 <td>
 <pre>
-Createmediaobject (name, 
- Mediaid, 
- length, 
- Streamtype)
+createMediaObject( name, mediaId, length, streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-Mediaplayername - (필수) 비디오 보고서에 표시되기를 원하는 경우 비디오를 보는 데 사용되는 미디어 플레이어의 이름입니다.
+mediaPlayerName - (Required) The name of the media player used to view the video, 
+as you want it to appear in video reports.
 </td>
 <td>
 <pre>
@@ -519,27 +479,25 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 </td>
 <td>
 <pre>
-Trackevent
+trackEvent
 </pre>
 </td>
 <td>
 <pre>
-Mediaheartbeat. trackevent (mediaheartbeat.
- 이벤트.
-    Adbreakstart, 
- Adbreakobject);
-...
-Trackevent (mediaheartbeat.
- 이벤트.
-    Adstart, 
- Adobject, 
- Adcustommetadata);
+mediaHeartbeat.trackEvent( MediaHeartbeat.
+    이벤트.
+    AdBreakStart, 
+  adBreakObject);
+...trackEvent(
+  MediaHeartbeat.
+    이벤트.
+    AdStart, adObject, adCustomMetadata);
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-이름 - (필수) 광고의 이름 또는 ID 입니다.
+name - (Required) The name or ID of the ad.
 </td>
 <td>
 <pre>
@@ -553,17 +511,13 @@ Trackevent (mediaheartbeat.
 </td>
 <td>
 <pre>
-Createadobject (name, 
- Adid, 
- 위치, 
- 길이)
+createAdObject( name, adId, position, length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-길이
-(필수) 광고의 길이입니다.
+length(필수) 광고의 길이입니다.
 </td>
 <td>
 <pre>
@@ -577,17 +531,13 @@ length
 </td>
 <td>
 <pre>
-Createadobject (name, 
- Adid, 
- 위치, 
- 길이)
+createAdObject( name, adId, position, length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-Playername - (필수) 광고를 보는 데 사용되는 미디어
-플레이어의 이름입니다.
+playerName - (필수) 광고를 보는 데 사용되는 미디어 레이어의 이름입니다.
 </td>
 <td>
 <pre>
@@ -608,7 +558,7 @@ MediaHeartbeatConfig.
 </tr>
 <tr>
 <td>
-Parentname - 광고가 포함된 기본 컨텐트의 이름 또는 ID 입니다.
+parentName - 광고가 포함된 주요 컨텐츠의 이름 또는 ID입니다.
 </td>
 <td>
 <pre>
@@ -622,7 +572,7 @@ parentName
 </tr>
 <tr>
 <td>
-Parentpod - 광고가 재생되는 기본 컨텐츠에서의 위치입니다.
+parentPod - 광고가 재생된 주요 컨텐츠의 위치입니다.
 </td>
 <td>
 <pre>
@@ -636,15 +586,13 @@ position
 </td>
 <td>
 <pre>
-Createadbreakobject (name, 
- 위치, 
- Starttime)
+createAdBreakObject( name, position, startTime)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-Parentpodposition - 광고가 재생되는 창 내에서의 위치입니다.
+parentPodPosition - 광고가 재생되는 창 내의 위치입니다.
 </td>
 <td>
 <pre>
@@ -658,17 +606,13 @@ position
 </td>
 <td>
 <pre>
-Createadobject (name, 
- Adid, 
- 위치, 
- 길이)
+createAdObject( name, adId, position, length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-이 재생에 적용되는 CPM 또는 암호화된 CPM (" ~" 접두사가 붙은 CPM) 를 CPM
-합니다.
+CPMT이 재생에 적용되는 CPM 또는 암호화된 CPM("~" 접두사로 고정)
 </td>
 <td>
 <pre>
@@ -677,7 +621,7 @@ CPM
 </td>
 <td>해당 없음
 </td>
-<td>미디어 분석에서는 기본적으로 사용할 수 없습니다.
+<td>Media Analytics에서는 기본적으로 사용할 수 없음
 </td>
 </tr>
 <tr>
@@ -772,7 +716,7 @@ s.Media.stop(mediaName,mediaOffset)
 trackPause
 </pre> 또는  
 <pre>
-Trackevent
+trackEvent
 </pre>
 </td>
 <td>
@@ -781,13 +725,14 @@ trackPause()
 </pre> 
 또는 
 <pre>
-Trackevent (mediaheartbeat.
- 이벤트.
+trackEvent(
+  MediaHeartbeat.
+  이벤트.
   SeekStart)
 </pre> 또는 
 <pre>
-Trackevent (mediaheartbeat.
- 이벤트.
+trackEvent( MediaHeartbeat.
+  이벤트.
   BufferStart);
 </pre>
 </td>
@@ -807,30 +752,17 @@ s.Media.monitor(s, media)
 </td>
 <td>
 <pre>
-var customvideometadata = 
-{isuserloggedin: 
- " false ",
- tvstation: 
- " 샘플 TV 방송국 ",
- 프로그래머: 
- " Sample Programmer "};
-...
-var standardvideometadata 
- = {};
-Standardvideometadata
- [mediaheartbeat.
- VideoMetadataKeys.
-   에피소드] = 
- " Sample 에피소드 ";
-Standardvideometadata
- [mediaheartbeat.
- VideoMetadataKeys.
-   show] = "Sample Show";
-...
-Mediaobject. setvalue (mediaheartbeat.
- Mediaobjectkey.
- Standardvideometadata, 
- Standardvideometadata);
+var customVideoMetadata = { isUserLoggedIn:
+    "false", tvStation:
+    "샘플 TV 방송국", 프로그래머:
+    "샘플 프로그래머"};...var standardVideoMetadata = {};standardVideoMetadata [MediaHeartbeat.
+   VideoMetadataKeys.
+   EPISODE] = "샘플 에피소드";standardVideoMetadata [MediaHeartbeat.
+   VideoMetadataKeys.
+   SHOW] = "Sample Show";...mediaObject.setValue( MediaHeartbeat.
+  MediaObjectKey.
+  StandardVideoMetadata, 
+  standardVideoMetadata);
 </pre>
 </td>
 </tr>
