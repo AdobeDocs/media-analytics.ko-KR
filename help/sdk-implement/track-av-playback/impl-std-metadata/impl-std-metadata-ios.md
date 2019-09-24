@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: iOS에서 표준 메타데이터 구현
 title: iOS에서 표준 메타데이터 구현
-uuid: 75 A 80 F 08-4 A 95-49 D 4-A 27 A -8 CE 531 D 64 D 31
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
