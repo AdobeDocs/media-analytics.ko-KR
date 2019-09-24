@@ -1,7 +1,7 @@
 ---
 seo-title: iOS 설정
 title: iOS 설정
-uuid: a 1 c 6 be 79-a 6 dc -47 b 6-93 b 3-ac 7 b 42 f 1 f 3 eb
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,14 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 전제 조건
 
-* **미디어 SDK**
-에 대한 올바른 구성 매개 변수 얻기 이 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자로부터 얻을 수 있습니다.
-* **애플리케이션에서**
-iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 Experience Cloud 솔루션용 [iOS SDK 4. x를 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Media SDK에 대한 유효한 구성 매개 변수**&#x200B;얻기 Adobe 담당자가 분석 계정을 설정한 후 이러한 매개 변수를 얻을 수 있습니다.
+* **애플리케이션에서** iOS용 ADBMobile 구현Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x를 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >Apple는 iOS 9 부터 ATS (App Transport Security) 라는 기능을 도입했습니다. 이 기능은 앱에서 산업 표준 프로토콜과 암호만 사용하는지 확인하여 네트워크 보안을 향상시키기 위한 것입니다. 이 기능은 기본적으로 활성화되어 있지만, ATS 작업에 대한 선택 사항을 제공하는 구성 옵션이 있습니다. For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >iOS 9부터 Apple은 ATS(App Transport Security)라는 기능을 도입했습니다. 이 기능은 앱에서 산업 표준 프로토콜과 암호만 사용하는지 확인하여 네트워크 보안을 향상시키기 위한 것입니다. 이 기능은 기본적으로 활성화되어 있지만, ATS 작업에 대한 선택 사항을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 앱 [전송 보안을 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **미디어 플레이어에 다음 기능을 제공합니다.**
 
@@ -51,7 +49,7 @@ iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용�
          ![](assets/choose-options_ios.png)
 
       1. **[!UICONTROL 마침을 클릭합니다]**.
-      1. **[!UICONTROL 프로젝트 탐색기에서]**&#x200B;앱을 선택하고 타겟을 선택합니다.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
       1. **[!UICONTROL 일반]** 탭의 **[!UICONTROL 연결된 프레임워크]** 및 **[!UICONTROL 라이브러리]** 섹션에서 필요한 프레임워크 및 라이브러리를 연결합니다.
 
          **iOS 앱 타겟:**
@@ -77,7 +75,7 @@ iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용�
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. `ADBMediaHeartbeatConfig` 인스턴스를 만듭니다.
+1. Create a `ADBMediaHeartbeatConfig` instance.
 
    이 섹션은 `MediaHeartbeat` 구성 매개 변수를 이해하고, 정확한 추적을 위해 `MediaHeartbeat` 인스턴스에 올바른 구성 값을 설정하는 데 도움을 줍니다.
 
@@ -95,7 +93,7 @@ iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용�
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. `ADBMediaHeartbeatDelegate` 프로토콜을 구현합니다.
+1. Implement the `ADBMediaHeartbeatDelegate` protocol.
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -132,7 +130,7 @@ iOS 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용�
 
    >[!IMPORTANT]
    >
-   >`ADBMediaHeartbeat` 인스턴스가 액세스 가능하고 세션이 끝날 *때까지*&#x200B;할당이 취소되지 않도록 해야 합니다. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
+   >Make sure that your `ADBMediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
 
 ## iOS에서 버전 1.x에서 2.x로 마이그레이션 {#migrate-to-two-x}
 
@@ -146,7 +144,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 tvOS를 타깃팅하는 Apple TV 앱 타겟이 프로젝트에 있다고 가정하여 작성되었습니다.
 
-1. `VideoHeartbeat_TV.a` 라이브러리 파일을 프로젝트 `lib` 폴더로 드래그합니다.
+1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
 
 1. tvOS 앱 대상의 **[!UICONTROL 빌드 단계]** 탭에서 **[!UICONTROL 라이브러리로 이진 링크]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
 
