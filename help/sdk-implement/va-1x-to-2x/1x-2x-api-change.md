@@ -1,25 +1,25 @@
 ---
 seo-title: 1.x에서 2.x API로 전환
 title: 1.x에서 2.x API로 전환
-uuid: 6 E 619288-C 082-4 CB 4-8685-E 90823 DADF 4 A
+uuid: 6e619288-c082-4cb4-8685-e90823ddaf4a
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
 ---
 
 
-# API 1.x to 2.x conversion {#one-x-to-two-x-conv}
+# API 1.x에서 2.x로 변환 {#one-x-to-two-x-conv}
 
-## Media SDK 2. x API 참조
+## Media SDK 2.x API 참조
 
 * [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## 필수 트랙 * API:
+## 필수 추적* API:
 
-| VHL 1. x  | VHL 2. x |
+|  VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 해당 없음 |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
