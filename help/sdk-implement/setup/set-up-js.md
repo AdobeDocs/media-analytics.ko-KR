@@ -1,7 +1,7 @@
 ---
 seo-title: JavaScript 설정
 title: JavaScript 설정
-uuid: 0269 D 8 AD -0 AF 8-4 BF 1-9 D 15-E 06 C 2952 A 005
+uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 전제 조건
 
-* **유효한 구성 매개 변수**
-얻기 Analytics 계정을 설정한 후 Adobe 담당자로부터 이러한 매개 변수를 얻을 수 있습니다.
-* **미디어`AppMeasurement`애플리케이션에서**
-JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 JavaScript를 사용한 Analytics [구현을 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **Obtain valid configuration parameters**
+These parameters can be obtained from an Adobe representative after you set up your analytics account.
+* **미디어 애플리케이션에서`AppMeasurement`JavaScript 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 JavaScript를 사용한 [분석 구현을 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
 
 * **미디어 플레이어에 다음 기능을 제공합니다.**
 
@@ -24,10 +23,10 @@ JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 J
 
 1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) 라이브러리를 프로젝트에 추가합니다. 편의상 클래스에 대한 로컬 참조를 작성하십시오.
 
-   1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
-   1. `MediaSDK.min.js` 파일이 `libs` 디렉토리에 있는지 확인합니다.
+   1. 다운로드한 `MediaSDK-js-v2.*.zip` 파일을 확장합니다.
+   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
 
-   1. `MediaSDK.min.js` 파일을 호스팅합니다.
+   1. Host the `MediaSDK.min.js` file.
 
       이 코어 JavaScript 파일은 사이트의 모든 페이지에 액세스할 수 있는 웹 서버에 호스팅해야 합니다. 다음 단계에서 이 파일에 대한 경로가 필요합니다.
 
@@ -54,7 +53,7 @@ JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 J
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. `MediaHeartbeatConfig` 인스턴스를 만듭니다.
+1. Create a `MediaHeartbeatConfig` instance.
 
    이 섹션은 `MediaHeartbeat` 구성 매개 변수를 이해하고, 정확한 추적을 위해 `MediaHeartbeat` 인스턴스에 올바른 구성 값을 설정하는 데 도움을 줍니다.
 
@@ -72,7 +71,7 @@ JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 J
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. `MediaHeartbeatDelegate` 프로토콜을 구현합니다.
+1. Implement the `MediaHeartbeatDelegate` protocol.
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -98,11 +97,11 @@ JavaScript 용 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 J
 
    >[!IMPORTANT]
    >
-   >`MediaHeartbeat` 인스턴스에 액세스할 수 있으며 미디어 세션이 끝날 때까지 할당이 취소되지 않도록 해야 합니다. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
+   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the media session. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` Adobe Analytics에 대한 호출을 `AppMeasurement` 보내려면의 인스턴스가 필요합니다. 다음은 `AppMeasurement` 인스턴스의 예제입니다.
+   >`MediaHeartbeat` adobe Analytics에 호출을 `AppMeasurement` 전송하는 인스턴스가 필요합니다. 다음은 `AppMeasurement` 인스턴스의 예제입니다.
 
    ```js
    var appMeasurement = new AppMeasurement(); 
