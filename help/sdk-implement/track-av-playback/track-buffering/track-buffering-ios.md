@@ -1,7 +1,7 @@
 ---
 seo-title: iOS에서 버퍼링 추적
 title: iOS에서 버퍼링 추적
-uuid: 4 F 4 DB 23 A -489 B -4 B 41-BB 6 E -393 EC 64 D 52 A 2
+uuid: 4f4db23a-48 파섹
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
