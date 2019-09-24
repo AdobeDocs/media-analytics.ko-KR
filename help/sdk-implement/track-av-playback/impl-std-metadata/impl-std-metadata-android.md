@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Android에서 표준 메타데이터 구현
 title: Android에서 표준 메타데이터 구현
-uuid: C 48 B 4190-B 062-4 C 4 E -9 C 40-8 DDE 4598 A 50 E
+uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
 source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
@@ -18,15 +18,15 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | `MediaObject`에 표준 메타데이터를 첨부하기 위한 상수. |
 
-## 메타데이터 키 API 참조
+## Metadata keys API Reference
 
-* Create a `HashMap` of standard metadata key value pairs.
-   * [비디오 메타데이터 키](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [오디오 메타데이터 키](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+* Create a  of standard metadata key value pairs.`HashMap`
+   * [Video Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [Audio Metadata Keys](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * 메타데이터에 표준 메타데이터 상수를 사용하여 `HashMap`에서 표준 메타데이터 `MediaInfo`을 설정합니다.
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
 
-## 샘플 구현
+## Sample implementations
 
 ### 비디오
 
