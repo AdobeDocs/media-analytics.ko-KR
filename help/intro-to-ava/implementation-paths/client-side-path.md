@@ -1,7 +1,7 @@
 ---
 seo-title: 고객측
 title: 고객측
-uuid: BA 0496 E 2-585 A -4176-B 583-C 705726 FECC 6
+uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!IMPORTANT]
 >
->미디어 분석을 사용하려면 Adobe Analytics도 사용해야 합니다.
+>Media Analytics를 사용하려면 Adobe Analytics도 사용해야 합니다.
 
 >[!NOTE]
 >
