@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: iOS에서 표준 광고 메타데이터 구현
 title: iOS에서 표준 광고 메타데이터 구현
-uuid: F 15 FB 727-5 A 5 B -46 C 5-BF 12-93 B 376 C 10 FD 1
+uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 구현 표준 광고 메타데이터
 
-표준 광고 메타데이터의 경우, 플랫폼에 대한 키를 사용하여 표준 광고 메타데이터 키 값 쌍의 사전을 만듭니다.
+표준 광고 메타데이터의 경우 플랫폼용 키를 사용하여 표준 광고 메타데이터 키 값 쌍의 사전을 만듭니다.
 
 ```
 // Sample implementation for using standard metadata keys for Ad 
