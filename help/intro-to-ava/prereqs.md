@@ -1,7 +1,7 @@
 ---
 seo-title: 전제 조건
 title: 전제 조건
-uuid: 4 C 0 B 37 F 3-8615-4 CC 0-B 9 C 9-EEB 029067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -20,11 +20,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 작업 {#prereq-tasks}
 
-*Media Analytics* 구현의 경우 다음을 시작하기 전에 완료해야 하는 작업이 있습니다.
+For a Media Analytics implementation, here are the tasks you must complete before you begin:**
 
 1. **Experience Cloud를 사용할 수 있도록 설정.**
 
-   Adobe Experience Platform Identity Service를 구현해야 합니다.
+   You need to implement the Adobe Experience Platform Identity Service.
 
     Identity 서비스를 통해 사용자 핵심 서비스의 Experience Cloud 핵심 서비스, 솔루션, 고객 속성 및 대상에 공통된 ID 프레임워크를 사용할 수 있습니다. 이는 영구적인 고유 ID를 사이트 방문자에게 할당하여 작동됩니다. 조직에서 ID 서비스를 구현하면 이 ID를 통해 다른 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다.
 
