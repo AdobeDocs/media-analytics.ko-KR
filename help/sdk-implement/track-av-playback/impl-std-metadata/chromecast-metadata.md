@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast 메타데이터 키
 title: Chromecast 메타데이터 키
-uuid: c 446 ad 41-51 b 8-46 d 6-9 bc 1-abfae 866023 f
+uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 사이트 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 광고 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Chromecast용 샘플 구현 {#section_wvy_bdn_w2b}
 
 ### 비디오
 
