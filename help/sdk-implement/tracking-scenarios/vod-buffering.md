@@ -1,7 +1,7 @@
 ---
 seo-title: 버퍼링이 있는 VOD 재생
 title: 버퍼링이 있는 VOD 재생
-uuid: 958 F 7692-7193-40 FB-A 8 E 7-2 FF 4 FA 805330
+uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
