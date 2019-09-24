@@ -1,7 +1,7 @@
 ---
 seo-title: 광고를 건너뛰고 VOD 재생
 title: 광고를 건너뛰고 VOD 재생
-uuid: F 3 AB 3524-ABCB -4051-B 64 E-A 1 AAD 6 E 3 DD 3 F
+uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
