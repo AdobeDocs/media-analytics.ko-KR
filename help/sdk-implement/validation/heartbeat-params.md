@@ -1,81 +1,81 @@
 ---
 seo-title: 하트비트 매개 변수 설명
 title: 하트비트 매개 변수 설명
-uuid: E 9 DDDA 32-0952-43 D 0-A 702-49 F 5 B 1 BFD 8 CF
+uuid: e9dda32-0952-43d0-a702-49f5b1bfd8cf
 translation-type: tm+mt
 source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
 
 ---
 
 
-# 미디어 분석 (하트 비트) 매개 변수 설명{#heartbeat-parameter-descriptions}
+# 미디어 분석(하트비트) 매개 변수 설명{#heartbeat-parameter-descriptions}
 
-Adobe가 미디어 분석 (하트 비트) 서버에서 수집하는 미디어 분석 매개 변수 목록:
+Adobe가 수집하고 Media Analytics(하트비트) 서버에서 처리하는 미디어 분석 매개 변수 목록:
 
 ## 모든 이벤트
 
-| 이름 | 데이터 소스 |  설명  |
+| 이름 | 데이터 소스 |  설명  |
 | ---  | --- | --- |
 | s:event:type | Media SDK | (Required)<br/><br/>The type of the event being tracked. 이벤트 유형: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
-| l:event:prev_ts | Media SDK | (Required)<br/><br/>The timestamp of the last event of the same type in this session. 값은 -1 입니다. |
+| l:event:prev_ts | Media SDK | (Required)<br/><br/>The timestamp of the last event of the same type in this session. 값은 -1입니다. |
 | l:event:ts | Media SDK | (Required)<br/><br/>The timestamp of the event. |
-| l:event:duration | Media SDK | (Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. 백엔드에서 보낸 지표 시간을 계산하는 데 사용됩니다. 예: a. Media. totaltimeplay는 생성되는 모든 play (type = play) 하트 비트에 대한 지속 시간의 합으로 계산됩니다. <br/>*참고:* 이 매개 변수는 "상태 변경 이벤트" 이기 때문에 특정 이벤트에 대해 0로 설정됩니다 (예: type = complete, type = chapter_ complete 또는 type = bitrate_ change). |
-| l:event:playhead | videoinfo | (Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded. |
+| l:event:duration | Media SDK | (Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. 백엔드에서 보낸 지표 시간을 계산하는 데 사용됩니다. 예:a.media.totalTimePlayed는 생성된 모든 재생(type=play) 하트비트의 지속 기간의 합계로 계산됩니다. <br/>** 참고:이 매개 변수는 "상태 변경 이벤트"(예: type=complete, type=chapter_complete 또는 type=bitrate_change)이므로 특정 이벤트에 대해 0으로 설정됩니다. |
+| l:event:playhead | VideoInfo | (Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded. |
 | s:event:sid | Media SDK | (Required)<br/><br/>The session ID (a randomly generated string). 특정 세션(비디오 + 광고)의 모든 이벤트는 같아야 합니다. |
-| L: 자산: 지속 시간/L: 자산: 길이 ( <br/>길이 기간에서 이름 변경) | videoinfo | (Required)<br/><br/>The video asset length of the main asset. |
+| l:asset:duration / l:asset:length <br/>(길이 지속 시간에서 이름이 변경됨) | VideoInfo | (Required)<br/><br/>The video asset length of the main asset. |
 | s:asset:publisher | MediaHeartbeatConfig | (Required)<br/><br/>The publisher of the asset. |
-| s:asset:video_id | videoinfo | (Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog. |
+| s:asset:video_id | VideoInfo | (Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog. |
 | s:asset:type | Media SDK | (Required)<br/><br/>The asset type (main or ad). |
-| s:stream:type | videoinfo | (필수)<br/><br/>스트림 유형입니다. 다음 중 하나일 수 있습니다. <ul> <li> live </li> <li> vod </li> <li> 선형 </li> </ul> |
+| s:stream:type | VideoInfo | (필수)<br/><br/>스트림 유형입니다. 다음 중 하나일 수 있습니다. <ul> <li> live </li> <li> vod </li> <li> 선형 </li> </ul> |
 | s:user:id | 모바일, 앱 측정 VisitorID에 대한 구성 개체 | (Optional)<br/><br/>User's specifically set Visitor ID. |
 | s:user:aid | Experience Cloud 조직 | (Optional)<br/><br/>The user's Analytics Visitor ID value. |
 | s:user:mid | Experience Cloud 조직 | (Required)<br/><br/>The user's Experience cloud visitor ID value. |
 | s:cuser:customer_user_ids_x | MediaHeartbeatConfig | (Optional)<br/><br/>All customer user IDs set on Audience Manager. |
 | l:aam:loc_hint | MediaHeartbeatConfig | (Required)<br/><br/>AAM data sent on each payload after aa_start |
 | s:aam:blob | MediaHeartbeatConfig | (Required)<br/><br/>AAM data sent on each payload after aa_start |
-| s:sc:rsid | 보고서 세트 ID | (필수)<br/><br/>보고서를 전송해야 하는 Adobe Analytics RSID. |
+| s:sc:rsid | 보고서 세트 ID | (필수)<br/><br/>보고서를 전송해야 하는 Adobe Analytics RSID입니다. |
 | s:sc:tracking_server | MediaHeartbeatConfig | (필수)<br/><br/>Adobe Analytics 추적 서버. |
 | h:sc:ssl | MediaHeartbeatConfig | (Required)<br/><br/>Whether the traffic is over HTTPS (if set to 1) or over HTTP (is set to 0). |
 | s:sp:ovp | MediaHeartbeatConfig | (Optional)<br/><br/>Set to "primetime" for Primetime players, or the actual OVP for other players. |
 | s:sp:sdk | MediaHeartbeatConfig | (Required)<br/><br/>The OVP version string. |
-| s:sp:player_name | videoinfo | (Required)<br/><br/>Video player name (the actual player software, used to identify the player). |
+| s:sp:player_name | VideoInfo | (Required)<br/><br/>Video player name (the actual player software, used to identify the player). |
 | s:sp:channel | MediaHeartbeatConfig | (Optional)<br/><br/>The channel where the user is watching the content. 모바일 앱인 경우 앱 이름입니다. 웹 사이트인 경우 도메인 이름입니다. |
-| s:sp:hb_version | Media SDK | (필수)<br/><br/>호출을 발행하는 Media SDK 라이브러리의 버전 번호입니다. |
-| l:stream:bitrate | Qosinfo | (Required)<br/><br/>The current value of the stream bitrate (in bps). |
+| s:sp:hb_version | Media SDK | (필수)<br/><br/>호출을 실행하는 Media SDK 라이브러리의 버전 번호입니다. |
+| l:stream:bitrate | QoSInfo | (Required)<br/><br/>The current value of the stream bitrate (in bps). |
 
 ## 오류 이벤트
 
-| 이름 | 데이터 소스 | 설명   |
+| 이름 | 데이터 소스 | 설명   |
 | ---  | --- | --- |
 | s:event:source | Media SDK | (Required)<br/><br/>The source of the error, either player-internal, or the application-level. |
 | s:event:id | Media SDK | (Required)<br/><br/>Error ID, uniquely identifies the error. |
 
 ## 광고 이벤트
 
-| 이름 | 데이터 소스 | 설명   |
+| 이름 | 데이터 소스 | 설명   |
 | ---  | --- | --- |
-| s:asset:ad_id | Adinfo | (필수)<br/><br/>광고 이름. |
+| s:asset:ad_id | AdInfo | (필수)<br/><br/>광고의 이름입니다. |
 | s:asset:ad_sid | Media SDK | (Required)<br/><br/>A unique identifier generated by the Media SDK, appended to all ad-related pings. |
 | s:asset:pod_id | Media SDK | (Required)<br/><br/>Pod ID inside the video. This value is computed automatically based on the following formula: <br/>`MD5(video_id) + `<br/>`"_" + `<br/>`[pod index]` |
-| s:asset:pod_position | Adbreakinfo | (Required)<br/><br/>Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.). |
-| s:asset:resolver | Adbreakinfo | (필수)<br/><br/>광고 확인기입니다. |
+| s:asset:pod_position | AdBreakInfo | (Required)<br/><br/>Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.). |
+| s:asset:resolver | AdBreakInfo | (필수)<br/><br/>광고 확인자. |
 | s:meta:custom_ad_metadata.x | MediaHeartbeat | (Optional)<br/><br/>The custom ad metadata. |
 
 ## 챕터 이벤트
 
-| 이름 | 데이터 소스 | 설명   |
+| 이름 | 데이터 소스 | 설명   |
 | ---  | --- | --- |
 | s:stream:chapter_sid | Media SDK | (Required)<br/><br/>The unique identifier associated to the playback instance of the chapter.  <br/> **참고:** 사용자가 수행한 뒤로 이동 작업으로 인해 챕터가 여러 번 재생될 수 있습니다. |
-| s:stream:chapter_name | chapterinfo | (Optional)<br/><br/>The chapter's friendly (i.e., human readable) name. |
+| s:stream:chapter_name | 장 정보 | (Optional)<br/><br/>The chapter's friendly (i.e., human readable) name. |
 | s:stream:chapter_id | Media SDK | (Required)<br/><br/>The unique ID of the chapter. This value is computed automatically based on the following formula: <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
-| l:stream:chapter_pos | chapterinfo | (Required)<br/><br/>The chapter's index in the list of chapters (starting with 1). |
-| l:stream:chapter_offset | chapterinfo | (Required)<br/><br/>The chapter's offset (expressed in seconds) inside the main content, excluding ads. |
-| l:stream:chapter_length | chapterinfo | (Required)<br/><br/>The chapter's duration (expressed in seconds). |
-| s:meta:custom_chapter_metadata.x | chapterinfo | (선택 사항)<br/><br/>사용자 지정 장 메타데이터. |
+| l:stream:chapter_pos | 장 정보 | (Required)<br/><br/>The chapter's index in the list of chapters (starting with 1). |
+| l:stream:chapter_offset | 장 정보 | (Required)<br/><br/>The chapter's offset (expressed in seconds) inside the main content, excluding ads. |
+| l:stream:chapter_length | 장 정보 | (Required)<br/><br/>The chapter's duration (expressed in seconds). |
+| s:meta:custom_chapter_metadata.x | ChapterInfo | (선택 사항)<br/><br/>사용자 정의 장 메타데이터. |
 
 ## 세션 종료 이벤트
 
-| 이름 | 데이터 소스 | 설명   |
+| 이름 | 데이터 소스 | 설명   |
 | ---  | --- | --- |
-| s:event:type=end | Media SDK | (필수) <br/><br/>`end``close` |
+| s:event:type=end | Media SDK | (필수)<br/><br/> The `end``close` |
 
