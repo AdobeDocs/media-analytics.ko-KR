@@ -1,7 +1,7 @@
 ---
 seo-title: 한 개의 챕터가 있는 VOD 재생
 title: 한 개의 챕터가 있는 VOD 재생
-uuid: 1566 A 6 F 5-CF 22-42 E 7-8 E 1 A -6976 C 6 C 4 E 649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,11 +25,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 챕터가 완료됨. | `trackEvent:trackChapterComplete` | 하트비트 챕터 완료 | 이는 챕터의 끝에 도달한 때입니다. |
 | 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 끝에 도달했음을 의미합니다. 사용자가 미디어 완료 상태를 지켜보지 못하는 경우에도 이 API를 호출해야 합니다. |
+| 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 끝에 도달했음을 의미합니다. 이 API는 사용자가 완료할 미디어를 보지 않는 경우에도 호출해야 합니다. |
 
 ## 매개 변수 {#section_869319D99A474FEA8EA840415EA97FBD}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+장 재생이 시작되면 `Heartbeat Chapter Start` 호출이 전송됩니다. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
 When this happens, a `Content Heartbeat` call goes out in the same interval. 이벤트 유형과 자산 유형을 검사하여 두 호출을 구별할 수 있습니다.
 
