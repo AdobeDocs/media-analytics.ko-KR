@@ -1,7 +1,7 @@
 ---
 seo-title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
 title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
-uuid: 5 C 2392 F 6-9 B 9 C -42 F 5-833 F -77423 D 1 E 6222
+uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
