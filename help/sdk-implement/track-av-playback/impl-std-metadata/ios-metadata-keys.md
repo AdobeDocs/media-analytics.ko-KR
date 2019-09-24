@@ -1,7 +1,7 @@
 ---
 seo-title: iOS 메타데이터 키
 title: iOS 메타데이터 키
-uuid: 8 EB 90111-C 9 DD -4 CA 7-9766-91530 A 8 AE 6 CF
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -14,7 +14,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 From `ADBStandardMetadataKeys.h`:
 
-## 비디오 메타데이터 키
+## Video Metadata Keys
 
 | 상수 이름 | 설명 | 유형 |
 |---|---|---|
@@ -36,7 +36,7 @@ From `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyFEED` | 피드 | 비디오 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 스트림 형식 | 비디오 |
 
-## 오디오 메타데이터 키
+## Audio Metadata Keys
 
 | 상수 이름 | 설명 | 유형 |
 |---|---|---|
@@ -47,7 +47,7 @@ From `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | 자산 | 오디오 |
 | `ADBAudioMetadataKeySTATION` | 장르 | 오디오 |
 
-## 광고 메타데이터 키
+## Ad Metadata Keys
 
 | 상수 이름 | 설명 | 유형 |
 |---|---|---|
