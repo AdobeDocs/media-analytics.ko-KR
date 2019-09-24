@@ -1,7 +1,7 @@
 ---
 seo-title: Android 설정
 title: Android 설정
-uuid: 3 ffe 3276-a 104-4182-9220-038729 e 9 f 3 d 5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 전제 조건
 
-* **미디어 SDK**
-에 대한 올바른 구성 매개 변수 얻기 이 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자로부터 얻을 수 있습니다.
-* **응용**
-프로그램에서 Android 용 adbmobile 구현 Adobe Mobile SDK 설명서에 대한 자세한 내용은 Experience Cloud 솔루션용 [Android SDK 4. x를 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Media SDK에 대한 유효한 구성 매개 변수**&#x200B;얻기 Adobe 담당자가 분석 계정을 설정한 후 이러한 매개 변수를 얻을 수 있습니다.
+* **응용 프로그램에서** Android용 ADBMobile 구현Adobe Mobile SDK 설명서에 대한 자세한 내용은 Experience [Cloud 솔루션용 Android SDK 4.x를 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **미디어 플레이어에 다음 기능을 제공합니다.**
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
@@ -33,9 +31,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       1. **[!UICONTROL 프로젝트 탐색]** 패널에서 프로젝트를 마우스 오른쪽 버튼으로 클릭합니다.
       1. **[!UICONTROL 모듈 설정 열기를 선택합니다]**.
-      1. **[!UICONTROL 프로젝트 설정에서]****[!UICONTROL 라이브러리를]**&#x200B;선택합니다.
+      1. Under **[!UICONTROL Project Settings]**, select **[!UICONTROL Libraries]**.
 
-      1. **[!UICONTROL +]** 를 클릭하여 새 라이브러리를 추가합니다.
+      1. Click **[!UICONTROL +]** to add a new library.
       1. **[!UICONTROL Java]**&#x200B;를 선택하고 `MediaSDK.jar` 파일로 이동합니다.
 
       1. 모바일 라이브러리를 사용할 모듈을 선택합니다.
@@ -43,7 +41,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       **Eclipse:**
 
       1. Eclipse IDE에서 프로젝트 이름을 마우스 오른쪽 버튼으로 클릭합니다.
-      1. **[!UICONTROL 작성 경로]** &gt; 외부 아카이브 **[!UICONTROL 추가를]** 클릭합니다.
+      1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]** .
       1. 선택 `MediaSDK.jar`.
       1. **[!UICONTROL 열기를 클릭합니다]**.
       1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
@@ -102,7 +100,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Create the `MediaHeartbeat` instance.
 
-   `MediaHeartbeatConfig` 인스턴스와 `MediaHertbeatDelegate` 인스턴스를 사용하여 `MediaHeartbeat` 인스턴스를 만듭니다.
+   Use the `MediaHeartbeatConfig` instance and the `MediaHertbeatDelegate` instance to create the `MediaHeartbeat` instance.
 
    ```java
    // Replace <MediaHertbeatDelegate> with your delegate instance 
@@ -112,7 +110,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`MediaHeartbeat` 인스턴스가 액세스 가능하고 세션이 끝날 *때까지*&#x200B;할당이 취소되지 않도록 해야 합니다. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
+   >Make sure that your `MediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
 
 **앱 권한 추가**
 
@@ -130,4 +128,4 @@ Media SDK를 사용하는 앱에서는 추적 호출에서 데이터를 전송�
 
 버전 2.x에서는 모든 공개 메서드가 개발자가 쉽게 만들 수 있도록 `com.adobe.primetime.va.simple.MediaHeartbeat` 클래스에 통합되어 있습니다. 또한 모든 구성이 이제 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+1.x에서 2.x로 마이그레이션에 대한 자세한 내용은 [mig-1x-2x-overview.md를 참조하십시오.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
