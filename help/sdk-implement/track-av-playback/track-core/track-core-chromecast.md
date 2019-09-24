@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast에서 코어 재생 추적
 title: Chromecast에서 코어 재생 추적
-uuid: A 9 FC 59 D 8-A 2 F 4-4889-BDEC -55 C 42 A 835 D 06
+uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>이 설명서에서는 SDK 버전 2.x의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    **`MediaObject`API 참조:**
 
-   [Createmediaobject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
+   [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 
    ```
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
@@ -28,15 +28,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    **`StreamType`상수:**
 
-   [Adbmobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+   [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
    **`MediaType`상수:**
 
-   [Adbmobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+   [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **비디오 메타데이터 첨부**
 
-   선택적으로 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 개체를 비디오 추적 세션에 첨부할 수 있습니다.
+   선택적으로 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 객체를 비디오 추적 세션에 첨부할 수 있습니다.
 
    * **표준 비디오 메타데이터**
 
@@ -44,11 +44,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+      >표준 비디오 메타데이터 개체를 미디어 개체에 연결하는 것은 선택 사항입니다.
 
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수에 대한 변수 개체를 만들고 이 비디오에 대한 데이터로 채웁니다. 예:
+      사용자 지정 변수의 변수 개체를 만들고 이 비디오의 데이터로 채웁니다. 예:
 
       ```js
       /* Set custom context data */ 
@@ -59,9 +59,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       };
       ```
 
-1. **재생을 시작할 의도를 추적합니다.**
+1. **재생을 시작할 의도 추적**
 
-   To begin tracking a media session, call [trackSessionStart](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) on the `media` object.
+   미디어 세션 추적을 시작하려면 [개체에서 trackSessionStart](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) `media` 를 호출합니다.
 
    ```
    ADBMobile.media.trackSessionStart(mediaObject, customVideoMetadata);
@@ -69,11 +69,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 재생 시작이 아닌 사용자의 재생 의도를 추적합니다. 이 API는 비디오 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
+   >`trackSessionStart` 재생의 시작이 아니라 재생 의도를 추적합니다. 이 API는 비디오 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
 
    >[!NOTE]
    >
-   >두 번째 값은 2 단계에서 만든 사용자 지정 비디오 메타데이터 개체 이름입니다. If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >두 번째 값은 2단계에서 만든 사용자 지정 비디오 메타데이터 개체 이름입니다. If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
 1. **실제 재생 시작 추적**
 
@@ -91,7 +91,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile.media.trackComplete();
    ```
 
-1. **세션 종료 추적**
+1. **세션의 끝 추적**
 
    Identify the event from the video player for the unloading/closing of the video playback, where the user closes the video and/or the video is completed and has been unloaded, and call [trackSessionEnd:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionEnd)
 
@@ -103,7 +103,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >`trackSessionEnd` 비디오 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **가능한 일시 중지 시나리오 모두 추적**
+1. **가능한 모든 일시 중지 시나리오 추적**
 
    Identify the event from the video player for video pause and call [trackPause:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPause)
 
@@ -111,7 +111,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile.media.trackPause();
    ```
 
-   **일시 중지 시나리오**
+   **시나리오 일시 중지**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
 
@@ -128,7 +128,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >이것은 4 단계에서 사용한 것과 동일한 이벤트 소스일 수 있습니다. 비디오 재생이 다시 시작될 때 각 `trackPause()` API 호출이 다음 `trackPlay()` API 호출과 연결되는지 확인하십시오.
+   >이는 4단계에서 사용된 것과 동일한 이벤트 소스일 수 있습니다. 비디오 재생이 다시 시작될 때 각 `trackPause()` API 호출이 다음 `trackPlay()` API 호출과 연결되는지 확인하십시오.
 
 * 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 전체 추적 예를 제공하기 위해 Chromecast SDK에 포함된 샘플 플레이어.
