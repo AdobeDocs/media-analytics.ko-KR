@@ -1,7 +1,7 @@
 ---
 seo-title: JavaScript에서 버퍼링 추적
 title: JavaScript에서 버퍼링 추적
-uuid: C 380 CF 2 C -7729-4 D 4 A-A 4 DA -581 BD 94 A 5896
+uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
