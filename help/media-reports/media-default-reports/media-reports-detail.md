@@ -1,7 +1,7 @@
 ---
 seo-title: 미디어 세부 사항
 title: 미디어 세부 사항
-uuid: 57 D 7 F 5 B 0-41 DD -41 D 7-9 A 5 A -474528839 BE 5
+uuid: 57d7f5b0-41dd-41d7-9a5a-47452839be5
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
