@@ -1,7 +1,7 @@
 ---
 seo-title: Concurrent Viewer JSON 보고서 데이터 가져오기
 title: Concurrent Viewer JSON 보고서 데이터 가져오기
-uuid: 9168 F 114-2459-4951-A 06 C -57 B 735 D 09 DC 0
+uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
 source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
@@ -10,19 +10,20 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
 # Concurrent Viewer JSON 보고서 데이터 가져오기{#get-concurrent-viewers-json-report-data}
 
-You can obtain concurrent viewers report data using the _* 1.4 version *_ of the Analytics APIs:
-* [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
+You can obtain concurrent viewers report data using the 1.4 version of the Analytics APIs:_**_
+* [Analytics APIs](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. UI에 내장된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 컨텐츠 ID로 필터링하려면 새 세그먼트를 만듭니다.
-1. Set the `elements` -&gt; `id` in the request body to `videoconcurrentviewers`.
-1. 충분한 양의 데이터를 요청합니다. 데이터에 공백이 없도록 하려면 3200 개의 데이터 포인트를 사용하는 것이 좋습니다.
+1. Filter the data using any segment that built on the UI. To filter by a specific Content ID, create a new segment.
+1. Set the  -&gt;  in the request body to .`elements``id``videoconcurrentviewers`
+1. Request a sufficient amount of data. Adobe recommends 3200 data points, to ensure there are no gaps in the data.
 
-   * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._&#x200B;따라서 하루 시작 후 자정 후 (즉, 다음 날) 에 끝나는 세션을 고려해야 합니다.
+   * The data range you specify in the report gathers all concurrent viewer data at the time the video session ended.__
+따라서 하루 동안 시작하여 자정(즉, 다음 날) 이후에 끝나는 세션을 고려해야 합니다.
 
-   * Request more than one day of data, but in your analysis _* use only the first day of the data.*_
+   * 하루 이상의 데이터를 요청하지만 분석에서는 데이터의 첫 날만 _*&#x200B;사용합니다.*_
 
-이 시나리오의 샘플 요청 페이로드는 다음과 같습니다.
+이 시나리오에 대한 샘플 요청 페이로드는 다음과 같습니다.
 
 ```
 {
