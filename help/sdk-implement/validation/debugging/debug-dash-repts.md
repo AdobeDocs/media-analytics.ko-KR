@@ -1,7 +1,7 @@
 ---
 seo-title: Debug 대시보드 및 보고서
 title: Debug 대시보드 및 보고서
-uuid: 8 E 6 F 6245-D 8 BD -4329-89 E 1-4 C 5595 E 04 EC 5
+uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
