@@ -1,7 +1,7 @@
 ---
 seo-title: 세션 ID 가져오기
 title: 세션 ID 가져오기
-uuid: fc 8712 fa -848 f -4564-af 5 d -5 dd 9 d 6 b 088 d 8
+uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
