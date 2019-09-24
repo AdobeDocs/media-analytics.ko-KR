@@ -1,7 +1,7 @@
 ---
 seo-title: Adobe Debug 구성
 title: Adobe Debug 구성
-uuid: E 416458 D-F 23 C -41 CE -8 D 99-FA 5076 C 455 F 0
+uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
 source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
@@ -14,7 +14,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 Adobe Debug에 액세스하려면 다음을 수행하십시오.
 
-1. [Experience Cloud](https://www.marketing.adobe.com) 로 이동하여 새로운 Adobe Experience Cloud 사용자를 만듭니다.
+1. Go to [Experience Cloud](https://www.marketing.adobe.com) and create a new Adobe Experience Cloud user.
 
    >[!TIP]
    >
@@ -35,7 +35,7 @@ Adobe Debug에 액세스하려면 다음을 수행하십시오.
 
 ## 디버그 프록시 {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
 
-디버그 프록시를 다운로드하고 구성합니다.
+디버그 프록시 다운로드 및 구성:
 
 1. Download the Debug Proxy app at [App Downloads.](https://debug.adobe.com/#/downloads)
 
@@ -70,16 +70,16 @@ SSL 인증서를 다운로드하고 설치합니다:
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1. Firefox의 경우 [Mozilla Firefox에서 루트 인증서 설치] 의 절차를 완료하십시오.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+    1. Firefox의 경우 [Mozilla Firefox에서 루트 인증서 설치]의 절차를 완료합니다.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
     
-    You might need to quit and reopen Firefox to see the change.
+    변경 내용을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
     
-    ** iOS 장치**
-    1. ** [! Uicontrol 설정 앱]**** &gt;**** [! Uicontrol Wifi 설정]**.
+    **iOS 디바이스**
+    1. **[!UICONTROL 설정 앱]** **&gt;** **** **[!UICONTROL Wifi 설정]**을 클릭하여 iOS 장치가 Adobe Debug를 HTTP 프록시로 사용하도록 설정합니다.
     
-    1. Safari에서 [Debug] 로 이동합니다.](https://proxy.debug.adobe.com/ssl)
+    1. Safari에서 [디버그]로 이동합니다.](https://proxy.debug.adobe.com/ssl)
     
-    Safari will prompt you to install the SSL certificate.
+    Safari에서 SSL 인증서를 설치하라는 메시지를 표시합니다.
 
 ## 모바일 장치에 대한 SSL 인증서 설치 {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
 
@@ -95,7 +95,7 @@ iOS 장치에 SSL 인증서를 설치하려면 다음을 수행하십시오.
    1. 랩톱에서 사용한 동일한 Wi-Fi 신호를 선택합니다.
    1. 랩톱에서 디버그 프록시 앱에 표시된 IP 및 포트를 수동으로 설정합니다.
    1. Apple Safari 브라우저 창을 엽니다.
-   1. [https://proxy.debug.adobe.com/ssl로 이동합니다.](https://proxy.debug.adobe.com/ssl)
+   1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. SSL 인증서를 다운로드하고 설치합니다.
 
 1. 랩톱에서 Adobe Debug 세션을 시작합니다.
@@ -111,7 +111,7 @@ Android 장치에 SSL 인증서를 설치하려면 다음을 수행하십시오.
    1. 랩톱에서 사용한 동일한 Wi-Fi 신호를 선택합니다.
    1. 랩톱에서 디버그 프록시 앱에 표시된 IP 및 포트를 수동으로 설정합니다.
    1. 브라우저 창을 엽니다.
-   1. [https://proxy.debug.adobe.com/ssl로 이동합니다.](https://proxy.debug.adobe.com/ssl)
+   1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. SSL 인증서를 다운로드하고 설치합니다.
 
 1. 랩톱에서 Adobe Debug 세션을 시작합니다.
