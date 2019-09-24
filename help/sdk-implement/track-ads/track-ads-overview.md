@@ -1,7 +1,7 @@
 ---
 seo-title: 개요
 title: 개요
-uuid: 1607798 B-C 6 EF -4 D 60-8 E 40-E 958 C 345 B 09 C
+uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,21 +12,21 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 주요 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 전체 메타데이터 목록을 확인하십시오. [광고 매개 변수.](/help/metrics-and-metadata/ad-parameters.md)
+광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 주요 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 포괄적인 메타데이터 목록을 참조하십시오.광고 [매개 변수.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## 플레이어 이벤트 {#player-events}
 
 
-### 광고 휴식 시간
+### 광고 중단 시작 시
 
 >[!NOTE]
 >프리롤 포함
 
 * 광고 브레이크에 대한 `adBreak` 개체 인스턴스를 만듭니다. 예, `adBreakObject`.
 
-* `trackEvent``adBreakObject`지금 바로 경험해 보십시오.
+* Call `trackEvent` for the ad break start with your `adBreakObject`.
 
 ### 모든 광고 자산 시작 시
 
@@ -100,9 +100,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->광고 재생 () 동안 Content Player playhead (`l:event:playhead``s:asset:type=ad`) 를 증분시키지 않아야 합니다. 이렇게 하면 컨텐츠 체류 시간 지표에 부정적인 영향이 미칠 수 있습니다.
+>광고 재생(`l:event:playhead``s:asset:type=ad`) 중에 컨텐츠 플레이어 재생 헤드를 증가시키지 않도록 하십시오. 이 경우 컨텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
 
-다음 샘플 코드는 HTML 5 미디어 플레이어에 JavaScript 2. x SDK를 활용합니다.
+The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player.
 
 ```js
 /* Call on ad break start */ 
