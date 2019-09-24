@@ -1,7 +1,7 @@
 ---
 seo-title: VOD 여러 세션에 대한 1개의 추적기
 title: VOD 여러 세션에 대한 1개의 추적기
-uuid: 355 C 83 F 4-52 BD -4 BDD -92 DC-AB 506 E 412 D 0 A
+uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
