@@ -1,7 +1,7 @@
 ---
 seo-title: QoE 데이터 보내기
 title: QoE 데이터 보내기
-uuid: 52 A 02 D 92-195 D -4 CE 8-8 CE 3-585 ED 68969 F 9
+uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
