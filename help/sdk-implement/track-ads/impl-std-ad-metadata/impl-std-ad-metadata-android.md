@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Android에서 표준 광고 메타데이터 구현
 title: Android에서 표준 광고 메타데이터 구현
-uuid: 19 B 98 BC 1-C 659-4182-A 4 FF-B 3340 FE 2453 C
+uuid: 19b98bc1-c659-418 파섹
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
@@ -20,7 +20,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 ## 구현 표준 광고 메타데이터
 
-표준 광고 메타데이터의 경우, 플랫폼에 대한 키를 사용하여 표준 광고 메타데이터 키 값 쌍의 사전을 만듭니다.
+표준 광고 메타데이터의 경우 플랫폼용 키를 사용하여 표준 광고 메타데이터 키 값 쌍의 사전을 만듭니다.
 
 ```java
 // Setting standard Ad Metadata 
