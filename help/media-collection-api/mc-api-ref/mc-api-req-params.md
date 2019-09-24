@@ -17,20 +17,20 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 서버의 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | Analytics 보고 데이터를 식별하는 ID |
 | `analytics.enableSSL` | N | `sessionStart` | SSL을 사용할 True 또는 False |
-| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat  equals the Analytics `visitorId``VID.` |
+| `analytics.visitorId` | N | `sessionStart` | Adobe 방문자 ID는 여러 Adobe 애플리케이션에서 사용할 수 있는 사용자 지정 ID입니다. 하트비트는 Analytics `visitorId` 와 같습니다. `VID.` |
 
 ## 방문자 데이터
 
 | 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat  equals the  in Adobe Analytics. `marketingCloudUserId``MID` While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps. |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | Experience Cloud 사용자 ID(ECID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트는 `marketingCloudUserId` Adobe Analytics `MID` 의 하트비트와 같습니다. 기술적으로 필요는 없지만 이 매개 변수는 Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
 | `visitor.aamLocationHint` | N | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 |
 | `appInstallationId` | N | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
 
 ## 컨텐츠 데이터
 
-| Request Key  | 필수 여부 | 설정... |  설명  |
+| 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 컨텐츠에 대한 고유 식별자 |
 | `media.name` | N | `sessionStart` | 사용자가 읽을 수 있는 컨텐츠 이름 |
@@ -38,12 +38,12 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `media.contentType` | Y | `sessionStart` | 스트림 형식(임의의 문자열일 수 있으며, "Live", "VOD" 또는 "Linear" 값이 권장됨) |
 | `media.playerName` | Y | `sessionStart` | 컨텐츠 렌더링을 담당하는 플레이어의 이름 |
 | `media.channel` | Y | `sessionStart` | 컨텐츠의 배포 채널. 모바일 애플리케이션 이름 또는 웹 사이트 이름, 속성 이름일 수 있습니다. |
-| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
+| `media.resume` | N | `sessionStart` | 사용자가 이전 세션을 다시 시작하는지 여부를 나타냅니다(새 세션을 시작하는 대신). |
 | `media.sdkVersion` | N | `sessionStart` | 플레이어에서 사용하는 SDK 버전 |
 
 ## 컨텐츠 표준 메타데이터
 
-| Request Key  | 필수 여부 | 설정... |  설명  |
+| 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | 프로그램 또는 시리즈 이름 |
 | `media.season` | N | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
@@ -64,7 +64,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 광고 데이터
 
-| Request Key  | 필수 여부 | 설정... |  설명  |
+| 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | 친숙한 광고 브레이크 이름 |
 | `media.ad.podIndex` | Y | `adBreakStart` | 비디오에 있는 광고 pod 인덱스 |
@@ -77,7 +77,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 광고 표준 메타데이터
 
-| Request Key  | 필수 여부 | 설정... |  설명  |
+| 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | 광고에서 다루고 있는 제품의 회사 또는 브랜드입니다 |
 | `media.ad.campaignId` | N | `adStart` | 광고 캠페인의 ID |
@@ -88,7 +88,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 챕터 데이터
 
-| Request Key  | 필수 여부 | 설정... |  설명  |
+| 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | 컨텐츠에서 챕터의 위치 식별 |
 | `media.chapter.offset` | Y | `chapterStart` | 재생에서 챕터가 시작되는 시간(초) |
@@ -97,7 +97,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## 품질 데이터
 
-| Request Key  | 필수 여부 | 설정... |  설명  |
+| 요청 키 | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Any | 스트림의 비트율 |
 | `media.qoe.droppedFrames` | N | Any | 스트림에서 삭제된 프레임 수 |
@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _The ECID is what you should use to identify users in most scenarios._
+>Media Analytics(MA)는 Experience Cloud 앱 제품군(Adobe Analytics, Audience Manager, Target 등)과 통합되어 있습니다. 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _ECID는 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 것입니다._
 
 ### appInstallationId
 
