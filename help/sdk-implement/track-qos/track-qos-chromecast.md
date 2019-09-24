@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast에서 체감 품질 추적
 title: Chromecast에서 체감 품질 추적
-uuid: D 0 CDC 8 CD -4 DB 0-45 EF -9470-1 CBA 3996305 B
+uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 개요 {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 미디어 플레이어 API를 사용하여 QoS 및 오류 추적과 관련된 변수를 식별할 수 있습니다.
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. You can use the media player API to identify the variables related to QoS and error tracking.
 
 ## Player events {#player-events}
 
@@ -37,7 +37,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!TIP]
    >
-   >이 변수는 QoS를 추적하려는 경우에만 필요합니다.
+   >이러한 변수는 QoS를 추적하려는 경우에만 필요합니다.
 
    | 변수 | 설명 | 필수 여부 |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >QoS 개체를 업데이트하고 모든 비트 전송률 변경 시 비트 전송률 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
+   >QoS 개체를 업데이트하고 비트율 변경 시 비트율 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
 
 1. `getQoSObject()` 메서드가 업데이트된 최신 QoS 정보를 반환하는지 확인합니다.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. [(개요](/help/sdk-implement/track-errors/track-errors-overview.md)참조)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
