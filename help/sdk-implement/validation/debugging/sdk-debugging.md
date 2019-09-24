@@ -1,7 +1,7 @@
 ---
 seo-title: SDK 디버깅
 title: SDK 디버깅
-uuid: A 5972 D 87-C 593-4 B 4 F-A 56 F-DCA 6 E 25268 E 1
+uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -10,7 +10,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 # SDK 디버깅{#sdk-debugging}
 
-로깅을 활성화하거나 비활성화할 수 있습니다. 미디어 SDK는 미디어 추적 스택 전반에 걸쳐 광범위한 추적/로깅 메커니즘을 제공합니다. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+로깅을 활성화하거나 비활성화할 수 있습니다. 미디어 SDK는 미디어 추적 스택 전체에서 광범위한 추적/로깅 메커니즘을 제공합니다. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## 디버그 로깅에 대한 샘플 코드
 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->2017 년 4 월 30 일부로 Adobe Bloodhound는 일몰 시절이었습니다. 2017년 5월 1일부터 추가적인 개선이나 추가 엔지니어링 또는 Adobe Expert Care 지원이 제공되지 않습니다.
+>2017년 4월 30일부터 Adobe Bloodhound는 일몰이 되었습니다. 2017년 5월 1일부터 추가적인 개선이나 추가 엔지니어링 또는 Adobe Expert Care 지원이 제공되지 않습니다.
 
 ## 로그 메시지
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag**: 로그 메시지를 표시한 하위 구성 요소의 이름(일반적으로 클래스 이름)
 * **message**: 실제 추적 메시지
 
-Media SDK 라이브러리의 로그 출력을 사용하여 구현을 확인할 수 있습니다. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Media SDK 라이브러리의 출력 로그를 사용하여 구현을 확인할 수 있습니다. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
