@@ -1,7 +1,7 @@
 ---
 seo-title: 세그먼트
 title: 세그먼트
-uuid: 61906 B 8 C -3362-4463-82 BE-FE 0 E 741 A 5 EB 3
+uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
