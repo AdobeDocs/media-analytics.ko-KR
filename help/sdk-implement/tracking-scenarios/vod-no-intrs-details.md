@@ -1,7 +1,7 @@
 ---
 seo-title: 광고가 없는 VOD 재생
 title: 광고가 없는 VOD 재생
-uuid: EE 2 A 1 B 79-2 C 2 F -42 E 1-8 E 81-B 61-B 62 BBDD 0 D 8 CB
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -23,7 +23,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ## 매개 변수 {#section_45D7B10031524411B91E2C569F7818B0}
 
-Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Adobe에서 다양한 미디어 보고서를 채우는 데 사용하는 매개 변수가 많이 있지만 다음 표에는 가장 중요한 매개 변수만 나와 있습니다.
+Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Adobe에서 다양한 미디어 보고서를 채우는 데 사용하는 매개 변수가 많이 있지만 다음 표에는 가장 중요한 매개 변수만 나열되어 있습니다.
 
 ### 하트비트 컨텐츠 시작
 
@@ -31,11 +31,11 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |---|---|---|
 | `s:sc:rsid` | &lt;Adobe 보고서 세트 ID&gt; |  |
 | `s:sc:tracking_server` | &lt;Analytics 추적 서버 URL&gt; |  |
-| `s:user:mid` | 설정해야 함 | Should match the mid value on the `Adobe Analytics Content Start` call. |
+| `s:user:mid` | 설정해야 함 | 호출의 중간 값과 일치해야 `Adobe Analytics Content Start` 합니다. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt; 사용자 미디어 이름 &gt; |  |
-| `s:meta:*` | 옵션 | 미디어에 설정되는 사용자 지정 메타데이터. |
+| `s:asset:media_id` | &lt;미디어 이름&gt; |  |
+| `s:meta:*` | 옵션 | 미디어에 설정된 사용자 정의 메타데이터 |
 
 ## 하트비트 컨텐츠 재생 {#section_2ABBD51D3A6D45ABA92CC516E414417A}
 
@@ -48,7 +48,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## 컨텐츠 하트비트 {#section_3B5945336E464160A94518231CEE8F53}
 
-미디어 재생 시 타이머는 10 초마다 최소 한 개의 하트비트를 전송합니다. 이러한 하트비트에는 재생, 광고, 버퍼링 등에 대한 정보가 들어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나지만, 중요한 문제는 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 여부입니다.
+미디어 재생 중에 타이머는 10초마다 최소한 하나의 하트비트를 전송합니다. 이러한 하트비트에는 재생, 광고, 버퍼링 등에 대한 정보가 들어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나지만, 중요한 문제는 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 여부입니다.
 
 컨텐츠 하트비트에서 다음 매개 변수를 찾아보십시오.
 
