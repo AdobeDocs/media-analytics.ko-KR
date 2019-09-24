@@ -1,7 +1,7 @@
 ---
 seo-title: 세션 요청
 title: 세션 요청
-uuid: 9609192 D -4 F 7 F -4 FB 5-844 F-EA 89 D 47 C 4 E 30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -21,7 +21,7 @@ https://{uri}/api/v1/sessions
 
 ## 요청 본문
 
-요청 본문은 JSON 이어야 하며, 이 샘플 요청 본문과 동일한 구조를 가져야 합니다.
+요청 본문은 JSON이어야 하며 이 샘플 요청 본문과 구조가 같아야 합니다.
 
 ```
 { 
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` 헤더 - `/api/v1/` 부분은 API 버전을 제공합니다. The part after `[…]sessions/` is the Session ID.
+`Location:` header - `/api/v1/` 부품이 API 버전을 제공합니다. 다음 부분은 세션 ID `[…]sessions/` 입니다.
 
 ## 응답 코드
 
