@@ -1,7 +1,7 @@
 ---
 seo-title: 설정 개요
 title: 설정 개요
-uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
+uuid: 06feeddb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,21 +12,21 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x 미디어 SDK에 적용됩니다. Media SDK의 1.x 버전을 구현하는 경우 [1.x Media SDK 설명서를 참조하십시오.](/help/sdk-implement/download-sdks.md) Primetime 통합업체의 경우 아래의 _Primetime Media SDK 설명서를_ 참조하십시오.
+>다음 지침은 2.x Media SDK에 적용됩니다. Media SDK의 1.x 버전을 구현하는 경우 [1.x Media SDK 설명서를 참조하십시오.](/help/sdk-implement/download-sdks.md) Primetime 통합업체의 경우 _아래 Primetime 미디어 SDK 설명서를_ 참조하십시오.
 
 
 ## 최소 플랫폼 버전 지원 {#minimum-platform-version}
 
-다음 표는 2019 년 2 월 19 일부터 각 SDK에 대해 지원되는 최소 플랫폼 버전에 대해 설명합니다.
+다음 표에서는 2019년 2월 19일부터 각 SDK에 대해 지원되는 최소 플랫폼 버전에 대해 설명합니다.
 
-| OS/Browser | 최소 버전 필요 |
+| OS/브라우저 | 최소 버전 필요 |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android 5.0 + - Lollipop |
-| Chrome | v 22 + |
-| Mozilla | v 27 + |
-| Safari | v 7 + |
-| IE | v 11 + |
+| Android | Android 5.0+ - Lollipop |
+| Chrome | v22+ |
+| Mozilla | v27+ |
+| Safari | v7+ |
+| IE | v11+ |
 
 ## 일반 구현 지침 {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
@@ -37,7 +37,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 다음 구현 단계를 완료합니다.
 
-1. `MediaHeartbeatConfig` 인스턴스를 만들고 구성 매개 변수 값을 설정합니다.
+1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
 
    |  변수 이름  | 설명  | 필수 여부 |  기본값  |
    |---|---|:---:|---|
@@ -49,7 +49,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `ssl` | 호출이 HTTPS를 통해 수행돼야 하는지 여부를 나타냅니다. | 아니오 | false |
    | `debugLogging` | 디버그 로깅이 사용되는지 여부를 나타냅니다. | 아니오 | false |
 
-1. 을 구현합니다 `MediaHeartbeatDelegate`.
+1. Implement the `MediaHeartbeatDelegate`.
 
    |  메서드 이름  |  설명  | 필수 여부 |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >Qos (서비스 품질) 개체는 선택 사항입니다. 플레이어에 대해 QoS 데이터를 사용할 수 있고 해당 데이터를 추적하려는 경우 다음 변수가 필요합니다.
+   >QoS(서비스 품질) 개체는 선택 사항입니다. 플레이어에 대해 QoS 데이터를 사용할 수 있고 해당 데이터를 추적하려는 경우 다음 변수가 필요합니다.
 
    | 변수 이름 | 설명   | 필수 여부 |
    | --- | --- | :---: |
@@ -73,11 +73,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`MediaHeartbeat` 인스턴스가 액세스 가능하고 세션이 끝날 때까지 할당이 취소되지 않도록 해야 합니다. 이 인스턴스는 다음의 모든 미디어 추적 이벤트에 사용됩니다.
+   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the session. 이 인스턴스는 다음의 모든 미디어 추적 이벤트에 사용됩니다.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` Adobe Analytics에 대한 호출을 `AppMeasurement` 보내려면의 인스턴스가 필요합니다.
+   >`MediaHeartbeat` adobe Analytics에 호출을 `AppMeasurement` 전송하는 인스턴스가 필요합니다.
 
 1. 모든 부분을 결합합니다.
 
@@ -121,28 +121,26 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 유효성 검사 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-미디어 분석 추적 구현은 두 가지 유형의 추적 호출을 생성합니다.
+Media Analytics 추적 구현에서는 두 가지 유형의 추적 호출을 생성합니다.
 
-* 미디어 및 광고 시작 호출은 Adobe Analytics (appmeasurement) 서버로 바로 전송됩니다.
-* 하트비트 호출은 미디어 분석 (하트 비트) 추적 서버로 전송되어 처리되고 Adobe Analytics 서버로 전달됩니다.
+* 미디어 및 광고 시작 호출은 Adobe Analytics(AppMeasurement) 서버로 직접 전송됩니다.
+* 하트비트 호출은 Media Analytics(하트비트) 추적 서버로 전송되어 처리되고 Adobe Analytics 서버로 전달됩니다.
 
-* **Adobe Analytics (appmeasurement) 서버**
-추적 서버 옵션에 대한 자세한 내용은 trackingserver 및 trackingserversecure 변수 올바로 채우기를 참조하십시오 [.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics(AppMeasurement) 서버**&#x200B;추적 서버 옵션에 대한 자세한 내용은 trackingServer [및 trackingServerSecure 변수 올바로 채우기를 참조하십시오.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Experience Cloud 방문자 ID 서비스를 사용하려면 RDC 추적 서버 또는 RDC 서버로 CNAME 이 해결되어야 합니다.
+   >Experience Cloud 방문자 ID 서비스에 대해 RDC 추적 서버 또는 CNAME에서 RDC 서버로 확인이 필요합니다.
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (하트 비트) 서버**
-에는 항상 형식이 있습니다`[your_namespace].hb.omtrdc.net`. " 의 값은 회사를`[your_namespace]`지정하며 Adobe에서 제공합니다.
+* ** 미디어 분석(하트비트) 서버**항상 "`[your_namespace].hb.omtrdc.net`" 형식을 갖습니다. "`[your_namespace]`"의 값은 회사를 지정하며 Adobe에서 제공합니다.
 
-미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 오디오 추적은 현재 모바일 플랫폼에서 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
+미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 현재 모바일 플랫폼에서 오디오 추적이 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
 
-## SDK 1. x 설명서 {#section_acj_tkk_t2b}
+## SDK 1.x 설명서 {#section_acj_tkk_t2b}
 
-| Video Analytics 1. x SDK  | 개발자 안내서 (PDF만 해당) |
+| 비디오 분석 1.x SDK |  개발자 가이드(PDF만 해당) |
 | --- | --- |
 | Android | ](vhl-dev-guide-v15_android.pdf)Android에 대한 구성 [ |
 | AppleTV | ](vhl-dev-guide-v1x_appletv.pdf)AppleTV에 대한 구성 [ |
@@ -154,4 +152,4 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## Primetime Media SDK 설명서 {#primetime-docs}
 
-* [Primetime 사용 안내서](https://helpx.adobe.com/primetime/user-guide.html)
+* [Primetime 사용자 안내서](https://helpx.adobe.com/primetime/user-guide.html)
