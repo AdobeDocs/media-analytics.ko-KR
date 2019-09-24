@@ -1,7 +1,7 @@
 ---
 seo-title: Android에서 챕터 및 세그먼트 추적
 title: Android에서 챕터 및 세그먼트 추적
-uuid: 013815 D 7-4 D 9 E -48 F 4-A 2 B 9-3 B 70 CB 1149 D 3
+uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,13 +12,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음 지침은 2.x SDK를 사용하는 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 챕터 추적 구현
+## 장 추적 구현
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
-   `ChapterObject` 챕터 추적 참조:
+   `ChapterObject` 장 추적 참조:
 
    >[!NOTE]
    >
