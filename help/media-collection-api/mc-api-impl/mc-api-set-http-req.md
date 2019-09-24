@@ -1,7 +1,7 @@
 ---
 seo-title: 플레이어에서 HTTP 요청 유형 설정
 title: 플레이어에서 HTTP 요청 유형 설정
-uuid: B 8 FA 7233-E 654-4 ACF-A 9 D 7-14158 CDED 13 E
+uuid: b8fa7233-e654-4acf-a9d7-14158cde13e
 translation-type: tm+mt
 source-git-commit: 7f0a6a8d6def094bd669e5924ea76107a4ab3cc1
 
