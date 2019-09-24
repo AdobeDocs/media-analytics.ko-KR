@@ -1,7 +1,7 @@
 ---
 seo-title: 개요
 title: 개요
-uuid: D 71429 E 6-EF 8 B -4 EA 2-8491-FF 3 CDBF 4357 F
+uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 오류 추적 구현
 
-1. 미디어 플레이어 오류를 추적할 수 있습니다.
+1. 미디어 플레이어 오류를 추적합니다.
 
    오류 이벤트에서 오류 정보로 `trackError`를 호출하십시오.
 
