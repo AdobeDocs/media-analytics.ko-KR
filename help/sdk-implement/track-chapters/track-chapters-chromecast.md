@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast에서 챕터 및 세그먼트 추적
 title: Chromecast에서 챕터 및 세그먼트 추적
-uuid: 5 EA 562 B 9-0 E 07-4 FBB -9 A 3 B -213 D 746304 F 5
+uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,11 +12,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음 지침은 2.x SDK를 사용하는 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
-   `ChapterObject` 챕터 추적 참조:
+   `ChapterObject` 장 추적 참조:
 
    >[!NOTE]
    >
