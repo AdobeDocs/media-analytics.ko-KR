@@ -1,7 +1,7 @@
 ---
 seo-title: 개요
 title: 개요
-uuid: 3 FE 32425-5 E 2 A -4886-8 FEA-D 91 D 15671 BB 0
+uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,11 +12,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->다음 지침은 2. x SDK를 사용한 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음 지침은 2.x SDK를 사용하는 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-사용자 지정 미디어 장이나 세그먼트에 대해 장 및 세그먼트 추적을 사용할 수 있습니다. 장 추적의 일반적인 용도는 미디어 컨텐츠 (예: 야구 인닝) 를 기반으로 사용자 지정 세그먼트를 정의하거나 광고 휴식 시간 사이의 컨텐츠 세그먼트를 정의하는 것입니다. Chapter tracking is **not** required for core media tracking implementations.
+장 및 세그먼트 추적은 사용자 정의 미디어 장 또는 세그먼트에 사용할 수 있습니다. Some common uses for chapter tracking are to define custom segments based on media content (such as baseball innings), or to define content segments between ad breaks. Chapter tracking is **not** required for core media tracking implementations.
 
-챕터 추적에는 챕터 시작, 챕터 완료, 챕터 건너뛰기가 포함됩니다. 사용자 정의된 세그멘테이션 로직과 함께 Media Player API를 사용하여 장 이벤트를 식별하고 필수 및 선택적 장 변수를 채울 수 있습니다.
+챕터 추적에는 챕터 시작, 챕터 완료, 챕터 건너뛰기가 포함됩니다. 미디어 플레이어 API를 사용자 정의된 세그멘테이션 로직과 함께 사용하여 장 이벤트를 식별하고 필수 및 선택적 장 변수를 채울 수 있습니다.
 
 ## 플레이어 이벤트
 
@@ -34,7 +34,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 호출 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## 챕터 추적 구현 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 장 추적 구현 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
@@ -57,7 +57,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 1. 사용자가 챕터를 건너뛰도록 선택했기 때문에(예: 사용자가 챕터 경계를 찾는 경우) 챕터 재생이 완료되지 않은 경우 MediaHeartbeat 인스턴스에서 `ChapterSkip` 이벤트를 호출합니다.
 1. 추가 챕터가 있는 경우 1~5단계를 반복합니다.
 
-다음 샘플 코드는 HTML 5 미디어 플레이어용 JavaScript 2. x SDK를 사용합니다. 핵심 미디어 재생 코드와 함께 이 코드를 사용해야 합니다.
+다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다. 이 코드는 핵심 미디어 재생 코드와 함께 사용해야 합니다.
 
 ```js
 /* Call on chapter start */ 
