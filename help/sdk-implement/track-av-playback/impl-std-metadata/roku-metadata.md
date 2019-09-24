@@ -1,7 +1,7 @@
 ---
 seo-title: Roku 메타데이터 키
 title: Roku 메타데이터 키
-uuid: 2 CA 6 BB 1 D-C 545-43 D 3-9 C 3 E -63 B 890 AA 268 D
+uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -10,7 +10,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # Roku 메타데이터 키{#roku-metadata-keys}
 
-표준 비디오, 오디오 및 광고 메타데이터는 각각 미디어 및 광고 정보 개체에서 설정할 수 있습니다. 비디오/광고 메타데이터에 상수 키를 사용하여 추적 API를 호출하기 전에 정보 개체에 표준 메타데이터를 포함하는 사전을 설정합니다. 아래 표에서 표준 메타데이터 상수의 전체 목록과 샘플을 참조하십시오.
+표준 비디오, 오디오 및 광고 메타데이터는 각각 미디어 및 광고 정보 개체에 설정할 수 있습니다. 비디오/광고 메타데이터에 상수 키를 사용하여 추적 API를 호출하기 전에 정보 개체에 표준 메타데이터를 포함하는 사전을 설정합니다. 아래 표에서 표준 메타데이터 상수의 전체 목록과 샘플을 참조하십시오.
 
 ## 비디오 메타데이터 상수 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -70,8 +70,8 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 | 상수 | 설명   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the  `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData``trackEvent` |
 | `MEDIA_RESUMED` | 비디오가 재개된 하트비트를 전송하기 위한 상수입니다. To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `MEDIA_RESUMED`는 사용자가 시청을 중단했지만 현재 시청을 재개하려는 컨텐츠를 애플리케이션이 계속 추적하려는 경우 true로 설정해야 합니다. <br/><br/>예를 들어, 사용자가 컨텐츠의 30%를 시청한 다음 앱을 닫는다고 가정합니다. 이 경우 세션이 종료됩니다. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. 결국 동일한 비디오 컨텐츠에 대해 서로 다른 두 개의 미디어 세션을 함께 연결할 수 있습니다. 다음은 구현 예제입니다. <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>이렇게 하면 비디오에 대한 새 세션이 생성되지만, SDK가 이벤트 유형이 "이력서"인 하트비트 요청을 전송하게 됩니다. 이 이벤트 유형은 두 개의 서로 다른 미디어 세션을 함께 연결하여 보고하는 데 사용할 수 있습니다. |
 
 ### 컨텐츠 유형 상수
