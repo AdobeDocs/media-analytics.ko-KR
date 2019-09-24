@@ -1,7 +1,7 @@
 ---
 seo-title: 개요
 title: 개요
-uuid: 4 d 73 c 47 f-d 0 a 4-4228-9040-d 6432311 c 9 eb
+uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -26,7 +26,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 호출 `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## 구현 QOS
+## QOS 구현
 
 1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
 
@@ -34,7 +34,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!TIP]
    >
-   >이 변수는 QoS를 추적하려는 경우에만 필요합니다.
+   >이러한 변수는 QoS를 추적하려는 경우에만 필요합니다.
 
    | 변수 | 설명 | 필수 여부 |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >QoS 개체를 업데이트하고 모든 비트 전송률 변경 시 비트 전송률 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
+   >QoS 개체를 업데이트하고 비트율 변경 시 비트율 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
 
-다음 샘플 코드는 HTML 5 미디어 플레이어용 JavaScript 2. x SDK를 사용합니다. 핵심 미디어 재생 코드와 함께 이 코드를 사용해야 합니다.
+다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다. 이 코드는 핵심 미디어 재생 코드와 함께 사용해야 합니다.
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
