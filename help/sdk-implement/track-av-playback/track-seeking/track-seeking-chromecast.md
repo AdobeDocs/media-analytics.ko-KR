@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast에서 찾기 추적
 title: Chromecast에서 찾기 추적
-uuid: 8018 E 6 C 4-fed 9-4 de 7-9 EAE-C 720 DA 55 AD 8 C
+uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
