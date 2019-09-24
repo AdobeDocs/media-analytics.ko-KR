@@ -1,7 +1,7 @@
 ---
 seo-title: 이벤트 유형 및 설명
 title: 이벤트 유형 및 설명
-uuid: bc 4 f 75 a 7-ea 22-47 eb-a 50 d -5 f 41274 c 6 d 41
+uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## sessionStart
 
-Sent with the `sessions` call. 응답이 반환되면 위치 헤더에서 세션 ID를 추출하여 수집 서버로 후속 이벤트를 호출하는 데 사용합니다.
+호출과 함께 `sessions` 전송됩니다. 응답이 반환되면 위치 헤더에서 세션 ID를 추출하여 수집 서버로 후속 이벤트를 호출하는 데 사용합니다.
 
 ## play
 
@@ -25,9 +25,9 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Ping 이벤트는 요청 본문에 *를 포함하지*&#x200B;않아야`params` 합니다.
 
-## Bitratechange
+## bitrateChange
 
-bitrage 변경 시 전송됩니다.
+비트레이가 변경되면 전송됩니다.
 
 ## bufferStart
 
@@ -39,7 +39,7 @@ bitrage 변경 시 전송됩니다.
 
 ## adBreakStart
 
-광고 브레이크 시작 신호
+광고 중단의 시작을 알립니다.
 
 ## adStart
 
@@ -47,27 +47,27 @@ bitrage 변경 시 전송됩니다.
 
 ## adComplete
 
-광고 브레이크 완료 신호
+광고 브레이크가 완료되었음을 알립니다.
 
 ## adSkip
 
-광고 생략 신호
+광고 건너뛰기 알림
 
 ## adBreakComplete
 
-광고 브레이크 완료 신호
+광고 브레이크가 완료되었음을 알립니다.
 
 ## chapterStart
 
-챕터 세그먼트의 시작을 알립니다.
+장 세그먼트의 시작을 알립니다.
 
 ## chapterSkip
 
-챕터 건너뛰기 신호
+장 건너뛰기 신호하기
 
 ## chapterComplete
 
-챕터 완료 신호
+장의 완성을 신호함
 
 ## 라는 오류가 표시됩니다
 
@@ -75,13 +75,13 @@ bitrage 변경 시 전송됩니다.
 
 ## sessionEnd
 
-사용자가 콘텐트 보기를 포기했고 다시 돌아갈 가능성은 없을 때 미디어 분석 백엔드를 알리는 데 사용됩니다.
+이 메서드는 사용자가 컨텐츠 보기를 중단하고 다시 방문할 가능성이 없을 때 세션을 즉시 종료하도록 Media Analytics 백엔드에 알리는 데 사용됩니다.
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
 ## sessionComplete
 
-주 컨텐츠 끝에 도달하면 전송됩니다.
+기본 컨텐츠의 끝에 도달하면 전송됩니다.
 
 >[!IMPORTANT]
 >
