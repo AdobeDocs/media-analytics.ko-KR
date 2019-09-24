@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Roku에서 표준 메타데이터 구현
 title: Roku에서 표준 메타데이터 구현
-uuid: AE 14 D 809-343 F -452 C -832 A-F 94 BD 3 D 83 A 90
+uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
