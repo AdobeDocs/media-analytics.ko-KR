@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: JavaScript에서 표준 메타데이터 구현
 title: JavaScript에서 표준 메타데이터 구현
-uuid: 523 D 29 E 3-0 A 62-40 D 7-AC 74-DA 645024 CDCB
+uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
