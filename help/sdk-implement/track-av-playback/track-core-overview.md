@@ -1,7 +1,7 @@
 ---
 seo-title: 추적 개요
 title: 추적 개요
-uuid: 7 B 8 E 2 F 76-BC 4 E -4721-8933-3 E 4453 B 01788
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->이 설명서는 SDK 버전 2. x 에서의 추적을 다룹니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>이 설명서에서는 SDK 버전 2.x의 추적을 다룹니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 플레이어 이벤트
 
@@ -22,7 +22,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 미디어 개체 만들기
 * 메타데이터 채우기
-* 호출 `trackSessionStart`; 예를 들면 다음과 같습니다. `trackSessionStart(mediaObject, contextData)`
+* 전화 `trackSessionStart`걸기;예: `trackSessionStart(mediaObject, contextData)`
 
 ### 미디어 시작 시
 
@@ -59,13 +59,13 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!TIP]
 >
->재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 `getCurrentPlayheadTime`내용은 [개요: 일반 구현 지침.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 내용은 `getCurrentPlayheadTime`개요를 [참조하십시오.일반 구현 지침을 참조하십시오.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 구현 {#section_BB217BE6585D4EDEB34C198559575004}
 
 1. **초기 추적 설정 -** 사용자가 재생 의도를 트리거하는(사용자가 재생 및/또는 자동 재생 클릭) 시점을 식별하고 컨텐츠 이름, 컨텐츠 ID, 컨텐츠 길이 및 스트림 유형에 대한 미디어 정보를 사용하여 `MediaObject` 인스턴스를 만듭니다.
 
-   **`MediaObject`참조:**
+   **`MediaObject`reference:**
 
    | 변수 이름 | 설명 | 필수 여부 |
    |---|---|---|
@@ -101,7 +101,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
       >[!NOTE]
       >
-      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+      >Attaching the standard metadata object to the media object is optional.
 
       표준 메타데이터 개체를 인스턴스화하고, 원하는 변수를 채우고, 미디어 하트비트 개체에서 메타데이터 개체를 설정합니다.
 
@@ -113,7 +113,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 재생 시작이 아닌 사용자의 재생 의도를 추적합니다. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
+   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marks the end of a tracking session. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **가능한 모든 일시 정지 시나리오 추적 -**&#x200B;일시 정지를 위해 미디어 플레이어에서 이벤트를 식별하고 `trackPause`를 호출합니다.
 
@@ -142,7 +142,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >이것은 4 단계에서 사용한 것과 동일한 이벤트 소스일 수 있습니다. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >이는 4단계에서 사용된 것과 동일한 이벤트 소스일 수 있습니다. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. 미디어 플레이어에서 재생 찾기 이벤트를 수신합니다. 찾기 시작 이벤트 알림 시 `SeekStart` 이벤트를 사용하여 찾기를 추적합니다.
 1. 미디어 플레이어에서 찾기 완료 알림 시 `SeekComplete` 이벤트를 사용하여 찾기 종료를 추적합니다.
@@ -234,5 +234,5 @@ if (e.type == “buffered”) {
 
 ## 유효성 검사 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-구현 확인에 대한 자세한 내용은 [유효성 검사를 참조하십시오.](/help/sdk-implement/validation/validation-overview.md)
+구현의 유효성 검사에 대한 자세한 내용은 유효성 검사를 [참조하십시오.](/help/sdk-implement/validation/validation-overview.md)
 
