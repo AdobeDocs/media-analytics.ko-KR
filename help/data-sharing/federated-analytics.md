@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 3ca6743e34d40e5826dbe50edcbec6aa77ef66f4
+source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
 
 ---
 
@@ -39,7 +39,7 @@ Federated Analytics 서비스는 두 파트너 간에 Adobe Media(오디오와 �
 
 ## 통합 분석 양식 다운로드
 
-**Download the current version of the form here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
+**`===>`다음 사이트에서 현재 버전을 다운로드하십시오.페더레이션**[ 규칙](/assets/federated_analytics_form.pdf)계약 양식. **`<===`**
 
 ## 프로세스 {#section_byb_kb3_vbb}
 
