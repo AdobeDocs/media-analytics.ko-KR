@@ -3,7 +3,7 @@ seo-title: 사용자 지정 링크 구현 안내서
 title: 사용자 지정 링크 구현 안내서
 uuid: 83315e73-2 파섹
 translation-type: tm+mt
-source-git-commit: d325f3184932b179bbd6cde0d3e82cb2e278dd2a
+source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
 
 ---
 
@@ -14,7 +14,7 @@ Custom Video Tracking utilizes [manual link tracking using custom link code](htt
 
 * JavaScript:함수 `s.tl()` 함수
 * 모바일 앱에서: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 요구 사항
 
