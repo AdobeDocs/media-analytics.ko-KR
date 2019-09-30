@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
@@ -42,7 +42,7 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 
 ## Download the Federated Analytics Form
 
-**`===>`다음 사이트에서 현재 버전을 다운로드하십시오.페더레이션**[ 규칙](/assets/federated_analytics_form.pdf)계약 양식. **`<===`**
+**`===>`양식의 현재 버전은 다음 사이트에서 다운로드할 수 있습니다.페더레이션**[ 규칙](/assets/federated_analytics_form.pdf)계약 양식. **`<===`**
 
 ## 프로세스 {#section_byb_kb3_vbb}
 
@@ -53,4 +53,5 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 1. 데이터는 받는 사람이 데이터를 검토하고 확인하는 개발 보고서 세트에 공유됩니다.
 1. 받는 사람이 데이터가 올바른지 확인하면, Adobe 엔지니어링 부서에서 프로덕션 보고서 세트를 가리키도록 규칙을 업데이트합니다.
 1. 받는 사람은 프로덕션 보고서 세트의 데이터를 검토하고 확인합니다.
-1. 나중에 데이터 세트기 변경되면 보낸 사람 또는 받는 사람이 지원을 위해 고객
+1. 나중에 데이터 세트기 변경되면 보낸 사람 또는 받는 사람이 지원을 위해 고객 지원 티켓을 제출할 수 있습니다.
+
