@@ -3,7 +3,7 @@ seo-title: Adobe Analytics에서 오디오 및 비디오 측정
 title: Adobe Analytics에서 오디오 및 비디오 측정
 uuid: b3cbe240-b94d-42b8-a99c-028033aaa14
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -24,10 +24,6 @@ Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐�
 
 * **Media SDK -** 가장 일반적으로 사용되는 미디어 플레이어와 통합됩니다.
 * **Media Collection API -**(RESTful API) SDK 지원이 없는 플레이어(또는 SDK 통합이 필요하지 않은 플레이어)와 통합됩니다.
-
-   Media Collection API는 SDK에서 아직 사용할 수 없는 추가적인 기능도 제공합니다.
-
-   * **다운로드 컨텐츠 추적 -** 연결에 관계없이 장치에서 다운로드 및 재생되는 미디어 컨텐츠 추적(비디오 및 오디오)에 대한 지원을 제공합니다. 이 기능은 Media Collection API 위에 구축되며 동일한 플레이어 추적 사양을 따릅니다. (현재 SDK 지원은 없습니다.)
 
 Adobe Analytics for Media를 사용하면 고객이 해당 사이트에서 미디어 사용을 포함하는 전체 고객 여정을 추적할 수 있으며, 이러한 측정 기능은 쉽게 Analytics 보고 및 기타 Experience Cloud 제품에 통합되어 있습니다. 미디어 측정을 사용하여 데이터를 여러 차원 및 세그먼트로 나누고 분류하여 세부 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있고, 끝까지 소비한 미디어에 대한 성공 기준, 평균 소요 시간 및 완료된 광고를 표시할 수 있습니다.
 
@@ -57,6 +53,7 @@ Adobe Analytics for Media는 다음 두 가지 방법을 통해 측정할 수 �
 * **Federated Analytics를 통해 공유된 데이터 -** 업계 최초 미디어 공유 기능을 통해 모든 미디어 배포 파트너(운영자, 프로그래머 및 배포자)의 데이터를 전체적으로 평가할 수 있습니다.
 * **인증된 등급의 파트너와 파트너 관계 -** Adobe는 대상 등급 파트너 Nielsen과 협력하여 신뢰할 수 있고 인증된 등급을 허용하도록 중립적인 타사 측정 기능을 제공합니다.
 * **모든 플랫폼에서 표준화된 솔루션 -** 모든 미디어 및 플랫폼에서 일관적으로 표준화된 변수를 사용하여 보다 효율적인 교차 캠페인, 장치 및 공급업체 비교를 허용합니다.
+* **Downloaded content tracking -** Track media content (video and audio) that is downloaded and played on a device regardless of its connectivity.
 
 ### 비교 차트
 
