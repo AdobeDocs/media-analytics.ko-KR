@@ -1,9 +1,9 @@
 ---
 product: Media Analytics
 audience: 최종 사용자
-user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
+user-guide-title: Adobe Analytics for Audio and Video
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [이정표 개요](measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [이정표를 미디어 분석으로 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [이정표에서 사용자 지정 링크로의 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics의 사용자 지정 링크 {#cl-in-aa}
       + [사용자 지정 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md)
@@ -66,10 +66,10 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [표준 메타데이터 매개 변수 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 광고 추적 {#track-ads}
       + [개요](sdk-implement/track-ads/track-ads-overview.md)
-      + [Android에서 광고 추적](sdk-implement/track-ads/track-ads-android.md)
-      + [iOS에서 광고 추적](sdk-implement/track-ads/track-ads-ios.md)
+      + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
+      + [Track Ads on iOS](sdk-implement/track-ads/track-ads-ios.md)
       + [JavaScript에서 광고 추적](sdk-implement/track-ads/track-ads-js.md)
-      + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
+      + [Chromecast에서 광고 추적](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Track Ads on Roku](sdk-implement/track-ads/track-ads-roku.md)
       + 표준 광고 메타데이터 구현 {#impl-std-ad-metadata}
          + [Android에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
@@ -86,17 +86,17 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
    + 경험 추적 품질 {#track-qos}
       + [개요](sdk-implement/track-qos/track-qos-overview.md)
       + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
-      + [iOS에서 경험 품질 추적](sdk-implement/track-qos/track-qos-ios.md)
+      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
       + [JavaScript에서 경험 품질 추적](sdk-implement/track-qos/track-qos-js.md)
       + [Chromecast에서 경험의 품질 추적](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Roku에서 경험의 품질 추적](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [개요](sdk-implement/track-errors/track-errors-overview.md)
       + [Android에서 오류 추적](sdk-implement/track-errors/track-errors-android.md)
-      + [iOS에서 오류 추적](sdk-implement/track-errors/track-errors-ios.md)
+      + [Track Errors on iOS](sdk-implement/track-errors/track-errors-ios.md)
       + [JavaScript에서 오류 추적](sdk-implement/track-errors/track-errors-js.md)
-      + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
-      + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
+      + [Chromecast에서 오류 추적](sdk-implement/track-errors/track-errors-chromecast.md)
+      + [Roku에서 오류 추적](sdk-implement/track-errors/track-errors-roku.md)
    + [옵트아웃 및 개인 정보](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [광고가 없는 VOD 재생](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
@@ -111,10 +111,10 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [라이브 주 컨텐츠](sdk-implement/tracking-scenarios/live-main-content.md)
       + [순차적 추적을 사용하는 라이브 주 컨텐츠](sdk-implement/tracking-scenarios/live-sequential.md)
    + 유효성 검사 {#validation}
-      + [유효성 검사 개요](sdk-implement/validation/validation-overview.md)
+      + [Validation Overview](sdk-implement/validation/validation-overview.md)
       + [테스트 1: 표준 재생](sdk-implement/validation/test1-standard-playback.md)
       + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md)
-      + [테스트 호출 세부 사항](sdk-implement/validation/test-call-details.md)
+      + [Test Call Details](sdk-implement/validation/test-call-details.md)
       + [하트비트 매개 변수 설명](sdk-implement/validation/heartbeat-params.md)
       + 디버깅 {#debugging}
          + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
@@ -182,3 +182,4 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + [페더레이션 분석](data-sharing/federated-analytics.md)
 + 추가 리소스 {#additional-resources}
    + [설명서 업데이트](additional-resources/doc-updates.md)
+
