@@ -1,9 +1,9 @@
 ---
 product: Media Analytics
 audience: 최종 사용자
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
+source-git-commit: b0aae4555f2193f5aa03e647adeac6c322b6b389
 
 ---
 
@@ -39,22 +39,22 @@ source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
       + [개요](sdk-implement/track-av-playback/track-core-overview.md)
       + Track Core Audio and Video Playback {#track-core}
          + [Android에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-android.md)
-         + [Track Core Playback on iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-         + [Track Core Playback on JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [iOS에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-ios.md)
+         + [JavaScript에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-js.md)
          + [Chromecast에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Roku에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
-         + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Android에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [iOS에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
          + [JavaScript에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
          + [Chromecast에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Roku에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Android에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
-         + [iOS에서 추적 검색](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [JavaScript에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Chromecast에서 추적 검색](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Roku에서 추적 검색](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 표준 메타데이터 구현 {#impl-std-metadata}
          + [Android에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
@@ -66,7 +66,7 @@ source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
          + [표준 메타데이터 매개 변수 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 광고 추적 {#track-ads}
       + [개요](sdk-implement/track-ads/track-ads-overview.md)
-      + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
+      + [Android에서 광고 추적](sdk-implement/track-ads/track-ads-android.md)
       + [iOS에서 광고 추적](sdk-implement/track-ads/track-ads-ios.md)
       + [JavaScript에서 광고 추적](sdk-implement/track-ads/track-ads-js.md)
       + [Chromecast에서 광고 추적](sdk-implement/track-ads/track-ads-chromecast.md)
@@ -80,24 +80,24 @@ source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
       + [개요](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Android에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-android.md)
       + [iOS에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [JavaScript에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js.md)
+      + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
       + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + 경험 추적 품질 {#track-qos}
       + [개요](sdk-implement/track-qos/track-qos-overview.md)
-      + [Android에서 경험 품질 추적](sdk-implement/track-qos/track-qos-android.md)
-      + [iOS에서 경험 품질 추적](sdk-implement/track-qos/track-qos-ios.md)
-      + [JavaScript에서 경험 품질 추적](sdk-implement/track-qos/track-qos-js.md)
+      + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
+      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
+      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
       + [Chromecast에서 경험의 품질 추적](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Roku에서 경험의 품질 추적](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [개요](sdk-implement/track-errors/track-errors-overview.md)
       + [Android에서 오류 추적](sdk-implement/track-errors/track-errors-android.md)
-      + [Track Errors on iOS](sdk-implement/track-errors/track-errors-ios.md)
-      + [Track Errors on JavaScript](sdk-implement/track-errors/track-errors-js.md)
-      + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
-      + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
-   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
+      + [iOS에서 오류 추적](sdk-implement/track-errors/track-errors-ios.md)
+      + [JavaScript에서 오류 추적](sdk-implement/track-errors/track-errors-js.md)
+      + [Chromecast에서 오류 추적](sdk-implement/track-errors/track-errors-chromecast.md)
+      + [Roku에서 오류 추적](sdk-implement/track-errors/track-errors-roku.md)
+   + [옵트아웃 및 개인 정보](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [광고가 없는 VOD 재생](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [프리롤 광고가 있는 VOD 재생](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -124,7 +124,7 @@ source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
    + Analytics in OTT Apps {#analytics-with-ott}
       + [앱 상태 추적](sdk-implement/analytics-with-ott/track-app-states.md)
       + [앱 작업 추적](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [Set User IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [사용자 ID 설정](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT와 Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT와 Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + 요리책 {#cookbook}
@@ -161,18 +161,18 @@ source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
       + [타임라인 1 - 컨텐츠 끝까지 보기](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [다운로드한 콘텐츠 추적](media-collection-api/track-downloaded-content.md)
+   + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
-   + [오디오 및 비디오 매개 변수](metrics-and-metadata/audio-video-parameters.md)
+   + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
    + [광고 매개 변수](metrics-and-metadata/ad-parameters.md)
    + [챕터 매개 변수](metrics-and-metadata/chapter-parameters.md)
    + [품질 매개 변수](metrics-and-metadata/quality-parameters.md)
    + [세그먼트](metrics-and-metadata/segments.md)
    + [계산된 지표](metrics-and-metadata/calculated-metrics.md)
 + Reporting and Analysis {#media-reports}
-   + [미디어 보고서 지원](media-reports/media-reports-enable.md)
+   + [Media Reports Enablement](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
-      + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
+      + [기본 보고서 개요](media-reports/media-default-reports/default-reports-overview.md)
       + [미디어 개요](media-reports/media-default-reports/media-reports-overview.md)
       + [미디어 세부 사항](media-reports/media-default-reports/media-reports-detail.md)
       + [미디어 방송 시간대](media-reports/media-default-reports/media-reports-daypart.md)
@@ -182,3 +182,4 @@ source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
 + [페더레이션 분석](data-sharing/federated-analytics.md)
 + 추가 리소스 {#additional-resources}
    + [설명서 업데이트](additional-resources/doc-updates.md)
+
