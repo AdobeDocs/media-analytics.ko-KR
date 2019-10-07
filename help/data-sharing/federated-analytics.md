@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 99a8908499ab0e43964fd3d7e6e419b5a78ce66b
+source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
 
 ---
 
@@ -40,9 +40,9 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 
 * **Adobe Consulting Contract:**&#x200B;보낸 사람과 받은 사람 간의 초기 페더레이션 규칙 설정의 경우 컨설팅 서비스 팀과 함께 작업하여 데이터를 검토하고 데이터 공유 계약을 작성하는 것이 중요합니다.
 
-## Download the Federated Analytics Form
+## 통합 분석 양식 다운로드
 
-Download the current version of the form here: [Federation Rules Agreement Form](/assets/federated_analytics_form.pdf)
+양식의 현재 버전은 다음 사이트에서 다운로드할 수 있습니다.페더레이션 [규칙 계약 양식](federated_analytics_form.pdf)
 
 ## 프로세스 {#section_byb_kb3_vbb}
 
