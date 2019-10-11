@@ -3,7 +3,7 @@ seo-title: 요청 매개 변수
 title: 요청 매개 변수
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 
 ---
 
@@ -103,6 +103,13 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 | `media.qoe.droppedFrames` | N | Any | 스트림에서 삭제된 프레임 수 |
 | `media.qoe.framesPerSecond` | N | Any | 초당 프레임 수 |
 | `media.qoe.timeToStart` | N | Any | 사용자가 재생을 시작하고 컨텐츠가 로드되고 재생을 시작하는 사이에 경과된 시간(밀리 초) |
+
+## CPA(California Consumer Privacy Act) 매개 변수 {#ccpa-params}
+
+| 요청 키 | 필수 여부 | 설정... |  설명  |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 true로 설정합니다. |
+| `analytics.optOutShare` | N | `sessionStart` | 최종 사용자가 데이터(예: 다른 Adobe Analytics 클라이언트)를 페더레이션하지 않기로 선택한 경우 true로 설정합니다. |
 
 ## 추가 세부 정보 {#section_ryt_ccy_lcb}
 
