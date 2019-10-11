@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 최종 사용자
 user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
+source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
 
 ---
 
@@ -179,6 +179,6 @@ source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
       + [미디어 Concurrent Viewer](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Concurrent Viewers JSON 보고서 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json.md)
    + [미디어 작업 영역 템플릿](media-reports/media-workspace-templates.md)
-+ [페더레이션 분석](data-sharing/federated-analytics.md)
++ [페더레이션 분석](federated-analytics.md)
 + 추가 리소스 {#additional-resources}
    + [설명서 업데이트](additional-resources/doc-updates.md)
