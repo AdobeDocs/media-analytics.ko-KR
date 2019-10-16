@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 
 ---
 
@@ -42,7 +42,7 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 
 ## 통합 분석 양식 다운로드
 
-이 양식의 현재 버전을 여기에서 다운로드하십시오.페더레이션 [규칙 계약](federated-analytics-form.pdf)
+이 양식의 현재 버전을 여기에서 다운로드하십시오.페더레이션 [규칙 계약](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## 프로세스 {#section_byb_kb3_vbb}
 
