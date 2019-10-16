@@ -3,7 +3,7 @@ seo-title: iOS 설정
 title: iOS 설정
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -140,7 +140,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 ## tvOS용 기본 앱 구성
 
-새 Apple TV 릴리스에서 이제 기본 tvOS 환경에서 실행할 애플리케이션을 만들 수 있습니다. iOS에서 사용할 수 있는 여러 프레임워크를 사용하여 기본 앱을 생성하거나, XML 템플릿 및 JavaScript를 사용하여 앱을 만들 수 있습니다. MediaSDK 버전 2.0부터 tvOS에 대한 지원을 이용할 수 있습니다. For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/documentation/)
+새 Apple TV 릴리스에서 이제 기본 tvOS 환경에서 실행할 애플리케이션을 만들 수 있습니다. iOS에서 사용할 수 있는 여러 프레임워크를 사용하여 기본 앱을 생성하거나, XML 템플릿 및 JavaScript를 사용하여 앱을 만들 수 있습니다. MediaSDK 버전 2.0부터 tvOS에 대한 지원을 이용할 수 있습니다. For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
 
 Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 tvOS를 타깃팅하는 Apple TV 앱 타겟이 프로젝트에 있다고 가정하여 작성되었습니다.
 
