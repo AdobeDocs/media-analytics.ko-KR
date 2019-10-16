@@ -3,7 +3,7 @@ seo-title: 미디어 보고서 지원
 title: 미디어 보고서 지원
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -16,22 +16,22 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 >
 >새로운 기능을 활용하려면 기존 Media Analytics 고객은 RSID에 대한 미디어 추적을 다시 활성화해야 합니다.
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] &gt; [!UICONTROL Report Suites].
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] &gt; [!UICONTROL Media Management] &gt; [!UICONTROL Media Reporting].
+1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
    미디어 측정에는 다음 모듈이 포함되어 있습니다.
 
    * **미디어 코어**
 
-      Core media measurement is used for media content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. 솔루션(또는 사용자 지정) 이벤트는 미디어 시작, 컨텐츠 시작, 컨텐츠 완료 및 컨텐츠 체류 시간에 사용됩니다.
+      핵심 미디어 측정은 미디어 컨텐츠에 사용됩니다.솔루션(또는 사용자 지정) eVar를 사용하여 컨텐츠, 컨텐츠 유형, 컨텐츠 플레이어 이름 및 컨텐츠 채널을 추적합니다. 솔루션(또는 사용자 지정) 이벤트는 미디어 시작, 컨텐츠 시작, 컨텐츠 완료 및 컨텐츠 체류 시간에 사용됩니다.
 
    * **미디어 광고**
 
-      Media ad measurement is used for the measurement of ads within the media content. 이 광고는 솔루션 eVars를 사용하여 광고, 광고 플레이어 이름, 광고 Pod 및 Pod의 광고 위치를 측정합니다. 솔루션 이벤트는 광고 시작, 광고 완료, 광고 체류 시간 및 비디오 체류 시간에 사용됩니다.
+      미디어 광고 측정은 미디어 컨텐츠 내의 광고를 측정하는 데 사용됩니다. 이 광고는 솔루션 eVars를 사용하여 광고, 광고 플레이어 이름, 광고 Pod 및 Pod의 광고 위치를 측정합니다. 솔루션 이벤트는 광고 시작, 광고 완료, 광고 체류 시간 및 비디오 체류 시간에 사용됩니다.
 
    * **미디어 챕터**
 
@@ -52,17 +52,17 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
    광고, 챕터 또는 재생 품질을 아직 추적하지 않은 경우 언제든지 추가 옵션을 활성화할 수 있습니다.
 
-1. **[!UICONTROL 저장을 클릭합니다]**.
+1. **[!UICONTROL 저장을 클릭합니다].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. [!UICONTROL 미디어 코어 측정] 페이지가 표시되면 다음 단계를 계속 진행합니다.
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. **[!UICONTROL 미디어 코어 측정]페이지가 표시되면 다음 단계를 계속 진행합니다.**
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables.
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | 옵션 | 참고 |
    | --- | --- |
-   | 사용자 지정 변수를 계속 사용 | Pros and Cons:<ul> <li> **Pros**: 마이그레이션 후에도 컨텐츠 트렌드가 계속 작동합니다. </li> <li> **** 반대:2개의 사용자 지정 eVar 및 3개의 사용자 지정 이벤트를 미디어에 할당해야 합니다. 사용자 지정 eVar 1개와 사용자 지정 이벤트 1개를 다시 사용할 수 있습니다. </li> </ul> 사용자 지정 변수를 계속 사용하려면: <ol> <li>사용자 지정 변수 사용을 선택한 다음 저장을 클릭합니다. </li> <li>메시지가 표시되면 현재 사용자 지정 eVar와 이벤트를 매핑한 다음 저장을 클릭합니다. </li> </ol> |
-   | 솔루션 변수로 마이그레이션 | 장점:<ul> <li> **Pros**: 사용자 지정 eVar 3개와 사용자 지정 이벤트 4개를 다시 사용할 수 있습니다. </li> <li> **Cons**: 미디어 보고서에 대한 **모든** 기록 트렌드와 비교가 손실됩니다. 즉, 하트비트로 마이그레이션하기 전에 모든 날짜에 대해 재생되는 컨텐츠 보기 또는 컨텐츠 시간의 트렌드를 파악할 수 없습니다. </li> </ul> **제한 사항:** 이 트렌드를 유지하지 않아도 된다고 확신하지 않는 한 솔루션 변수로 마이그레이션하지 마십시오! 모든 고객은 기록 연속성을 유지해야 하는 경우에만 솔루션 변수를 사용하고 처리 규칙을 사용하여 미디어 데이터를 기존 prop 및 eVar에 지정하는 것이 좋습니다. To migrate to solution variables: Select Use Solution Variables and click Save.  <br><br> 중요:솔루션 변수로 마이그레이션하면 미디어 보고서에 대한 **모든** 내역 트렌드 및 비교가 손실됩니다. |
+   | 사용자 지정 변수를 계속 사용 | 장점:<ul> <li> **Pros**: 마이그레이션 후에도 컨텐츠 트렌드가 계속 작동합니다. </li> <li> **** 반대:2개의 사용자 지정 eVar 및 3개의 사용자 지정 이벤트를 미디어에 할당해야 합니다. 사용자 지정 eVar 1개와 사용자 지정 이벤트 1개를 다시 사용할 수 있습니다. </li> </ul> 사용자 지정 변수를 계속 사용하려면: <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | 솔루션 변수로 마이그레이션 | 장점:<ul> <li> **Pros**: 사용자 지정 eVar 3개와 사용자 지정 이벤트 4개를 다시 사용할 수 있습니다. </li> <li> **Cons**: 미디어 보고서에 대한 **모든** 기록 트렌드와 비교가 손실됩니다. 즉, 하트비트로 마이그레이션하기 전에 모든 날짜에 대해 재생되는 컨텐츠 보기 또는 컨텐츠 시간의 트렌드를 파악할 수 없습니다. </li> </ul> **제한 사항:** 이 트렌드를 유지하지 않아도 된다고 확신하지 않는 한 솔루션 변수로 마이그레이션하지 마십시오! 모든 고객은 기록 연속성을 유지해야 하는 경우에만 솔루션 변수를 사용하고 처리 규칙을 사용하여 미디어 데이터를 기존 prop 및 eVar에 지정하는 것이 좋습니다. 솔루션 변수로 마이그레이션하려면솔루션 **[!UICONTROL 변수 사용을]** 선택하고 저장을 **[!UICONTROL 클릭합니다].** 중요 <br><br> 사항:솔루션 변수로 마이그레이션하면 미디어 보고서에 대한 **모든** 내역 트렌드 및 비교가 손실됩니다. |
 
 >[!IMPORTANT]
 >
->지표 및 메타데이터 테이블(예: 오디오 및 비디오 매개 변수)에 나열되는 변수에 대한 분류 이름을 [변경하지 마십시오](/help/metrics-and-metadata/audio-video-parameters.md). 이 변수에는 보고/예약 변수가 "분류"로 설명되어 있습니다. The media classifications are defined when a report suite is enabled for media tracking. From time to time, Adobe adds new properties, and when this occurs, customers must re-enable their report suites to get access to the new media properties. 업데이트 프로세스 동안 Adobe는 변수의 이름을 확인하여 분류를 사용할지 여부를 결정합니다. 누락된 항목이 있으면 Adobe는 누락된 항목을 다시 추가합니다.
+>지표 및 메타데이터 테이블(예: 오디오 및 비디오 매개 변수)에 나열되는 변수에 대한 분류 이름을 [변경하지 마십시오](/help/metrics-and-metadata/audio-video-parameters.md). 이 변수에는 보고/예약 변수가 "분류"로 설명되어 있습니다. 미디어 분류는 보고서 세트가 미디어 추적을 활성화될 때 정의됩니다. Adobe는 수시로 새 속성을 추가하며, 이 경우 고객은 보고서 세트를 다시 활성화하여 새로운 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 동안 Adobe는 변수의 이름을 확인하여 분류를 사용할지 여부를 결정합니다. 누락된 항목이 있으면 Adobe는 누락된 항목을 다시 추가합니다.
