@@ -1,9 +1,9 @@
 ---
 seo-title: 미디어 작업 공간 템플릿
 title: 미디어 작업 공간 템플릿
-uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
+uuid: 0024b06a-eaf5-4d2e-be45-aeda9d054c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Analytics Workspace는 추적 데이터를 분석할 수 있도록 대시�
 
    ![](assets/all-templates-audio.png)
 
-   예를 들어, [오디오 소비] 템플릿을 선택하면 다음 오디오 기반 대시보드가 있는 프로젝트가 표시됩니다.
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
