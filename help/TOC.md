@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 최종 사용자
 user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
@@ -164,8 +164,8 @@ source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [다운로드한 콘텐츠 추적](media-collection-api/track-downloaded-content.md)
 + 요리책 {#media-analytics-cookbook}
-   + [Cookbook 개요](media-analytics-cookbook/cookbook-overview.md)
-   + [미디어 추적 외부의 미디어 치수](media-analytics-cookbook/media-dimensions.md)
+   + [요리책](media-analytics-cookbook/cookbook-overview.md)
+   + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
    + [오디오 및 비디오 매개 변수](metrics-and-metadata/audio-video-parameters.md)
    + [광고 매개 변수](metrics-and-metadata/ad-parameters.md)
