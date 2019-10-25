@@ -3,7 +3,7 @@ seo-title: 요청 매개 변수
 title: 요청 매개 변수
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 true로 설정합니다. |
 | `analytics.optOutShare` | N | `sessionStart` | 최종 사용자가 데이터(예: 다른 Adobe Analytics 클라이언트)를 페더레이션하지 않기로 선택한 경우 true로 설정합니다. |
 
-## 추가 세부 정보 {#section_ryt_ccy_lcb}
+## 추가 세부 정보 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
