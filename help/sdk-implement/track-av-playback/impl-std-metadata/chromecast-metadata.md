@@ -3,7 +3,7 @@ seo-title: Chromecast 메타데이터 키
 title: Chromecast 메타데이터 키
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 표준 비디오 및 광고 메타데이터는 각각 미디어 및 광고 정보 개체에 설정할 수 있습니다. 비디오/광고 메타데이터에 상수 키를 사용하여 추적 API를 호출하기 전에 정보 개체에 표준 메타데이터를 포함하는 사전을 설정합니다. 아래 표에서 표준 메타데이터 상수의 전체 목록과 샘플을 참조하십시오.
 
-## 메타데이터 상수 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## 메타데이터 상수 {#video-metadata-constants}
 
 | 메타데이터 이름 | 컨텍스트 데이터 키 | 상수 이름 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 피드 | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | 스트림 형식 | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## 광고 메타데이터 상수 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 광고 메타데이터 상수 {#ad-metadata-constants}
 
 | 메타데이터 이름 | 컨텍스트 데이터 키 | 상수 이름 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 사이트 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 광고 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Chromecast용 샘플 구현 {#section_wvy_bdn_w2b}
+## Chromecast용 샘플 구현 {#sample-implementations-for-chromecast}
 
 ### 비디오
 
