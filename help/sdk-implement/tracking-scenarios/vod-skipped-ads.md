@@ -3,14 +3,14 @@ seo-title: 광고를 건너뛰고 VOD 재생
 title: 광고를 건너뛰고 VOD 재생
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 광고를 건너뛰고 VOD 재생{#vod-playback-with-skipped-ads}
 
-## 시나리오 {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## 시나리오 {#scenario}
 
 이 시나리오는 광고를 건너뛴 VOD 컨텐츠 재생으로 구성됩니다.
 
@@ -29,11 +29,11 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | 컨텐츠 재생이 완료됨. | `trackComplete()` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd()` |  | `SessionEnd` |
 
-## 매개 변수 {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## 매개 변수 {#parameters}
 
 매개 변수는 광고 완료가 없고 광고 브레이크 완료 호출이 없다는 점을 제외하고는 [프리롤 광고가 있는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) 시나리오의 매개 변수와 동일합니다.
 
-## 샘플 코드 {#section_lxt_qz3_x2b}
+## 샘플 코드 {#sample-code}
 
 ![](assets/ad-skip.png)
 
