@@ -3,14 +3,14 @@ seo-title: 버퍼링이 있는 VOD 재생
 title: 버퍼링이 있는 VOD 재생
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 버퍼링이 있는 VOD 재생{#vod-playback-with-buffering}
 
-## 시나리오 {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## 시나리오 {#scenario}
 
 이 시나리오에서는 VOD 컨텐츠가 재생될 때 약간의 버퍼링이 발생합니다.
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 컨텐츠 재생이 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 플레이헤드의 끝에 도달했습니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 이 API는 사용자가 비디오를 끝까지 시청하지 않은 경우에도 호출해야 합니다. |
 
-## 매개 변수 {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## 매개 변수 {#parameters}
 
 ### 하트비트 버퍼
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## 샘플 코드 {#section_hxn_fdj_x2b}
+## 샘플 코드 {#sample-code}
 
 이 시나리오에서는 VOD 컨텐츠가 재생될 때 버퍼링이 발생합니다.
 
