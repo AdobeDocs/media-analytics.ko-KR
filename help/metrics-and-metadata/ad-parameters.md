@@ -3,7 +3,7 @@ seo-title: 광고 매개 변수
 title: 광고 매개 변수
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
    * *키* - 앱에서 수동으로 설정하거나 Adobe Media SDK에 의해 자동으로 설정된 변수.
    * *필수* - 기본 비디오 추적에 매개 변수가 필요한지 여부를 나타냅니다.
    * *유형* - 설정할 변수의 유형(문자열 또는 숫자)을 지정합니다.
-   * *Sent With - Indicates when the data is sent: Media Start is the analytics call sent on media start, Ad Start is the analytics call sent on ad start, and so on; the Close calls are the compiled analytics calls sent directly from the heartbeat server to the analytics server at the end of the media session, or the end of the ad, chapter, etc.******* 닫기 호출은 네트워크 패킷 호출에서 사용할 수 없습니다.
+   * *전송 대상* - 데이터가 전송될 시기를 나타냅니다.Media *Start* 는 미디어 시작 시 전송되는 분석 호출이며, *광고* 시작은 광고 시작 시 전송되는 분석 호출입니다.닫기 *호출은* 하트비트 서버에서 미디어 세션 종료 시 또는 광고 종료, 장 등 분석 서버로 직접 전송되는 컴파일된 분석 호출입니다. 닫기 호출은 네트워크 패킷 호출에서 사용할 수 없습니다.
    * *최소. SDK 버전* - 매개 변수에 액세스하는 데 필요한 SDK 버전을 나타냅니다.
    * *샘플 값* - 일반 변수 사용법 예를 제공합니다.
 * **네트워크 매개 변수:** Adobe Analytics 또는 하트비트 서버에 전달되는 값을 표시합니다. 이 열에는 Adobe Media SDK에서 생성한 네트워크 호출에 표시되는 매개 변수의 이름이 표시됩니다.
@@ -41,13 +41,13 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 >분류는 변수의 이름을 확인하여 활성화됩니다. If any of
 >누락된 경우 Adobe에서 누락된 항목을 다시 추가합니다.
 
-## 광고 비디오 데이터 {#section_hq3_nbv_51b}
+## 광고 비디오 데이터 {#ad-video-data}
 
 ### 광고 ID
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.id </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두  </li> <li> ****<br/> 샘플 값:"2125" </li><li> **설명:**<br/>광고의 ID입니다. (모든 정수 및/또는 문자 조합)  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>이름) </li> <li> **Heartbeat:**<br/> (s:asset:ad_id) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>방문 시 </li> <li> **보고서 이름:**<br/>광고 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>이름) </li> <li> **데이터 피드:**<br/>videoad </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.name) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.id </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두  </li> <li> ****<br/> 샘플 값:"2125" </li><li> **설명:**<br/>광고의 ID입니다. (모든 정수 및/또는 문자 조합)  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>이름) </li> <li> ****<br/> 하트비트:(s:asset:ad_id) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>방문 시 </li> <li> **보고서 이름:**<br/>광고 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>이름) </li> <li> **데이터 피드:**<br/>videoad </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.name) </li> </ul> |
 
 
 
@@ -55,15 +55,15 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.podPosition </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/>숫자 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:1 </li><li> **설명:**<br/>상위 광고 브레이크 내의 광고의 위치(인덱스)입니다. 첫 번째 광고에는 색인 0, 두 번째 광고에 색인 1 등이 있습니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>podPosition) </li> <li> ****<br/> Heartbeat: (s:asset:pod_position) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>Pod의 광고 위치의 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>podPosition) </li> <li> **데이터 피드:**<br/>videoadinpod </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.podPosition </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/>숫자 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:1 </li><li> **설명:**<br/>상위 광고 브레이크 내의 광고의 위치(인덱스)입니다. 첫 번째 광고에는 색인 0, 두 번째 광고에 색인 1 등이 있습니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>podPosition) </li> <li> ****<br/> 하트비트:(s:asset:pod_position) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>Pod의 광고 위치의 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>podPosition) </li> <li> **데이터 피드:**<br/>videoadinpod </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
 
 
 
 ### 광고 길이
 
-|   구현   | Network Parameters | 보고 |
+|   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.length </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/>숫자 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.1 </li> <li> **Sample Value:**<br/> "15"  </li><li> **Description:**<br/>Length of video ad in seconds.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>length) </li> <li> ****<br/> 하트비트:(l:asset:ad_length) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar 및 분류 </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 길이 및 광고 길이(변수) </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>length) </li> <li> **데이터 피드:**<br/>videoadlength </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.length) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.length </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/>숫자 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.1 </li> <li> ****<br/> 샘플 값:"15"  </li><li> **설명:**<br/>비디오 광고의 길이(초)입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>length) </li> <li> ****<br/> 하트비트:(l:asset:ad_length) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar 및 분류 </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 길이 및 광고 길이(변수) </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>length) </li> <li> **데이터 피드:**<br/>videoadlength </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.length) </li> </ul> |
 
 
 
@@ -71,7 +71,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.playerName </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:"자유로운 바퀴" </li><li> **Description:**<br/>The name of the player responsible for rendering the ad.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>playerName) </li> <li> **Heartbeat:**<br/> (s:sp:player_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 플레이어 이름 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>playerName) </li> <li> **데이터 피드:**<br/>videoadplayername </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.playerName) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.playerName </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:"자유로운 바퀴" </li><li> **설명:**<br/>광고를 렌더링할 플레이어의 이름입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>playerName) </li> <li> ****<br/> 하트비트:(s:sp:player_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 플레이어 이름 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>playerName) </li> <li> **데이터 피드:**<br/>videoadplayername </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.playerName) </li> </ul> |
 
 
 
@@ -79,15 +79,15 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [이름](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> 필수:SDK:예;API:아니 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:"프리롤" </li><li> **설명:**<br/>광고 분리의 친숙한 이름입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>podFriendlyName) </li> <li> **Heartbeat:**<br/> (s:asset:pod_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>분류 </li> <li> **보고서 이름:**<br/>Pod 이름 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>podFriendlyName) </li> <li> **데이터 피드:**<br/>N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [이름](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> 필수:SDK:예;API:아니 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:"프리롤" </li><li> **설명:**<br/>광고 분리의 친숙한 이름입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>podFriendlyName) </li> <li> ****<br/> 하트비트:(s:asset:pod_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>분류 </li> <li> **보고서 이름:**<br/>Pod 이름 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>podFriendlyName) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
 ### 광고 브레이크 색인
 
-|   구현   | Network Parameters | 보고 |
+|   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.podPosition </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/>숫자 </li> <li> **전송 시점:**<br/> </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> Sample Value: 1 </li><li> **Description:The index of the ad break inside the content starting at 1.**<br/> 속성은 Media SDK에서 Pod ID를 생성하는 데&#x200B;**에만** 사용됩니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>아니요 </li> <li> **예약된 변수:**<br/>N/A </li> <li> **보고서 이름:**<br/>N/A </li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/>N/A </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.podPosition </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/>숫자 </li> <li> **전송 시점:**<br/> </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:1 </li><li> **설명:**<br/>1부터 시작하는 컨텐츠 내의 광고 분할의 인덱스입니다. 속성은 Media SDK에서 Pod ID를 생성하는 데&#x200B;**에만** 사용됩니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>아니요 </li> <li> **예약된 변수:**<br/>N/A </li> <li> **보고서 이름:**<br/>N/A </li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/>N/A </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -103,7 +103,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>창) </li> <li> **Heartbeat:**<br/> (s:asset:pod_id) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 Pod </li> <li> ****<br/> Context Data: (a.media.ad.<br/>창) </li> <li> **데이터 피드:**<br/>videoadpod </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>창) </li> <li> ****<br/> 하트비트:(s:asset:pod_id) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 Pod </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>창) </li> <li> **데이터 피드:**<br/>videoadpod </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -111,17 +111,17 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [이름](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.name </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.1 </li> <li> ****<br/> 샘플 값:"Ford F-150" </li><li> **설명:**<br/>광고의 친숙한 이름입니다.  보고 시 "광고 이름"은 분류이고, "광고 이름(변수)"은 eVar입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad.<br/>friendlyName) </li> <li> ****<br/> 하트비트:(s:asset:ad_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar 및 분류 </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 이름 및 광고 이름(변수) </li> <li> ****<br/> Context Data: (a.media.ad.<br/>friendlyName) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [이름](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/>media.ad.name </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.1 </li> <li> ****<br/> 샘플 값:"Ford F-150" </li><li> **설명:**<br/>광고의 친숙한 이름입니다.  보고 시 "광고 이름"은 분류이고, "광고 이름(변수)"은 eVar입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>friendlyName) </li> <li> ****<br/> 하트비트:(s:asset:ad_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar 및 분류 </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/>광고 이름 및 광고 이름(변수) </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>friendlyName) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
 
 
 
-## 표준 광고 메타데이터 {#section_EFB805867916411E84DE1BA5A183D86A}
+## 표준 광고 메타데이터 {#standard-ad-metadata}
 
 ### 광고주
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>ADVERTISER </li> <li> **API 키:**<br/>media.ad.advertiser </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **Sample Value:**<br/> </li><li> **Description:Company/Brand whose product is featured in the ad.**<br/>   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>advertiser) </li> <li> ****<br/> 하트비트:(s:meta:<br/>a.media.ad.advertiser) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/> <i>광고주 </i> </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>advertiser) </li> <li> **데이터 피드:**<br/>videoadvertiser </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>ADVERTISER </li> <li> **API 키:**<br/>media.ad.advertiser </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>광고에 제품이 포함된 회사/브랜드.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>advertiser) </li> <li> ****<br/> 하트비트:(s:meta:<br/>a.media.ad.advertiser) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/> <i>광고주 </i> </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>advertiser) </li> <li> **데이터 피드:**<br/>videoadvertiser </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
 
 
 
@@ -145,7 +145,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>SITE_ID </li> <li> **API 키:**<br/>media.ad.siteId </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>광고 사이트의 ID.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>없습니다) </li> <li> ****<br/> 하트비트:(s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>Use custom processing rule </i> </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/> <i> </i> </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>없습니다) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.site) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>SITE_ID </li> <li> **API 키:**<br/>media.ad.siteId </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>광고 사이트의 ID.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>없습니다) </li> <li> ****<br/> 하트비트:(s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/> <i> </i> </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>없습니다) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
@@ -159,26 +159,26 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ### 게재위치 ID
 
-|   구현   | Network Parameters | 보고 |
+|   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>PLACEMENT_ID </li> <li> **API 키:**<br/>media.ad.placementId </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **Sample Value:**<br/> </li><li> **Description:**<br/>Placement ID of the ad.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>배치) </li> <li> ****<br/> 하트비트:(s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/> <i> </i> </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>배치) </li> <li> **데이터 피드:**<br/>N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>PLACEMENT_ID </li> <li> **API 키:**<br/>media.ad.placementId </li> <li> **필수:**<br/>아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>광고의 배치 ID입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>배치) </li> <li> ****<br/> 하트비트:(s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/>eVar </li> <li> **만료:**<br/>히트 시 </li> <li> **보고서 이름:**<br/> <i> </i> </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>배치) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
 
-## 광고 지표 {#section_22AA1565F11C4F3990E2AB51CD3213F7}
+## 광고 지표 {#ad-metrics}
 
 ### 광고 시작
 
-|   구현   | Network Parameters | 보고 |
+|   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:TRUE </li><li> **Description:**<br/>Number of video ad starts.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>view) </li> <li> ****<br/> 하트비트: (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>광고 시작 </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>view) </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 시작 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:TRUE </li><li> **설명:**<br/>비디오 광고 시작 횟수입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>view) </li> <li> ****<br/> 하트비트: (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>광고 시작 </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>view) </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
 ### 광고 완료
 
-|   구현   | Network Parameters | 보고 |
+|   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
 | <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:TRUE </li><li> **설명:**<br/>비디오 광고 완료 횟수입니다.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>완료됨) </li> <li> ****<br/> 하트비트:(s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>광고 완료 </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>완료됨) </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
@@ -188,15 +188,15 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:15년 </li><li> **설명:**<br/>광고를 시청하는 데 걸린 총 시간(초)입니다(즉, 재생된 시간).  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.  <br/>**릴리스 날짜: 2018년 9월 13일**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>timePlayed) </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>광고 체류 시간 </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Context Data: (a.media.ad.<br/>timePlayed) </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **필수:**<br/>예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>광고 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> ****<br/> 샘플 값:15년 </li><li> **설명:**<br/>광고를 시청하는 데 걸린 총 시간(초)입니다(즉, 재생된 시간).  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.  <br/>**릴리스 날짜: 2018년 9월 13일**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.ad.<br/>timePlayed) </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>광고 체류 시간 </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> 컨텍스트 데이터:(a.media.ad.<br/>timePlayed) </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
 
 
 
-## Related APIs {#section_Related_APIs}
+## 관련 API {#section_Related_APIs}
 
 ### createAdObject API:
 
-* Android - createAdObject[](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createAdObject-java.lang.String-java.lang.String-java.lang.Long-java.lang.Double-)
+* Android - [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createAdObject-java.lang.String-java.lang.String-java.lang.Long-java.lang.Double-)
 * iOS - [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createAdObjectWithName:adId:position:length:)
 * JavaScript - [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createAdObject)
 
