@@ -1,9 +1,9 @@
 ---
-seo-title: Adobe Experience Platform Launch
-title: Adobe Experience Platform Launch
+seo-title: ' Adobe Experience Platform Launch'
+title: ' Adobe Experience Platform Launch'
 uuid: d6f9daf2-6f61-4475-9a77-94361bdd9d95
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
 
 Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다. Adobe의 이전 이정표 모델을 대체했습니다.
 
-Adobe Experience Platform Launch, the follow-on product to Dynamic Tag Management, features a Launch extension that facilitates implementing tracking in your media players.
+Dynamic Tag Management의 후속 제품인 Adobe Experience Platform Launch는 미디어 플레이어에서 추적을 쉽게 구현할 수 있는 Launch 익스텐션을 제공합니다.
 
-You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension)
+You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension.](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 >[!NOTE]
 >
