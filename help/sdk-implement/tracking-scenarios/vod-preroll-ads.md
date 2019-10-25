@@ -5,7 +5,7 @@ description: 이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 
 seo-description: Adobe Media Analytics의 이 시나리오에서는 프리롤 광고가 주 컨텐츠 앞에 삽입되었습니다.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 광고 2의 첫 번째 프레임이 재생됨. | `trackEvent:AdStart` | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
 | 광고 2 재생이 완료됨. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 하트비트 광고 완료 | 광고 및 pod의 끝에 도달합니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is identical to the VOD playback with no ads scenario.[](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
+| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 광고 [없이 VOD](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 재생과 동일합니다. |
+| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 광고 [없이 VOD](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 재생과 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd` |
 
-## 매개 변수 {#section_33CDFB6CB230437480B67A3D149EC44E}
+## 매개 변수 {#parameters}
 
-When ad playback begins, a  call is sent. `Heartbeat Ad Start` If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+광고 재생이 시작되면 `Heartbeat Ad Start` 호출이 전송됩니다. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
 ### 하트비트 광고 시작
 
@@ -39,7 +39,7 @@ When ad playback begins, a  call is sent. `Heartbeat Ad Start` If the beginning 
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as , so the  call is similar to the  call.`Content Heartbeats``Ad Play``Content Play`
+광고는 동일한 기본 모델을 따르므로 `Content Heartbeats`호출과 `Ad Play` 비슷합니다 `Content Play` .
 
 ### 하트비트 광고 재생 호출
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## 프리롤 광고 브레이크용 샘플 코드 {#section_nwf_xy3_x2b}
+## 프리롤 광고 브레이크용 샘플 코드 {#sample-code-for-a-pre-roll-ad-break}
 
 이 시나리오에서 VOD는 첫 번째 프리롤 광고, 두 번째 프리롤 광고로 구성된 다음 컨텐츠가 재생됩니다.
 
@@ -378,7 +378,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    .......
    ```
 
-## 여러 광고 브레이크용 샘플 코드 {#section_ojy_zy3_x2b}
+## 여러 광고 브레이크용 샘플 코드 {#sample-code-for-multiple-ad-breaks}
 
 이 시나리오에서 VOD 컨텐츠는 프리롤 광고, 컨텐츠, 미드롤 광고, 컨텐츠 및 포스트롤 광고로 재생됩니다.
 
