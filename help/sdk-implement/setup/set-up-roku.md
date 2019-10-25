@@ -3,7 +3,7 @@ seo-title: Roku 설정
 title: Roku 설정
 uuid: 904dfda0-4782-41da-b4ab-212e8115633
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -25,7 +25,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
 ## SDK 구현
 
-1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku 라이브러리를 프로젝트에 추가합니다.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) Roku 라이브러리를 프로젝트에 추가합니다.
 
    1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
 
