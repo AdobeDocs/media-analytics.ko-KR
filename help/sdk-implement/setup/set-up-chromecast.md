@@ -3,7 +3,7 @@ seo-title: Chromecast 설정
 title: Chromecast 설정
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -31,7 +31,7 @@ Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 �
 
 ## SDK 구현
 
-1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast 라이브러리를 프로젝트에 추가합니다.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) Chromecast 라이브러리를 프로젝트에 추가합니다.
 
    1. `AdobeMobileLibrary-Chromecast-[version]`.zip 파일은 다음 소프트웨어 구성 요소로 구성됩니다.
 
