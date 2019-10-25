@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음 지침은 2.x SDK를 사용하는 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 주요 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 포괄적인 메타데이터 목록을 참조하십시오.광고 [매개 변수.](/help/metrics-and-metadata/ad-parameters.md)
 
@@ -46,7 +46,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 광고 브레이크 완료를 위해 `trackEvent`를 호출합니다.
 
-## 광고 추적 구현 {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 광고 추적 구현 {#implement-ad-tracking}
 
 ### 광고 추적 상수
 
@@ -102,7 +102,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >광고 재생(`l:event:playhead``s:asset:type=ad`) 중에 컨텐츠 플레이어 재생 헤드를 증가시키지 않도록 하십시오. 이 경우 컨텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
 
-The following sample code utilizes the JavaScript 2.x SDK for an HTML5 media player.
+다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다.
 
 ```js
 /* Call on ad break start */ 
