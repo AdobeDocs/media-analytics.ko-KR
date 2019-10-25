@@ -3,7 +3,7 @@ seo-title: iOS 설정
 title: iOS 설정
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ## SDK 구현
 
-1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK를 프로젝트에 추가합니다.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK를 프로젝트에 추가합니다.
 
    1. 다음 소프트웨어 구성 요소가 `libs` 디렉토리에 있는지 확인합니다.
 
