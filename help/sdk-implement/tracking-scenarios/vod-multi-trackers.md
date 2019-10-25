@@ -3,14 +3,14 @@ seo-title: VOD 여러 추적기 동시 실행
 title: VOD 여러 추적기 동시 실행
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # VOD 여러 추적기 동시 실행{#vod-multiple-trackers-in-parallel}
 
-## 시나리오 {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## 시나리오 {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -18,7 +18,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.
 
-## 매개 변수 {#section_45D7B10031524411B91E2C569F7818B0}
+## 매개 변수 {#parameters}
 
 ### 하트비트 세션
 
@@ -26,7 +26,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 |---|---|---|
 | `s:event:sid` | 고유 세션 ID | `trackSessionEnd` 메서드가 호출될 때까지 모든 하트비트 네트워크 호출에 있는 고유한 세션 ID입니다. |
 
-## 샘플 코드 {#section_qpy_4dj_x2b}
+## 샘플 코드 {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 
