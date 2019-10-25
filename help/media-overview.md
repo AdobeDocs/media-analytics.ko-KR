@@ -3,7 +3,7 @@ seo-title: Adobe Analytics에서 오디오 및 비디오 측정
 title: Adobe Analytics에서 오디오 및 비디오 측정
 uuid: b3cbe240-b94d-42b8-a99c-028033aaa14
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 기존 이정표 비디오 구현에 대한 지침은 포함되지 않습니다. 모든 고객이 개선 사항 및 확장된 측정 기능을 활용할 수 있도록 두 개의 최신 미디어 추적 솔루션 중 하나 또는 둘 다 채택할 것을 권장합니다. 아래에서 [최신 솔루션으로 전환했을 때 이점](media-overview.md#section_cnj_5st_p1b)을 확인할 수 있습니다. Adobe는 이정표 비디오 추적 방법을 계속 지원할 예정이지만 계획된 업데이트, 수정 사항 또는 기능 개선 사항은 없습니다. 추가 질문이 있는 경우 Adobe 계정 관리자에게 문의하십시오.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 기존 이정표 비디오 구현에 대한 지침은 포함되지 않습니다. 모든 고객이 개선 사항 및 확장된 측정 기능을 활용할 수 있도록 두 개의 최신 미디어 추적 솔루션 중 하나 또는 둘 다 채택할 것을 권장합니다. 아래에서 [최신 솔루션으로 전환했을 때 이점](media-overview.md#heartbeat-versus-milestone-benefits)을 확인할 수 있습니다. Adobe는 이정표 비디오 추적 방법을 계속 지원할 예정이지만 계획된 업데이트, 수정 사항 또는 기능 개선 사항은 없습니다. 추가 질문이 있는 경우 Adobe 계정 관리자에게 문의하십시오.
 
-## 개요 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
+## 개요 {#overview}
 
 Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공하는 기본 Analytics 서비스의 추가 기능입니다. Media Analytics는 실시간 모니터링, 세부 분석, 조치 가능한 통찰력 및 수익 창출 기회를 얻을 수 있도록 고객에게 많은 이점을 제공합니다.
 
@@ -29,7 +29,7 @@ Adobe Analytics for Media를 사용하면 고객이 해당 사이트에서 미�
 
 미디어 솔루션은 프레임, 버퍼링 시간 및 평균 비트율과 같이 QoS와 관련된 중요한 게재 지표만 측정하지 않습니다. 이 솔루션은 웹 사이트나 앱 데이터와 결합하여 고객 및 고객 관심 사항의 흐름을 시각화하고, 더 나은 추천을 수행하고, Adobe Experience Cloud를 통해 환경을 개인화할 수도 있습니다.
 
-## 이점 {#section_7712BA90EAE64C118218D1C581EF68B7}
+## 이점 {#benefits}
 
 Adobe의 미디어 측정 솔루션에서 제공하는 여러 이점 중 몇 가지는 다음과 같습니다.
 
@@ -40,7 +40,7 @@ Adobe의 미디어 측정 솔루션에서 제공하는 여러 이점 중 몇 가
 * **정확한 측정 -** OTT, 스마트폰, 태블릿, 데스크탑 등을 포함하여 미디어 이용에 사용된 여러 장치를 측정하여 사용자 참여 패턴 및 습관을 모니터링합니다.
 * **세그멘테이션 -** 플레이어, 장치, 장르, 챕터 및 프로그램에 분류를 적용하여 각 내용이 전체 보기/듣기 및 컨텐츠, 오디오, 광고 및 결합에 대한 고객 참여에 미치는 영향을 확인합니다.
 
-## 하트비트와 이정표의 이점 {#section_cnj_5st_p1b}
+## 하트비트와 이정표의 이점 {#heartbeat-versus-milestone-benefits}
 
 Adobe Analytics for Media는 다음 두 가지 방법을 통해 측정할 수 있습니다.기존 이정표 방법(비디오만 해당) 및 현재 하트비트 메서드(미디어 SDK와 미디어 컬렉션 API 모두에 포함되어 있는 오디오 및 비디오) 하트비트 메서드는 기본 측정 메서드이므로, 모든 클라이언트가 아래에 설명된 이점을 이용할 수 있도록 이 버전으로 이동할 것을 권장합니다(이 버전이 아직 없는 경우).
 
@@ -51,7 +51,6 @@ Adobe Analytics for Media는 다음 두 가지 방법을 통해 측정할 수 �
 * **간소화된 구현 프로세스 -** 플레이어 API를 통해 변수를 쉽게 매핑하고 Adobe Debug 도구를 통해 구현을 확인하여 필요한 모든 변수가 정확하게 추적되도록 합니다.
 * **자동 Adobe Experience Cloud 통합 -** Experience Cloud ID를 통하여 Adobe Experience Cloud와 자동으로 통합하고, 미디어 대상을 세그먼트화하고, 타깃팅하고, 사용자 환경 설정을 기반으로 미디어를 추천할 수 있습니다.
 * **Federated Analytics를 통해 공유된 데이터 -** 업계 최초 미디어 공유 기능을 통해 모든 미디어 배포 파트너(운영자, 프로그래머 및 배포자)의 데이터를 전체적으로 평가할 수 있습니다.
-* **인증된 등급의 파트너와 파트너 관계 -** Adobe는 대상 등급 파트너 Nielsen과 협력하여 신뢰할 수 있고 인증된 등급을 허용하도록 중립적인 타사 측정 기능을 제공합니다.
 * **모든 플랫폼에서 표준화된 솔루션 -** 모든 미디어 및 플랫폼에서 일관적으로 표준화된 변수를 사용하여 보다 효율적인 교차 캠페인, 장치 및 공급업체 비교를 허용합니다.
 * **다운로드된 컨텐츠 추적 -** 연결 여부에 관계없이 장치에서 다운로드 및 재생되는 미디어 컨텐츠(비디오 및 오디오)를 추적합니다.
 
@@ -67,7 +66,7 @@ Adobe Analytics for Media는 다음 두 가지 방법을 통해 측정할 수 �
 | **파트너 공유** | 해당 없음 | 페더레이션 분석 및 인증된 지표 |
 | **고급 추적** | 해당 없음 | 오류 복구 추적 및 Concurrent Viewer |
 
-## 지원 장치 {#section_lkm_l5t_p1b}
+## 지원 장치 {#devices-supported}
 
 Adobe Analytics for Media는 의미 있는 장치에서 각 미디어 스트림을 수집하고 보고하는 강력한 데이터 수집 도구를 제공하기 위해 산업과 함께 발전했습니다. Media SDK는 다음을 포함하여 가장 많이 사용되는 장치용으로 개발되었습니다.
 
