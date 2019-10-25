@@ -3,7 +3,7 @@ seo-title: 재생 중 애플리케이션 중단 처리
 title: 재생 중 애플리케이션 중단 처리
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -17,9 +17,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Doing so results in the playback up to that point not counting towards the total playback time, along with losing earlier progress markers, segments, and so on. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 이렇게 하면 이전 진행률 마커, 세그먼트 등이 손실되면서 총 재생 시간을 계산하지 않는 지점까지 재생이 수행됩니다. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
-## 애플리케이션 중단 처리에 대한 FAQ: {#section_osf_xqs_h2b}
+## 애플리케이션 중단 처리에 대한 FAQ: {#faq-about-handling-application-interrupts}
 
 * _앱은 얼마나 오래 배경에서 실행되어야 세션이 닫힙니까?_
 
