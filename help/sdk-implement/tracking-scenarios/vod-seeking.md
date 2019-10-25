@@ -3,14 +3,14 @@ seo-title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
 title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 주 컨텐츠에서 찾기를 사용하여 VOD 재생{#vod-playback-with-seeking-in-the-main-content}
 
-## 시나리오 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 시나리오 {#scenario}
 
 이 시나리오는 재생 중 주 컨텐츠에서의 이동으로 구성됩니다.
 
@@ -26,7 +26,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 컨텐츠가 완료됨 | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션 종료 | `trackSessionEnd` |  | `SessionEnd` |
 
-## 샘플 코드 {#section_q2d_wcj_x2b}
+## 샘플 코드 {#sample-code}
 
 이 시나리오에서는 주 컨텐츠가 재생 중일 때 사용자가 컨텐츠 이동을 합니다.
 
