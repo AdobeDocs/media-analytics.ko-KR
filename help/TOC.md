@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 최종 사용자
 user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
 
 ---
 
@@ -128,6 +128,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [OTT와 Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT와 Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + 요리책 {#cookbook}
+      + [SDK Cookbook](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [재생 중 애플리케이션 중단 처리](sdk-implement/cookbook/app-interrupts.md)
       + [광고 사이에 표시되는 main:play 해결](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [비활성 세션 다시 시작](sdk-implement/cookbook/resuming-inactive.md)
@@ -162,6 +163,9 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [다운로드한 콘텐츠 추적](media-collection-api/track-downloaded-content.md)
++ 요리책 {#media-analytics-cookbook}
+   + [Cookbook 개요](media-analytics-cookbook/cookbook-overview.md)
+   + [미디어 추적 외부의 미디어 치수](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
    + [오디오 및 비디오 매개 변수](metrics-and-metadata/audio-video-parameters.md)
    + [광고 매개 변수](metrics-and-metadata/ad-parameters.md)
@@ -181,4 +185,4 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + [미디어 작업 영역 템플릿](media-reports/media-workspace-templates.md)
 + [페더레이션 분석](federated-analytics.md)
 + 추가 리소스 {#additional-resources}
-   + [설명서 업데이트](additional-resources/doc-updates.md)
+   + [리소스](additional-resources/doc-updates.md)
