@@ -3,14 +3,14 @@ seo-title: 한 개의 챕터가 있는 VOD 재생
 title: 한 개의 챕터가 있는 VOD 재생
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 한 개의 챕터가 있는 VOD 재생{#vod-playback-with-one-chapter}
 
-## 시나리오 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 시나리오 {#scenario}
 
 이 시나리오에서는 VOD 컨텐츠 부분이 챕터로 표시됩니다.
 
@@ -27,7 +27,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 끝에 도달했음을 의미합니다. 이 API는 사용자가 완료할 미디어를 보지 않는 경우에도 호출해야 합니다. |
 
-## 매개 변수 {#section_869319D99A474FEA8EA840415EA97FBD}
+## 매개 변수 {#parameters}
 
 장 재생이 시작되면 `Heartbeat Chapter Start` 호출이 전송됩니다. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
@@ -42,7 +42,7 @@ When this happens, a `Content Heartbeat` call goes out in the same interval. 이
 | `s:stream:chapter_*` |  | 챕터 데이터와 관련된 스트림 정보입니다. |
 | `s:meta:*` |  | 특정 컨텍스트 데이터가 있는 챕터입니다. |
 
-## 샘플 코드, 중간에 있는 챕터 {#section_icd_5bj_x2b}
+## 샘플 코드, 중간에 있는 챕터 {#sample-code-chapter-in-the-middle}
 
 이 시나리오에서는 VOD 컨텐츠의 일부가 챕터입니다.
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 샘플 코드, 시작에 있는 챕터 {#section_flj_5bj_x2b}
+## 샘플 코드, 시작에 있는 챕터 {#sample-code-chapter-at-the-beginning}
 
 이 시나리오에서 VOD 컨텐츠는 재생 시작 부분의 한 개의 챕터로 재생됩니다.
 
