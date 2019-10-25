@@ -3,7 +3,7 @@ seo-title: 추적 개요
 title: 추적 개요
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -59,13 +59,13 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!TIP]
 >
->재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 내용은 `getCurrentPlayheadTime`개요를 [참조하십시오.일반 구현 지침을 참조하십시오.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>재생 헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 내용은 `getCurrentPlayheadTime`개요를 [참조하십시오.일반 구현 지침을 참조하십시오.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## 구현 {#section_BB217BE6585D4EDEB34C198559575004}
+## 구현 {#implement}
 
 1. **초기 추적 설정 -** 사용자가 재생 의도를 트리거하는(사용자가 재생 및/또는 자동 재생 클릭) 시점을 식별하고 컨텐츠 이름, 컨텐츠 ID, 컨텐츠 길이 및 스트림 유형에 대한 미디어 정보를 사용하여 `MediaObject` 인스턴스를 만듭니다.
 
-   **`MediaObject`reference:**
+   **`MediaObject`참조:**
 
    | 변수 이름 | 설명 | 필수 여부 |
    |---|---|---|
@@ -101,7 +101,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
       >[!NOTE]
       >
-      >Attaching the standard metadata object to the media object is optional.
+      >표준 메타데이터 개체를 미디어 개체에 연결하는 것은 선택 사항입니다.
 
       표준 메타데이터 개체를 인스턴스화하고, 원하는 변수를 채우고, 미디어 하트비트 개체에서 메타데이터 개체를 설정합니다.
 
@@ -113,7 +113,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
+   >`trackSessionStart` 재생의 시작이 아니라 재생 의도를 추적합니다. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marks the end of a tracking session. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **가능한 모든 일시 정지 시나리오 추적 -**&#x200B;일시 정지를 위해 미디어 플레이어에서 이벤트를 식별하고 `trackPause`를 호출합니다.
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## 유효성 검사 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## 유효성 검사 {#validate}
 
 구현의 유효성 검사에 대한 자세한 내용은 유효성 검사를 [참조하십시오.](/help/sdk-implement/validation/validation-overview.md)
 
