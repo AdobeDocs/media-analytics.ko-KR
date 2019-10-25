@@ -3,14 +3,14 @@ seo-title: SceneGraph에서 추적(Roku)
 title: SceneGraph에서 추적(Roku)
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # SceneGraph에서 추적(Roku){#tracking-in-scenegraph-roku}
 
-## 소개 {#section_vfr_zcz_y2b}
+## 소개 {#introduction}
 
 Roku는 애플리케이션 개발을 위한 새 프로그래밍 프레임워크(SceneGraph XML 프로그래밍 프레임워크)를 도입했습니다. 이 새 프레임워크는 두 가지 새로운 주요 개념을 제공합니다.
 
@@ -19,7 +19,7 @@ Roku는 애플리케이션 개발을 위한 새 프로그래밍 프레임워크(
 
 Adobe Mobile SDK for Roku는 BrightScript로 작성됩니다. SDK는 SceneGraph에서 실행 중인 앱(예: 스레드)에서 사용할 수 없는 많은 구성 요소를 사용합니다. 따라서 SceneGraph 프레임워크를 사용하려는 Roku 앱 개발자가 Adobe Mobile SDK API(후자는 레거시 BrightScript 앱에서 사용할 수 있는 앱과 비슷함)를 호출할 수 없습니다.
 
-## 아키텍처 {#section_dj5_1dz_y2b}
+## 아키텍처 {#architecture}
 
 AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmobileTask` 사이에 커넥터 브리지를 작성하는 새 API가 추가되었습니다. 후자는 SDK의 API 실행에 사용되는 SceneGraph 노드입니다. (`adbmobileTask` 사용 방법은 이 문서의 나머지 부분에서 자세히 설명합니다.)
 
@@ -31,7 +31,7 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 
 ![](assets/SceneGraph_arch.png)
 
-## 구성 요소 {#section_jwl_wqx_1bb}
+## 구성 요소 {#components}
 
 **SceneGraph 애플리케이션:**
 
@@ -49,7 +49,7 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 * 백그라운드 스레드에서 `AdobeMobileLibrary` API를 실행하는 SceneGraph 작업 노드입니다.
 * 애플리케이션 화면으로 다시 데이터를 반환하기 위한 위임 역할을 합니다.
 
-## 공용 SceneGraph API {#section_jyd_hdz_y2b}
+## 공용 SceneGraph API {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -112,10 +112,10 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 | `PRIVACY_STATUS` | 사용 `apiName` 방법 `getPrivacyStatus` |
 | `TRACKING_IDENTIFIER` | 사용 `apiName` 방법 `trackingIdentifier` |
 | `USER_IDENTIFIER` | 사용 `apiName` 방법 `userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | Used as `apiName` for `visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | Used as `apiName` for `audienceVisitorProfile` |
-| `AUDIENCE_DPID` | Used as  for `apiName``audienceDpid` |
-| `AUDIENCE_DPUUID` | Used as `apiName` for `audienceDpuuid` |
+| `VISITOR_MARKETING_CLOUD_ID` | 사용 `apiName` 방법 `visitorMarketingCloudID` |
+| `AUDIENCE_VISITOR_PROFILE` | 사용 `apiName` 방법 `audienceVisitorProfile` |
+| `AUDIENCE_DPID` | 사용 `apiName` 방법 `audienceDpid` |
+| `AUDIENCE_DPUUID` | 사용 `apiName` 방법 `audienceDpuuid` |
 
 ### adbmobileTask 노드
 
@@ -138,27 +138,18 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 <td> 유효하지 않습니다 </td>
 <td> 읽기 전용 AdobeMobileSDK에서 실행되는 모든 API는 이 필드에 응답을 반환합니다. 응답 개체를 수신하려면 이 필드의 업데이트를 수신하도록 콜백을 등록하십시오. 다음은 응답 개체의 형식입니다.  
 <codeblock>
-response = {
-  "apiName" : &lt;SceneGraphConstants.
-               API_NAME&gt; 
-  "returnValue : &lt;API_RESPONSE&gt; 
-} 
+response = { "apiName" :&lt;SceneGraphConstants.
+               API_NAME&gt; "returnValue :&lt;API_RESPONSE&gt; } 
 </codeblock>
-이 응답 개체의 인스턴스는 API 참조 가이드에 따라 값을 반환해야 하는 AdobeMobileSDK의 API 호출에 대해 전송됩니다. For example, an API call for visitorMarketingCloudID() will return the following response object: 
+이 응답 개체의 인스턴스는 API 참조 가이드에 따라 값을 반환해야 하는 AdobeMobileSDK의 API 호출에 대해 전송됩니다. 예를 들어 visitorMarketingCloudID()에 대한 API 호출은 다음 응답 개체를 반환합니다. 
 <codeblock>
-response = {
-  "apiName" : m.
-              adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID  
-  "returnValue : "07050x25671x33760x72644x14"  
-} 
+response = { "apiName" :m.              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue :"07050x25671x33760x72644x14" } 
 </codeblock>
 또는 응답 데이터도 올바르지 않을 수 있습니다. 
 <codeblock>
 response = { "apiName" :m.              adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID  
-  "returnValue : invalid 
-} 
+              VISITOR_MARKETING_CLOUD_ID "returnValue :잘못된 } 
 </codeblock>
 </td>
 </tr>
@@ -170,13 +161,11 @@ response = { "apiName" :m.              adbmobileConstants.
 #### `getADBMobileConnectorInstance`
 
 API 서명: `ADBMobile().getADBMobileConnectorInstance()`\
-Input: 
-Return Type: `adbmobileTask``ADBMobileConnector`
+입력:반환 `adbmobileTask`유형: `ADBMobileConnector`
 
 #### `sgConstants`
 
-API Signature: 
-Input: None`ADBMobile().sgConstants()`\
+API 서명:입력 `ADBMobile().sgConstants()`:없음\
 반환 유형: `SceneGraphConstants`
 
 >[!NOTE]
@@ -189,7 +178,7 @@ Input: None`ADBMobile().sgConstants()`\
 | 버전 매기기 | `version` | AdobeMobileLibrary 버전 정보를 검색하기 위한 상수 |
 | 개인 정보/옵트아웃 | `PRIVACY_STATUS_OPT_IN` | 개인 정보 상태 옵트인에 대한 상수 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 개인 정보 상태 옵트아웃에 대한 상수 |
-| MediaHeartbeat 상수 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Use these constants with MediaHeartbeat APIs |
+| MediaHeartbeat 상수 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat API에서 이러한 상수 사용 |
 | 표준 메타데이터 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 이러한 상수를 사용하여 MediaHeartbeat API에 표준 비디오/광고 메타데이터를 첨부합니다. |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. 이러한 메서드에 대한 자세한 내용은 아래 표를 참조하십시오.
@@ -204,9 +193,9 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | 이 메서드는 초기화된 광고 브레이브 정보 개체를 반환합니다.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | 이 메서드는 초기화된 QoS 정보 개체를 반환합니다.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## 구현 {#section_dbz_ydz_y2b}
+## 구현 {#implementation}
 
-1. **Download the Roku Library - Download the latest Roku library.**[](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Roku 라이브러리 다운로드 -** [최신 Roku 라이브러리를 다운로드합니다.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
 1. **개발 환경 설정**
 
@@ -304,7 +293,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       end function 
       ```
 
-## 샘플 구현 {#section_mld_lfz_y2b}
+## 샘플 구현 {#sample-implementation}
 
 ### 레거시 SDK에 대한 샘플 API 호출
 
