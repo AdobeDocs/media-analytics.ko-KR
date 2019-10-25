@@ -3,25 +3,25 @@ seo-title: 라이브 주 컨텐츠
 title: 라이브 주 컨텐츠
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 라이브 주 컨텐츠{#live-main-content}
 
-## 시나리오 {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## 시나리오 {#scenario}
 
 이 시나리오에는 라이브 스트림에 참여한 후 40초 동안 광고가 재생되지 않는 라이브 자산이 한 개 있습니다.
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출 | 참고   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | **[!UICONTROL 재생]을 클릭하는 사용자 또는 자동 재생 이벤트일 수 있습니다.** |
-| The first frame of the media plays. | `trackPlay` | 하트비트 컨텐츠 재생 | 이 메서드는 타이머를 트리거합니다. 하트비트는 재생이 계속되는 한 10초마다 전송됩니다. |
+| 미디어의 첫 번째 프레임이 재생됩니다. | `trackPlay` | 하트비트 컨텐츠 재생 | 이 메서드는 타이머를 트리거합니다. 하트비트는 재생이 계속되는 한 10초마다 전송됩니다. |
 | 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 |  |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 사용자가 완료할 미디어를 사용하지 않는 경우에도 이 API를 호출해야 합니다. |
 
-## 매개 변수 {#section_D52B325B99DA42108EF560873907E02C}
+## 매개 변수 {#parameters}
 
 Adobe Analytics 컨텐츠 시작 호출 시 표시되는 같은 값의 대부분이 하트비트 컨텐츠 시작 호출 시에도 표시됩니다. 또한 Adobe Analytics에서 다양한 미디어 보고서를 채우는 데 사용하는 다른 매개 변수도 많이 표시됩니다. 여기서 그러한 모든 내용을 다루지는 않으며, 실제로 중요한 내용만 다룹니다.
 
@@ -38,7 +38,7 @@ Adobe Analytics 컨텐츠 시작 호출 시 표시되는 같은 값의 대부분
 | `s:stream:type` | live |  |
 | `s:meta:*` | 옵션 | 미디어에 설정된 사용자 정의 메타데이터 |
 
-## 컨텐츠 하트비트 {#section_7B387303851A43E5993F937AE2B146FE}
+## 컨텐츠 하트비트 {#content-heartbeats}
 
 미디어 재생 중에 타이머가 있어 기본 컨텐츠의 경우 10초마다 하나 이상의 하트비트(또는 핑)를 전송하고 매초마다 광고를 전송할 수 있습니다. 이러한 하트비트에는 재생, 광고, 버퍼링 및 기타 여러 가지에 대한 정보가 포함되어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나며, 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 확인하는 것이 중요합니다.
 
@@ -49,7 +49,7 @@ Adobe Analytics 컨텐츠 시작 호출 시 표시되는 같은 값의 대부분
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;playhead position&gt; 예: 50, 60, 70 | 플레이헤드의 현재 위치를 반영해야 합니다. |
 
-## 하트비트 컨텐츠 완료 {#section_2CA970213AF2457195901A93FC9D4D0D}
+## 하트비트 컨텐츠 완료 {#heartbeat-content-complete}
 
 라이브 스트림이 완료되지 않았으므로 이 시나리오에서는 전체 호출이 발생하지 않습니다.
 
@@ -59,15 +59,15 @@ LIVE 스트림의 경우 프로그래밍 시작 시점의 재생 헤드를 오�
 
 ### 시작 시
 
-LIVE 미디어의 경우 사용자가 스트림 재생을 시작할 때 현재 오프셋을 초 단위로 설정해야 `l:event:playhead` 합니다. This is as opposed to VOD, where you would set the playhead to "0".
+LIVE 미디어의 경우 사용자가 스트림 재생을 시작할 때 현재 오프셋을 초 단위로 설정해야 `l:event:playhead` 합니다. 이것은 VOD와 대조적입니다. 여기서 재생 헤드를 "0"으로 설정할 수 있습니다.
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). 그러면 사용자가 오후 12시에 해당 LIVE 스트림을 재생한다고 가정합니다. 이 시나리오에서는 43200(스트림으로 12시간) `l:event:playhead` 으로 설정해야 합니다.
+예를 들어 LIVE 스트리밍 이벤트는 자정에 시작해서 24시간 동안(`a.media.length=86400`; `l:asset:length=86400`). 그러면 사용자가 오후 12시에 해당 LIVE 스트림을 재생한다고 가정합니다. 이 시나리오에서는 43200(스트림으로 12시간) `l:event:playhead` 으로 설정해야 합니다.
 
 ### 일시 중지 시
 
 사용자가 재생을 일시 중지할 때 재생 시작 시 적용된 것과 동일한 "라이브 재생 헤드" 로직을 적용해야 합니다. 사용자가 LIVE 스트림을 재생하기 위해 돌아가면 이 `l:event:playhead` 값을 사용자가 LIVE 스트림을 일시 정지한 위치가 _아니라_ 새 오프셋 재생 헤드 위치로 설정해야 합니다.
 
-## 샘플 코드 {#section_vct_j2j_x2b}
+## 샘플 코드 {#sample-code}
 
 ![](assets/live-content-playback.png)
 
