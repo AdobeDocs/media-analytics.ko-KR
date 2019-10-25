@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,7 +18,7 @@ Media Collection API는 고객 측 Media SDK에 대한 Adobe의 RESTful 대안�
 
 Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, Media SDK 설명서의 일부 부분도 Media Collection API와 관련이 있습니다. 예를 들어, 두 솔루션은 동일한 오디오 및 비디오 매개 [변수를](/help/metrics-and-metadata/audio-video-parameters.md)사용하고 수집된 오디오 및 비디오 추적 데이터는 동일한 보고 및 [분석으로 이어집니다.](/help/media-reports/media-reports-enable.md)
 
-## 미디어 추적 데이터 흐름 {#section_pwq_n34_qbb}
+## 미디어 추적 데이터 흐름 {#media-tracking-data-flows}
 
 Media Collection API를 구현하는 미디어 플레이어는 RESTful API 추적 호출을 미디어 추적 백엔드 서버에 직접 발생시키는 반면, Media SDK를 구현하는 플레이어는 플레이어 앱 내에서 SDK API에 대한 추적 호출을 수행합니다. 웹을 통해 호출하면 Media Collection API를 구현하는 플레이어가 Media SDK에서 자동으로 처리하는 과정의 일부를 처리해야 합니다. (Media Collection [구현의 세부 사항.](mc-api-impl/mc-api-quick-start.md))
 
@@ -26,7 +26,7 @@ Media Collection API 파섹
 
 ![](assets/col_api_overview_simple.png)
 
-## API 개요 {#section_y4n_mcl_kcb}
+## API 개요 {#api-overview}
 
 **URI:** Adobe 담당자에게서 얻습니다.
 
