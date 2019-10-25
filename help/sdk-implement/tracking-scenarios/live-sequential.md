@@ -3,14 +3,14 @@ seo-title: 순차적 추적을 사용하는 라이브 주 컨텐츠
 title: 순차적 추적을 사용하는 라이브 주 컨텐츠
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 순차적 추적을 사용하는 라이브 주 컨텐츠{#live-main-content-with-sequential-tracking}
 
-## 시나리오 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 시나리오 {#scenario}
 
 이 시나리오에는 라이브 스트림에 참여한 후 40초 동안 광고가 재생되지 않는 라이브 자산이 한 개 있습니다.
 
@@ -27,7 +27,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | 컨텐츠 재생 |  | 컨텐츠 하트비트 |  |
 | 세션 종료(에피소드2가 종료됨) | trackComplete / trackSessionEnd | 하트비트 컨텐츠 완료 | 완료는 두 번째 에피소드의 세션2에 도달했으며 완전히 시청했음을 의미합니다. 다음 에피소드에 대한 세션을 시작하기 전에 이 세션을 종료해야 합니다. |
 
-## 매개 변수 {#section_D52B325B99DA42108EF560873907E02C}
+## 매개 변수 {#parameters}
 
 ### 하트비트 컨텐츠 시작
 
@@ -42,7 +42,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *옵션* | 미디어에 설정된 사용자 정의 메타데이터 |
 
-## 하트비트 컨텐츠 재생 {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## 하트비트 컨텐츠 재생 {#heartbeat-content-play}
 
 이는 하트비트 컨텐츠 시작 호출과 거의 비슷하게 보이지만 "s:event:type" 매개 변수에 주요한 차이점이 있습니다. 모든 매개 변수는 제 위치에 있어야 합니다.
 
@@ -51,7 +51,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 컨텐츠 하트비트 {#section_7B387303851A43E5993F937AE2B146FE}
+## 컨텐츠 하트비트 {#content-heartbeats}
 
 미디어 재생 중에 타이머가 있으며 타이머는 기본 컨텐츠의 경우 10초마다 하나 이상의 하트비트를 전송하고 1초마다 광고를 전송합니다. 이러한 하트비트에는 재생, 광고, 버퍼링 및 기타 여러 가지에 대한 정보가 포함되어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나며, 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 확인하는 것이 중요합니다.
 
@@ -62,7 +62,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;playhead position&gt; 예: 50, 60, 70 | 플레이헤드의 현재 위치를 반영해야 합니다. |
 
-## 하트비트 컨텐츠 완료 {#section_2CA970213AF2457195901A93FC9D4D0D}
+## 하트비트 컨텐츠 완료 {#heartbeat-content-complete}
 
 제공된 에피소드 재생이 완료되면(플레이헤드가 에피소드 경계를 넘어감) 하트비트 컨텐츠 완료 호출이 전송됩니다. 이는 다른 하트비트 호출과 비슷하게 보이지만 다음 두 가지 특정 항목이 포함됩니다.
 
@@ -71,7 +71,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 샘플 코드 {#section_mpx_q2j_x2b}
+## 샘플 코드 {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
