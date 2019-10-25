@@ -3,7 +3,7 @@ seo-title: Audience Manager 지원
 title: Audience Manager 지원
 uuid: 8a7f9343-ebc3-4 파섹
 translation-type: tm+mt
-source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -22,7 +22,7 @@ AAM을 사용하면 데이터 판매자, 교환 또는 수요측 플랫폼에 �
 
 페더레이션된 데이터는 AAM에 대한 데이터 공유를 완벽하게 지원합니다. Adobe 팀과 함께 페더레이션된 데이터 설정 확인하십시오.
 
-## OTT / AAM 메서드 {#section_yqq_5br_v2b}
+## OTT / AAM 메서드 {#ott-aam-methods}
 
 다음 메서드를 사용하여 신호를 보내고 Audience Manager에서 방문자 세그먼트를 검색할 수 있습니다.
 
