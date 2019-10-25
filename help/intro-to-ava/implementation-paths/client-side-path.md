@@ -3,7 +3,7 @@ seo-title: 고객측
 title: 고객측
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -22,5 +22,4 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!NOTE]
 >
->Media Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 미디어 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다.
-
+>Media Analytics에는 고유한 SKU가 있고 미디어 스트림을 기반으로 하는 서버 호출을 기반으로 가격 모델의 변경 사항이 있으므로 고객은 영업 담당자/계정 관리자에게 문의하여 새로운 판매 주문에 서명해야 합니다.
