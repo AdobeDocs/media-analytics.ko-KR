@@ -3,7 +3,7 @@ seo-title: Roku 메타데이터 키
 title: Roku 메타데이터 키
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 표준 비디오, 오디오 및 광고 메타데이터는 각각 미디어 및 광고 정보 개체에 설정할 수 있습니다. 비디오/광고 메타데이터에 상수 키를 사용하여 추적 API를 호출하기 전에 정보 개체에 표준 메타데이터를 포함하는 사전을 설정합니다. 아래 표에서 표준 메타데이터 상수의 전체 목록과 샘플을 참조하십시오.
 
-## 비디오 메타데이터 상수 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## 비디오 메타데이터 상수 {#video-metadata-constants}
 
 | 메타데이터 이름 | 컨텍스트 데이터 키 | 상수 이름 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 피드 | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | 스트림 형식 | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
-## Audio metadata constants {#audio-metadata-constants}
+## 오디오 메타데이터 상수 {#audio-metadata-constants}
 
 | 메타데이터 이름 | 컨텍스트 데이터 키 | 상수 이름 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 방송국 | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | 게시자 | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## 광고 메타데이터 상수 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 광고 메타데이터 상수 {#ad-metadata-constants}
 
 | 메타데이터 이름 | 컨텍스트 데이터 키 | 상수 이름 |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 사이트 ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | 광고 URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
-## 상수 {#section_F55145DBE77F45B988849C42C044C7DA}
+## 상수 {#constants}
 
 다음 상수를 사용하여 미디어 이벤트를 추적할 수 있습니다.
 
@@ -70,7 +70,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 | 상수 | 설명   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the  `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo``trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData``trackEvent` |
 | `MEDIA_RESUMED` | 비디오가 재개된 하트비트를 전송하기 위한 상수입니다. To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `MEDIA_RESUMED`는 사용자가 시청을 중단했지만 현재 시청을 재개하려는 컨텐츠를 애플리케이션이 계속 추적하려는 경우 true로 설정해야 합니다. <br/><br/>예를 들어, 사용자가 컨텐츠의 30%를 시청한 다음 앱을 닫는다고 가정합니다. 이 경우 세션이 종료됩니다. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. 결국 동일한 비디오 컨텐츠에 대해 서로 다른 두 개의 미디어 세션을 함께 연결할 수 있습니다. 다음은 구현 예제입니다. <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>이렇게 하면 비디오에 대한 새 세션이 생성되지만, SDK가 이벤트 유형이 "이력서"인 하트비트 요청을 전송하게 됩니다. 이 이벤트 유형은 두 개의 서로 다른 미디어 세션을 함께 연결하여 보고하는 데 사용할 수 있습니다. |
 
