@@ -3,14 +3,14 @@ seo-title: 챕터를 건너뛰고 VOD 재생
 title: 챕터를 건너뛰고 VOD 재생
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 챕터를 건너뛰고 VOD 재생{#vod-playback-with-a-skipped-chapter}
 
-## 시나리오 {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## 시나리오 {#scenario}
 
 이 시나리오에서는 사용자가 주 컨텐츠의 챕터를 건너뜁니다.
 
@@ -29,11 +29,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 컨텐츠 재생이 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 이 API는 사용자가 완료할 미디어를 보지 않는 경우에도 호출해야 합니다. |
 
-## 매개 변수 {#section_1874F6B7880B43C5856BD11FF85B382E}
+## 매개 변수 {#parameters}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+장 재생 중에 사용된 매개 변수는 장 [전체 네트워크 호출이 없다는 점을 제외하고 장](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 시나리오의 VOD 재생 매개 변수와 동일합니다.
 
-## 샘플 코드 {#section_fyl_ncj_x2b}
+## 샘플 코드 {#sample-code}
 
 ![](assets/chapter-skip.png)
 
