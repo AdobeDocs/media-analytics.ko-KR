@@ -3,14 +3,14 @@ seo-title: SDK 다운로드
 title: SDK 다운로드
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # SDK 다운로드{#download-sdks}
 
-## 2.x Media SDK 다운로드 {#section_551A10AD7880426BB29AE52482BB4211}
+## 2.x Media SDK 다운로드 {#download-2x-sdks}
 
 | 2.x 미디어 SDK | 최신 미디어 SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
@@ -20,13 +20,13 @@ source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 | Roku | [Roku v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [로쿠 설정](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Media Analytics Launch 확장 {#section_o54_gsd_12b}
+## Media Analytics Launch 확장 {#media-analytics-launch-extension}
 
 | MA Launch 구성 요소   | 다운로드 | 설명서 |
 |---|---|---|
 | **MA Launch 확장** | [샘플 HTML5 Player 확장 프로그램](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
 
-## 1.x Media SDK 다운로드 {#section_B91B3A02E68B4B42917E392AAE666522}
+## 1.x Media SDK 다운로드 {#download-the-1.x-media-sDKs}
 
 | 1.x SDK |  미디어 SDK 다운로드 |  시작 안내서 |
 | --- | --- | --- |
