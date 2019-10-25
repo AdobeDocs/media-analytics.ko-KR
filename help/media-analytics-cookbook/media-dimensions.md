@@ -2,7 +2,7 @@
 title: 미디어 스트림 속성
 seo-title: 미디어 스트림 속성
 translation-type: tm+mt
-source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
+source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 
 ---
 
@@ -43,3 +43,4 @@ Analytics 보고에서 eVar를 `Show` 사용하여 데이터를 분류할 수 �
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
+
