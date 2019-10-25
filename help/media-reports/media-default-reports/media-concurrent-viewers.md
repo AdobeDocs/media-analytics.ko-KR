@@ -3,7 +3,7 @@ seo-title: 미디어 Concurrent Viewer
 title: 미디어 Concurrent Viewer
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 ![](assets/video-concurrent-viewers.png)
 
-## 보고서 기능 {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## 보고서 기능 {#report-features}
 
 다음은 이 보고서의 몇 가지 기능입니다.
 
@@ -30,7 +30,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 * 이 보고서는 하루에만 적용됩니다.
 * 고객이 이전 Concurrent Viewer 보고서(하루로 제한됨)를 볼 수 있습니다.
 
-## 제한 {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## 제한 {#limitations}
 
 다음은 이 보고서에 대한 몇 가지 제한 사항입니다.
 
