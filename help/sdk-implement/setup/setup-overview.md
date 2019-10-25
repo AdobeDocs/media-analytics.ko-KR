@@ -3,7 +3,7 @@ seo-title: 설정 개요
 title: 설정 개요
 uuid: 06feeddb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | Safari | v7+ |
 | IE | v11+ |
 
-## 일반 구현 지침 {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## 일반 구현 지침 {#general-implementation-guidelines}
 
 다음과 같이 미디어 추적에 관련된 세 가지 기본 SDK 구성 요소가 있습니다.
 * 미디어 하트비트 구성 - 이 구성에 보고할 기본 설정이 포함되어 있습니다.
@@ -119,7 +119,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 유효성 검사 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## 유효성 검사 {#validate}
 
 Media Analytics 추적 구현에서는 두 가지 유형의 추적 호출을 생성합니다.
 
@@ -138,7 +138,7 @@ Media Analytics 추적 구현에서는 두 가지 유형의 추적 호출을 생
 
 미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 현재 모바일 플랫폼에서 오디오 추적이 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
 
-## SDK 1.x 설명서 {#section_acj_tkk_t2b}
+## SDK 1.x 설명서 {#sdk-1x-documentation}
 
 | 비디오 분석 1.x SDK |  개발자 가이드(PDF만 해당) |
 | --- | --- |
