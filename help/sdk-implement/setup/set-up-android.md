@@ -3,7 +3,7 @@ seo-title: Android 설정
 title: Android 설정
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## SDK 구현
 
-1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK를 프로젝트에 추가합니다.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK를 프로젝트에 추가합니다.
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -31,7 +31,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       1. **[!UICONTROL 프로젝트 탐색]** 패널에서 프로젝트를 마우스 오른쪽 버튼으로 클릭합니다.
       1. **[!UICONTROL 모듈 설정 열기를 선택합니다]**.
-      1. Under **[!UICONTROL Project Settings]**, select **[!UICONTROL Libraries]**.
+      1. **[!UICONTROL 프로젝트 설정]**&#x200B;에서 **[!UICONTROL 라이브러리]**&#x200B;를 선택합니다.
 
       1. Click **[!UICONTROL +]** to add a new library.
       1. **[!UICONTROL Java]**&#x200B;를 선택하고 `MediaSDK.jar` 파일로 이동합니다.
@@ -41,7 +41,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       **Eclipse:**
 
       1. Eclipse IDE에서 프로젝트 이름을 마우스 오른쪽 버튼으로 클릭합니다.
-      1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]** .
+      1. **[!UICONTROL 빌드 경로]** &gt; **[!UICONTROL 외부 아카이브 추가]**&#x200B;를 클릭합니다 .
       1. 선택 `MediaSDK.jar`.
       1. **[!UICONTROL 열기를 클릭합니다]**.
       1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
