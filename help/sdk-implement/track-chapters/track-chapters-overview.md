@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >다음 지침은 2.x SDK를 사용하는 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-장 및 세그먼트 추적은 사용자 정의 미디어 장 또는 세그먼트에 사용할 수 있습니다. Some common uses for chapter tracking are to define custom segments based on media content (such as baseball innings), or to define content segments between ad breaks. Chapter tracking is **not** required for core media tracking implementations.
+장 및 세그먼트 추적은 사용자 정의 미디어 장 또는 세그먼트에 사용할 수 있습니다. 장 추적에 사용되는 몇 가지 일반적인 사용 방법은 미디어 컨텐츠(야구 이닝 등)를 기반으로 사용자 정의 세그먼트를 정의하거나 광고 브레이크 사이에 컨텐츠 세그먼트를 정의하는 것입니다. Chapter tracking is **not** required for core media tracking implementations.
 
 챕터 추적에는 챕터 시작, 챕터 완료, 챕터 건너뛰기가 포함됩니다. 미디어 플레이어 API를 사용자 정의된 세그멘테이션 로직과 함께 사용하여 장 이벤트를 식별하고 필수 및 선택적 장 변수를 채울 수 있습니다.
 
@@ -34,7 +34,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 호출 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## 장 추적 구현 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 장 추적 구현 {#implement-chapter-tracking}
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
