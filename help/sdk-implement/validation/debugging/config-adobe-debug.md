@@ -3,14 +3,14 @@ seo-title: Adobe Debug 구성
 title: Adobe Debug 구성
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
 # Adobe Debug 구성{#configure-adobe-debug}
 
-## Adobe Debug에 액세스 {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+## Adobe Debug에 액세스 {#accessing-adobe-debug}
 
 Adobe Debug에 액세스하려면 다음을 수행하십시오.
 
@@ -33,7 +33,7 @@ Adobe Debug에 액세스하려면 다음을 수행하십시오.
 
 권장되는 브라우저는 최신 Chrome 및 Firefox 버전입니다.
 
-## 디버그 프록시 {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+## 디버그 프록시 {#debug-proxy}
 
 디버그 프록시 다운로드 및 구성:
 
@@ -48,7 +48,7 @@ Adobe Debug에 액세스하려면 다음을 수행하십시오.
 
    OS 및 브라우저를 기반으로 하여 브라우저 설정을 조정해야 할 수 있습니다.
 
-## 데스크탑 또는 앱에 SSL 인증서 다운로드 및 설치 {#section_2F9547E301CB413299A67BD59AFBEE0D}
+## 데스크탑 또는 앱에 SSL 인증서 다운로드 및 설치 {#download-and-install-sSL-desktop}
 
 Adobe Debug를 처음 실행하면 고유한 SSL 인증서가 생성됩니다. 데스크톱 및/또는 앱에서 HTTPS 트래픽을 지원하는 경우 SSL 인증서를 다운로드하여 설치해야 합니다.
 
@@ -75,13 +75,13 @@ SSL 인증서를 다운로드하고 설치합니다:
     변경 내용을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
     
     **iOS 디바이스**
-    1. **[!UICONTROL 설정 앱]** **&gt;** **** **[!UICONTROL Wifi 설정]**을 클릭하여 iOS 장치가 Adobe Debug를 HTTP 프록시로 사용하도록 설정합니다.
+    1. Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
     
     1. Safari에서 [디버그]로 이동합니다.](https://proxy.debug.adobe.com/ssl)
     
     Safari에서 SSL 인증서를 설치하라는 메시지를 표시합니다.
 
-## 모바일 장치에 대한 SSL 인증서 설치 {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+## 모바일 장치에 대한 SSL 인증서 설치 {#install-sSL-for-mobile-device}
 
 Adobe Debug에서 HTTPS 호출을 놓친 경우 모바일 장치에서 Adobe Debug용 SSL 인증서를 설치해야 합니다.
 
