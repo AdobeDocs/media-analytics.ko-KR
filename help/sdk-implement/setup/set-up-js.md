@@ -3,7 +3,7 @@ seo-title: JavaScript 설정
 title: JavaScript 설정
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -12,8 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 전제 조건
 
-* **Obtain valid configuration parameters**
-These parameters can be obtained from an Adobe representative after you set up your analytics account.
+* **유효한 구성 매개 변수**&#x200B;얻기 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게 얻을 수 있습니다.
 * **미디어 애플리케이션에서`AppMeasurement`JavaScript 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 JavaScript를 사용한 [분석 구현을 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
 
 * **미디어 플레이어에 다음 기능을 제공합니다.**
@@ -21,7 +20,7 @@ These parameters can be obtained from an Adobe representative after you set up y
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
 
-1. [다운로드한](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) 라이브러리를 프로젝트에 추가합니다. 편의상 클래스에 대한 로컬 참조를 작성하십시오.
+1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) 라이브러리를 프로젝트에 추가합니다. 편의상 클래스에 대한 로컬 참조를 작성하십시오.
 
    1. 다운로드한 `MediaSDK-js-v2.*.zip` 파일을 확장합니다.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
