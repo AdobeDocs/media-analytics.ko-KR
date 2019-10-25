@@ -3,26 +3,26 @@ seo-title: 이정표에서 Media Analytics로의 마이그레이션
 title: 이정표에서 Media Analytics로의 마이그레이션
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 이정표에서 Media Analytics로의 마이그레이션 {#migrating-from-milestone-to-media-analytics}
 
-## 개요 {#section_ihl_nbz_cfb}
+## 개요 {#overview}
 
 비디오 측정의 핵심 개념은 이정표 추적과 Media Analytics 추적에 대해 동일하며, 이러한 추적에서는 비디오 플레이어 이벤트를 가져와서 이를 분석 메서드에 매핑하고, 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. Media Analytics 솔루션은 이정표에서 발전된 것이므로 많은 메서드와 지표가 동일하지만 구성 접근 방식과 코드는 크게 변경되었습니다. 새로운 Media Analytics 메서드를 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. Media [Analytics](/help/sdk-implement/setup/setup-overview.md) 구현에 대한 자세한 내용은 SDK [](/help/sdk-implement/track-av-playback/track-core-overview.md) 개요 및 추적 개요를 참조하십시오.
 
 다음 표는 이정표 솔루션과 Media Analytics 솔루션 간의 변환 내용을 제공합니다.
 
-## 마이그레이션 안내 {#section_iyb_pbz_cfb}
+## 마이그레이션 안내 {#migration-guide}
 
 ### 변수 참조
 
 | 이정표 지표 | 변수 유형 | Media Analytics 지표 |
 | --- | --- | --- |
-| 컨텐츠 | eVar<br/><br/>Default expiration: Visit | 컨텐츠 |
+| 컨텐츠 | e<br/><br/>VarDefault 만료:방문 | 컨텐츠 |
 | 컨텐츠 유형 | eVar<br/><br/> Default expiration: Page view | 컨텐츠 유형 |
 | 컨텐츠 체류 시간 | Event<br/><br/> Type: Counter | 컨텐츠 체류 시간 |
 | 비디오 시작 | Event<br/><br/> Type: Counter | 비디오 시작 |
@@ -188,8 +188,7 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-SDK 키:playerName;
-API 키:media.playerName
+SDK 키:playerName;API 키:media.playerName
 </td>
 <td>
 <pre>
@@ -448,8 +447,7 @@ createMediaObject( name, mediaId, length, streamType)
 </tr>
 <tr>
 <td>
-mediaPlayerName - (Required) The name of the media player used to view the video, 
-as you want it to appear in video reports.
+mediaPlayerName - (필수) 비디오를 보는 데 사용되는 미디어 플레이어의 이름으로, 비디오 보고서에 표시할 이름입니다.
 </td>
 <td>
 <pre>
@@ -486,10 +484,7 @@ trackEvent
 <pre>
 mediaHeartbeat.trackEvent( MediaHeartbeat.
     이벤트.
-    AdBreakStart, 
-  adBreakObject);
-...trackEvent(
-  MediaHeartbeat.
+    AdBreakStart, adBreakObject);...trackEvent( MediaHeartbeat.
     이벤트.
     AdStart, adObject, adCustomMetadata);
 </pre>
@@ -497,7 +492,7 @@ mediaHeartbeat.trackEvent( MediaHeartbeat.
 </tr>
 <tr>
 <td>
-name - (Required) The name or ID of the ad.
+이름 - (필수) 광고의 이름 또는 ID입니다.
 </td>
 <td>
 <pre>
@@ -725,8 +720,7 @@ trackPause()
 </pre> 
 또는 
 <pre>
-trackEvent(
-  MediaHeartbeat.
+trackEvent( MediaHeartbeat.
   이벤트.
   SeekStart)
 </pre> 또는 
@@ -761,8 +755,7 @@ var customVideoMetadata = { isUserLoggedIn:
    VideoMetadataKeys.
    SHOW] = "Sample Show";...mediaObject.setValue( MediaHeartbeat.
   MediaObjectKey.
-  StandardVideoMetadata, 
-  standardVideoMetadata);
+  StandardVideoMetadata, standardVideoMetadata);
 </pre>
 </td>
 </tr>
