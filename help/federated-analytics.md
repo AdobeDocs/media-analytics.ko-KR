@@ -3,7 +3,7 @@ seo-title: 페더레이션 분석
 title: 페더레이션 분석
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -15,7 +15,7 @@ Media Analytics에서 만든 표준화된 비디오 측정 데이터는 동일�
 페더레이션 분석을 제어하는 규칙 및 로직을 통해 각 파트너십의 요구를 충족하도록 데이터를 쉽게 제어하고 개별화할 수 있습니다.
 Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적이고 능률적이며 작동 가능하게 할 수 있습니다.
 
-## 이점 {#section_804FFE8671594A6FB769CBE79EF9D627}
+## 이점 {#benefits}
 
 * **투명:**&#x200B;회사 간에 동일한 논리를 사용하여 검정 상자의 데이터 생성 제거
 * **광범위:** 파트너십, 플랫폼 및 장치 간의 완전한 연결과 오디오 및 비디오 사용이 미치는 영향 이해
@@ -27,12 +27,12 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 * **적시:**&#x200B;실시간으로 데이터 전송 및 수신
 * **쉬움:** Adobe SDK를 사용하여 플레이어에 태그를 한 번 지정하고, 데이터를 여러 파트너에게 공유
 
-## 정의 {#section_ypl_mb3_vbb}
+## 정의 {#definitions}
 
 * **보낸 사람:** 소유한 플레이어에서 오디오 및 비디오 분석 데이터를 생성하는 고객
 * **받는 사람:** 보낸 사람으로부터 오디오 및 비디오 분석 데이터를 받는 고객
 
-## 요구 사항 {#section_4758843A8941441B9A4D0D7A61077A6E}
+## 요구 사항 {#requirements}
 
 * **Media 스트림 계약:** 보낸 사람과 받는 사람은 Adobe Analytics 내의 오디오 및 비디오 데이터에 액세스하려면 Adobe Analytics for Media Streams에 등록해야 합니다. 자세한 내용은 계정 팀에 문의하십시오.
 * **페더레이션 추록:**&#x200B;보낸 사람과 받는 사람은 각각 데이터를 보내거나 받기 전에 Adobe와 함께 서명한 추록이 있어야 합니다. 파트너십 당 하나의 추록이 아니라, 고객 당 하나의 추록이 필요합니다. 자세한 내용은 계정 팀에 문의하십시오.
@@ -44,7 +44,7 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 
 이 양식의 현재 버전을 여기에서 다운로드하십시오.페더레이션 [규칙 계약](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
-## 프로세스 {#section_byb_kb3_vbb}
+## 프로세스 {#process}
 
 1. 보낸 사람과 받은 사람은 함께 페더레이션 규칙 계약 양식을 작성합니다. Federated Rules Agreement 양식에는 엔지니어링 팀을 위한 특수 필드가 포함되어 있으며 Adobe Acrobat을 사용해서만 편집해야 합니다. [Acrobat을 무료로 다운로드합니다.](https://get.adobe.com/reader/)
 1. 데이터 파일이 있다면, 컨설팅 서비스는 보낸 사람의 플레이어에서 실제 데이터가 있는 받는 사람에게 샘플 데이터 파일을 제공하여 올바른 데이터 공유 규칙이 정의되어 있는지 확인합니다.
