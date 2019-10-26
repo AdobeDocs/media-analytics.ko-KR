@@ -4,14 +4,14 @@ seo-title: SDK Cookbook 개요
 description: 'SDK별 Cookbook 항목 '
 seo-description: 'SDK별 Cookbook 항목 '
 translation-type: tm+mt
-source-git-commit: cafe29452f5c0a14849b15aaf2af557dc4721d9f
+source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
 
 ---
 
 
 # SDK Cookbook 개요
 
-Media SDK와 Media Collection API 모두에 적용되는 일반적인 Media Analytics cookbook 주제는 다음과 같습니다.Media [Analytics Cookbook.](/help/media-analytics-cookbook/cookbook-overview.md)
+Media SDK와 Media Collection API 모두에 적용되는 일반적인 Media Analytics cookbook 주제는 다음과 같습니다.Media [Analytics Cookbook.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 아래 나열된 Cookbook 항목은 Media Analytics의 Media SDK 버전에 따라 다릅니다.
 
