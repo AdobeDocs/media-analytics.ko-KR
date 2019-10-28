@@ -3,7 +3,7 @@ seo-title: SDK 다운로드
 title: SDK 다운로드
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 3e115cbbae77413743764ed0757af9ac99965d6e
 
 ---
 
@@ -14,10 +14,10 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | 2.x 미디어 SDK | 최신 미디어 SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
-| Android/FireTV | [Android v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/sdk-implement/setup/set-up-android.md) |
-| iOS/AppleTV | [iOS v2.2.0용 미디어 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) ( [기존 2.0 SDK ](https://helpx.adobe.com/marketing-cloud/contact-support.html) 를 얻으려면 고객 지원 센터에 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/sdk-implement/setup/set-up-ios.md) |
-| JavaScript | [JS v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 설정](/help/sdk-implement/setup/set-up-js.md) |
-| Roku | [Roku v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [로쿠 설정](/help/sdk-implement/setup/set-up-roku.md) |
+| Android/FireTV | [Android v2.2.4용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/sdk-implement/setup/set-up-android.md) |
+| iOS/AppleTV | [iOS v2.2.6용 미디어 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.6) ( [기존 2.0 SDK ](https://helpx.adobe.com/marketing-cloud/contact-support.html) 를 얻으려면 고객 지원 센터에 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/sdk-implement/setup/set-up-ios.md) |
+| JavaScript | [JS v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 설정](/help/sdk-implement/setup/set-up-js.md) |
+| Roku | [Roku v2.2.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2) |  | [로쿠 설정](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 확장 {#media-analytics-launch-extension}
