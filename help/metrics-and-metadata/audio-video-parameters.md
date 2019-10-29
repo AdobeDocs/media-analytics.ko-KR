@@ -3,7 +3,7 @@ seo-title: 오디오 및 비디오 매개 변수
 title: 오디오 및 비디오 매개 변수
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a74955b2a
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
 
 ---
 
@@ -434,17 +434,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK 키:**<br/>자동으로 설정됨 </li> <li> **API 키:**<br/>N/A </li> <li> **유형:**<br/> 문자열 </li> <li> ****<br/> 전송 대상:미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>TRUE </li> <li> ****<br/> 설명:기본 컨텐츠의 보기 수입니다. 본 프레임이 적어도 한 개 있는 경우 컨텐츠 세그먼트 보기가 카운트됩니다.  <br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A </li> <li> **하트비트:**<br/>N/A </li> </ul> | <ul> <li> **사용 가능:**<br/>예 </li> <li> **예약된 변수:**<br/>이벤트 </li> <li> **보고서 이름:**<br/>컨텐츠 세그먼트 보기 수 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.segmentView) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.segmentView) </li> </ul> |
 
-### 광고 수
+<!--
+### Ad Count 
 
-|   구현   | 네트워크 매개 변수 | 보고 |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDK 키:해당 없음 </li> <li> **API 키:**<br/>N/A </li> <li> **유형:**<br/>숫자 </li> <li> ****<br/> 전송 대상:미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>2 </li> <li> ****<br/> 설명:미디어 세션 중에 시작된 광고 수입니다.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A </li> <li> **하트비트:**<br/>N/A </li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>N/A </li> <li> **보고서 이름:**<br/>사용자 지정 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.adCount) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### 장 수
+### Chapter Count 
 
-|   구현   | 네트워크 매개 변수 | 보고 |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDK 키:해당 없음 </li> <li> **API 키:**<br/>N/A </li> <li> **유형:**<br/>숫자 </li> <li> ****<br/> 전송 대상:미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>2 </li> <li> ****<br/> 설명:미디어 세션 중에 시작된 장 수입니다.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A </li> <li> **하트비트:**<br/>N/A </li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>N/A </li> <li> **보고서 이름:**<br/>사용자 지정 </li> <li> ****<br/> 컨텍스트 데이터:(a.media.chapterCount) </li> <li> **데이터 피드:**<br/>N/A </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+-->
 
 ## CPA(California Consumer Privacy Act) 매개 변수 {#ccpa-params}
 
