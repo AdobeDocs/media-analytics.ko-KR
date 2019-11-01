@@ -1,11 +1,9 @@
 ---
-seo-title: 프리롤 광고가 있는 VOD 재생
 title: 프리롤 광고가 있는 VOD 재생
-description: 이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 삽입되었습니다.
-seo-description: Adobe Media Analytics의 이 시나리오에서는 프리롤 광고가 주 컨텐츠 앞에 삽입되었습니다.
+description: Media SDK를 사용하여 프리롤 광고가 포함된 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
