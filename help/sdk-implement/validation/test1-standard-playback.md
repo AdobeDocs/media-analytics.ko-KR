@@ -1,9 +1,9 @@
 ---
-seo-title: 테스트 1 표준 재생
 title: 테스트 1 표준 재생
+description: 이 항목에서는 유효성 검사에 사용되는 표준 재생 테스트에 대해 설명합니다.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -109,7 +109,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    * **광고 완료**
 
-      At the 100% point of an ad, a Media Analytics Complete call should be sent.
+      광고의 100% 지점에서 미디어 분석 완료 호출을 전송해야 합니다.
 
 
 
@@ -129,7 +129,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    참고:
 
-   * The playhead position should increment by 10 with every Play call.
+   * 재생 헤드 위치는 Play 호출마다 10씩 증가합니다.
    * `l:event:duration` 값은 마지막 추적 호출 이후의 시간(밀리초)을 나타내며 각 10초 호출에서 거의 동일한 값이어야 합니다.
 
       호출 매개 변수 및 메타데이터에 대해서는 호출 세부 [사항 테스트를 참조하십시오.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
@@ -144,5 +144,5 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
 1. **재생 목록에서 다음 미디어 보기** 재생 목록에서 다음 미디어의 미디어 시작에서 새 미디어 시작 호출 집합을 보내야 합니다.
 
-1. **미디어 또는 스트림 전환** 실시간 스트림을 전환할 때 첫 번째 스트림에 대한 Media Analytics 전체 호출을 전송하지 않아야 합니다. The Media Start calls and Play calls should begin with the new show and stream name, and with the correct playhead and duration values for the new show.
+1. **미디어 또는 스트림 전환** 실시간 스트림을 전환할 때 첫 번째 스트림에 대한 Media Analytics 전체 호출을 전송하지 않아야 합니다. 미디어 시작 호출 및 재생 호출은 새 쇼 및 스트림 이름과 새 쇼의 재생 헤드 및 지속 시간 값으로 시작해야 합니다.
 
