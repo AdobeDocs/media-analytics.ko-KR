@@ -1,9 +1,9 @@
 ---
-seo-title: 순차적 추적을 사용하는 라이브 주 컨텐츠
 title: 순차적 추적을 사용하는 라이브 주 컨텐츠
+description: Media SDK를 사용하여 순차적 추적을 사용하여 라이브 컨텐츠를 추적하는 방법의 예입니다.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
