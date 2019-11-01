@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 최종 사용자
 user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
 
 ---
 
@@ -133,7 +133,6 @@ source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
       + [광고 사이에 표시되는 main:play 해결](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [비활성 세션 다시 시작](sdk-implement/cookbook/resuming-inactive.md)
       + [SceneGraph에서 추적(Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
-      + [SDK 및 실행 차이점](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
       + [마이그레이션 개요](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [코드 비교: 1.x와 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
