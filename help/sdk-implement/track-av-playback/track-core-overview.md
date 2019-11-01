@@ -1,9 +1,9 @@
 ---
-seo-title: 추적 개요
 title: 추적 개요
+description: '이 항목에서는 미디어 로드 추적, 미디어 시작, 미디어 일시 중지, 미디어 완료 등 코어 재생 추적에 대해 설명합니다. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
