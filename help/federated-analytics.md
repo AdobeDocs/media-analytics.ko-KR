@@ -1,9 +1,9 @@
 ---
-seo-title: 페더레이션 분석
 title: 페더레이션 분석
+description: 'Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오 및 비디오)를 공유하는 시스템을 제공합니다. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
