@@ -1,9 +1,9 @@
 ---
-seo-title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
 title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
+description: 미디어 SDK를 사용하여 검색하는 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
