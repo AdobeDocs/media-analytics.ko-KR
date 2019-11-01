@@ -1,9 +1,9 @@
 ---
-seo-title: 이정표에서 Media Analytics로의 마이그레이션
 title: 이정표에서 Media Analytics로의 마이그레이션
+description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -709,7 +709,7 @@ s.Media.stop(mediaName,mediaOffset)
 <td>
 <pre>
 trackPause
-</pre> 또는  
+</pre> 또는 
 <pre>
 trackEvent
 </pre>
@@ -718,12 +718,12 @@ trackEvent
 <pre>
 trackPause()
 </pre> 
-또는 
+또는
 <pre>
 trackEvent( MediaHeartbeat.
   이벤트.
   SeekStart)
-</pre> 또는 
+</pre> 또는
 <pre>
 trackEvent( MediaHeartbeat.
   이벤트.
