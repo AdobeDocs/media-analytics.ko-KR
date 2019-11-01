@@ -2,7 +2,7 @@
 title: SDK Cookbook 개요
 description: 'SDK별 Cookbook 항목 '
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
@@ -17,4 +17,3 @@ Media SDK와 Media Collection API 모두에 적용되는 일반적인 Media Anal
 * [광고 사이에 표시되는 main:play 해결](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [비활성 세션 다시 시작](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [SceneGraph에서 추적(Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [SDK 및 실행 차이점](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
