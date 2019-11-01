@@ -1,9 +1,9 @@
 ---
-seo-title: 개요
 title: 개요
+description: 미디어 SDK를 사용한 QoE, QoS(체감 품질) 추적에 대한 개요입니다.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
