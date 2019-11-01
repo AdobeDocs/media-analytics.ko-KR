@@ -1,9 +1,9 @@
 ---
-seo-title: iOS에서 오류 추적
 title: iOS에서 오류 추적
+description: 이 항목에서는 iOS에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 설명합니다.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
