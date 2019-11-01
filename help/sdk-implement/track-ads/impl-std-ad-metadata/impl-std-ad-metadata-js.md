@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: JavaScript에서 표준 광고 메타데이터 구현
 title: JavaScript에서 표준 광고 메타데이터 구현
+description: 브라우저(JS) 앱에서 광고 추적에서 표준 광고 메타데이터를 사용하는 방법
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -20,7 +18,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 ## 구현 표준 광고 메타데이터
 
-For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform:
+표준 광고 메타데이터의 경우 플랫폼용 키를 사용하여 표준 광고 메타데이터 키 값 쌍의 사전을 만듭니다.
 
 ```js
 var adObject =  
