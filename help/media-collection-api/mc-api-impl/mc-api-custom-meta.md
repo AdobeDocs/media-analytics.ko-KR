@@ -1,9 +1,9 @@
 ---
-seo-title: 사용자 지정 메타데이터 지원
 title: 사용자 지정 메타데이터 지원
+description: null
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -14,5 +14,5 @@ You can provide custom key:value pairs on the `sessionStart`, `chapterStart`, an
 
 The `customMetadata` JSON key should contain an object of key:value pairs. 이 키에는 영숫자, 밑줄 및 점/마침표만 사용해야 합니다.
 
-[MA Collection API Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
+[MA 컬렉션 API 이벤트](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
 
