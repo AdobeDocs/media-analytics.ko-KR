@@ -1,9 +1,9 @@
 ---
-seo-title: 테스트 호출 세부 사항
 title: 테스트 호출 세부 사항
+description: 이 항목에서는 구현의 유효성을 확인하기 위해 수행해야 하는 호출에 대해 자세히 설명합니다.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 translation-type: tm+mt
-source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -77,7 +77,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * 추가적인 컨텍스트 데이터 변수가 있고 이 변수가 메타데이터를 포함해야 합니다. 아래의 메타데이터 세부 사항을 참조하십시오.
 * 비디오 시작 시 선형 스트림의 플레이헤드 위치는 0이 아니라, 현재 프로그램의 시작 이후 경과된 시간(초)으로 설정해야 합니다.
 
-### Standard metadata in Media Analytics (heartbeats) Start call {#std-metadata-ma}
+### 미디어 분석의 표준 메타데이터(하트비트) 시작 호출 {#std-metadata-ma}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -96,14 +96,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Custom metadata in Media Analytics (heartbeats) Start call {#custom-metadata-ma}
+### 미디어 분석의 사용자 지정 메타데이터(하트비트) 시작 호출 {#custom-metadata-ma}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (heartbeats) Adobe Analytics Start call {#ma-aa-start}
+### 미디어 분석(하트비트) Adobe Analytics 시작 호출 {#ma-aa-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -118,12 +118,12 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **참고:**
 
-* This call indicates that the Media SDK has requested that an Adobe Analytics `pev2=ms_s` call be sent to the Adobe Analytics (AppMeasurement) server.
+* 이 호출은 Media SDK가 Adobe Analytics(AppMeasurement) 서버로 Adobe Analytics `pev2=ms_s` 호출을 전송하도록 요청했음을 나타냅니다.
 * 이 호출은 사용자 지정 메타데이터를 포함하지 않습니다.
 
 ## 광고 재생 보기 {#view-ad-playback}
 
-### Adobe Analytics (AppMeasurement) Ad Start call {#aa-ad-start-call}
+### Adobe Analytics(AppMeasurement) 광고 시작 호출 {#aa-ad-start-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -165,14 +165,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Custom metadata in Adobe Analytics (AppMeasurement) Ad Start call {#custom-metadata-aa-ad-start}
+### Adobe Analytics(AppMeasurement) 광고 시작 호출의 사용자 지정 메타데이터 {#custom-metadata-aa-ad-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Media Analytics (heartbeats) Ad Start call {#ma-ad-start-call}
+### 미디어 분석(하트비트) 광고 시작 호출 {#ma-ad-start-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -210,14 +210,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Custom metadata in Media Analytics (heartbeats) Ad Start call {#custom-metadata-ma-ad-start}
+### 미디어 분석의 사용자 지정 메타데이터(하트비트) 광고 시작 호출 {#custom-metadata-ma-ad-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (heartbeats) Adobe Analytics Ad Start call {#ma-aa-ad-start-call}
+### 미디어 분석(하트비트) Adobe Analytics 광고 시작 호출 {#ma-aa-ad-start-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
