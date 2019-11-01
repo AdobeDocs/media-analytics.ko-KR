@@ -1,9 +1,9 @@
 ---
-seo-title: Roku에서 체감 품질 추적
 title: Roku에서 체감 품질 추적
+description: 이 항목에서는 Roku의 미디어 SDK를 사용하여 QoE, QoS(체감 품질) 추적을 구현하는 방법에 대해 설명합니다.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
