@@ -1,9 +1,9 @@
 ---
-seo-title: VOD 여러 추적기 동시 실행
 title: VOD 여러 추적기 동시 실행
+description: 여러 추적기를 동시에 사용하여 VOD를 추적하는 방법의 예입니다.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
