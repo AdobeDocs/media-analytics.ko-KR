@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript 설정
 title: JavaScript 설정
+description: JavaScript에서 구현을 위한 미디어 SDK 애플리케이션 설정
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
