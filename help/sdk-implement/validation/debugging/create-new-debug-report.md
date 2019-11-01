@@ -1,9 +1,9 @@
 ---
-seo-title: 새 디버그 보고서 만들기
 title: 새 디버그 보고서 만들기
+description: 이 항목에서는 새 디버그 보고서를 만드는 방법에 대해 설명합니다.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
