@@ -1,16 +1,16 @@
 ---
-seo-title: Test 2  Media interruption
-title: Test 2  Media interruption
+title: 테스트 2 미디어 중단
+description: 이 항목에서는 유효성 검사에 사용되는 미디어 중단 테스트에 대해 설명합니다.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 translation-type: tm+mt
-source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Test 2: Media interruption{#test-media-interruption}
+# 테스트 2:미디어 중단{#test-media-interruption}
 
-This test case validates mobile interruption behavior. 인증 요청의 필수 요소입니다.
+이 테스트 케이스는 모바일 중단 동작을 검증합니다. 인증 요청의 필수 요소입니다.
 
 ## 인증 요청 양식
 
@@ -22,9 +22,9 @@ This test case validates mobile interruption behavior. 인증 요청의 필수 �
 
 1. **미디어 플레이어 시작**
 
-   When the media player starts, the following calls are sent in the following order:
+   미디어 플레이어가 시작되면 다음 호출이 순서대로 전송됩니다.
 
-   1. Adobe Analytics (AppMeasurement) Start
+   1. Adobe Analytics(AppMeasurement) 시작
    1. 미디어 분석(하트비트) 시작
    1. 미디어 분석(하트비트) Adobe Analytics 시작 호출이 요청됨
    위의 처음 두 호출에는 추가 메타데이터와 변수가 포함됩니다. 호출 매개 변수 및 메타데이터에 대해서는 호출 세부 [사항 테스트를 참조하십시오.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
