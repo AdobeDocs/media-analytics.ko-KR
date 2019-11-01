@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript에서 버퍼링 추적
 title: JavaScript에서 버퍼링 추적
+description: 브라우저 앱(JS)의 버퍼링 이벤트 추적에 대해 설명합니다.
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
