@@ -1,9 +1,9 @@
 ---
-seo-title: Android에서 챕터 및 세그먼트 추적
 title: Android에서 챕터 및 세그먼트 추적
+description: 이 항목에서는 Android에서 미디어 SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
