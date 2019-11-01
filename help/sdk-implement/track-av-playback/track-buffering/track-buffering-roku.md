@@ -1,9 +1,9 @@
 ---
-seo-title: Roku에서 버퍼링 추적
 title: Roku에서 버퍼링 추적
+description: Roku의 버퍼링 이벤트 추적에 대해 설명합니다.
 uuid: 666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
