@@ -1,9 +1,9 @@
 ---
-seo-title: 버퍼링이 있는 VOD 재생
 title: 버퍼링이 있는 VOD 재생
+description: Media SDK를 사용하여 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
