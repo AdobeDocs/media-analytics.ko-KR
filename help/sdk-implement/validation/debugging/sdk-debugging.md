@@ -1,9 +1,9 @@
 ---
-seo-title: SDK 디버깅
 title: SDK 디버깅
+description: 이 항목에서는 Media SDK에서 사용할 수 있는 추적/로깅에 대해 설명합니다.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->2017년 4월 30일부터 Adobe Bloodhound는 일몰이 되었습니다. 2017년 5월 1일부터 추가적인 개선이나 추가 엔지니어링 또는 Adobe Expert Care 지원이 제공되지 않습니다.
+>2017년 4월 30일 현재 Adobe Bloodhound는 종료되었습니다. 2017년 5월 1일부터 추가적인 개선이나 추가 엔지니어링 또는 Adobe Expert Care 지원이 제공되지 않습니다.
 
 ## 로그 메시지
 
