@@ -1,9 +1,9 @@
 ---
-seo-title: 앱 작업 추적
 title: 앱 작업 추적
+description: 앱 작업은 측정할 앱에서 발생하는 이벤트입니다.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
