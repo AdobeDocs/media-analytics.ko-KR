@@ -1,9 +1,9 @@
 ---
-seo-title: 재생 중 애플리케이션 중단 처리
 title: 재생 중 애플리케이션 중단 처리
+description: 미디어를 재생하는 동안 추적을 중지하는 방법을 살펴봅니다.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
