@@ -1,9 +1,9 @@
 ---
-seo-title: Roku에서 광고 추적
 title: Roku에서 광고 추적
+description: Media SDK를 사용하여 Roku 애플리케이션에서 광고 추적을 구현합니다.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. 프리롤을 포함하여 광고 브레이크 경계가 시작되는 시점을 식별하고 광고 브레이크 정보를 사용하여 `AdBreakObject`를 생성합니다.
 
-   `AdBreakObject` reference:
+   `AdBreakObject` 참조:
 
    | 변수 이름 | 설명 | 필수 여부 |
    | --- | --- | :---: |
