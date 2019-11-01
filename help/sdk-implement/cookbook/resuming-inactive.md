@@ -1,9 +1,9 @@
 ---
-seo-title: 비활성 세션 다시 시작
 title: 비활성 세션 다시 시작
+description: 비활성 세션 다시 시작을 처리하는 방법.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 이전에 닫은 세션을 수동으로 재개
 
-The Media SDK will only automatically resume sessions if the application was not closed. 응용 프로그램이 사용자 데이터를 저장하고 이전에 닫은 미디어를 다시 시작할 수 있는 기능을 가지고 있는 경우 다시 시작 이벤트를 수동으로 트리거할 수 있습니다. 비디오 추적 세션을 시작할 때 선택 사항인 비디오 재개됨 속성을 설정하십시오.
+Media SDK 파섹 응용 프로그램이 사용자 데이터를 저장하고 이전에 닫은 미디어를 다시 시작할 수 있는 기능을 가지고 있는 경우 다시 시작 이벤트를 수동으로 트리거할 수 있습니다. 비디오 추적 세션을 시작할 때 선택 사항인 비디오 재개됨 속성을 설정하십시오.
 
 ### Android
 
