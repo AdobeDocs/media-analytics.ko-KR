@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast에서 챕터 및 세그먼트 추적
 title: Chromecast에서 챕터 및 세그먼트 추적
+description: 이 항목에서는 Chromecast에서 미디어 SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
