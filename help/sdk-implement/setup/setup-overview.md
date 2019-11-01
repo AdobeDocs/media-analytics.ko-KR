@@ -1,9 +1,9 @@
 ---
-seo-title: 설정 개요
 title: 설정 개요
+description: 모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위한 미디어 SDK 설정에 대한 개요입니다.
 uuid: 06feeddb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
