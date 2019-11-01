@@ -1,9 +1,9 @@
 ---
-seo-title: 개요
 title: 개요
+description: 미디어 SDK를 사용하여 장(chapter) 및 세그먼트 추적을 구현하는 방법.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
