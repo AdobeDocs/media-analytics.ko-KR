@@ -1,9 +1,9 @@
 ---
-seo-title: iOS에서 광고 추적
 title: iOS에서 광고 추적
+description: Media SDK를 사용하여 iOS 애플리케이션에서 광고 추적을 구현합니다.
 uuid: e979e679-cde5-4c30-8f34-867fece13a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
