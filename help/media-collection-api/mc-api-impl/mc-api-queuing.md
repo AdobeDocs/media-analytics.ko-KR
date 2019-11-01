@@ -1,9 +1,9 @@
 ---
-seo-title: 세션 응답이 느린 경우 큐에 이벤트 저장
 title: 세션 응답이 느린 경우 큐에 이벤트 저장
+description: null
 uuid: 39ea59d9-89d3-4 파섹
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
