@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast에서 버퍼링 추적
 title: Chromecast에서 버퍼링 추적
+description: Chromecast의 버퍼링 이벤트 추적에 대해 설명합니다.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
