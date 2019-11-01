@@ -1,9 +1,9 @@
 ---
-seo-title: 옵트아웃 및 개인 정보
 title: 옵트아웃 및 개인 정보
+description: 옵트인, 옵트아웃 및 개인 정보를 처리하는 방법.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
