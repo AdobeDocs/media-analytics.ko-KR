@@ -1,9 +1,9 @@
 ---
-seo-title: Adobe Analytics에서 오디오 및 비디오 측정
 title: Adobe Analytics에서 오디오 및 비디오 측정
+description: '미디어용 Adobe Analytics(미디어 분석이라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다. '
 uuid: b3cbe240-b94d-42b8-a99c-028033aaa14
 translation-type: tm+mt
-source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
