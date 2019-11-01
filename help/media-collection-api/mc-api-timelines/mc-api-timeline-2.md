@@ -1,9 +1,9 @@
 ---
-seo-title: 타임라인 2 - 사용자가 세션을 중단함
 title: 타임라인 2 - 사용자가 세션을 중단함
+description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -66,7 +66,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구현 세부 정보**
 
-Start your app's ping timer. 그러면 첫 번째 핑 이벤트는 프리롤 광고가 있는 경우 1초, 그 외의 경우에는 10초입니다.
+앱의 Ping 타이머를 시작합니다. 그러면 첫 번째 핑 이벤트는 프리롤 광고가 있는 경우 1초, 그 외의 경우에는 10초입니다.
 
 ### 작업 3 - 광고 중단 시작 {#Action-3}
 
@@ -137,7 +137,7 @@ Start your app's ping timer. 그러면 첫 번째 핑 이벤트는 프리롤 광
 
 **구현 세부 정보**
 
-Ping the backend every 1 second. (간결한 관계로 이어지는 광고 게시물은 표시되지 않습니다.)
+1초마다 백 엔드를 ping합니다. (간결한 관계로 이어지는 광고 게시물은 표시되지 않습니다.)
 
 **샘플 요청 본문**
 
