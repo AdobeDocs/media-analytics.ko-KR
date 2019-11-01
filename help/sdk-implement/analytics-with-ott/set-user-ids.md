@@ -1,9 +1,9 @@
 ---
-seo-title: 사용자 ID 설정
 title: 사용자 ID 설정
+description: 사용자 ID를 설정하는 API를 참조하십시오.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
