@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Chromecast에서 표준 메타데이터 구현
 title: Chromecast에서 표준 메타데이터 구현
+description: Chromecast에서 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 설명합니다.
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
