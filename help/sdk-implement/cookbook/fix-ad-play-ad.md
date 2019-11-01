@@ -1,9 +1,9 @@
 ---
-seo-title: 광고 사이에 나타나는 기본 재생 문제 해결
 title: 광고 사이에 나타나는 기본 재생 문제 해결
+description: 예기치 않은 main:광고 간 재생 호출을 처리하는 방법.
 uuid: 228b4812-c23e-4 파섹
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
    >[!NOTE]
    >
-   >Call this only if the previous ad wasn’t complete. 이전 광고에 대한 "`isinAd`" 상태를 유지 관리하려면 부울 값을 고려하십시오.
+   >이전 광고가 완료되지 않은 경우에만 이 주소로 문의하십시오. 이전 광고에 대한 "`isinAd`" 상태를 유지 관리하려면 부울 값을 고려하십시오.
 
 * 광고 자산에 대한 광고 개체 인스턴스(예: `adObject`)를 만듭니다.
 * Populate the ad metadata, `adCustomMetadata`.
