@@ -1,9 +1,9 @@
 ---
-seo-title: 타임라인 3 - 챕터
 title: 타임라인 3 - 챕터
+description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ## 작업 세부 사항
 
 
-### Action 1 - Start session {#Action-1}
+### 작업 1 - 세션 시작 {#Action-1}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 작업 6 - 광고 완료 {#Action-6}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -219,9 +219,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | :---: | :---: | --- |
 | 앱에서 ping 이벤트 보내기 | 16 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**구현 세부 정보**
 
-Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심사에 표시되지 않습니다.)
+1초마다 백 엔드를 ping합니다. (이후 광고 게시물은 간결성의 관심사에 표시되지 않습니다.)
 
 **샘플 요청 본문**
 
@@ -502,7 +502,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 | --- | :---: | :---: | --- |
 | 앱에서 ping 이벤트 보내기 | 47 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**구현 세부 정보**
 
 1초마다 백 엔드를 ping합니다. (이후 광고 게시물은 간결성의 관심사에 표시되지 않습니다.)
 
@@ -562,7 +562,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 23 - Chapter start {#Action-23}
+### 동작 23 - 장 시작 {#Action-23}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -587,7 +587,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 24 - Ping {#Action-24}
+### 동작 24 - Ping {#Action-24}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -609,7 +609,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 25 - Pause {#Action-25}
+### 동작 25 - 일시 중지 {#Action-25}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -631,7 +631,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 26 - Ping {#Action-26}
+### 동작 26 - Ping {#Action-26}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -653,7 +653,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 27 - Play content {#Action-27}
+### 동작 27 - 내용 재생 {#Action-27}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -675,7 +675,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 28 - Ping {#Action-28}
+### 동작 28 - Ping {#Action-28}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -697,7 +697,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 29 - Chapter end {#Action-29}
+### 동작 29 - 장 종료 {#Action-29}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -719,7 +719,7 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 }
 ```
 
-### Action 30 - Session complete {#Action-30}
+### 작업 30 - 세션 완료 {#Action-30}
 
 | Action | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
@@ -744,5 +744,5 @@ Ping the backend every 1 second. (이후 광고 게시물은 간결성의 관심
 
 >[!NOTE]
 >
->**No Seek Events?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 스크럽할 때 특정 플레이어가 그러한 수많은 이벤트를 생성하므로 수많은 사용자가 백엔드 서비스의 네트워크 대역폭을 쉽게 병목 현상이 발생하기 때문입니다. Adobe는 플레이헤드 위치가 아닌 장치 타임스탬프를 기반으로 한 하트비트 기간을 계산하여 찾기 이벤트에 대한 명시적인 지원을 제공합니다.
+>**검색 이벤트 없음?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 스크럽할 때 특정 플레이어가 그러한 수많은 이벤트를 생성하므로 수많은 사용자가 백엔드 서비스의 네트워크 대역폭을 쉽게 병목 현상이 발생하기 때문입니다. Adobe는 플레이헤드 위치가 아닌 장치 타임스탬프를 기반으로 한 하트비트 기간을 계산하여 찾기 이벤트에 대한 명시적인 지원을 제공합니다.
 
