@@ -1,9 +1,9 @@
 ---
-seo-title: iOS에서 챕터 및 세그먼트 추적
 title: iOS에서 챕터 및 세그먼트 추적
+description: 이 항목에서는 iOS에서 미디어 SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
