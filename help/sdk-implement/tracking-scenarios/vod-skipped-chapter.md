@@ -1,9 +1,9 @@
 ---
-seo-title: 챕터를 건너뛰고 VOD 재생
 title: 챕터를 건너뛰고 VOD 재생
+description: 사용자가 미디어 SDK를 사용하여 장을 건너뛰는 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
