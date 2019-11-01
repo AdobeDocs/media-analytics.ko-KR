@@ -1,9 +1,9 @@
 ---
-seo-title: 1.x에서 2.x API로 전환
 title: 1.x에서 2.x API로 전환
+description: 이 항목에는 Media SDK의 1.x 및 2.x 버전에 대한 필수 및 선택적 추적 API에 대한 링크 및 목록이 포함되어 있습니다.
 uuid: 6e619288-c082-4cb4-8685-e90823ddaf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
