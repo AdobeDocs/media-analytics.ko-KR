@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast에서 광고 추적
 title: Chromecast에서 광고 추적
+description: Media SDK 파섹
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `AdComplete` | 광고 완료 이벤트 추적을 위한 상수 |
 | `AdSkip` | 광고 건너뛰기 이벤트 추적을 위한 상수 |
 
-## Implementation steps
+## 구현 단계
 
 1. 프리롤을 포함하여 광고 브레이크 경계가 시작되는 시점을 식별하고 광고 브레이크 정보를 사용하여 `AdBreakObject`를 생성합니다.
 
