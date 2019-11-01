@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript에서 오류 추적
 title: JavaScript에서 오류 추적
+description: 이 항목에서는 브라우저 앱(JS)에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 설명합니다.
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 오류 추적 구현
 
-1. Track media player errors:
+1. 미디어 플레이어 오류 추적:
 
    ```js
    onPlayerError = function() { 
