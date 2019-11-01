@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast 설정
 title: Chromecast 설정
+description: Chromecast 구현을 위한 미디어 SDK 애플리케이션 설정
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
