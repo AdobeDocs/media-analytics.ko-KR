@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript에서 코어 재생 추적
 title: JavaScript에서 코어 재생 추적
+description: 이 항목에서는 브라우저 앱(JS)에서 Media SDK를 사용하여 핵심 추적을 구현하는 방법에 대해 설명합니다.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >[!IMPORTANT]
 >이 설명서에서는 SDK 버전 2.x의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
-1. **Initial tracking setup**
+1. **초기 추적 설정**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -35,7 +35,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `LIVE` | 라이브 컨텐츠에 대한 스트림 유형입니다. |
    | `LINEAR` | 선형 컨텐츠에 대한 스트림 유형입니다. |
    | `AOD` | Audio on Demand의 스트림 유형입니다. |
-   | `AUDIOBOOK` | Stream type for Audio Book. |
+   | `AUDIOBOOK` | Audio Book용 스트림 유형입니다. |
    | `PODCAST` | 포드캐스트의 스트림 유형입니다. |
 
    **`MediaType`상수:**
@@ -64,7 +64,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >Attaching the standard metadata object to the media object is optional.
+      >표준 메타데이터 개체를 미디어 개체에 연결하는 것은 선택 사항입니다.
 
       * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >The second value is the custom media metadata object name that you created in step 2.
+   >두 번째 값은 2단계에서 만든 사용자 정의 미디어 메타데이터 개체 이름입니다.
 
    >[!IMPORTANT]
    >
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >이는 4단계에서 사용된 것과 동일한 이벤트 소스일 수 있습니다. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 * 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 전체 추적 예를 제공하기 위해 JavaScript SDK에 포함된 샘플 플레이어.
