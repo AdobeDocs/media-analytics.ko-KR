@@ -1,9 +1,9 @@
 ---
-seo-title: Ping 이벤트 보내기
 title: Ping 이벤트 보내기
+description: null
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
