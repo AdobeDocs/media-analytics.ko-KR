@@ -1,9 +1,9 @@
 ---
-seo-title: Android에서 찾기 추적
 title: Android에서 찾기 추적
+description: 이 항목에서는 Android에서 Media SDK를 사용하여 검색 추적을 구현하는 방법에 대해 설명합니다.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
