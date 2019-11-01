@@ -1,9 +1,9 @@
 ---
-seo-title: Roku 메타데이터 키
 title: Roku 메타데이터 키
+description: 이 항목에서는 사용 가능한 Roku 메타데이터 키에 대해 설명합니다.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
