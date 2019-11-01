@@ -1,9 +1,9 @@
 ---
-seo-title: iOS에서 버퍼링 추적
 title: iOS에서 버퍼링 추적
+description: iOS에서 버퍼링 이벤트 추적에 대해 설명합니다.
 uuid: 4f4db23a-48 파섹
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
