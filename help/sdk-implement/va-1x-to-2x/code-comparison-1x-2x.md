@@ -1,9 +1,9 @@
 ---
-seo-title: 코드 비교 1.x - 2.x
 title: 코드 비교 1.x - 2.x
+description: 이 항목에서는 Media SDK의 1.x 및 2.x 버전의 코드를 비교합니다.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,17 +14,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **구성 API 변경 사항:**
 
-* `AdobeHeartbeatPluginConfig.sdk` - Renamed to `MediaConfig.appVersion`
+* `AdobeHeartbeatPluginConfig.sdk` - 다음으로 이름 변경 `MediaConfig.appVersion`
 * `MediaHeartbeatConfig.playerName` - 이제 `MediaHeartbeatConfig` 대신 `VideoPlayerPluginDelegate`
 * (JavaScript 전용): `AppMeasurement` 인스턴스 - 이제 `MediaHeartbeat` 생성자를 통해 전송됩니다.
 
 **구성 속성 변경 사항:**
 
-* `sdk` - Renamed to `appVersion`
+* `sdk` - 다음으로 이름 변경 `appVersion`
 * `publisher` - 제거됨. Experience Cloud 조직 ID가 publisher로 대신 사용됨
 * `quiteMode` - 제거됨
 
-**Links to 1.x and 2.x sample players:**
+**1.x 및 2.x 샘플 플레이어에 대한 링크:**
 
 * [1.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [2.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
@@ -71,7 +71,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### Media Heartbeat initialization (2.x) {#mh-init-2.x}
+#### 미디어 하트비트 초기화(2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -98,7 +98,7 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate().get.onError` |  |
 | `AdobeAnalyticsPluginDelegate()` |  |
 
-#### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
+#### VideoPlayerPluginDelegate(1.x) {#player-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleVideoPlayerPluginDelegate.prototype, VideoPlayerPluginDelegate.prototype);
@@ -128,7 +128,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-#### AdobeAnalyticsPluginDelegate (1.x) {#analytics-plugin-delegate-1.x}
+#### AdobeAnalyticsPluginDelegate(1.x) {#analytics-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -140,7 +140,7 @@ SampleAdobeAnalyticsPluginDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### HeartbeatDelegate (1.x) {#hb-delegate-1.x}
+#### HeartbeatDelegate(1.x) {#hb-delegate-1.x}
 
 ```js
 $.extend(SampleHeartbeatDelegate.prototype, HeartbeatDelegate.prototype);
@@ -152,7 +152,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### MediaHeartbeatDelegate (2.x) {#mh-delegate-2.x}
+#### MediaHeartbeatDelegate(2.x) {#mh-delegate-2.x}
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);
@@ -271,7 +271,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Custom Metadata (1.x) {#custom-meta-1.x}
+#### 사용자 지정 메타데이터(1.x) {#custom-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -698,7 +698,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
-#### Chapter Skip (1.x) {#chap-skip-1.x}
+#### 장 건너뛰기(1.x) {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
@@ -709,7 +709,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 >[!NOTE]
 >In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries.
 
-#### Chapter Skip (2.x) {#chap-skip-2.x}
+#### 장 건너뛰기(2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
@@ -724,7 +724,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Chapter Custom Metadata (1.x) {#chap-cust-meta-1.x}
+#### 장 사용자 지정 메타데이터(1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -736,7 +736,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### Chapter Custom Metadata (2.x) {#chap-cust-meta-2.x}
+#### 장 사용자 지정 메타데이터(2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -758,7 +758,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### Chapter Complete (1.x) {#chap-complete-1.x}
+#### 장 전체(1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -784,7 +784,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBitrateChange()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BitrateChange)` |
 
-#### Bitrate Change (1.x) {#bitrate-chg-1.x}
+#### 비트 전송률 변경(1.x) {#bitrate-chg-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -814,7 +814,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` |  |
 
-#### Video Resume (1.x) {#video-resume-1.x}
+#### 비디오 다시 시작(1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
