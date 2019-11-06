@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 최종 사용자
 user-guide-title: 오디오 및 비디오를 위한 Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
+source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
 
 ---
 
@@ -137,6 +137,12 @@ source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
       + [마이그레이션 개요](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [코드 비교: 1.x와 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [1.x에서 2.x API로 전환](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
+   + Media Analytics SDK에서 마이그레이션 시작 {#sdk-to-launch}
+      + [SDK에서 마이그레이션 실행](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
+      + SDK에서 마이그레이션 플랫폼 가이드 실행 {#sdk-to-launch-migration-platforms}
+         + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Media Collection API(RESTful) {#media-collection-api}
    + [개요](media-collection-api/mc-api-overview.md)
    + API 참조 {#mc-api-ref}
