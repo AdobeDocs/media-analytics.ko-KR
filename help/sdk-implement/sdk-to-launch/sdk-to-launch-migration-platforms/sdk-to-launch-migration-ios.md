@@ -1,10 +1,8 @@
 ---
-seo-title: 독립 실행형 Media SDK에서 Adobe Launch - iOS로 마이그레이션
 title: 독립 실행형 Media SDK에서 Adobe Launch - iOS로 마이그레이션
-seo-description: Media SDK에서 iOS용 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
 description: Media SDK에서 iOS용 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -12,15 +10,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 # 독립 실행형 Media SDK에서 Adobe Launch - iOS로 마이그레이션
 
 ## 구성
-
-### 확장 실행
-
-1. Experience Platform Launch에서 모바일 [!UICONTROL 속성에] 대한 확장 탭을 클릭합니다
-1. 카탈로그 [!UICONTROL 탭에서 오디오] 및 비디오용 Adobe Media Analytics 확장 프로그램을 찾아 설치를 [!UICONTROL 클릭합니다].
-1. 확장 설정 페이지에서 추적 매개 변수를 구성합니다.
-미디어 확장자는 추적에 구성된 매개 변수를 사용합니다.
-
-[미디어 분석 확장 구성](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ### 독립 실행형 미디어 SDK
 
@@ -42,40 +31,18 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-## 추적기 만들기
-
 ### 확장 실행
 
-[미디어 API 참조 - 미디어 추적기 만들기](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+1. Experience Platform Launch에서 모바일 [!UICONTROL 속성에] 대한 확장 탭을 클릭합니다
+1. 카탈로그 [!UICONTROL 탭에서 오디오] 및 비디오용 Adobe Media Analytics 확장 프로그램을 찾아 설치를 [!UICONTROL 클릭합니다].
+1. 확장 설정 페이지에서 추적 매개 변수를 구성합니다.
+미디어 확장자는 추적에 구성된 매개 변수를 사용합니다.
 
-추적기를 만들기 전에 미디어 확장 및 종속 확장을 모바일 코어에 등록합니다.
+   ![](assets/launch_config_mobile.png)
 
-```objective-c
-// Register the extension once during app launch
-#import <ACPCore.h>
-#import <ACPAnalytics.h>
-#import <ACPMedia.h>
-#import <ACPIdentity.h>
+[미디어 분석 확장 구성](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
-    [ACPCore configureWithAppId:@"your-launch-app-id"];
-    [ACPMedia registerExtension];
-    [ACPAnalytics registerExtension];
-    [ACPIdentity registerExtension];
-    [ACPCore start:nil];
-    return YES;
-}
-```
-
-미디어 익스텐션이 등록되면 다음 API를 사용하여 추적기를 만들 수 있습니다.
-추적기는 구성된 시작 속성에서 구성을 자동으로 선택합니다.
-
-```objective-c
-[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
-    // Use the instance for tracking media.
-}];
-```
+## 추적기 만들기
 
 ### 독립 실행형 미디어 SDK
 
@@ -116,7 +83,45 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
+### 확장 실행
+
+[미디어 API 참조 - 미디어 추적기 만들기](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+
+추적기를 만들기 전에 미디어 확장 및 종속 확장을 모바일 코어에 등록합니다.
+
+```objective-c
+// Register the extension once during app launch
+#import <ACPCore.h>
+#import <ACPAnalytics.h>
+#import <ACPMedia.h>
+#import <ACPIdentity.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
+    [ACPCore configureWithAppId:@"your-launch-app-id"];
+    [ACPMedia registerExtension];
+    [ACPAnalytics registerExtension];
+    [ACPIdentity registerExtension];
+    [ACPCore start:nil];
+    return YES;
+}
+```
+
+미디어 익스텐션이 등록되면 다음 API를 사용하여 추적기를 만들 수 있습니다.
+추적기는 구성된 시작 속성에서 구성을 자동으로 선택합니다.
+
+```objective-c
+[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
+    // Use the instance for tracking media.
+}];
+```
+
 ## 재생 헤드 및 경험 품질 값 업데이트.
+
+### 독립 실행형 미디어 SDK
+
+독립 실행형 Media SDK에서는 추적기를 만드는 동안`ADBMediaHeartbeartDelegate` 프로토콜을 구현하는 위임 개체가 전달됩니다.
+구현은 Tracker가 `getQoSObject()` 및 인터페이스 메서드를 호출할 때마다 최신 QoE 및 재생 헤드를 `getCurrentPlaybackTime()` 반환해야 합니다.
 
 ### 확장 실행
 
@@ -128,59 +133,7 @@ ADBMediaHeartbeat* tracker =
 
 [미디어 API 참조 - QoE 개체 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-### 독립 실행형 미디어 SDK
-
-독립 실행형 Media SDK에서는 추적기를 만드는 동안`ADBMediaHeartbeartDelegate` 프로토콜을 구현하는 위임 개체가 전달됩니다.
-구현은 Tracker가 `getQoSObject()` 및 인터페이스 메서드를 호출할 때마다 최신 QoE 및 재생 헤드를 `getCurrentPlaybackTime()` 반환해야 합니다.
-
 ## 표준 미디어/광고 메타데이터 전달
-
-### 확장 실행
-
-* 표준 미디어 메타데이터:
-
-   ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
-               mediaType:ACPMediaTypeVideo];
-   
-   NSMutableDictionary *mediaMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-   
-   // Custom metadata keys
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
-
-* 표준 광고 메타데이터:
-
-   ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
-               length:15];
-   
-   NSMutableDictionary* adMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-   
-   // Custom metadata keys
-   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-   ```
 
 ### 독립 실행형 미디어 SDK
 
@@ -236,3 +189,49 @@ ADBMediaHeartbeat* tracker =
             data:adDictionary];
    ```
 
+### 확장 실행
+
+* 표준 미디어 메타데이터:
+
+   ```objective-c
+   NSDictionary *mediaObject = 
+     [ACPMedia createMediaObjectWithName:@"media-name" 
+               mediaId:@"media-id" 
+               length:60 
+               streamType:ACPMediaStreamTypeVod 
+               mediaType:ACPMediaTypeVideo];
+   
+   NSMutableDictionary *mediaMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+   
+   // Custom metadata keys
+   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+   ```
+
+* 표준 광고 메타데이터:
+
+   ```objective-c
+   NSDictionary* adObject = 
+     [ACPMedia createAdObjectWithName:@"ad-name" 
+               adId:@"ad-id" 
+               position:1 
+               length:15];
+   
+   NSMutableDictionary* adMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+   
+   // Custom metadata keys
+   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+   
+   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+   ```
