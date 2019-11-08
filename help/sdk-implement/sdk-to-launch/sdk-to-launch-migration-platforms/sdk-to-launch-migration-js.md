@@ -1,10 +1,8 @@
 ---
-seo-title: 독립 실행형 미디어 SDK에서 Adobe Launch - 웹(JS)으로 마이그레이션
 title: 독립 실행형 미디어 SDK에서 Adobe Launch - 웹(JS)으로 마이그레이션
-seo-description: Media SDK에서 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
 description: Media SDK에서 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -18,15 +16,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 
 ## 구성
 
-### 확장 실행
-
-1. Experience Platform Launch에서 웹 [!UICONTROL 속성에] 대한 확장 탭을 클릭합니다.
-1. 카탈로그 [!UICONTROL 탭에서] 오디오 및 비디오용 Adobe Media Analytics 확장 프로그램을 찾아 설치를 [!UICONTROL 클릭합니다].
-1. 확장 설정 페이지에서 추적 매개 변수를 구성합니다.
-미디어 확장자는 추적에 구성된 매개 변수를 사용합니다.
-
-[사용 안내서 시작 - 미디어 확장 설치 및 구성](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
-
 ### 독립 실행형 미디어 SDK
 
 독립 실행형 Media SDK에서는 추적기를 만들 때 앱에서 추적 구성을 구성하고 SDK에 전달합니다.
@@ -36,7 +25,7 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 var mediaConfig = new MediaHeartbeatConfig();
 mediaConfig.trackingServer = "namespace.hb.omtrdc.net";
 mediaConfig.playerName = "html5-player";
-mediaConfig.channel = "sample-channe";
+mediaConfig.channel = "sample-channel";
 mediaConfig.ovp = "video-provider";
 mediaConfig.appVersion = "v2.0.0"
 mediaConfig.ssl = true;
@@ -45,7 +34,46 @@ mediaConfig.debugLogging = true;
 
 구성 외에, 페이지가 제대로 작동하려면 `MediaHeartbeat` 미디어 추적에 대한 `AppMeasurement` 인스턴스와 `VisitorAPI` 인스턴스를 구성하고 전달해야 합니다.
 
+### 확장 실행
+
+1. Experience Platform Launch에서 웹 [!UICONTROL 속성에] 대한 확장 탭을 클릭합니다.
+1. 카탈로그 [!UICONTROL 탭에서] 오디오 및 비디오용 Adobe Media Analytics 확장 프로그램을 찾아 설치를 [!UICONTROL 클릭합니다].
+1. 확장 설정 페이지에서 추적 매개 변수를 구성합니다.
+미디어 확장자는 추적에 구성된 매개 변수를 사용합니다.
+
+   ![](assets/launch_config_js.png)
+
+[사용 안내서 시작 - 미디어 확장 설치 및 구성](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+
 ## 추적기 제작의 차이점
+
+### Media SDK
+
+1. 개발 프로젝트에 미디어 분석 라이브러리를 추가합니다.
+1. 구성 개체(`MediaHeartbeatConfig`)를 만듭니다.
+1. 위임 프로토콜을 구현하여 `getQoSObject()` 및 `getCurrentPlaybackTime()` 함수를 노출합니다.
+1. 미디어 하트비트 인스턴스 만들기(`MediaHeartbeat`).
+
+```
+// Media Heartbeat initialization
+var mediaConfig = new MediaHeartbeatConfig();
+...
+// Configuration settings
+mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
+...
+// Implement Media Delegate (Quality of Service and Playhead)
+var mediaDelegate = new MediaHeartbeatDelegate();
+...
+mediaDelegate.getQoSObject = function() {
+    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
+    ...
+}
+...
+// Create your tracker
+this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
+```
+
+[미디어 SDK - 추적기 제작](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
 
 ### Launch
 
@@ -77,43 +105,14 @@ Launch는 추적 인프라를 만드는 두 가지 방법을 제공합니다. �
 
    공유 모듈을 통해 상수에 `MediaHeartbeat` `media-heartbeat` 액세스합니다.
 
-### Media SDK
-
-1. 개발 프로젝트에 미디어 분석 라이브러리를 추가합니다.
-1. 구성 개체(`MediaHeartbeatConfig`)를 만듭니다.
-1. 위임 프로토콜을 구현하여 `getQoSObject()` 및 `getCurrentPlaybackTime()` 함수를 노출합니다.
-1. 미디어 하트비트 인스턴스 만들기(`MediaHeartbeat`).
-
-```
-// Media Heartbeat initialization
-var mediaConfig = new MediaHeartbeatConfig();
-...
-// Configuration settings
-mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
-...
-// Implement Media Delegate (Quality of Service and Playhead)
-var mediaDelegate = new MediaHeartbeatDelegate();
-...
-mediaDelegate.getQoSObject = function() {
-    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
-    ...
-}
-...
-// Create your tracker
-this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
-```
-
-[미디어 SDK - 추적기 제작](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
-
 ## 관련 설명서
-
-### Launch
-
-* [시작 개요](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [미디어 분석 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### Media SDK
 
 * [JS 설정](/help/sdk-implement/setup/set-up-js.md)
 * [미디어 SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
+### Launch
+
+* [시작 개요](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [미디어 분석 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
