@@ -1,8 +1,8 @@
 ---
 title: SceneGraph에서 추적(Roku)
-description: Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 미디어 추적
+description: Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 미디어를 추적합니다.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -56,7 +56,7 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 | 카테고리 | 메서드 이름 | 설명 |
 |---|---|---|
 | **상수** |  |  |
-|  | `sceneGraphConstants` | Returns an object containing `SceneGraphConstants`. 자세한 내용은 위의 테이블을 참조하십시오. |
+|  | `sceneGraphConstants` | `SceneGraphConstants`가 포함된 개체를 반환합니다. 자세한 내용은 위의 테이블을 참조하십시오. |
 |  |  |  |
 | **디버그 로깅** |  |  |
 |  | `setDebugLogging` | ADBMobile SDK에 대한 디버그 로깅을 설정하기 위한 SceneGraph API입니다. |
@@ -107,15 +107,15 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 
 | 상수 이름 | 설명 |
 |---|---|
-| `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
-| `DEBUG_LOGGING` | 사용 `apiName` 방법 `getDebugLogging` |
-| `PRIVACY_STATUS` | 사용 `apiName` 방법 `getPrivacyStatus` |
-| `TRACKING_IDENTIFIER` | 사용 `apiName` 방법 `trackingIdentifier` |
-| `USER_IDENTIFIER` | 사용 `apiName` 방법 `userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | 사용 `apiName` 방법 `visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | 사용 `apiName` 방법 `audienceVisitorProfile` |
-| `AUDIENCE_DPID` | 사용 `apiName` 방법 `audienceDpid` |
-| `AUDIENCE_DPUUID` | 사용 `apiName` 방법 `audienceDpuuid` |
+| `API_RESPONSE` | 응답 개체를 `adbmobileTask` 노드의 `adbmobileApiResponse` 필드에서 검색하는 데 사용됩니다. |
+| `DEBUG_LOGGING` | 다음 `getDebugLogging`에 `apiName`으로 사용됨 |
+| `PRIVACY_STATUS` | 다음 `getPrivacyStatus`에 `apiName`으로 사용됨 |
+| `TRACKING_IDENTIFIER` | 다음 `trackingIdentifier`에 `apiName`으로 사용됨 |
+| `USER_IDENTIFIER` | 다음 `userIdentifier`에 `apiName`으로 사용됨 |
+| `VISITOR_MARKETING_CLOUD_ID` | 다음 `visitorMarketingCloudID`에 `apiName`으로 사용됨 |
+| `AUDIENCE_VISITOR_PROFILE` | 다음 `audienceVisitorProfile`에 `apiName`으로 사용됨 |
+| `AUDIENCE_DPID` | 다음 `audienceDpid`에 `apiName`으로 사용됨 |
+| `AUDIENCE_DPUUID` | 다음 `audienceDpuuid`에 `apiName`으로 사용됨 |
 
 ### adbmobileTask 노드
 
@@ -136,20 +136,31 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 유효하지 않습니다 </td>
-<td> 읽기 전용 AdobeMobileSDK에서 실행되는 모든 API는 이 필드에 응답을 반환합니다. 응답 개체를 수신하려면 이 필드의 업데이트를 수신하도록 콜백을 등록하십시오. 다음은 응답 개체의 형식입니다.  
+<td> AdobeMobileSDK에서 실행된 모든 읽기 전용 API는 이 필드에 대한 응답을 반환합니다. 응답 개체를 수신하려면 이 필드의 업데이트를 수신하도록 콜백을 등록하십시오. 다음은 응답 개체의 형식입니다.  
 <codeblock>
-response = { "apiName" :&lt;SceneGraphConstants.
-               API_NAME&gt; "returnValue :&lt;API_RESPONSE&gt; } 
+response = {
+  "apiName" : &lt;SceneGraphConstants.
+               API_NAME&gt; 
+  "returnValue : &lt;API_RESPONSE&gt; 
+} 
 </codeblock>
 이 응답 개체의 인스턴스는 API 참조 가이드에 따라 값을 반환해야 하는 AdobeMobileSDK의 API 호출에 대해 전송됩니다. 예를 들어 visitorMarketingCloudID()에 대한 API 호출은 다음 응답 개체를 반환합니다. 
 <codeblock>
-response = { "apiName" :m.              adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID "returnValue :"07050x25671x33760x72644x14" } 
+response = {
+  "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : "07050x25671x33760x72644x14"  
+} 
 </codeblock>
 또는 응답 데이터도 올바르지 않을 수 있습니다. 
 <codeblock>
-response = { "apiName" :m.              adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID "returnValue :잘못된 } 
+response = {  
+  "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID  
+  "returnValue : invalid 
+} 
 </codeblock>
 </td>
 </tr>
@@ -161,15 +172,17 @@ response = { "apiName" :m.              adbmobileConstants.
 #### `getADBMobileConnectorInstance`
 
 API 서명: `ADBMobile().getADBMobileConnectorInstance()`\
-입력:반환 `adbmobileTask`유형: `ADBMobileConnector`
+입력: `adbmobileTask`
+반환 유형: `ADBMobileConnector`
 
 #### `sgConstants`
 
-API 서명:입력 `ADBMobile().sgConstants()`:없음\
+API 서명: `ADBMobile().sgConstants()`
+입력: 없음\
 반환 유형: `SceneGraphConstants`
 
 >[!NOTE]
->Refer to the `ADBMobileConnector` API reference for details.
+>자세한 내용은 `ADBMobileConnector` API 참조를 참조하십시오.
 
 ### ADBMobile 상수
 
@@ -178,10 +191,10 @@ API 서명:입력 `ADBMobile().sgConstants()`:없음\
 | 버전 매기기 | `version` | AdobeMobileLibrary 버전 정보를 검색하기 위한 상수 |
 | 개인 정보/옵트아웃 | `PRIVACY_STATUS_OPT_IN` | 개인 정보 상태 옵트인에 대한 상수 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 개인 정보 상태 옵트아웃에 대한 상수 |
-| MediaHeartbeat 상수 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat API에서 이러한 상수 사용 |
-| 표준 메타데이터 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 이러한 상수를 사용하여 MediaHeartbeat API에 표준 비디오/광고 메타데이터를 첨부합니다. |
+| MediaHeartbeat 상수 | 이 페이지의 상수(<br/><br/>[미디어 하트비트 메서드)를 참조하십시오.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat API에서 이러한 상수 사용 |
+| 표준 메타데이터 | 이 페이지의 상수(<br/><br/>[표준 메타데이터 매개 변수)를 참조하십시오.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 이러한 상수를 사용하여 MediaHeartbeat API에 표준 비디오/광고 메타데이터를 첨부합니다. |
 
-Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. 이러한 메서드에 대한 자세한 내용은 아래 표를 참조하십시오.
+레거시 AdobeMobileLibrary에 전역으로 정의된 유틸리티 `MediaHeartbeat` API는 SceneGraph 노드에서 사용할 수 없는 Brightscript 구성 요소를 사용하지 않으므로 SceneGraph 환경에서 *그대로* 액세스할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 아래 표를 참조하십시오.
 
 ### MediaHeartbeat에 대한 전역 메서드
 
@@ -199,19 +212,19 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 1. **개발 환경 설정**
 
-   1. Copy `adbmobile.brs` (AdobeMobileLibrary) into your `pkg:/source/` directory.
+   1. `adbmobile.brs`(AdobeMobileLibrary)를 `pkg:/source/` 디렉토리에 복사합니다.
 
-   1. For Scene Graph support, copy `adbmobileTask.brs` and `adbMobileTask.xml` into your `pkg:/components/` directory.
+   1. 장면 그래프 지원을 위해 `adbmobileTask.brs` 및 `adbMobileTask.xml`을 `pkg:/components/` 디렉토리에 복사합니다.
 
 1. **초기화**
 
-   1. Import `adbmobile.brs` into your Scene.
+   1. 장면으로 `adbmobile.brs`을 가져옵니다.
 
       ```
       <script type="text/brightscript" uri="pkg:/source/adbmobile.brs" />
       ```
 
-   1. `adbmobileTask`   노드의 인스턴스를 장면에 생성합니다.
+   1. 장면에 `adbmobileTask` 노드의 인스턴스를 생성합니다.
 
       ```
       m.adbmobileTask = createObject("roSGNode", "adbmobileTask")
@@ -223,7 +236,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       m.adbmobile = ADBMobile().getADBMobileConnectorInstance(m.adbmobileTask)
       ```
 
-   1. Get `adbmobile` SG constants.
+   1. SG 상수 `adbmobile`를 가져옵니다.
 
       ```
       m.adbmobileConstants = m.adbmobile.sceneGraphConstants()
