@@ -1,8 +1,8 @@
 ---
 title: 개요
-description: Media SDK를 사용한 광고 추적 구현 개요.
+description: Media SDK를 사용하여 광고 추적을 구현하는 개요입니다.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,26 +12,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->다음 지침은 2.x SDK를 사용하는 구현에 대한 지침을 제공합니다. If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
-광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 주요 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 포괄적인 메타데이터 목록을 참조하십시오.광고 [매개 변수.](/help/metrics-and-metadata/ad-parameters.md)
+광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 핵심 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 포괄적인 메타데이터 목록은 [광고 매개 변수](/help/metrics-and-metadata/ad-parameters.md)를 참조하십시오.
 
 ## 플레이어 이벤트 {#player-events}
 
 
-### 광고 중단 시작 시
+### 광고 브레이크 시작 시
 
 >[!NOTE]
 >프리롤 포함
 
 * 광고 브레이크에 대한 `adBreak` 개체 인스턴스를 만듭니다. 예, `adBreakObject`.
 
-* Call `trackEvent` for the ad break start with your `adBreakObject`.
+* 광고 브레이크 시작을 위해 `trackEvent`를 사용하여 `adBreakObject`를 호출합니다.
 
 ### 모든 광고 자산 시작 시
 
 * 광고 자산에 대한 광고 개체 인스턴스를 만듭니다. 예, `adObject`.
-* Populate the ad metadata, `adCustomMetadata`.
+* 광고 메타데이터, `adCustomMetadata`를 채웁니다.
 * 광고 시작을 위해 `trackEvent`를 호출합니다.
 
 ### 모든 광고 완료 시
@@ -46,7 +46,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 광고 브레이크 완료를 위해 `trackEvent`를 호출합니다.
 
-## 광고 추적 구현 {#implement-ad-tracking}
+## 광고 추적 {#implement-ad-tracking} 구현
 
 ### 광고 추적 상수
 
@@ -70,7 +70,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `position` | 컨텐츠 내 광고 브레이크의 번호 위치로서, 1로 시작합니다. | 예 |
    | `startTime` | 광고 브레이크의 시작 위치에 있는 플레이헤드 값입니다. | 예 |
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break.
+1. 광고 브레이크 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdBreakStart`를 사용하여 `trackEvent()`를 호출합니다.
 
 1. 광고가 시작되는 시기를 식별하고, 광고 정보를 사용하여 `AdObject` 인스턴스를 만듭니다.
 
@@ -88,19 +88,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    * **표준 광고 메타데이터 -** 표준 광고 메타데이터의 경우, 플랫폼에 대한 키를 사용하여 표준 광고 메타데이터 키 값 쌍 사전을 만드십시오.
    * **사용자 지정 광고 메타데이터 -**&#x200B;사용자 지정 메타데이터의 경우 사용자 지정 데이터 변수에 대한 변수 개체를 만들고, 현재 광고의 데이터로 채웁니다.
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. 광고 재생 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdStart` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 
    사용자 지정 메타데이터 변수(또는 빈 개체)에 대한 참조를 이벤트 호출의 세 번째 매개 변수로 포함하십시오.
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. 광고 재생이 광고 끝에 도달하면 `AdComplete` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 
 1. 사용자가 광고를 건너뛰도록 선택했기 때문에 광고 재생이 완료되지 않은 경우 `AdSkip` 이벤트를 추적합니다.
 1. 같은 `AdBreak` 내에 추가 광고가 있는 경우 3~7단계를 다시 반복합니다.
-1. When the ad break is complete, use the `AdBreakComplete` event to track it.
+1. 광고 브레이크가 완료되면 `AdBreakComplete` 이벤트를 사용하여 추적합니다.
 
 >[!IMPORTANT]
 >
->광고 재생(`l:event:playhead``s:asset:type=ad`) 중에 컨텐츠 플레이어 재생 헤드를 증가시키지 않도록 하십시오. 이 경우 컨텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
+>광고 재생(`s:asset:type=ad`) 중에 컨텐츠 플레이어 플레이헤드(`l:event:playhead`)를 증가시키지 않도록 하십시오. 증가시킬 경우 컨텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
 
 다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다.
 
