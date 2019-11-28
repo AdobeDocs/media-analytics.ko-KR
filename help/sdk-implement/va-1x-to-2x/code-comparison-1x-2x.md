@@ -1,8 +1,8 @@
 ---
-title: 코드 비교 1.x - 2.x
-description: 이 항목에서는 Media SDK의 1.x 및 2.x 버전의 코드를 비교합니다.
+title: 1.x와 2.x 코드 비교
+description: 이 항목에서는 Media SDK 1.x 및 2.x 버전의 코드를 비교합니다.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,13 +14,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 **구성 API 변경 사항:**
 
-* `AdobeHeartbeatPluginConfig.sdk` - 다음으로 이름 변경 `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` - 이제 `MediaHeartbeatConfig` 대신 `VideoPlayerPluginDelegate`
+* `AdobeHeartbeatPluginConfig.sdk` - `MediaConfig.appVersion`으로 이름이 변경됨
+* `MediaHeartbeatConfig.playerName` - 이제 `VideoPlayerPluginDelegate` 대신 `MediaHeartbeatConfig`를 통해 설정됨
 * (JavaScript 전용): `AppMeasurement` 인스턴스 - 이제 `MediaHeartbeat` 생성자를 통해 전송됩니다.
 
 **구성 속성 변경 사항:**
 
-* `sdk` - 다음으로 이름 변경 `appVersion`
+* `sdk` - `appVersion`으로 이름이 변경됨
 * `publisher` - 제거됨. Experience Cloud 조직 ID가 publisher로 대신 사용됨
 * `quiteMode` - 제거됨
 
@@ -29,7 +29,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * [1.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [2.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
-다음 섹션에서는 초기화, 코어 재생, 광고 재생, 장 재생 및 일부 추가 이벤트를 포함하는 1.x와 2.x 간의 코드 비교를 제공합니다.
+다음 섹션은 1.x와 2.x의 코드 비교, 초기화 설명, 코어 재생, 광고 재생, 챕터 재생 및 일부 추가 이벤트를 제공합니다.
 
 ## VHL 코드 비교: 초기화
 
@@ -262,7 +262,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Standard Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`.
+>VHL 2.0에서는 `AdobeAnalyticsPlugin.setVideoMetadata()` API를 통해 표준 비디오 메타데이터를 설정하는 대신, MediaObject 키 `MediaObject.MediaObjectKey.StandardVideoMetadata()`를 통해 표준 비디오 메타데이터를 설정합니다.
 
 ### 사용자 지정 비디오 메타데이터
 
@@ -302,7 +302,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Custom Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the `MediaHeartbeat.trackSessionStart()` API.
+>VHL 2.0에서는 `AdobeAnalyticsPlugin.setVideoMetadata()` API를 통해 사용자 지정 비디오 메타데이터를 설정하는 대신, `MediaHeartbeat.trackSessionStart()` API를 통해 표준 비디오 메타데이터를 설정합니다.
 
 
 ### 재생
@@ -359,7 +359,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackSeekComplete()` | `MediaHeartbeat.`<br/>  `trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
-#### 검색(1.x) {#seek-1.x}
+#### 찾기(1.x) {#seek-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -368,7 +368,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-#### 검색 중(2.x) {#seek-2.x}
+#### 찾기(2.x) {#seek-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -548,7 +548,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Standard Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Ad Metadata is set through the `AdMetadata` key `MediaObject.MediaObjectKey.StandardVideoMetadata`
+>VHL 2.0에서는 `AdobeAnalyticsPlugin.setVideoMetadata()` API를 통해 표준 광고 메타데이터를 설정하는 대신, `AdMetadata` 키 `MediaObject.MediaObjectKey.StandardVideoMetadata`를 통해 표준 광고 메타데이터를 설정합니다.
 
 ### 사용자 지정 광고 메타데이터
 
@@ -599,7 +599,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Custom Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata` API, in VHL 2.0, the Standard Ad Metadata is set through the `MediaHeartbeat.trackAdStart()` API.
+>VHL 2.0에서는 `AdobeAnalyticsPlugin.setVideoMetadata` API를 통해 사용자 지정 광고 메타데이터를 설정하는 대신, `MediaHeartbeat.trackAdStart()` API를 통해 표준 광고 메타데이터를 설정합니다.
 
 ### 광고 건너뛰기
 
@@ -626,7 +626,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 ```
 
 >[!NOTE]
->In VHL 1.5.X APIs; `getAdinfo()` and `getAdBreakInfo()` must return null if the player is outside the Ad break boundaries.
+>VHL 1.5.X API에서 `getAdinfo()` 및 `getAdBreakInfo()`는 플레이어가 광고 브레이크 경계를 벗어나는 경우 null을 반환해야 합니다.
 
 ### 광고 완료
 
@@ -663,7 +663,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.createChapterObject` |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### 장 시작(1.x) {#chap-start-1.x}
+#### 챕터 시작(1.x) {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -678,7 +678,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 };
 ```
 
-#### 장 시작(2.x) {#chap-start-2.x}
+#### 챕터 시작(2.x) {#chap-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -698,7 +698,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
-#### 장 건너뛰기(1.x) {#chap-skip-1.x}
+#### 챕터 건너뛰기(1.x) {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
@@ -707,9 +707,9 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 ```
 
 >[!NOTE]
->In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries.
+>VHL 1.5.X API에서 `getChapterinfo()`는 플레이어가 챕터 경계를 벗어나는 경우 null을 반환해야 합니다.
 
-#### 장 건너뛰기(2.x) {#chap-skip-2.x}
+#### 챕터 건너뛰기(2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
@@ -724,7 +724,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### 장 사용자 지정 메타데이터(1.x) {#chap-cust-meta-1.x}
+#### 챕터 사용자 지정 메타데이터(1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -736,7 +736,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### 장 사용자 지정 메타데이터(2.x) {#chap-cust-meta-2.x}
+#### 챕터 사용자 지정 메타데이터(2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -758,7 +758,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### 장 전체(1.x) {#chap-complete-1.x}
+#### 챕터 전체(1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -767,7 +767,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### 장 전체(2.x) {#chap-complete-2.x}
+#### 챕터 전체(2.x) {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -784,7 +784,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBitrateChange()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BitrateChange)` |
 
-#### 비트 전송률 변경(1.x) {#bitrate-chg-1.x}
+#### 비트율 변경(1.x) {#bitrate-chg-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -795,7 +795,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-#### 비트 전송률 변경(2.x) {#bitrate-chg-2.x}
+#### 비트율 변경(2.x) {#bitrate-chg-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -814,7 +814,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` |  |
 
-#### 비디오 다시 시작(1.x) {#video-resume-1.x}
+#### 비디오 재개(1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -827,7 +827,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### 비디오 다시 시작(2.x) {#video-resume-2.x}
+#### 비디오 재개(2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
