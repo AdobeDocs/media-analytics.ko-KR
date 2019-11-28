@@ -2,7 +2,7 @@
 title: 미디어 Concurrent Viewer
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!TIP]
 >
->선택한 간격이 하루 중 일부가 아닌 경우 데이터가 표시되지 않습니다.
+>선택한 간격이 하루가 아니면 데이터가 표시되지 않습니다.
 
 ![](assets/video-concurrent-viewers.png)
 
