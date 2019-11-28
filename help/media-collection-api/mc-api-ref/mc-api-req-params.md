@@ -2,7 +2,7 @@
 title: 요청 매개 변수
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,25 +12,25 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 분석 데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 서버의 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | Analytics 보고 데이터를 식별하는 ID |
 | `analytics.enableSSL` | N | `sessionStart` | SSL을 사용할 True 또는 False |
-| `analytics.visitorId` | N | `sessionStart` | Adobe 방문자 ID는 여러 Adobe 애플리케이션에서 사용할 수 있는 사용자 지정 ID입니다. 하트비트는 Analytics `visitorId` 와 같습니다. `VID.` |
+| `analytics.visitorId` | N | `sessionStart` | Adobe 방문자 ID는 여러 Adobe 애플리케이션에서 사용할 수 있는 사용자 지정 ID입니다. 하트비트 `visitorId`는 Analytics `VID.`와 같습니다.  |
 
 ## 방문자 데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | Experience Cloud 사용자 ID(ECID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트는 `marketingCloudUserId` Adobe Analytics `MID` 의 하트비트와 같습니다. 기술적으로 필요는 없지만 이 매개 변수는 Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | ECID(Experience Cloud 사용자 ID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만, Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
 | `visitor.aamLocationHint` | N | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 |
 | `appInstallationId` | N | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
 
 ## 컨텐츠 데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 컨텐츠에 대한 고유 식별자 |
 | `media.name` | N | `sessionStart` | 사용자가 읽을 수 있는 컨텐츠 이름 |
@@ -38,12 +38,12 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.contentType` | Y | `sessionStart` | 스트림 형식(임의의 문자열일 수 있으며, "Live", "VOD" 또는 "Linear" 값이 권장됨) |
 | `media.playerName` | Y | `sessionStart` | 컨텐츠 렌더링을 담당하는 플레이어의 이름 |
 | `media.channel` | Y | `sessionStart` | 컨텐츠의 배포 채널. 모바일 애플리케이션 이름 또는 웹 사이트 이름, 속성 이름일 수 있습니다. |
-| `media.resume` | N | `sessionStart` | 사용자가 이전 세션을 다시 시작하는지 여부를 나타냅니다(새 세션을 시작하는 대신). |
+| `media.resume` | N | `sessionStart` | 사용자가 이전 세션을 다시 시작하는지 여부를 나타냅니다(새 세션 시작과 반대됨). |
 | `media.sdkVersion` | N | `sessionStart` | 플레이어에서 사용하는 SDK 버전 |
 
 ## 컨텐츠 표준 메타데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | 프로그램 또는 시리즈 이름 |
 | `media.season` | N | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 광고 데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | 친숙한 광고 브레이크 이름 |
 | `media.ad.podIndex` | Y | `adBreakStart` | 비디오에 있는 광고 pod 인덱스 |
@@ -77,7 +77,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 광고 표준 메타데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | 광고에서 다루고 있는 제품의 회사 또는 브랜드입니다 |
 | `media.ad.campaignId` | N | `adStart` | 광고 캠페인의 ID |
@@ -88,7 +88,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 챕터 데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | 컨텐츠에서 챕터의 위치 식별 |
 | `media.chapter.offset` | Y | `chapterStart` | 재생에서 챕터가 시작되는 시간(초) |
@@ -97,39 +97,39 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 품질 데이터
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Any | 스트림의 비트율 |
 | `media.qoe.droppedFrames` | N | Any | 스트림에서 삭제된 프레임 수 |
 | `media.qoe.framesPerSecond` | N | Any | 초당 프레임 수 |
 | `media.qoe.timeToStart` | N | Any | 사용자가 재생을 시작하고 컨텐츠가 로드되고 재생을 시작하는 사이에 경과된 시간(밀리 초) |
 
-## CPA(California Consumer Privacy Act) 매개 변수 {#ccpa-params}
+## CCPA(California Consumer Privacy Act) 매개 변수 {#ccpa-params}
 
-| 요청 키 | 필수 여부 | 설정... |  설명  |
+| 요청 키  | 필수 여부 | 설정... |  설명  |
 | --- | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 true로 설정합니다. |
-| `analytics.optOutShare` | N | `sessionStart` | 최종 사용자가 데이터(예: 다른 Adobe Analytics 클라이언트)를 페더레이션하지 않기로 선택한 경우 true로 설정합니다. |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 참으로 설정합니다. |
+| `analytics.optOutShare` | N | `sessionStart` | 최종 사용자가 데이터를 (예: 다른 Adobe Analytics 클라이언트로) 페더레이션하지 않기로 선택한 경우 참으로 설정합니다. |
 
 ## 추가 세부 정보 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. 이 기능은 다른 Experience Cloud 제품과 이미 통합하고 MCID를 가져온 경우에 유용합니다.
+맵 `params` 내부에 Experience Cloud 사용자 ID(`MID` 또는 `MCID`라고도 함)를 포함하면 **visitor.marketingCloudUserId** 키를 사용하여 `sessionStart` 호출 시 Experience Cloud 사용자 ID를 전달합니다. 이 기능은 다른 Experience Cloud 제품과 이미 통합하고 MCID를 가져온 경우에 유용합니다.
 
 >[!NOTE]
 >
->Media Analytics(MA)는 Experience Cloud 앱 제품군(Adobe Analytics, Audience Manager, Target 등)과 통합되어 있습니다. 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _ECID는 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 것입니다._
+>MA(Media Analytics)는 Experience Cloud 앱 제품군(Adobe Analytics, Audience Manager, Target 등)에 통합되어 있습니다. 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _ECID는 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 것입니다._
 
 ### appInstallationId
 
-* **값을 전달하지&#x200B;*않는*경우`appInstallationId`** - MA 백엔드는 더 이상 MCID를 생성하지 않지만 대신 Adobe Analytics를 사용하여 이 작업을 수행합니다. Media Collection API에서 MCID를 생성하여 모든 요청 시 보낼 수 있도록 가능한 경우 MCID를 보내거나 `appInstallationId`(필수 `marketingCloudOrgId`와 함께 사용)를 보내는 것이 좋습니다.
+* **`appInstallationId`값을 전달하지&#x200B;*않은 경우*-** MA 백 엔드가 더 이상 MCID를 생성하지 않고, Adobe Analytics를 대신 이용하여 이 작업을 수행합니다. Media Collection API에서 MCID를 생성하여 모든 요청 시 보낼 수 있도록 가능한 경우 MCID를 보내거나 `appInstallationId`(필수 `marketingCloudOrgId`와 함께 사용)를 보내는 것이 좋습니다.
 
-* **값을 전달하는&#x200B;*경우*-`appInstallationId`MCID는** MA 백 엔드에서 *생성할 수* 있으며 `appInstallationId` , 값을 전달하면 (필수) `marketingCloudOrgId` 매개 변수를 전달합니다. `appInstallationId`를 직접 전달하는 경우 클라이언트 측에서 해당 값을 유지해야 합니다. 이는 장치의 앱에 고유해야 하며, 앱이 다시 설치되지 않는 한 유지되어야 합니다.
+* **`appInstallationId`값을 전달&#x200B;*하는*경우 -** `appInstallationId` 및 (필수) `marketingCloudOrgId` 매개 변수 값을 전달하는 경우 MA 백 엔드에서 MCID를 생성&#x200B;*할 수 있습니다*. `appInstallationId`를 직접 전달하는 경우 클라이언트 측에서 해당 값을 유지해야 합니다. 이는 장치의 앱에 고유해야 하며, 앱이 다시 설치되지 않는 한 유지되어야 합니다.
 
 >[!NOTE]
 >
->The `appInstallationId` uniquely identifies the app *and the device*. 각 장치의 각 앱에 대해 고유해야 합니다. 즉, 다른 장치에서 동일한 앱의 동일한 버전을 사용하는 두 명의 사용자가 각각 다른(고유) `appInstallationId`를 보내야 합니다.
+>`appInstallationId`는 앱 및 *장치*&#x200B;를 고유하게 식별합니다. 각 장치의 각 앱에 대해 고유해야 합니다. 즉, 다른 장치에서 동일한 앱의 동일한 버전을 사용하는 두 명의 사용자가 각각 다른(고유) `appInstallationId`를 보내야 합니다.
 
 <!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
 \<ul id="ul_iwc_fqt_pbb"\> 
@@ -138,13 +138,13 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
+이 매개 변수는 제공하지 않은 경우 MCID 생성에 필요하며, 게시자 ID(Media Analytics에서 [페더레이션 규칙 일치](/help/federated-analytics.md)를 수행할 때 기반으로 함)에 대한 값으로도 사용됩니다.
 
 ### Analytics 기존 사용 ID(aid) 및 선언된 사용자 ID(customerIDs)
 
 * **analytics.aid:**
 
-   이 키의 값은 Analytics 이전 사용자 ID를 나타내는 문자열이어야 합니다.
+   이 키 값은 Analytics 기존 사용자 ID를 나타내는 문자열이어야 합니다.
 * **visitor.customerIDs:**
 
    이 키의 값은 다음 형식의 개체여야 합니다.
@@ -160,7 +160,7 @@ In addition to being necessary for MCID generation when that is not provided, th
 
 ### visitor.aamLocationHint
 
-이 매개 변수는 Adobe Analytics가 고객 데이터를 Audience Manager로 보낼 때 히트할 Adobe Audience Manager(AAM 파섹) Edge를 나타냅니다. 이 매개 변수를 전달하지 않으면 Adobe가 이를 1로 하드코딩합니다. 이는 최종 사용자가 지리적으로 먼 위치(예: 미국 동부, 미국 서부, 유럽, 아시아)에 있는 장치를 사용하려는 경우에 특히 중요합니다. 그렇지 않으면 사용자 데이터가 여러 AAM Edges에 분산됩니다.
+이 매개 변수는 Adobe Analytics에서 고객 데이터를 Audience Manager에게 보낼 때 AAM(Adobe Audience Manager) Edge가 적중됨을 나타냅니다. 이 매개 변수를 전달하지 않으면 Adobe가 이를 1로 하드코딩합니다. 이는 최종 사용자가 지리적으로 먼 위치(예: 미국 동부, 미국 서부, 유럽, 아시아)에 있는 장치를 사용하려는 경우에 특히 중요합니다. 그렇지 않으면 사용자 데이터가 여러 AAM Edges에 분산됩니다.
 
 ### media.resume
 
