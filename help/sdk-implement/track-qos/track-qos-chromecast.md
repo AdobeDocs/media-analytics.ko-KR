@@ -1,8 +1,8 @@
 ---
 title: Chromecast에서 체감 품질 추적
-description: 이 항목에서는 Chromecast의 미디어 SDK를 사용하여 QoE, QoS(체감 품질) 추적을 구현하는 방법에 대해 설명합니다.
+description: 이 항목에서는 Chromecast에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 설명합니다.
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음은 모든 2.x SDK에 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 개요 {#overview}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 미디어 플레이어 API를 사용하여 QoS 및 오류 추적과 관련된 변수를 식별할 수 있습니다.
+체감 품질 추적에 QoS(서비스 품질) 및 오류 추적이 포함됩니다. 둘 다 선택적 옵션이며 코어 미디어 추적 구현에 필요하지 **않습니다**. 미디어 플레이어 API를 사용하여 QoS 및 오류 추적과 관련된 변수를 식별할 수 있습니다.
 
 ## 플레이어 이벤트 {#player-events}
 
@@ -31,13 +31,13 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 ## 구현 {#implement}
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. 미디어 재생 중에 비트율이 변경되는 시점을 식별하고 QoS 정보를 사용하여 `MediaObject` 인스턴스를 만듭니다.
 
    **QoSObject 변수:**
 
    >[!TIP]
    >
-   >이러한 변수는 QoS를 추적하려는 경우에만 필요합니다.
+   >다음 변수는 QoS를 추적하려는 경우에만 필요합니다.
 
    | 변수 | 설명 | 필수 여부 |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >QoS 개체를 업데이트하고 비트율 변경 시 비트율 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
+   >비트율 변경 시마다 QoS 개체를 업데이트하고 비트율 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
 
 1. `getQoSObject()` 메서드가 업데이트된 최신 QoS 정보를 반환하는지 확인합니다.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. 미디어 플레이어에 오류가 발생하여 플레이어 API에 오류 이벤트를 사용할 수 있는 경우 `trackError()`를 사용하여 오류 정보를 캡처합니다. ([개요](/help/sdk-implement/track-errors/track-errors-overview.md)를 참조하십시오.)
 
    >[!TIP]
    >
-   >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. 미디어 플레이어 오류로 인해 재생이 계속되지 않는 경우 `trackError()` 호출 후 `trackSessionEnd()`를 호출하여 미디어 추적 세션이 종료되었는지 확인하십시오.
 
