@@ -1,8 +1,8 @@
 ---
 title: JavaScript에서 버퍼링 추적
-description: 브라우저 앱(JS)의 버퍼링 이벤트 추적에 대해 설명합니다.
+description: 브라우저 앱(JS)의 버퍼링 추적 이벤트에 대해 설명합니다.
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음은 모든 2.x SDK에 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 버퍼링 추적 상수
 
