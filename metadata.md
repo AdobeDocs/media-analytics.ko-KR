@@ -9,7 +9,7 @@ tutorials-title: 자습서
 tutorials-url: https://helpx.adobe.com/analytics/kt/index/analytics-videos.html
 git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 ---
