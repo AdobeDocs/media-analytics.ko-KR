@@ -1,8 +1,8 @@
 ---
 title: 사용자 ID 설정
-description: 사용자 ID를 설정하는 API를 참조하십시오.
+description: 고유한 고객 식별자 역할을 하는 사용자 ID 설정을 위한 API입니다.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
