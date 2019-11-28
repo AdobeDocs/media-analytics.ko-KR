@@ -1,8 +1,8 @@
 ---
 title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
-description: 미디어 SDK를 사용하여 검색하는 VOD 컨텐츠를 추적하는 방법의 예입니다.
-uuid: 5c2392f6-9b9c-42f5-833f-77423d1e622
-translation-type: tm+mt
+description: Media SDK를 사용하여 프리롤 찾기가 발생한 VOD 컨텐츠를 추적하는 방법의 예입니다.
+uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지를 인식하지 않으므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 컨텐츠의 첫 번째 프레임이 재생됨 | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠보다 먼저 재생되는 경우 챕터가 시작될 때 하트비트가 시작됩니다. |
 | 컨텐츠 재생 |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 사용자가 컨텐츠에서 이동 작업을 시작함 | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
+| 사용자가 컨텐츠에서 이동 작업을 시작함 | `trackSeekStart` |  | 찾기가 완료될 때까지(예: `trackSeekComplete`) 하트비트는 시작되지 않습니다. |
 | 이동 작업이 완료됨 | `trackSeekComplete` |  | 이동이 완료되었으므로 하트비트가 시작됩니다.  팁: 플레이헤드 값은 이동 후 올바른 새 플레이헤드를 나타냅니다. |
 | 컨텐츠가 완료됨 | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션 종료 | `trackSessionEnd` |  | `SessionEnd` |
