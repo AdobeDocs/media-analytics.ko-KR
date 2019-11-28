@@ -1,8 +1,8 @@
 ---
 title: Chromecast 메타데이터 키
-description: Chromecast에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 설명합니다.
+description: Chromecast에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
