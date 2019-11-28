@@ -1,8 +1,8 @@
 ---
 title: 옵트아웃 및 개인 정보
-description: 옵트인, 옵트아웃 및 개인 정보를 처리하는 방법.
+description: 옵트인, 옵트아웃 및 개인 정보 보호를 처리하는 방법입니다.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,9 +14,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 추적 활동을 특정 장치에서 허용할지 여부를 제어할 수 있습니다.
 
-* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인 정보 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인 정보 설정에 대한 자세한 내용은 [옵트아웃 및 개인 정보 설정](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인 정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTT 앱(Chromecast, Roku) - OTT SDK는** 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬에 저장된 ID를 검색할 수 있는 GDPR(General Data Protection Regulation) 지원 API를 제공합니다.
+* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인 정보 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인 정보 설정에 대한 자세한 내용은 [옵트아웃 및 개인 정보 설정](https://docs.adobe.com/content/help/ko-KR/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
+* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인 정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://marketing.adobe.com/resources/help/ko_KR/mcvid/)를 참조하십시오.
+* **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
 
    >[!NOTE]
    >
@@ -24,7 +24,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    다음 설정을 사용하여 Analytics 데이터가 특정 장치에서 전송되는지 여부를 제어할 수 있습니다.
 
-   * The `privacyDefault` setting in the `ADBMobile.json` config file. 이 설정은 코드에서 변경되기 전까지 초기 설정을 제어하고 유지됩니다.
+   * `ADBMobile.json` 구성 파일의 `privacyDefault` 설정. 이 설정은 코드에서 변경되기 전까지 초기 설정을 제어하고 유지됩니다.
 
    * `ADBMobile().setPrivacyStatus()` 메서드.
 
@@ -43,7 +43,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
             ```
          >[!IMPORTANT]
          >
-         >사용자가 추적을 옵트아웃하면 사용자가 다시 옵트인할 때까지 지속되는 장치 데이터 및 ID가 모두 삭제됩니다.
+         >사용자가 추적을 옵트아웃하면 사용자가 다시 옵트인할 때까지 유지된 모든 장치 데이터와 ID가 삭제됩니다.
 
       * **다시 옵트인:**
 
@@ -79,7 +79,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->모든 식별자를 검색하는 방법은 SDK에 의해 알려져 지속되는 모든 사용자 ID를 가져옵니다. 사용자가 옵트아웃하기 **전에** 이 메서드를 호출해야 합니다.
+>모든 ID를 검색하는 메서드는 SDK에 의해 인식되고 지속되는 모든 사용자 ID를 가져옵니다. 사용자가 옵트아웃하기 **전에** 이 메서드를 호출해야 합니다.
 
 로컬로 저장된 ID는 다음을 포함할 수 있는 JSON 문자열로 반환됩니다.
 
