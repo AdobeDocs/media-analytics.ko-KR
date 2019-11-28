@@ -1,14 +1,14 @@
 ---
 title: 1.x에서 2.x API로 전환
-description: 이 항목에는 Media SDK의 1.x 및 2.x 버전에 대한 필수 및 선택적 추적 API에 대한 링크 및 목록이 포함되어 있습니다.
-uuid: 6e619288-c082-4cb4-8685-e90823ddaf4a
-translation-type: tm+mt
+description: 이 항목에는 API 참조에 대한 링크와, Media SDK의 1.x 및 2.x 버전에 대한 필수 및 선택적 추적 API 목록이 포함되어 있습니다.
+uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# API 1.x에서 2.x로 변환 {#one-x-to-two-x-conv}
+# API 1.x에서 2.x로 전환 {#one-x-to-two-x-conv}
 
 ## Media SDK 2.x API 참조
 
@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 필수 추적* API:
 
-|  VHL 1.x | VHL 2.x |
+|  VHL 1.x  | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 해당 없음 |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
@@ -36,14 +36,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | VHL 1.x | VHL 2.x |
 |---|---|
-| Return a valid `AdBreakInfo` in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |
-| Return null in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakComplete)` |
+| `VideoPlayerPlugin.getAdBreakInfo()`에 올바른 `AdBreakInfo` 반환 | `trackEvent(Event.AdBreakStart)` |
+| `VideoPlayerPlugin.getAdBreakInfo()`에 null 반환 | `trackEvent(Event.AdBreakComplete)` |
 | `playerPlugin.trackAdStart()` | `trackEvent(Event.AdStart, adObject, adCustomMetadata)` |
 | `playerPlugin.trackAdComplete()` | `trackEvent(Event.AdComplete)` |
-| Return null in `VideoPlayerPlugin.getAdInfo()` | `trackEvent(Event.AdSkip)` |
+| `VideoPlayerPlugin.getAdInfo()`에 null 반환 | `trackEvent(Event.AdSkip)` |
 | `playerPlugin.trackChapterStart()` | `trackEvent(Event.ChapterStart, chapterObject, chapterCustomMetadata)` |
 | `playerPlugin.trackChapterComplete()` | `trackEvent(Event.ChapterComplete)` |
-| Return null in `VideoPlayerPlugin.getChapterInfo()` | `trackEvent(Event.ChapterSkip)` |
+| `VideoPlayerPlugin.getChapterInfo()`에 null 반환 | `trackEvent(Event.ChapterSkip)` |
 | `playerPlugin.trackSeekStart()` | `trackEvent(Event.SeekStart)` |
 | `playerPlugin.trackSeekComplete()` | `trackEvent(Event.SeekComplete)` |
 | `playerPlugin.trackBufferStart()` | `trackEvent(Event.BufferStart)` |
