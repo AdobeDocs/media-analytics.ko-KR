@@ -2,7 +2,7 @@
 title: QoE 데이터 보내기
 description: null
 uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -14,5 +14,5 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->You should check the [JSON validation schemas](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md) to verify parameter types and whether they are mandatory or optional.
+>매개 변수 유형을 [JSON 유효성 검사 스키마](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)에서 확인하고 이러한 유형이 필수인지 아니면 선택 사항인지 확인해야 합니다.
 
