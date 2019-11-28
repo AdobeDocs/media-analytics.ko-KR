@@ -1,8 +1,8 @@
 ---
 title: iOS 메타데이터 키
-description: 이 항목에서는 사용 가능한 iOS 메타데이터 키에 대해 설명합니다.
+description: 이 항목에서는 사용 가능한 iOS 메타데이터 키를 설명합니다.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
-From `ADBStandardMetadataKeys.h`:
+`ADBStandardMetadataKeys.h`에서:
 
 ## 비디오 메타데이터 키
 
