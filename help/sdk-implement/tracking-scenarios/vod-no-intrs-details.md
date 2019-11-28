@@ -1,8 +1,8 @@
 ---
 title: 광고가 없는 VOD 재생
-description: 광고가 없는 VOD 재생 추적 예입니다.
-uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
-translation-type: tm+mt
+description: 광고가 포함되지 않은 VOD 재생 추적의 예입니다.
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,14 +16,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출 | 참고   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | [재생]을 클릭하는 사용자 또는 자동 재생 이벤트일 수 있습니다. |
+| 사용자가 **[!UICONTROL 재생]**&#x200B;을 클릭합니다. | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | [재생]을 클릭하는 사용자 또는 자동 재생 이벤트일 수 있습니다. |
 | 미디어의 첫 번째 프레임 | `trackPlay` | 하트비트 컨텐츠 재생 | 이 메서드는 타이머를 트리거하며, 이 시점부터 재생 기간 동안 10초마다 하트비트가 전송됩니다. |
 | 컨텐츠 재생 |  | 컨텐츠 하트비트 |  |
 | 컨텐츠가 완료됨 | `trackComplete` | 하트비트 컨텐츠 완료 | *완료*&#x200B;란 플레이헤드의 끝에 도달했음을 의미합니다. |
 
 ## 매개 변수 {#parameters}
 
-Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Adobe에서 다양한 미디어 보고서를 채우는 데 사용하는 매개 변수가 많이 있지만 다음 표에는 가장 중요한 매개 변수만 나열되어 있습니다.
+하트비트 컨텐츠 시작 호출 시 표시되는 동일한 값의 대부분이 Adobe Analytics `Content Start` 호출 시에도 표시됩니다. Adobe에서는 많은 매개 변수를 사용하여 다양한 미디어 보고서를 채우지만, 다음 표에는 가장 중요한 매개 변수만 나열되어 있습니다.
 
 ### 하트비트 컨텐츠 시작
 
@@ -31,15 +31,15 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |---|---|---|
 | `s:sc:rsid` | &lt;Adobe 보고서 세트 ID&gt; |  |
 | `s:sc:tracking_server` | &lt;Analytics 추적 서버 URL&gt; |  |
-| `s:user:mid` | 설정해야 함 | 호출의 중간 값과 일치해야 `Adobe Analytics Content Start` 합니다. |
+| `s:user:mid` | 설정해야 함 | 호출 `Adobe Analytics Content Start`의 중간값과 일치해야 합니다. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;미디어 이름&gt; |  |
-| `s:meta:*` | 옵션 | 미디어에 설정된 사용자 정의 메타데이터 |
+| `s:meta:*` | 옵션 | 미디어에 설정된 사용자 지정 메타데이터입니다. |
 
 ## 하트비트 컨텐츠 재생 {#heartbeat-content-play}
 
-These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. 다른 매개 변수도 모두 있어야 합니다.
+이러한 매개 변수는 `Heartbeat Content Start` 호출과 거의 비슷하게 보이지만, 주요한 차이점은 `s:event:type` 매개 변수입니다. 다른 매개 변수도 모두 있어야 합니다.
 
 | 매개 변수 | 값 | 참고   |
 |---|---|---|
@@ -48,7 +48,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## 컨텐츠 하트비트 {#content-heartbeats}
 
-미디어 재생 중에 타이머는 10초마다 최소한 하나의 하트비트를 전송합니다. 이러한 하트비트에는 재생, 광고, 버퍼링 등에 대한 정보가 들어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나지만, 중요한 문제는 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 여부입니다.
+미디어 재생 중에 타이머는 10초마다 1개 이상의 하트비트를 보냅니다. 이러한 하트비트에는 재생, 광고, 버퍼링 등에 대한 정보가 들어 있습니다. 각 하트비트에 대한 정확한 내용은 이 문서 범위를 벗어나지만, 중요한 문제는 재생이 계속되는 동안 하트비트가 일관되게 트리거되는지 여부입니다.
 
 컨텐츠 하트비트에서 다음 매개 변수를 찾아보십시오.
 
@@ -59,7 +59,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## 하트비트 컨텐츠 완료 {#heartbeat-content-complete}
 
-When playback has completed, which means that the end of the playhead is reached, a `Heartbeat Content Complete` call is sent. 이 호출은 다른 하트비트 호출과 비슷하지만 몇 가지 특정 매개 변수를 포함합니다.
+재생이 완료되면, 즉 플레이헤드의 끝에 도달하면 `Heartbeat Content Complete` 호출이 전송됩니다. 이 호출은 다른 하트비트 호출과 비슷하지만 몇 가지 특정 매개 변수를 포함합니다.
 
 | 매개 변수 | 값 | 참고   |
 |---|---|---|
