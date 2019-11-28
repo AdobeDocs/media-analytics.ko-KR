@@ -1,8 +1,8 @@
 ---
 title: 세션 응답이 느린 경우 큐에 이벤트 저장
 description: null
-uuid: 39ea59d9-89d3-4 파섹
-translation-type: tm+mt
+uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -10,9 +10,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # 세션 응답이 느린 경우 큐에 이벤트 저장{#queueing-events-when-sessions-response-is-slow}
 
-Media Collection API는 RESTful입니다. 즉, HTTP 요청을 작성하고 응답을 기다립니다. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. 이 작업은 모든 후속 추적 호출에 세션 ID가 필요하므로 중요합니다.
+Media Collection API는 RESTful입니다. 즉, HTTP 요청을 작성하고 응답을 기다립니다. 이는 비디오 재생 시작 시 세션 ID를 가져오도록 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)을 작성할 때에만 중요한 시점입니다. 이는 모든 후속 추적 호출에 세션 ID가 필요하기 때문에 중요합니다.
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+(세션 ID 매개 변수와 함께) _세션이 백 엔드의 반환에 응답하기 전에_ 플레이어가 이벤트를 실행할 수 있습니다. 이 경우 앱은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)과 해당 응답 사이에 도착하는 모든 추적 이벤트를 큐에 추가해야 합니다. 세션 응답이 도착하면 먼저 큐에 있는 [이벤트](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)를 처리해야 [이벤트](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) 호출 시 _실시간_ 이벤트 처리를 시작할 수 있습니다.
 
 >[!NOTE]
 >
