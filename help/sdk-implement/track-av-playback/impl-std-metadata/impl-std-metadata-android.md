@@ -1,8 +1,8 @@
 ---
 title: Android에서 표준 메타데이터 구현
-description: Android에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 설명합니다.
+description: Android에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -18,11 +18,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 메타데이터 키 API 참조
 
-* 표준 메타데이터 키 값 쌍을 `HashMap` 만듭니다.
+* 표준 메타데이터 키 값 쌍의 `HashMap`을 만듭니다.
    * [비디오 메타데이터 키](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [오디오 메타데이터 키](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * 메타데이터에 표준 메타데이터 상수를 사용하여 `HashMap`에서 표준 메타데이터 `MediaInfo`을 설정합니다.
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* 이 `trackSessionStart()` 개체를 `MediaInfo` API를 호출하는 동안 제공합니다.
 
 ## 샘플 구현
 
