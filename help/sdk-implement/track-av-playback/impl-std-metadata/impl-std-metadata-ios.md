@@ -1,8 +1,8 @@
 ---
 title: iOS에서 표준 메타데이터 구현
-description: iOS에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 설명합니다.
+description: iOS에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,16 +14,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 상수 이름 | 설명   |
 |---|---|
-| `ADBMediaObjectKeyStandardMediaMetadata` | Constant for attaching standard metadata on `MediaInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardMediaMetadata` | 표준 메타데이터를 `MediaInfo ADBMediaObject`에 첨부하기 위한 상수입니다. |
 
 ## 구현
 
-1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [IOS 메타데이터 키](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+1. 표준 메타데이터 키 값 쌍 사전을 `ADBStandardMetadataKeys`를 사용하여 만듭니다.
+   [iOS 메타데이터 키](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. 메타데이터에 표준 메타데이터 상수를 사용하여 `MediaInfo``ADBMediaObject`   인스턴스에 표준 메타데이터 사전을 설정합니다.
+1. 메타데이터에 표준 메타데이터 상수를 사용하여 `MediaInfo` `ADBMediaObject` 인스턴스에 표준 메타데이터 사전을 설정합니다.
 
-1. Provide this `MediaInfo` object while invoking the `trackSessionStart` API.
+1. 이 `trackSessionStart` 개체를 `MediaInfo` API를 호출하는 동안 제공합니다.
 
 ### 샘플 구현
 
