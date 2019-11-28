@@ -2,7 +2,7 @@
 title: 버퍼링이 있는 VOD 재생
 description: Media SDK를 사용하여 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 트리거   | 하트비트 메서드   | 네트워크 호출   | 참고   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | **[!UICONTROL 재생]을 클릭하는 사용자 또는 자동 재생 이벤트일 수 있습니다.** |
+| 사용자가 **[!UICONTROL 재생]**&#x200B;을 클릭합니다. | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | **[!UICONTROL 재생]**&#x200B;을 클릭하는 사용자 또는 자동 재생 이벤트일 수 있습니다. |
 | 비디오의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 컨텐츠 재생 | 이 메서드는 타이머를 트리거합니다. 하트비트는 재생이 계속되는 한 10초마다 전송됩니다. |
 | 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 |  |
 | 버퍼링이 시작됨. | `trackEvent:BufferStart` | 하트비트 버퍼 |  |
