@@ -1,8 +1,8 @@
 ---
 title: Roku에서 코어 재생 추적
-description: 이 항목에서는 Roku에서 Media SDK를 사용하여 핵심 추적을 구현하는 방법에 대해 설명합니다.
+description: 이 항목에서는 Roku에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 설명합니다.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -11,11 +11,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 # Roku에서 코어 재생 추적{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->이 설명서에서는 SDK 버전 2.x의 추적을 다룹니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   사용자가 재생 의도를 트리거하는 시기(사용자가 재생을 클릭하거나 자동 재생이 켜짐)를 식별하고 `MediaObject` 인스턴스를 만듭니다.
 
    **`MediaObject`참조:**
 
@@ -24,8 +24,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | 비디오 이름 | 예 |
    | `mediaid` | 비디오 고유 식별자입니다 | 예 |
    | `length` | 비디오 길이 | 예 |
-   | `streamType` | 스트림 유형( _아래 StreamType 상수_ 참조) | 예 |
-   | `mediaType` | 미디어 유형( _아래 MediaType 상수_ 참조) | 예 |
+   | `streamType` | 스트림 유형(아래 _StreamType 상수_ 참조) | 예 |
+   | `mediaType` | 미디어 유형(아래 _MediaType 상수_ 참조) | 예 |
 
    **`StreamType`상수:**
 
@@ -68,7 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_VIDEO
    ```
 
-   **AOD 컨텐츠가 있는 비디오용 미디어 정보 개체 만들기:**
+   **AOD 컨텐츠가 포함된 비디오용 미디어 정보 개체 만들기:**
 
    ```
    mediaInfo = adb_media_init_mediainfo(
@@ -93,7 +93,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **메타데이터 첨부**
 
-   선택적으로 컨텍스트 데이터 변수를 통해 추적 세션에 표준 및/또는 사용자 지정 메타데이터 객체를 첨부할 수 있습니다.
+   원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 메타데이터 개체를 추적 세션에 첨부합니다.
 
    * **표준 메타데이터**
 
@@ -101,14 +101,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >표준 메타데이터 개체를 미디어 개체에 연결하는 것은 선택 사항입니다.
+      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
-      * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
+      * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
+         사용 가능한 메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)에서 참조하십시오.
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수의 변수 개체를 만들고 이 미디어의 데이터로 채웁니다. 예:
+      사용자 지정 변수에 대한 변수 개체를 만들고, 이 미디어의 데이터로 채웁니다. 예:
 
       ```js
       /* Set custom context data */ 
@@ -120,9 +120,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **재생을 시작할 의도 추적**
+1. **재생을 시작하려는 의도 추적**
 
-   미디어 세션 추적을 시작하려면 미디어 하트비트 `trackSessionStart` 인스턴스를 호출합니다.
+   미디어 세션 추적을 시작하려면 미디어 하트비트 인스턴스에서 `trackSessionStart`를 호출합니다.
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -130,19 +130,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >두 번째 값은 2단계에서 만든 사용자 정의 미디어 메타데이터 개체 이름입니다.
+   >두 번째 값은 2단계에서 작성한 사용자 지정 미디어 메타데이터 개체 이름입니다.
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 재생의 시작이 아니라 재생 의도를 추적합니다. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
+   >재생 시작이 아니라 `trackSessionStart`는 사용자의 재생 의도를 추적합니다. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >사용자 지정 메타데이터를 사용하지 않는 경우 위의 iOS 예에서 주석 처리된 행에 표시된 대로 `data`의 `trackSessionStart` 인수에 대해 빈 개체를 보내면 됩니다.
 
 1. **실제 재생 시작 추적**
 
-   Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
+   미디어 플레이어에서 미디어의 첫 번째 프레임이 화면에서 렌더링되는 재생 시작에 대한 이벤트를 식별하고 `trackPlay`를 호출합니다.
 
    ```js
    mediaHeartbeat.trackPlay();
@@ -150,7 +150,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **재생 완료 추적**
 
-   Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
+   미디어 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 재생 완료에 대한 이벤트를 식별하고 `trackComplete`를 호출합니다.
 
    ```js
    mediaHeartbeat.trackComplete();
@@ -158,7 +158,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **세션의 끝 추적**
 
-   Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
+   미디어 플레이어에서 사용자가 미디어를 닫거나 미디어가 완료 및 언로드된 재생 언로드/종료에 대한 이벤트를 식별하고 `trackSessionEnd`를 호출합니다.
 
    ```js
    mediaHeartbeat.trackSessionEnd();
@@ -166,7 +166,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >A `trackSessionEnd` marks the end of a tracking session. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.  미디어 로드를 추적하고 현재 세션을 활성으로 설정하는 미디어 재생 추적 메서드입니다.
+   >`trackSessionEnd`는 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 추적 세션에 필요한 `trackSessionStart`를 제외하고, 다른 모든 `track*` API 호출은 `trackSessionEnd` 이후 무시됩니다. 미디어 로드를 추적하고 현재 세션을 활성으로 설정하는 미디어 재생 추적 메서드입니다.
 
    ```
    ‘ Create a media info object
@@ -178,18 +178,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **비디오 메타데이터 첨부**
 
-   선택적으로 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 객체를 비디오 추적 세션에 첨부할 수 있습니다.
+   원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 개체를 비디오 추적 세션에 첨부합니다.
 
    * **표준 비디오 메타데이터**
 
       [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
-      >표준 비디오 메타데이터 개체를 미디어 개체에 연결하는 것은 선택 사항입니다.
+      >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수의 변수 개체를 만들고 이 비디오의 데이터로 채웁니다. 예:
+      사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
 
       ```
       mediaContextData = {}
@@ -197,22 +197,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       mediaContextData["cmk2"] = "cmv2"
       ```
 
-1. **재생을 시작할 의도 추적**
+1. **재생을 시작하려는 의도 추적**
 
-   미디어 세션 추적을 시작하려면 미디어 하트비트 `trackSessionStart` 인스턴스를 호출합니다.
+   미디어 세션 추적을 시작하려면 미디어 하트비트 인스턴스에서 `trackSessionStart`를 호출합니다.
 
    ```
    ADBMobile().mediaTrackSessionStart(mediaInfo,mediaContextData)
    ```
 
    >[!TIP]
-   >두 번째 값은 2단계에서 만든 사용자 지정 비디오 메타데이터 개체 이름입니다.
+   >두 번째 값은 2단계에서 작성한 사용자 지정 비디오 메타데이터 개체 이름입니다.
 
    >[!IMPORTANT]
-   >`trackSessionStart` 재생의 시작이 아니라 재생 의도를 추적합니다. 이 API는 비디오 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
+   >재생 시작이 아니라 `trackSessionStart`는 사용자의 재생 의도를 추적합니다. 이 API는 비디오 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
 
    >[!NOTE]
-   >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >사용자 지정 비디오 메타데이터를 사용하지 않는 경우 위의 iOS 예에서 주석 처리된 행에 표시된 대로 `trackSessionStart`의 `data` 인수에 대해 빈 개체를 보내면 됩니다.
 
 1. **실제 재생 시작 추적**
 
@@ -239,11 +239,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
    >[!IMPORTANT]
-   >`trackSessionEnd` 비디오 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >비디오 추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 비디오 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
 
 1. **가능한 모든 일시 중지 시나리오 추적**
 
-   Identify the event from the video player for video pause and call `trackPause`:
+   비디오 플레이어에서 비디오 일시 중지에 대한 이벤트를 식별하고 `trackPause`를 호출합니다.
 
    ```
    ADBMobile().mediaTrackPause()
@@ -251,7 +251,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    **시나리오 일시 중지**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
+   비디오 플레이어에서 일시 중지할 시나리오를 식별하고 `trackPause`가 제대로 호출되는지 확인하십시오. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
 
    * 사용자가 앱에서 일시 정지를 명시적으로 누릅니다.
    * 플레이어가 일시 정지 상태로 전환합니다.
@@ -265,7 +265,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
    >[!TIP]
-   >이는 4단계에서 사용된 것과 동일한 이벤트 소스일 수 있습니다. 비디오 재생이 다시 시작될 때 각 `trackPause()` API 호출이 다음 `trackPlay()` API 호출과 연결되는지 확인하십시오.
+   >이 이벤트 소스는 4단계에서 사용한 이벤트 소스와 같을 수 있습니다. 비디오 재생이 다시 시작될 때 각 `trackPause()` API 호출이 다음 `trackPlay()` API 호출과 연결되는지 확인하십시오.
 
 * 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 전체 추적 예를 제공하기 위해 Roku SDK에 포함된 샘플 플레이어.
