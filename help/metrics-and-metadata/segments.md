@@ -2,7 +2,7 @@
 title: 세그먼트
 description: null
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->These reporting segments associated with Media Stream Type were introduced on 9/13/18 along with the `streamType` parameter.
+>미디어 스트림 유형과 연관된 이 보고 세그먼트는 `streamType` 매개 변수와 함께 18/9/13에 도입되었습니다.
 
 | 세그먼트 | 설명 | 규칙 |
 |---|---|---|
