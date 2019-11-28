@@ -1,8 +1,8 @@
 ---
 title: 미디어 작업 공간 템플릿
 description: null
-uuid: 0024b06a-eaf5-4d2e-be45-aeda9d054c1
-translation-type: tm+mt
+uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -14,11 +14,11 @@ Adobe Analytics Workspace는 추적 데이터를 분석할 수 있도록 대시�
 
 프로젝트를 작성하거나 관리할 때에는 Adobe Analytics의 [작업 공간] 탭의 템플릿으로 작업합니다. 처음 [작업 공간]으로 이동할 때에는 새 프로젝트를 작성하거나 기존 프로젝트를 여는 선택 사항이 표시됩니다.
 
-* **새 프로젝트 만들기 -** [작업 공간]에서 **[!UICONTROL 새 프로젝트 만들기]단추를 클릭하면 템플릿 컬렉션([표준] 및 [사용자 지정] 포함)에서 선택할 수 있는 대화 상자가 표시됩니다.**
+* **새 프로젝트 만들기 -** [작업 공간]에서 **[!UICONTROL 새 프로젝트 만들기]** 단추를 클릭하면 템플릿 컬렉션([표준] 및 [사용자 지정] 포함)에서 선택할 수 있는 대화 상자가 표시됩니다.
 
    ![](assets/all-templates-audio.png)
 
-   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
+   예를 들어, **[!UICONTROL 오디오 소비]** 템플릿을 선택하면 다음 오디오 기반 대시보드가 있는 프로젝트가 표시됩니다.
 
    ![](assets/aa-workspace.png)
 
