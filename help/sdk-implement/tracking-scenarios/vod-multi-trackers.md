@@ -2,7 +2,7 @@
 title: VOD 여러 추적기 동시 실행
 description: 여러 추적기를 동시에 사용하여 VOD를 추적하는 방법의 예입니다.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 시나리오 {#scenario}
 
-In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
+이 시나리오에는 두 개의 별도 미디어에 대해 동시에 실행되며, 두 개의 `MediaHeartbeat` 인스턴스를 사용하는 세션이 두 개 있습니다.
 
-This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. 이러한 각 세션은 `MediaHeartbeat`의 별도 인스턴스를 사용합니다.
+이 시나리오는 두 개의 별도 미디어에 대해 동시에 실행되는 세션이 두 개 있다는 점을 제외하고, [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. 이러한 각 세션은 `MediaHeartbeat`의 별도 인스턴스를 사용합니다.
 
 명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.
 
