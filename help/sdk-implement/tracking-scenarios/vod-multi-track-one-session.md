@@ -1,8 +1,8 @@
 ---
 title: VOD 여러 세션에 대한 1개의 추적기
-description: Media SDK를 사용하여 추적기 하나를 사용하여 여러 세션을 추적하는 방법의 예입니다.
+description: Media SDK를 사용하여 한 개의 추적기에서 여러 세션을 추적하는 방법의 예입니다.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 매개 변수 | 값 | 참고   |
 | --- | --- | --- |
-| `s:event:sid` | 고유 세션 ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
+| `s:event:sid` | 고유 세션 ID | 모든 하트비트 네트워크 호출에 있는 `trackSessionEnd`까지 고유한 세션 ID입니다. |
 
 ## 샘플 코드 {#sample-code}
 
@@ -30,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android {#android}
 
-To create two instances of `MediaHeartbeat` for two media players, set up the following code:
+두 미디어 플레이어에 대해 `MediaHeartbeat`의 두 인스턴스를 생성하려면 다음 코드를 설정합니다.
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -139,7 +139,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+두 번째 세션을 표시하려면 첫 번째 세션과 동일한 `MediaAnalyticsProvider`(`MediaHeartbeat`) 인스턴스를 사용할 수 있지만, 새 세션에 사용해야 합니다.
 
 ```java
 // Set up mediaObject 
@@ -185,7 +185,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-To create two instances of `MediaHeartbeat` for two media players, enter the following:
+두 미디어 플레이어에 대해 `MediaHeartbeat`의 두 인스턴스를 생성하려면 다음을 입력합니다.
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -291,7 +291,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+두 번째 세션을 표시하려면 첫 번째 세션과 동일한 `MediaAnalyticsProvider`(`MediaHeartbeat`) 인스턴스를 사용할 수 있지만, 새 세션에 사용해야 합니다.
 
 ```
 // Set up mediaObject 
