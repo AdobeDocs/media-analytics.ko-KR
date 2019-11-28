@@ -1,8 +1,8 @@
 ---
 title: 챕터를 건너뛰고 VOD 재생
-description: 사용자가 미디어 SDK를 사용하여 장을 건너뛰는 VOD 컨텐츠를 추적하는 방법의 예입니다.
+description: Media SDK를 사용하여 사용자가 챕터를 건너뛴 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고 |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 인식하지 못합니다. 이러한 네트워크 호출은 여전히 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| 사용자가 **[!UICONTROL 재생]**&#x200B;을 클릭합니다. | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 인식하지 못합니다. 이러한 네트워크 호출은 여전히 [iOS에서 중단 없이 재생](vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 챕터가 시작됨. | `trackEvent:ChapterStart` | 하트비트 챕터 시작 |  |
 | 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 챕터 재생 | 챕터 컨텐츠가 주 컨텐츠 전에 재생되는 경우 챕터가 시작될 때 하트비트를 시작하려고 합니다. |
 | 챕터가 재생됨. |  | 챕터 하트비트 |  |
@@ -26,12 +26,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 이동이 완료됨. | `trackEvent:trackSeekComplete` |  | 하트비트가 이 게시를 다시 시작합니다. |
 | 애플리케이션이 사용자가 정규 챕터 경계를 벗어나 이동했음을 인식함. | `trackEvent:trackChapterSkip` |  |  |
 | 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 |  |
-| 컨텐츠 재생이 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 이 API는 사용자가 완료할 미디어를 보지 않는 경우에도 호출해야 합니다. |
+| 컨텐츠 재생이 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [iOS에서 중단 없이 재생](vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 이 API는 사용자가 미디어를 끝까지 시청하지 않은 경우에도 호출해야 합니다. |
 
 ## 매개 변수 {#parameters}
 
-장 재생 중에 사용된 매개 변수는 장 [전체 네트워크 호출이 없다는 점을 제외하고 장](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 시나리오의 VOD 재생 매개 변수와 동일합니다.
+챕터 재생 중에 사용된 매개 변수는 챕터 전체 네트워크 호출이 없다는 점을 제외하고 ](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)한 개의 챕터가 있는 VOD 재생[ 시나리오의 매개 변수와 동일합니다.
 
 ## 샘플 코드 {#sample-code}
 
