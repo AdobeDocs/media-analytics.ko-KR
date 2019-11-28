@@ -2,7 +2,7 @@
 title: 미디어 개요
 description: null
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 미디어 성능 {#media-performance}
 
-클릭하고 드래그하여 확대한 다음 가리키면 특정 미디어에 대한 세부 지표를 볼 수 있습니다. 클릭  ![](assets/video-overview-report-revert.png)
+클릭하고 드래그하여 확대한 다음 가리키면 특정 미디어에 대한 세부 지표를 볼 수 있습니다. 확대/축소한 후에 ![](assets/video-overview-report-revert.png)
 
-을 클릭하여 확대/축소 후 보기를 재설정합니다.
+을 클릭하여 보기를 재설정합니다.
 
 ![](assets/media_overview_zoom.png){width="400px"}
 
