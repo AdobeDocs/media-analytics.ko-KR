@@ -2,7 +2,7 @@
 title: 세션 요청
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -21,7 +21,7 @@ https://{uri}/api/v1/sessions
 
 ## 요청 본문
 
-요청 본문은 JSON이어야 하며 이 샘플 요청 본문과 구조가 같아야 합니다.
+요청 본문은 JSON이어야 하며, 이 샘플 요청 본문과 구조가 동일해야 합니다.
 
 ```
 { 
@@ -62,7 +62,7 @@ https://{uri}/api/v1/sessions
    * `ts` - 타임스탬프이며, 밀리초 단위여야 합니다.
 * `eventType` (필수입니다)
 
-   **유효한 값:**`sessionStart`
+   **유효한 값:** `sessionStart`
 * `params` (필수입니다)
 * `customMetadata` (선택 사항입니다)
 * `qoeData` (선택 사항입니다)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - `/api/v1/` 부품이 API 버전을 제공합니다. 다음 부분은 세션 ID `[…]sessions/` 입니다.
+`Location:` 헤더 - `/api/v1/` 부분이 API 버전을 제공합니다. `[…]sessions/` 다음 부분이 세션 ID입니다.
 
 ## 응답 코드
 
