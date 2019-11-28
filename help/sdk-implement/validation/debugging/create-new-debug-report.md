@@ -1,8 +1,8 @@
 ---
 title: 새 디버그 보고서 만들기
-description: 이 항목에서는 새 디버그 보고서를 만드는 방법에 대해 설명합니다.
+description: 이 항목에서는 새 디버그 보고서를 만드는 방법을 설명합니다.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 새 디버그 보고서를 만들려면 다음을 수행하십시오.
 
-1. In [!UICONTROL Create New Debug Report] select the following:
+1. [!UICONTROL 새 디버그 보고서 만들기]에서 다음을 선택합니다.
 
    ![](assets/create-new-debug-report.png)
 
@@ -27,12 +27,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
          * [!UICONTROL Analytics &gt; 관리 &gt; 회사 설정 &gt; 웹 서비스]
          * [!UICONTROL Analytics &gt; 관리 &gt; 사용자 관리 &gt; 사용자 &gt; 개별 사용자 설정] 새 사용자에 대한 웹 서비스 API 자격 증명을 작성하려면 [!UICONTROL 사용자 관리]에서 사용자를 **웹 서비스 액세스** 사용자 그룹에 추가합니다.
-      * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며 변경할 수 없습니다.
-      * [!UICONTROL 추가 끝점] - `CNAMES`사용하는 경우 추적 서버에 `metrics.companyname.com`
-   * **비디오 하트비트(미디어 분석)**
+      * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며, 변경할 수 없습니다.
+      * [!UICONTROL 추가 끝점] – `metrics.companyname.com`과 같은 추적 서버에 사용할 수 있는 경우 `CNAMES`를 추가합니다.
+   * **비디오 하트비트(Media Analytics)**
 
-      * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며 변경할 수 없습니다.
-      * [!UICONTROL 추가 끝점] - `CNAMES``metrics.companyname.com`사용하는 경우 추적 서버(예:
+      * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며, 변경할 수 없습니다.
+      * [!UICONTROL 추가 끝점] – `metrics.companyname.com`과 같은 추적 서버에 사용할 수 있는 경우 `CNAMES`를 추가합니다.
 
 
 
