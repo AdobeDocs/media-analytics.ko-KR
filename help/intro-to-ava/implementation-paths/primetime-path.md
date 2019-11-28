@@ -2,7 +2,7 @@
 title: Primetime
 description: null
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -24,8 +24,8 @@ Primetime은 미디어 게시, 광고, 개인화 및 분석에 필요한 모듈�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK는 이미 Media SDK에 통합되었으므로 지원되는 모든 플랫폼에서 훨씬 쉽고 빠르게 구현할 수 있습니다. <!--Primetime also supports the partnership with Nielsen.--> Primetime을 활용하려면, 클라이언트 측에서 [](/help/intro-to-ava/implementation-paths/client-side-path.md) 제공하는 동일한 지침과 사전 요구 사항을 플랫폼용 다음 문서와 함께 따르십시오.Primetime [사용 안내서.](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK는 이미 Media SDK에 통합되었으므로 지원되는 모든 플랫폼에서 훨씬 쉽고 빠르게 구현할 수 있습니다. <!--Primetime also supports the partnership with Nielsen.--> Primetime을 활용하려면 플랫폼용 문서인 [Primetime 사용 안내서](https://helpx.adobe.com/kr/primetime/user-guide.html)와 함께 [클라이언트측](/help/intro-to-ava/implementation-paths/client-side-path.md)에서 제공하는 동일한 지침 및 사전 요구 사항을 따르십시오.
 
 >[!NOTE]
 >
->Media Analytics에는 고유한 SKU가 있으며 미디어 스트림을 기반으로 서버 호출을 기반으로 한 모델에 대한 가격 모델의 변경 사항이 있으므로 이 구현 경로를 위해서는 고객은 영업 담당자/계정 관리자에게 문의하여 새로운 판매 주문에 서명해야 합니다. 또한 영업 담당자/계정 관리자에게 연락하여 TVSDK 구매에 대해서도 논의해야 합니다.
+>이 구현 경로의 경우 Media Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 미디어 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다. 또한 영업 담당자/계정 관리자에게 연락하여 TVSDK 구매에 대해서도 논의해야 합니다.
