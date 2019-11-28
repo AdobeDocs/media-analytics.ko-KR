@@ -2,7 +2,7 @@
 title: 테스트 호출 세부 사항
 description: 이 항목에서는 구현의 유효성을 확인하기 위해 수행해야 하는 호출에 대해 자세히 설명합니다.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 추가적인 컨텍스트 데이터 변수가 있고 이 변수가 메타데이터를 포함해야 합니다. 아래의 메타데이터 세부 사항을 참조하십시오.
 * 선형 스트림의 길이는 현재 표시에 대한 최상의 예상 값으로 설정해야 합니다.
 
-### Adobe Analytics(AppMeasurement)의 표준 메타데이터 시작 호출 {#std-metadata-aa}
+### Adobe Analytics(AppMeasurement) 시작 호출의 표준 메타데이터 {#std-metadata-aa}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -50,14 +50,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)의 사용자 지정 메타데이터 시작 호출 {#custom-metadata-aa}
+### Adobe Analytics(AppMeasurement) 시작 호출의 사용자 지정 메타데이터 {#custom-metadata-aa}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### 미디어 분석(하트비트) 시작 호출 {#ma-start-call}
+### Media Analytics(하트비트) 시작 호출 {#ma-start-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -77,7 +77,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 추가적인 컨텍스트 데이터 변수가 있고 이 변수가 메타데이터를 포함해야 합니다. 아래의 메타데이터 세부 사항을 참조하십시오.
 * 비디오 시작 시 선형 스트림의 플레이헤드 위치는 0이 아니라, 현재 프로그램의 시작 이후 경과된 시간(초)으로 설정해야 합니다.
 
-### 미디어 분석의 표준 메타데이터(하트비트) 시작 호출 {#std-metadata-ma}
+### Media Analytics(하트비트) 시작 호출의 표준 메타데이터 {#std-metadata-ma}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -96,14 +96,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 미디어 분석의 사용자 지정 메타데이터(하트비트) 시작 호출 {#custom-metadata-ma}
+### Media Analytics(하트비트) 시작 호출의 사용자 지정 메타데이터 {#custom-metadata-ma}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### 미디어 분석(하트비트) Adobe Analytics 시작 호출 {#ma-aa-start}
+### Media Analytics(하트비트) Adobe Analytics 시작 호출의 {#ma-aa-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -137,7 +137,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| _**`a.media.ad.view`**_ | _**True**_ |
+| _**`a.media.ad.view`**_ | _**참**_ |
 | _**`custom.[value]`**_ | _**메타데이터 필드**_ |
 | _**`a.media.[value]`**_ | _**표준 메타데이터 필드**_ |
 
@@ -146,7 +146,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 추가적인 컨텍스트 데이터 변수가 있고 이 변수가 메타데이터를 포함해야 합니다. 아래의 메타데이터 세부 사항을 참조하십시오.
 * 광고 시작 시 사용할 수 없는 경우 광고 길이는 -1로 설정할 수 있습니다.
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
+### Adobe Analytics(AppMeasurement) 광고 시작 호출의 표준 메타데이터 {#std-metadata-aa-ad-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -172,7 +172,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### 미디어 분석(하트비트) 광고 시작 호출 {#ma-ad-start-call}
+### Media Analytics(하트비트) 광고 시작 호출 {#ma-ad-start-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -191,7 +191,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 추가적인 컨텍스트 데이터 변수가 있고 이 변수가 메타데이터를 포함해야 합니다. 아래의 메타데이터 세부 사항을 참조하십시오.
 * 광고 시작 시 사용할 수 없는 경우 광고 길이는 -1로 설정할 수 있습니다.
 
-### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
+### Media Analytics(하트비트) 광고 시작 호출의 표준 메타데이터 {#std-metadata-ma-ad-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -210,14 +210,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 미디어 분석의 사용자 지정 메타데이터(하트비트) 광고 시작 호출 {#custom-metadata-ma-ad-start}
+### Media Analytics(하트비트) 광고 시작 호출의 사용자 지정 메타데이터 {#custom-metadata-ma-ad-start}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### 미디어 분석(하트비트) Adobe Analytics 광고 시작 호출 {#ma-aa-ad-start-call}
+### Media Analytics(하트비트) Adobe Analytics 광고 시작 호출 {#ma-aa-ad-start-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -229,7 +229,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### 미디어 분석(하트비트) 광고 재생 호출 {#ma-ad-play-call}
+### Media Analytics(하트비트) 광고 재생 호출 {#ma-ad-play-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -241,7 +241,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 미디어 분석(하트비트) 광고 일시 중지 호출 {#ma-ad-pause-call}
+### Media Analytics(하트비트) 광고 일시 중지 호출 {#ma-ad-pause-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 미디어 분석(하트비트) Adobe Analytics 광고 전체 호출 {#ma-aa-ad-complete-call}
+### Media Analytics(하트비트) Adobe Analytics 광고 전체 호출 {#ma-aa-ad-complete-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -267,7 +267,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 주 컨텐츠 재생 {#play-main-content}
 
-### 미디어 분석(하트비트) 재생 호출 {#ma-play-call}
+### Media Analytics(하트비트) 재생 호출 {#ma-play-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
@@ -282,12 +282,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 **참고:**
 
-* 재생 헤드 위치는 모든 재생 호출이 있을 때 10초씩 증가합니다.
+* 플레이헤드 위치는 모든 재생 호출에서 10초씩 증가해야 합니다.
 * `l:event:duration` 값은 마지막 추적 호출 이후의 시간(밀리초)을 나타내며 각 10초 호출에서 거의 동일한 값이어야 합니다.
 
 ## 기본 컨텐츠 일시 중지 {#pause-main-content}
 
-### 미디어 분석(하트비트) 호출 일시 중지 {#ma-pause-call}
+### Media Analytics(하트비트) 일시 중지 호출 {#ma-pause-call}
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
