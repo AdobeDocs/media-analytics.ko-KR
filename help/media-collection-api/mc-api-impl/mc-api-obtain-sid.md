@@ -2,7 +2,7 @@
 title: 세션 ID 가져오기
 description: null
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # 세션 ID 가져오기{#obtaining-a-session-id}
 
-This code snippet from the Reference Player shows one way of coding a [Sessions request,](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response:
+참조 플레이어의 이 코드 조각은 응답의 위치 헤더에서 세션 ID(및 Media Collection API 버전) 추출과 함께 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)을 코딩하는 방법을 보여 줍니다.
 
 ```js
 var  
