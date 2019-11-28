@@ -1,21 +1,21 @@
 ---
 title: 사용자 지정 링크 구현 안내서
 description: null
-uuid: 83315e73-2 파섹
-translation-type: tm+mt
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# 사용자 지정 링크 구현 안내서{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+사용자 지정 비디오 추적은 Analytics `appMeasurement`내에서 [사용자 지정 링크 코드를 사용한 수동 링크 추적](https://marketing.adobe.com/resources/help/ko_KR/sc/implement/link_manual.html)을 사용합니다.
 대개 사용자 지정 비디오 링크 비디오 추적은 최소한의 비디오 측정이 필요한 플랫폼 및 장치에서 사용됩니다.
 
-* JavaScript:함수 `s.tl()` 함수
-* 모바일 앱에서: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* JavaScript에서: `s.tl()` 함수
+* 모바일 앱에서: [trackAction() Android](https://marketing.adobe.com/resources/help/ko_KR/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/ko_KR/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Data Insertion API에서: [linktype 태그](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 요구 사항
 
@@ -26,7 +26,7 @@ Custom Video Tracking uses [manual link tracking using custom link code](https:/
 ## 메타데이터
 
 * 메타데이터는 링크 데이터의 일부로서 모든 추적 호출에 추가할 수 있습니다.
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* `linkTrackVars` 및 `linkTrackEvents`를 업데이트해야 합니다.
 
 ```javascript
 /* Call on video complete */ 
