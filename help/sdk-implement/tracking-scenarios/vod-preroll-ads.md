@@ -2,7 +2,7 @@
 title: 프리롤 광고가 있는 VOD 재생
 description: Media SDK를 사용하여 프리롤 광고가 포함된 VOD 컨텐츠를 추적하는 방법의 예입니다.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 모르므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 광고가 시작됨. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고 1의 프레임이 재생됨. | `trackPlay` | 하트비트 광고 재생 | 광고 컨텐츠가 주 컨텐츠 전에 재생되고, 광고가 시작될 때 하트비트가 시작됩니다. |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
@@ -22,13 +22,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 광고 2의 첫 번째 프레임이 재생됨. | `trackEvent:AdStart` | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
 | 광고 2 재생이 완료됨. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 하트비트 광고 완료 | 광고 및 pod의 끝에 도달합니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 광고 [없이 VOD](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 재생과 동일합니다. |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 광고 [없이 VOD](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 재생과 동일합니다. |
+| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 매개 변수 {#parameters}
 
-광고 재생이 시작되면 `Heartbeat Ad Start` 호출이 전송됩니다. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+광고 재생이 시작되면 `Heartbeat Ad Start` 호출이 전송됩니다. 광고 시작이 10초 타이머와 일치하지 않으면 `Heartbeat Ad Start` 호출이 몇 초 지연되며, 호출이 다음 10초 간격으로 이동합니다. 이런 경우 `Content Heartbeat`가 같은 간격에서 발생하며, 이벤트 유형과 자산 유형을 보고 두 호출을 구별할 수 있습니다.
 
 ### 하트비트 광고 시작
 
@@ -37,7 +37,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-광고는 동일한 기본 모델을 따르므로 `Content Heartbeats`호출과 `Ad Play` 비슷합니다 `Content Play` .
+광고는 `Content Heartbeats`와 동일한 기본 모델을 따르므로 `Ad Play` 호출은 `Content Play` 호출과 비슷합니다.
 
 ### 하트비트 광고 재생 호출
 
@@ -46,7 +46,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters:
+이러한 매개 변수는 `Content Heartbeats` 호출과 유사하지만, `Ad Heartbeats` 호출에는 몇 가지 추가 매개 변수가 포함됩니다. 
 
 ### 광고 하트비트
 
@@ -57,7 +57,7 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 | `s:asset:ad_id` | &lt;광고 ID&gt; |  |
 | `s:asset:pod_id` | &lt;광고 pod ID&gt; |  |
 
-Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. This call looks like other `Heartbeat Ad` calls but contains a couple specific things:
+광고 재생이 `Heartbeat Content Complete` 호출과 마찬가지로 완료되고 플레이헤드의 끝에 도달하면 `Heartbeat Ad Complete` 호출이 전송됩니다. 이 호출은 다른 `Heartbeat Ad` 호출과 비슷하게 보이지만 다음 두 가지 특정 항목을 포함합니다. 
 
 ### 하트비트 광고 완료 호출
 
@@ -72,7 +72,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** Android에서 이 시나리오를 보려면 다음 코드를 설정하십시오.
+* **Android** Android에서 이 시나리오를 보려면 다음 코드를 설정합니다.
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +176,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS - iOS에서** 이 시나리오를 보려면 다음 코드를 설정하십시오.
+* **iOS -** iOS에서 이 시나리오를 보려면 다음 코드를 설정합니다.
 
    ```
    //  Set up mediaObject 
@@ -382,7 +382,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** Android에서 이 시나리오를 보려면 다음 코드를 설정하십시오.
+* **Android** Android에서 이 시나리오를 보려면 다음 코드를 설정합니다.
 
    ```java
    // Set up mediaObject 
@@ -559,7 +559,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS** iOS에서 이 시나리오를 보려면 다음 코드를 설정하십시오.
+* **iOS** iOS에서 이 시나리오를 보려면 다음 코드를 설정합니다.
 
    ```
    //  Set up mediaObject 
