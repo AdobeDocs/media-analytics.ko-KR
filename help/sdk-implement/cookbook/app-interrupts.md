@@ -1,8 +1,8 @@
 ---
 title: 재생 중 애플리케이션 중단 처리
-description: 미디어를 재생하는 동안 추적을 중지하는 방법을 살펴봅니다.
+description: 미디어를 재생하는 동안 추적을 중단하는 방법입니다.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,20 +10,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 재생 중 애플리케이션 중단 처리{#handling-application-interrupts-during-playback}
 
-미디어 애플리케이션에서 재생은 다음과 같은 다양한 방식으로 중단될 수 있습니다.사용자가 명시적으로 일시 중지를 누르거나 사용자가 응용 프로그램을 백그라운드에 놓을 때 미디어 재생 중단의 원인이 무엇이든지 추적 지침은 동일합니다.
+미디어 애플리케이션에서의 재생은 사용자가 일시 정지를 명시적으로 누르거나 사용자가 애플리케이션을 배경에 넣는 등 다양한 방법으로 중단될 수 있습니다. 미디어 재생이 중단되는 원인에 관계없이 추적 지침은 다음과 같습니다.
 
-1. Call **`trackPause`** when the application is interrupted (goes to background, media pauses, etc.).
-1. Call **`trackPlay`** when the application returns to the foreground and/or the media resumes playing.
+1. 애플리케이션이 중단(배경으로 이동, 미디어 일시 중지 등)되면 **`trackPause`**&#x200B;를 호출합니다.
+1. 애플리케이션이 전경으로 돌아가거나 미디어가 재생을 재개하면 **`trackPlay`**&#x200B;를 호출합니다.
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 이렇게 하면 이전 진행률 마커, 세그먼트 등이 손실되면서 총 재생 시간을 계산하지 않는 지점까지 재생이 수행됩니다. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>Media Analytics 팀이 앱이 배경에서 반환되면 고객이 `trackSessionStart`를 호출한 인스턴스를 발견했습니다. 이렇게 하면 이전 진행률 마커, 세그먼트 등이 유실될 뿐만 아니라, 해당 지점까지의 재생이 총 재생 시간에 계산되지 않습니다. 따라서 앱이 돌아가거나 미디어가 재생을 재개하면 대신 `trackPlay`를 호출하십시오.
 
 ## 애플리케이션 중단 처리에 대한 FAQ: {#faq-about-handling-application-interrupts}
 
 * _앱은 얼마나 오래 배경에서 실행되어야 세션이 닫힙니까?_
 
-   애플리케이션이 배경 재생을 허용하는 경우 애플리케이션은 Adobe의 API를 호출하여 추적을 계속할 수 있으며 Adobe의 모든 일반 추적 ping이 전송됩니다. YouTube Red를 제외하고 백그라운드 재생을 허용하는 비디오 앱은 많지 않지만 모든 오디오 앱에서 이를 허용합니다. 애플리케이션에서 백그라운드 재생을 허용하지 않는 경우 1분 동안 일시 중지 상태를 유지한 다음 추적 세션을 종료하는 것이 좋습니다. 일시 중지 ping을 계속 보낼 수 없습니다. 대부분의 경우 사용자가 다시 돌아와 미디어를 계속 볼 것인지 또는 언제 종료될지 알 수 없으므로 응용 프로그램이 계속 일시 중지 ping을 보낼 수 없습니다. 또한 배경에 있을 때 ping을 계속 전송하는 것도 바람직하지 않습니다.
+   애플리케이션이 배경 재생을 허용하는 경우 애플리케이션은 Adobe의 API를 호출하여 추적을 계속할 수 있으며 Adobe의 모든 일반 추적 ping이 전송됩니다. YouTube Red를 제외하고 백그라운드 재생을 허용하는 비디오 앱은 많지 않지만, 모든 오디오 앱에서 이를 허용합니다. 애플리케이션이 배경 재생을 허용하지 않는다면 1분 동안 일시 중지 상태를 유지한 다음 추적 세션을 종료하는 것이 좋습니다. 대부분의 경우 애플리케이션은 사용자가 돌아가서 계속해서 미디어를 볼지 여부 또는 미디어를 종료할 시기를 판별할 수 없으므로 일시 중지 ping을 계속 전송할 수 없습니다. 또한 배경에 있을 때 ping을 계속 전송하는 것도 바람직하지 않습니다.
 
 * _앱이 오랜 시간 동안 배경에 있었는데 추적을 다시 시작하려 할 때 처리하는 올바른 방법은 무엇입니까?_
 
