@@ -1,8 +1,8 @@
 ---
 title: JavaScript 설정
-description: JavaScript에서 구현을 위한 미디어 SDK 애플리케이션 설정
+description: JavaScript에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,8 +12,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 전제 조건
 
-* **유효한 구성 매개 변수**&#x200B;얻기 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게 얻을 수 있습니다.
-* **미디어 애플리케이션에서`AppMeasurement`JavaScript 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 JavaScript를 사용한 [분석 구현을 참조하십시오.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
+* **미디어 애플리케이션에서 JavaScript용`AppMeasurement`구현**
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://marketing.adobe.com/resources/help/ko_KR/sc/implement/js_implementation.html)을 참조하십시오.
 
 * **미디어 플레이어에 다음 기능을 제공합니다.**
 
@@ -23,15 +24,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) 라이브러리를 프로젝트에 추가합니다. 편의상 클래스에 대한 로컬 참조를 작성하십시오.
 
    1. 다운로드한 `MediaSDK-js-v2.*.zip` 파일을 확장합니다.
-   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
+   1. `MediaSDK.min.js` 파일이 `libs` 디렉토리에 있는지 확인합니다.
 
-   1. Host the `MediaSDK.min.js` file.
+   1. `MediaSDK.min.js` 파일을 호스팅합니다.
 
       이 코어 JavaScript 파일은 사이트의 모든 페이지에 액세스할 수 있는 웹 서버에 호스팅해야 합니다. 다음 단계에서 이 파일에 대한 경로가 필요합니다.
 
    1. 모든 사이트 페이지에서 `MediaSDK.min.js`를 참조합니다.
 
-      Include `MediaSDK` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. 예:
+      다음 코드 행을 각 페이지의 `MediaSDK` 또는 `<head>` 태그에 추가하여 JavaScript용 `<body>`를 포함합니다. 예:
 
       ```
       <script type="text/javascript" 
@@ -42,7 +43,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `VideoHeartbeat.min.js` can also be used with compatible module loaders.
+      >버전 2.1.0부터 JavaScript SDK는 AMD 및 CommonJS 모듈 사양과 호환되며, `VideoHeartbeat.min.js`를 호환 가능한 모듈 로더와 함께 사용할 수도 있습니다.
 
 1. API에 쉽게 액세스하기 위해 `MediaHeartbeat` 클래스에 대한 로컬 참조를 생성합니다.
 
@@ -52,7 +53,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. Create a `MediaHeartbeatConfig` instance.
+1. `MediaHeartbeatConfig` 인스턴스를 만듭니다.
 
    이 섹션은 `MediaHeartbeat` 구성 매개 변수를 이해하고, 정확한 추적을 위해 `MediaHeartbeat` 인스턴스에 올바른 구성 값을 설정하는 데 도움을 줍니다.
 
@@ -70,7 +71,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` protocol.
+1. `MediaHeartbeatDelegate` 프로토콜을 구현합니다.
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -86,9 +87,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. `MediaHeartbeat` 인스턴스를 생성합니다.
 
-   Use the `MediaHeartbeatConfig` and `MediaHeartbeatDelegate` to create the `MediaHeartbeat` instance.
+   `MediaHeartbeatConfig` 및 `MediaHeartbeatDelegate`를 사용하여 `MediaHeartbeat` 인스턴스를 생성합니다.
 
    ```js
    this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
@@ -96,11 +97,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the media session. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
+   >미디어 세션이 끝날 때까지 이 인스턴스에 대한 할당이 취소되지 않는지 그리고 `MediaHeartbeat` 인스턴스가 액세스할 수 있는지 확인하십시오. 이 인스턴스는 다음의 모든 추적 이벤트에 사용됩니다.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` adobe Analytics에 호출을 `AppMeasurement` 전송하는 인스턴스가 필요합니다. 다음은 `AppMeasurement` 인스턴스의 예제입니다.
+   >Adobe Analytics에 대한 호출을 전송하려면 `MediaHeartbeat`에 `AppMeasurement`의 인스턴스가 필요합니다. 다음은 `AppMeasurement` 인스턴스의 예제입니다.
 
    ```js
    var appMeasurement = new AppMeasurement(); 
@@ -115,4 +116,4 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 버전 2.x에서 모든 공개 메서드는 개발자가 쉽게 만들 수 있도록 `ADB.va.MediaHeartbeat` 클래스에 통합되어 있습니다. 또한 모든 구성이 이제 `ADB.va.MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+1.x에서 2.x로 마이그레이션에 대한 자세한 정보는 [VHL 1.x에서 2.x로 마이그레이션](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)을 참조하십시오.
