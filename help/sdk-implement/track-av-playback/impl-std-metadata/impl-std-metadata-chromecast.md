@@ -1,8 +1,8 @@
 ---
 title: Chromecast에서 표준 메타데이터 구현
-description: Chromecast에서 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 설명합니다.
+description: Chromecast에서 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -28,4 +28,4 @@ standardAudioMetadata[AudioMetadataKeys.ALBUM] = "Sample album";
 mediaObject[ADBMobile.media.MediaObjectKey.StandardAudioMetadata] = standardAudioMetadata;
 ```
 
-See the comprehensive list of audio and video metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+오디오 및 비디오 메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)에서 참조하십시오.
