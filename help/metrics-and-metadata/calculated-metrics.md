@@ -2,7 +2,7 @@
 title: 계산된 지표
 description: null
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,12 +12,12 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->이러한 계산된 지표는 2018년 9월 13일에 도입되었습니다.
+>다음 계산된 지표는 2018년 9월 13일에 도입되었습니다.
 
 | 지표 | 설명 | 공식 |
 |---|---|---|
 | 미디어 스트림당 평균 광고 | 미디어 시작당 광고 시작 | `Ad Starts / Media Starts` |
-| 미디어 스트림당 장 평균 챕터 | 미디어 시작당 장 시작 | `Chapter Start / Media Starts` |
+| 미디어 스트림당 장 평균 챕터 | 미디어 시작당 챕터 시작 | `Chapter Start / Media Starts` |
 | 평균 미디어 사용 시간 | 미디어 시작당 총 체류 시간(HH:MM:SS) | `Media Time Spent / Media Starts` |
 | 평균 컨텐츠 체류 시간 | 컨텐츠 시작당 컨텐츠 체류 시간(HH:MM:SS) | `Content Time Spent / Content Start` |
 | 평균 광고 체류 시간 | 광고 시작당 광고 체류 시간(HH:MM:SS) | `Ad Time Spent / Ad Start` |
