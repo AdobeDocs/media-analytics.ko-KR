@@ -1,8 +1,8 @@
 ---
 title: JavaScript에서 표준 메타데이터 구현
-description: 브라우저 앱(JS)에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 설명합니다.
+description: 브라우저 앱(JS)에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 상수 이름 | 설명   |
 | --- | --- |
-| `StandardMediaMetadata` | Constant for attaching standard metadata on `MediaObject` |
+| `StandardMediaMetadata` | 표준 메타데이터를 `MediaObject`에 첨부하기 위한 상수입니다. |
 
 ## 구현
 
