@@ -2,8 +2,8 @@
 title: Adobe Analytics에서 오디오 및 비디오 측정
 description: 'Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
 
@@ -107,3 +107,4 @@ Media SDK의 경우 [최소 플랫폼 버전 지원](./sdk-implement/setup/setup
 >[!NOTE]
 >
 >TLS는 네트워크를 통해 데이터를 안전하게 교환해야 하는 웹 브라우저 및 다른 애플리케이션에서 현재 사용되는 가장 널리 배포된 보안 프로토콜입니다.
+
