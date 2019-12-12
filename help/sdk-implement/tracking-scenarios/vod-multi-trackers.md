@@ -272,7 +272,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-`MediaAnalyticsProvider`와 `ADBMediaHeartbeat`의 두 인스턴스는 각각 고유한 세션 ID가 있는 두 개의 별도 세션을 추적합니다. Charles 디버깅 도구 또는 디버그 로그에서 두 세션은 세션 ID 값으로 식별할 수 있습니다. 
+`MediaAnalyticsProvider`와 `ADBMediaHeartbeat`의 두 인스턴스는 각각 고유한 세션 ID가 있는 두 개의 별도 세션을 추적합니다. Charles 디버깅 도구 또는 디버그 로그에서 두 세션은 세션 ID 값으로 식별할 수 있습니다.
 
 iOS에서 이 시나리오를 표시하려면 다음 코드를 설정합니다.
 
