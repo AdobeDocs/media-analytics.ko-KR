@@ -48,7 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>컨텐츠 체류 시간</td>
 <td>
-<p>이벤트</p>
+<p>Event</p>
 <p>유형:카운터</p>
 </td>
 <td>자신만의 이벤트를 정의하십시오.</td>
@@ -56,7 +56,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>비디오 시작</td>
 <td>
-<p>이벤트</p>
+<p>Event</p>
 <p>유형:카운터</p>
 </td>
 <td>자신만의 이벤트를 정의하십시오.</td>
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>비디오 완료</td>
 <td>
-<p>이벤트</p>
+<p>Event</p>
 <p>유형:카운터</p>
 </td>
 <td>자신만의 이벤트를 정의하십시오.</td>
