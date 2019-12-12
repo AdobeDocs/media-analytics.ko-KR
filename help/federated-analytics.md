@@ -1,5 +1,5 @@
 ---
-title: 페더레이션 분석
+title: Federated Analytics
 description: 'Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오와 비디오)를 공유하는 시스템을 제공합니다. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: ht
@@ -8,11 +8,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ---
 
 
-# 페더레이션 분석{#federated-analytics}
+# Federated Analytics{#federated-analytics}
 
 Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오와 비디오)를 공유하는 시스템을 제공합니다.
 Media Analytics에서 만든 표준화된 비디오 측정 데이터는 동일한 데이터를 여러 소스에서 단일 보고서에 병합될 수 있도록 하는 Federated Analytics의 특징입니다.
-페더레이션 분석을 제어하는 규칙 및 로직을 통해 각 파트너십의 요구를 충족하도록 데이터를 쉽게 제어하고 개별화할 수 있습니다.
+Federated Analytics를 제어하는 규칙 및 로직을 통해 각 파트너십의 요구를 충족하도록 데이터를 쉽게 제어하고 개별화할 수 있습니다.
 Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적이고 능률적이며 작동 가능하게 할 수 있습니다.
 
 ## 이점 {#benefits}
