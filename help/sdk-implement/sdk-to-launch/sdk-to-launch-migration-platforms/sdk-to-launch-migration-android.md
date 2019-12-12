@@ -1,19 +1,19 @@
 ---
-title: 독립 실행형 미디어 SDK에서 Adobe Launch로 마이그레이션 - Android
+title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - Android
 description: Media SDK에서 Android용 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# 독립 실행형 미디어 SDK에서 Adobe Launch로 마이그레이션 - Android
+# 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - Android
 
 ## 구성
 
-### 독립 실행형 미디어 SDK
+### 독립형 Media SDK
 
-독립 실행형 Media SDK에서는 앱에서 추적을 구성하고 추적기를 만들 때 SDK에 전달합니다.
+독립형 Media SDK에서는 앱에서 추적을 구성하고 추적기를 만들 때 SDK에 전달합니다.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -28,12 +28,12 @@ config.debugLogging = true;
 MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 ```
 
-### 확장 실행
+### Launch 확장
 
-1. Experience Platform Launch에서 모바일 [!UICONTROL 속성에 대한] 확장 탭을 클릭합니다.
-1. 카탈로그 [!UICONTROL 탭에서] 오디오 및 비디오용 Adobe Media Analytics 익스텐션을 찾아 설치를 [!UICONTROL 클릭합니다].
+1. Experience Platform Launch에서 모바일 속성에 대한 [!UICONTROL 확장] 탭을 클릭합니다.
+1. [!UICONTROL 카탈로그] 탭에서 오디오 및 비디오 확장용 Adobe Media Analytics 확장 프로그램을 찾은 후 [!UICONTROL 설치]를 클릭합니다.
 1. 확장 설정 페이지에서 추적 매개 변수를 구성합니다.
-미디어 확장자는 추적에 구성된 매개 변수를 사용합니다.
+Media 확장은 추적을 위해 구성된 매개 변수를 사용합니다.
 
 ![](assets/launch_config_mobile.png)
 
@@ -41,9 +41,10 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ## 추적기 만들기
 
-### 독립 실행형 미디어 SDK
+### 독립형 Media SDK
 
-독립 실행형 Media SDK에서는 개체를 수동으로 만들고 추적 매개 변수를 `MediaHeartbeatConfig` 구성합니다. 위임 인터페이스 노출`getQoSObject()` 구현 및 `getCurrentPlaybackTime()functions.`추적을 위한 `MediaHeartbeat` 인스턴스 만들기를 참조하십시오.
+독립형 Media SDK에서는 `MediaHeartbeatConfig` 개체를 수동으로 만들고 추적 매개 변수를 구성합니다. `getQoSObject()` 및 `getCurrentPlaybackTime()functions.`를 노출하는 위임 인터페이스를 구현합니다.
+추적할 `MediaHeartbeat` 인스턴스를 만듭니다.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -75,11 +76,11 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 }
 ```
 
-### 확장 실행
+### Launch 확장
 
-[미디어 API 참조 - 미디어 추적기 만들기](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Media API 참조 - 미디어 추적기 만들기](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-추적기를 만들기 전에 미디어 확장 기능과 종속 확장을 모바일 코어에 등록해야 합니다.
+추적기를 만들기 전에 Media 확장 및 종속 확장을 모바일 코어에 등록해야 합니다.
 
 ```java
 // Register the extension once during app launch
@@ -103,8 +104,8 @@ try {
 }
 ```
 
-미디어 확장을 등록하면 다음 API를 사용하여 추적기를 만듭니다.
-추적기는 구성된 시작 속성에서 구성을 자동으로 선택합니다.
+Media 확장을 등록했으면 다음 API를 사용하여 추적기를 만듭니다.
+추적기는 구성된 실행 속성에서 구성을 자동으로 선택합니다.
 
 ```java
 Media.createTracker(new AdobeCallback<MediaTracker>() {
@@ -115,25 +116,25 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
-## 재생 헤드 및 경험 품질 값 업데이트.
+## 플레이헤드 및 경험 품질 값 업데이트.
 
-### 독립 실행형 미디어 SDK
+### 독립형 Media SDK
 
-독립 실행형 미디어 SDK에서는 추적기를 만드는 동안 인터페이스를 구현하는`MediaHeartbeartDelegate` 위임 개체를 전달합니다.  구현은 추적기가 인터페이스 메서드를 호출할 때마다 최신 QoE 및`getQoSObject()` 재생 헤드를 반환해야 합니다 `getCurrentPlaybackTime()` .
+독립형 Media SDK에서는 추적기를 만드는 동안 `MediaHeartbeartDelegate` 인터페이스를 구현하는 위임 개체를 전달합니다. 이 구현은 추적기가 `getQoSObject()` 및 `getCurrentPlaybackTime()` 인터페이스 메서드를 호출할 때마다 최신 QoE 플레이헤드를 반환해야 합니다.
 
-### 확장 실행
+### Launch 확장
 
-구현에서는 추적기에 의해 노출된 메서드를 호출하여`updateCurrentPlayhead` 현재 플레이어 재생 헤드를 업데이트해야 합니다. 정확한 추적을 위해서는 이 메서드를 초당 한 번 이상 호출해야 합니다.
+이 구현은 추적기에 의해 노출된 `updateCurrentPlayhead` 메서드를 호출하여 현재 플레이어 플레이헤드를 업데이트해야 합니다. 정확한 추적을 위해 이 메서드를 초당 한 번 이상 호출해야 합니다.
 
-[미디어 API 참조 - 현재 플레이어 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Media API 참조 - 현재 플레이어 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-구현은 추적기에 의해 노출된 `updateQoEObject`방법을 호출하여 QoE 정보를 업데이트해야 합니다. 품질 지표가 변경될 때마다 이 메서드가 호출될 것으로 예상됩니다.
+이 구현은 추적기에 의해 노출된 `updateQoEObject` 메서드를 호출하여 QoE 정보를 업데이트해야 합니다. 품질 지표가 변경될 때마다 이 메서드가 호출됩니다.
 
-[미디어 API 참조 - QoE 개체 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Media API 참조 - QoE 개체 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
 ## 표준 미디어/광고 메타데이터 전달
 
-### 독립 실행형 미디어 SDK
+### 독립형 Media SDK
 
 * 표준 미디어 메타데이터:
 
@@ -193,7 +194,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
                       adMetadata);
    ```
 
-### 확장 실행
+### Launch 확장
 
 * 표준 미디어 메타데이터:
 
