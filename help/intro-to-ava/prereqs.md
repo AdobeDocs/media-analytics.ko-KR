@@ -42,7 +42,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    >[!IMPORTANT]
    >
-   >미디어별 호출에 사용자 ID 정보가 없는 경우 기본 분석 [대체 ID 메서드](https://docs-author.corp.adobe.com/content/help/ko-KR/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)가 적용됩니다.
+   >미디어별 호출에 사용자 ID 정보가 없는 경우 기본 분석 [대체 ID 메서드](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)가 적용됩니다.
 
    Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://marketing.adobe.com/resources/help/ko_KR/mcvid/mcvid-overview.html) 및 [Adobe Experience Platform ID 서비스](https://marketing.adobe.com/resources/help/ko_KR/mcvid/)를 참조하십시오.
 
