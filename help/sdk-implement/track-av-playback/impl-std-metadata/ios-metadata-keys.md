@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 상수 이름 | 설명 | 유형 |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | 정보 | 비디오 |
+| `ADBVideoMetadataKeySHOW` | 표시 | 비디오 |
 | `ADBVideoMetadataKeySEASON` | 시즌 | 비디오 |
 | `ADBVideoMetadataKeyEPISODE` | 에피소드 | 비디오 |
 | `ADBVideoMetadataKeyASSET_ID` | 자산 | 비디오 |
