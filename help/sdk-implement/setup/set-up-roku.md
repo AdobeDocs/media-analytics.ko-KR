@@ -115,7 +115,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
    >[!IMPORTANT]
    >
-   >`@AdobeOrg`를 포함해야 합니다.
+   >`@AdobeOrg`를 포함해야 합니다. 
 
    구성이 완료되면 Experience Cloud 방문자 ID가 생성되고, 모든 히트 수에 포함됩니다. 각 히트 수와 함께 `custom` 및 `automatically-generated` 같은 다른 방문자 ID는 계속 전송됩니다.
 
