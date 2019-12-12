@@ -239,7 +239,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
    >[!IMPORTANT]
-   >비디오 추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 비디오 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
+   >`trackSessionEnd`는 비디오 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 비디오 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
 
 1. **가능한 모든 일시 중지 시나리오 추적**
 
@@ -249,9 +249,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ADBMobile().mediaTrackPause()
    ```
 
-   **시나리오 일시 중지**
+   **시나리오 일시 정지**
 
-   비디오 플레이어에서 일시 중지할 시나리오를 식별하고 `trackPause`가 제대로 호출되는지 확인하십시오. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
+   비디오 플레이어에서 일시 정지할 시나리오를 식별하고 `trackPause`가 제대로 호출되는지 확인하십시오. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
 
    * 사용자가 앱에서 일시 정지를 명시적으로 누릅니다.
    * 플레이어가 일시 정지 상태로 전환합니다.
