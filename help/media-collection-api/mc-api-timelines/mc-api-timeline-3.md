@@ -2,8 +2,8 @@
 title: 타임라인 3 - 챕터
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 자동 재생 또는 재생 단추를 누르면 비디오가 로드되기 시작합니다. | 0 | 0 | `/api/v1/sessions` |
+| 자동 재생 또는 재생 단추 누름, video starts loading. | 0 | 0 | `/api/v1/sessions` |
 
 **구현 세부 사항**
 
@@ -432,7 +432,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
         playhead: 20,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
@@ -715,7 +715,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
         playhead: 0,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
