@@ -3,7 +3,7 @@ title: 타임라인 3 - 챕터
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
+source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
 
@@ -287,7 +287,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 **구현 세부 사항**
 
-`adBreakComplete` 이벤트 다음에 `play` 이벤트를 사용하여 플레이어를 "재생 중" 상태에 둡니다.
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **샘플 요청 본문**
 
