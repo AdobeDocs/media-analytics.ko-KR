@@ -3,8 +3,8 @@ audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: media analytics
-translation-type: ht
-source-git-commit: ec98c87e31ce0265698d6da37a50c6d25d7155d3
+translation-type: tm+mt
+source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
 ---
 
@@ -191,4 +191,4 @@ source-git-commit: ec98c87e31ce0265698d6da37a50c6d25d7155d3
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + 추가 리소스 {#additional-resources}
-   + [리소스](additional-resources/doc-updates.md)
+   + [릴리스 노트](additional-resources/doc-updates.md)
