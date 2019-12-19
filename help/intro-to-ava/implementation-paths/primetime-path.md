@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다. Adobe의 이전 이정표 모델을 대체했습니다.
 
- - Adobe Primetime은 컨텐츠 프로그래머 및 배포자가 연결된 모든 화면에서 미디어를 이용하여 수익을 창출할 수 있도록 지원하는 Adobe Experience Cloud 솔루션입니다.
+Adobe Primetime은 컨텐츠 프로그래머 및 배포자가 연결된 모든 화면에서 미디어를 이용하여 수익을 창출할 수 있도록 지원하는 Adobe Experience Cloud 솔루션입니다.
 
 Primetime은 미디어 게시, 광고, 개인화 및 분석에 필요한 모듈식 플랫폼을 제공하여 장치 간 글로벌 대상의 접근성, 수익성 및 활성화를 용이하게 합니다. 또한 Primetime은 다음과 같은 솔루션 및 값을 제공합니다.
 
