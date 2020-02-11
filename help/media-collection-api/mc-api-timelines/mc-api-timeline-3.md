@@ -2,7 +2,7 @@
 title: 타임라인 3 - 챕터
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
@@ -29,11 +29,11 @@ source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 자동 재생 또는 재생 단추 누름, video starts loading. | 0 | 0 | `/api/v1/sessions` |
+| 자동 재생 또는 재생 단추 누름, 비디오에서 로드 시작. | 0 | 0 | `/api/v1/sessions` |
 
 **구현 세부 사항**
 
-이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. 세션 내의 모든 후속 추적 호출을 식별하는 데 사용되는 클라이언트에 세션 ID( `{sid}` )가 반환됩니다. 플레이어 상태가 아직 "재생 중"이 아니라 "시작 중"입니다. [필수 세션 매개 변수](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다.  백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
+이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다. 세션 내의 모든 후속 추적 호출을 식별하는 데 사용되는 클라이언트에 세션 ID( `{sid}` )가 반환됩니다. 플레이어 상태가 아직 &quot;재생 중&quot;이 아니라 &quot;시작 중&quot;입니다. [필수 세션 매개 변수](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)는 요청 본문의 `params` 맵에 포함해야 합니다.  백엔드에서 이 호출은 Adobe Analytics 시작 호출을 생성합니다.
 
 **샘플 요청 본문**
 
@@ -265,7 +265,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 **구현 세부 사항**
 
-광고 브레이크가 끝났습니다. 광고 브레이크 전 기간 동안 재생 상태가 "재생 중"으로 남아 있습니다.
+광고 브레이크가 끝났습니다. 광고 브레이크 전 기간 동안 재생 상태가 &quot;재생 중&quot;으로 남아 있습니다.
 
 **샘플 요청 본문**
 
@@ -287,7 +287,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 **구현 세부 사항**
 
-After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
+`adBreakComplete` 이벤트 다음에 `play` 이벤트를 사용하여 플레이어를 &quot;재생 중&quot; 상태에 둡니다.
 
 **샘플 요청 본문**
 
@@ -378,7 +378,7 @@ After the `adBreakComplete` event, put the player in the "playing" state using t
 
 **구현 세부 사항**
 
-버퍼링은 3초 후에 종료되므로 플레이어를 "재생 중" 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart`다음에`play`를 호출하면 "버퍼엔드"가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
+버퍼링은 3초 후에 종료되므로 플레이어를 &quot;재생 중&quot; 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart`다음에`play`를 호출하면 &quot;버퍼엔드&quot;가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
@@ -617,7 +617,7 @@ After the `adBreakComplete` event, put the player in the "playing" state using t
 
 **구현 세부 사항**
 
-사용자의 작업이 재생 상태를 "일시 중지됨"으로 이동합니다.
+사용자의 작업이 재생 상태를 &quot;일시 중지됨&quot;으로 이동합니다.
 
 **샘플 요청 본문**
 
@@ -639,7 +639,7 @@ After the `adBreakComplete` event, put the player in the "playing" state using t
 
 **구현 세부 사항**
 
-10초마다 백엔드를 ping합니다. 플레이어가 여전히 "버퍼링" 상태이므로, 사용자 작업이 20초 동안 중단됩니다. 퍼밍...
+10초마다 백엔드를 ping합니다. 플레이어가 여전히 &quot;버퍼링&quot; 상태이므로, 사용자 작업이 20초 동안 중단됩니다. 퍼밍...
 
 **샘플 요청 본문**
 
@@ -661,7 +661,7 @@ After the `adBreakComplete` event, put the player in the "playing" state using t
 
 **구현 세부 사항**
 
-재생 상태를 "재생 중"으로 이동합니다.  **`play`다음에`pauseStart`를 호출하면 "resume"이 백 엔드를 호출한다고 유추하므로** `resume` 이벤트가 필요하지 않습니다.
+재생 상태를 &quot;재생 중&quot;으로 이동합니다.  **`play`다음에`pauseStart`를 호출하면 &quot;resume&quot;이 백 엔드를 호출한다고 유추하므로** `resume` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
