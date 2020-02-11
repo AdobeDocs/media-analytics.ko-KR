@@ -2,7 +2,7 @@
 title: Adobe Analytics에서 오디오 및 비디오 측정
 description: 'Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
@@ -63,7 +63,7 @@ Adobe Analytics for Media는 두 가지 방법 즉, 기존 이정표 메서드(�
 | **Adobe 제품과 통합** | 일부 매핑 및 통합을 사용한 개별 세션 | 쉽게 교차 분석할 수 있도록 결합된 Experience Cloud ID가 Adobe Experience Cloud에 연결됨 |
 | **가격 책정** | 각 서버 호출에 대해 추적 및 청구됨 | 미디어 스트림별 투명한 추적(단일) |
 | **구현 및 지원** | 기존 버전에 대한 제한된 지원과 업그레이드가 없는 장기 통합 | 진행 중인 업데이트 및 개선 사항으로 간소화된 구성 |
-| **파트너 공유** | 해당 없음 | 페더레이션 분석 및 인증된 지표 |
+| **파트너 공유** | 해당 없음 | Federated Analytics 및 인증된 지표 |
 | **고급 추적** | 해당 없음 | 오류 복구 추적 및 Concurrent Viewer |
 
 ## 지원 장치 {#devices-supported}
