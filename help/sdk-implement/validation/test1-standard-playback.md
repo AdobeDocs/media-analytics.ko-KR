@@ -2,26 +2,20 @@
 title: 테스트 1 표준 재생
 description: 이 항목에서는 유효성 검사에 사용된 표준 재생 테스트를 설명합니다.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 테스트 1: 표준 재생{#test-standard-playback}
 
-이 테스트 케이스는 일반 재생 및 시퀀스의 유효성을 검사합니다. 인증 요청의 필수 요소입니다.
-
-## 인증 요청 양식
-
-**여기서 인증 요청 양식 다운로드: ==&gt;**  [인증 요청 양식.](cert_req_form.docx)
-
-## 인증 테스트 1 개요
+이 테스트 케이스는 일반 재생 및 시퀀스의 유효성을 검사합니다.
 
 Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니다.
-* Adobe Analytics(AppMeasurement) 서버에 직접 수행된 호출 - 이러한 호출은 "미디어 시작" 및 "광고 시작" 이벤트에서 발생합니다.
+* Adobe Analytics(AppMeasurement) 서버에 직접 수행된 호출 - 이러한 호출은 &quot;미디어 시작&quot; 및 &quot;광고 시작&quot; 이벤트에서 발생합니다.
 * Media Analytics(하트비트) 서버에 대한 호출 - 여기에 대역 내 및 대역 외 호출이 포함됩니다.
-   * 대역 내 - SDK는 컨텐츠 재생 중 10초 간격으로, 광고 중 1초 간격으로 시간 재생 호출 또는 "ping"을 전송합니다.
+   * 대역 내 - SDK는 컨텐츠 재생 중 10초 간격으로, 광고 중 1초 간격으로 시간 재생 호출 또는 &quot;ping&quot;을 전송합니다.
    * 대역 외 - 이러한 호출은 언제든지 발생할 수 있으며, 일시 중지, 버퍼링, 오류, 컨텐츠 완료, 광고 완료 등을 포함합니다.
 
 >[!NOTE]
@@ -35,9 +29,9 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    **추적 서버**(모든 웹 사이트 및 모바일 앱의 경우):
 
-   * **Adobe Analytics(AppMeasurement) 서버 -** RDC 추적 서버 또는 RDC 추적 서버로 확인되는 CNAME은 Experience Cloud 방문자 ID 서비스에 필요합니다. Adobe Analytics 추적 서버는 "`.sc.omtrdc.net`" 또는 CNAME으로 끝나야 합니다.
+   * **Adobe Analytics(AppMeasurement) 서버 -** RDC 추적 서버 또는 RDC 추적 서버로 확인되는 CNAME은 Experience Cloud 방문자 ID 서비스에 필요합니다. Adobe Analytics 추적 서버는 &quot;`.sc.omtrdc.net`&quot; 또는 CNAME으로 끝나야 합니다.
 
-   * **Media Analytics(하트비트) 서버 -** 이 서버는 항상 "`[namespace].hb.omtrdc.net`" 형식을 가지며, 여기서 `[namespace]`에 회사 이름을 지정합니다. 이 이름은 Adobe에서 제공합니다.
+   * **Media Analytics(하트비트) 서버 -** 이 서버는 항상 &quot;`[namespace].hb.omtrdc.net`&quot; 형식을 가지며, 여기서 `[namespace]`에 회사 이름을 지정합니다. 이 이름은 Adobe에서 제공합니다.
    모든 추적 호출에 공통으로 적용되는 특정 키 변수의 유효성을 확인해야 합니다.
 
    **Adobe 방문자 ID(`mid`):** `mid` 변수는 AMCV 쿠키에 설정된 값을 캡처하는 데 사용됩니다. `mid` 변수는 웹 사이트 및 모바일 앱 모두에 대한 기본 식별 값으로서, Experience Cloud 방문자 ID 서비스가 제대로 설정되었음을 나타냅니다. Adobe Analytics(AppMeasurement)와 Media Analytics(하트비트) 호출 모두에 있습니다.
@@ -86,7 +80,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    1. Adobe Analytics 서버 - 시작 호출
    1. Media Analytics 서버 - 시작 호출
-   1. Media Analytics 서버 - "Adobe Analytics 시작 호출 요청"
+   1. Media Analytics 서버 - &quot;Adobe Analytics 시작 호출 요청&quot;
    위의 처음 두 호출에는 추가 메타데이터와 변수가 포함되어 있습니다. 호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)을 참조하십시오.
 
    위에서 세 번째 호출은 Media SDK가 Adobe Analytics 시작 호출(`pev2=ms_s`)을 Adobe Analytics 서버로 전송하도록 요청했음을 Media Analytics 서버에 알려줍니다.
@@ -98,14 +92,14 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    1. Adobe Analytics 서버 - 광고 시작 호출
    1. Media Analytics 서버 - 광고 시작 호출
-   1. Media Analytics 서버 - "Adobe Analytics 광고 시작 호출 요청"
+   1. Media Analytics 서버 - &quot;Adobe Analytics 광고 시작 호출 요청&quot;
    처음 두 호출에는 추가 메타데이터와 변수가 포함되어 있습니다. 호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)을 참조하십시오.
 
    세 번째 호출은 Media SDK가 Adobe Analytics 광고 시작 호출(`pev2=msa_s`)을 Adobe Analytics 서버로 전송하도록 요청했음을 Media Analytics 서버에 알려줍니다.
 
    * **광고 재생**
 
-      광고 재생 중에 Media Analytics SDK는 "광고" 유형의 재생 이벤트를 매 초마다 Media Analytics 서버로 전송합니다.
+      광고 재생 중에 Media Analytics SDK는 &quot;광고&quot; 유형의 재생 이벤트를 매 초마다 Media Analytics 서버로 전송합니다.
 
    * **광고 완료**
 
@@ -115,7 +109,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
 1. **가능한 경우 30초 동안 광고 재생 일시 정지.**  **광고 일시 정지**
 
-   광고 일시 중지 동안 SDK에서 Media Analytics 하트비트 또는 "ping" 호출을 매 초마다 Media Analytics 서버로 전송합니다.
+   광고 일시 중지 동안 SDK에서 Media Analytics 하트비트 또는 &quot;ping&quot; 호출을 매 초마다 Media Analytics 서버로 전송합니다.
 
    >[!NOTE]
    >
@@ -145,4 +139,3 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 1. **재생 목록의 다음 미디어 보기.** 재생 목록의 다음 미디어의 미디어 시작 시 새로운 미디어 시작 호출 세트가 전송되어야 합니다.
 
 1. **미디어 또는 스트림 전환.** 라이브 스트림을 전환할 때 첫 번째 스트림에 대한 Media Analytics 전체 호출이 전송되지 않아야 합니다. 미디어 시작 호출 및 재생 호출은 새로운 프로그램 및 스트림 이름과 새로운 프로그램에 대한 올바른 플레이헤드 및 기간 값으로 시작해야 합니다.
-
