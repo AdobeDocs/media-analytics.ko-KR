@@ -2,19 +2,15 @@
 title: 테스트 2 미디어 중단
 description: 이 항목에서는 유효성 검사에 사용된 미디어 중단 테스트를 설명합니다.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 테스트 2: 미디어 중단{#test-media-interruption}
 
-이 테스트 케이스는 모바일 중단 동작의 유효성을 검사합니다. 인증 요청의 필수 요소입니다.
-
-## 인증 요청 양식
-
-**여기서 인증 요청 양식 다운로드: ==&gt;**  [인증 요청 양식.](cert_req_form.docx)
+이 테스트 케이스는 모바일 중단 동작의 유효성을 검사합니다.
 
 ## 테스트 절차
 
@@ -56,4 +52,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. **미디어 플레이어 닫기**
 
    미디어 플레이어를 닫으면 추가 추적 통화가 발생하지 않습니다.
-
