@@ -1,20 +1,17 @@
 ---
+seo-title: 개요
 title: 개요
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 개요{#overview}
 
-Media Collection API는 고객 측 Media SDK에 대한 Adobe의 RESTful 대안입니다. Media Collection API를 사용하면 플레이어에서 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적할 수 있습니다. Media Collection API는 Media SDK의 동일한 실시간 추적을 제공하며, 추가로 다음 기능을 제공합니다.
-
-* **다운로드한 컨텐츠 추적**
-
-   사용자의 장치가 온라인으로 돌아오기 전까지 이벤트 데이터를 로컬로 저장하여 사용자가 오프라인 상태에서도 미디어를 추적할 수 있는 기능을 제공합니다. (자세한 내용은 [다운로드한 컨텐츠 추적](track-downloaded-content.md)을 참조하십시오.)
+Media Collection API는 고객 측 Media SDK에 대한 Adobe의 RESTful 대안입니다. Media Collection API를 사용하면 플레이어에서 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적할 수 있습니다.
 
 Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, Media SDK 설명서의 일부 측면이 Media Collection API와 관련되어 있습니다. 예를 들어, 두 솔루션은 동일한 [오디오 및 비디오 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)를 사용하고, 수집된 오디오 및 비디오 추적 데이터는 동일한 [보고 및 분석](/help/media-reports/media-reports-enable.md)으로 이어집니다.
 
@@ -34,13 +31,13 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 
 ### API 호출 {#mc-api-calls}
 
-* **`sessions`-** 서버의 세션을 설정하고, 후속 `events` 호출에 사용된 세션 ID를 반환합니다. 앱에서 추적 세션이 시작될 때 이 ID를 한 번 호출합니다.
+* **`sessions`-**서버의 세션을 설정하고, 후속`events`호출에 사용된 세션 ID를 반환합니다. 앱에서 추적 세션이 시작될 때 이 ID를 한 번 호출합니다.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** 미디어 추적 데이터를 보냅니다.
+* **`events`-**미디어 추적 데이터를 보냅니다.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -49,28 +46,28 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 ### 요청 본문 {#mc-api-request-body}
 
 ```
-{ 
-    "playerTime": { 
-        "playhead": {playhead position in seconds}, 
-        "ts": {timestamp in milliseconds} 
-    }, 
-    "eventType": {event-type}, 
-    "params": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "qoeData" : { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "customMetadata": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    } 
-} 
+{
+    "playerTime": {
+        "playhead": {playhead position in seconds},
+        "ts": {timestamp in milliseconds}
+    },
+    "eventType": {event-type},
+    "params": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "qoeData" : {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "customMetadata": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    }
+}
 ```
 
 * `playerTime` - 모든 요청에 필수입니다.
@@ -99,4 +96,3 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
-
