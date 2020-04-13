@@ -23,7 +23,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 방법
 
-아래의 JavaScript 예제에서는 이름이 "Hero Banner"로 설정된 사용자 지정 링크 추적 호출을 생성합니다.
+아래의 JavaScript 예제에서는 이름이 &quot;Hero Banner&quot;로 설정된 사용자 지정 링크 추적 호출을 생성합니다.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
