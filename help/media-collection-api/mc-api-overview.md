@@ -3,7 +3,7 @@ seo-title: 개요
 title: 개요
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -27,7 +27,7 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 
 **URI:** Adobe 담당자에게서 얻습니다.
 
-**HTTP 메서드:** JSON 요청 본문이 있는 POST.
+**HTTP 메서드:** JSON 요청 본문이 있는 POST
 
 ### API 호출 {#mc-api-calls}
 
