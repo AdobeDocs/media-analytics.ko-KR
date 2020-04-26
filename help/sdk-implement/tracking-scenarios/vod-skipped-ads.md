@@ -20,12 +20,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 트리거   | 하트비트 메서드  | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart()` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 인식하지 못합니다. 이러한 네트워크 호출은 여전히 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다.  |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart()` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있다는 것을 인식하지 못합니다. 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)과 동일합니다. |
 | 광고가 시작됨. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 광고 시작, 하트비트 광고 시작 |  |
-| 광고의 첫 번째 프레임이 재생됨. | `trackPlay()` | 하트비트 광고 재생 | 광고 컨텐츠가 주 컨텐츠 전에 재생되면 광고 재생이 시작될 때 하트비트가 시작됩니다. |
-| 광고가 재생됨. |  | 광고 하트비트 |  |
+| 광고의 첫 프레임이 재생됩니다. | `trackPlay()` | 하트비트 광고 재생 | 광고 컨텐츠가 주 컨텐츠 전에 재생되면 광고 재생이 시작될 때 하트비트가 시작됩니다. |
+| 광고가 재생됩니다. |  | 광고 하트비트 |  |
 | 광고를 건너뜀. | `trackEvent:trackAdSkip` |  | 광고 완료 네트워크 호출이 없습니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 컨텐츠가 재생됩니다. |  | 컨텐츠 하트비트 | 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 컨텐츠 재생이 완료됨. | `trackComplete()` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd()` |  | `SessionEnd` |
 
