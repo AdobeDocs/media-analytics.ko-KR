@@ -12,22 +12,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 소개 {#introduction}
 
-Roku는 애플리케이션 개발을 위한 새 프로그래밍 프레임워크(SceneGraph XML 프로그래밍 프레임워크)를 도입했습니다. 이 새 프레임워크는 두 가지 새로운 주요 개념을 제공합니다.
+Roku는 애플리케이션 개발을 위한 새로운 프로그래밍 프레임워크(SceneGraph XML 프로그래밍 프레임워크)를 도입했습니다. 이 새로운 프레임워크는 다음과 같은 두 가지 새로운 주요 개념을 제공합니다.
 
-* SceneGraph에서 애플리케이션 화면 렌더링
-* SceneGraph 화면에 대한 XML 구성
+* 애플리케이션 화면의 SceneGraph 렌더링
+* SceneGraph 화면의 XML 구성
 
-Adobe Mobile SDK for Roku는 BrightScript로 작성됩니다. SDK는 SceneGraph에서 실행 중인 앱(예: 스레드)에서 사용할 수 없는 많은 구성 요소를 사용합니다. 따라서 SceneGraph 프레임워크를 사용하려는 Roku 앱 개발자가 Adobe Mobile SDK API(후자는 레거시 BrightScript 앱에서 사용할 수 있는 앱과 비슷함)를 호출할 수 없습니다.
+Roku용 Adobe Mobile SDK는 BrightScript로 작성됩니다. SDK는 SceneGraph에서 실행되는 앱(예: 스레드)에 사용할 수 없는 많은 구성 요소를 사용합니다. 따라서 SceneGraph 프레임워크를 사용하려는 Roku 앱 개발자는 Adobe Mobile SDK API를 호출할 수 없습니다(후자는 기존 BrightScript 앱에서 사용할 수 있는 것과 비슷함).
 
 ## 아키텍처 {#architecture}
 
 AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmobileTask` 사이에 커넥터 브리지를 작성하는 새 API가 추가되었습니다. 후자는 SDK의 API 실행에 사용되는 SceneGraph 노드입니다. (`adbmobileTask` 사용 방법은 이 문서의 나머지 부분에서 자세히 설명합니다.)
 
-커넥터 브리지는 다음과 같이 수행하도록 설계되었습니다.
+커넥터 브리지는 다음과 같을 작업을 수행하도록 설계되었습니다.
 
-* 이 브리지는 AdobeMobile SDK의 SceneGraph와 호환되는 인스턴스를 반환합니다. SceneGraph와 호환되는 SDK에는 레거시 SDK가 노출하는 모든 API가 있습니다.
-* 레거시 API를 사용한 방법과 유사한 방법으로 SceneGraph에서 AdobeMobile SDK API를 사용합니다.
-* 또한 브리지는 일부 데이터를 반환하는 API에 대한 콜백을 수신하는 메커니즘을 표시합니다.
+* 브리지는 AdobeMobile SDK의 SceneGraph 호환 인스턴스를 반환합니다. SceneGraph 호환 SDK에는 기존 SDK가 노출하는 모든 API가 있습니다.
+* SceneGraph에서 Adobe Mobile SDK API를 사용하는 방법은 기존 API를 사용한 방법과 매우 유사합니다.
+* 또한 브리지는 일부 데이터를 반환하는 API에 대한 콜백을 수신하기 위한 메커니즘을 노출합니다.
 
 ![](assets/SceneGraph_arch.png)
 
@@ -40,8 +40,8 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 
 **AdobeMobileLibrary:**
 
-* 커넥터 브리지 API를 포함하여 공용 API 세트(레거시)를 표시합니다.
-* 모든 레거시 공용 API를 래핑하는 SceneGraph 커넥터 인스턴스를 반환합니다.
+* 커넥터 브리지 API를 비롯한 공개 API(기존) 세트를 노출합니다.
+* 모든 기존 공개 API를 래핑하는 SceneGraph 커넥터 인스턴스를 반환합니다.
 * API 실행을 위해 `adbmobileTask` SceneGraph 노드와 통신합니다.
 
 **adbmobileTask 노드:**
@@ -49,7 +49,7 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 * 백그라운드 스레드에서 `AdobeMobileLibrary` API를 실행하는 SceneGraph 작업 노드입니다.
 * 애플리케이션 화면으로 다시 데이터를 반환하기 위한 위임 역할을 합니다.
 
-## 공용 SceneGraph API {#public-scenegraph-apis}
+## 공개 SceneGraph APIs {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -91,14 +91,14 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 |  | 자세한 내용은 레거시 SDK의 Audience Manager 섹션을 참조하십시오. |  |
 |  |  |  |
 | **MediaHeartbeat** |  |  |
-|  | `mediaTrackLoad` | MediaHeartbeat 추적을 위해 비디오 컨텐츠를 로드하기 위한 SceneGraph API입니다. |
-|  | mediaTrackStart | MediaHeartbeat를 사용하여 비디오 추적 세션을 시작하기 위한 SceneGraph API입니다. |
+|  | `mediaTrackLoad` | MediaHeartbeat 추적을 위해 비디오 컨텐츠를 업로드할 SceneGraph API입니다. |
+|  | mediaTrackStart | MediaHeartbeat를 사용하여 비디오 추적 세션을 시작할 SceneGraph API입니다. |
 |  | `mediaTrackUnload` | MediaHeartbeat 추적에서 비디오 컨텐츠를 업로드하기 위한 SceneGraph API입니다. |
-|  | `mediaTrackPlay` | 비디오 컨텐츠 재생을 추적하기 위한 SceneGraph API입니다. |
-|  | mediaTrackPause | 일시 정지된 비디오 컨텐츠를 추적하기 위한 SceneGraph API입니다. |
+|  | `mediaTrackPlay` | 비디오 컨텐츠 재생을 추적할 SceneGraph API입니다. |
+|  | mediaTrackPause | 일시 정지된 비디오 컨텐츠를 추적할 SceneGraph API입니다. |
 |  | `mediaTrackComplete` | 비디오 컨텐츠 재생 완료를 추적하기 위한 SceneGraph API입니다. |
-|  | `mediaTrackError` | 재생 오류를 추적하기 위한 SceneGraph API입니다. |
-|  | mediaTrackEvent | 추적 중에 재생 이벤트를 추적하기 위한 SceneGraph API입니다. 예: 광고, 챕터 |
+|  | `mediaTrackError` | 재생 오류를 추적할 SceneGraph API입니다. |
+|  | mediaTrackEvent | 추적 중에 재생 이벤트를 추적할 SceneGraph API입니다. 예: 광고, 챕터. |
 |  | `mediaUpdatePlayhead` | 비디오 추적 중에 플레이헤드 업데이트를 MediaHeartbeat로 보내기 위한 SceneGraph API입니다. |
 |  | `mediaUpdateQoS` | 비디오 추적 중에 QoS 업데이트를 MediaHeartbeat로 보내기 위한 SceneGraph API입니다. |
 |  | 자세한 내용은 레거시 SDK의 MediaHeartbeat 섹션을 참조하십시오. |  |
@@ -136,7 +136,7 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 유효하지 않습니다 </td>
-<td> AdobeMobileSDK에서 실행된 모든 읽기 전용 API는 이 필드에 대한 응답을 반환합니다. 응답 개체를 수신하려면 이 필드의 업데이트를 수신하도록 콜백을 등록하십시오. 다음은 응답 개체의 형식입니다.  
+<td> AdobeMobileSDK에서 실행된 모든 읽기 전용 API는 이 필드에 대한 응답을 반환합니다. 응답 개체를 수신하려면 이 필드에 대한 업데이트를 수신할 콜백을 등록합니다. 다음은 응답 개체에 대한 형식입니다.  
 <codeblock>
 response = {
   "apiName" : &lt;SceneGraphConstants.
@@ -188,10 +188,10 @@ API 서명: `ADBMobile().sgConstants()`
 
 |  기능  | 상수 이름 | 설명   |
 |---|---|---|
-| 버전 매기기 | `version` | AdobeMobileLibrary 버전 정보를 검색하기 위한 상수 |
+| 버전 매기기 | `version` | AdobeMobileLibrary 버전 정보를 검색할 상수 |
 | 개인 정보/옵트아웃 | `PRIVACY_STATUS_OPT_IN` | 개인 정보 상태 옵트인에 대한 상수 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 개인 정보 상태 옵트아웃에 대한 상수 |
-| MediaHeartbeat 상수 | 이 페이지의 상수(<br/><br/>[미디어 하트비트 메서드)를 참조하십시오.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat API에서 이러한 상수 사용 |
+| MediaHeartbeat 상수 | 이 페이지의 상수<br/><br/>[(미디어 하트비트 메서드)를 참조하십시오.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat API에서 이러한 상수 사용 |
 | 표준 메타데이터 | 이 페이지의 상수(<br/><br/>[표준 메타데이터 매개 변수)를 참조하십시오.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 이러한 상수를 사용하여 MediaHeartbeat API에 표준 비디오/광고 메타데이터를 첨부합니다. |
 
 레거시 AdobeMobileLibrary에 전역으로 정의된 유틸리티 `MediaHeartbeat` API는 SceneGraph 노드에서 사용할 수 없는 Brightscript 구성 요소를 사용하지 않으므로 SceneGraph 환경에서 *그대로* 액세스할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 아래 표를 참조하십시오.
