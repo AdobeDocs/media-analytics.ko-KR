@@ -18,12 +18,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 트리거   | 하트비트 메서드   | 네트워크 호출   | 참고   |
 |---|---|---|---|
-| 사용자가 **[!UICONTROL 재생]**&#x200B;을 클릭합니다. | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리에 프리롤 광고가 있음을 아직 알리지 않았으므로 이러한 네트워크 호출은 여전히 단일 VOD와 동일합니다. |
+| 사용자가 **[!UICONTROL 재생]** 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 아직 측정 라이브러리에 프리롤 광고가 있다는 사실을 알리지 않았으므로 이러한 네트워크 호출은 아직 단일 VoD와 동일합니다. |
 | 챕터가 시작됨. | `trackEvent:ChapterStart` | 하트비트 챕터 시작 |  |
-| 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠보다 먼저 재생되는 경우 챕터가 시작될 때 하트비트가 시작됩니다. |
-| 챕터가 재생됨. |  | 챕터 하트비트 |  |
-| 챕터가 완료됨. | `trackEvent:trackChapterComplete` | 하트비트 챕터 완료 | 이는 챕터의 끝에 도달한 때입니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠 전에 재생되면 챕터가 시작될 때 하트비트가 시작됩니다. |
+| 챕터가 재생됩니다. |  | 챕터 하트비트 |  |
+| 챕터가 완료됨. | `trackEvent:trackChapterComplete` | 하트비트 챕터 완료 | 챕터의 끝에 도달하는 때입니다. |
+| 컨텐츠가 재생됩니다. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 끝에 도달했음을 의미합니다. 이 API는 사용자가 미디어를 끝까지 시청하지 않은 경우에도 호출해야 합니다. |
 
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | 챕터 데이터와 관련된 스트림 정보입니다. |
 | `s:meta:*` |  | 특정 컨텍스트 데이터가 있는 챕터입니다. |
 
-## 샘플 코드, 중간에 있는 챕터 {#sample-code-chapter-in-the-middle}
+## 샘플 코드, 가운데 챕터 {#sample-code-chapter-in-the-middle}
 
 이 시나리오에서는 VOD 컨텐츠의 일부가 챕터입니다.
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 샘플 코드, 시작에 있는 챕터 {#sample-code-chapter-at-the-beginning}
+## 샘플 코드, 시작 부분의 챕터 {#sample-code-chapter-at-the-beginning}
 
 이 시나리오에서 VOD 컨텐츠는 재생 시작 부분의 한 개의 챕터로 재생됩니다.
 
