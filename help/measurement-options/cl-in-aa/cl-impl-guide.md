@@ -2,19 +2,19 @@
 title: 사용자 지정 링크 구현 안내서
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # 사용자 지정 링크 구현 안내서{#custom-link-implementation-guide}
 
-사용자 지정 비디오 추적은 Analytics `appMeasurement`내에서 [사용자 지정 링크 코드를 사용한 수동 링크 추적](https://marketing.adobe.com/resources/help/ko_KR/sc/implement/link_manual.html)을 사용합니다.
+사용자 지정 비디오 추적은 Analytics `appMeasurement`내에서 [사용자 지정 링크 코드를 사용한 수동 링크 추적](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)을 사용합니다.
 대개 사용자 지정 비디오 링크 비디오 추적은 최소한의 비디오 측정이 필요한 플랫폼 및 장치에서 사용됩니다.
 
 * JavaScript에서: `s.tl()` 함수
-* 모바일 앱에서: [trackAction() Android](https://marketing.adobe.com/resources/help/ko_KR/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/ko_KR/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 모바일 앱에서: [trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Data Insertion API에서: [linktype 태그](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 요구 사항
