@@ -2,8 +2,8 @@
 title: Chromecast 설정
 description: Chromecast에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 _Chromecast JavaScript SDK를 사용해야 합니까, 아니면 표준 JavaScript SDK를 사용할 수 있습니까?_
 
-정답은 다음과 같은 이유로 "Chromecast"입니다.
+정답은 다음과 같은 이유로 &quot;Chromecast&quot;입니다.
 * 표준 JS SDK의 AppMeasurement 및 VisitorAPI 라이브러리는 OTT 플랫폼에서 작동하는 것으로 인증되지 않았습니다. Chromecast JS SDK에서는 비디오 하트비트 라이브러리(VHL), Analytics 및 VisitorAPI가 모두 통합 및 Chromecast용으로 인증된 하나의 SDK에 내장되어 있습니다.
 * Chromecast SDK는 표준 JS SDK보다 훨씬 간단합니다. 이것은 OTT 플랫폼에서 사용하는 하단 하드웨어에 매우 중요합니다.
 
@@ -26,7 +26,7 @@ _Chromecast JavaScript SDK를 사용해야 합니까, 아니면 표준 JavaScrip
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
 
-Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://marketing.adobe.com/resources/help/ko_KR/mobile/)에서 알아보십시오.
+Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://docs.adobe.com/content/help/ko-KR/mobile-services/using/home.html)에서 알아보십시오.
 
 Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 작성된 Chromecast 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 활용 및 수집하고, 비디오 하트비트를 통해 비디오 참여를 측정할 수 있습니다.
 
@@ -134,5 +134,5 @@ Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 �
    | `syncIdentifiers()` | Experience Cloud 방문자 ID를 사용하면 각 방문자와 연결할 수 있는 추가 고객 ID를 설정할 수 있습니다. 방문자 API는 여러 다른 고객 ID의 범위를 구분하기 위해 동일한 방문자의 여러 고객 ID와 고객 유형 식별자를 허용합니다. 이 메서드는 JavaScript 라이브러리의 `setCustomerIDs()`에 해당합니다.  예: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
 
