@@ -2,8 +2,8 @@
 title: Roku 설정
 description: Roku에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 
 
-자세한 내용은 [Adobe Mobile Services 문서](https://marketing.adobe.com/resources/help/ko_KR/mobile/)에서 알아보십시오.
+자세한 내용은 [Adobe Mobile Services 문서](https://docs.adobe.com/content/help/ko-KR/mobile-services/using/home.html)에서 알아보십시오.
 
 Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작성된 Roku 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 사용 및 수집하고, 비디오 하트비트를 통해 비디오 참여를 측정할 수 있습니다.
 
@@ -137,4 +137,4 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
