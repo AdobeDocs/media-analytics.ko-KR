@@ -2,26 +2,26 @@
 title: Concurrent Viewer JSON 보고서 데이터 가져오기
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # Concurrent Viewer JSON 보고서 데이터 가져오기{#get-concurrent-viewers-json-report-data}
 
-Analytics API의 _* 1.4 버전&#x200B;*_&#x200B;을 사용하여 동시 뷰어 보고서 데이터를 가져올 수 있습니다.
+Analytics API의 _*1.4 버전*_&#x200B;을 사용하여 동시 뷰어 보고서 데이터를 가져올 수 있습니다.
 * [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 컨텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
-1. 요청 본문에서 `elements` -&gt; `id`를 `videoconcurrentviewers`로 설정합니다.
+1. 요청 본문에서 `elements` -> `id`를 `videoconcurrentviewers`로 설정합니다.
 1. 충분한 양의 데이터를 요청합니다. 데이터에 간격이 없도록 3200개의 데이터 포인트가 권장됩니다.
 
    * 보고서에서 지정한 데이터 범위는 모든 동시 뷰어 데이터를 _비디오 세션이 종료된 시점에 수집합니다._
 따라서 한 날 시작하여 자정 이후에(즉, 다음 날) 끝나는 세션을 고려해야 합니다.
 
-   * 하루 이상의 데이터를 요청하지만 분석에서는 _*&#x200B;첫 날의 데이터만 사용합니다.*_
+   * 하루 이상의 데이터를 요청하지만 분석에서는 _*첫 날의 데이터만 사용합니다.*_
 
 이 시나리오에 대한 샘플 요청 페이로드는 다음과 같습니다.
 
@@ -56,7 +56,7 @@ Analytics API의 _* 1.4 버전&#x200B;*_&#x200B;을 사용하여 동시 뷰어 �
 <!--
 You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
 
-1. Navigate to: [https://marketing.adobe.com/developer/api-explorer.](https://marketing.adobe.com/developer/api-explorer)
+1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
 
     * **API -** Select "Report".
@@ -64,7 +64,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-reports-report-suites.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
         
         * `dateTo` - End date of the report.         
         
