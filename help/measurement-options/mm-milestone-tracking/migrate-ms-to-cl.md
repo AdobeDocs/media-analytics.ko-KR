@@ -2,8 +2,8 @@
 title: 이정표에서 사용자 지정 링크로의 마이그레이션
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 개요 {#overview}
 
-이정표 추적과 사용자 지정 링크 추적에서 비디오 측정의 핵심 개념은 동일합니다. 이 추적에서는 비디오 플레이어 이벤트를 가져와서 분석 메서드에 매핑하는 동시에 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. 사용자 지정 링크 접근 방식은 구현과 수집된 데이터에서 불필요한 항목을 제거하여 모두 간소화한 것으로 간주해야 합니다. 사용자 지정 링크 솔루션을 사용하면 비디오 측정을 위해 미리 정의된 변수나 메서드가 없으므로 전체 사용자 지정 설정이 필요합니다. 시작 및 완료와 같은 기본 플레이어 이벤트에 대한 사용자 지정 링크 추적 호출을 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. 자세한 내용은 [사용자 지정 링크 구현 안내서](/help/measurement-options/cl-in-aa/cl-impl-guide.md) 및 [사용자 지정 링크 코드를 사용하여 수동으로 링크 추적](https://marketing.adobe.com/resources/help/ko_KR/sc/implement/link_manual.html)을 참조하십시오.
+이정표 추적과 사용자 지정 링크 추적에서 비디오 측정의 핵심 개념은 동일합니다. 이 추적에서는 비디오 플레이어 이벤트를 가져와서 분석 메서드에 매핑하는 동시에 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. 사용자 지정 링크 접근 방식은 구현과 수집된 데이터에서 불필요한 항목을 제거하여 모두 간소화한 것으로 간주해야 합니다. 사용자 지정 링크 솔루션을 사용하면 비디오 측정을 위해 미리 정의된 변수나 메서드가 없으므로 전체 사용자 지정 설정이 필요합니다. 시작 및 완료와 같은 기본 플레이어 이벤트에 대한 사용자 지정 링크 추적 호출을 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. 자세한 내용은 [사용자 지정 링크 구현 안내서](/help/measurement-options/cl-in-aa/cl-impl-guide.md) 및 [사용자 지정 링크 코드를 사용하여 수동으로 링크 추적](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)을 참조하십시오.
 
 다음 표는 이정표 솔루션과 사용자 지정 링크 솔루션 간의 변환 내용을 제공합니다.
 
