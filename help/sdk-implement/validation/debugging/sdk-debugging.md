@@ -2,8 +2,8 @@
 title: SDK 디버깅
 description: 이 항목에서는 Media SDK에서 사용할 수 있는 추적/로그에 대해 설명합니다.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -64,10 +64,14 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Adobe Bloodhound를 사용하여 Chromecast 애플리케이션 테스트
 
-애플리케이션을 개발할 때 Bloodhound를 사용하면 로컬로 서버 호출을 볼 수 있으며 선택적으로 Adobe 수집 서버에 데이터를 전송할 수 있습니다. Bloodhound에 대한 자세한 내용은 다음 안내서를 참조하십시오.
+애플리케이션을 개발할 때 Bloodhound를 사용하면 로컬로 서버 호출을 볼 수 있으며 선택적으로 Adobe 수집 서버에 데이터를 전송할 수 있습니다.
 
-* [Mac용 Bloodhound 3.x](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
+<!--
+For more information about Bloodhound, see the following guides:
+
+* [Bloodhound 3.x for Mac](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwiimfSUypDpAhVZHzQIHS6WDQIQFjABegQIChAD&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound%2F&usg=AOvVaw3t4s0gcvuWEpLIqBkhKdGH) 
+* [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+-->
 
 >[!IMPORTANT]
 >
