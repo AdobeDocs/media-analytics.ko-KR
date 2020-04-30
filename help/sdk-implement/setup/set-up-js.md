@@ -2,8 +2,8 @@
 title: JavaScript 설정
 description: JavaScript에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **미디어 애플리케이션에서 JavaScript용`AppMeasurement`구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://marketing.adobe.com/resources/help/ko_KR/sc/implement/js_implementation.html)을 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://docs.adobe.com/content/help/ko-KR/analytics/implementation/js/overview.html)을 참조하십시오.
 
 * **미디어 플레이어에 다음 기능을 제공합니다.**
 
