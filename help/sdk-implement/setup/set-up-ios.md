@@ -2,8 +2,8 @@
 title: iOS 설정
 description: iOS에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **애플리케이션에 iOS용 ADBMobile 구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://marketing.adobe.com/resources/help/ko_KR/mobile/ios/)를 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://docs.adobe.com/content/help/ko-KR/mobile-services/ios/overview.html)를 참조하십시오.
 
    >[!IMPORTANT]
    >
-   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 산업 표준 프로토콜과 암호만 사용하는지 확인하여 네트워크 보안을 향상시키기 위한 것입니다. 이 기능은 기본적으로 활성화되어 있지만, ATS 작업에 대한 선택 사항을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://marketing.adobe.com/resources/help/ko_KR/mobile/ios/app_transport_security.html)을 참조하십시오.
+   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 산업 표준 프로토콜과 암호만 사용하는지 확인하여 네트워크 보안을 향상시키기 위한 것입니다. 이 기능은 기본적으로 활성화되어 있지만, ATS 작업에 대한 선택 사항을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
 
 * **미디어 플레이어에 다음 기능을 제공합니다.**
 
@@ -41,18 +41,18 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
       * `MediaSDK_TV.a`: 새 Apple TV 장치(arm64)와 시뮬레이터(x86_64)의 라이브러리 빌드가 포함된 비트코드 사용 패트 바이너리입니다.
 
          타겟이 Apple TV(tvOS) 앱용인 경우 이 바이너리를 연결해야 합니다.
-   1. 라이브러리를 프로젝트에 추가합니다.
+   1. 라이브러리를 프로젝트에 추가합니다:
 
       1. Xcode IDE를 실행하고 앱을 엽니다.
-      1. **[!UICONTROL 프로젝트 탐색기]**&#x200B;에서 `libs` 디렉토리를 드래그하여 프로젝트 아래에 놓습니다.
+      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
 
-      1. **[!UICONTROL 필요한 경우 항목 복사]** 확인란과 **[!UICONTROL 그룹 만들기]를 선택해야 하고**&#x200B;타겟에 추가&#x200B;**[!UICONTROL 의 확인란은 아무것도 선택하면 안 됩니다.]**
+      1. 확인란을 **[!UICONTROL Copy Items if Needed]** 선택하고, 확인란을 **[!UICONTROL Create Groups]** 선택하고, 확인란을 선택하지 않았는지 **[!UICONTROL Add to Target]** 확인합니다.
 
          ![](assets/choose-options_ios.png)
 
-      1. **[!UICONTROL 마침을 클릭합니다]**.
-      1. 앱을 **[!UICONTROL 프로젝트 탐색기]**&#x200B;에서 선택하고 타겟을 선택합니다.
-      1. **[!UICONTROL 일반]** 탭의 **[!UICONTROL 연결된 프레임워크]** 및 **[!UICONTROL 라이브러리]** 섹션에서 필요한 프레임워크 및 라이브러리를 연결합니다.
+      1. 클릭 **[!UICONTROL Finish]**.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
 
          **iOS 앱 타겟:**
 
@@ -148,7 +148,7 @@ Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 t
 
 1. 프로젝트의 `lib` 폴더로 `VideoHeartbeat_TV.a` 라이브러리 파일을 드래그합니다.
 
-1. tvOS 앱 대상의 **[!UICONTROL 빌드 단계]** 탭에서 **[!UICONTROL 라이브러리로 이진 링크]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
+1. tvOS 앱 대상 **[!UICONTROL Build Phases]** 탭에서 **[!UICONTROL Link Binary with Libraries]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
