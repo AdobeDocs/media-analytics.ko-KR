@@ -2,8 +2,8 @@
 title: Android 설정
 description: Android에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
-* **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://marketing.adobe.com/resources/help/ko_KR/mobile/android/)를 참조하십시오.
+* **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://docs.adobe.com/content/help/ko-KR/mobile-services/android/overview.html)를 참조하십시오.
 * **미디어 플레이어에 다음 기능을 제공합니다.**
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
@@ -30,23 +30,23 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       **IntelliJ IDEA:**
 
-      1. **[!UICONTROL 프로젝트 탐색]** 패널에서 프로젝트를 마우스 오른쪽 버튼으로 클릭합니다.
-      1. **[!UICONTROL 모듈 설정 열기를 선택합니다]**.
-      1. **[!UICONTROL 프로젝트 설정]**&#x200B;에서 **[!UICONTROL 라이브러리]**&#x200B;를 선택합니다.
+      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
+      1. 선택 **[!UICONTROL Open Module Settings]**.
+      1. 아래에서 **[!UICONTROL Project Settings]**&#x200B;을 선택합니다 **[!UICONTROL Libraries]**.
 
-      1. 새 라이브러리를 **[!UICONTROL +]**&#x200B;를 클릭하여 추가합니다.
-      1. **[!UICONTROL Java]**&#x200B;를 선택하고 `MediaSDK.jar` 파일로 이동합니다.
+      1. Click **[!UICONTROL +]** to add a new library.
+      1. Select **[!UICONTROL Java]** and navigate to the `MediaSDK.jar` file.
 
       1. 모바일 라이브러리를 사용할 모듈을 선택합니다.
-      1. **[!UICONTROL 적용]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 모듈 설정 창을 닫습니다.
+      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
       **Eclipse:**
 
       1. Eclipse IDE에서 프로젝트 이름을 마우스 오른쪽 버튼으로 클릭합니다.
-      1. **[!UICONTROL 빌드 경로]** &gt; **[!UICONTROL 외부 아카이브 추가]**&#x200B;를 클릭합니다 .
+      1. 클릭  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
       1. 선택 `MediaSDK.jar`.
-      1. **[!UICONTROL 열기를 클릭합니다]**.
-      1. 프로젝트를 다시 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 빌드 경로]** &gt; **[!UICONTROL 빌드 경로 구성]**&#x200B;을 클릭합니다.
-      1. **[!UICONTROL 주문]** 및 **[!UICONTROL 내보내기]** 탭을 클릭합니다.
+      1. 클릭 **[!UICONTROL Open]**.
+      1. 프로젝트를 다시 마우스 오른쪽 버튼으로 클릭하고 **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** 을 클릭합니다.
+      1. 탭 **[!UICONTROL Order]** 을 **[!UICONTROL Export]** 클릭합니다.
 
       1. `MediaSDK.jar` 파일을 선택했는지 확인합니다.
 
