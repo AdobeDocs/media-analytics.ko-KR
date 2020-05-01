@@ -3,7 +3,7 @@ title: 지원되는 디바이스
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 |  | 새로운 연결된 디바이스 |  |  | X |
 
 
-Media SDK의 경우 [최소 플랫폼 버전 지원](./sdk-implement/setup/setup-overview.md#minimum-platform-version)을 참조하십시오.
+Media SDK의 경우 [최소 플랫폼 버전 지원](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)을 참조하십시오.
