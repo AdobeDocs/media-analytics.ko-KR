@@ -1,5 +1,5 @@
 ---
-source-git-commit: e8b232d0771863e739f806daefa344b58cbc661c
+source-git-commit: 18d6b140df7211190dd9597ef03059d8b9285fe9
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 | 프로덕션 | 스테이지 |
 |---|---|
-| [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/collaborative-doc-instructions.en_stage/lastBuild) |
+| [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
 | [출력 제품](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/media-overview.html) | [출력 단계](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 Adobe는 설명서 팀 외부 직원뿐만 아니라 커뮤니티 기여를 환영합니다.
