@@ -2,8 +2,8 @@
 title: 타임라인 1 - 컨텐츠 끝까지 보기
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -696,4 +696,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >[!NOTE]
 >
 >**검색 이벤트가 없습니까?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 이동할 때 특정 플레이어에서 그러한 이벤트를 많이 생성하여 수백 명의 사용자가 백엔드 서비스의 네트워크 대역폭에 쉽게 병목 현상을 일으킬 수 있기 때문입니다. Adobe는 플레이헤드 위치가 아니라 장치 타임스탬프를 기반으로 하트비트 지속 시간을 계산하여 검색 이벤트에 대한 명시적 지원을 해결합니다.
-
