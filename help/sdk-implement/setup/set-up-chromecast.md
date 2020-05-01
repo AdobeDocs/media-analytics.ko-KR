@@ -3,7 +3,7 @@ title: Chromecast 설정
 description: Chromecast에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
@@ -46,43 +46,43 @@ Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 �
    1. 라이브러리 파일을 `index.html` 파일에 추가하고 `ADBMobileConfig` 전역 변수를 생성하십시오(Adobe Mobile for Heartbeats를 구성하는 데 사용되는 전역 변수에는 `mediaHeartbeat`라는 배타적 키가 있습니다.).
 
       ```js
-      <script> 
-          var ADBMobileConfig = { 
-            "marketingCloud": { 
-              "org": "972C898555E9F7BC7F000101@AdobeOrg" 
-            }, 
-            "target": { 
-              "clientCode": "", 
-              "timeout": 5 
-            }, 
-            "audienceManager": { 
-              "server": "obumobile5.demdex.net" 
-            }, 
-            "analytics": { 
-              "rsids": "mobile5vhl.sample.player", 
-              "server": "obumobile5.sc.omtrdc.net", 
-              "ssl": false, 
-              "offlineEnabled": false, 
-              "charset": "UTF-8", 
-              "lifecycleTimeout": 300, 
-              "privacyDefault": "optedin", 
-              "batchLimit": 0, 
-              "timezone": "MDT", 
-              "timezoneOffset": -360, 
-              "referrerTimeout": 0, 
-              "poi": [] 
-            }, 
-            "mediaHeartbeat": { 
-              "server": "obumobile5.hb.omtrdc.net", 
-              "publisher": "972C898555E9F7BC7F000101@AdobeOrg", 
-              "channel": "test-channel-chromecast", 
-              "ssl": false, 
-              "ovp": "chromecast-player", 
-              "sdkVersion": "chromecast-sdk", 
-              "playerName": "Chromecast" 
-            } 
-          }; 
-        </script> 
+      <script>
+          var ADBMobileConfig = {
+            "marketingCloud": {
+              "org": "972C898555E9F7BC7F000101@AdobeOrg"
+            },
+            "target": {
+              "clientCode": "",
+              "timeout": 5
+            },
+            "audienceManager": {
+              "server": "obumobile5.demdex.net"
+            },
+            "analytics": {
+              "rsids": "mobile5vhl.sample.player",
+              "server": "obumobile5.sc.omtrdc.net",
+              "ssl": false,
+              "offlineEnabled": false,
+              "charset": "UTF-8",
+              "lifecycleTimeout": 300,
+              "privacyDefault": "optedin",
+              "batchLimit": 0,
+              "timezone": "MDT",
+              "timezoneOffset": -360,
+              "referrerTimeout": 0,
+              "poi": []
+            },
+            "mediaHeartbeat": {
+              "server": "obumobile5.hb.omtrdc.net",
+              "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
+              "channel": "test-channel-chromecast",
+              "ssl": false,
+              "ovp": "chromecast-player",
+              "sdkVersion": "chromecast-sdk",
+              "playerName": "Chromecast"
+            }
+          };
+        </script>
       <script type="text/javascript" src="script/lib/adbmobile-chromecast.min.js"></script>
       ```
 
@@ -109,8 +109,8 @@ Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 �
    `ADBMobileConfig` 구성에 `marketingCloud` 조직 ID가 포함되어 있는지 확인합니다.
 
    ```js
-   "marketingCloud": { 
-       "org": YOUR-MCORG-ID" 
+   "marketingCloud": {
+       "org": YOUR-MCORG-ID"
    }
    ```
 
@@ -132,6 +132,7 @@ Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 �
    | --- | --- |
    | `getMarketingCloudID()` | 방문자 ID 서비스에서 Experience Cloud 방문자 ID를 검색합니다.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Experience Cloud 방문자 ID를 사용하면 각 방문자와 연결할 수 있는 추가 고객 ID를 설정할 수 있습니다. 방문자 API는 여러 다른 고객 ID의 범위를 구분하기 위해 동일한 방문자의 여러 고객 ID와 고객 유형 식별자를 허용합니다. 이 메서드는 JavaScript 라이브러리의 `setCustomerIDs()`에 해당합니다.  예: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
