@@ -1,15 +1,20 @@
 ---
-source-git-commit: 97af9e6790bb4a4d65057868b90e1127cb3bb153
+source-git-commit: e8b232d0771863e739f806daefa344b58cbc661c
 translation-type: tm+mt
 
 ---
 # 기여자 문서
 
+| 프로덕션 | 스테이지 |
+|---|---|
+| [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/collaborative-doc-instructions.en_stage/lastBuild) |
+| [출력 제품](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/media-overview.html) | [출력 단계](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
+
 Adobe는 설명서 팀 외부 직원뿐만 아니라 커뮤니티 기여를 환영합니다.
 
 ## Adobe 오픈소스 행동 수칙
 
-이 프로젝트에서는 [Adobe 오픈소스 행동 수칙](code-of-conduct.md) 또는 [.NET Foundation 행동 수칙](https://dotnetfoundation.org/code-of-conduct)을 채택했습니다. 자세한 내용은 [기여](contributing.md) 문서를 참조하십시오.
+이 프로젝트에서는 [Adobe OOCT(Open Source Code of Conduct)](code-of-conduct.md) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)가 채택되었습니다. 자세한 내용은 [기여](contributing.md) 문서를 참조하십시오.
 
 ## Adobe 내용에 대한 귀하의 기여 관련 정보
 
@@ -19,13 +24,13 @@ Adobe는 설명서 팀 외부 직원뿐만 아니라 커뮤니티 기여를 환�
 
 ### 부분 변경 사항
 
-부분 업데이트에 선의로 기여하려는 경우 문서를 방문하여 문서 내의 **편집** 링크를 클릭하면 문서에 해당하는 GitHub 소스로 이동하게 됩니다. 그런 다음 Github UI를 사용하여 업데이트를 만듭니다. See the general [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) for more information.
+부분 업데이트에 선의로 기여하려는 경우 문서를 방문하여 문서 내의 **편집** 링크를 클릭하면 문서에 해당하는 GitHub 소스로 이동하게 됩니다. 그런 다음 Github UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 이 REPO의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
 ### 커뮤니티 멤버의 주요 변경 사항 또는 새로운 문서
 
-Adobe 커뮤니티에 소속되어 있고 새로운 문서를 만들거나 주요 변경 사항을 제출하려는 경우 Git 리포지토리에서 문제 탭을 사용하여 문제를 제출하면 설명서 팀과 대화를 시작할 수 있습니다. 플랜에 동의하면 직원과 협력하여 공개 및 비공개 리포지토리에서 작업을 결합하여 새로운 콘텐츠를 제공할 수 있습니다.
+Adobe 커뮤니티에 소속되어 있고 새로운 문서를 만들거나 주요 변경 사항을 제출하려는 경우 Git 리포지토리에서 문제 탭을 사용하여 문제를 제출하면 설명서 팀과 대화를 시작할 수 있습니다. 플랜에 동의하면 직원과 협력하여 공용 및 개인 리포지토리에서 작업을 결합하여 새로운 컨텐츠를 제공할 수 있습니다.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
@@ -33,7 +38,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 직원의 주요 변경 사항
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it's your job to contribute to or author technical articles, you should use the private repository [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it&#39;s your job to contribute to or author technical articles, you should use the private repository [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 도구 및 설정
 
