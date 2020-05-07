@@ -41,12 +41,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    |  변수 이름  | 설명  | 필수 여부 |  기본값  |
    |---|---|:---:|---|
-   | `trackingServer` | Media Analytics를 위한 추적 서버입니다. 이 서버는 Analytics 추적 서버와 다릅니다. | 예 | 빈 문자열 |
+   | `trackingServer` | 미디어 분석을 위한 추적 서버입니다. 분석 추적 서버와 다릅니다. | 예 | 빈 문자열 |
    | `channel` | 채널 이름 | 아니오 | 빈 문자열 |
    | `ovp` | 컨텐츠가 배포되는 온라인 미디어 플랫폼의 이름입니다. | 아니오 | 빈 문자열 |
    | `appVersion` | 미디어 플레이어 앱/SDK의 버전입니다. | 아니오 | 빈 문자열 |
-   | `playerName` | 사용 중인 미디어 플레이어의 이름입니다. 예: "AVPlayer", "HTML5 Player", "My Custom Player" | 아니오 | 빈 문자열 |
-   | `ssl` | 호출이 HTTPS를 통해 수행돼야 하는지 여부를 나타냅니다. | 아니오 | false |
+   | `playerName` | 사용 중인 미디어 플레이어의 이름입니다. 예: &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | 아니오 | 빈 문자열 |
+   | `ssl` | 호출이 HTTPS를 통해 수행되야 하는지 여부를 나타냅니다. | 아니오 | false |
    | `debugLogging` | 디버그 로깅이 사용되는지 여부를 나타냅니다. | 아니오 | false |
 
 1. `MediaHeartbeatDelegate`를 구현합니다.
@@ -62,9 +62,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    | 변수 이름 | 설명   | 필수 여부 |
    | --- | --- | :---: |
-   | `bitrate` | 미디어의 비트율(초당 비트 수)입니다. | 예 |
-   | `startupTime` | 미디어의 시작 시간(밀리초)입니다. | 예 |
-   | `fps` | 초당 표시되는 프레임입니다. | 예 |
+   | `bitrate` | 초당 비트 수 단위의 미디어 비트율. | 예 |
+   | `startupTime` | 밀리초 단위의 미디어 시작 시간. | 예 |
+   | `fps` | 초당 표시되는 프레임 수. | 예 |
    | `droppedFrames` | 지금까지 드롭된 프레임 수. | 예 |
 
 1. `MediaHeartbeat` 인스턴스를 생성합니다.
@@ -79,9 +79,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Adobe Analytics에 대한 호출을 전송하려면 `MediaHeartbeat`에 `AppMeasurement`의 인스턴스가 필요합니다.
 
-1. 모든 부분을 결합합니다.
+1. 모든 조각을 결합합니다.
 
-   다음 샘플 코드는 HTML5 비디오 플레이어에 JavaScript 2.x SDK를 사용합니다.
+   다음 샘플 코드는 HTML5 비디오 플레이어에 Adobe의 JavaScript 2.x SDK를 사용합니다.
 
    ```javascript
    // Create local references to the heartbeat classes 
@@ -133,10 +133,10 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
    >
    >RDC 서버로 확인되는 RDC 추적 서버 또는 CNAME은 Experience Cloud 방문자 ID 서비스에 필요합니다.
 
-   Analytics 추적 서버는 "`.sc.omtrdc.net`"으로 끝나야 하거나 CNAME이어야 합니다.
+   Analytics 추적 서버는 &quot;`.sc.omtrdc.net`&quot;으로 끝나야 하거나 CNAME이어야 합니다.
 
 * ** Media Analytics(하트비트) 서버**
-항상 "`[your_namespace].hb.omtrdc.net`" 형식입니다. 다음 "`[your_namespace]`"의 값은 회사를 지정하며, Adobe에서 제공합니다.
+항상 &quot;`[your_namespace].hb.omtrdc.net`&quot; 형식입니다. 다음 &quot;`[your_namespace]`&quot;의 값은 회사를 지정하며, Adobe에서 제공합니다.
 
 미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 오디오 추적은 현재 모바일 플랫폼에서 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
 
