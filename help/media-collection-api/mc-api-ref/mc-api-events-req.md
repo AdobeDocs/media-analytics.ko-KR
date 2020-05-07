@@ -48,9 +48,9 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***광고 추적 -**`adBreak`* 내에서만 광고를 추적할 수 있습니다.
+>***광고 추적 -**`adBreak`*내에서만 광고를 추적할 수 있습니다.
 >
->광고 주위에 `adBreakStart` 및 `adBreakComplete` "북엔드"가 없을 경우 `adStart` 및 `adComplete` 이벤트가 무시되고, 해당 광고 기간은 기본 컨텐츠 기간으로 추적됩니다. 이 경우 Adobe Analytics에서 사용할 수 있는 집계된 데이터에 상당한 영향을 줄 수 있습니다.
+>광고 주위에 `adBreakStart` 및 `adBreakComplete` &quot;북엔드&quot;가 없을 경우 `adStart` 및 `adComplete` 이벤트가 무시되고, 해당 광고 기간은 기본 컨텐츠 기간으로 추적됩니다. 이 경우 Adobe Analytics에서 사용할 수 있는 집계된 데이터에 상당한 영향을 줄 수 있습니다.
 
 ## 응답
 
@@ -67,11 +67,11 @@ Access-Control-Expose-Headers Location
 
 ## HTTP 응답 코드
 
-| HTTP 응답 코드 | 설명 | 고객 작업 항목 |
+| HTTP 응답 코드 | 설명 | 클라이언트 작업 항목 |
 |---|---|---|
 | **204** | **컨텐츠 없음.**<br/><br/>하트비트 호출이 성공했습니다. | 해당 없음 |
 | **400** | **잘못된 요청.** <br/><br/>요청의 형식이 잘못되었습니다. | [JSON 유효성 검사 스키마](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)에서 요청 유형을 확인하십시오. |
-| **404** | **발견되지 않음.** <br/><br/>미디어 세션의 세션 ID를 백 엔드 서비스에서 찾을 수 없습니다. | 고객 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
-| **410** | **제거됨.** <br/><br/>미디어 세션이 백 엔드 서비스에서 발견되었지만 고객이 더 이상 이 세션에서 활동을 보고할 수 없습니다. | 고객 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
+| **404** | **없음.** <br/><br/>미디어 세션의 세션 ID를 백 엔드 서비스에서 찾지 못했습니다. | 클라이언트 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
+| **410** | **없어짐.** <br/><br/>미디어 세션이 백 엔드 서비스에서 발견되었지만 고객이 더 이상 이 세션에서 활동을 보고할 수 없습니다. | 클라이언트 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **500** | **서버 오류** | 해당 없음 |
 
