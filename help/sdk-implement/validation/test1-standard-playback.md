@@ -2,7 +2,7 @@
 title: 테스트 1 표준 재생
 description: 이 항목에서는 유효성 검사에 사용된 표준 재생 테스트를 설명합니다.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
