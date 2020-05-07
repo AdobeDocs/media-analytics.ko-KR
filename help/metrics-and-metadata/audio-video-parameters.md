@@ -2,7 +2,7 @@
 title: 오디오 및 비디오 매개 변수
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -22,22 +22,22 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 테이블 데이터 설명:
 
-* **구현:**&#x200B;구현 값 및 요구 사항에 대한 정보
+* **구현:** 구현 값 및 요구 사항에 대한 정보
    * *키* - 앱에서 수동으로 설정하거나 Adobe Media SDK에 의해 자동으로 설정된 변수.
    * *필수* - 기본 오디오 및 비디오 추적에 매개 변수가 필요한지 여부를 나타냅니다.
-   * *유형* - 설정할 변수의 유형(문자열 또는 숫자)을 지정합니다.
+   * *유형* - 설정할 변수의 유형을 문자열 또는 숫자로 지정합니다.
    * *전송 시점* - 데이터가 전송되는 시점을 나타냅니다. *미디어 시작*&#x200B;은 미디어 시작 시 분석 호출이 전송되고, *광고 시작*&#x200B;은 광고 시작 시 분석 호출이 전송됩니다. *닫기* 호출은 미디어 세션 종료 시 또는 광고, 챕터 종료 시 하트비트 서버에서 Analytics 서버로 컴파일된 분석 호출이 직접 전송됩니다. 닫기 호출은 네트워크 패킷 호출에 사용할 수 없습니다.
    * *최소. SDK 버전* - 매개 변수에 액세스하는 데 필요한 SDK 버전을 나타냅니다.
-   * *샘플 값* - 일반 변수 사용법 예를 제공합니다.
+   * *샘플 값* - 일반적인 변수 사용의 예를 제공합니다.
 * **네트워크 매개 변수:** Adobe Analytics 또는 하트비트 서버에 전달되는 값을 표시합니다. 이 열에는 Adobe Media SDK에서 생성한 네트워크 호출에 표시되는 매개 변수의 이름이 표시됩니다.
 * **보고:** 오디오 및 비디오 데이터를 보고 분석하는 방법에 대한 정보입니다.
-   * *사용 가능* - 기본적으로 데이터를 보고할 수 있는지(*Yes*) 또는 사용자 지정 설정(*Custom*)이 필요한지 여부를 나타냅니다.
-   * *예약된 변수* - 데이터가 예약된 변수의 이벤트, eVar, prop 또는 분류로 캡처되는지 여부를 나타냅니다.
-   * *만료* - 각 히트 후에 또는 방문 후에 데이터가 만료되는지 여부를 나타냅니다.
-   * *보고서 이름* - 변수에 대한 Adobe Aanlytics 보고서 이름
-   * *컨텍스트 데이터* - 보고 서버에 전달되고 처리 규칙에 사용되는 Adobe Analytics 컨텍스트 데이터의 이름.
-   * *데이터 피드* - 클릭스트림 또는 라이브 스트림 데이터 피드에서 찾은 변수의 열 이름
-   * *Audience Manager* - Adobe Audience Manager에 있는 Trait 이름
+   * *사용 가능* - 데이터가 기본적으로(*예*) 보고 시 사용할 수 있는지 아니면 사용자 지정 설정(*사용자 지정*)을 필요로 하는지 여부를 지정합니다.
+   * *예약된 변수* - 데이터가 예약된 변수에 이벤트, eVar, prop 또는 분류로 캡처되는지 여부를 나타냅니다.
+   * *만료* - 각 히트 후 또는 각 방문 후에 데이터가 만료되는지 여부를 나타냅니다.
+   * *보고서 이름* - 변수에 대한 Adobe Analytics 보고서의 이름
+   * *컨텍스트 데이터* - 보고 서버에 전달되고 처리 규칙에 사용되는 Adobe Analytics 컨텍스트 데이터의 이름
+   * *데이터 피드* - 클릭스트림 또는 라이브 스트림 데이터 피드에 있는 변수의 열 이름
+   * *Audience Manager* - Adobe Audience Manager에 있는 트레이트 이름
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.streamType</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 2.2 <br/><br/>[Media Collection API 개요](/help/media-collection-api/mc-api-overview.md) 또는 [SDK 다운로드 -버전 2.2](/help/sdk-implement/download-sdks.md)에서 사용할 수 있습니다.  </li>  <li> **샘플 값:**<br/>&quot;video&quot;</li> <li> **설명:**<br/>스트림 유형을 식별합니다. 유효한 값은 &quot;audio&quot;, &quot;video&quot;, &quot;&quot;입니다.<br/><br/>[세그먼트 보고](/help/metrics-and-metadata/segments.md):<br/><br/>미디어 스트림 유형: 모두 -<br/>모든 미디어 스트림 데이터 세그먼트화, 규칙: 컨텐츠(ID)가 있음<br/><br/>미디어 스트림 유형: 오디오 -<br/>모든 오디오 스트림 데이터 세그먼트화, 규칙: 컨텐츠(ID)가 있고 미디어 스트림 유형 = 오디오<br/><br/>미디어 스트림 유형: &quot;비디오&quot; -<br/>모든 비디오 스트림 데이터 세그먼트화, 규칙: 컨텐츠(ID)가 있고 미디어 스트림 유형!= audio<br/><br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.streamType)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.streamType)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>방문 시</li> <li> **보고서 이름:**<br/>컨텐츠</li> <li> **컨텍스트 데이터:**<br/>(a.media.streamType)</li> <li> **데이터 피드:**<br/>videostreamtype</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.streamType)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.streamType</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 2.2 <br/><br/>[Media Collection API 개요](/help/media-collection-api/mc-api-overview.md) 또는 [SDK 다운로드 -버전 2.2](/help/sdk-implement/download-sdks.md)에서 사용할 수 있습니다.  </li>  <li> **샘플 값:**<br/>&quot;video&quot;</li> <li> **설명:**<br/>스트림 유형을 식별합니다. 유효한 값은 &quot;audio&quot;, &quot;video&quot;, &quot; &quot;입니다.<br/><br/>[세그먼트 보고](/help/metrics-and-metadata/segments.md):<br/><br/>미디어 스트림 유형: 모두 -<br/>모든 미디어 스트림 데이터 세그먼트화, 규칙: 컨텐츠(ID)가 있음<br/><br/>미디어 스트림 유형: 오디오 -<br/>모든 오디오 스트림 데이터 세그먼트화, 규칙: 컨텐츠(ID)가 있고 미디어 스트림 유형 = 오디오<br/><br/>미디어 스트림 유형: &quot;비디오&quot; -<br/>모든 비디오 스트림 데이터 세그먼트화, 규칙: 컨텐츠(ID)가 있고 미디어 스트림 유형!= audio<br/><br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.streamType)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.streamType)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>방문 시</li> <li> **보고서 이름:**<br/>컨텐츠</li> <li> **컨텍스트 데이터:**<br/>(a.media.streamType)</li> <li> **데이터 피드:**<br/>videostreamtype</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.streamType)</li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -64,7 +64,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> [mediaId](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.id</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>&quot;4586695ABC&quot;</li> <li>**설명:**<br/>`s:asset:video_id.`의 마지막 값과 같은 산업/CMS ID에 다시 연결하는 데 사용할 수 있는 컨텐츠의 컨텐츠 ID입니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.name)</li> <li> **하트비트:**<br/>(s:asset:video_id)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>방문 시</li> <li> **보고서 이름:**<br/>컨텐츠</li> <li> **컨텍스트 데이터:**<br/>(a.media.name)</li> <li> **데이터 피드:**<br/>비디오</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.name)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> [mediaId](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.id</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;4586695ABC&quot;</li> <li>**설명:**<br/>`s:asset:video_id.`의 마지막 값과 같은 산업/CMS ID에 다시 연결하는 데 사용할 수 있는 컨텐츠의 컨텐츠 ID입니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.name)</li> <li> **하트비트:**<br/>(s:asset:video_id)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>방문 시</li> <li> **보고서 이름:**<br/>컨텐츠</li> <li> **컨텍스트 데이터:**<br/>(a.media.name)</li> <li> **데이터 피드:**<br/>비디오</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.name)</li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -78,7 +78,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [length](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.length</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>VOD: 128, Live: 86400; Linear: 1800.</li><li> **설명:**<br/>클립 길이/런타임 - 사용되는 컨텐츠의 최대 길이(또는 기간)입니다(초). 기본 유형의 이벤트에서`l:asset:length`의 마지막 값과 동일합니다.<br/>`l:asset:length`가 설정되지 않은 경우`l:asset:duration`의 마지막 값이 사용됩니다.<br/>보고에서 &quot;비디오 길이&quot;는 분류이고 &quot;컨텐츠 길이(변수)&quot;는 eVAR입니다.<br/> **중요:** 이 속성은 진행 추적 지표 및 대상 평균 시간과 같은 여러 지표를 계산하는 데 사용됩니다. 이 값이 설정되지 않았거나 0보다 크지 않으면 이러한 지표를 사용할 수 없습니다.  알 수 없는 기간이 있는 라이브 미디어의 경우 기본값은 86400입니다. <br/>1.5.1 이전 버전인 경우 `l:asset:duration`이고, 1.5.1 이후 버전인 경우 `l:asset:length.`입니다. <br/> **릴리스 날짜: 2018년 9월 13일** </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.length)</li> <li> **하트비트:**<br/>(l:asset:length)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 길이(변수)</li> <li> **컨텍스트 데이터:**<br/>(a.media.length)</li> <li> **데이터 피드:**<br/>videolength</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.length)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [length](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.length</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>VOD: 128, Live: 86400; Linear: 1800.</li><li> **설명:**<br/>클립 길이/런타임 - 사용되는 컨텐츠의 최대 길이(또는 기간)입니다(초). 기본 유형의 이벤트에서`l:asset:length`의 마지막 값과 동일합니다.<br/>`l:asset:length`가 설정되지 않은 경우`l:asset:duration`의 마지막 값이 사용됩니다.<br/>보고에서 &quot;비디오 길이&quot;는 분류이고 &quot;컨텐츠 길이(변수)&quot;는 eVAR입니다.<br/> **중요:** 이 속성은 진행 추적 지표 및 대상 평균 시간과 같은 여러 지표를 계산하는 데 사용됩니다. 이 값이 설정되지 않았거나 0보다 크지 않으면 이러한 지표를 사용할 수 없습니다.  알 수 없는 기간이 있는 라이브 미디어의 경우 기본값은 86400입니다. <br/>1.5.1 이전 버전인 경우 `l:asset:duration`이고, 1.5.1 이후 버전인 경우 `l:asset:length.`입니다. <br/> **릴리스 날짜: 2018년 9월 13일** </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.length)</li> <li> **하트비트:**<br/>(l:asset:length)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 길이(변수)</li> <li> **컨텍스트 데이터:**<br/>(a.media.length)</li> <li> **데이터 피드:**<br/>videolength</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.length)</li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -92,7 +92,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [length](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.length</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>VOD: 128, Live: 86400; Linear: 1800.</li> <li> **설명:**<br/>클립 길이/런타임 - 사용되는 컨텐츠의 최대 길이(또는 기간)입니다(초). 기본 유형의 이벤트에서`l:asset:length`의 마지막 값과 동일합니다.`l:asset:length`가 설정되지 않은 경우`l:asset:duration`의 마지막 값이 사용됩니다. 보고에서 &quot;비디오 길이&quot;는 분류이고 &quot;컨텐츠 길이(변수)&quot;는 eVAR입니다.<br/> **중요:** 이 속성은 진행 추적 지표 및 대상 평균 시간과 같은 여러 지표를 계산하는 데 사용됩니다. 이 값이 설정되지 않았거나 0보다 크지 않으면 이러한 지표를 사용할 수 없습니다.  알 수 없는 기간이 있는 라이브 미디어의 경우 기본값은 86400입니다. 1.5.1 이전 버전인 경우 `l:asset:duration`이고, 1.5.1 이후 버전인 경우 `l:asset:length.`<br/>입니다. **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.length)</li> <li> **하트비트:**<br/>(l:asset:length)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>비디오 길이</li> <li> **컨텍스트 데이터:**<br/>(a.media.length)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.length)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [length](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.length</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>VOD: 128, Live: 86400; Linear: 1800.</li> <li> **설명:**<br/>클립 길이/런타임 - 사용되는 컨텐츠의 최대 길이(또는 기간)입니다(초). 기본 유형의 이벤트에서`l:asset:length`의 마지막 값과 동일합니다.`l:asset:length`가 설정되지 않은 경우`l:asset:duration`의 마지막 값이 사용됩니다. 보고에서 &quot;비디오 길이&quot;는 분류이고 &quot;컨텐츠 길이(변수)&quot;는 eVAR입니다.<br/> **중요:** 이 속성은 진행 추적 지표 및 대상 평균 시간과 같은 여러 지표를 계산하는 데 사용됩니다. 이 값이 설정되지 않았거나 0보다 크지 않으면 이러한 지표를 사용할 수 없습니다.  알 수 없는 기간이 있는 라이브 미디어의 경우 기본값은 86400입니다. 1.5.1 이전 버전인 경우 `l:asset:duration`이고, 1.5.1 이후 버전인 경우 `l:asset:length.`<br/>입니다. **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.length)</li> <li> **하트비트:**<br/>(l:asset:length)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>비디오 길이</li> <li> **컨텍스트 데이터:**<br/>(a.media.length)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.length)</li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -106,7 +106,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.contentType</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>제한된 문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>&quot;vod&quot;</li> <li> **설명:**<br/>**스트림 유형&#x200B;**별 사용 가능한 값:<br/> _오디오:_ &quot;song&quot;, &quot;podcast&quot;, &quot;audiobook&quot;, &quot;radio&quot; <br/> _비디오:_ &quot;VoD&quot;, &quot;Live&quot;, &quot;Linear&quot;, &quot;UGC&quot;, &quot;DVoD&quot; <br/> 고객은 이 매개 변수에 대한 사용자 지정 값을 제공할 수 있습니다. 이것은 `s:stream:type.`입니다. 설정이 해제된 경우 `missing_content_type.`입니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.contentType)</li> <li> **하트비트:**<br/>(s:stream:type)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 유형</li> <li> **컨텍스트 데이터:**<br/>(a.contentType)</li> <li> **데이터 피드:**<br/>videocontenttype</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.contentType)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/>media.contentType</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>제한된 문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;vod&quot;</li> <li> **설명:**<br/>**스트림 유형&#x200B;**별 사용 가능한 값:<br/> _오디오:_ &quot;song&quot;, &quot;podcast&quot;, &quot;audiobook&quot;, &quot;radio&quot; <br/> _비디오:_ &quot;VoD&quot;, &quot;Live&quot;, &quot;Linear&quot;, &quot;UGC&quot;, &quot;DVoD&quot; <br/> 고객은 이 매개 변수에 대한 사용자 지정 값을 제공할 수 있습니다. 이것은 `s:stream:type.`입니다. 설정이 해제된 경우 `missing_content_type.`입니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.contentType)</li> <li> **하트비트:**<br/>(s:stream:type)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 유형</li> <li> **컨텍스트 데이터:**<br/>(a.contentType)</li> <li> **데이터 피드:**<br/>videocontenttype</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.contentType)</li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -132,19 +132,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> [playerName](./audio-video-parameters.md#config-media-object) </li> <li> **API 키:**<br/>media.playerName</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>&quot;Brightcove&quot;</li> <li> **설명:**<br/>플레이어의 이름입니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.<br/>playerName)</li> <li> **하트비트:**<br/>(s:sp:player_name)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 플레이어 이름</li> <li> **컨텍스트 데이터:**<br/>(a.media.playerName)</li> <li> **데이터 피드:**<br/>videoplayername</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.playerName)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> [playerName](./audio-video-parameters.md#config-media-object) </li> <li> **API 키:**<br/>media.playerName</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;Brightcove&quot;</li> <li> **설명:**<br/>플레이어의 이름입니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.<br/>playerName)</li> <li> **하트비트:**<br/>(s:sp:player_name)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 플레이어 이름</li> <li> **컨텍스트 데이터:**<br/>(a.media.playerName)</li> <li> **데이터 피드:**<br/>videoplayername</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.playerName)</li> </ul> |
 
 ### 컨텐츠 채널
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [channel](./audio-video-parameters.md#config-media-object) </li> <li> **API 키:**<br/>media.channel</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>&quot;Sports&quot;</li> <li> **설명:**<br/>배포 스테이션/채널 또는 컨텐츠가 재생되는 위치입니다. 여기에 모든 문자열 값이 허용됩니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.channel)</li> <li> **하트비트:**<br/>(s:sp:channel)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 채널</li> <li> **컨텍스트 데이터:**<br/>(a.media.channel)</li> <li> **데이터 피드:**<br/>videochannel</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.channel)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [channel](./audio-video-parameters.md#config-media-object) </li> <li> **API 키:**<br/>media.channel</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;Sports&quot;</li> <li> **설명:**<br/>배포 스테이션/채널 또는 컨텐츠가 재생되는 위치입니다. 여기에 모든 문자열 값이 허용됩니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.channel)</li> <li> **하트비트:**<br/>(s:sp:channel)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 채널</li> <li> **컨텍스트 데이터:**<br/>(a.media.channel)</li> <li> **데이터 피드:**<br/>videochannel</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.channel)</li> </ul> |
 
 ### 컨텐츠 세그먼트
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>&quot;0-10&quot;</li> <li> **설명:**<br/>본 컨텐츠 부분을 설명하는 간격입니다(분). 세그먼트는 재생 세션 중 최대 및 최소 플레이헤드 값으로 계산됩니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 세그먼트</li> <li> **컨텍스트 데이터:**<br/>(a.media.segment)</li> <li> **데이터 피드:**<br/>videosegment</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.segment)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;0-10&quot;</li> <li> **설명:**<br/>본 컨텐츠 부분을 설명하는 간격입니다(분). 세그먼트는 재생 세션 중 최대 및 최소 플레이헤드 값으로 계산됩니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>컨텐츠 세그먼트</li> <li> **컨텍스트 데이터:**<br/>(a.media.segment)</li> <li> **데이터 피드:**<br/>videosegment</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.segment)</li> </ul> |
 
 ### 컨텐츠 이름(변수)
 
@@ -170,7 +170,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>&quot;4586695ABC&quot;</li> <li> **설명:**<br/>사이트 및/또는 앱에서 뷰어의 경로를 추적하여 특정 비디오를 보는 데 사용한 경로를 확인할 수 있는 기능을 제공합니다. 모든 정수 및/또는 문자 조합입니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.name)</li> <li> **하트비트:**<br/>(s:asset:video_id)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>prop</li> <li> **보고서 이름:**<br/>비디오 경로</li> <li> **컨텍스트 데이터:**<br/>(a.media.name)</li> <li> **데이터 피드:**<br/>videopath</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.name)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;4586695ABC&quot;</li> <li> **설명:**<br/>사이트 및/또는 앱에서 뷰어의 경로를 추적하여 특정 비디오를 보는 데 사용한 경로를 확인할 수 있는 기능을 제공합니다. 모든 정수 및/또는 문자 조합입니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.name)</li> <li> **하트비트:**<br/>(s:asset:video_id)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>prop</li> <li> **보고서 이름:**<br/>비디오 경로</li> <li> **컨텍스트 데이터:**<br/>(a.media.name)</li> <li> **데이터 피드:**<br/>videopath</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.name)</li> </ul> |
 
 ### SDK 버전
 
@@ -214,13 +214,13 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>ASSET_ID</li> <li> **API 키:**<br/>media.assetId</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;89745363&quot;</li> <li> **설명:**<br/>TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 미디어 자산 컨텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 권한에서 파생됩니다. 이러한 식별자는 다른 소유 시스템이나 사내 시스템에서 파생될 수도 있습니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.asset)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.asset)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **보고서 이름:**<br/>자산 ID</li> <li> **컨텍스트 데이터:**<br/>(a.media.asset)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.asset)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>ASSET_ID</li> <li> **API 키:**<br/>media.assetId</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;89745363&quot;</li> <li> **설명:**<br/>TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 미디어 자산 컨텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 기관에서 나옵니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.asset)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.asset)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **보고서 이름:**<br/>자산 ID</li> <li> **컨텍스트 데이터:**<br/>(a.media.asset)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.asset)</li> </ul> |
 
 ### 장르
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>GENRE</li> <li> **API 키:**<br/>media.genre</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;드라마&quot;, &quot;코메디&quot;</li> <li> **설명:**<br/>컨텐츠 생성자가 정의한 컨텐츠 유형 또는 그룹입니다. 값은 변수 구현에서 쉼표로 구분해야 합니다. 보고에서 List eVar는 각 라인 항목이 동일한 지표 가중치를 받는 라인 항목으로 각 값을 나눕니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.genre)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.genre)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>List eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>장르</li> <li> **컨텍스트 데이터:**<br/>(a.media.genre)</li> <li> **데이터 피드:**<br/>videogenre</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.genre)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>GENRE</li> <li> **API 키:**<br/>media.genre</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;드라마&quot;, &quot;코메디&quot;</li> <li> **설명:**<br/>컨텐츠 생성자가 정의한 컨텐츠 유형 또는 그룹입니다. 값은 변수 구현에서 쉼표로 구분해야 합니다. 보고에서 목록 eVar는 각 값을 라인 항목으로 분할하고 각 라인 항목은 동일한 지표 가중치를 받습니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.genre)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.genre)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>List eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>장르</li> <li> **컨텍스트 데이터:**<br/>(a.media.genre)</li> <li> **데이터 피드:**<br/>videogenre</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.genre)</li> </ul> |
 
 ### 최초 방송 날짜
 
@@ -324,91 +324,91 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작</li> <li> **최소. SDK 버전:** Any</li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>미디어에 대한 로드 이벤트입니다. 이 이벤트는 뷰어가_재생&#x200B;_단추를 클릭할 때 발생합니다. 이 이벤트는 프리롤 광고, 버퍼링, 오류 등이 있는 경우에도 계산됩니다.<br/>**중요:**설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.view)</li> <li> **하트비트:**<br/>(s:event:<br/>type=start)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>미디어 시작</li> <li> **컨텍스트 데이터:**<br/>(a.media.view)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.view)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작</li> <li> **최소. SDK 버전:** 임의</li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>미디어에 대한 로드 이벤트입니다. 이 이벤트는 뷰어가_재생&#x200B;_단추를 클릭할 때 발생합니다. 이 이벤트는 프리롤 광고, 버퍼링, 오류 등이 있는 경우에도 계산됩니다.<br/>**중요:**설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.view)</li> <li> **하트비트:**<br/>(s:event:<br/>type=start)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>미디어 시작</li> <li> **컨텍스트 데이터:**<br/>(a.media.view)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.view)</li> </ul> |
 
 ### 컨텐츠 시작
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>미디어의 첫 번째 프레임이 사용됩니다. 광고, 버퍼링 중에 사용자가 그만두면 &quot;컨텐츠 시작&quot; 이벤트가 일어나지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 시작</li> <li> **컨텍스트 데이터:**<br/>(a.media.play)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.play)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>미디어의 첫 번째 프레임이 사용됩니다. 광고, 버퍼링 중에 사용자가 그만두면 &quot;컨텐츠 시작&quot; 이벤트가 일어나지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 시작</li> <li> **컨텍스트 데이터:**<br/>(a.media.play)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.play)</li> </ul> |
 
 ### 컨텐츠 완료 {#content-complete}
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>완성을 위해 관찰된 스트림입니다. 이는 사용자가 반드시 전체 스트림을 보거나 청취했음을 의미하지는 않습니다. 앞으로 건너뛰었을 수도 있습니다. 사용자가 스트림의 끝인 100%에 도달했음을 의미할 뿐입니다.<br/>[세션 종료](quality-parameters.md#session-end)도 참조하십시오.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>(s:event:<br/>type=complete)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 완료</li> <li> **컨텍스트 데이터:**<br/>(a.media.complete)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.complete)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>완성을 위해 관찰된 스트림입니다. 이는 사용자가 반드시 전체 스트림을 보거나 청취했음을 의미하지는 않습니다. 앞으로 건너뛰었을 수도 있습니다. 사용자가 스트림의 끝인 100%에 도달했음을 의미할 뿐입니다.<br/>[세션 종료](quality-parameters.md#session-end)도 참조하십시오.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>(s:event:<br/>type=complete)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 완료</li> <li> **컨텍스트 데이터:**<br/>(a.media.complete)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.complete)</li> </ul> |
 
 ### 컨텐츠 체류 시간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>105</li> <li> **설명:**<br/>기본 컨텐츠에서 재생 유형의 모든 이벤트에 대한 이벤트 기간(초)을 합합니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 체류 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.timePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.timePlayed)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>105</li> <li> **설명:**<br/>기본 컨텐츠에서 재생 유형의 모든 이벤트에 대한 이벤트 기간(초)을 합합니다.  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 체류 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.timePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.timePlayed)</li> </ul> |
 
 ### 미디어 사용 시간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>120</li> <li> **설명:**<br/>기본 컨텐츠와 광고 컨텐츠에서 재생 유형의 모든 이벤트에 대한 이벤트 기간(초)을 합합니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>미디어 사용 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.totalTimePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.totalTimePlayed)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>120</li> <li> **설명:**<br/>기본 컨텐츠와 광고 컨텐츠에서 재생 유형의 모든 이벤트에 대한 이벤트 기간(초)을 합합니다.  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>미디어 사용 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.totalTimePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.totalTimePlayed)</li> </ul> |
 
 ### 재생된 고유 시간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>94</li> <li> **설명:**<br/>세션 중에 재생되는 컨텐츠의 고유한 세그먼트의 값(초)입니다. 시청자가 컨텐츠에서 동일한 세그먼트를 여러 번 본다는 다시 찾기 시나리오에서 재생되는 시간은 제외합니다.  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>사용자 지정</li> <li> **컨텍스트 데이터:**<br/>(a.media.uniqueTimePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.uniqueTimePlayed)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>94</li> <li> **설명:**<br/>세션 중에 재생되는 컨텐츠의 고유한 세그먼트의 값(초)입니다. 시청자가 컨텐츠에서 동일한 세그먼트를 여러 번 본다는 다시 찾기 시나리오에서 재생되는 시간은 제외합니다.  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>사용자 지정</li> <li> **컨텍스트 데이터:**<br/>(a.media.uniqueTimePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.uniqueTimePlayed)</li> </ul> |
 
 ### 10% 진행률 마커
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 길이에 따라 컨텐츠의 10% 마커를 전달합니다. 마커는 역방향을 찾으려는 경우에도 한 번만 계산됩니다. 정방향으로 찾는 경우 건너뛴 마커는 계산되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>10% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress10)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress10)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 길이에 따라 컨텐츠의 10% 마커를 전달합니다. 마커는 뒤로 검색하는 경우에도 한 번만 카운트됩니다. 앞으로 검색하는 경우 건너뛴 마커는 카운트되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>10% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress10)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress10)</li> </ul> |
 
 ### 25% 진행률 마커
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 25% 마커를 전달합니다. 마커는 역방향을 찾으려는 경우에도 한 번만 계산됩니다. 정방향으로 찾는 경우 건너뛴 마커는 계산되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>25% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress25)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress25)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 25% 마커를 전달합니다. 마커는 뒤로 검색하는 경우에도 한 번만 카운트됩니다. 앞으로 검색하는 경우 건너뛴 마커는 카운트되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>25% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress25)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress25)</li> </ul> |
 
 ### 50% 진행률 마커
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 50% 마커를 전달합니다. 마커는 역방향을 찾으려는 경우에도 한 번만 계산됩니다. 정방향으로 찾는 경우 건너뛴 마커는 계산되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>50% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress50)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress50)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 50% 마커를 전달합니다. 마커는 뒤로 검색하는 경우에도 한 번만 카운트됩니다. 앞으로 검색하는 경우 건너뛴 마커는 카운트되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>50% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress50)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress50)</li> </ul> |
 
 ### 75% 진행률 마커
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> **N/A** </li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 75% 마커를 전달합니다. 마커는 역방향을 찾으려는 경우에도 한 번만 계산됩니다. 정방향으로 찾는 경우 건너뛴 마커는 계산되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>75% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress75)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress75)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> **N/A** </li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 75% 마커를 전달합니다. 마커는 뒤로 검색하는 경우에도 한 번만 카운트됩니다. 앞으로 검색하는 경우 건너뛴 마커는 카운트되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>75% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress75)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress75)</li> </ul> |
 
 ### 95% 진행률 마커
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 95% 마커를 전달합니다. 마커는 역방향을 찾으려는 경우에도 한 번만 계산됩니다. 정방향으로 찾는 경우 건너뛴 마커는 계산되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>95% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress95)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress95)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>플레이헤드가 컨텐츠 길이에 따라 컨텐츠의 95% 마커를 전달합니다. 마커는 뒤로 검색하는 경우에도 한 번만 카운트됩니다. 앞으로 검색하는 경우 건너뛴 마커는 카운트되지 않습니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>95% 진행률 마커</li> <li> **컨텍스트 데이터:**<br/>(a.media.progress95)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.progress95)</li> </ul> |
 
 ### Average Minute Audience
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>1보다 크거나 같음</li> <li> **설명:**<br/>대상 평균 시간(분) 지표는 한 개의 특정 미디어 항목에 대해 모든 해당 재생 세션의 해당 미디어 길이로 나눈 총 컨텐츠 체류 시간으로 계산됩니다.<br/><br/> `average_minute_audience = timeSpent / videoLength;` </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>대상 평균 시간(분)</li> <li> **컨텍스트 데이터:**<br/>(a.media.averageMinuteAudience)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.averageMinuteAudience)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>1보다 크거나 같음</li> <li> **설명:**<br/>대상 평균 시간(분) 지표는 한 개의 특정 미디어 항목에 대해 모든 해당 재생 세션의 해당 미디어 길이로 나눈 총 컨텐츠 체류 시간으로 계산됩니다.<br/><br/> `average_minute_audience = timeSpent / videoLength;` </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>대상 평균 시간(분)</li> <li> **컨텍스트 데이터:**<br/>(a.media.averageMinuteAudience)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.averageMinuteAudience)</li> </ul> |
 
 ### 마지막 통화 이후 지난 시간(초)
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>600</li> <li> **설명:**<br/>마지막 호출 지표 이후의 시간은 전체 이벤트나 종료 이벤트로 스트림을 닫았다면 0이며, 시간 제한으로 인해 닫히면 보통 600입니다. 이 지표에는 솔루션 변수 및 자동 처리 규칙이 없으므로 저장할 사용자 지정 처리 규칙을 만들어야 합니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/>(a.media.secondsSinceLastCall)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.secondsSinceLastCall)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>600</li> <li> **설명:**<br/>마지막 호출 지표 이후의 초 수는 전체 이벤트나 종료 이벤트로 스트림을 닫았다면 0이며, 시간 제한으로 인해 닫았다면 보통 600입니다. 이 지표에는 솔루션 변수 및 자동 처리 규칙이 없으므로 저장할 사용자 지정 처리 규칙을 만들어야 합니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/>(a.media.secondsSinceLastCall)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.secondsSinceLastCall)</li> </ul> |
 
 ### 페더레이션된 데이터
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>부울</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>true</li> <li> **설명:**<br/>히트가 페더레이션되면 참으로 설정합니다(즉, 고객이 자체 구현이 아니라 페더레이션된 데이터 공유의 일부로 수신함).</li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/>(a.media.federated)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.federated)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>부울</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>true</li> <li> **설명:**<br/>히트가 페더레이션되면 참으로 설정합니다(즉, 고객이 자체 구현이 아니라 페더레이션된 데이터 공유의 일부로 수신함).</li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/>(a.media.federated)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.federated)</li> </ul> |
 
 ### 예상 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>1 - 19분 재생,<br/>2 - 31분 재생,<br/>3 - 78분 재생.</li> <li> **설명:**<br/>개별 컨텐츠마다 예상되는 비디오 또는 오디오 스트림 수입니다. 이 값은 재생 시간(컨텐츠 + 광고 수) 30분마다 증가합니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.<br/><br/>스트림은`ms_s`(또는 totalTimePlayed = Video Total Time)를 기반으로 하여 30분마다 계산되며,<br/>과 비슷합니다. `estimatedStreams = ` <br/>   `FLOOR(ms_s/1800) + 1` </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>사용자 지정</li> <li> **컨텍스트 데이터:**<br/>(a.media.estimatedStreams)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.estimatedStreams)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>1 - 19분 재생,<br/>2 - 31분 재생,<br/>3 - 78분 재생.</li> <li> **설명:**<br/>개별 컨텐츠마다 예상되는 비디오 또는 오디오 스트림 수입니다. 이 값은 재생 시간(컨텐츠 + 광고 수) 30분마다 증가합니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.<br/><br/>스트림은`ms_s`(또는 totalTimePlayed = Video Total Time)를 기반으로 하여 30분마다 계산되며,<br/>과 비슷합니다. `estimatedStreams = ` <br/>   `FLOOR(ms_s/1800) + 1` </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>사용자 지정</li> <li> **컨텍스트 데이터:**<br/>(a.media.estimatedStreams)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.estimatedStreams)</li> </ul> |
 
 ### 일시 중지된 영향을 받은 스트림
 
@@ -438,7 +438,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** Any </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>기본 컨텐츠 보기 횟수입니다. 본 프레임이 적어도 한 개 있는 경우 컨텐츠 세그먼트 보기가 카운트됩니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 세그먼트 보기 수</li> <li> **컨텍스트 데이터:**<br/>(a.media.segmentView)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.segmentView)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li> <li> **설명:**<br/>기본 컨텐츠 보기 횟수입니다. 본 프레임이 적어도 한 개 있는 경우 컨텐츠 세그먼트 보기가 카운트됩니다.<br/> **중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/A</li> <li> **하트비트:**<br/>N/A</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>컨텐츠 세그먼트 보기 수</li> <li> **컨텍스트 데이터:**<br/>(a.media.segmentView)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.segmentView)</li> </ul> |
 
 <!--
 ### Ad Count 
