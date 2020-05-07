@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 개요 {#overview}
 
-비디오 측정의 핵심 개념은 이정표 추적과 Media Analytics 추적에 대해 동일하며, 이러한 추적에서는 비디오 플레이어 이벤트를 가져와서 이를 분석 메서드에 매핑하고, 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. Media Analytics 솔루션은 이정표에서 발전된 것이므로 많은 메서드와 지표가 동일하지만 구성 접근 방식과 코드는 크게 변경되었습니다. 새로운 Media Analytics 메서드를 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. Media Analytics 구현에 대한 자세한 내용은 [SDK 개요](/help/sdk-implement/setup/setup-overview.md) 및 [추적 개요](/help/sdk-implement/track-av-playback/track-core-overview.md)를 참조하십시오.
+비디오 측정의 핵심 개념은 이정표 및 Media Analytics에도 동일하며, 이러한 추적에서는 비디오 플레이어 이벤트를 가져와서 이를 분석 메서드에 매핑하고, 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. Media Analytics 솔루션은 이정표에서 발전된 것이므로 많은 메서드와 지표가 동일하지만 구성 접근 방식과 코드는 크게 변경되었습니다. 새로운 Media Analytics 메서드를 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. Media Analytics 구현에 대한 자세한 내용은 [SDK 개요](/help/sdk-implement/setup/setup-overview.md) 및 [추적 개요](/help/sdk-implement/track-av-playback/track-core-overview.md)를 참조하십시오.
 
 다음 표는 이정표 솔루션과 Media Analytics 솔루션 간의 변환 내용을 제공합니다.
 
@@ -22,11 +22,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 이정표 지표 | 변수 유형 | Media Analytics 지표 |
 | --- | --- | --- |
-| 컨텐츠 | eVar<br/><br/>기본 만료: 방문 | 컨텐츠 |
-| 컨텐츠 유형 | eVar<br/><br/> 기본 만료: 페이지 보기 | 컨텐츠 유형 |
-| 컨텐츠 체류 시간 | 이벤트<br/><br/> 유형: 카운터 | 컨텐츠 체류 시간 |
-| 비디오 시작 | 이벤트<br/><br/> 유형: 카운터 | 비디오 시작 |
-| 비디오 완료 | 이벤트<br/><br/> 유형: 카운터 | 컨텐츠 완료 |
+| 컨텐츠 | eVar <br/><br/>기본 만료: 방문 | 컨텐츠 |
+| 컨텐츠 유형 | eVar <br/><br/>기본 만료: 페이지 보기 | 컨텐츠 유형 |
+| 컨텐츠 체류 시간 | 이벤트 <br/><br/>유형: 카운터 | 컨텐츠 체류 시간 |
+| 비디오 시작 | 이벤트 <br/><br/>유형: 카운터 | 비디오 시작 |
+| 비디오 완료 | 이벤트 <br/><br/>유형: 카운터 | 컨텐츠 완료 |
 
 ### 미디어 모듈 변수
 
