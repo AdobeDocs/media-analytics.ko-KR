@@ -3,7 +3,10 @@ title: 사용자 지정 링크 구현 안내서
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 86%
 
 ---
 
@@ -14,14 +17,14 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 대개 사용자 지정 비디오 링크 비디오 추적은 최소한의 비디오 측정이 필요한 플랫폼 및 장치에서 사용됩니다.
 
 * JavaScript에서: `s.tl()` 함수
-* 모바일 앱에서: [trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 모바일 앱에서: [trackAction() Android](https://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Data Insertion API에서: [linktype 태그](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 요구 사항
 
 * 비디오 플레이어 API 이벤트 및 데이터에 대한 액세스 권한
 * Analytics SDK를 사용하는 경우 스크립트를 추가하는 기능
-* Data Insertion API를 사용하는 경우 추적 비콘(사용자 지정 스크립팅 또는 하드코드)을 추가하는 기능
+* 데이터 삽입 API를 사용하는 경우 추적 비콘(사용자 지정 스크립팅 또는 하드코드)을 추가하는 기능
 
 ## 메타데이터
 
@@ -47,7 +50,7 @@ if (e.type == "ended") {
 ## 사용자 지정 링크를 사용하는 이유
 
 * 최소 전제 조건이 필요합니다.
-* NoScript를 비롯한 모든 플랫폼에서 작동합니다.
+* no-script를 비롯한 모든 플랫폼에서 작동합니다.
 * 체류 시간이나 사분위와 같은 모든 계산은 사용자 지정 스크립트에서 계산해야 합니다.
 * 숨겨진 라이브러리 또는 스크립트가 없어서 매우 간단합니다.
 * 비디오 데이터의 각 측면을 모두 제어할 수 있습니다.
