@@ -2,9 +2,12 @@
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
-sub-product: 미디어 분석
+sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 9c8bbfb848948d5798c92f7267fb42a2d08cc1d2
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 100%
 
 ---
 
@@ -12,31 +15,20 @@ source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 # Adobe Analytics for Audio and Video {#using}
 
 + [Adobe Analytics에서 오디오 및 비디오 측정](media-overview.md)
-+ [측정 선택 사항](measurement-options/measurement-options.md)
++ 측정 선택 사항 {#measurement-options}
    + 미디어 모듈 이정표 추적 {#mm-milestone-tracking}
       + [이정표 개요](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [이정표를 Media Analytics으로 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [이정표에서 사용자 지정 링크로의 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics의 사용자 지정 링크 {#cl-in-aa}
-      + [사용자 지정 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md) -->
-+ [지원되는 디바이스](measurement-options/supported-devices.md)
+      + [사용자 지정 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md)
 + 오디오 및 비디오 분석 소개 {#intro-to-ava}
    + [전제 조건](intro-to-ava/prereqs.md)
    + 구현 경로 {#implementation-paths}
       + [개요](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
       + [고객측](intro-to-ava/implementation-paths/client-side-path.md)
-      + [기타 구현 경로](PATH)
-      + 미디어 모듈 이정표 추적 {#mm-milestone-tracking}
-         + [이정표 개요](measurement-options/mm-milestone-tracking/milestone-overview.md)
-         + [미디어 추적](measurement-options/tracking-media-overview.md)
-         + [지원되는 디바이스](measurement-options/supported-devices.md)
-         + [이정표를 Media Analytics으로 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-         + [이정표에서 사용자 지정 링크로의 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
-      + Analytics의 사용자 지정 링크 {#cl-in-aa}
-         + [사용자 지정 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md)
-      + Primetime {#primetime}
-         + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+      + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
+      + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Audience Manager 지원](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
    + [SDK 다운로드](sdk-implement/download-sdks.md)
