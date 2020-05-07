@@ -2,8 +2,11 @@
 title: 1.x와 2.x 코드 비교
 description: 이 항목에서는 Media SDK 1.x 및 2.x 버전의 코드를 비교합니다.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 **1.x 및 2.x 샘플 플레이어에 대한 링크:**
 
 * [1.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [2.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 다음 섹션은 1.x와 2.x의 코드 비교, 초기화 설명, 코어 재생, 광고 재생, 챕터 재생 및 일부 추가 이벤트를 제공합니다.
 
