@@ -3,7 +3,10 @@ title: Android 설정
 description: Android에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 92%
 
 ---
 
@@ -12,20 +15,18 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->2020년 10월부터 Adobe는 버전 4 Mobile SDK 및 Android용 독립 실행형 Media Analytics SDK에 대한 지원을 종료합니다. 버전 4 SDK를 계속 다운로드하여 사용할 수 있지만 고객 지원 센터 지원 및 포럼 액세스 권한은 종료됩니다. Android용 Adobe Experience Platform(AEP) SDK로 마이그레이션해야 합니다. AEP Mobile SDK(이전의 v5)는 Adobe Experience Cloud 기능 및 기능을 독점적으로 지원합니다. 이 변경 사항에 대한 자세한 내용은 [버전 4 Mobile SDK 지원 종료 FAQ를 참조하십시오](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). 새로운 AEP Mobile SDK로 마이그레이션하는 것이 좋습니다.
-AEP Mobile SDK로 마이그레이션한 후 오디오 및 비디오용 Adobe Analytics를 활성화하려면 Analytics Launch 확장 및 미디어 분석 시작 익스텐션을 구현해야 합니다. 새로운 AEP Mobile SDK로 마이그레이션하는 방법에 대한 자세한 내용은 독립 [실행형 미디어 SDK에서 Adobe Launch로 마이그레이션을 참조하십시오 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ를 참조하십시오](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## 전제 조건
-
 
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://docs.adobe.com/content/help/ko-KR/mobile-services/android/overview.html)를 참조하십시오.
 
-* **미디어 플레이어에 다음 기능을 제공합니다.**
+* **미디어 플레이어에서 다음 기능 제공:**
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
-   * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
+   * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
 ## SDK 구현
 
@@ -38,23 +39,23 @@ AEP Mobile SDK로 마이그레이션한 후 오디오 및 비디오용 Adobe Ana
 
       **IntelliJ IDEA:**
 
-      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
-      1. 선택 **[!UICONTROL Open Module Settings]**.
-      1. 아래에서 **[!UICONTROL Project Settings]**&#x200B;을 선택합니다 **[!UICONTROL Libraries]**.
+      1. **[!UICONTROL 프로젝트 탐색]** 패널에서 프로젝트를 마우스 오른쪽 버튼으로 클릭합니다.
+      1. **[!UICONTROL 모듈 설정 열기]**&#x200B;를 선택합니다.
+      1. **[!UICONTROL 프로젝트 설정]**&#x200B;에서 **[!UICONTROL 라이브러리]**&#x200B;를 선택합니다.
 
-      1. Click **[!UICONTROL +]** to add a new library.
-      1. Select **[!UICONTROL Java]** and navigate to the `MediaSDK.jar` file.
+      1. 새 라이브러리를 **[!UICONTROL +]**&#x200B;를 클릭하여 추가합니다.
+      1. **[!UICONTROL Java]**&#x200B;를 선택하고 `MediaSDK.jar` 파일로 이동합니다.
 
       1. 모바일 라이브러리를 사용할 모듈을 선택합니다.
-      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
+      1. **[!UICONTROL 적용]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 모듈 설정 창을 닫습니다.
       **Eclipse:**
 
       1. Eclipse IDE에서 프로젝트 이름을 마우스 오른쪽 버튼으로 클릭합니다.
-      1. 클릭  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
-      1. 선택 `MediaSDK.jar`.
-      1. 클릭 **[!UICONTROL Open]**.
-      1. 프로젝트를 다시 마우스 오른쪽 버튼으로 클릭하고 **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** 을 클릭합니다.
-      1. 탭 **[!UICONTROL Order]** 을 **[!UICONTROL Export]** 클릭합니다.
+      1. **[!UICONTROL 빌드 경로]** > **[!UICONTROL 외부 아카이브 추가]**&#x200B;를 클릭합니다.
+      1. `MediaSDK.jar`을 선택합니다.
+      1. **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
+      1. 프로젝트를 다시 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 빌드 경로]** > **[!UICONTROL 빌드 경로 구성]**&#x200B;을 클릭합니다.
+      1. **[!UICONTROL 주문]** 및 **[!UICONTROL 내보내기]** 탭을 클릭합니다.
 
       1. `MediaSDK.jar` 파일을 선택했는지 확인합니다.
 
