@@ -3,7 +3,10 @@ title: SDK 다운로드
 description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 SDK 다운로드 링크입니다.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -12,17 +15,13 @@ source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 
 >[!IMPORTANT]
 >
->2020년 10월부터 Adobe는 버전 4 Mobile SDK 및 iOS 및 Android용 독립 실행형 Media Analytics SDK에 대한 지원을 종료할 예정입니다. 버전 4 SDK를 계속 다운로드하여 사용할 수 있지만 고객 지원 센터 지원 및 포럼 액세스 권한은 종료됩니다. iOS 또는 Android용 Adobe Experience Platform(AEP) SDK로 마이그레이션해야 합니다. AEP Mobile SDK(이전의 v5)는 Adobe Experience Cloud 기능 및 기능을 독점적으로 지원합니다. 이 변경 사항에 대한 자세한 내용은 [버전 4 Mobile SDK 지원 종료 FAQ를 참조하십시오](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). 새로운 AEP Mobile SDK로 마이그레이션하는 것이 좋습니다.
-AEP Mobile SDK로 마이그레이션한 후 오디오 및 비디오용 Adobe Analytics를 활성화하려면 Analytics Launch 확장 및 미디어 분석 시작 익스텐션을 구현해야 합니다. 새로운 AEP Mobile SDK로 마이그레이션하는 방법에 대한 자세한 내용은 독립 [실행형 미디어 SDK에서 Adobe Launch로 마이그레이션을 참조하십시오 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
-
-
+>2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원을 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ를 참조하십시오](/help/sdk-implement/end-of-support-faqs.md).
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
 
 | 2.x Media SDK  | 최신 Media SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
-| Android/FireTV | [Android v2.2.4용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/sdk-implement/setup/set-up-android.md) |
+| Android/FireTV | [Android용 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [iOS v2.2.7용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.7)(기존 2.0 SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [JS v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 설정](/help/sdk-implement/setup/set-up-js.md) |
 | Roku | [Roku v2.2.3용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [Roku 설정](/help/sdk-implement/setup/set-up-roku.md) |
@@ -38,9 +37,9 @@ AEP Mobile SDK로 마이그레이션한 후 오디오 및 비디오용 Adobe Ana
 
 | 1.x SDK  |  Media SDK 다운로드  |  시작 안내서  |
 | --- | --- | --- |
-| Android | [Android v1.5.8용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [시작하기 - Android용 Media 1.x](setup/vhl-dev-guide-v15_android.pdf) |
-| iOS | [iOS v1.5.9용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [시작하기 - iOS용 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [JavaScript v1.5.7용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [시작하기 - JS용 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
-| TVML | [TVML v1.0.0용 SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [시작하기 - TVML용 Media 1.x](setup/vhl_tvml.pdf) |
+| Android | [Android용 SDK v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [시작하기 - Android용 Media 1.x](setup/vhl-dev-guide-v15_android.pdf) |
+| iOS | [iOS용 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [시작하기 - iOS용 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [JavaScript용 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [시작하기 - JS용 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
+| TVML | [TVML용 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [시작하기 - TVML용 Media 1.x](setup/vhl_tvml.pdf) |
 | Apple TV | Apple TV v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Apple TV용 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | Chromecast v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Chromecast용 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
