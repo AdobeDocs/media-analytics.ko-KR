@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 841e02e5f4fdd6eebd6eac0c1d42997db49b071e
+source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 98%
       + [JavaScript 설정](sdk-implement/setup/set-up-js.md)
       + [Chromecast 설정](sdk-implement/setup/set-up-chromecast.md)
       + [Roku 설정](sdk-implement/setup/set-up-roku.md)
-   + 오디오 및 비디오 재생 추적 {#track-av-playback}
+   + Track Audio and Video Playback {#track-av-playback}
       + [개요](sdk-implement/track-av-playback/track-core-overview.md)
       + 코어 오디오 및 비디오 재생 추적 {#track-core}
          + [Android에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -61,7 +61,7 @@ ht-degree: 98%
          + [JavaScript에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Chromecast에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 표준 메타데이터 구현 {#impl-std-metadata}
+      + Implement Standard Metadata {#impl-std-metadata}
          + [Android에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 메타데이터 키](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -77,7 +77,7 @@ ht-degree: 98%
       + [JavaScript에서 광고 추적](sdk-implement/track-ads/track-ads-js.md)
       + [Chromecast에서 광고 추적](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Roku에서 광고 추적](sdk-implement/track-ads/track-ads-roku.md)
-      + 표준 광고 메타데이터 구현 {#impl-std-ad-metadata}
+      + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [Android에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + [JavaScript에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
