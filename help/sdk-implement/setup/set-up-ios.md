@@ -3,7 +3,10 @@ title: iOS 설정
 description: iOS에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 93%
 
 ---
 
@@ -12,9 +15,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->2020년 10월부터 Adobe는 버전 4 Mobile SDK 및 iOS용 독립 실행형 Media Analytics SDK에 대한 지원을 종료합니다. 버전 4 SDK를 계속 다운로드하여 사용할 수 있지만 고객 지원 센터 지원 및 포럼 액세스 권한은 종료됩니다. iOS용 Adobe Experience Platform(AEP) SDK로 마이그레이션해야 합니다. AEP Mobile SDK(이전의 v5)는 Adobe Experience Cloud 기능 및 기능을 독점적으로 지원합니다. 이 변경 사항에 대한 자세한 내용은 [버전 4 Mobile SDK 지원 종료 FAQ를 참조하십시오](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). 새로운 AEP Mobile SDK로 마이그레이션하는 것이 좋습니다.
-AEP Mobile SDK로 마이그레이션한 후 오디오 및 비디오용 Adobe Analytics를 활성화하려면 Analytics Launch 확장 및 미디어 분석 시작 익스텐션을 구현해야 합니다. 새로운 AEP Mobile SDK로 마이그레이션하는 방법에 대한 자세한 내용은 독립 [실행형 미디어 SDK에서 Adobe Launch로 마이그레이션을 참조하십시오 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
+>2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ를 참조하십시오](/help/sdk-implement/end-of-support-faqs.md).
 
 ## 전제 조건
 
@@ -25,12 +26,12 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
    >[!IMPORTANT]
    >
-   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 산업 표준 프로토콜과 암호만 사용하는지 확인하여 네트워크 보안을 향상시키기 위한 것입니다. 이 기능은 기본적으로 활성화되어 있지만, ATS 작업에 대한 선택 사항을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
+   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
 
-* **미디어 플레이어에 다음 기능을 제공합니다.**
+* **미디어 플레이어에서 다음 기능 제공:**
 
    * _플레이어 이벤트에 가입할 API_ - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
-   * _플레이어 정보를 제공하는 API_ - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
+   * _플레이어 정보를 제공하는 API_ - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
 ## SDK 구현
 
@@ -46,19 +47,19 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
       * `MediaSDK_TV.a`: 새 Apple TV 장치(arm64)와 시뮬레이터(x86_64)의 라이브러리 빌드가 포함된 비트코드 사용 패트 바이너리입니다.
 
-         타겟이 Apple TV(tvOS) 앱용인 경우 이 바이너리를 연결해야 합니다.
+         Apple TV(tvOS) 앱이 타겟인 경우 이 바이너리를 연결해야 합니다.
    1. 라이브러리를 프로젝트에 추가합니다:
 
       1. Xcode IDE를 실행하고 앱을 엽니다.
-      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
+      1. **[!UICONTROL 프로젝트 탐색기]**&#x200B;에서 `libs` 디렉토리를 드래그하여 프로젝트 아래에 놓습니다.
 
-      1. 확인란을 **[!UICONTROL Copy Items if Needed]** 선택하고, 확인란을 **[!UICONTROL Create Groups]** 선택하고, 확인란을 선택하지 않았는지 **[!UICONTROL Add to Target]** 확인합니다.
+      1. **[!UICONTROL 필요한 경우 항목 복사]** 확인란과 **[!UICONTROL 그룹 만들기]**&#x200B;를 선택해야 하고 타겟에 추가&#x200B;**[!UICONTROL 의 확인란은 아무것도 선택하면 안 됩니다.]**
 
          ![](assets/choose-options_ios.png)
 
-      1. 클릭 **[!UICONTROL Finish]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
-      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
+      1. **[!UICONTROL 마침을 클릭합니다]**.
+      1. 앱을 **[!UICONTROL 프로젝트 탐색기]**&#x200B;에서 선택하고 타겟을 선택합니다.
+      1. **[!UICONTROL 일반]** 탭의 **[!UICONTROL 연결된 프레임워크]** 및 **[!UICONTROL 라이브러리]** 섹션에서 필요한 프레임워크 및 라이브러리를 연결합니다.
 
          **iOS 앱 타겟:**
 
@@ -148,13 +149,13 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
 ## tvOS용 기본 앱 구성
 
-새 Apple TV 릴리스에서 이제 기본 tvOS 환경에서 실행할 애플리케이션을 만들 수 있습니다. iOS에서 사용할 수 있는 여러 프레임워크를 사용하여 기본 앱을 생성하거나, XML 템플릿 및 JavaScript를 사용하여 앱을 만들 수 있습니다. MediaSDK 버전 2.0부터 tvOS에 대한 지원을 이용할 수 있습니다. tvOS에 대한 자세한 내용은 [tvOS 개발자 사이트](https://developer.apple.com/tvos/)를 참조하십시오.
+이제 새로운 Apple TV 릴리스로 기본 tvOS 환경에서 실행할 애플리케이션을 만들 수 있습니다. iOS에서 사용 가능한 여러 프레임워크를 사용하여 완전히 기본적인 앱을 만들거나 XML 템플릿 및 JavaScript를 사용하여 앱을 만들 수 있습니다. MediaSDK 버전 2.0부터 tvOS에 대한 지원을 이용할 수 있습니다. tvOS에 대한 자세한 내용은 [tvOS 개발자 사이트](https://developer.apple.com/tvos/)를 참조하십시오.
 
-Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 tvOS를 타깃팅하는 Apple TV 앱 타겟이 프로젝트에 있다고 가정하여 작성되었습니다.
+Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 프로젝트에 tvOS를 타깃팅하는 Apple TV 앱이 있다고 가정하고 작성되었습니다.
 
 1. 프로젝트의 `lib` 폴더로 `VideoHeartbeat_TV.a` 라이브러리 파일을 드래그합니다.
 
-1. tvOS 앱 대상 **[!UICONTROL Build Phases]** 탭에서 **[!UICONTROL Link Binary with Libraries]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
+1. tvOS 앱 대상의 **[!UICONTROL 빌드 단계]** 탭에서 **[!UICONTROL 라이브러리로 이진 링크]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
