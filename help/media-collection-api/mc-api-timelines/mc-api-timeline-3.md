@@ -2,8 +2,11 @@
 title: 타임라인 3 - 챕터
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+translation-type: tm+mt
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 100%
 
 ---
 
@@ -745,4 +748,3 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 >[!NOTE]
 >
 >**검색 이벤트가 없습니까?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 이동할 때 특정 플레이어에서 그러한 이벤트를 많이 생성하여 수백 명의 사용자가 백엔드 서비스의 네트워크 대역폭에 쉽게 병목 현상을 일으킬 수 있기 때문입니다. Adobe는 플레이헤드 위치가 아니라 장치 타임스탬프를 기반으로 하트비트 지속 시간을 계산하여 검색 이벤트에 대한 명시적 지원을 해결합니다.
-
