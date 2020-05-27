@@ -2,8 +2,11 @@
 title: 옵트아웃 및 개인 정보
 description: 옵트인, 옵트아웃 및 개인 정보 보호를 처리하는 방법입니다.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '360'
+ht-degree: 100%
 
 ---
 
@@ -81,13 +84,13 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 >
 >모든 ID를 검색하는 메서드는 SDK에 의해 인식되고 지속되는 모든 사용자 ID를 가져옵니다. 사용자가 옵트아웃하기 **전에** 이 메서드를 호출해야 합니다.
 
-로컬로 저장된 ID는 다음을 포함할 수 있는 JSON 문자열로 반환됩니다.
+로컬에 저장된 ID는 다음 정보를 포함할 수도 있는 JSON 문자열로 반환됩니다.
 
 * 회사 컨텍스트 - IMS 조직 ID
 * 사용자 ID
 * Experience Cloud ID(MCID)
 * 데이터 소스 ID(DPID, DPUUID)
-* Analytics ID(AVID, AID, VID 및 연관된 RSID)
+* Analytics ID(AVID, AID, VID 및 관련 RSID)
 * Audience Manager ID(UUID)
 
 예:
