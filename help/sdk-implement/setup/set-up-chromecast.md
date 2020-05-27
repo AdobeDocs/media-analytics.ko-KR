@@ -2,8 +2,11 @@
 title: Chromecast 설정
 description: Chromecast에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+workflow-type: ht
+source-wordcount: '630'
+ht-degree: 100%
 
 ---
 
@@ -22,9 +25,9 @@ _Chromecast JavaScript SDK를 사용해야 합니까, 아니면 표준 JavaScrip
 
 * **하트비트에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 Media Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
-* **미디어 플레이어에 다음 기능을 제공합니다.**
+* **미디어 플레이어에서 다음 기능 제공:**
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
-   * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 플레이헤드 위치와 같은 세부 사항이 포함되어 있습니다.
+   * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
 Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://docs.adobe.com/content/help/ko-KR/mobile-services/using/home.html)에서 알아보십시오.
 
@@ -104,7 +107,7 @@ Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 �
 
 1. Experience Cloud 방문자 ID를 구성합니다.
 
-   Experience Cloud 방문자 ID 서비스는 Experience Cloud 솔루션 전반에 유니버설 방문자 ID를 제공합니다. 방문자 ID 서비스는 비디오 하트비트 및 다른 Marketing Cloud 통합에 필요합니다.
+   Experience Cloud 방문자 ID 서비스는 Experience Cloud 솔루션에 관계없이 유니버설 방문자 ID를 제공합니다. 방문자 ID 서비스는 비디오 하트비트 및 기타 Marketing Cloud 통합에 필요합니다.
 
    `ADBMobileConfig` 구성에 `marketingCloud` 조직 ID가 포함되어 있는지 확인합니다.
 
