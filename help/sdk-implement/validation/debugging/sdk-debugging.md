@@ -2,8 +2,11 @@
 title: SDK 디버깅
 description: 이 항목에서는 Media SDK에서 사용할 수 있는 추적/로그에 대해 설명합니다.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
@@ -86,14 +89,14 @@ Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **timestamp**: 현재 CPU 시간(GMT에 대한 시간대)
-* **level**: 다음 4개의 메시지 수준이 정의되어 있습니다.
-   * INFO – 일반적으로 애플리케이션의 입력 데이터임(플레이어 이름, 비디오 ID 등 확인)
-   * DEBUG – 개발자가 훨씬 복잡한 문제를 디버그하는 데 사용하는 디버그 로그
-   * WARN – 잠재적인 통합/구성 오류 또는 하트비트 SDK 버그를 나타냄
-   * ERROR – 중요한 통합 오류 또는 하트비트 SDK 버그를 나타냄
-* **tag**: 로그 메시지를 표시한 하위 구성 요소의 이름(일반적으로 클래스 이름)
-* **message**: 실제 추적 메시지
+* **timestamp:** 현재 CPU 시간(GMT 시간대)입니다.
+* **level:** 4개의 메시지 수준이 정의되어 있습니다.
+   * 정보 - 일반적으로 애플리케이션의 입력 데이터(플레이어 이름, 비디오 ID 등의 유효성을 검사합니다.)
+   * 디버그 - 개발자가 더 복잡한 문제를 디버깅하는 데 사용하는 디버그 로그
+   * 경고 - 잠재적인 통합/구성 오류나 하트비트 SDK 버그를 나타냅니다.
+   * 오류 - 중요한 통합 오류나 하트비트 SDK 버그를 나타냅니다.
+* **태그:** 로그 메시지를 발행한 하위 구성 요소의 이름(일반적으로 클래스 이름)
+* **메시지:** 실제 추적 메시지
 
 Media SDK 라이브러리의 로그 출력을 사용하여 구현을 확인할 수 있습니다. 유용한 전략은 로그에서 `#track` 문자열을 검색하는 것입니다. 이 경우 애플리케이션의 모든 `track*()` 호출이 강조 표시됩니다.
 
