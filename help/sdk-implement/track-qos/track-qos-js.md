@@ -1,14 +1,17 @@
 ---
-title: JavaScript에서 체감 품질 추적
-description: 이 항목에서는 브라우저 앱(JS)에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 설명합니다.
+title: JavaScript 2.x를 사용하여 경험 품질 추적
+description: 이 항목에서는 JavaScript 2.x를 사용하는 브라우저 앱에서 미디어 SDK를 사용하여 QoE, QoS(체감 품질) 추적을 구현하는 방법을 설명합니다.
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b165c9d133637fd0f1c529a98a936f8f31b72465
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 84%
 
 ---
 
 
-# JavaScript에서 체감 품질 추적{#track-quality-of-experience-on-javascript}
+# JavaScript 2.x를 사용하여 경험 품질 추적{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -39,14 +42,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var qosObject = MediaHeartbeat.createQoSObject(<bitrate>,  
                                                   <startuptime>,  
                                                   <fps>,  
-                                                  <droppedFrames>); 
+                                                  <droppedFrames>);
    ```
 
 1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다:
 
    ```js
-   _onBitrateChange = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+   _onBitrateChange = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
    };
    ```
 
@@ -60,4 +63,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. 미디어 플레이어 오류로 인해 재생이 계속되지 않는 경우 `trackError()` 호출 후 `trackSessionEnd()`를 호출하여 미디어 추적 세션이 종료되었는지 확인하십시오.
-
