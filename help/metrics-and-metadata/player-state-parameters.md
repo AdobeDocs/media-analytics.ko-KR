@@ -3,10 +3,10 @@ title: 플레이어 상태 매개 변수
 description: 이 항목에서는 플레이어 상태 추적 매개 변수에 대해 설명합니다.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 3c24b69265287084393be830193da14ae85cc5ba
+source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 28%
+source-wordcount: '2167'
+ht-degree: 29%
 
 ---
 
@@ -38,98 +38,75 @@ ht-degree: 28%
 >보고/예약 변수 아래에 &quot;분류&quot;로 설명되어 있는 변수의 분류 이름을 변경하지 마십시오.\
 >미디어 분류는 보고서 세트가 미디어 추적에 사용될 때 정의됩니다. Adobe는 수시로 새 속성을 추가하며, 이 경우 고객이 보고서 세트를 다시 활성화하여 새로운 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 중에 Adobe는 변수의 이름을 확인하여 분류를 사용할지 여부를 결정합니다. 누락된 항목이 있을 경우 Adobe가 다시 추가합니다.
 
-
-
 ## 플레이어 상태 속성 {#player-state-properties}
 
-플레이어 상태 추적 속성 테이블은 다음 5개 섹션으로 구성됩니다.
-
-* 전체 화면
-   * 전체 화면으로 영향을 받는 스트림
-   * 전체 화면 수
-   * 전체 화면 총 지속 시간
-* 캡션 닫기
-   * 자막 영향을 받는 스트림
-   * 자막 수
-   * 자막 총 지속 시간
-* 음소거
-   * 음소거 영향을 받은 스트림
-   * 음소거 카운트
-   * 총 음소거 기간
-* 사진 속 사진
-   * 그림의 영향을 받는 스트림
-   * 사진 수
-   * 그림 합계 기간
-* 초점
-   * 초점이 영향을 받는 스트림
-   * 초점 카운트
-   * 초점 총 기간
+플레이어 상태 추적 기능을 오디오 또는 비디오 스트림에 연결할 수 있습니다. 표준화된 플레이어 상태 추적 지표는 솔루션 변수로 저장됩니다. 표준 상태는 다음과 같습니다. fullScreen, 음소거, closeCaption, pictureInPicture 및 inFocus.
 
 ### 전체 화면 속성
 
-#### 전체 화면으로 영향을 받는 스트림
+#### 전체 화면 영향을 받는 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>전체 화면으로 인해 영향을 받는 스트림 수입니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>전체 화면으로 인해 영향을 받는 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.fullscreen.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostatefullscreen</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.fullscreen.set)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>전체 화면으로 인해 영향을 받는 스트림 수입니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>전체 화면으로 인해 영향을 받는 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.fullscreen.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.fullscreen</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.fullscreen.set)</li> </ul> |
 
-#### 전체 화면 수
-
-|   구현   | 네트워크 매개 변수 | 보고 |
-| --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>전체 화면이 표시된 횟수입니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostumfullscreencount)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>전체 화면 수</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostumfullscreencount)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostfullscreencount</li> <li> **Audience Manager **<br/>(c_contextdata.videstatefullscreencount)</li> </ul> |
-
-
-
-#### 전체 화면 총 지속 시간
+#### 전체 화면 카운트
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>전체 화면이 표시되는 시간입니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostumfullscreen)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>전체 화면 기간</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostfullscreen)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostfullscreen</li> <li> **Audience Manager **<br/>(c_contextdata.videostfullscreen)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>전체 화면이 표시된 횟수입니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 개수는 비디오가 전체 화면 상태에 있는 횟수와 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.count)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>전체 화면 수</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.fullscreen.count)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.fullscreen.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.fullscreen.count)</li> </ul> |
+
+
+
+#### 전체 화면 총 기간
+
+|   구현   | 네트워크 매개 변수 | 보고 |
+| --- | --- | --- |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>전체 화면이 표시되는 시간입니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 시간은 비디오가 전체 화면 상태에 있는 시간과 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.time)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>전체 화면 총 기간</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.fullscreen.time)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.fullscreen.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.fullscreen.time)</li> </ul> |
 
 
 ### 캡션 속성 닫기
 
-#### 자막 영향을 받는 스트림
+#### 자막의 영향을 받는 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>자막 영향을 받는 스트림의 수입니다. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **자막에&#x200B;**<br/>의해 영향을 받는 보고서 이름 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.closedcaptioning.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostlisedcaptioning</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.closedcaptioning.set)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>자막 영향을 받는 스트림의 수입니다. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **자막에&#x200B;**<br/>의해 영향을 받는 보고서 이름 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.closedcaptioning.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.closedcaptioning</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.closedcaptioning.set)</li> </ul> |
 
 
-#### 자막 수
-
-|   구현   | 네트워크 매개 변수 | 보고 |
-| --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>자막을 선택한 횟수입니다. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatelosedcaptioningcount)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>자막 수</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videstatelosedcaptioncount)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostlosedcaptioncount</li> <li> **Audience Manager **<br/>(c_contextdata.videstatelosedcaptioningcount)</li> </ul> |
-
-
-#### 자막 총 지속 시간
+#### 자막 카운트
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>자막 기간이 선택되었습니다. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatelosedcaptioningtime)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>자막 기간</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videstatelosedcaptiontime)<br/> </li> <li> **데이터 피드&#x200B;**<br/>비디오시작캡션</li> <li> **Audience Manager **<br/>(c_contextdata.videstatelosedcaptioningtime)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>자막이 표시된 횟수입니다. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 개수는 비디오가 [자막] 상태에 있는 횟수와 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(C19)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>자막 수</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.closedcaptioning.count)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.closedcaptioning.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.closedcaptioning.count)</li> </ul> |
+
+
+#### 자막 총 기간
+
+|   구현   | 네트워크 매개 변수 | 보고 |
+| --- | --- | --- |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>클로즈드 캡션 길이가 표시됩니다. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 시간은 비디오가 자막 상태에서 있었던 시간과 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>자막 총 기간</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.closedcaptioning.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.closedcaptioning.time)</li> </ul> |
 
 
 ### 속성 음소거
 
-#### 음소거 영향을 받은 스트림
+#### 음소거의 영향을 받는 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>음소거 영향을 받는 스트림 수입니다. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>음소거 영향을 받은 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.mute.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>비디오 구문</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.mute.set)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>음소거 영향을 받는 스트림 수입니다. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>음소거 영향을 받은 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.mute.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.m소거</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.mute.set)</li> </ul> |
 
 #### 음소거 카운트
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>음소거를 선택한 횟수입니다. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatemutcount)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>음소거 수</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostatemutcount)<br/> </li> <li> **데이터 피드&#x200B;**<br/>비디오 상태</li> <li> **Audience Manager **<br/>(c_contextdata.videostatemutcount)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>음소거를 표시한 횟수입니다. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 개수는 비디오가 음소거 상태인 횟수와 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.count)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>음소거 수</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.mute.count)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.mute.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.mute.count)</li> </ul> |
 
-#### 총 음소거 기간
+#### 음소거 총 기간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>음소거를 선택한 시간입니다. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatetime)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>음소거 기간</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostatetime)<br/> </li> <li> **데이터 피드&#x200B;**<br/>비디오 상태 시간</li> <li> **Audience Manager **<br/>(c_contextdata.videostatetime)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>음소거 시간이 표시됩니다. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 시간은 비디오가 음소거 상태인 시간과 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.time)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **보고서 이름&#x200B;**<br/>음소거 총 기간</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.mute.time)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.mute.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.mute.time)</li> </ul> |
 
 
 ### 사진 속성의 그림
@@ -139,50 +116,49 @@ ht-degree: 28%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>그림 중 그림에서 영향을 받는 스트림의 수입니다. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **사진에서 사진이 영향을 받는 보고서 이름&#x200B;**<br/>스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostacepictureinpicture</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.pictureinpicture.set)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>그림 중 그림에서 영향을 받는 스트림의 수입니다. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **사진에서 사진이 영향을 받는 보고서 이름&#x200B;**<br/>스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.pictureinpicture</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.pictureinpicture.set)</li> </ul> |
 
 
 #### 사진 수
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>그림 내 그림이 표시된 횟수입니다. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostacepicturepresentation)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **사진 수의 보고서 이름&#x200B;**<br/>그림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videstacepicturepresentation)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostacepicturepresentation</li> <li> **Audience Manager **<br/>(c_contextdata.videostacepicturepresentation)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>그림 내 그림이 표시된 횟수입니다. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 개수는 비디오가 사진의 그림 상태에 있는 횟수와 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.count)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **사진 수의 보고서 이름&#x200B;**<br/>그림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.pictureinpicture.count)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.pictureinpicture.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.pictureinpicture.count)</li> </ul> |
 
 
 #### 그림 합계 기간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>그림 내 시간 사진이 표시되었습니다. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostacepicturetime)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **그림 기간의 보고서 이름&#x200B;**<br/>그림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostacepicturetime)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostacepicturetime</li> <li> **Audience Manager **<br/>(c_contextdata.videostacepicturetime)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>그림 내 시간 사진이 표시되었습니다. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 이 시간은 비디오가 사진의 그림 상태에 있는 시간과 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다..   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.time)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **사진&#x200B;**<br/>합계 기간의 보고서 이름 그림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.pictureinpicture.time)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.pictureinpicture.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.pictureinpicture.time)</li> </ul> |
 
 
 ### 초점 속성
 
-#### 초점이 영향을 받는 스트림
+#### 초점의 영향을 받는 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>초점에 의해 영향을 받는 스트림 수입니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **초점이&#x200B;**<br/>영향을 받는 보고서 이름 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.infocus.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostateinfocus</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.infocus.set)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>초점에 의해 영향을 받는 스트림 수입니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **초점이&#x200B;**<br/>영향을 받는 보고서 이름 스트림</li> <li> **컨텍스트 데이터&#x200B;**<br/>(a.media.states.infocus.set)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.infocus</li> <li> **Audience Manager **<br/>(c_contextdata.a.media.states.infocus.set)</li> </ul> |
 
 
 #### 초점 카운트
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>포커스(In Focus)가 표시된 횟수입니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateinfocuscount)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **포커스&#x200B;**<br/>카운트의 보고서 이름</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostateinfocuscount)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostateinfocuscount</li> <li> **Audience Manager **<br/>(c_contextdata.videstateinfocuscount)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>포커스(In Focus)가 표시된 횟수입니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요&#x200B;**<br/>이 이벤트가 설정되면 개수는 비디오가 초점 중 상태에 있는 횟수와 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.count)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **포커스&#x200B;**<br/>카운트의 보고서 이름</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.infocus.count)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.infocus.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.infocus.count)</li> </ul> |
 
 
 #### 초점 총 기간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>초점 중의 시간이 표시됩니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요** 이 이벤트가 설정되면 가능한 값만 TRUE입니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateinfocustime)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **포커스&#x200B;**<br/>기간의 보고서 이름</li> <li> **컨텍스트 데이터&#x200B;**<br/>(videostateinfocustime)<br/> </li> <li> **데이터 피드&#x200B;**<br/>videostateinfocustime</li> <li> **Audience Manager **<br/>(c_contextdata.videstateinfocustime)</li> </ul> |
+| <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>초점 중의 시간이 표시됩니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 시간은 비디오가 초점 상태에서 있었던 시간과 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **포커스&#x200B;**<br/>합계 기간의 보고서 이름</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.infocus.time)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.infocus.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.infocus.time)</li> </ul> |
 
 
 
 ## 관련 API {#related_apis_section}
 
-필요: 문서에 API 링크 추가:
-* Android - [createStateObject](https://need)
-* iOS - [createStateObjectWithName](https://need)
-* Javascript - [createStateObject](https://need)
+* Android - [createStateObject](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* iOS - [createStateObjectWithName](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* Javascript - [createStateObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)
