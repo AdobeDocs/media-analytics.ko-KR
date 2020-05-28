@@ -2,17 +2,15 @@
 title: 플레이어 상태 추적 예
 description: 이 항목에는 플레이어 상태 추적 기능의 예가 포함됩니다.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
 
 # 플레이어 상태 추적 예
-
-예제 추가
 
 
 ## 긴 일시 중지 예
