@@ -3,8 +3,11 @@ seo-title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션
 title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션
 seo-description: Media SDK에서 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
 description: Media SDK에서 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
-translation-type: ht
-source-git-commit: ccc23ad0fc7073159431c50b8a8235b692803236
+translation-type: tm+mt
+source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 100%
 
 ---
 
@@ -26,4 +29,3 @@ Launch 고객은 앱 스토어 환경에서 확장을 사용할 수 있으므로
 * [Android](/help/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 * [iOS](/help/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 * [JS](/help/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-
