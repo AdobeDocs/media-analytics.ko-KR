@@ -1,14 +1,17 @@
 ---
-title: JavaScript에서 광고 추적
+title: JavaScript 2.x를 사용하여 광고 추적
 description: Media SDK를 사용하여 브라우저(JS) 애플리케이션에서 광고 추적을 구현합니다.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f5b3961e0525c26b682490a4376d244c2703ae24
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 97%
 
 ---
 
 
-# JavaScript에서 광고 추적{#track-ads-on-javascript}
+# JavaScript 2.x를 사용하여 광고 추적{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -78,11 +81,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    * **사용자 지정 광고 메타데이터 -**&#x200B;사용자 지정 메타데이터의 경우 사용자 지정 데이터 변수에 대한 변수 개체를 만들고, 현재 광고의 데이터로 채웁니다.
 
       ```js
-      /* Set custom context data */ 
-      var adCustomMetadata = { 
-          affiliate: "Sample affiliate", 
-          campaign: "Sample ad campaign", 
-          creative: "Sample creative" 
+      /* Set custom context data */
+      var adCustomMetadata = {
+          affiliate: "Sample affiliate",
+          campaign: "Sample ad campaign",
+          creative: "Sample creative"
       };
       ```
 
@@ -91,26 +94,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    사용자 지정 메타데이터 변수(또는 빈 개체)에 대한 참조를 이벤트 호출의 세 번째 매개 변수로 포함하십시오.
 
    ```js
-   _onAdStart = function() { 
+   _onAdStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart,  
                                        adObject,  
-                                       adCustomMetadata); 
+                                       adCustomMetadata);
    };
    ```
 
 1. 광고 재생이 광고 끝에 도달하면 `AdComplete` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 
    ```js
-   _onAdComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
+   _onAdComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
    };
    ```
 
 1. 사용자가 광고를 건너뛰도록 선택했기 때문에 광고 재생이 완료되지 않은 경우 `AdSkip` 이벤트를 추적합니다.
 
    ```js
-   _onAdSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
+   _onAdSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
    };
    ```
 
@@ -118,8 +121,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 광고 브레이크가 완료되면 `AdBreakComplete` 이벤트를 사용하여 추적합니다.
 
    ```js
-   _onAdBreakComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+   _onAdBreakComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
    };
    ```
 
