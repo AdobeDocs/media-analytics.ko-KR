@@ -3,10 +3,10 @@ title: SDK 다운로드
 description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 SDK 다운로드 링크입니다.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 90%
+source-wordcount: '493'
+ht-degree: 74%
 
 ---
 
@@ -17,21 +17,31 @@ ht-degree: 90%
 >
 >2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원을 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ를 참조하십시오](/help/sdk-implement/end-of-support-faqs.md).
 
+
+## 3.x Media SDK 다운로드 {#download-3x-sdks}
+
+| 3.x Media SDK  | 최신 Media SDK 다운로드 |  API   |  설명서  |
+| --- | --- | --- | --- |
+| JavaScript | [JS v3.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.0) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+
+
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
 
 | 2.x Media SDK  | 최신 Media SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
 | Android/FireTV | [Android용 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [iOS v2.2.7용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.7)(기존 2.0 SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/sdk-implement/setup/set-up-ios.md) |
-| JavaScript | [JS v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 설정](/help/sdk-implement/setup/set-up-js.md) |
+| JavaScript | [JS v2.2.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
 | Roku | [Roku v2.2.3용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [Roku 설정](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 확장 {#media-analytics-launch-extension}
 
-| MA Launch 구성 요소   | 다운로드 | 설명서 |
+| MA Launch 구성 요소   | 설명서 | 샘플 |
 |---|---|---|
-| **MA Launch 확장** | [샘플 HTML5 Player 확장 프로그램](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
+| **웹 확장** | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/ko-KR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Adobe Media Analytics for Audio 및 Video 확장](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **웹 확장(3.x SDK)** | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [오디오 및 비디오 익스텐션을 위한 Adobe Media Analytics(3.x SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **모바일 확장** | [Adobe Analytics - 오디오 및 비디오를 위한 미디어 분석](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - 오디오 및 비디오 확장을 위한 미디어 분석](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## 1.x Media SDK 다운로드 {#download-the-1.x-media-sDKs}
 
