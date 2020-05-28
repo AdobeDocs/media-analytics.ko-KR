@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
+source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 96%
+source-wordcount: '765'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
    + 구현 경로 {#implementation-paths}
       + [개요](intro-to-ava/implementation-paths/implementation-paths.md)
       + [고객측](intro-to-ava/implementation-paths/client-side-path.md)
-      + 기타 구현 경로 {#other-paths}
+      + Other Implementation Paths {#other-paths}
          + 미디어 모듈 이정표 추적 {#mm-milestone-tracking}
             + [이정표 개요](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [이정표를 Media Analytics으로 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
@@ -38,7 +38,9 @@ ht-degree: 96%
       + [개요](sdk-implement/setup/setup-overview.md)
       + [Android 설정](sdk-implement/setup/set-up-android.md)
       + [iOS 설정](sdk-implement/setup/set-up-ios.md)
-      + [JavaScript 설정](sdk-implement/setup/set-up-js.md)
+      + JavaScript 설정 {#setup-javascript}
+         + [JavaScript 2.x 설정](sdk-implement/setup/setup-javascript/set-up-js-2.md)
+         + [JavaScript 3.x 설정](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast 설정](sdk-implement/setup/set-up-chromecast.md)
       + [Roku 설정](sdk-implement/setup/set-up-roku.md)
    + Track Audio and Video Playback {#track-av-playback}
@@ -46,26 +48,30 @@ ht-degree: 96%
       + 코어 오디오 및 비디오 재생 추적 {#track-core}
          + [Android에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [iOS에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-         + [JavaScript에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [JavaScript 2.x에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [JavaScript 3.x에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-js3.md)
          + [Chromecast에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Roku에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + 버퍼링 추적 {#track-buffering}
          + [Android에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [iOS에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [JavaScript에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [JavaScript 2.x에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [JavaScript 3.x에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-js3.md)
          + [Chromecast에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
          + [Roku에서 버퍼링 추적](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + 찾기 추적 {#track-seeking}
          + [Android에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [iOS에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [JavaScript에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [JavaScript 2.x에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [JavaScript 3.x에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js3.md)
          + [Chromecast에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Implement Standard Metadata {#impl-std-metadata}
          + [Android에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 메타데이터 키](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + [JavaScript에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+         + [JavaScript 2.x에 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+         + [JavaScript 3.x에 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js3.md)
          + [Chromecast에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [표준 메타데이터 매개 변수 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Roku에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -74,33 +80,38 @@ ht-degree: 96%
       + [개요](sdk-implement/track-ads/track-ads-overview.md)
       + [Android에서 광고 추적](sdk-implement/track-ads/track-ads-android.md)
       + [iOS에서 광고 추적](sdk-implement/track-ads/track-ads-ios.md)
-      + [JavaScript에서 광고 추적](sdk-implement/track-ads/track-ads-js.md)
+      + [JavaScript 2.x에서 광고 추적](sdk-implement/track-ads/track-ads-js.md)
+      + [JavaScript 3.x에서 광고 추적](sdk-implement/track-ads/track-ads-js3.md)
       + [Chromecast에서 광고 추적](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Roku에서 광고 추적](sdk-implement/track-ads/track-ads-roku.md)
       + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [Android에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + [JavaScript에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+         + [JavaScript 2.x에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+         + [JavaScript 3.x에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js3.md)
          + [Roku에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 챕터 및 세그먼트 추적 {#track-chapters}
       + [개요](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Android에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-android.md)
       + [iOS에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [JavaScript에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js.md)
+      + [JavaScript 2.x에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js.md)
+      + [JavaScript 3.x에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js3.md)
       + [Chromecast에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Roku에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-roku.md)
    + 경험 추적 품질 {#track-qos}
       + [개요](sdk-implement/track-qos/track-qos-overview.md)
       + [Android에서 체감 품질 추적](sdk-implement/track-qos/track-qos-android.md)
       + [iOS에서 체감 품질 추적](sdk-implement/track-qos/track-qos-ios.md)
-      + [JavaScript에서 체감 품질 추적](sdk-implement/track-qos/track-qos-js.md)
+      + [JavaScript 2.x에서 경험 품질 추적](sdk-implement/track-qos/track-qos-js.md)
+      + [JavaScript 3.x에서 경험 품질 추적](sdk-implement/track-qos/track-qos-js3.md)
       + [Chromecast에서 체감 품질 추적](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Roku에서 체감 품질 추적](sdk-implement/track-qos/track-qos-roku.md)
    + 오류 추적 {#track-errors}
       + [개요](sdk-implement/track-errors/track-errors-overview.md)
       + [Android에서 오류 추적](sdk-implement/track-errors/track-errors-android.md)
       + [iOS에서 오류 추적](sdk-implement/track-errors/track-errors-ios.md)
-      + [JavaScript에서 오류 추적](sdk-implement/track-errors/track-errors-js.md)
+      + [JavaScript 2.x에서 오류 추적](sdk-implement/track-errors/track-errors-js.md)
+      + [JavaScript 3.x에서 오류 추적](sdk-implement/track-errors/track-errors-js3.md)
       + [Chromecast에서 오류 추적](sdk-implement/track-errors/track-errors-chromecast.md)
       + [Roku에서 오류 추적](sdk-implement/track-errors/track-errors-roku.md)
    + [옵트아웃 및 개인 정보](sdk-implement/opt-out-privacy.md)
@@ -181,6 +192,7 @@ ht-degree: 96%
    + [오디오 및 비디오 매개 변수](metrics-and-metadata/audio-video-parameters.md)
    + [광고 매개 변수](metrics-and-metadata/ad-parameters.md)
    + [챕터 매개 변수](metrics-and-metadata/chapter-parameters.md)
+   + [플레이어 상태 매개 변수](metrics-and-metadata/player-state-parameters.md)
    + [품질 매개 변수](metrics-and-metadata/quality-parameters.md)
    + [세그먼트](metrics-and-metadata/segments.md)
    + [계산된 지표](metrics-and-metadata/calculated-metrics.md)
@@ -195,5 +207,10 @@ ht-degree: 96%
       + [Concurrent Viewers JSON 보고서 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json.md)
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
++ 플레이어 상태 추적 {#player-state-tracking}
+   + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
+   + [표준 및 사용자 지정 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+   + [구현 및 보고](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [플레이어 상태 추적 예](sdk-implement/player-state-tracking/player-state-examples.md)
 + 추가 리소스 {#additional-resources}
    + [릴리스 노트](additional-resources/doc-updates.md)
