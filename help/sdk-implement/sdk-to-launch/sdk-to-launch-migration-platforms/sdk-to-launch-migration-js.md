@@ -2,10 +2,10 @@
 title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - 웹(JS)
 description: Media SDK에서 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
 translation-type: tm+mt
-source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 98%
 
 ---
 
@@ -113,7 +113,8 @@ Launch는 추적 인프라를 만드는 두 가지 방법을 제공합니다. �
 
 ### Media SDK
 
-* [JS 설정](/help/sdk-implement/setup/set-up-js.md)
+* [JavaScript 2.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
+* [JavaScript 3.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
