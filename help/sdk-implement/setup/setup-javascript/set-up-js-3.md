@@ -2,7 +2,7 @@
 title: JavaScript 3.x 설정
 description: JavaScript 3.x에서 구현을 위한 미디어 SDK 애플리케이션 설정
 translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
+source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 47%
@@ -49,11 +49,11 @@ ht-degree: 47%
 
    미디어 SDK 구성에는 구성된 인스턴스 `AppMeasurement` 가 `visitor` 필요합니다.
 
-```js
-var appMeasurement = new AppMeasurement(“<rsid>”);
-appMeasurement.visitor = visitor;
-appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
-```
+   ```js
+    var appMeasurement = new AppMeasurement(“<rsid>”);
+    appMeasurement.visitor = visitor;
+    appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+   ```
 
 1. 미디어 SDK 구성
 
@@ -62,7 +62,6 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    >[!IMPORTANT]
    >
    > 미디어 SDK(3.x)는 2.x SDK에서 사용되는 HB 종단점과 다른 미디어 추적을 위해 미디어 컬렉션 API를 사용합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
-
 
    다음은 샘플 `MediaConfig` 초기화입니다.
 
@@ -77,7 +76,8 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
     mediaConfig.ssl = true;
    
     ADB.Media.configure(mediaConfig, appMeasurement);
-   
+   ```
+
 1. `MediaTracker` 인스턴스를 생성합니다.
 
    미디어 SDK를 구성한 후 미디어 컨텐츠를 추적하기 위한 추적기 인스턴스를 `getInstance` API를 사용하여 만들 수 있습니다.
