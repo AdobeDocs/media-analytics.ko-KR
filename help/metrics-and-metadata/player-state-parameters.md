@@ -3,10 +3,10 @@ title: 플레이어 상태 매개 변수
 description: 이 항목에서는 플레이어 상태 추적 매개 변수에 대해 설명합니다.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 29%
+source-wordcount: '2236'
+ht-degree: 28%
 
 ---
 
@@ -155,7 +155,27 @@ ht-degree: 29%
 | --- | --- | --- |
 | <ul> <li> **SDK 키&#x200B;**<br/>자동 설정</li> <li> **API 키&#x200B;**<br/>해당 사항 없음</li> <li> **필수&#x200B;**<br/>아니오</li> <li> **문자&#x200B;**<br/>번호</li> <li> **미디어 닫기로&#x200B;**<br/>전송</li> <li> **최소. SDK Version **<br/>3.0</li> <li> **샘플 값&#x200B;**<br/>TRUE</li><li> **설명&#x200B;**<br/>초점 중의 시간이 표시됩니다. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **중요**<br/> 이 이벤트가 설정되면 시간은 비디오가 초점 상태에서 있었던 시간과 같습니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **하트비트&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **사용 가능&#x200B;**<br/>예</li> <li> **예약된 변수&#x200B;**<br/>이벤트</li> <li> **포커스&#x200B;**<br/>합계 기간의 보고서 이름</li> <li> **컨텍스트 데이터&#x200B;**<br/>(media.states.infocus.time)<br/> </li> <li> **데이터 피드&#x200B;**<br/>media.states.infocus.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.infocus.time)</li> </ul> |
 
+## XDM ID에 대한 속성 목록
 
+Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 고객 경로 분석과 함께 사용할 수 있습니다.
+
+| 플레이어 상태 속성 | 매핑 |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## 관련 API {#related_apis_section}
 
