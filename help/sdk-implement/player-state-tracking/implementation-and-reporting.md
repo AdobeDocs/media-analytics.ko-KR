@@ -2,9 +2,9 @@
 title: 구현 및 보고
 description: 이 항목에서는 다음을 포함한 플레이어 상태 추적 기능을 구현하는 방법에 대해 설명합니다.
 translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ Analytics 작업 공간에서 모든 새 속성은 지표 패널에 있습니다
 
 ## Adobe Experience Platform으로 플레이어 명시된 지표 가져오기
 
-Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 고객 경로 분석과 함께 사용할 수 있습니다. 표준 상태 속성에는 특정 속성이 있지만 사용자 지정 상태는 사용자 지정 이벤트를 통해 사용할 수 있습니다.
+Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 고객 경로 분석과 함께 사용할 수 있습니다. 표준 상태 속성에는 특정 속성이 있지만 사용자 지정 상태는 사용자 지정 이벤트를 사용하여 사용할 수 있습니다. 표준 상태 속성에 대한 자세한 내용은 *플레이어 상태 매개 변수* 페이지의 XDM ID에 대한 속성 목록 [섹션을](/help/metrics-and-metadata/player-state-parameters.md) 참조하십시오.
