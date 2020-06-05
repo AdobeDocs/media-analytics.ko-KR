@@ -4,7 +4,7 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
+source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 83%
@@ -193,7 +193,6 @@ ht-degree: 83%
       + [타임라인 1 - 컨텐츠 끝까지 보기](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + 요리책 {#media-analytics-cookbook}
    + [요리책](media-analytics-cookbook/media-analytics-cookbook.md)
    + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
@@ -215,6 +214,7 @@ ht-degree: 83%
       + [미디어 Concurrent Viewer](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Concurrent Viewers JSON 보고서 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json.md)
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
++ [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
