@@ -2,11 +2,11 @@
 title: 설정 개요
 description: 모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위한 Media SDK 설정에 대한 개요입니다.
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원을 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ를 참조하십시오](/help/sdk-implement/end-of-support-faqs.md).
+>2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ](/help/sdk-implement/end-of-support-faqs.md)를 참조하십시오.
 
 다음 지침은 2.x Media SDK에 적용됩니다. Media SDK의 1.x 버전을 구현하는 경우 [1.x Media SDK 설명서를 참조하십시오.](/help/sdk-implement/download-sdks.md) Primetime 통합 업체의 경우 아래 _Primetime Media SDK 설명서_&#x200B;를 참조하십시오.
 
@@ -148,8 +148,8 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
 
 | Video Analytics 1.x SDKs  |  개발자 안내서(PDF만 해당) |
 | --- | --- |
-| Android | ](vhl-dev-guide-v15_android.pdf)Android에 대한 구성 [ |
-| AppleTV | ](vhl-dev-guide-v1x_appletv.pdf)AppleTV에 대한 구성 [ |
+| Android | [Android에 대한 구성 ](vhl-dev-guide-v15_android.pdf) |
+| AppleTV | [AppleTV에 대한 구성](vhl-dev-guide-v1x_appletv.pdf)  |
 | Chromecast | [Chromecast에 대한 구성 ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS에 대한 구성 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript에 대한 구성 ](vhl-dev-guide-v15_js.pdf) |
