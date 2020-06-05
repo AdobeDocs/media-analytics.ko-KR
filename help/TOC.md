@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 79%
 # Adobe Analytics for Audio and Video {#using}
 
 + [Adobe Analytics에서 오디오 및 비디오 측정](media-overview.md)
-+ [지원되는 디바이스 및 플랫폼](measurement-options/supported-devices.md)
++ [지원되는 장치 및 플랫폼](measurement-options/supported-devices.md)
 + 오디오 및 비디오 분석 소개 {#intro-to-ava}
    + [전제 조건](intro-to-ava/prereqs.md)
    + 구현 경로 {#implementation-paths}
       + [개요](intro-to-ava/implementation-paths/implementation-paths.md)
       + [고객측](intro-to-ava/implementation-paths/client-side-path.md)
-      + Other Implementation Paths {#other-paths}
+      + 기타 구현 경로 {#other-paths}
          + 미디어 모듈 이정표 추적 {#mm-milestone-tracking}
             + [이정표 개요](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [이정표를 Media Analytics으로 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager 지원](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
-   + [미디어 분석 SDK 지원 종료 FAQ](sdk-implement/end-of-support-faqs.md)
+   + [Media Analytics SDK 지원 종료 FAQ](sdk-implement/end-of-support-faqs.md)
    + [SDK 다운로드](sdk-implement/download-sdks.md)
    + 설정 및 구성{#setup}을 참조하십시오 
       + [개요](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [JavaScript 3.x 설정](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast 설정](sdk-implement/setup/set-up-chromecast.md)
       + [Roku 설정](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + 오디오 및 비디오 재생 추적 {#track-av-playback}
       + [개요](sdk-implement/track-av-playback/track-core-overview.md)
       + 코어 오디오 및 비디오 재생 추적 {#track-core}
          + [Android에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [JavaScript 3.x에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Chromecast에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + 표준 메타데이터 구현 {#impl-std-metadata}
          + [Android에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 메타데이터 키](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [JavaScript 3.x에서 광고 추적](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Chromecast에서 광고 추적](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Roku에서 광고 추적](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + 표준 광고 메타데이터 구현 {#impl-std-ad-metadata}
          + [Android에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
