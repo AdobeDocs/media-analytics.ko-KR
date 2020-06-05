@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 58%
 
 ---
 
@@ -21,11 +21,11 @@ Media SDK에는 사용자 지정 상태 추적을 위한 두 가지 새로운 �
 `trackStateClose("state_name")`
 
 
-Media Collection API에는 필수 매개 변수로 두 개의 새로운 이벤트 `media.stateName` 가 포함되어 있습니다.
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` 및 `stateEnd`
 
-## 미디어 SDK 구현
+## Media SDK 구현
 
 플레이어 상태 시작
 
@@ -82,11 +82,11 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 상태 지표
 
-각 개별 상태에 대해 제공된 지표가 계산되고 컨텍스트 데이터 매개 변수로 Adobe Analytics에 푸시되어 보고용으로 저장됩니다. 각 주에 대해 세 개의 지표를 사용할 수 있습니다.
+각 개별 상태에 대해 제공된 지표가 계산되고 컨텍스트 데이터 매개 변수로 Adobe Analytics에 푸시되어 보고용으로 저장됩니다. 각 상태에 대해 세 개의 지표를 사용할 수 있습니다.
 
-* `a.media.states.[state.name].set = true` — 스트림의 각 특정 재생에 대해 상태가 최소 한 번 설정되면 true로 설정됩니다.
-* `a.media.states.[state.name].count = 4` — 스트림의 각 개별 재생 동안 상태 발생 횟수를 식별합니다
-* `a.media.states.[state.name].time = 240` — 스트림의 개별 재생당 총 상태 지속 시간(초)을 식별합니다
+* `a.media.states.[state.name].set = true` — 스트림의 각 특정 재생에 대해 상태가 최소 한 번 이상 설정되면 true로 설정합니다.
+* `a.media.states.[state.name].count = 4` — 스트림의 각 개별 재생 동안 상태 발생 횟수를 식별합니다.
+* `a.media.states.[state.name].time = 240` — 스트림의 각 개별 재생당 총 상태 지속 시간(초)을 식별합니다.
 
 ## 보고
 
@@ -98,6 +98,6 @@ Analytics 작업 공간에서 모든 새 속성은 지표 패널에 있습니다
 
 ![](assets/full-screen-report.png)
 
-## Adobe Experience Platform으로 플레이어 명시된 지표 가져오기
+## Adobe Experience Platform으로 플레이어에서 명시한 지표 가져오기
 
-Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 고객 경로 분석과 함께 사용할 수 있습니다. 표준 상태 속성에는 특정 속성이 있지만 사용자 지정 상태는 사용자 지정 이벤트를 사용하여 사용할 수 있습니다. 표준 상태 속성에 대한 자세한 내용은 *플레이어 상태 매개 변수* 페이지의 XDM ID에 대한 속성 목록 [섹션을](/help/metrics-and-metadata/player-state-parameters.md) 참조하십시오.
+Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 Customer Journey Analytics와 함께 사용할 수 있습니다. 표준 상태 속성에는 특정 속성이 있지만 사용자 지정 상태는 사용자 지정 이벤트를 사용하여 사용할 수 있습니다. 표준 상태 속성에 대한 자세한 내용은 *플레이어 상태 매개 변수* 페이지의 XDM ID에 대한 속성 목록 [섹션을](/help/metrics-and-metadata/player-state-parameters.md) 참조하십시오.
