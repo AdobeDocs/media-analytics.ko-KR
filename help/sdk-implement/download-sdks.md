@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 74%
+ht-degree: 81%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원을 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ를 참조하십시오](/help/sdk-implement/end-of-support-faqs.md).
+>2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ](/help/sdk-implement/end-of-support-faqs.md)를 참조하십시오.
 
 
 ## 3.x Media SDK 다운로드 {#download-3x-sdks}
