@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ## 긴 일시 중지 예
 
-비디오 세션에 30분 이상의 일시 중지 시간이 있으면 API에 새 세션이 필요합니다. 이 경우 클라이언트는 새 세션 ID를 생성해야 합니다. 두 비디오 세션의 경우 클라이언트는 플레이어가 속한 모든 상태를 유지하고 모든 정보를 호출 직후 `stateStart` 이벤트로 `sessionStart` 전송해야 합니다.
+비디오 세션에 30분 이상의 일시 중지 시간이 있으면 API에 새 세션이 필요합니다. 이 경우 클라이언트는 새 세션 ID를 생성해야 합니다. 두 비디오 세션의 경우 클라이언트는 플레이어가 속한 모든 상태를 유지하고 모든 정보를 호출 `stateStart`직후 이벤트`sessionStart`로 전송해야 합니다.
 
 `sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
 `
 
-이 `sessionEnd` 가 전송되면 새 비디오 세션을 시작해야 하며 첫 번째 API 이벤트는 다음과 같습니다.
+`sessionEnd`가 전송되면 새 비디오 세션을 시작해야 하며 첫 번째 API 이벤트는 다음과 같습니다.
 
 `sessionStart → stateStart (fullscreen) → stateStart (mute) → ... other API events`
 
