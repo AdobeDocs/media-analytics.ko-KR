@@ -2,11 +2,11 @@
 title: SDK 다운로드
 description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 SDK 다운로드 링크입니다.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 81%
 
 | MA Launch 구성 요소   | 설명서 | 샘플 |
 |---|---|---|
-| **웹 확장** | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/ko-KR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Adobe Media Analytics for Audio 및 Video 확장](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **웹 확장(3.x SDK)** | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [오디오 및 비디오 익스텐션을 위한 Adobe Media Analytics(3.x SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| **모바일 확장** | [Adobe Analytics - 오디오 및 비디오를 위한 미디어 분석](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - 오디오 및 비디오 확장을 위한 미디어 분석](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
+| **웹 확장 프로그램** | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/ko-KR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Adobe Media Analytics for Audio 및 Video 확장](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **웹 확장 프로그램(3.x SDK)** | [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/ko-KR/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [오디오 및 비디오 확장 프로그램용 Adobe Media Analytics(3.x SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **모바일 확장** | [Adobe Analytics - 오디오 및 비디오용 Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - 오디오 및 비디오 확장 프로그램용 Media Analytics](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## 1.x Media SDK 다운로드 {#download-the-1.x-media-sDKs}
 
