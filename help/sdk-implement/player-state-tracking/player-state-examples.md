@@ -1,9 +1,9 @@
 ---
 title: 플레이어 상태 추적 예
 description: 이 항목에는 플레이어 상태 추적 기능의 예가 포함됩니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
 ht-degree: 100%
 
