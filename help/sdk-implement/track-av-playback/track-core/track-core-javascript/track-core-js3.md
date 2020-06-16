@@ -1,11 +1,11 @@
 ---
-title: JavaScript v3.x를 사용하여 코어 재생 추적
-description: 이 항목에서는 JavaScript 3.x 앱을 사용하는 브라우저에서 미디어 SDK를 사용하여 핵심 추적을 구현하는 방법을 설명합니다.
-translation-type: tm+mt
+title: JavaScript 3.x를 사용하여 코어 재생 추적
+description: 이 항목에서는 JavaScript 3.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 설명합니다.
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 81%
 # JavaScript 3.x를 사용하여 코어 재생 추적{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->이 설명서는 SDK의 버전 3.x에 있는 추적 기능에 대해 설명합니다. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>이 설명서는 SDK의 버전 3.x에 있는 추적 기능에 대해 설명합니다. SDK의 이전 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -24,10 +24,10 @@ ht-degree: 81%
    | 변수 이름 | 유형 | 설명 |
    | --- | --- | --- |
    | `name` | string | 미디어 이름을 나타내는 빈 문자열이 아닙니다. |
-   | `id` | string | 고유 미디어 식별자를 나타내는 빈 문자열이 아닙니다. |
-   | `length` | 수 | 미디어의 길이를 초 단위로 나타내는 양수 길이를 알 수 없으면 0을 사용합니다. |
+   | `id` | string | 고유한 미디어 식별자를 나타내는 빈 문자열이 아닙니다. |
+   | `length` | number | 미디어의 길이(초)를 나타내는 양수입니다. 길이를 알 수 없으면 0을 사용합니다. |
    | `streamType` | string |  |
-   | `mediaType` |  | 미디어 유형(오디오 또는 비디오). |
+   | `mediaType` |  | 미디어 유형(오디오 또는 비디오)입니다. |
 
    **`StreamType`상수:**
 
@@ -53,7 +53,7 @@ ht-degree: 81%
 
 1. **메타데이터 첨부**
 
-   선택적으로 컨텍스트 데이터 변수를 통해 추적 세션에 표준 및/또는 사용자 지정 메타데이터를 첨부할 수 있습니다.
+   원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 메타데이터 추적 세션에 첨부합니다.
 
    * **표준 메타데이터**
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >contextData를 사용하지 않는 경우 `trackSessionStart`의 `data` 인수에 대해 빈 개체를 보내면 됩니다.
 
 1. **실제 재생 시작 추적**
 
