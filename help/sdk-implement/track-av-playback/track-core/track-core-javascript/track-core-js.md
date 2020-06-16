@@ -1,12 +1,12 @@
 ---
 title: JavaScript 2.x를 사용하여 코어 재생 추적
-description: 이 항목에서는 JavaScript 2.x 앱을 사용하는 브라우저에서 미디어 SDK를 사용하여 핵심 추적을 구현하는 방법을 설명합니다.
+description: 이 항목에서는 JavaScript 2.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 설명합니다.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
