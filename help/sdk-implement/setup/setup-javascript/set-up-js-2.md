@@ -1,12 +1,12 @@
 ---
 title: JavaScript 2.x 설정
-description: JavaScript 2.x에서 구현을 위한 미디어 SDK 애플리케이션 설정
+description: JavaScript 2.x에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
