@@ -1,11 +1,11 @@
 ---
 title: 구현 및 보고
 description: 이 항목에서는 다음을 포함한 플레이어 상태 추적 기능을 구현하는 방법에 대해 설명합니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Media SDK에는 사용자 지정 상태 추적을 위한 두 가지 새로운 �
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+Media Collection API에는 `media.stateName`을 필수 매개 변수로 사용하는 두 개의 새로운 이벤트가 포함되어 있습니다.
 
 `stateStart` 및 `stateEnd`
 
@@ -90,14 +90,14 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 보고
 
-플레이어 상태 추적을 위해 보고서 세트를 활성화하면 분석 작업 공간 또는 구성 요소(세그먼트, 계산된 지표)에서 사용할 수 있는 모든 보고 시각화에 모든 플레이어 상태 지표를 사용할 수 있습니다. 미디어 보고 설정(설정 편집 > 미디어 관리 > 미디어 보고)을 사용하는 각 개별 보고서에 대한 관리 콘솔에서 새 지표를 활성화할 수 있습니다.
+플레이어 상태 추적을 위해 보고서 세트를 활성화하면 Analysis Workspace 또는 구성 요소(세그먼트, 계산된 지표)에서 사용할 수 있는 모든 보고 시각화에 모든 플레이어 상태 지표를 사용할 수 있습니다. 미디어 보고 설정(설정 편집 > 미디어 관리 > 미디어 보고)을 사용하는 개별 보고서에 대한 새 지표를 Admin Console에서 활성화할 수 있습니다.
 
 ![](assets/report-setup.png)
 
-Analytics 작업 공간에서 모든 새 속성은 지표 패널에 있습니다. 예를 들어 지표 패널에서 전체 화면 데이터 `full screen` 를 보기 위해 검색할 수 있습니다.
+Analytics Workspace에서 새 속성은 모두 지표 패널에 있습니다. 예를 들어 `full screen`별로 검색하여 지표 패널에서 전체 화면 데이터를 볼 수 있습니다.
 
 ![](assets/full-screen-report.png)
 
 ## Adobe Experience Platform으로 플레이어에서 명시한 지표 가져오기
 
-Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 Customer Journey Analytics와 함께 사용할 수 있습니다. 표준 상태 속성에는 특정 속성이 있지만 사용자 지정 상태는 사용자 지정 이벤트를 사용하여 사용할 수 있습니다. 표준 상태 속성에 대한 자세한 내용은 *플레이어 상태 매개 변수* 페이지의 XDM ID에 대한 속성 목록 [섹션을](/help/metrics-and-metadata/player-state-parameters.md) 참조하십시오.
+Analytics에 저장된 데이터는 어떤 목적으로든 사용할 수 있으며, 플레이어 상태 지표는 XDM을 사용하여 Adobe Experience Platform으로 가져와서 Customer Journey Analytics와 함께 사용할 수 있습니다. 표준 상태 속성에는 특정 속성이 있지만 사용자 지정 상태 속성은 사용자 지정 이벤트를 통해 사용할 수 있습니다. 표준 상태 속성에 대한 자세한 내용은 *플레이어 상태 매개 변수* 페이지의 [XDM ID에 대한 속성 목록](/help/metrics-and-metadata/player-state-parameters.md) 섹션을 참조하십시오.
