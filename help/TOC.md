@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -65,17 +65,17 @@ ht-degree: 83%
          + [Android에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [iOS에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + JavaScript에서 찾기 추적 {#track-seeking-js}
-            + [JavaScript 2.x에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-            + [JavaScript 3.x에서 검색 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+            + [JavaScript 2.x에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [JavaScript 3.x에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Chromecast에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku에서 찾기 추적](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 표준 메타데이터 구현 {#impl-std-metadata}
          + [Android에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 메타데이터 키](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + Implement Standard Metadata on JavaScript {#impl-std-md-js}
-            + [JavaScript 2.x에 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-            + [JavaScript 3.x에 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + JavaScript에서 표준 메타데이터 구현 {#impl-std-md-js}
+            + [JavaScript 2.x에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [JavaScript 3.x에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Chromecast에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [표준 메타데이터 매개 변수 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Roku에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -92,7 +92,7 @@ ht-degree: 83%
       + 표준 광고 메타데이터 구현 {#impl-std-ad-metadata}
          + [Android에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
+         + JavaScript에서 표준 광고 메타데이터 구현 {#impl-std-ad-md-js}
             + [JavaScript 2.x에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
             + [JavaScript 3.x에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Roku에서 표준 광고 메타데이터 구현](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
@@ -101,8 +101,8 @@ ht-degree: 83%
       + [Android에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-android.md)
       + [iOS에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-ios.md)
       + JavaScript에서 챕터 및 세그먼트 추적 {#track-chapters-js}
-         + [JavaScript 2.x에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [JavaScript 3.x에서 장 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
+         + [JavaScript 2.x에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
+         + [JavaScript 3.x에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Chromecast에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Roku에서 챕터 및 세그먼트 추적](sdk-implement/track-chapters/track-chapters-roku.md)
    + 경험 추적 품질 {#track-qos}
@@ -110,8 +110,8 @@ ht-degree: 83%
       + [Android에서 체감 품질 추적](sdk-implement/track-qos/track-qos-android.md)
       + [iOS에서 체감 품질 추적](sdk-implement/track-qos/track-qos-ios.md)
       + JavaScript에서 체감 품질 추적 {#track-qos-js}
-         + [JavaScript 2.x에서 경험 품질 추적](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
-         + [JavaScript 3.x에서 경험 품질 추적](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
+         + [JavaScript 2.x에서 체감 품질 추적](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
+         + [JavaScript 3.x에서 체감 품질 추적](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
       + [Chromecast에서 체감 품질 추적](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Roku에서 체감 품질 추적](sdk-implement/track-qos/track-qos-roku.md)
    + 오류 추적 {#track-errors}
