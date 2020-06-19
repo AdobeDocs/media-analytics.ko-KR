@@ -1,10 +1,10 @@
 ---
 title: 지원되는 장치 및 플랫폼
 description: Adobe Analytics for Audio and Video를 사용하면 모든 장치에서 각 미디어 스트림을 수집하고 보고할 수 있습니다.
-translation-type: ht
-source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
-workflow-type: ht
-source-wordcount: '341'
+translation-type: tm+mt
+source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
+workflow-type: tm+mt
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ Media SDK는 새 버전의 장치가 출시될 때 관례적으로 업데이트�
 |  | Android 장치 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows 장치 |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV(tvOS) | 계획된 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV(tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>(기본) |
-|  | Fire TV(Fire OS) | 계획된 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | 계획된 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV(Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | 게임 콘솔(예: Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 셋톱 박스(예: Exfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
