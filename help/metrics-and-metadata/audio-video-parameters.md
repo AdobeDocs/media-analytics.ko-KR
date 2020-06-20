@@ -2,11 +2,11 @@
 title: 오디오 및 비디오 매개 변수
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccd4209f6fad0547e9595674602ee978d86e10cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6103'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -193,7 +193,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>SHOW</li> <li> **API 키:**<br/>media.show</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>현대 가족, 마지막 댄스, 뉴 걸</li> <li> **설명:**<br/>프로그램/시리즈 이름<br/>프로그램 이름은 표시가 시리즈의 일부인 경우에만 필요합니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.show)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>표시</li> <li> **컨텍스트 데이터:**<br/>(a.media.show)</li> <li> **데이터 피드:**<br/>videoshow</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>SHOW</li> <li> **API 키:**<br/>media.show</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;Modern Family&quot; &quot;The Last Dance&quot; &quot;New Girl&quot;</li> <li> **설명:**<br/>프로그램/시리즈 이름<br/>프로그램 이름은 표시가 시리즈의 일부인 경우에만 필요합니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.show)</li> <li> **하트비트:**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>표시</li> <li> **컨텍스트 데이터:**<br/>(a.media.show)</li> <li> **데이터 피드:**<br/>videoshow</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
 
 ### 스트림 형식
 
