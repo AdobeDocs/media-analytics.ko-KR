@@ -1,11 +1,11 @@
 ---
 title: Media Analytics SDK 지원 종료 FAQ
 description: 이 항목에는 Media Analytics SDK에 대한 지원 종료 FAQ가 포함되어 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 ## 알아야 할 상위 5가지 항목
 
-1. 모바일 v4 SDK는 2021년 8월 31일 이후로 더 이상 지원되지 않습니다. iOS 및 Android용 Adobe Experience Platform(AEP) SDK로 마이그레이션해야 합니다. 자세한 내용은 [버전 4 Mobile SDK의 지원 종료 FAQ를 참조하십시오](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
+1. 모바일 v4 SDK는 2021년 8월 31일 이후로 더 이상 지원되지 않습니다. iOS 및 Android용 Adobe Experience Platform(AEP) SDK로 마이그레이션해야 합니다. 자세한 내용은 [버전 4 Mobile SDK의 지원 종료 FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)를 참조하십시오.
 
 1. 오디오 및 비디오용 분석 구현에는 AEP SDK가 필요하며 Analytics 및 Media Analytics 확장 프로그램을 사용해야 합니다. 2021년 9월 1일부터 새로운 AEP SDK 및 확장 프로그램을 사용해야 합니다.  Media Analytics 확장 프로그램은 Adobe Launch를 사용하여 구성됩니다.  자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch로 마이그레이션](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)을 참조하십시오.
 
@@ -49,7 +49,7 @@ ht-degree: 88%
 
 1. **Launch를 태그 관리 시스템으로 사용해야 합니까? Launch를 사용하지 않으려면 어떻게 해야 합니까?**
 
-   모바일 앱 사용 사례의 경우, Launch는 웹용 태그 관리 시스템으로 사용되지 않습니다.  SDK 익스텐션을 구성하려면 론치 UI가 필요합니다. 이는 Adobe Mobile Services UI를 사용하여 모바일 v4 SDK를 구성하는 방법과 유사합니다. 설치 시 Launch를 사용하면 사용자가 선택한 확장 프로그램에 따라 설치 지침을 사용자 정의할 수 있습니다.
+   모바일 앱 사용 사례의 경우, Launch는 웹용 태그 관리 시스템으로 사용되지 않습니다.  SDK 확장자를 구성하려면 Launch UI가 필요합니다. 이는 Adobe Mobile Services UI를 사용하여 모바일 v4 SDK를 구성하는 방법과 유사합니다. 설치 시 Launch를 사용하면 사용자가 선택한 확장자에 따라 사용자 정의된 설치 지침이 제공된다는 이점이 있습니다.
 
 1. **이러한 지원이 tvOS용 SDK에 영향을 미칩니까?**
 
