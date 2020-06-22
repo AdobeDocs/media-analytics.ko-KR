@@ -1,9 +1,9 @@
 ---
 title: 지원되는 장치 및 플랫폼
 description: Adobe Analytics for Audio and Video를 사용하면 모든 장치에서 각 미디어 스트림을 수집하고 보고할 수 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
