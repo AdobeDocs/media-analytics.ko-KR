@@ -2,8 +2,11 @@
 title: 품질 매개 변수
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '2984'
+ht-degree: 100%
 
 ---
 
@@ -36,21 +39,21 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>media.qoe.bitrate</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>800-899</li><li> **설명:**<br/>평균 비트율(kbps)입니다. 이 값은 100kbps 간격으로 사전 정의된 버킷입니다. 평균 비트율은 재생 기간과 관련하여 재생 세션 중에 발생한 모든 비트율 값의 가중 평균으로계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateAverageBucket)</li> <li> **하트비트:**<br/>(l:stream:bitrate)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>평균 비트율</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateAverageBucket)</li> <li> **데이터 피드:**<br/>videoqoebitrateaverageevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateAverageBucket)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>media.qoe.bitrate</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>800-899</li><li> **설명:**<br/>평균 비트율(kbps)입니다. 이 값은 100kbps 간격으로 사전 정의된 버킷입니다. 평균 비트율은 재생 기간과 관련하여 재생 세션 중에 발생한 모든 비트율 값의 가중 평균으로계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateAverageBucket)</li> <li> **하트비트:**<br/>(l:stream:bitrate)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>평균 비트율</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateAverageBucket)</li> <li> **데이터 피드:**<br/>videoqoebitrateaverageevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateAverageBucket)</li> </ul> |
 
 
 ### 시작 시간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.qoe.timeToStart</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>30,000</li><li> **설명:**<br/>QoSObject를 통해 설정하지 않은 경우 이 값은 기본값 0으로 설정됩니다. 이 값의 설정 단위는 밀리초입니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **하트비트:**<br/>(l:stream:startup_time)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>시작 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **데이터 피드:**<br/>videoqoetimetostartevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>timeToStart)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.qoe.timeToStart</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>30,000</li><li> **설명:**<br/>QoSObject를 통해 설정하지 않은 경우 이 값은 기본값 0으로 설정됩니다. 이 값의 설정 단위는 밀리초입니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **하트비트:**<br/>(l:stream:startup_time)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>시작 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **데이터 피드:**<br/>videoqoetimetostartevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>timeToStart)</li> </ul> |
 
 
 ### FPS
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.qoe.framesPerSecond</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>24</li><li> **설명:**<br/>초당 프레임 수로 나타낸 스트림 프레임 속도의 현재 값입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/>(l:stream:fps)</li> </ul> | <ul> <li> **사용 가능:**<br/>아니요</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.qoe.framesPerSecond</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 시작, 미디어 종료</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>24</li><li> **설명:**<br/>초당 프레임 수로 나타낸 스트림 프레임 속도의 현재 값입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/>(l:stream:fps)</li> </ul> | <ul> <li> **사용 가능:**<br/>아니요</li> <li> **예약된 변수:**<br/>N/A</li> <li> **보고서 이름:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -58,7 +61,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>droppedFrames</li> <li> **API 키:**<br/>media.qoe.droppedFrames</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>3</li><li> **설명:**<br/>드롭된 프레임 수(Int)입니다. 이 값은 재생 세션 중에 드롭된 모든 프레임의 합계로 계산됩니다. 이 값은 (l:stream:dropped_frames)의 마지막 값에서 가져옵니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **하트비트:**<br/>(l:stream:<br/>dropped_frames)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>삭제된 프레임</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **데이터 피드:**<br/>videoqoedroppedframecountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>droppedFrames</li> <li> **API 키:**<br/>media.qoe.droppedFrames</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>3</li><li> **설명:**<br/>드롭된 프레임 수(Int)입니다. 이 값은 재생 세션 중에 드롭된 모든 프레임의 합계로 계산됩니다. 이 값은 (l:stream:dropped_frames)의 마지막 값에서 가져옵니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **하트비트:**<br/>(l:stream:<br/>dropped_frames)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>삭제된 프레임</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **데이터 피드:**<br/>videoqoedroppedframecountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount)</li> </ul> |
 
 
 
@@ -66,7 +69,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>2</li><li> **설명:**<br/>버퍼 이벤트 수입니다. 이 지표는 재생 세션 중에 발생한 다른 버퍼 상태의 수로 계산됩니다. 플레이어가 다른 상태에서 버퍼 상태에 들어가는 횟수입니다(예: 재생 또는 일시 정지).</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=buffer)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>버퍼 이벤트</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **데이터 피드:**<br/>videoqoebuffercountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bufferCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>2</li><li> **설명:**<br/>버퍼 이벤트 수입니다. 이 지표는 재생 세션 중에 발생한 다른 버퍼 상태의 수로 계산됩니다. 플레이어가 다른 상태에서 버퍼 상태에 들어가는 횟수입니다(예: 재생 또는 일시 정지).</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=buffer)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>버퍼 이벤트</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **데이터 피드:**<br/>videoqoebuffercountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bufferCount)</li> </ul> |
 
 
 
@@ -82,7 +85,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.qoe.bitrateChange</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>3</li><li> **설명:**<br/>비트율 변경 횟수입니다(정수). 이 값은 재생 세션 중에 발생한 모든 비트율 변경 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=bitrate_change)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>비트율 변경</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **데이터 피드:**<br/>videoqoebitratechangecountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.qoe.bitrateChange</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>3</li><li> **설명:**<br/>비트율 변경 횟수입니다(정수). 이 값은 재생 세션 중에 발생한 모든 비트율 변경 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=bitrate_change)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>비트율 변경</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **데이터 피드:**<br/>videoqoebitratechangecountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount)</li> </ul> |
 
 
 
@@ -90,7 +93,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>1</li><li> **설명:**<br/>오류 발생 횟수(정수)입니다. 이 값은 재생 세션 중에 발생한 모든 오류 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **데이터 피드:**<br/>videoqoeerrorcountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>errorCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>1</li><li> **설명:**<br/>오류 발생 횟수(정수)입니다. 이 값은 재생 세션 중에 발생한 모든 오류 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **데이터 피드:**<br/>videoqoeerrorcountevar</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>errorCount)</li> </ul> |
 
 
 
@@ -98,7 +101,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>플레이어 SDK에서 생성한 고유 오류 ID입니다. 고객은 제공된 오류 API를 통해 구현 시 오류 코드/ID를 제공해야 합니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **데이터 피드:**<br/>videoqoeplayersdkerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>playerSdkErrors)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>플레이어 SDK에서 생성한 고유 오류 ID입니다. 고객은 제공된 오류 API를 통해 구현 시 오류 코드/ID를 제공해야 합니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>playerSdkErrors)</li> <li> **데이터 피드:**<br/>videoqoeplayersdkerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>playerSdkErrors)</li> </ul> |
 
 
 
@@ -106,7 +109,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>외부 소스의 고유 오류 ID(예: CDN 오류)입니다. 고객은 제공된 오류 API를 통해 구현 시 오류 코드/ID를 제공해야 합니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **데이터 피드:**<br/>videoqoeextneralerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>externalErrors)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>외부 소스의 고유 오류 ID(예: CDN 오류)입니다. 고객은 제공된 오류 API를 통해 구현 시 오류 코드/ID를 제공해야 합니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>externalErrors)</li> <li> **데이터 피드:**<br/>videoqoeextneralerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>externalErrors)</li> </ul> |
 
 
 
@@ -114,7 +117,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>재생 중에 미디어 SDK에서 생성한 고유 오류 ID입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **데이터 피드:**<br/>mediaqoeexternalerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>mediaSdkErrors)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>재생 중에 미디어 SDK에서 생성한 고유 오류 ID입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>오류</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>mediaSdkErrors)</li> <li> **데이터 피드:**<br/>mediaqoeexternalerrors</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>mediaSdkErrors)</li> </ul> |
 
 
 
@@ -133,7 +136,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>30,000</li><li> **설명:**<br/>QoSObject를 통해 설정하지 않은 경우 이 값은 기본값 0으로 설정됩니다. 이 값의 설정 단위는 밀리초입니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/>**릴리스 날짜: 2018년 9월 13일**</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **하트비트:**<br/>(l:stream:startup_time)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>시작 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>timeToStart)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>30,000</li><li> **설명:**<br/>QoSObject를 통해 설정하지 않은 경우 이 값은 기본값 0으로 설정됩니다. 이 값의 설정 단위는 밀리초입니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/>**릴리스 날짜: 2018년 9월 13일**</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **하트비트:**<br/>(l:stream:startup_time)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>시작 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>timeToStart)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>timeToStart)</li> </ul> |
 
 
 
@@ -141,7 +144,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>2</li><li> **설명:**<br/>버퍼 이벤트 수입니다(정수). 이 지표는 재생 세션 중에 발생한 버퍼 이벤트 수로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=buffer)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>버퍼 이벤트</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bufferCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>2</li><li> **설명:**<br/>버퍼 이벤트 수입니다(정수). 이 지표는 재생 세션 중에 발생한 버퍼 이벤트 수로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=buffer)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>버퍼 이벤트</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bufferCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bufferCount)</li> </ul> |
 
 
 
@@ -149,7 +152,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>15</li><li> **설명:**<br/>버퍼링에 소요된 총 시간입니다(초, 정수). 이 값은 재생 세션 중에 발생한 모든 버퍼 이벤트 기간의 합계로 계산됩니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/>**릴리스 날짜: 2018년 9월 13일**</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bufferTime)</li> <li> **하트비트:**<br/>(l:event:duration)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>총 버퍼 지속 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bufferTime)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bufferTime)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>15</li><li> **설명:**<br/>버퍼링에 소요된 총 시간입니다(초, 정수). 이 값은 재생 세션 중에 발생한 모든 버퍼 이벤트 기간의 합계로 계산됩니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/>**릴리스 날짜: 2018년 9월 13일**</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bufferTime)</li> <li> **하트비트:**<br/>(l:event:duration)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>총 버퍼 지속 시간</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bufferTime)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bufferTime)</li> </ul> |
 
 
 
@@ -157,7 +160,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>이벤트</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>&quot;3&quot;</li><li> **설명:**<br/>비트율 변경 횟수입니다. 이 값은 재생 세션 중에 발생한 모든 비트율 변경 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=bitrate_change)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>비트율 변경</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>이벤트</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>&quot;3&quot;</li><li> **설명:**<br/>비트율 변경 횟수입니다. 이 값은 재생 세션 중에 발생한 모든 비트율 변경 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=bitrate_change)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>비트율 변경</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateChangeCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount)</li> </ul> |
 
 
 
@@ -165,7 +168,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>1</li><li> **설명:**<br/>발생한 오류 횟수입니다(정수). 이 값은 재생 세션 중에 발생한 모든 오류 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>오류 이벤트</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>errorCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>1</li><li> **설명:**<br/>발생한 오류 횟수입니다(정수). 이 값은 재생 세션 중에 발생한 모든 오류 이벤트의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>오류 이벤트</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>errorCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>errorCount)</li> </ul> |
 
 
 
@@ -173,7 +176,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>1</li><li> **설명:**<br/>드롭된 프레임 수(정수)입니다. 이 값은 재생 세션 중에 드롭된 모든 프레임의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **하트비트:**<br/>(l:stream:<br/>dropped_frames)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>삭제된 프레임</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>1</li><li> **설명:**<br/>드롭된 프레임 수(정수)입니다. 이 값은 재생 세션 중에 드롭된 모든 프레임의 합계로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **하트비트:**<br/>(l:stream:<br/>dropped_frames)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>삭제된 프레임</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>droppedFrameCount)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount)</li> </ul> |
 
 
 
@@ -181,40 +184,43 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>비디오가 시작되기 전에 사용자가 비디오를 종료한 횟수입니다. 이 지표는 광고에 관계없이 컨텐츠가 렌더링되지 않은 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>dropBeforeStart)</li> <li> **하트비트:**<br/>(s:event:<br/>type=aa_start)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>시작 전 드롭</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>dropBeforeStart)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>비디오가 시작되기 전에 사용자가 비디오를 종료한 횟수입니다. 이 지표는 광고에 관계없이 컨텐츠가 렌더링되지 않은 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>dropBeforeStart)</li> <li> **하트비트:**<br/>(s:event:<br/>type=aa_start)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>시작 전 드롭</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>dropBeforeStart)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart)</li> </ul> |
 
 
 
 >[!IMPORTANT]
+>
 >이 이벤트가 설정된 경우 참값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.
 
 ### 버퍼 영향을 받은 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>버퍼링의 영향을 받은 스트림 수입니다. 이 지표는 재생 세션 중에 하나 이상의 버퍼 이벤트가 발생한 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>buffer)</li> <li> **하트비트:**<br/>(s:event:<br/>type=buffer)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>버퍼 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>buffer)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>buffer)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>버퍼링의 영향을 받은 스트림 수입니다. 이 지표는 재생 세션 중에 하나 이상의 버퍼 이벤트가 발생한 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>buffer)</li> <li> **하트비트:**<br/>(s:event:<br/>type=buffer)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>버퍼 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>buffer)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>buffer)</li> </ul> |
 
 
 
 >[!IMPORTANT]
+>
 >이 이벤트가 설정된 경우 참값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.
 
 ### 비트율 변경의 영향을 받은 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>비트율 변경이 발생한 스트림 수입니다. 이 지표는 재생 세션 중에 하나 이상의 비트율 변경 이벤트가 발생한 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateChange)</li> <li> **하트비트:**<br/>(s:event:<br/>type=bitrate_change)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>비트율 변경 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateChange)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateChange)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>비트율 변경이 발생한 스트림 수입니다. 이 지표는 재생 세션 중에 하나 이상의 비트율 변경 이벤트가 발생한 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateChange)</li> <li> **하트비트:**<br/>(s:event:<br/>type=bitrate_change)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>비트율 변경 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateChange)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateChange)</li> </ul> |
 
 
 
 >[!IMPORTANT]
+>
 >이 이벤트가 설정된 경우 참값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.
 
 ### 평균 비트율
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>3200</li><li> **설명:**<br/>평균 비트율(kbps, 정수)입니다. 이 지표는 재생 기간과 관련하여 재생 세션 중에 발생한 모든 비트율 값의 가중 평균으로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateAverage)</li> <li> **하트비트:**<br/>(l:stream:bitrate)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>평균 비트율</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateAverage)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateAverage)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>3200</li><li> **설명:**<br/>평균 비트율(kbps, 정수)입니다. 이 지표는 재생 기간과 관련하여 재생 세션 중에 발생한 모든 비트율 값의 가중 평균으로 계산됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>bitrateAverage)</li> <li> **하트비트:**<br/>(l:stream:bitrate)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>평균 비트율</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>bitrateAverage)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>bitrateAverage)</li> </ul> |
 
 
 
@@ -222,22 +228,24 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>오류 이벤트가 발생한 스트림 수(즉, 재생 세션 중에`trackError`가 호출되었고`type=error`하트비트 호출이 생성됨)입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>라는 오류가 표시됩니다)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>오류 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>라는 오류가 표시됩니다)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>라는 오류가 표시됩니다)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>오류 이벤트가 발생한 스트림 수(즉, 재생 세션 중에`trackError`가 호출되었고`type=error`하트비트 호출이 생성됨)입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>라는 오류가 표시됩니다)</li> <li> **하트비트:**<br/>(s:event:<br/>type=error)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>오류 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>라는 오류가 표시됩니다)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>라는 오류가 표시됩니다)</li> </ul> |
 
 
 
 >[!IMPORTANT]
+>
 >이 이벤트가 설정된 경우 참값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.
 
 ### 드롭된 프레임 영향을 받은 스트림
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 임의 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>프레임이 드롭된 스트림 수입니다. 이 지표는 재생 세션 중에 하나 이상의 프레임이 드롭된 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>droppedFrames)</li> <li> **하트비트:**<br/>(l:stream:<br/>dropped_frames)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>드롭된 프레임 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>droppedFrames)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>droppedFrames)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>프레임이 드롭된 스트림 수입니다. 이 지표는 재생 세션 중에 하나 이상의 프레임이 드롭된 경우에만 1로 설정됩니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>droppedFrames)</li> <li> **하트비트:**<br/>(l:stream:<br/>dropped_frames)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>드롭된 프레임 영향을 받은 스트림</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>droppedFrames)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>droppedFrames)</li> </ul> |
 
 
 
 >[!IMPORTANT]
+>
 >이 이벤트가 설정된 경우 참값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.
 
 ### 지연 영향을 받은 스트림
@@ -246,9 +254,8 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | --- | --- |
 | <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>미디어 닫기</li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>정지된 이벤트가 발생한 스트림 수입니다. 이 지표는 재생 중에 하나 이상의 지연이 발생한 경우에만 1로 설정됩니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.qoe.<br/>stall)</li> <li> **하트비트:**<br/>(s:event:<br/>type=stall)</li> </ul> | <ul> <li> **사용 가능:**<br/>사용자 지정 처리 규칙</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/> </li> <li> **데이터 피드:**<br/>N/A</li> <li> **컨텍스트 데이터:**<br/>(a.media.qoe.<br/>stall)</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.qoe.<br/>stall)</li> </ul> |
 
-
-
 >[!IMPORTANT]
+>
 >이 이벤트가 설정된 경우 참값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.
 
 ### 지연 이벤트
