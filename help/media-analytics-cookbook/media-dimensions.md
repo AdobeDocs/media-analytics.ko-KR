@@ -1,8 +1,11 @@
 ---
 title: 미디어 스트림 속성
 description: null
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -18,8 +21,8 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 또한 이 기능을 활성화할 각 보고서에 대해 관리 콘솔에서 미디어 추적 구성을 다시 활성화해야 합니다.
 
 >[!NOTE]
->미디어 지표는 미디어 추적 외부에서 사용할 수 _없습니다_. 미디어 지표의 대부분이 하트비트 이벤트를 기반으로 하여 Media Analytics에서
->계산되기 때문입니다. 또한 미디어 지표가 다른 구현에 의해 부풀려지지 않는 것이 중요합니다.
+>
+>미디어 지표는 미디어 추적 외부에서 사용할 수 _없습니다_. 미디어 지표의 대부분이 하트비트 이벤트를 기반으로 하여 Media Analytics에서 계산되기 때문입니다. 또한 미디어 지표가 다른 구현에 의해 부풀려지지 않는 것이 중요합니다.
 
 ## 방법
 
