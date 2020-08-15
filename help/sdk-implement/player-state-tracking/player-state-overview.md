@@ -1,11 +1,11 @@
 ---
 title: 플레이어 상태 추적 정보
 description: 이 항목에서는 플레이어 상태 구현 및 보고를 위한 요구 사항 및 지침을 비롯한 플레이어 상태 추적 기능에 대해 설명합니다.
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 100%
 
 플레이어 상태 추적을 사용하려면 데이터 수집을 위해 다음 중 하나가 필요합니다.
 * Media JS SDK 3.0+
+* Adobe Marketing Cloud 솔루션용 Chromecast 3.0 SDK
 * Media Analytics 확장 프로그램(AEP(Adobe Experience Platform) SDK에서 사용)
    * 웹: 오디오 및 비디오 v1.0+용 Adobe Media Analytics(3.x SDK)
    * 모바일: Adobe Media Analytics for Audio 및 Video v2.0+
