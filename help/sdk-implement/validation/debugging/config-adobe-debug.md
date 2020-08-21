@@ -70,7 +70,7 @@ SSL 인증서를 다운로드하고 설치합니다:
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치]의 절차를 완료합니다.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+    1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치의 절차를 완료합니다.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
     
     변경 내용을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
     
