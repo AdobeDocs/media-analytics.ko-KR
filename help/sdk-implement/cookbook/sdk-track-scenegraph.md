@@ -2,8 +2,11 @@
 title: SceneGraph에서 추적(Roku)
 description: Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 미디어를 추적합니다.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -134,34 +137,33 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
-<td> assocarray </td>
+<td> 아소카레이 </td>
 <td> 유효하지 않습니다 </td>
 <td> AdobeMobileSDK에서 실행된 모든 읽기 전용 API는 이 필드에 대한 응답을 반환합니다. 응답 개체를 수신하려면 이 필드에 대한 업데이트를 수신할 콜백을 등록합니다. 다음은 응답 개체에 대한 형식입니다.  
-<codeblock>
+<pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
-} 
-</codeblock>
+}</pre>
 이 응답 개체의 인스턴스는 API 참조 가이드에 따라 값을 반환해야 하는 AdobeMobileSDK의 API 호출에 대해 전송됩니다. 예를 들어 visitorMarketingCloudID()에 대한 API 호출은 다음 응답 개체를 반환합니다. 
-<codeblock>
+<pre>
 response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
 } 
-</codeblock>
+</pre>
 또는 응답 데이터도 올바르지 않을 수 있습니다. 
-<codeblock>
+<pre>
 response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</codeblock>
+</pre>
 </td>
 </tr>
 </tbody>
