@@ -46,7 +46,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 광고 브레이크 완료를 위해 `trackEvent`를 호출합니다.
 
-## 광고 추적 {#implement-ad-tracking} 구현
+## 광고 추적 구현 {#implement-ad-tracking}
 
 ### 광고 추적 상수
 
