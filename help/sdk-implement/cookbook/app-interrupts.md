@@ -2,8 +2,11 @@
 title: 재생 중 애플리케이션 중단 처리
 description: 미디어를 재생하는 동안 추적을 중단하는 방법입니다.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 100%
 
 ---
 
@@ -27,9 +30,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * _앱이 오랜 시간 동안 배경에 있었는데 추적을 다시 시작하려 할 때 처리하는 올바른 방법은 무엇입니까?_
 
-   애플리케이션이 `trackSessionEnd`를 호출하여 추적 세션을 종료해야 합니다. 버전 2.1부터 SDK는 "end" ping을 전송하여 추적 세션이 닫혔음을 백엔드에 알립니다.
+   애플리케이션이 `trackSessionEnd`를 호출하여 추적 세션을 종료해야 합니다. 버전 2.1부터 SDK는 &quot;end&quot; ping을 전송하여 추적 세션이 닫혔음을 백엔드에 알립니다.
 
 * _동일한 세션을 다시 시작하는 것은 어떻습니까?_ 
 
-   추적 세션을 다시 시작하는 방법에 대한 자세한 지침은 [비활성화 세션 다시 시작 페이지를 참조하십시오.](/help/sdk-implement/cookbook/resuming-inactive.md) SDK가 재개 ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
+   추적 세션을 다시 시작하는 방법에 대한 자세한 지침은 [비활성화 세션 다시 시작 페이지를 참조하십시오](/help/sdk-implement/cookbook/resuming-inactive.md). SDK가 재개 ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
 
