@@ -2,8 +2,11 @@
 title: Adobe Debug 구성
 description: 이 항목에서는 Media SDK 구현 문제를 해결하는 데 사용할 수 있는 Adobe Debug를 구성하는 방법을 설명합니다.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +45,7 @@ Adobe Debug에 액세스하려면 다음을 수행하십시오.
    지원되는 운영 체제는 다음과 같습니다.
    * OS X 10.7 64비트 이상
    * Windows 7.1 64비트 이상
+
    ![](assets/debug-proxy-app.png)
 
 1. 디버그 프록시 서버는 포트 33284의 로컬 컴퓨터에서 실행되며 시스템 프록시로 설정됩니다.
@@ -63,23 +67,23 @@ SSL 인증서를 다운로드하고 설치합니다:
    1. 루트 CA 인증서를 시스템으로 옮깁니다(드래그).
    1. 모든 사용자 및 로컬 시스템 프로세스에서 인증서를 신뢰할 수 있도록 하려면 인증서를 시스템에 복사해야 합니다.
    1. 루트 CA 인증서를 열고 신뢰를 확장한 다음 항상 신뢰를 선택하고 변경 사항을 저장합니다.
+
    **Windows**
    1. 다음 절차 중 하나를 완료합니다.
 
       * [로컬 컴퓨터의 신뢰할 수 있는 루트 인증 기관 저장소에 인증서 추가](https://technet.microsoft.com/ko-kr/library/cc754841.aspx#BKMK_addlocal)
-<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
--->
+   1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
 
-    1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치의 절차를 완료합니다.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
-    
-    변경 내용을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
-    
-    **iOS 장치**
-    1. **[!UICONTROL 설정 앱]** **>** **[!UICONTROL Wi-Fi 설정]**을 클릭하여 Adobe Debug를 해당 HTTP 프록시로 사용하도록 iOS 장치를 설정합니다.
-    
-    1. Safari에서 [Debug](https://proxy.debug.adobe.com/ssl)로 이동
-    
-    Safari에서 SSL 인증서를 설치하라는 메시지를 표시합니다.
+      변경 사항을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
+   **iOS 장치**
+   1. **[!UICONTROL 설정 앱]** **>** **[!UICONTROL Wi-Fi 설정]**&#x200B;을 클릭하여 Adobe Debug를 해당 HTTP 프록시로 사용하도록 iOS 장치를 설정합니다.
+
+   1. Safari에서 [디버그.](https://proxy.debug.adobe.com/ssl)
+
+      Safari에서 SSL 인증서를 설치하라는 메시지가 표시됩니다.
+
+
+
 
 ## 모바일 장치에 대한 SSL 인증서 설치 {#install-sSL-for-mobile-device}
 
