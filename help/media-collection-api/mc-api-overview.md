@@ -79,7 +79,7 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 
 각 `eventType`의 경우 매개 변수 유형을 확인하고 매개 변수가 특정 이벤트에 필수인지 또는 선택 사항인지 확인하는 데 사용해야 하는 [JSON 유효성 검사 스키마](mc-api-ref/mc-api-json-validation.md)가 있으며, 이 스키마는 공개적으로 제공됩니다.
 
-### 이벤트 유형{#mc-api-event-types}을 참조하십시오 
+### 이벤트 유형을 참조하십시오 {#mc-api-event-types}
 
 * `sessionStart`
 * `play`
