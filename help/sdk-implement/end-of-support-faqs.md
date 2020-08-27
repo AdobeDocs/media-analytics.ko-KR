@@ -1,10 +1,10 @@
 ---
 title: Media Analytics SDK 지원 종료 FAQ
 description: 이 항목에는 Media Analytics SDK에 대한 지원 종료 FAQ가 포함되어 있습니다.
-translation-type: ht
-source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: ht
-source-wordcount: '703'
+translation-type: tm+mt
+source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
+workflow-type: tm+mt
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -53,8 +53,8 @@ ht-degree: 100%
 
 1. **이러한 지원이 tvOS용 SDK에 영향을 미칩니까?**
 
-   예. tvOS(버전 10+)의 경우 권장되는 구현은 Media Analytics 확장 프로그램으로 마이그레이션하는 것입니다.  AEP SDK 지원 및 Media Analytics 확장 프로그램 지원은 2020년 6월에 제공될 예정입니다.  자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch - iOS로 마이그레이션](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)을 참조하십시오.
+   예. tvOS(버전 10+)의 경우 권장되는 구현은 Media Analytics 확장 프로그램으로 마이그레이션하는 것입니다.  자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch - iOS로 마이그레이션](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)을 참조하십시오.
 
 1. **이러한 지원이 FireTV 및 AndroidTV용 SDK에 영향을 미칩니까?**
 
-   예. FireTV 및 AndroidTV의 경우 권장되는 구현은 Media Analytics 확장 프로그램으로 마이그레이션하는 것입니다.  AEP SDK 지원 및 Media Analytics 확장 프로그램 지원은 2020년 6월에 제공될 예정입니다.  자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch - Android로 마이그레이션](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)을 참조하십시오.
+   예. FireTV 및 AndroidTV의 경우 권장되는 구현은 Media Analytics 확장 프로그램으로 마이그레이션하는 것입니다.  자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch - Android로 마이그레이션](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)을 참조하십시오.
