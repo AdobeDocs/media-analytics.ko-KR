@@ -2,11 +2,11 @@
 title: Adobe Debug 구성
 description: 이 항목에서는 Media SDK 구현 문제를 해결하는 데 사용할 수 있는 Adobe Debug를 구성하는 방법을 설명합니다.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ SSL 인증서를 다운로드하고 설치합니다:
    1. 다음 절차 중 하나를 완료합니다.
 
       * [로컬 컴퓨터의 신뢰할 수 있는 루트 인증 기관 저장소에 인증서 추가](https://technet.microsoft.com/ko-kr/library/cc754841.aspx#BKMK_addlocal)
-   1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)의 절차를 완료합니다.
 
       변경 사항을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
    **iOS 장치**
    1. **[!UICONTROL 설정 앱]** **>** **[!UICONTROL Wi-Fi 설정]**&#x200B;을 클릭하여 Adobe Debug를 해당 HTTP 프록시로 사용하도록 iOS 장치를 설정합니다.
 
-   1. Safari에서 [디버그.](https://proxy.debug.adobe.com/ssl)
+   1. Safari에서 [Debug](https://proxy.debug.adobe.com/ssl)로 이동합니다.
 
       Safari에서 SSL 인증서를 설치하라는 메시지가 표시됩니다.
 
