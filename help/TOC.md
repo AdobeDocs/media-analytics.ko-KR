@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: ec64289694dde391b6a14634c9685e741790e552
+source-git-commit: 25920c9c01e67f9e5d969495a03f23fcf80d6493
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 100%
+source-wordcount: '826'
+ht-degree: 97%
 
 ---
 
@@ -214,6 +214,8 @@ ht-degree: 100%
       + [미디어 방송 시간](media-reports/media-default-reports/media-reports-daypart.md)
       + [미디어 Concurrent Viewer](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Concurrent Viewers JSON 보고서 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json.md)
+   + 미디어 작업 영역 패널 {#media-workspace-panels}
+      + [미디어 동시 뷰어 패널](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
 + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
