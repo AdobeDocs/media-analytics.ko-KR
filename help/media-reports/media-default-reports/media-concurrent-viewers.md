@@ -2,8 +2,11 @@
 title: 미디어 Concurrent Viewer
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 미디어 Concurrent Viewer 대시보드는 하루 동안의 동시 뷰어를 표시합니다. 데이터는 컨텐츠, 장치 유형, 국가별로 필터링됩니다.
 
 >[!TIP]
->
->선택한 간격이 하루가 아니면 데이터가 표시되지 않습니다.
+> 
+> 팁:이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  세그먼트를 적용하고 분류하고 비교할 수 있는 추가 기능을 사용하여 고유 방문자별로 동시 뷰어를 보려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 다음은 이 보고서에 대한 몇 가지 제한 사항입니다.
 
+* 선택한 간격이 하루가 아니면 데이터가 표시되지 않습니다.
 * ReportBuilder와 같은 데이터는 내보낼 수 없습니다.
 * 테이블 형식으로 데이터를 표시할 수 없습니다.
 * 보고서를 이메일로 보낼 수 없습니다.
