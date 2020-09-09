@@ -1,11 +1,11 @@
 ---
 title: 미디어 동시 뷰어 보고
 description: Media Analytics 고객의 경우 Analysis Workspace에서 [미디어 동시 뷰어] 패널을 사용하면 동시 시청 사용자를 분석하여 최대 동시 시청 시간 발생 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다.
-translation-type: ht
-source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 97%
 
 ---
 
@@ -24,4 +24,4 @@ Analysis Workspace에서 동시 뷰어는 세션 수에 관계없이 특정 시�
 
 ## Analytics 보고 API를 통해 동시 뷰어 가져오기
 
-Analytics 보고 API 2.0을 사용하여 분-수준 단위로 한 번에 최대 1개월까지 동시 뷰어 데이터를 가져올 수도 있습니다. 보고 API에서는 동시 뷰어의 동일한 정의를 Analysis Workspace과 사용합니다.  Analytics API에 대한 자세한 내용은 [Analytics API 보고서 사용 안내서](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)를 참조하십시오.
+Analytics 보고 API 2.0을 사용하여 분-수준 단위로 한 번에 최대 1개월까지 동시 뷰어 데이터를 가져올 수도 있습니다. 보고 API에서는 동시 뷰어의 동일한 정의를 Analysis Workspace과 사용합니다.  자세한 내용은 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
