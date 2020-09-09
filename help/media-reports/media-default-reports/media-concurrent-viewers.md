@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 >[!TIP]
 >
-> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  세그먼트를 적용하고 분류하고 비교할 수 있는 추가 기능을 사용하여 고유 방문자별로 동시 뷰어를 보려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  세그먼트를 적용하고 분류하고 비교할 수 있는 추가 기능과 함께 고유 방문자별로 동시 뷰어를 보려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)을 사용하십시오.
 
 
 ![](assets/video-concurrent-viewers.png)
