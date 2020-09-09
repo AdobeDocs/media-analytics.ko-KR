@@ -3,10 +3,10 @@ title: 미디어 Concurrent Viewer
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 미디어 Concurrent Viewer 대시보드는 하루 동안의 동시 뷰어를 표시합니다. 데이터는 컨텐츠, 장치 유형, 국가별로 필터링됩니다.
 
 >[!TIP]
-> 
-> 팁:이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  세그먼트를 적용하고 분류하고 비교할 수 있는 추가 기능을 사용하여 고유 방문자별로 동시 뷰어를 보려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  세그먼트를 적용하고 분류하고 비교할 수 있는 추가 기능을 사용하여 고유 방문자별로 동시 뷰어를 보려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ ht-degree: 85%
 * 보고서를 이메일로 보낼 수 없습니다.
 * 광고를 추적하지 않더라도 미디어 추적을 다시 활성화하고 미디어 광고 모듈을 선택해야 합니다.
 * 이 기능은 일시 정지 추적 기능이 있는 하트비트 라이브러리를 사용할 때 정확한 데이터를 제공합니다.
-
