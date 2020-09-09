@@ -2,8 +2,11 @@
 title: 개요
 description: Media SDK를 사용하여 광고 추적을 구현하는 개요입니다.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -46,7 +49,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 광고 브레이크 완료를 위해 `trackEvent`를 호출합니다.
 
-## 광고 추적 구현 {#implement-ad-tracking}
+## 광고 추적 구현{#implement-ad-tracking}
 
 ### 광고 추적 상수
 
