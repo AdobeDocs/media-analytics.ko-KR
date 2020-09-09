@@ -5,9 +5,9 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '818'
 ht-degree: 97%
 
 ---
@@ -213,11 +213,10 @@ ht-degree: 97%
       + [미디어 세부 사항](media-reports/media-default-reports/media-reports-detail.md)
       + [미디어 방송 보고서](media-reports/media-default-reports/media-reports-daypart.md)
       + [미디어 동시 뷰어 보고서](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [Concurrent Viewers JSON 보고서 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
    + 미디어 작업 영역 패널 {#media-workspace-panels}
       + [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
-   + [API를 통해 동시 뷰어 데이터 가져오기](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
+   + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
 + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + 플레이어 상태 추적 {#player-state-tracking}
