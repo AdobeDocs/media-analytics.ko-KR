@@ -2,11 +2,11 @@
 title: 미디어 Concurrent Viewer
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
