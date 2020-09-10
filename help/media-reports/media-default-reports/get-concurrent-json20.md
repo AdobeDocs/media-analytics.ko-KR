@@ -6,21 +6,21 @@ translation-type: tm+mt
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 89%
 
 ---
 
 
 # Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 가져오기{#get-concurrent-viewers-json-report-data}
 
-동시 뷰어 보고서 데이터는 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+[_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)를 사용하여 동시 뷰어 보고서 데이터를 가져올 수 있습니다.
 
-1. UI에 내장된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 컨텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
+1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 컨텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
 1. 요청 본문에서 `elements` -> `id`를 `metrics/concurrent_viewers_visitors`로 설정합니다.
 1. 충분한 양의 데이터를 요청합니다.
 
    * 보고서에서 지정한 데이터 범위는 모든 동시 뷰어 데이터를 _비디오 세션이 종료된 시점에 수집합니다._
-하루 동안 시작해서 다음 날 자정 이후 끝나는 세션을 고려해야 합니다.
+한 날 시작하여 자정 이후에(즉, 다음 날) 끝나는 세션을 고려해야 합니다.
 
    * 요청에서 의도한 기간에 하루 더 데이터를 요청하지만 분석에서 _*의도한 데이터만 사용합니다.*_
 
