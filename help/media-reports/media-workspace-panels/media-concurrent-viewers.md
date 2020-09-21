@@ -1,20 +1,16 @@
 ---
 title: 미디어 동시 뷰어 보고
 description: Media Analytics 고객의 경우 Analysis Workspace에서 [미디어 동시 뷰어] 패널을 사용하면 동시 시청 사용자를 분석하여 최대 동시 시청 시간 발생 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다.
-translation-type: ht
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: ht
-source-wordcount: '224'
+translation-type: tm+mt
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
 
 
 # 미디어 동시 뷰어 보고{#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->이 기능은 Media Analytics 고객을 위한 제한된 테스트에 있습니다. [추가 정보...](https://docs.adobe.com/content/help/ko-KR/analytics/landing/an-releases.html)
 
 동시 뷰어 분석을 사용하면 최대 동시 시청 시간 발생 위치 또는 드롭오프가 발생한 위치를 파악하여 컨텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 제공하고 볼륨 및 규모에 대한 문제 해결 또는 계획에 도움을 줄 수 있습니다.
 
