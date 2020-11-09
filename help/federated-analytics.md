@@ -1,9 +1,12 @@
 ---
 title: Federated Analytics
-description: 'Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오와 비디오)를 공유하는 시스템을 제공합니다. '
+description: Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오와 비디오)를 공유하는 시스템을 제공합니다.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 97%
 
 ---
 
@@ -42,7 +45,8 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 
 ## Federated Analytics 양식 다운로드
 
-이 양식의 최신 버전은 [페더레이션 규칙 계약](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)에서 다운로드하십시오.
+Federated Analytics에 참가하려면 [페더레이션 규칙 계약](federated-analytics-form.pdf) 양식.
+
 
 ## 프로세스 {#process}
 
@@ -54,4 +58,3 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 1. 데이터가 올바른 것으로 수신자가 확인하면 Adobe 엔지니어링 팀은 프로덕션 보고서 세트를 가리키는 규칙을 업데이트합니다.
 1. 받는 사람은 프로덕션 보고서 세트의 데이터를 검토하고 확인합니다.
 1. 차후에 데이터 세트가 변경되면 발신자나 수신자는 고객 지원 티켓을 제출하여 지원을 받을 수 있습니다.
-
