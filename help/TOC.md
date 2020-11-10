@@ -1,24 +1,24 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 오디오 또는 비디오 소스에서 Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
+source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 97%
+source-wordcount: '830'
+ht-degree: 93%
 
 ---
 
 
-# Adobe Analytics for Audio and Video {#using}
+# 스트리밍 미디어용 Adobe Analytics {#using}
 
-+ [Adobe Analytics에서 오디오 및 비디오 측정](media-overview.md)
++ [Adobe Analytics에서 스트리밍 미디어 측정](media-overview.md)
 + [지원되는 장치 및 플랫폼](measurement-options/supported-devices.md)
-+ 오디오 및 비디오 분석 소개 {#intro-to-ava}
++ 스트리밍 미디어 분석 소개 {#intro-to-ava}
    + [전제 조건](intro-to-ava/prereqs.md)
    + 구현 경로 {#implementation-paths}
       + [개요](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 97%
          + [JavaScript 3.x 설정](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast 설정](sdk-implement/setup/set-up-chromecast.md)
       + [Roku 설정](sdk-implement/setup/set-up-roku.md)
-   + 오디오 및 비디오 재생 추적 {#track-av-playback}
+   + 스트리밍 미디어 재생 추적 {#track-av-playback}
       + [개요](sdk-implement/track-av-playback/track-core-overview.md)
-      + 코어 오디오 및 비디오 재생 추적 {#track-core}
+      + 코어 스트리밍 미디어 재생 추적 {#track-core}
          + [Android에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [iOS에서 코어 재생 추적](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + JavaScript에서 코어 재생 추적 {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 97%
    + [요리책](media-analytics-cookbook/media-analytics-cookbook.md)
    + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
-   + [오디오 및 비디오 매개 변수](metrics-and-metadata/audio-video-parameters.md)
+   + [스트리밍 미디어 매개 변수](metrics-and-metadata/audio-video-parameters.md)
    + [광고 매개 변수](metrics-and-metadata/ad-parameters.md)
    + [챕터 매개 변수](metrics-and-metadata/chapter-parameters.md)
    + [플레이어 상태 매개 변수](metrics-and-metadata/player-state-parameters.md)
@@ -220,6 +220,8 @@ ht-degree: 97%
    + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
 + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
+
+<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
    + [표준 및 사용자 지정 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
