@@ -2,9 +2,9 @@
 title: 이정표에서 Media Analytics로의 마이그레이션
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -31,6 +31,7 @@ ht-degree: 100%
 | 비디오 시작 | 이벤트 <br>유형: 카운터 | 비디오 시작 |
 | 비디오 완료 | 이벤트 <br>유형: 카운터 | 컨텐츠 완료 |
 
+
 ### 미디어 모듈 변수
 
 | 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
@@ -42,7 +43,7 @@ ht-degree: 100%
 
 ### 선택 사항 변수
 
-| 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
+| 이정표 | 이정표 구문 | 미디어 분석 | Media Analytics 구문 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 해당 없음 | 미리 만들어진 플레이어 매핑은 더 이상 제공되지 않습니다. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 해당 없음 | 미리 만들어진 플레이어 매핑은 더 이상 제공되지 않습니다. |
@@ -57,7 +58,7 @@ ht-degree: 100%
 
 ### 광고 추적 변수
 
-| 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
+| 이정표 | 이정표 구문 | 미디어 분석 | Media Analytics 구문 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 컨텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 해당 없음 | 진행률 마커는 기본적으로 광고에는 제공되지 않습니다. 광고 진행률 마커를 작성하려면 계산된 지표를 사용하십시오. |
@@ -67,7 +68,7 @@ ht-degree: 100%
 
 ### 미디어 모듈 메서드
 
-| 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
+| 이정표 | 이정표 구문 | 미디어 분석 | Media Analytics 구문 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (필수) 비디오 보고서에 나타낼 비디오 이름입니다. | 이름 | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -75,7 +76,7 @@ ht-degree: 100%
 | mediaPlayerName | `mediaPlayerName`: (필수) 비디오를 보는 데 사용되는 미디어 플레이어의 이름으로 비디오 보고서에 나타나도록 할 이름입니다. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
 | 이름 | `name`: (필수) 광고 이름 또는 ID입니다. | 이름 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| length | `length`: (필수) 광고 길이입니다. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| 길이 | `length`: (필수) 광고 길이입니다. | 길이 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어  플레이어의 이름입니다. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName`: 광고가 포함된 기본 컨텐츠의 이름 또는 ID입니다. | 해당 없음 | 자동 상속됨. |
 | parentPod | `parentPod`: 기본 컨텐츠에서 광고가 재생되는 위치입니다. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
@@ -88,3 +89,4 @@ ht-degree: 100%
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> 또는 <br>trackEvent | `trackPause()`<br> 또는 `trackEvent(`<br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)`<br> 또는 <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | 추가적인 변수를 설정하려면 사용자 지정 또는 표준 메타데이터를 사용하십시오. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | 해당 없음 | 추적 호출 빈도가 자동으로 설정됩니다. |
+
