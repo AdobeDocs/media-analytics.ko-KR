@@ -1,12 +1,12 @@
 ---
 title: Federated Analytics
-description: Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오와 비디오)를 공유하는 시스템을 제공합니다.
+description: Federated Analytics 서비스는 두 파트너 간에 미디어 데이터를 스트리밍하기 위해 Adobe Analytics을 공유하는 시스템을 제공합니다.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,8 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 
 * **Media 스트림 계약:** 보낸 사람과 받는 사람은 Adobe Analytics 내의 오디오 및 비디오 데이터에 액세스하려면 Adobe Analytics for Media Streams에 등록해야 합니다. 자세한 내용은 계정 팀에게 문의하십시오.
 * **연합 부록:** 데이터를 전송하거나 수신하기 전에 각 발신자와 수신자는 Adobe와 함께 서명된 부록이 있어야 합니다. 고객당 하나의 부록이 필요합니다. 파트너십당 하나의 부록이 아닙니다. 자세한 내용은 계정 팀에게 문의하십시오.
-* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. 다음 [Adobe Analytics에서 오디오 및 비디오 측정](/help/media-overview.md) 설명서를 참조하십시오.
+
+* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. 설명서를 참조하십시오. [Adobe Analytics에서 스트리밍 미디어 측정](/help/media-overview.md)
 
 * **Adobe Consulting Contract:**&#x200B;보낸 사람과 받은 사람 간의 초기 페더레이션 규칙 설정의 경우 컨설팅 서비스 팀과 함께 작업하여 데이터를 검토하고 데이터 공유 계약을 작성하는 것이 중요합니다.
 
