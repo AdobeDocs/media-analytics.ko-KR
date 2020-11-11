@@ -6,10 +6,10 @@ user-guide-description: 오디오 또는 비디오 소스에서 Analytics 구현
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
