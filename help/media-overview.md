@@ -3,7 +3,7 @@ title: Adobe Analytics에서 스트리밍 미디어 측정
 description: Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -47,7 +47,7 @@ Adobe Analytics에서는 &quot;하트비트&quot;를 사용하여 비디오 지�
 | 가격 책정 | 미디어 스트림별 투명한 추적(단일) |
 | 구현 및 지원 | 지속적인 업데이트 및 개선 사항으로 간소화된 구성<br>간소화된 구현 프로세스를 사용하므로 플레이어 API를 통해 변수를 빨리 매핑하고 Adobe Debug 도구를 통해 구현을 확인하여 필요한 모든 변수가 정확하게 추적되도록 합니다. |
 | 파트너 공유 | Federated Analytics 및 인증된 지표<br>Federated Analytics를 통해 공유된 데이터를 사용하므로 업계 최초 미디어 공유 기능을 통해 모든 미디어 배포 파트너(운영자, 프로그래머 및 배포자)의 데이터를 전체적으로 평가할 수 있습니다. |
-| 고급 추적 | 다운로드한 컨텐츠 추적, 오류 복구 추적 및 동시 뷰어<br>연결 여부에 관계없이 장치에서 다운로드 및 재생되는 스트리밍 미디어 컨텐츠를 추적할 수 있습니다. |
+| 고급 추적 | 다운로드한 컨텐츠 추적, 오류 복구 추적 및 동시 뷰어<br>연결 여부와 관계없이 장치에서 다운로드 및 재생되는 스트리밍 미디어 컨텐츠를 추적할 수 있습니다. |
 
 
 
