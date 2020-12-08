@@ -1,21 +1,12 @@
 ---
-source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '568'
-ht-degree: 72%
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 # 기여자 문서
-
-| EXL-PR | EXL | 미리 보기 | 활성화 | 게시됨 | 도움말 |
-|--- |--- |--- |--- |--- |--- |
-| [![빌드 상태](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![빌드 상태](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [미리 보기 URL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [라이브 URL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [Authoring 안내서](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
-
-| 프로덕션 | 스테이지 |
-|---|---|
-| [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![빌드 상태](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
-| [출력 제품](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/media-overview.html) | [출력 단계](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 Adobe는 설명서 팀 외부 직원뿐만 아니라 커뮤니티 기여를 환영합니다.
 
@@ -45,7 +36,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 직원의 주요 변경 사항
 
-Adobe Experience Cloud 솔루션 제품 팀의 기술 저작, 프로그램 관리자 또는 개발자로서 기술 문서를 제작하거나 작성하는 것이 사용자의 일인 경우 비공개 저장소를 사용해야 합니다 [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Adobe Experience Cloud 솔루션 제품 팀의 기술 저작, 프로그램 관리자 또는 개발자이고 기술 문서를 작성하거나 작성하는 것이 사용자의 일인 경우 개인 저장소 [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)을(를) 사용해야 합니다. <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 도구 및 설정
 
