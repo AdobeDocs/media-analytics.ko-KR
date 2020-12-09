@@ -2,10 +2,10 @@
 title: 지원되는 장치 및 플랫폼
 description: Streaming Media용 Adobe Analytics을 사용하면 모든 디바이스에서 각 미디어 스트림을 수집하고 보고할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '337'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Media SDK는 새 버전의 장치가 출시될 때 관례적으로 업데이트�
 
 아래 표는 현재 지원되는 장치 및 플랫폼 목록입니다. 최신 버전의 SDK를 다운로드하려면 [SDK 다운로드를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/media-analytics/using/sdk-implement/download-sdks.html). 장치가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 장치의 상태에 대해 문의하십시오.
 
-| 스트리밍 플랫폼 및 장치 |  | AEP SDK를 사용하는 Media Launch 확장 | Media SDK | Media Collection API |
+| 스트리밍 플랫폼 및 장치 |  | AEP Mobile SDK를 사용한 미디어 실행 확장 | Media SDK | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | 웹/모바일 웹 |  |  |  |  |
 |  | JavaScript 브라우저 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
