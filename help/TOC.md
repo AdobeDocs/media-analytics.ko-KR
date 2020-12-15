@@ -6,7 +6,7 @@ user-guide-description: 오디오 또는 비디오 소스에서 Analytics 구현
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -212,7 +212,7 @@ ht-degree: 94%
       + [기본 보고서 개요](media-reports/media-default-reports/default-reports-overview.md)
       + [미디어 개요](media-reports/media-default-reports/media-reports-overview.md)
       + [미디어 세부 사항](media-reports/media-default-reports/media-reports-detail.md)
-      + [미디어 방송 보고서](media-reports/media-default-reports/media-reports-daypart.md)
+      + [미디어 날짜 보고서](media-reports/media-default-reports/media-reports-daypart.md)
       + [미디어 동시 뷰어 보고서](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 미디어 작업 영역 패널 {#media-workspace-panels}
       + [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md)
@@ -220,8 +220,6 @@ ht-degree: 94%
    + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
 + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
-
-<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
    + [표준 및 사용자 지정 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
