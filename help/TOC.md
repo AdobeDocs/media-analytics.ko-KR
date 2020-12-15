@@ -6,7 +6,7 @@ user-guide-description: 오디오 또는 비디오 소스에서 Analytics 구현
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
+source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -219,11 +219,16 @@ ht-degree: 94%
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
    + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
 + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
-+ [Federated Analytics](federated-analytics.md)
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
    + [표준 및 사용자 지정 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [구현 및 보고](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [플레이어 상태 추적 예](sdk-implement/player-state-tracking/player-state-examples.md)
++ [Federated Analytics](federated-analytics.md)
+<!-- + Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
 + 추가 리소스 {#additional-resources}
    + [릴리스 노트](additional-resources/doc-updates.md)
