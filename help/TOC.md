@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: 스트리밍 미디어용 Adobe Analytics
-breadcrumb-title: 미디어 분석 안내서
-user-guide-description: 오디오 또는 비디오 소스에서 Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
+breadcrumb-title: 스트리밍 미디어 분석 가이드
+user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현 Media SDK 및 Media Collection API를 포함합니다.
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
+source-git-commit: 640005cbd90a074a1a441865c4b6abc8f94c1277
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
