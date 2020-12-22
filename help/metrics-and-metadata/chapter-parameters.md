@@ -2,8 +2,11 @@
 title: 챕터 매개 변수
 description: null
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 100%
 
 ---
 
@@ -41,31 +44,31 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>media.chapter.friendlyName</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>챕터 시작, 챕터 닫기</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/>&quot;The Big Bang Chapter 2 - Dating&quot;</li><li> **설명:**<br/>챕터 및/또는 세그먼트의 이름입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>friendlyName)</li> <li> **하트비트:**<br/>(s:stream:chapter_name)</li> </ul> | <ul> <li> **사용 가능:**<br/>기본적으로 작성됨...</li> <li> **예약된 변수:**<br/>분류</li> <li> **보고서 이름:**<br/>챕터 이름</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>friendlyName)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>friendlyName)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 키:**<br/> media.chapter.friendlyName </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 챕터 시작, 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> &quot;The Big Bang Chapter 2 - Dating&quot; </li><li> **설명:**<br/>&#x200B;챕터 및/또는 세그먼트의 이름입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>friendlyName) </li> <li> **하트비트:**<br/> (s:stream:chapter_name) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;기본적으로 작성됨...  </li> <li> **예약된 변수:**<br/>&#x200B;분류 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 이름 </li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>friendlyName) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>friendlyName) </li> </ul> |
 
 ### 챕터 위치
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>media.chapter.index</li> <li> **필수:**<br/>SDK:아니오, API: 네.</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>챕터 닫기</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/>2</li><li> **설명:**<br/>컨텐츠 내에서 챕터의 위치(색인, 정수)입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>position)</li> <li> **하트비트:**<br/>(l:stream:chapter_pos)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **보고서 이름:**<br/>챕터 위치</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>position)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>position)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API 키:**<br/> media.chapter.index </li> <li> **필수:**<br/> SDK:아니오, API: 네. </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> 2 </li><li> **설명:**<br/>&#x200B;컨텐츠 내에서 챕터의 위치(색인, 정수)입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>position) </li> <li> **하트비트:**<br/> (l:stream:chapter_pos) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;분류 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 위치 </li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>position) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>position) </li> </ul> |
 
 ### 챕터 오프셋
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API 키:**<br/>media.chapter.offset</li> <li> **필수:**<br/>SDK: 아니오, API: 네.</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>챕터 닫기</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/>58</li><li> **설명:**<br/>처음부터 컨텐츠 내에 있는 챕터의 오프셋(초)입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>offset)</li> <li> **하트비트:**<br/>(l:stream:chapter_offset)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **보고서 이름:**<br/>챕터 오프셋</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>offset)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>offset)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API 키:**<br/> media.chapter.offset </li> <li> **필수:**<br/> SDK: 아니오, API: 네. </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> 58 </li><li> **설명:**<br/>&#x200B;처음부터 컨텐츠 내에 있는 챕터의 오프셋(초)입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>offset) </li> <li> **하트비트:**<br/> (l:stream:chapter_offset) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;분류 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 오프셋 </li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>오프셋) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>오프셋) </li> </ul> |
 
 ### 챕터 길이
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/>media.chapter.length</li> <li> **필수:**<br/>SDK:아니오, API: 네.</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>챕터 닫기</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/>486</li><li> **설명:**<br/>챕터의 길이(초)입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>length)</li> <li> **하트비트:**<br/>(l:stream:chapter_length)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>분류</li> <li> **보고서 이름:**<br/>챕터 길이</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>length)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>length)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.chapter.length </li> <li> **필수:**<br/> SDK:아니오, API: 네. </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> 486 </li><li> **설명:**<br/>&#x200B;챕터의 길이(초)입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>length) </li> <li> **하트비트:**<br/> (l:stream:chapter_length) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;분류 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 길이 </li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>길이) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>길이) </li> </ul> |
 
 ### 챕터
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>아니요</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>챕터 닫기</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>자동으로 생성된 챕터의 ID입니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>name)</li> <li> **하트비트:**<br/>(s:stream:chapter_id)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>eVar</li> <li> **만료:**<br/>히트 시</li> <li> **보고서 이름:**<br/>챕터</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>name)</li> <li> **데이터 피드:**<br/>videochapter</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>이름)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;자동으로 생성된 챕터의 ID입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>name) </li> <li> **하트비트:**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 </li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>name) </li> <li> **데이터 피드:**<br/> videochapter </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>이름) </li> </ul> |
 
 ## 챕터 지표 {#chapter-Metrics}
 
@@ -73,19 +76,19 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>챕터 시작</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>챕터 시작 횟수입니다.**중요:**이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>view)</li> <li> **하트비트:**<br/>(s:event:<br/>type=chapter_start)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>챕터 시작 g</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>view)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>view)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨  </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;챕터 시작 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;챕터 시작 횟수입니다.  **중요:** 이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>view) </li> <li> **하트비트:**<br/> (s:event:<br/>type=chapter_start) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 시작</li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>보기) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>보기) </li> </ul> |
 
 ### 챕터 완료
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>문자열</li> <li> **전송 시점:**<br/>챕터 닫기</li> <li> **최소. SDK 버전:** 1.3</li> <li> **샘플 값:**<br/>TRUE</li><li> **설명:**<br/>챕터 완료 횟수입니다.**중요:**이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>complete)</li> <li> **하트비트:**<br/>(s:event:<br/>type=chapter_complete)</li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>챕터 완료 g</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>complete)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>complete)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨  </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3</li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;챕터 완료 횟수입니다.  **중요:** 이 이벤트가 설정된 경우 TRUE 값만 가능합니다. 이 이벤트가 설정되지 않은 경우에는 값이 전송되지 않습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>complete) </li> <li> **하트비트:**<br/> (s:event:<br/>type=chapter_complete) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 완료</li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>완료) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>완료) </li> </ul> |
 
 ### 챕터 체류 시간
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>자동으로 설정됨</li> <li> **API 키:**<br/>N/A</li> <li> **필수:**<br/>예</li> <li> **유형:**<br/>숫자</li> <li> **전송 시점:**<br/>챕터 닫기</li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>챕터에서 보낸 시간입니다.  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.<br/>**릴리스 날짜: 2018년 9월 13일**</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.chapter.<br/>timePlayed)</li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>예</li> <li> **예약된 변수:**<br/>이벤트</li> <li> **보고서 이름:**<br/>챕터 체류 시간 g</li> <li> **컨텍스트 데이터:**<br/>(a.media.chapter.<br/>timePlayed)</li> <li> **데이터 피드:**<br/>N/A</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.chapter.<br/>timePlayed)</li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨  </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 챕터 닫기 </li> <li> **최소. SDK 버전:** 1.3 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;챕터에서 보낸 시간입니다.  값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다. <br/>**릴리스 날짜: 2018년 9월 13일**   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter)<br/>timePlayed) </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;챕터 체류 시간</li> <li> **컨텍스트 데이터:**<br/> (a.media.chapter.<br/>timePlayed) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.chapter.<br/>timePlayed) </li> </ul> |
 
 ## 관련 API {#related_apis_section}
 
