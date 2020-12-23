@@ -1,9 +1,9 @@
 ---
 title: 미디어 동시 뷰어 보고
-description: Media Analytics 고객의 경우 Analysis Workspace에서 [미디어 동시 뷰어] 패널을 사용하면 동시 시청 사용자를 분석하여 최대 동시 시청 시간 발생 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다.
-translation-type: tm+mt
+description: Media Analytics 고객의 경우 Analysis Workspace에서 미디어 동시 뷰어 패널을 사용하면 동시 시청 사용자를 분석하여 최대 동시 시청 시간 발생 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다.
+translation-type: ht
 source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
