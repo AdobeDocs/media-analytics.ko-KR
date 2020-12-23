@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 + [Adobe Analytics에서 스트리밍 미디어 측정](media-overview.md)
 + [지원되는 장치 및 플랫폼](measurement-options/supported-devices.md)
-+ 스트리밍 미디어 분석 소개 {#intro-to-ava}
++ Streaming Media Analytics 소개{#intro-to-ava}
    + [전제 조건](intro-to-ava/prereqs.md)
    + 구현 경로 {#implementation-paths}
       + [개요](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -214,10 +214,10 @@ ht-degree: 94%
       + [미디어 세부 사항](media-reports/media-default-reports/media-reports-detail.md)
       + [미디어 날짜 보고서](media-reports/media-default-reports/media-reports-daypart.md)
       + [미디어 동시 뷰어 보고서](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + 미디어 작업 영역 패널 {#media-workspace-panels}
+   + 미디어 작업 공간 패널 {#media-workspace-panels}
       + [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [미디어 작업 공간 템플릿](media-reports/media-workspace-templates.md)
-   + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [API를 통해 Concurrent Viewer 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
 + [다운로드한 컨텐츠 추적](media-collection-api/track-downloaded-content.md)
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
