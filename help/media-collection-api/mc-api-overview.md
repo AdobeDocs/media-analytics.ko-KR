@@ -3,11 +3,11 @@ seo-title: 개요
 title: 개요
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Media Collection API는 고객 측 Media SDK에 대한 Adobe의 RESTful 대안입니다. Media Collection API를 사용하면 플레이어에서 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적할 수 있습니다.
 
-Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, Media SDK 설명서의 일부 측면이 Media Collection API와 관련되어 있습니다. 예를 들어, 두 솔루션은 동일한 [스트리밍 미디어 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)를 사용하고 수집된 스트리밍 미디어 추적 데이터는 동일한 [보고 및 분석으로 이어집니다.](/help/media-reports/media-reports-enable.md)
+Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, Media SDK 설명서의 일부 측면이 Media Collection API와 관련되어 있습니다. 예를 들어, 두 솔루션은 동일한 [스트리밍 미디어 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)를 사용하고, 수집된 스트리밍 미디어 추적 데이터는 동일한 [보고 및 분석](/help/media-reports/media-reports-enable.md)으로 이어집니다.
 
 ## 미디어 추적 데이터 흐름 {#media-tracking-data-flows}
 
