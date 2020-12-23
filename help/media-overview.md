@@ -2,11 +2,11 @@
 title: Adobe Analytics에서 스트리밍 미디어 측정
 description: Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 85%
 
 ## 스트리밍 미디어용 Adobe Analytics 정보
 
-Adobe Analytics for Streaming Media는 오디오, 비디오 및 광고를 위한 강력한 측정 툴을 제공하는 Adobe Analytics의 추가 기능입니다. Adobe Analytics는 Adobe Experience Platform의 일부입니다.
+Adobe Analytics for Streaming Media는 Adobe Analytics의 추가 기능으로서, 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. Adobe Analytics는 Adobe Experience Platform의 일부입니다.
 
-Streaming Media용 Adobe Analytics을 사용하면 사이트 전체의 전체 고객 여정을 추적할 수 있습니다. 이 지표는 Adobe Analytics 보고서 및 기타 Adobe Experience Cloud 제품에 쉽게 통합됩니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
+Adobe Analytics for Streaming Media를 사용하면 사이트에서의 전체 고객 여정을 추적할 수 있습니다. 이 지표는 Adobe Analytics 보고서 및 기타 Adobe Experience Cloud 제품에 쉽게 통합됩니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
 
 프레임, 버퍼링 시간 및 평균 비트율과 같이 QoS와 관련된 중요한 게재 지표를 측정할 수 있습니다. 또한 측정 지표는 웹 사이트 또는 앱 데이터와 결합하여 고객 경로 및 관심사를 시각화함으로써 향상된 추천을 제공하고 Adobe Experience Cloud를 사용하여 고객 경험을 개인화할 수 있습니다.
 
 ## 기능 {#features}
 
-스트리밍 미디어용 Adobe Analytics의 이점에는 실시간 모니터링, 세부 분석, 실행 가능한 통찰력 및 수익 창출 기회가 포함됩니다.
+Adobe Analytics for Streaming Media의 이점에는 실시간 모니터링, 세부 분석, 조치 가능한 통찰력 및 수익 창출 기회가 있습니다.
 * **실시간 분석** - 여러 채널에서 지속 기간, ex2, 및 ex3과 같은 주요 성능 지표를 활용하여 실시간으로 조치 가능한 결정을 내릴 수 있습니다. 기본 컨텐츠 이벤트는 10초 간격으로 측정되어 발생하는 모든 활동을 캡처합니다. 광고 추적 이벤트는 1초 간격으로 발생합니다.
 * **참여 유도** - 버퍼링 이벤트 수를 최소화하고, 컨텐츠 내에서 광고를 재생할 위치와 시점을 파악하여 사용자 참여를 유도함으로써 재방문을 제공하는 유연하고 간단한 경험을 제공합니다.
 * **전체적인 그림** - 모든 컨텐츠 배포자의 여러 데이터 포인트를 결합하여 모든 미디어 활동에 대한 전체 보기를 표시합니다. Federated Analytics 기능을 통해 가능한 모든 채널의 참여 및 보기/듣기를 측정합니다.
@@ -35,9 +35,9 @@ Streaming Media용 Adobe Analytics을 사용하면 사이트 전체의 전체 �
 
 ## 하트비트 측정 {#heartbeat}
 
-Adobe Analytics에서는 &quot;하트비트&quot;를 사용하여 비디오 지표를 수집합니다. 비디오 재생 중에 하트비트가 하트비트 추적 서버로 전송되어 재생 시간이 측정됩니다. 하트비트 호출은 10초마다 전송됩니다. 하트비트는 세부적인 비디오 참여 지표와 보다 정확한 비디오 폴아웃 보고서를 생성합니다. 스트리밍 미디어용 Adobe Analytics은 Media Analytics 확장, Media SDK 및 Media Collection API를 사용하여 Adobe 시작을 사용하여 하트비트를 측정합니다. `AppMeasurement` 및 `VisitorID` 구성 요소가 비디오 데이터를 받는 데 사용됩니다.
+Adobe Analytics에서는 &quot;하트비트&quot;를 사용하여 비디오 지표를 수집합니다. 비디오 재생 중에 하트비트가 하트비트 추적 서버로 전송되어 재생 시간이 측정됩니다. 하트비트 호출은 10초마다 전송됩니다. 하트비트는 세부적인 비디오 참여 지표와 보다 정확한 비디오 폴아웃 보고서를 생성합니다. Adobe Analytics for Streaming Media는 Media Analytics 확장, Media SDK 및 Media Collection API와 함께 Adobe Launch를 사용하여 하트비트를 측정합니다. `AppMeasurement` 및 `VisitorID` 구성 요소가 비디오 데이터를 받는 데 사용됩니다.
 
-스트리밍 미디어에 하트비트 Adobe Analytics을 사용하면 다음과 같은 이점이 있습니다.
+Adobe Analytics for Streaming Media에서 하트비트를 사용하면 다음과 같은 이점이 있습니다.
 
 | 기능 | 설명 |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ Adobe Analytics에서는 &quot;하트비트&quot;를 사용하여 비디오 지�
 | 가격 책정 | 미디어 스트림별 투명한 추적(단일) |
 | 구현 및 지원 | 지속적인 업데이트 및 개선 사항으로 간소화된 구성<br>간소화된 구현 프로세스를 사용하므로 플레이어 API를 통해 변수를 빨리 매핑하고 Adobe Debug 도구를 통해 구현을 확인하여 필요한 모든 변수가 정확하게 추적되도록 합니다. |
 | 파트너 공유 | Federated Analytics 및 인증된 지표<br>Federated Analytics를 통해 공유된 데이터를 사용하므로 업계 최초 미디어 공유 기능을 통해 모든 미디어 배포 파트너(운영자, 프로그래머 및 배포자)의 데이터를 전체적으로 평가할 수 있습니다. |
-| 고급 추적 | 다운로드한 컨텐츠 추적, 오류 복구 추적 및 동시 뷰어<br>연결 여부와 관계없이 장치에서 다운로드 및 재생되는 스트리밍 미디어 컨텐츠를 추적할 수 있습니다. |
+| 고급 추적 | 다운로드한 컨텐츠 추적, 오류 복구 추적 및 Concurrent Viewer<br>연결 여부에 관계없이 장치에서 다운로드 및 재생되는 스트리밍 미디어 컨텐츠를 추적할 수 있습니다. |
 
 
 
