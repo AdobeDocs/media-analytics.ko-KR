@@ -3,9 +3,9 @@ title: 품질 매개 변수
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '2992'
 ht-degree: 99%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 99%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;재생 중에 미디어 SDK에서 생성한 고유 오류 ID입니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>mediaSdkErrors) </li> <li> **하트비트:**<br/> (s:event:<br/>type=error) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정* </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>mediaSdkErrors) </li> <li> **데이터 피드:**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>mediaSdkErrors) </li> </ul><br/>* 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;재생 중에 미디어 SDK에서 생성한 고유 오류 ID입니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>mediaSdkErrors) </li> <li> **하트비트:**<br/> (s:event:<br/>type=error) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>mediaSdkErrors) </li> <li> **데이터 피드:**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>mediaSdkErrors) </li> </ul><br/> |
 
 
 
@@ -252,7 +252,7 @@ ht-degree: 99%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;정지된 이벤트가 발생한 스트림 수입니다. 이 지표는 재생 중에 하나 이상의 지연이 발생한 경우에만 1로 설정됩니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>stall) </li> <li> **하트비트:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/> 사용자 지정*</li> <li> **데이터 피드:**<br/> N/A </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>스텝 </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>스텝 </li> </ul><br/>* 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;정지된 이벤트가 발생한 스트림 수입니다. 이 지표는 재생 중에 하나 이상의 지연이 발생한 경우에만 1로 설정됩니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>stall) </li> <li> **하트비트:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정</li> <li> **데이터 피드:**<br/> N/A </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>스텝 </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>스텝 </li> </ul><br/> |
 
 >[!IMPORTANT]
 >
@@ -262,7 +262,7 @@ ht-degree: 99%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/> &quot;3&quot; </li><li> **설명:**<br/>&#x200B;재생 세션 중 재생이 정지된 횟수입니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>stallCount) </li> <li> **하트비트:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/> 사용자 지정*</li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>stallCount) </li> </ul><br/>* 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/> &quot;3&quot; </li><li> **설명:**<br/>&#x200B;재생 세션 중 재생이 정지된 횟수입니다. 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>stallCount) </li> <li> **하트비트:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정</li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>stallCount) </li> </ul><br/> |
 
 
 
@@ -270,7 +270,7 @@ ht-degree: 99%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/> 12 </li><li> **설명:**<br/>&#x200B;재생 세션 중에 재생이 정지된 총 시간입니다(초, 정수). 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>stallTime) </li> <li> **하트비트:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/> 사용자 지정*</li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>stallTime) </li> </ul> <br/>* 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5+ </li> <li> **샘플 값:**<br/> 12 </li><li> **설명:**<br/>&#x200B;재생 세션 중에 재생이 정지된 총 시간입니다(초, 정수). 고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe)<br/>stallTime) </li> <li> **하트비트:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정</li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.qoe.<br/>stallTime) </li> </ul> <br/> |
 
 
 
