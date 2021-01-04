@@ -3,9 +3,9 @@ title: 광고 매개 변수
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1855'
 ht-degree: 100%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 100%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> SITE_ID </li> <li> **API 키:**<br/> media.ad.siteId </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;광고 사이트의 ID입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad)<br/>없습니다) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정* </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>없습니다) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.ad.site) </li> </ul> * 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/> SITE_ID </li> <li> **API 키:**<br/> media.ad.siteId </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;광고 사이트의 ID입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad)<br/>없습니다) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>없습니다) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.ad.site) </li> </ul> |
 
 
 
@@ -156,7 +156,7 @@ ht-degree: 100%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> CREATIVE_URL </li> <li> **API 키:**<br/> media.ad.creativeURL </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **Description:**<br/>&#x200B;광고 문안의 URL입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad)<br/>creativeURL) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정* </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.ad.creativeURL) </li> </ul> * 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/> CREATIVE_URL </li> <li> **API 키:**<br/> media.ad.creativeURL </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **Description:**<br/>&#x200B;광고 문안의 URL입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad)<br/>creativeURL) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
@@ -164,7 +164,7 @@ ht-degree: 100%
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> PLACEMENT_ID </li> <li> **API 키:**<br/> media.ad.placementId </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;광고 배치 ID입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad)<br/>placement) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정* </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>배치) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.ad.placement) </li> </ul>* 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/> PLACEMENT_ID </li> <li> **API 키:**<br/> media.ad.placementId </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> </li><li> **설명:**<br/>&#x200B;광고 배치 ID입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad)<br/>placement) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **사용 가능:**<br/> <i>사용자 지정 처리 규칙 사용 </i> </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>배치) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.ad.placement) </li> </ul> |
 
 
 
