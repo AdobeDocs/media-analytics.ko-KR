@@ -3,9 +3,9 @@ title: 오디오 및 비디오 매개 변수
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '6257'
+source-wordcount: '6245'
 ht-degree: 99%
 
 ---
@@ -179,7 +179,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>  [appVersion](./audio-video-parameters.md#config-media-object) </li> <li> **API 키:**<br/> media.sdkVersion </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;2.62.0_release&quot; </li> <li> **설명:**<br/> 플레이어에서 사용하는 SDK 버전입니다. 플레이어에 적합한 사용자 지정 값을 가질 수 있습니다. <br/><br/>고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media)<br/>sdkVersion) </li> <li> **하트비트:**<br/> (s:sp:sdk) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정* </li> <li> **컨텍스트 데이터:**<br/> (a.media.sdkVersion) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.sdkVersion) </li> </ul>* 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/>  [appVersion](./audio-video-parameters.md#config-media-object) </li> <li> **API 키:**<br/> media.sdkVersion </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;2.62.0_release&quot; </li> <li> **설명:**<br/> 플레이어에서 사용하는 SDK 버전입니다. 플레이어에 적합한 사용자 지정 값을 가질 수 있습니다. <br/><br/>고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media)<br/>sdkVersion) </li> <li> **하트비트:**<br/> (s:sp:sdk) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.sdkVersion) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.sdkVersion) </li> </ul> |
 
 ### VHL 버전
 
@@ -319,7 +319,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.publisher </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 <br/>[Media Collection 개요](/help/media-collection-api/mc-api-overview.md) 또는 [SDK 다운로드 -버전 2.2](/help/sdk-implement/download-sdks.md)에서 사용할 수 있습니다.  </li> <li> **샘플 값:**<br/> &quot;Random Bauhaus&quot; </li> <li> **설명:**<br/> 오디오 컨텐츠 게시자의 이름입니다. <br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정* </li> <li> **컨텍스트 데이터:**<br/> (a.media.publisher) </li> <li> **데이터 피드:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.publisher) </li>  </ul> * 사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.publisher </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 <br/>[Media Collection 개요](/help/media-collection-api/mc-api-overview.md) 또는 [SDK 다운로드 -버전 2.2](/help/sdk-implement/download-sdks.md)에서 사용할 수 있습니다.  </li> <li> **샘플 값:**<br/> &quot;Random Bauhaus&quot; </li> <li> **설명:**<br/> 오디오 컨텐츠 게시자의 이름입니다. <br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.publisher) </li> <li> **데이터 피드:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.publisher) </li>  </ul> |
 
 ## 스트리밍 미디어 지표 {#audio-and-video-metrics}
 
@@ -399,7 +399,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 600</li> <li> **설명:**<br/> 마지막 호출 지표 이후의 초 수는 전체 이벤트나 종료 이벤트로 스트림을 닫았다면 0이며, 시간 제한으로 인해 닫았다면 보통 600입니다. 이 지표에는 솔루션 변수 및 자동 처리 규칙이 없으므로 저장할 사용자 지정 처리 규칙을 만들어야 합니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **하트비트:**<br/> N/A </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정*</li> <li> **컨텍스트 데이터:**<br/> (a.media.secondsSinceLastCall) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.secondsSinceLastCall) </li> </ul> *사용자 지정 처리 규칙 사용 |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/> N/A </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 600</li> <li> **설명:**<br/> 마지막 호출 지표 이후의 초 수는 전체 이벤트나 종료 이벤트로 스트림을 닫았다면 0이며, 시간 제한으로 인해 닫았다면 보통 600입니다. 이 지표에는 솔루션 변수 및 자동 처리 규칙이 없으므로 저장할 사용자 지정 처리 규칙을 만들어야 합니다.</li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **하트비트:**<br/> N/A </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정</li> <li> **컨텍스트 데이터:**<br/> (a.media.secondsSinceLastCall) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.secondsSinceLastCall) </li> </ul> |
 
 ### 페더레이션된 데이터
 
