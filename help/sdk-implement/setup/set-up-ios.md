@@ -2,11 +2,11 @@
 title: iOS 설정
 description: iOS에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,17 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
    * _플레이어 정보를 제공하는 API_ - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
 ## SDK 구현
+
+>[!IMPORTANT]
+>
+>버전 2.3.0부터 SDK는 XCFrameworks를 통해 배포됩니다.
+>
+>SDK 버전 2.3.0에는 Xcode 12.0 이상이 필요하며, 해당되는 경우 Cocoapods 1.10.0 이상이 필요합니다.
+
+* 바이너리 라이브러리 파일이 언급될 때마다 대신 해당 XCFramework 대체 파일을 사용해야 합니다.
+   * MediaSDK.a > MediaSDK.xcframework
+   * MediaSDK_TV.a > MediaSDKTV.xcframework
+* Adobe XCFrameworks를 프로젝트에 수동으로 추가하는 경우 XCFrameworks가 포함되지 않았는지 확인합니다.
 
 1. [다운로드한](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK를 프로젝트에 추가합니다.
 
@@ -66,6 +77,7 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
+
          **Apple TV(tvOS) 타겟:**
 
          * **AdobeMobileLibrary_TV.a**
