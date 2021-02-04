@@ -1,11 +1,11 @@
 ---
-title: 미디어 스트림 속성
-description: null
-translation-type: ht
-source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: ht
-source-wordcount: '209'
-ht-degree: 100%
+title: Media Stream Attribution 소개
+description: 추가 처리 규칙 및 사용자 지정 변수 없이 애플리케이션 작업을 미디어 추적 데이터에 연결하는 방법을 알아봅니다.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 89%
 
 ---
 
@@ -46,4 +46,3 @@ Analytics 보고에서 `Show` eVar를 사용하여 데이터를 분류할 수 �
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
-
