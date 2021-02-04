@@ -1,19 +1,18 @@
 ---
-title: 구현 경로
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: 어떤 스트리밍 미디어 구현 경로를 사용할 수 있습니까?
+description: Adobe 시작을 포함한 Adobe 스트리밍 미디어 구현 경로에 대해 알아보십시오.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # 구현 경로 {#implementation-paths}
 
-이 구현 경로의 경우 Media Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다.
+스트리밍 미디어 분석에는 고유한 SKU가 있고 서버 호출을 기반으로 비디오 스트림을 기반으로 모델에 대한 가격 모델에 대한 변경 사항이 있기 때문에 각 구현 경로의 경우, 고객은 판매 담당자/계정 관리자에게 문의하여 새로운 판매 주문에 서명해야 합니다.
 
 * **Adobe Media Analytics 확장이 있는 Adobe Launch**
 
@@ -44,6 +43,7 @@ ht-degree: 100%
    * 동적 광고가 삽입된(또는 삽입되지 않은) 광고 브레이크를 측정할 수 있도록 지원합니다.
    * TVSDK의 매끄러운 광고 삽입 모델을 사용하면 광고 재생을 직접 측정하는 분석을 통해 정확도를 높일 수 있습니다.
    * QoS 버퍼링 또는 모바일 연결 중단 문제와 모바일에서 검색, 일시 정지 및 백그라운드 실행과 같은 최종 사용자 상호 작용에서 정확성을 보장하는 강력한 이벤트 및 메타데이터 집합.
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
