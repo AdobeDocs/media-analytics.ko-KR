@@ -1,11 +1,11 @@
 ---
 title: Adobe Audience Manager 지원 소개
-description: 추가 처리 규칙 및 사용자 지정 변수 없이 애플리케이션 작업을 미디어 추적 데이터에 연결하는 방법을 알아봅니다.
-translation-type: tm+mt
+description: 추가 처리 규칙 및 사용자 지정 변수 없이도 애플리케이션 작업을 미디어 추적 데이터에 연결 방법을 알아보십시오.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 DMP(데이터 관리 플랜)인 AAM(Adobe Audience Manager)은 고객 데이터 자산을 통합하여 사이트 방문자에 대한 상업적인 연관성 있는 정보를 손쉽게 수집하고, 마케팅 가능한 세그먼트를 생성하고, 타깃팅된 광고 및 컨텐츠를 적절한 고객에게 제공할 수 있도록 하는 데 도움이 됩니다.
 
-AAM을 사용하면 데이터 판매자, 교환 또는 DSP(광고 구매 플랫폼)에 묶여 있지 않습니다. 또한 AAM은 파트너의 데이터 자산의 측면에서 완전히 불가지론자적 태도를 갖습니다. AAM은 여러 데이터 소스에 대한 액세스를 통해 디지털 게시자에게 광범위한 타사 데이터와 Adobe의 개인 데이터 협업을 사용할 수 있는 기능을 제공합니다. AAM에 대한 자세한 내용은 AAM 설명서 [Audience Manager 제품 설명서](https://docs-author.corp.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)를 참조하십시오.
+AAM을 사용하면 데이터 판매자, 교환 또는 DSP(광고 구매 플랫폼)에 묶여 있지 않습니다. 또한 AAM은 파트너의 데이터 자산의 측면에서 완전히 불가지론자적 태도를 갖습니다. AAM은 여러 데이터 소스에 대한 액세스를 통해 디지털 게시자에게 광범위한 타사 데이터와 Adobe의 개인 데이터 협업을 사용할 수 있는 기능을 제공합니다. AAM에 대한 자세한 내용은 AAM 설명서 [Audience Manager 제품 설명서](https://docs-author.corp.adobe.com/content/help/ko-KR/audience-manager/user-guide/aam-home.html)를 참조하십시오.
 
 **VA에서 AAM으로 데이터 전송 -** 비디오 컨텐츠와 비디오 광고 모두에 대해 솔루션(예약된) 변수를 사용하여 수집된 지표 및 메타데이터는 자동으로 AAM에 전송될 수 있습니다. 데이터 전송은 데스크탑, 모바일, OTT를 비롯한 모든 플랫폼에서 사용할 수 있습니다. 이 서버측 데이터 전송을 사용하려면 Adobe Client Care에 연락하여 이 피드를 활성화하도록 요청해야 합니다.
 
