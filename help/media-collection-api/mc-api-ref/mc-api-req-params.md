@@ -2,8 +2,11 @@
 title: 요청 매개 변수
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 요청 키  | 필수 여부 | 시작 시기... |  설명  |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | 스트림 포맷(예:&quot;HD&quot; |
 | `media.show` | N | `sessionStart` | 프로그램 또는 시리즈 이름 |
 | `media.season` | N | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
 | `media.episode` | N | `sessionStart` | 에피소드의 번호 |
@@ -123,17 +127,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### appInstallationId
 
-* **`appInstallationId`값을 전달하지&#x200B;*않은 경우*-** MA 백 엔드가 더 이상 MCID를 생성하지 않고, Adobe Analytics를 대신 이용하여 이 작업을 수행합니다. Media Collection API에서 MCID를 생성하여 모든 요청 시 보낼 수 있도록 가능한 경우 MCID를 보내거나 `appInstallationId`(필수 `marketingCloudOrgId`와 함께 사용)를 보내는 것이 좋습니다.
+* **`appInstallationId` 값을 전달하지 *않은 경우* -** MA 백 엔드가 더 이상 MCID를 생성하지 않고, Adobe Analytics를 대신 이용하여 이 작업을 수행합니다. Media Collection API에서 MCID를 생성하여 모든 요청 시 보낼 수 있도록 가능한 경우 MCID를 보내거나 `appInstallationId`(필수 `marketingCloudOrgId`와 함께 사용)를 보내는 것이 좋습니다.
 
-* **`appInstallationId`값을 전달&#x200B;*하는*경우 -** `appInstallationId` 및 (필수) `marketingCloudOrgId` 매개 변수 값을 전달하는 경우 MA 백 엔드에서 MCID를 생성&#x200B;*할 수 있습니다*. `appInstallationId`를 직접 전달하는 경우 클라이언트 측에서 해당 값을 유지해야 합니다. 이는 장치의 앱에 고유해야 하며, 앱이 다시 설치되지 않는 한 유지되어야 합니다.
+* **`appInstallationId` 값을 전달&#x200B;*하는* 경우 -** `appInstallationId` 및 (필수) `marketingCloudOrgId` 매개 변수 값을 전달하는 경우 MA 백 엔드에서 MCID를 생성&#x200B;*할 수 있습니다*. `appInstallationId`를 직접 전달하는 경우 클라이언트 측에서 해당 값을 유지해야 합니다. 이는 장치의 앱에 고유해야 하며, 앱이 다시 설치되지 않는 한 유지되어야 합니다.
 
 >[!NOTE]
 >
 >`appInstallationId`는 앱 및 *장치*&#x200B;를 고유하게 식별합니다. 각 장치의 각 앱에 대해 고유해야 합니다. 즉, 다른 장치에서 동일한 앱의 동일한 버전을 사용하는 두 명의 사용자가 각각 다른(고유) `appInstallationId`를 보내야 합니다.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
