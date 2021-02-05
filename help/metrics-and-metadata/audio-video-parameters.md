@@ -3,9 +3,9 @@ title: 오디오 및 비디오 매개 변수
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
 workflow-type: tm+mt
-source-wordcount: '6245'
+source-wordcount: '6243'
 ht-degree: 99%
 
 ---
@@ -199,7 +199,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> STREAM_FORMAT </li> <li> **API 키:**<br/> N/A </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;Live&quot; </li> <li> **설명:**<br/> 스트림의 형식입니다(실시간, VOD, 선형).  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.format) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.format) </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> STREAM_FORMAT </li> <li> **API 키:**<br/> media.streamFormat </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> &quot;HD&quot; </li> <li> **설명:**<br/> 스트림 형식(HD, SD)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 지정 처리 규칙 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/>&#x200B;사용자 지정 </li> <li> **컨텍스트 데이터:**<br/> (a.media.format) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata)<br/>a.media.format) </li> </ul> |
 
 ### 시즌
 
