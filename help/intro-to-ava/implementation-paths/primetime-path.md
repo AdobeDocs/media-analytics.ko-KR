@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Adobe Primetime이란?
+description: Adobe Primetime 솔루션에 대한 자세한 내용과 스트리밍 미디어를 상용화할 수 있는 방법을 살펴볼 수 있습니다.
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime{#primetime}
 
-Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다. Adobe의 이전 이정표 모델을 대체했습니다.
+미디어 분석(하트비트)은 Adobe의 이정표 모델을 대체한 Adobe의 표준 미디어 추적 솔루션입니다.
 
 Adobe Primetime은 컨텐츠 프로그래머 및 배포자가 연결된 모든 화면에서 미디어를 이용하여 수익을 창출할 수 있도록 지원하는 Adobe Experience Cloud 솔루션입니다.
 
