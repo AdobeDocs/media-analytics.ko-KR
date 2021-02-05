@@ -1,18 +1,18 @@
 ---
 title: 어떤 스트리밍 미디어 구현 경로를 사용할 수 있습니까?
-description: Adobe 시작을 포함한 Adobe 스트리밍 미디어 구현 경로에 대해 알아보십시오.
-translation-type: tm+mt
+description: Adobe Launch를 포함한 Adobe 스트리밍 미디어 구현 경로에 대해 알아보십시오.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 구현 경로 {#implementation-paths}
 
-스트리밍 미디어 분석에는 고유한 SKU가 있고 서버 호출을 기반으로 비디오 스트림을 기반으로 모델에 대한 가격 모델에 대한 변경 사항이 있기 때문에 각 구현 경로의 경우, 고객은 판매 담당자/계정 관리자에게 문의하여 새로운 판매 주문에 서명해야 합니다.
+이 구현 경로의 경우 스트리밍 미디어 Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다.
 
 * **Adobe Media Analytics 확장이 있는 Adobe Launch**
 
