@@ -1,23 +1,23 @@
 ---
-title: 미디어 분석 및 클라이언트측 통합이란 무엇입니까?
-description: Media Analytics가 클라이언트측 통합 및 Media SDK 및/또는 Media Collection API와 연동되는 방법을 알아봅니다.
+title: Media Analytics 및 클라이언트측 통합이란 무엇입니까?
+description: Media Analytics가 클라이언트측 통합 및 Media SDK 및/또는 Media Collection API와 작동하는 방식을 알아봅니다.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '152'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
-# 고객측{#client-side}
+# 클라이언트측{#client-side}
 
-Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다. adobe 이정표 모델을 대체했습니다.
+Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다. Adobe의 Milestone 모델을 대체했습니다.
 
 클라이언트측 통합은 Media Analytics로만 구현됩니다. Media SDK나 Media Collection API(또는 둘 다)를 구현하도록 선택할 수 있습니다. 이 클라이언트측 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 플레이어에서 사용할 수 있습니다.
 
-Media Analytics가 의도한 경로인 경우 [미디어 SDK 구현](/help/sdk-implement/setup/setup-overview.md) 및 [미디어 컬렉션 API](/help/media-collection-api/mc-api-overview.md)를 참조하십시오.
+Media Analytics가 의도한 경로인 경우 [Media SDK 구현](/help/sdk-implement/setup/setup-overview.md) 및 [Media Collection API](/help/media-collection-api/mc-api-overview.md)를 참조하십시오.
 
 >[!IMPORTANT]
 >
