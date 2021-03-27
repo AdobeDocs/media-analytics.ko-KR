@@ -3,7 +3,7 @@ title: SDK 다운로드
 description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 SDK 다운로드 링크입니다.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 63daad47260243d7f8c3badd8dc3cbf45432a905
+source-git-commit: cd3efa68ba0903bc9a616ac41dd5b20346c66870
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
@@ -22,8 +22,8 @@ ht-degree: 100%
 
 | 3.x Media SDK  | 최신 Media SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
-| JavaScript | [JS v3.0.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.1) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Chromecast v3.0.1용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.1) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
+| JavaScript | [JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+| Chromecast | [Chromecast v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
