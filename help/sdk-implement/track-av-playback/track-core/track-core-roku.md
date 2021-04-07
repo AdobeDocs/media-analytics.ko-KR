@@ -2,14 +2,14 @@
 title: Roku에서 코어 재생 추적
 description: 이 항목에서는 Roku에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 설명합니다.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # Roku에서 코어 재생 추적{#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 메타데이터 개체를 추적 세션에 첨부합니다.
 
    * **표준 메타데이터**
-
-      [JavaScript에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
-
-      * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         사용 가능한 메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](/help/metrics-and-metadata/audio-video-parameters.md)에서 참조하십시오.
-   * **사용자 지정 메타데이터**
-
-      사용자 지정 변수에 대한 변수 개체를 만들고, 이 미디어의 데이터로 채웁니다. 예:
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **재생을 시작하려는 의도 추적**
-
-   미디어 세션 추적을 시작하려면 미디어 하트비트 인스턴스에서 `trackSessionStart`를 호출합니다.
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >두 번째 값은 2단계에서 작성한 사용자 지정 미디어 메타데이터 개체 이름입니다.
-
-   >[!IMPORTANT]
-   >
-   >재생 시작이 아니라 `trackSessionStart`는 사용자의 재생 의도를 추적합니다. 이 API는 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
-
-   >[!NOTE]
-   >
-   >사용자 지정 메타데이터를 사용하지 않는 경우 위의 iOS 예에서 주석 처리된 행에 표시된 대로 `data`의 `trackSessionStart` 인수에 대해 빈 개체를 보내면 됩니다.
-
-1. **실제 재생 시작 추적**
-
-   미디어 플레이어에서 미디어의 첫 번째 프레임이 화면에서 렌더링되는 재생 시작에 대한 이벤트를 식별하고 `trackPlay`를 호출합니다.
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **재생 완료 추적**
-
-   미디어 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 재생 완료에 대한 이벤트를 식별하고 `trackComplete`를 호출합니다.
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **세션의 끝 추적**
-
-   미디어 플레이어에서 사용자가 미디어를 닫거나 미디어가 완료 및 언로드된 재생 언로드/종료에 대한 이벤트를 식별하고 `trackSessionEnd`를 호출합니다.
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionEnd`는 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 추적 세션에 필요한 `trackSessionStart`를 제외하고, 다른 모든 `track*` API 호출은 `trackSessionEnd` 이후 무시됩니다. 미디어 로드를 추적하고 현재 세션을 활성으로 설정하는 미디어 재생 추적 메서드입니다.
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **비디오 메타데이터 첨부**
-
-   원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 개체를 비디오 추적 세션에 첨부합니다.
-
-   * **표준 비디오 메타데이터**
 
       [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
