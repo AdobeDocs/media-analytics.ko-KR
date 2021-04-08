@@ -1,14 +1,14 @@
 ---
 title: 어떤 스트리밍 미디어 구현 경로를 사용할 수 있습니까?
 description: Adobe Launch를 포함한 Adobe 스트리밍 미디어 구현 경로에 대해 알아보십시오.
+exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '505'
 ht-degree: 100%
 
 ---
-
 
 # 구현 경로 {#implementation-paths}
 
