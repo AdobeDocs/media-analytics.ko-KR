@@ -2,14 +2,14 @@
 title: 이정표에서 Media Analytics로의 마이그레이션
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 translation-type: ht
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
 ---
-
 
 # 이정표에서 Media Analytics로의 마이그레이션 {#migrating-from-milestone-to-media-analytics}
 
@@ -89,4 +89,3 @@ ht-degree: 100%
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> 또는 <br>trackEvent | `trackPause()`<br> 또는 `trackEvent(`<br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)`<br> 또는 <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | 추가적인 변수를 설정하려면 사용자 지정 또는 표준 메타데이터를 사용하십시오. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | 해당 없음 | 추적 호출 빈도가 자동으로 설정됩니다. |
-
