@@ -2,14 +2,14 @@
 title: 전제 조건
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
+exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 translation-type: ht
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # 전제 조건{#prerequisites}
 
@@ -52,4 +52,3 @@ ht-degree: 100%
 1. **Adobe Analytics 보고서를 사용할 수 있도록 설정.**
 
    Analytics에서 보고서를 사용할 수 있도록 설정하고, 수집 중인 컨텐츠 및 광고 데이터를 보려면 [미디어 보고서 지원](/help/media-reports/media-reports-enable.md)을 참조하십시오.
-
