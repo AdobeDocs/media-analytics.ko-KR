@@ -2,14 +2,14 @@
 title: Adobe Analytics에서 스트리밍 미디어 측정
 description: Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
+exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 translation-type: ht
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Analytics에서 스트리밍 미디어 측정{#measuring-audio-and-video-in-adobe-analytics}
 
