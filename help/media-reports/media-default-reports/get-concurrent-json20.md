@@ -2,14 +2,14 @@
 title: Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 가져오기
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
+exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
 translation-type: ht
-source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '167'
 ht-degree: 100%
 
 ---
-
 
 # Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 가져오기{#get-concurrent-viewers-json-report-data}
 
