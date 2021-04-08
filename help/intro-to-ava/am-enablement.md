@@ -1,14 +1,14 @@
 ---
 title: Adobe Audience Manager 지원 소개
 description: 추가 처리 규칙 및 사용자 지정 변수 없이도 애플리케이션 작업을 미디어 추적 데이터에 연결 방법을 알아보십시오.
+exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '409'
 ht-degree: 100%
 
 ---
-
 
 # Audience Manager 지원{#audience-manager-enablement}
 
