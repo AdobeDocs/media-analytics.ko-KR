@@ -2,14 +2,14 @@
 title: Media Analytics 및 클라이언트측 통합이란 무엇입니까?
 description: Media Analytics가 클라이언트측 통합 및 Media SDK 및/또는 Media Collection API와 작동하는 방식을 알아봅니다.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
+exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 translation-type: ht
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
-
 
 # 클라이언트측{#client-side}
 
