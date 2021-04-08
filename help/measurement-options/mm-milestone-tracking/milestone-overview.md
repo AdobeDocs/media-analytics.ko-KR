@@ -2,14 +2,14 @@
 title: 이정표 개요
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: tm+mt
+exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '3344'
 ht-degree: 100%
 
 ---
-
 
 # 이정표 개요{#milestone-overview}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ### 이정표 보고 구성
 
-이정표 구현에 대한 비디오 보고를 설정하려면 **[!UICONTROL 관리 > 보고서 세트 관리자]로 이동하십시오.**보고서 세트를 선택한 다음**[!UICONTROL 비디오 관리 > 비디오 보고]**&#x200B;를 선택합니다.
+이정표 구현에 대한 비디오 보고를 설정하려면 **[!UICONTROL 관리 > 보고서 세트 관리자]로 이동하십시오.** 보고서 세트를 선택한 다음 **[!UICONTROL 비디오 관리 > 비디오 보고]**&#x200B;를 선택합니다.
 
 <!--
 ![](assets/0clip_image002_1537416456.png){width="248"}
@@ -238,4 +238,3 @@ s.dc = '122';
 /****************************** MODULES *****************************/ 
 /* Insert the media module tracking code here. */ 
 ```
-
