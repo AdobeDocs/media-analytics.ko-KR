@@ -1,14 +1,14 @@
 ---
 title: 지원되는 장치 및 플랫폼
 description: Adobe Analytics for Streaming Media를 사용하면 모든 장치에서 각 미디어 스트림을 수집하고 보고할 수 있습니다.
+exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 translation-type: ht
-source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
 ---
-
 
 # 지원되는 장치 및 플랫폼 {#devices-supported}
 
