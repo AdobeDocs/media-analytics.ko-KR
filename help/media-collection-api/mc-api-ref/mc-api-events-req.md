@@ -1,12 +1,15 @@
 ---
 title: 이벤트 요청
-description: null
+description: 이벤트 요청
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # 이벤트 요청{#events-request}
 
@@ -48,7 +51,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***광고 추적 -**`adBreak`*내에서만 광고를 추적할 수 있습니다.
+>***광고 추적 -**`adBreak`* 내에서만 광고를 추적할 수 있습니다.
 >
 >광고 주위에 `adBreakStart` 및 `adBreakComplete` &quot;북엔드&quot;가 없을 경우 `adStart` 및 `adComplete` 이벤트가 무시되고, 해당 광고 기간은 기본 컨텐츠 기간으로 추적됩니다. 이 경우 Adobe Analytics에서 사용할 수 있는 집계된 데이터에 상당한 영향을 줄 수 있습니다.
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **없음.** <br/><br/>미디어 세션의 세션 ID를 백 엔드 서비스에서 찾지 못했습니다. | 클라이언트 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **410** | **없어짐.** <br/><br/>미디어 세션이 백 엔드 서비스에서 발견되었지만 고객이 더 이상 이 세션에서 활동을 보고할 수 없습니다. | 클라이언트 애플리케이션은 [세션 요청](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **500** | **서버 오류** | 해당 없음 |
-
