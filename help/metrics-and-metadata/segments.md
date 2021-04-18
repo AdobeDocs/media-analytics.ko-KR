@@ -1,12 +1,15 @@
 ---
 title: 세그먼트
-description: null
+description: 세그먼트
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 100%
 
 ---
-
 
 # 세그먼트{#segments}
 
@@ -25,4 +28,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | 미디어 컨텐츠 유형: 팟캐스트 | 모든 팟캐스트 컨텐츠를 세그먼트화합니다. | &quot;컨텐츠 유형 = `podcast`&quot; |
 | 미디어 컨텐츠 유형: 오디오북 | 모든 오디오북 컨텐츠를 세그먼트화합니다. | &quot;컨텐츠 유형 = `audiobook`&quot; |
 | 미디어 컨텐츠 유형: AoD | 모든 AoD 컨텐츠를 세그먼트화합니다. | &quot;컨텐츠 유형 = `aod`&quot; |
-
