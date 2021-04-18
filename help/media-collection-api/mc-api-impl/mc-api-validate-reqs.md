@@ -1,12 +1,15 @@
 ---
 title: 이벤트 요청 확인
-description: null
+description: 이벤트 요청 확인
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
-
 
 # 이벤트 요청 확인{#validating-event-requests}
 
@@ -126,4 +129,3 @@ Connection: keep-alive
 >[!NOTE]
 >
 >세션 컨텍스트는 컬렉션 계층에서 사용할 수 없으므로 세션 수준 유효성 검사가 불가능합니다.
-
