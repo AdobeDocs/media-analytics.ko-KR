@@ -1,17 +1,17 @@
 ---
-title: 전제 조건
-description: 전제 조건
+title: 사전 요구 사항
+description: 사전 요구 사항
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
 ht-degree: 100%
 
 ---
 
-# 전제 조건{#prerequisites}
+# 사전 요구 사항{#prerequisites}
 
 ## 결정 {#decision}
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
    Adobe Experience Platform ID 서비스를 구현해야 합니다.
 
-    Identity 서비스를 통해 사용자 핵심 서비스의 Experience Cloud 핵심 서비스, 솔루션, 고객 속성 및 대상에 공통된 ID 프레임워크를 사용할 수 있습니다. 이 서비스는 영구적인 고유 ID를 사이트 방문자에게 할당하여 작동됩니다. 조직이 ID 서비스를 구현하면 이 ID를 사용하여 다른 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다.
+   Identity 서비스를 통해 사용자 핵심 서비스의 Experience Cloud 핵심 서비스, 솔루션, 고객 속성 및 대상에 공통된 ID 프레임워크를 사용할 수 있습니다. 이 서비스는 영구적인 고유 ID를 사이트 방문자에게 할당하여 작동됩니다. 조직이 ID 서비스를 구현하면 이 ID를 사용하여 다른 Experience Cloud 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다.
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -51,4 +51,4 @@ ht-degree: 100%
 
 1. **Adobe Analytics 보고서를 사용할 수 있도록 설정.**
 
-   Analytics에서 보고서를 사용할 수 있도록 설정하고, 수집 중인 컨텐츠 및 광고 데이터를 보려면 [미디어 보고서 지원](/help/media-reports/media-reports-enable.md)을 참조하십시오.
+   Analytics에서 보고서를 사용할 수 있도록 설정하고, 수집 중인 콘텐츠 및 광고 데이터를 보려면 [미디어 보고서 지원](/help/media-reports/media-reports-enable.md)을 참조하십시오.
