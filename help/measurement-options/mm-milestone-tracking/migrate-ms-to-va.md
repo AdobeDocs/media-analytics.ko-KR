@@ -3,9 +3,9 @@ title: 이정표에서 Media Analytics로의 마이그레이션
 description: 이정표에서 Media Analytics로의 마이그레이션
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
@@ -25,11 +25,11 @@ ht-degree: 100%
 
 | 이정표 지표 | 변수 유형 | Media Analytics 지표 |
 | --- | --- | --- |
-| 컨텐츠 | eVar <br>기본 만료: 방문 | 컨텐츠 |
-| 컨텐츠 유형 | eVar <br>기본 만료: 페이지 보기 | 컨텐츠 유형 |
-| 컨텐츠 체류 시간 | 이벤트 <br>유형: 카운터 | 컨텐츠 체류 시간 |
+| 콘텐츠 | eVar <br>기본 만료: 방문 | 콘텐츠 |
+| 콘텐츠 유형 | eVar <br>기본 만료: 페이지 보기 | 콘텐츠 유형 |
+| 콘텐츠 체류 시간 | 이벤트 <br>유형: 카운터 | 콘텐츠 체류 시간 |
 | 비디오 시작 | 이벤트 <br>유형: 카운터 | 비디오 시작 |
-| 비디오 완료 | 이벤트 <br>유형: 카운터 | 컨텐츠 완료 |
+| 비디오 완료 | 이벤트 <br>유형: 카운터 | 콘텐츠 완료 |
 
 
 ### 미디어 모듈 변수
@@ -43,14 +43,14 @@ ht-degree: 100%
 
 ### 선택 사항 변수
 
-| 이정표 | 이정표 구문 | 미디어 분석 | Media Analytics 구문 |
+| 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 해당 없음 | 미리 만들어진 플레이어 매핑은 더 이상 제공되지 않습니다. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 해당 없음 | 미리 만들어진 플레이어 매핑은 더 이상 제공되지 않습니다. |
-| Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | 해당 없음 | 컨텐츠 완료는 100% 진행률 마커만 지원합니다. |
-| Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 해당 없음 | 컨텐츠 완료는 100% 진행률 마커만 지원합니다. |
+| Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | 해당 없음 | 콘텐츠 완료는 100% 진행률 마커만 지원합니다. |
+| Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 해당 없음 | 콘텐츠 완료는 100% 진행률 마커만 지원합니다. |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK 키: playerName;<br> API 키: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 컨텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
+| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 콘텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
 | Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 해당 없음 | Media Analytics는 항상 10%, 25%, 50%, 75%, 95%의 진행률 마커를 추적합니다.. |
 | Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 해당 없음 | Media Analytics는 항상 10%, 25%, 50%, 75%, 95%의 진행률 마커를 추적합니다.. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다.. |
@@ -58,9 +58,9 @@ ht-degree: 100%
 
 ### 광고 추적 변수
 
-| 이정표 | 이정표 구문 | 미디어 분석 | Media Analytics 구문 |
+| 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
 | --- | --- | --- | --- |
-| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 컨텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
+| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 콘텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 해당 없음 | 진행률 마커는 기본적으로 광고에는 제공되지 않습니다. 광고 진행률 마커를 작성하려면 계산된 지표를 사용하십시오. |
 | Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | 해당 없음 | Media Analytics는 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
 | Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다.. |
@@ -68,7 +68,7 @@ ht-degree: 100%
 
 ### 미디어 모듈 메서드
 
-| 이정표 | 이정표 구문 | 미디어 분석 | Media Analytics 구문 |
+| 이정표 | 이정표 구문 | Media Analytics | Media Analytics 구문 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (필수) 비디오 보고서에 나타낼 비디오 이름입니다. | 이름 | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -76,10 +76,10 @@ ht-degree: 100%
 | mediaPlayerName | `mediaPlayerName`: (필수) 비디오를 보는 데 사용되는 미디어 플레이어의 이름으로 비디오 보고서에 나타나도록 할 이름입니다. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
 | 이름 | `name`: (필수) 광고 이름 또는 ID입니다. | 이름 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| 길이 | `length`: (필수) 광고 길이입니다. | 길이 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어  플레이어의 이름입니다. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`: 광고가 포함된 기본 컨텐츠의 이름 또는 ID입니다. | 해당 없음 | 자동 상속됨. |
-| parentPod | `parentPod`: 기본 컨텐츠에서 광고가 재생되는 위치입니다. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| length | `length`: (필수) 광고 길이입니다. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어 플레이어의 이름입니다. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| parentName | `parentName`: 광고가 포함된 기본 콘텐츠의 이름 또는 ID입니다. | 해당 없음 | 자동 상속됨. |
+| parentPod | `parentPod`: 기본 콘텐츠에서 광고가 재생되는 위치입니다. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
 | parentPodPosition | `parentPodPosition`: Pod 내에서 광고가 재생되는 위치입니다. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | CPM | `CPM`: 이 재생에 적용되는 CPM 또는 암호화된 CPM(앞에 &quot;~&quot;가 붙음)입니다. | 해당 없음 | 기본적으로 Media Analytics에서 사용할 수 없음. |
 | Media.click | `s.Media.click(name, offset)` | 해당 없음 | 사용자 지정 링크 분석 호출을 사용하여 클릭 수를 추적하십시오. |
