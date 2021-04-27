@@ -2,9 +2,9 @@
 title: Concurrent Viewer JSON 보고서 데이터 가져오기
 description: Concurrent Viewer JSON 보고서 데이터 가져오기
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Analytics API의 _*1.4 버전*_&#x200B;을 사용하여 동시 뷰어 보고서 
 * [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 컨텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
+1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 콘텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
 1. 요청 본문에서 `elements` -> `id`를 `videoconcurrentviewers`로 설정합니다.
 1. 충분한 양의 데이터를 요청합니다. 데이터에 간격이 없도록 3200개의 데이터 포인트가 권장됩니다.
 
