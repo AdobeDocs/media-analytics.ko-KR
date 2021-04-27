@@ -3,9 +3,9 @@ title: 이정표에서 사용자 지정 링크로의 마이그레이션
 description: 이정표에서 사용자 지정 링크로의 마이그레이션
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
 ht-degree: 100%
 
@@ -25,9 +25,9 @@ ht-degree: 100%
 
 | 이정표 지표 | 변수 유형 | 사용자 지정 링크 |
 | --- | --- | --- |
-| 컨텐츠 | eVar <br>기본 만료: 방문 | 자신만의 eVar를 정의하십시오. |
-| 컨텐츠 유형 | eVar <br>기본 만료: 페이지 보기 | 자신만의 eVar를 정의하십시오. |
-| 컨텐츠 체류 시간 | 이벤트 <br>유형: 카운터 | 자신만의 이벤트를 정의하십시오. |
+| 콘텐츠 | eVar <br>기본 만료: 방문 | 자신만의 eVar를 정의하십시오. |
+| 콘텐츠 유형 | eVar <br>기본 만료: 페이지 보기 | 자신만의 eVar를 정의하십시오. |
+| 콘텐츠 체류 시간 | 이벤트 <br>유형: 카운터 | 자신만의 이벤트를 정의하십시오. |
 | 비디오 시작 | 이벤트 <br>유형: 카운터 | 자신만의 이벤트를 정의하십시오. |
 | 비디오 완료 | 이벤트 <br>유형: 카운터 | 자신만의 이벤트를 정의하십시오. |
 
@@ -76,9 +76,9 @@ ht-degree: 100%
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | 해당 없음 | 사용할 수 없음. |
 | 이름 | `name`: (필수) 광고 이름 또는 ID입니다. | 해당 없음 | 사용할 수 없음. |
 | length | `length`: (필수) 광고 길이입니다. | 해당 없음 | 사용할 수 없음. |
-| playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어  플레이어의 이름입니다. | 해당 없음 | 사용할 수 없음. |
-| parentName | `parentName`: 광고가 포함된 기본 컨텐츠의 이름 또는 ID입니다. | 해당 없음 | 사용할 수 없음. |
-| parentPod | `parentPod`: 기본 컨텐츠에서 광고가 재생되는 위치입니다. | 해당 없음 | 사용할 수 없음. |
+| playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어 플레이어의 이름입니다. | 해당 없음 | 사용할 수 없음. |
+| parentName | `parentName`: 광고가 포함된 기본 콘텐츠의 이름 또는 ID입니다. | 해당 없음 | 사용할 수 없음. |
+| parentPod | `parentPod`: 기본 콘텐츠에서 광고가 재생되는 위치입니다. | 해당 없음 | 사용할 수 없음. |
 | parentPodPosition | `parentPodPosition`: Pod 내에서 광고가 재생되는 위치입니다. | 해당 없음 | 사용할 수 없음. |
 | CPM | `CPM`: 이 재생에 적용되는 CPM 또는 암호화된 CPM(앞에 &quot;~&quot;가 붙음)입니다. | 해당 없음 | 사용할 수 없음. |
 | Media.click | `s.Media.click(name, offset)` | `s.tl()` | 사용자 지정 링크 분석 호출을 사용하여 클릭 수를 추적하십시오. |
