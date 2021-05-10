@@ -2,14 +2,14 @@
 title: 요청 매개 변수
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 99%
+source-wordcount: '1205'
+ht-degree: 98%
 
 ---
-
 
 # 요청 매개 변수{#request-parameters}
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | ECID(Experience Cloud 사용자 ID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만, Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 |
+| `visitor.aamLocationHint` | N | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 — 값을 입력하지 않으면 값이 null입니다. |
 | `appInstallationId` | N | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
 
 ## 컨텐츠 데이터
