@@ -4,7 +4,7 @@ description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 98%
@@ -164,7 +164,7 @@ ht-degree: 98%
 
 ### visitor.aamLocationHint
 
-이 매개 변수는 Adobe Analytics에서 고객 데이터를 Audience Manager에게 보낼 때 AAM(Adobe Audience Manager) Edge가 적중됨을 나타냅니다. 이 매개 변수를 전달하지 않으면 Adobe는 이 매개 변수를 1로 하드코딩합니다. 이는 최종 사용자가 지리적으로 먼 곳(예: 미국-동부, 미국-서부, 유럽, 아시아)에서 장치를 사용하는 경향이 있는 경우에 특히 중요합니다. 다른 경우에는 사용자 데이터가 여러 AAM Edges에 분산됩니다.
+이 매개 변수는 Adobe Analytics에서 고객 데이터를 Audience Manager에게 보낼 때 AAM(Adobe Audience Manager) Edge가 적중됨을 나타냅니다. 값을 입력하지 않으면 값이 null입니다. 이는 최종 사용자가 지리적으로 먼 곳(예: 미국-동부, 미국-서부, 유럽, 아시아)에서 장치를 사용하는 경향이 있는 경우에 특히 중요합니다. 다른 경우에는 사용자 데이터가 여러 AAM Edges에 분산됩니다.
 
 ### media.resume
 
