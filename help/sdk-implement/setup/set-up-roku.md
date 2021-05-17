@@ -2,14 +2,13 @@
 title: Roku 설정
 description: Roku에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
-source-wordcount: '577'
-ht-degree: 100%
+exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
+source-wordcount: '709'
+ht-degree: 81%
 
 ---
-
 
 # Roku 설정{#set-up-roku}
 
@@ -48,40 +47,40 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
       ```
       {
-        "version":"1.0", 
+        "version":"1.0",
         "analytics":{
           "rsids":"",
           "server":"",
-          "charset":"UTF-8", 
-          "ssl":false, 
-          "offlineEnabled":false, 
-          "lifecycleTimeout":30, 
-          "batchLimit":50, 
-          "privacyDefault":"optedin", 
+          "charset":"UTF-8",
+          "ssl":true,
+          "offlineEnabled":false,
+          "lifecycleTimeout":30,
+          "batchLimit":50,
+          "privacyDefault":"optedin",
           "poi":[ ]
       },
       "marketingCloud":{
         "org":""
       },
-      "target":{ 
-        "clientCode":"", 
+      "target":{
+        "clientCode":"",
         "timeout":5
       },
-      "audienceManager":{ 
+      "audienceManager":{
         "server":""
       },
-      "acquisition":{ 
+      "acquisition":{
         "server":"example.com",
         "appid":"sample-app-id"
       },
       
-      "mediaHeartbeat":{ 
-         "server":"example.com", 
-         "publisher":"sample-publisher", 
-         "channel":"sample-channel", 
-         "ssl":false,
-         "ovp":"sample-ovp", 
-         "sdkVersion":"sample-sdk", 
+      "mediaHeartbeat":{
+         "server":"example.com",
+         "publisher":"sample-publisher",
+         "channel":"sample-channel",
+         "ssl":true,
+         "ovp":"sample-ovp",
+         "sdkVersion":"sample-sdk",
          "playerName":"roku"
          }    
       }
@@ -133,11 +132,41 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
    | `visitorMarketingCloudID` | 방문자 ID 서비스에서 Experience Cloud 방문자 ID를 검색합니다.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Experience Cloud 방문자 ID를 사용하면 각 방문자와 연결할 수 있는 추가 고객 ID를 설정할 수 있습니다. 방문자 API는 여러 다른 고객 ID의 범위를 구분하기 위해 동일한 방문자의 여러 고객 ID와 고객 유형 식별자를 허용합니다. 이 메서드는 `setCustomerIDs`에 해당합니다. 예: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | SDK에서 RIDA(Roku ID for Advertising)를 설정하는 데 사용됩니다. 예: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API를 사용하여 RIDA(Roku ID for Advertising)를 가져옵니다. |
-
+   | `getAllIdentifiers` | Analytics, 방문자, Audience Manager 및 사용자 지정 식별자를 포함하여 SDK가 저장하는 모든 식별자 목록을 반환합니다.<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
-    Roku Api Reference: 
+    Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
+
+   <br/><br/>
+
+   **추가 공개 API**
+
+   **DebugLogging**
+| 메서드   | 설명 | | — | — | |  `setDebugLogging` | SDK에 대한 디버그 로깅을 활성화 또는 비활성화하는 데 사용됩니다.  <br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` | 디버그 로깅이 활성화되면 true를 반환합니다.   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+
+   <br/><br/>
+
+   **PrivacyStatus**
+| 상수   | 설명 | | — | — | |  `PRIVACY_STATUS_OPT_IN` | 옵트인하도록 setPrivacyStatus를 호출하는 동안 전달됩니다. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` | 옵트아웃할 setPrivacyStatus를 호출하는 동안 전달됩니다.  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+
+   <br/>
+
+   |  메서드   | 설명 |
+   | --- | --- |
+   | `setPrivacyStatus` | SDK에 대한 개인 정보 상태를 설정합니다. <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | SDK에 설정된 현재 개인 정보 상태를 가져옵니다. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+
+   <br/><br/>
+   >[!IMPORTANT]
+   >
+   >기본 이벤트에서 `processMessages` 및 `processMediaMessages` 함수를 250ms마다 호출하여 SDK가 게시물을 제대로 전송하도록 하십시오.
+
+   |  메서드   | 설명 |
+   | --- | --- |
+   | `processMessages` | Analytics 이벤트를 처리할 SDK로 전달할 책임이 있습니다. <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 처리할 SDK로 미디어 이벤트를 전달합니다.<br/><br/>`ADBMobile().processMediaMessages()` |
+
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
