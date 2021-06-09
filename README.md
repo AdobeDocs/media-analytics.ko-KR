@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '434'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 90%
 
 ---
 # 기여자 문서
@@ -16,13 +15,13 @@ Adobe는 설명서 팀 외부 직원뿐만 아니라 커뮤니티 기여를 환�
 
 ## Adobe 내용에 대한 귀하의 기여 관련 정보
 
-[Adobe Docs 기여자 안내서](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)를 참조하십시오.
+[Adobe Docs 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
 
 기여하는 방식은 사용자의 신분과 사용자가 기여하고 싶은 변경 내용의 종류에 따라 다릅니다.
 
 ### 부분 변경 사항
 
-부분 업데이트에 선의로 기여하려는 경우 문서를 방문하여 문서 내의 **편집** 링크를 클릭하면 문서에 해당하는 GitHub 소스로 이동하게 됩니다. 그런 다음 Github UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)를 참조하십시오.
+부분 업데이트에 선의로 기여하려는 경우 문서를 방문하여 문서 내의 **편집** 링크를 클릭하면 문서에 해당하는 GitHub 소스로 이동하게 됩니다. 그런 다음 Github UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 이 REPO의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
@@ -36,13 +35,13 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 직원의 주요 변경 사항
 
-Adobe Experience Cloud 솔루션 제품 팀의 기술 저작, 프로그램 관리자 또는 개발자이고 기술 문서를 작성하거나 작성하는 것이 사용자의 일인 경우 개인 저장소 [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)을(를) 사용해야 합니다. <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터, 프로그램 관리자 또는 개발자이고 기술 문서에 기여하거나 기술 문서를 작성하는 것이 본인의 직무인 경우 개인 리포지토리([git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs))를 사용해야 합니다. <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 도구 및 설정
 
 커뮤니티 기여자는 기본 편집에 GitHub UI를 사용하거나 리포지토리를 포크하여 큰 기여를 할 수 있습니다.
 
-자세한 내용은 [Adobe Docs 기여자 안내서](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)를 참조하십시오.
+자세한 내용은 [Adobe Docs 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 ## Markdown을 사용하여 주제 서식을 지정하는 방법
 
