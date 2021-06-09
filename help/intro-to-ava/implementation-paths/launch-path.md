@@ -1,11 +1,10 @@
 ---
 title: Adobe Launch는 스트리밍 미디어 추적을 어떻게 구현합니까?
 description: 스트리밍 미디어를 위한 Adobe 스트리밍 미디어 Launch 확장에 대해 알아보십시오.
-translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: ht
-source-wordcount: '132'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +15,7 @@ Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루�
 
 Adobe Experience Platform Launch는 Dynamic Tag Management의 후속 제품으로서, 미디어 플레이어에서 추적 기능을 간편하게 구현할 수 있도록 해주는 Launch 확장 프로그램을 제공합니다.
 
-Launch 확장 프로그램에 대한 자세한 내용은 [Adobe Media Analytics for Audio 및 Video 확장](https://docs.adobe.com/content/help/ko-KR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)에서 확인할 수 있습니다.
+Launch 확장 프로그램에 대한 자세한 내용은 [Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)에서 확인할 수 있습니다.
 
 >[!NOTE]
 >
