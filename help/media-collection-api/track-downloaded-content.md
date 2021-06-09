@@ -2,14 +2,13 @@
 title: 다운로드한 컨텐츠 추적
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
-workflow-type: ht
-source-wordcount: '611'
-ht-degree: 100%
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
-
 
 # 다운로드한 컨텐츠 추적{#track-downloaded-content}
 
@@ -40,13 +39,13 @@ ht-degree: 100%
 ### 이벤트 스키마
 
 다운로드한 컨텐츠 기능은 (표준) 온라인 Media Collection API의 오프라인 버전이므로, 플레이어에서 일괄 처리하여 백 엔드로 전송하는 이벤트 데이터는 온라인 호출 시 사용하는 것과 동일한 이벤트 스키마를 사용해야 합니다. 이러한 스키마에 대한 자세한 내용은 다음을 참조하십시오.
-* [개요](/help/media-collection-api/mc-api-overview.md)
+* [개요;](/help/media-collection-api/mc-api-overview.md)
 * [이벤트 요청 확인](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 이벤트 순서
 
 * 일괄 처리 페이로드의 첫 번째 이벤트는 Media Collection API를 사용할 때처럼 `sessionStart`여야 합니다.
-* 다운로드한 컨텐츠를 전송하는 백 엔드를 표시하려면 **`media.downloaded: true`**를`sessionStart`이벤트의 표준 메타데이터 매개 변수(`params`키)에 포함해야 합니다. 다운로드한 데이터를 보낼 때 이 매개 변수가 없거나 거짓으로 설정되어 있으면 이 API는 400 응답 코드(잘못된 요청)를 반환합니다. 이 매개 변수는 백 엔드에 다운로드한 컨텐츠와 라이브 컨텐츠를 구별합니다.`media.downloaded: true`가 활동 상태 세션에 설정되어 있는 경우 API에서 똑같이 400 응답 코드가 발생합니다.
+* 다운로드한 컨텐츠를 전송하는 백 엔드를 표시하려면 **`media.downloaded: true`**&#x200B;를 `sessionStart` 이벤트의 표준 메타데이터 매개 변수(`params` 키)에 포함해야 합니다. 다운로드한 데이터를 보낼 때 이 매개 변수가 없거나 거짓으로 설정되어 있으면 이 API는 400 응답 코드(잘못된 요청)를 반환합니다. 이 매개 변수는 백 엔드에 다운로드한 컨텐츠와 라이브 컨텐츠를 구별합니다. `media.downloaded: true`가 활동 상태 세션에 설정되어 있는 경우 API에서 똑같이 400 응답 코드가 발생합니다.
 * 표시되는 순서로 플레이어 이벤트를 올바르게 저장하는 것은 구현에 따라 달라집니다.
 
 ### 응답 코드
@@ -56,7 +55,7 @@ ht-degree: 100%
 
 ## Adobe Analtyics와의 통합 {#integration-with-adobe-analtyics}
 
-다운로드한 컨텐츠 시나리오에 대한 Analytics 시작/닫기 호출을 계산할 때 백 엔드는 `ts.`라는 추가 Analytics 필드를 설정합니다. 이들은 받은 첫 번째 이벤트와 마지막 이벤트(시작 및 완료)에 대한 타임스탬프입니다. 이 메커니즘을 사용하면 완료된 미디어 세션을 올바른 시점에 배치할 수 있습니다. 즉, 사용자가 며칠 동안 온라인 상태가 되지 않더라도 컨텐츠를 실제로 확인할 때 미디어 세션이 발생했다고 보고합니다. _타임스탬프 선택 사항 보고서 세트를 작성하여 Adobe Analytics 측에서 이 메커니즘을 사용 가능하도록 설정해야 합니다._ 타임스탬프 선택 사항 보고서 세트를 사용하려면 [타임스탬프 선택 사항](https://docs.adobe.com/content/help/ko-KR/analytics/admin/admin-tools/timestamp-optional.html)을 참조하십시오.
+다운로드한 컨텐츠 시나리오에 대한 Analytics 시작/닫기 호출을 계산할 때 백 엔드는 `ts.`라는 추가 Analytics 필드를 설정합니다. 이들은 받은 첫 번째 이벤트와 마지막 이벤트(시작 및 완료)에 대한 타임스탬프입니다. 이 메커니즘을 사용하면 완료된 미디어 세션을 올바른 시점에 배치할 수 있습니다. 즉, 사용자가 며칠 동안 온라인 상태가 되지 않더라도 컨텐츠를 실제로 확인할 때 미디어 세션이 발생했다고 보고합니다. _타임스탬프 선택 사항 보고서 세트를 작성하여 Adobe Analytics 측에서 이 메커니즘을 사용 가능하도록 설정해야 합니다._ 타임스탬프 선택 사항 보고서 세트를 사용하려면 [타임스탬프 선택 사항](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)을 참조하십시오.
 
 ## 샘플 세션 비교 {#sample-session-comparison}
 
