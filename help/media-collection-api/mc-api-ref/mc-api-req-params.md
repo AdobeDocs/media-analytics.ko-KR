@@ -1,13 +1,12 @@
 ---
 title: 요청 매개 변수
-description: null
+description: Adobe Analytics 스트리밍 미디어 요청 매개 변수에 대해 알아봅니다.
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: tm+mt
-source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
+source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 98%
+source-wordcount: '1297'
+ht-degree: 94%
 
 ---
 
@@ -15,105 +14,105 @@ ht-degree: 98%
 
 ## 분석 데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 서버의 URL |
-| `analytics.reportSuite` | Y | `sessionStart` | Analytics 보고 데이터를 식별하는 ID |
-| `analytics.enableSSL` | N | `sessionStart` | SSL을 사용할 True 또는 False |
-| `analytics.visitorId` | N | `sessionStart` | Adobe 방문자 ID는 여러 Adobe 애플리케이션에서 사용할 수 있는 사용자 지정 ID입니다. 하트비트 `visitorId`는 Analytics `VID.`와 같습니다.  |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.trackingServer` | Y | string | `sessionStart` | Adobe Analytics 서버의 URL |
+| `analytics.reportSuite` | Y | string | `sessionStart` | Analytics 보고 데이터를 식별하는 ID |
+| `analytics.enableSSL` | N | 부울 | `sessionStart` | SSL을 사용할 True 또는 False |
+| `analytics.visitorId` | N | string | `sessionStart` | Adobe 방문자 ID는 여러 Adobe 애플리케이션에서 사용할 수 있는 사용자 지정 ID입니다. 하트비트 `visitorId`는 Analytics `VID.`와 같습니다.  |
 
 ## 방문자 데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | ECID(Experience Cloud 사용자 ID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만, Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 — 값을 입력하지 않으면 값이 null입니다. |
-| `appInstallationId` | N | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | ECID(Experience Cloud 사용자 ID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만, Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
+| `visitor.aamLocationHint` | N | 정수 | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 — 값을 입력하지 않으면 값이 null입니다. |
+| `appInstallationId` | N | string | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
 
 ## 컨텐츠 데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | 컨텐츠에 대한 고유 식별자 |
-| `media.name` | N | `sessionStart` | 사용자가 읽을 수 있는 컨텐츠 이름 |
-| `media.length` | Y | `sessionStart` | 컨텐츠 길이(초) |
-| `media.contentType` | Y | `sessionStart` | 스트림 형식(임의의 문자열일 수 있으며, &quot;Live&quot;, &quot;VOD&quot; 또는 &quot;Linear&quot; 값이 권장됨) |
-| `media.playerName` | Y | `sessionStart` | 컨텐츠 렌더링을 담당하는 플레이어의 이름 |
-| `media.channel` | Y | `sessionStart` | 컨텐츠 배포 채널. 모바일 애플리케이션 이름이나 웹 사이트 이름, 속성 이름일 수 있습니다. |
-| `media.resume` | N | `sessionStart` | 사용자가 이전 세션을 다시 시작하는지 여부를 나타냅니다(새 세션 시작과 반대됨). |
-| `media.sdkVersion` | N | `sessionStart` | 플레이어에서 사용하는 SDK 버전 |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `media.id` | Y | string | `sessionStart` | 컨텐츠에 대한 고유 식별자 |
+| `media.name` | N | string | `sessionStart` | 사용자가 읽을 수 있는 컨텐츠 이름 |
+| `media.length` | Y | number | `sessionStart` | 컨텐츠 길이(초) |
+| `media.contentType` | Y | string | `sessionStart` | 스트림 형식(임의의 문자열일 수 있으며, &quot;Live&quot;, &quot;VOD&quot; 또는 &quot;Linear&quot; 값이 권장됨) |
+| `media.playerName` | Y | string | `sessionStart` | 컨텐츠 렌더링을 담당하는 플레이어의 이름 |
+| `media.channel` | Y | string | `sessionStart` | 컨텐츠 배포 채널. 모바일 애플리케이션 이름이나 웹 사이트 이름, 속성 이름일 수 있습니다. |
+| `media.resume` | N | 부울 | `sessionStart` | 사용자가 이전 세션을 다시 시작하는지 여부를 나타냅니다(새 세션 시작과 반대됨). |
+| `media.sdkVersion` | N | string | `sessionStart` | 플레이어에서 사용하는 SDK 버전 |
 
 ## 컨텐츠 표준 메타데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | 스트림 포맷(예:&quot;HD&quot; |
-| `media.show` | N | `sessionStart` | 프로그램 또는 시리즈 이름 |
-| `media.season` | N | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
-| `media.episode` | N | `sessionStart` | 에피소드의 번호 |
-| `media.assetId` | N | `sessionStart` | TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 비디오 자산 컨텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 기관에서 나옵니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다. |
-| `media.genre` | N | `sessionStart` | 컨텐츠 생성자에서 정의한 컨텐츠의 유형 |
-| `media.firstAirDate` | N | `sessionStart` | 컨텐츠가 TV에 처음 방송된 날짜 |
-| `media.firstDigitalDate` | N | `sessionStart` | 컨텐츠가 디지털 플랫폼에서 처음으로 방송된 날짜 |
-| `media.rating` | N | `sessionStart` | TV 유해 컨텐츠 가이드라인으로 정의된 등급 |
-| `media.originator` | N | `sessionStart` | 컨텐츠 작성자 |
-| `media.network` | N | `sessionStart` | 네트워크/채널 이름 |
-| `media.showType` | N | `sessionStart` | 0과 3 사이의 정수로 표시되는 컨텐츠의 유형입니다. <ul> <li>0 - 전체 에피소드 </li> <li>1 - 미리 보기 </li> <li>2 - 클립 </li> <li>3 - 기타 </li> </ul> |
-| `media.adLoad` | N | `sessionStart` | 로드된 광고 유형 |
-| `media.pass.mvpd` | N | `sessionStart` | Adobe 인증에서 제공한 MVPD |
-| `media.pass.auth` | N | `sessionStart` | Adobe 인증을 통해 사용자가 인증되었음을 나타냄(설정된 경우에만 true일 수 있음) |
-| `media.dayPart` | N | `sessionStart` | 컨텐츠가 브로드캐스트된 시간 |
-| `media.feed` | N | `sessionStart` | 피드 유형(예: &quot;West-HD&quot;) |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `media.streamFormat` | N | string | `sessionStart` | 스트림 형식(예:&quot;HD&quot; |
+| `media.show` | N | string | `sessionStart` | 프로그램 또는 시리즈 이름 |
+| `media.season` | N | string | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
+| `media.episode` | N | string | `sessionStart` | 에피소드의 번호 |
+| `media.assetId` | N | string | `sessionStart` | TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 비디오 자산 컨텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 기관에서 나옵니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다. |
+| `media.genre` | N | string | `sessionStart` | 컨텐츠 생성자에서 정의한 컨텐츠의 유형 |
+| `media.firstAirDate` | N | string | `sessionStart` | 컨텐츠가 TV에 처음 방송된 날짜 |
+| `media.firstDigitalDate` | N | string | `sessionStart` | 컨텐츠가 디지털 플랫폼에서 처음으로 방송된 날짜 |
+| `media.rating` | N | string | `sessionStart` | TV 유해 컨텐츠 가이드라인으로 정의된 등급 |
+| `media.originator` | N | string | `sessionStart` | 컨텐츠 작성자 |
+| `media.network` | N | string | `sessionStart` | 네트워크/채널 이름 |
+| `media.showType` | N | string | `sessionStart` | 0과 3 사이의 정수로 표시되는 컨텐츠의 유형입니다. <ul> <li>0 - 전체 에피소드 </li> <li>1 - 미리 보기 </li> <li>2 - 클립 </li> <li>3 - 기타 </li> </ul> |
+| `media.adLoad` | N | string | `sessionStart` | 로드된 광고 유형 |
+| `media.pass.mvpd` | N | string | `sessionStart` | Adobe 인증에서 제공한 MVPD |
+| `media.pass.auth` | N | string | `sessionStart` | Adobe 인증을 통해 사용자가 인증되었음을 나타냄(설정된 경우에만 true일 수 있음) |
+| `media.dayPart` | N | string | `sessionStart` | 컨텐츠가 브로드캐스트된 시간 |
+| `media.feed` | N | string | `sessionStart` | 피드 유형(예: &quot;West-HD&quot;) |
 
 ## 광고 데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `media.ad.podFriendlyName` | N | `adBreakStart` | 친숙한 광고 브레이크 이름 |
-| `media.ad.podIndex` | Y | `adBreakStart` | 비디오에 있는 광고 pod 인덱스 |
-| `media.ad.podSecond` | Y | `adBreakStart` | pod가 시작된 시간(초) |
-| `media.ad.podPosition` | Y | `adStart` | 광고 브레이크 내에 있는 광고 인덱스(1부터 시작) |
-| `media.ad.name` | N | `adStart` | 친숙한 광고 이름 |
-| `media.ad.id` | Y | `adStart` | 광고 이름 |
-| `media.ad.length` | Y | `adStart` | 비디오 광고 길이(초) |
-| `media.ad.playerName` | Y | `adStart` | 광고를 렌더링하는 플레이어의 이름 |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.podFriendlyName` | N | string | `adBreakStart` | 친숙한 광고 브레이크 이름 |
+| `media.ad.podIndex` | Y | 정수 | `adBreakStart` | 비디오에 있는 광고 pod 인덱스 |
+| `media.ad.podSecond` | Y | number | `adBreakStart` | pod가 시작된 시간(초) |
+| `media.ad.podPosition` | Y | 정수 | `adStart` | 광고 브레이크 내에 있는 광고 인덱스(1부터 시작) |
+| `media.ad.name` | N | string | `adStart` | 친숙한 광고 이름 |
+| `media.ad.id` | Y | string | `adStart` | 광고 이름 |
+| `media.ad.length` | Y | number | `adStart` | 비디오 광고 길이(초) |
+| `media.ad.playerName` | Y | string | `adStart` | 광고를 렌더링하는 플레이어의 이름 |
 
 ## 광고 표준 메타데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `media.ad.advertiser` | N | `adStart` | 광고에서 다루고 있는 제품의 회사 또는 브랜드입니다 |
-| `media.ad.campaignId` | N | `adStart` | 광고 캠페인의 ID |
-| `media.ad.creativeId` | N | `adStart` | 광고 문안 ID |
-| `media.ad.siteId` | N | `adStart` | 광고 사이트의 ID |
-| `media.ad.creativeURL` | N | `adStart` | 광고 문안 URL |
-| `media.ad.placementId` | N | `adStart` | 광고 배치 ID |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.advertiser` | N | string | `adStart` | 광고에서 다루고 있는 제품의 회사 또는 브랜드입니다 |
+| `media.ad.campaignId` | N | string | `adStart` | 광고 캠페인의 ID |
+| `media.ad.creativeId` | N | string | `adStart` | 광고 문안 ID |
+| `media.ad.siteId` | N | string | `adStart` | 광고 사이트의 ID |
+| `media.ad.creativeURL` | N | string | `adStart` | 광고 문안 URL |
+| `media.ad.placementId` | N | string | `adStart` | 광고 배치 ID |
 
 ## 챕터 데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `media.chapter.index` | Y | `chapterStart` | 컨텐츠에서 챕터의 위치 식별 |
-| `media.chapter.offset` | Y | `chapterStart` | 재생에서 챕터가 시작되는 시간(초) |
-| `media.chapter.length` | Y | `chapterStart` | 챕터의 길이(초) |
-| `media.chapter.friendlyName` | N | `chapterStart` | 친숙한 챕터 이름 |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `media.chapter.index` | Y | 정수 | `chapterStart` | 컨텐츠에서 챕터의 위치 식별 |
+| `media.chapter.offset` | Y | number | `chapterStart` | 재생에서 챕터가 시작되는 시간(초) |
+| `media.chapter.length` | Y | number | `chapterStart` | 챕터의 길이(초) |
+| `media.chapter.friendlyName` | N | string | `chapterStart` | 친숙한 챕터 이름 |
 
 ## 품질 데이터
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | 임의 | 스트림의 비트율 |
-| `media.qoe.droppedFrames` | N | 임의 | 스트림의 드롭된 프레임 수 |
-| `media.qoe.framesPerSecond` | N | 임의 | 초당 프레임 수 |
-| `media.qoe.timeToStart` | N | 임의 | 사용자가 재생을 누르는 때와 컨텐츠가 로드되어 재생을 시작할 때 사이에 경과된 시간(밀리초)입니다. |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `media.qoe.bitrate` | N | 정수 | 임의 | 스트림의 비트율 |
+| `media.qoe.droppedFrames` | N | 정수 | 임의 | 스트림의 드롭된 프레임 수 |
+| `media.qoe.framesPerSecond` | N | 정수 | 임의 | 초당 프레임 수 |
+| `media.qoe.timeToStart` | N | 정수 | 임의 | 사용자가 재생을 누르는 때와 컨텐츠가 로드되어 재생을 시작할 때 사이에 경과된 시간(밀리초)입니다. |
 
 ## CCPA(California Consumer Privacy Act) 매개 변수 {#ccpa-params}
 
-| 요청 키  | 필수 여부 | 시작 시기... |  설명  |
-| --- | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 참으로 설정합니다. |
-| `analytics.optOutShare` | N | `sessionStart` | 최종 사용자가 데이터를 (예: 다른 Adobe Analytics 클라이언트로) 페더레이션하지 않기로 선택한 경우 참으로 설정합니다. |
+| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | 부울 | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 참으로 설정합니다. |
+| `analytics.optOutShare` | N | 부울 | `sessionStart` | 최종 사용자가 데이터를 (예: 다른 Adobe Analytics 클라이언트로) 페더레이션하지 않기로 선택한 경우 참으로 설정합니다. |
 
 ## 추가 세부 정보 {#additional-details}
 
