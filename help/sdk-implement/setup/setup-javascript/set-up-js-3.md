@@ -2,10 +2,10 @@
 title: JavaScript 3.x 설정
 description: JavaScript 3.x에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 92%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 100%
 ## 전제 조건
 
 * **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
-* **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 및 `Experience Cloud Identity Service` 구현**
-자세한 내용은 [JavaScript를 사용하여 Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 및 [Experience Cloud ID 서비스 구현](https://docs.adobe.com/content/help/ko-KR/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
+* **미디어 애플리케이션 `AppMeasurement` 에서 JavaScript용 및  `Experience Cloud Identity Service` 구현**
+자세한 내용은 JavaScript [를 사용하여 Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 구현 및  [Experience Cloud Identity 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
