@@ -3,9 +3,8 @@ title: Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
 
@@ -15,7 +14,7 @@ ht-degree: 100%
 
 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)를 사용하여 동시 뷰어 보고서 데이터를 가져올 수 있습니다.
 
-1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 컨텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
+1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 콘텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
 1. 요청 본문에서 `elements` -> `id`를 `metrics/concurrent_viewers_visitors`로 설정합니다.
 1. 충분한 양의 데이터를 요청합니다.
 
@@ -129,7 +128,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 
