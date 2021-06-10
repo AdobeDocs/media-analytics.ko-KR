@@ -3,7 +3,7 @@ title: Concurrent Viewer JSON 보고서 데이터 가져오기
 description: Concurrent Viewer JSON 보고서 데이터 가져오기
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
