@@ -3,11 +3,10 @@ title: Adobe Analytics에서 스트리밍 미디어 측정
 description: Adobe Analytics for Media(Media Analytics라고도 함)는 고객에게 컨텐츠, 오디오 및 광고에 대한 강력한 미디어 측정 기능을 제공합니다.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +25,7 @@ Adobe Analytics for Streaming Media를 사용하면 사이트에서의 전체 �
 ## 기능 {#features}
 
 Adobe Analytics for Streaming Media의 이점에는 실시간 모니터링, 세부 분석, 조치 가능한 통찰력 및 수익 창출 기회가 있습니다.
-* **실시간 분석** - 여러 채널에서 지속 기간, ex2, 및 ex3과 같은 주요 성능 지표를 활용하여 실시간으로 조치 가능한 결정을 내릴 수 있습니다. 기본 컨텐츠 이벤트는 10초 간격으로 측정되어 발생하는 모든 활동을 캡처합니다. 광고 추적 이벤트는 1초 간격으로 발생합니다.
+* **실시간 분석** - 여러 채널에서 미디어 시작과 같은 주요 성능 지표를 활용하여 실시간으로 실행 가능한 결정을 내릴 수 있습니다.
 * **참여 유도** - 버퍼링 이벤트 수를 최소화하고, 컨텐츠 내에서 광고를 재생할 위치와 시점을 파악하여 사용자 참여를 유도함으로써 재방문을 제공하는 유연하고 간단한 경험을 제공합니다.
 * **전체적인 그림** - 모든 컨텐츠 배포자의 여러 데이터 포인트를 결합하여 모든 미디어 활동에 대한 전체 보기를 표시합니다. Federated Analytics 기능을 통해 가능한 모든 채널의 참여 및 보기/듣기를 측정합니다.
 * **증가된 세분기간** - 개별 방문자 시간, 분별 Concurrent Viewer/Listener 및 컨텐츠를 소비한 평균 시간을 포함하여 가장 세분화된 수준에서 보기 동작을 평가합니다.
