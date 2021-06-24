@@ -1,12 +1,16 @@
 ---
-title: 한 개의 챕터가 있는 VOD 재생
-description: 한 개의 챕터가 포함된 VOD 재생 추적의 예입니다.
+title: VOD 재생 1장
+description: 한 장이 포함된 VOD 재생 추적의 예를 봅니다.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 96%
 
 ---
-
 
 # 한 개의 챕터가 있는 VOD 재생{#vod-playback-with-one-chapter}
 
@@ -465,4 +469,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
