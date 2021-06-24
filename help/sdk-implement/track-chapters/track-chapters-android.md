@@ -1,12 +1,16 @@
 ---
-title: Android에서 챕터 및 세그먼트 추적
-description: 이 항목에서는 Android에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
+title: Android에서 장 및 세그먼트를 추적하는 방법 알아보기
+description: Android에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 89%
 
 ---
-
 
 # Android에서 챕터 및 세그먼트 추적{#track-chapters-and-segments-on-android}
 
@@ -78,4 +82,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 추가 챕터가 있는 경우 1~5단계를 반복합니다.
-
