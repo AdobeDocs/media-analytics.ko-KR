@@ -1,15 +1,16 @@
 ---
-title: 타임라인 1 - 컨텐츠 끝까지 보기
-description: null
+title: 컨텐츠 끝까지 미디어 추적 타임라인 � 보기에 대해 알아보기
+description: 플레이헤드 타임라인과 해당 사용자 작업을 자세히 � 살펴보십시오. 각 작업 및 추가 요청에 대한 세부 사항에 대해 알아봅니다.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
-
 
 # 타임라인 1 - 컨텐츠 끝까지 보기{#timeline-view-to-end-of-content}
 
@@ -406,7 +407,7 @@ ht-degree: 100%
 
 **구현 세부 사항**
 
-버퍼링은 3초 후에 종료되므로 플레이어를 &quot;재생 중&quot; 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart`다음에`play`를 호출하면 &quot;버퍼엔드&quot;가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
+버퍼링은 3초 후에 종료되므로 플레이어를 &quot;재생 중&quot; 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart` 다음에 `play`를 호출하면 &quot;버퍼엔드&quot;가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
@@ -472,7 +473,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 미드롤 광고 3 시작 추적 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| 미드롤 광고 3 시작 추적 | 46 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -507,7 +508,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 앱에서 ping 이벤트 보내기 | 50 | 21 | `/api/v1/sessions/{sid}/events` |
+| 앱에서 ping 이벤트 보내기 | 50 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -528,7 +529,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 미드롤 광고 1 완료 추적 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 미드롤 광고 1 완료 추적 | 54 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -550,7 +551,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 미드롤 광고 브레이크 완료 추적 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 미드롤 광고 브레이크 완료 추적 | 54 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -641,7 +642,7 @@ ht-degree: 100%
 
 **구현 세부 사항**
 
-재생 상태를 &quot;재생 중&quot;으로 이동합니다.  **`pauseStart`다음에`play`를 호출하면 &quot;다시 시작&quot;이 백 엔드를 호출한다고 유추하므로,** `resume` 이벤트가 필요하지 않습니다.
+재생 상태를 &quot;재생 중&quot;으로 이동합니다.  **`pauseStart` 다음에 `play`를 호출하면 &quot;다시 시작&quot;이 백 엔드를 호출한다고 유추하므로,** `resume` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
