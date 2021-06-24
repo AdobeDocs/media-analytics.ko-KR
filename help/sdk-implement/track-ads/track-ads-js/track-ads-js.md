@@ -1,15 +1,16 @@
 ---
-title: JavaScript 2.x를 사용하여 광고 추적
+title: JavaScript 2.x를 사용하여 광고를 추적하는 방법 알아보기
 description: Media SDK를 사용하여 브라우저(JS) 애플리케이션에서 광고 추적을 구현합니다.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 97%
+source-wordcount: '357'
+ht-degree: 96%
 
 ---
-
 
 # JavaScript 2.x를 사용하여 광고 추적{#track-ads-on-javascript}
 
