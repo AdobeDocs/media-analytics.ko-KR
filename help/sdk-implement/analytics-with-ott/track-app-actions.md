@@ -2,11 +2,15 @@
 title: 앱 작업 추적
 description: 앱 작업은 측정할 앱에서 발생하는 이벤트입니다.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
-
 
 # 앱 작업 추적{#track-app-actions}
 
@@ -49,4 +53,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 각 트랙 작업 호출로 추가 컨텍스트 데이터를 전송할 수도 있습니다.
-
