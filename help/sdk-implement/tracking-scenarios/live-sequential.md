@@ -1,12 +1,16 @@
 ---
 title: 순차적 추적을 사용하는 라이브 주 컨텐츠
-description: Media SDK를 사용하여 순차적 추적을 사용하는 라이브 컨텐츠를 추적하는 방법의 예입니다.
+description: Media SDK를 사용하여 순차적 추적을 사용하는 라이브 컨텐츠를 추적하는 방법의 예를 봅니다.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
-
 
 # 순차적 추적을 사용하는 라이브 주 컨텐츠{#live-main-content-with-sequential-tracking}
 
@@ -331,4 +335,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-
