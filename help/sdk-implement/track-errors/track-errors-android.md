@@ -1,12 +1,16 @@
 ---
-title: Android에서 오류 추적
-description: 이 항목에서는 Android에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 설명합니다.
+title: Android에서 오류를 추적하는 방법 알아보기
+description: Android에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 80%
 
 ---
-
 
 # Android에서 오류 추적{#track-errors-on-android}
 
@@ -25,4 +29,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. 미디어 플레이어 오류로 인해 재생이 계속되지 않는 경우 `trackError` 호출 후 `trackSessionEnd`를 호출하여 미디어 추적 세션이 종료되었는지 확인하십시오.
-
