@@ -1,13 +1,14 @@
 ---
 title: Ping 이벤트 보내기
-description: Ping 이벤트 보내기
+description: Ping 이벤트는 스트리밍 Media Analytics의 하트비트입니다. 기본 컨텐츠 또는 광고 추적에 대해 시간이 지정된 ping을 전송하는 방법을 알아봅니다.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 100%
+source-wordcount: '110'
+ht-degree: 79%
 
 ---
 
