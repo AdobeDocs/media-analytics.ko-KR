@@ -1,12 +1,16 @@
 ---
-title: Android에서 표준 메타데이터 구현
-description: Android에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
+title: Android에서 표준 메타데이터를 구현하는 방법을 알아봅니다.
+description: Android에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 알아봅니다.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 76%
 
 ---
-
 
 # Android에서 표준 메타데이터 구현{#implement-standard-metadata-on-android}
 
