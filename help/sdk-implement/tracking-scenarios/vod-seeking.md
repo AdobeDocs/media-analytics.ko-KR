@@ -1,12 +1,16 @@
 ---
 title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
-description: Media SDK를 사용하여 프리롤 찾기가 발생한 VOD 컨텐츠를 추적하는 방법의 예입니다.
+description: Media SDK를 사용하여 프리롤 찾기가 발생한 VOD 컨텐츠를 추적하는 방법의 예를 봅니다.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
-
 
 # 주 컨텐츠에서 찾기를 사용하여 VOD 재생{#vod-playback-with-seeking-in-the-main-content}
 
@@ -209,4 +213,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
