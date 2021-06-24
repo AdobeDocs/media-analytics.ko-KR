@@ -1,15 +1,16 @@
 ---
-title: 타임라인 2 - 사용자가 세션을 중단함
-description: null
+title: 미디어 추적 타임라인 사용자가 세션을 중단하�은 방법에 대해 알아봅니다.
+description: 비디오 세션이 중단되면 플레이헤드 타임라인과 해당 � 사용자의 작업에 대해 알아봅니다. 각 작업 및 요청에 대한 세부 사항에 대해 알아봅니다.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 95%
 
 ---
-
 
 # 타임라인 2 - 사용자가 세션을 중단함 {#timeline--2-user-abandons-session}
 
@@ -269,7 +270,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 오류가 발생하여 앱에서 오류 정보를 보냅니다. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
+| 오류가 발생하여 앱에서 오류 정보를 보냅니다. | 32 | 20년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 정보**
 
@@ -290,7 +291,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 앱이 오류에서 복구되어 사용자가 재생을 누름 | 37 | 20 | `/api/v1/sessions/{sid}/events` |
+| 앱이 오류에서 복구되어 사용자가 재생을 누름 | 37 | 20년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 정보**
 
