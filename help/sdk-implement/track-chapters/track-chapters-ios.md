@@ -1,12 +1,16 @@
 ---
-title: iOS에서 챕터 및 세그먼트 추적
-description: 이 항목에서는 iOS에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
+title: iOS에서 장 및 세그먼트를 추적하는 방법 알아보기
+description: iOS에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 88%
 
 ---
-
 
 # iOS에서 챕터 및 세그먼트 추적{#track-chapters-and-segments-on-ios}
 
@@ -79,4 +83,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 추가 챕터가 있는 경우 1~5단계를 반복합니다.
-
