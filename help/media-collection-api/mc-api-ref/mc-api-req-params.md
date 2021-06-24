@@ -1,12 +1,14 @@
 ---
-title: 요청 매개 변수
-description: Adobe Analytics 스트리밍 미디어 요청 매개 변수에 대해 알아봅니다.
+title: 스트리밍 미디어 컬렉션 API � 요청 매개 변수
+description: '"Media Collection API 요청 매개 변수, 요청 키 및 설명은 무엇입니까?"'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 94%
+source-wordcount: '1307'
+ht-degree: 93%
 
 ---
 
