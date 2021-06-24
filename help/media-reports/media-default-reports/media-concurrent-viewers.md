@@ -1,12 +1,14 @@
 ---
 title: 미디어 Concurrent Viewer
-description: null
+description: '"하루 동안 동시 뷰어를 표시하는 데 사용되는 미디어 Concurrent Viewer 대시보드에 대해 알아봅니다. 데이터는 컨텐츠, 장치 유형, 국가별로 필터링됩니다."'
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+feature: '"Media Analytics, Reports & Analytics 기본 사항"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 89%
 
 ---
 
