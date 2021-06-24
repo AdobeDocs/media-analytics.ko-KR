@@ -1,15 +1,16 @@
 ---
-title: 1.x와 2.x 코드 비교
-description: 이 항목에서는 Media SDK 1.x 및 2.x 버전의 코드를 비교합니다.
+title: 코드 비교 v1.x와 v2.x
+description: Media SDK 1.x 및 2.x 버전의 코드 간의 차이점을 알아봅니다.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 97%
+source-wordcount: '572'
+ht-degree: 93%
 
 ---
-
 
 # 코드 비교: 1.x와 2.x {#code-comparison-x-to-x}
 
