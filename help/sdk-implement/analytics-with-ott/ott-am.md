@@ -1,12 +1,16 @@
 ---
 title: OTT와 Audience Manager
-description: OTT 앱과 Audience Manager 통합에 대한 세부 사항입니다.
+description: OTT 앱과 Audience Manager 통합에 대한 세부 사항을 살펴보십시오.
 uuid: d228db63-59c2-4624-99c6-6b49dc17f48e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1cc08ed6-9331-48db-ac0c-cd2b6810ea87
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 71%
 
 ---
-
 
 # OTT와 Audience Manager{#ott-and-audience-manager}
 
