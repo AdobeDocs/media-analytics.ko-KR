@@ -1,20 +1,21 @@
 ---
-title: JavaScript 3.x를 사용하여 검색 추적
-description: 이 항목에서는 브라우저 앱(JS)에서 Media SDK를 사용하여 찾기 추적을 구현하는 방법에 대해 설명합니다.
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: JavaScript 3.x를 사용하여 찾기를 추적하는 방법 알아보기
+description: 브라우저 앱(JS 3.x)에서 Media SDK를 사용하여 찾기 시작 및 찾기 완료 이벤트를 추적하는 방법을 알아봅니다.
+exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 76%
+source-wordcount: '136'
+ht-degree: 62%
 
 ---
 
-
-# JavaScript 3.x를 사용하여 검색 추적{#track-seeking-on-javascript}
+# JavaScript 3.x를 사용하여 찾기 추적{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
->다음은 모든 3.x SDK에 구현과 관련된 지침입니다. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음은 모든 3.x SDK에 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다.[SDK 다운로드](/help/sdk-implement/download-sdks.md)
 
 ## 찾기 추적 상수
 
