@@ -1,13 +1,14 @@
 ---
 title: 세션 ID 가져오기
-description: 세션 ID 가져오기
+description: 응답의 위치 헤더에서 세션 ID를 얻기 위해 세션 요청을 코딩하는 방법을 알아봅니다.
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 100%
+source-wordcount: '63'
+ht-degree: 69%
 
 ---
 
