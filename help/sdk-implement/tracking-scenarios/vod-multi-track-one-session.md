@@ -1,12 +1,16 @@
 ---
 title: VOD 여러 세션에 대한 1개의 추적기
-description: Media SDK를 사용하여 한 개의 추적기에서 여러 세션을 추적하는 방법의 예입니다.
+description: Media SDK를 사용하여 한 개의 추적기를 사용하여 여러 세션을 추적하는 방법의 예를 봅니다.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 87%
 
 ---
-
 
 # VOD 여러 세션에 대한 1개의 추적기{#vod-one-tracker-for-multiple-sessions}
 
@@ -378,4 +382,3 @@ analyticsProvider1 = new MediaAnalyticsProvider(_player1);
 // Load the main media content.  
 _player1.loadContent(URL_TO_MEDIA_1);
 ```
-
