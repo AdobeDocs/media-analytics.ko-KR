@@ -1,15 +1,16 @@
 ---
-title: 개요
+title: 광고 추적 설명
 description: Media SDK를 사용하여 광고 추적을 구현하는 개요입니다.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '508'
+ht-degree: 99%
 
 ---
-
 
 # 개요{#overview}
 
@@ -49,7 +50,7 @@ ht-degree: 100%
 
 * 광고 브레이크 완료를 위해 `trackEvent`를 호출합니다.
 
-## 광고 추적 구현{#implement-ad-tracking}
+## 광고 추적 구현 {#implement-ad-tracking}
 
 ### 광고 추적 상수
 
@@ -142,4 +143,3 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
