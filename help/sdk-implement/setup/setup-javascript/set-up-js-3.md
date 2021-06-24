@@ -1,11 +1,13 @@
 ---
-title: JavaScript 3.x 설정
-description: JavaScript 3.x에서 구현을 위한 Media SDK 애플리케이션 설정입니다.
+title: JavaScript 3.x를 사용하여 Media SDK를 설정하는 방법
+description: 다음 단계에 따라 JavaScript 3.x에서 Media SDK 애플리케이션을 설정합니다.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 92%
+source-wordcount: '405'
+ht-degree: 87%
 
 ---
 
