@@ -1,13 +1,14 @@
 ---
 title: 기본 보고서 개요
-description: 기본 보고서 개요
+description: 웹 사이트에서 미디어를 추적하는 데 사용되는 보고서 유형 및 지표에 대해 알아봅니다. 미디어 코어 모듈에서 사용할 수 있는 대시보드 스타일 보고서를 살펴보십시오."
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+feature: '"Media Analytics, Reports & Analytics 기본 사항"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
