@@ -1,18 +1,22 @@
 ---
-title: 계산된 지표
+title: 스트리밍 미디어 계산된 지표
 description: Adobe 스트리밍 미디어 계산된 지표 및 지표 공식에 대해 알아봅니다.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 78%
+source-wordcount: '258'
+ht-degree: 59%
 
 ---
 
 # 계산된 지표{#calculated-metrics}
+
+스트리밍 미디어에 대한 계산된 지표는 평균 광고 체류 시간 또는 미디어 스트림당 평균 광고와 같은 타깃팅된 스트리밍 미디어 데이터를 가져올 수 있도록 해주는 사용자 지정 지표입니다.
+
+Adobe Analytics 계산된 지표에 대한 자세한 내용은 Adobe Analytics 구성 요소 안내서의 [계산 및 고급 계산(파생) 지표](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en)을 참조하십시오.
 
 >[!NOTE]
 >
