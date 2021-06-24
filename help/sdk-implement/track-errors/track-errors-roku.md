@@ -1,12 +1,16 @@
 ---
-title: Roku에서 오류 추적
-description: 이 항목에서는 Roku에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 설명합니다.
+title: Roku에서 오류를 추적하는 방법 알아보기
+description: Roku에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 81%
 
 ---
-
 
 # Roku에서 오류 추적{#track-errors-on-roku}
 
@@ -26,4 +30,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. 미디어 플레이어 오류로 인해 재생이 계속되지 않는 경우 `trackError` 호출 후 `trackSessionEnd`를 호출하여 미디어 추적 세션이 종료되었는지 확인하십시오.
-
