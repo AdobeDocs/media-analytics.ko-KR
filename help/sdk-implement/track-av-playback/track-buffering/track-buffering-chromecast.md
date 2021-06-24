@@ -1,12 +1,16 @@
 ---
-title: Chromecast에서 버퍼링 추적
-description: Chromecast에서 버퍼링 추적 이벤트에 대해 설명합니다.
+title: Chromecast에서 버퍼링을 추적하는 방법 알아보기
+description: Chromecast에서 버퍼링 이벤트를 추적하는 방법을 알아봅니다.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 88%
 
 ---
-
 
 # Chromecast에서 버퍼링 추적{#track-buffering-on-chromecast}
 
