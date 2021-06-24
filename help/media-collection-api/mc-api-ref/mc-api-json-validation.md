@@ -1,15 +1,16 @@
 ---
-title: JSON 유효성 검사 스키마
-description: null
+title: 스트리밍 미디어 분석 JSON 유효성 검사 스키마
+description: Streaming Media JSON 유효성 검사 스키마란 무엇이며 각 이벤트 유형에 대한 올바른 요청 본문 매개 변수를 결정하는 데 어떻게 사용됩니다.
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
-translation-type: tm+mt
-source-git-commit: 9b2f8b14ddb5b814f57c752665b78409e31173e8
+exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 100%
+source-wordcount: '84'
+ht-degree: 64%
 
 ---
-
 
 # JSON 유효성 검사 스키마{#json-validation-schemas}
 
