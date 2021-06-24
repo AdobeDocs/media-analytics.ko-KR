@@ -1,12 +1,16 @@
 ---
-title: Chromecast에서 찾기 추적
-description: 이 항목에서는 Chromecast에서 Media SDK를 사용하여 찾기 추적을 구현하는 방법에 대해 설명합니다.
+title: Chromecast에서 찾기를 추적하는 방법 알아보기
+description: Chromecast에서 Media SDK를 사용하여 찾기 시작 및 찾기 완료 이벤트를 추적하는 방법을 알아봅니다.
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 84%
 
 ---
-
 
 # Chromecast에서 찾기 추적{#track-seeking-on-chromecast}
 
