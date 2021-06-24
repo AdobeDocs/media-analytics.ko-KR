@@ -1,12 +1,16 @@
 ---
 title: VOD 여러 추적기 동시 실행
-description: 여러 추적기를 동시에 사용하여 VOD를 추적하는 방법의 예입니다.
+description: 여러 추적기를 동시에 사용하여 VOD를 추적하는 방법의 예를 봅니다.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 92%
 
 ---
-
 
 # VOD 여러 추적기 동시 실행{#vod-multiple-trackers-in-parallel}
 
@@ -374,4 +378,3 @@ _player2.loadContent(URL_TO_MEDIA_2);
 ```
 
 `MediaAnalyticsProvider`와 `MediaHeartbeat`의 두 인스턴스는 각각 고유한 세션 ID가 있는 두 개의 별도 세션을 추적합니다. Charles 디버깅 도구에서 두 개의 세션을 볼 수 있습니다.
-
