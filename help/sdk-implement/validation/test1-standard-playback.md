@@ -1,12 +1,16 @@
 ---
 title: 테스트 1 표준 재생
-description: 이 항목에서는 유효성 검사에 사용된 표준 재생 테스트를 설명합니다.
+description: 유효성 검사에 사용된 표준 재생 테스트에 대해 알아봅니다.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 98%
 
 ---
-
 
 # 테스트 1: 표준 재생{#test-standard-playback}
 
@@ -32,6 +36,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
    * **Adobe Analytics(AppMeasurement) 서버 -** RDC 추적 서버 또는 RDC 추적 서버로 확인되는 CNAME은 Experience Cloud 방문자 ID 서비스에 필요합니다. Adobe Analytics 추적 서버는 &quot;`.sc.omtrdc.net`&quot; 또는 CNAME으로 끝나야 합니다.
 
    * **Media Analytics(하트비트) 서버 -** 이 서버는 항상 &quot;`[namespace].hb.omtrdc.net`&quot; 형식을 가지며, 여기서 `[namespace]`에 회사 이름을 지정합니다. 이 이름은 Adobe에서 제공합니다.
+
    모든 추적 호출에 공통으로 적용되는 특정 키 변수의 유효성을 확인해야 합니다.
 
    **Adobe 방문자 ID(`mid`):** `mid` 변수는 AMCV 쿠키에 설정된 값을 캡처하는 데 사용됩니다. `mid` 변수는 웹 사이트 및 모바일 앱 모두에 대한 기본 식별 값으로서, Experience Cloud 방문자 ID 서비스가 제대로 설정되었음을 나타냅니다. Adobe Analytics(AppMeasurement)와 Media Analytics(하트비트) 호출 모두에 있습니다.
@@ -81,6 +86,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
    1. Adobe Analytics 서버 - 시작 호출
    1. Media Analytics 서버 - 시작 호출
    1. Media Analytics 서버 - &quot;Adobe Analytics 시작 호출 요청&quot;
+
    위의 처음 두 호출에는 추가 메타데이터와 변수가 포함되어 있습니다. 호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)을 참조하십시오.
 
    위에서 세 번째 호출은 Media SDK가 Adobe Analytics 시작 호출(`pev2=ms_s`)을 Adobe Analytics 서버로 전송하도록 요청했음을 Media Analytics 서버에 알려줍니다.
@@ -88,11 +94,13 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 1. **가능한 경우 광고 브레이크 보기**
 
    * **광고 시작**
+
    광고가 시작되면 다음 주요 호출이 다음 순서로 전송됩니다.
 
    1. Adobe Analytics 서버 - 광고 시작 호출
    1. Media Analytics 서버 - 광고 시작 호출
    1. Media Analytics 서버 - &quot;Adobe Analytics 광고 시작 호출 요청&quot;
+
    처음 두 호출에는 추가 메타데이터와 변수가 포함되어 있습니다. 호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)을 참조하십시오.
 
    세 번째 호출은 Media SDK가 Adobe Analytics 광고 시작 호출(`pev2=msa_s`)을 Adobe Analytics 서버로 전송하도록 요청했음을 Media Analytics 서버에 알려줍니다.
