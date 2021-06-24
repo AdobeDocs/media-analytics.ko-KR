@@ -1,20 +1,21 @@
 ---
-title: JavaScript 3.x를 사용하여 광고 추적
+title: JavaScript 3.x를 사용하여 광고를 추적하는 방법 알아보기
 description: Media SDK를 사용하여 브라우저(JS) 애플리케이션에서 광고 추적을 구현합니다.
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '364'
 ht-degree: 80%
 
 ---
-
 
 # JavaScript 3.x를 사용하여 광고 추적{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다.[SDK 다운로드](/help/sdk-implement/download-sdks.md)
 
 ## 광고 추적 상수
 
@@ -34,9 +35,9 @@ ht-degree: 80%
 
    | 변수 이름 | 유형 | 설명 |
    | --- | --- | --- |
-   | `name` | string | adbreak 이름(프리롤, 미드롤 및 포스트롤)을 나타내는 빈 문자열이 아닙니다. |
-   | `position` | 수 | 1로 시작하는 광고 브레이크의 번호 위치입니다. |
-   | `startTime` | 수 | 광고 브레이크의 시작 위치에 있는 플레이헤드 값입니다. |
+   | `name` | string | 광고 브레이크 이름(프리롤, 미드롤 및 포스트롤)을 나타내는 빈 문자열이 아닙니다. |
+   | `position` | number | 1로 시작하는 광고 브레이크의 번호 위치입니다. |
+   | `startTime` | number | 광고 브레이크의 시작 위치에 있는 플레이헤드 값입니다. |
 
    광고 브레이크 개체 작성:
 
@@ -61,8 +62,8 @@ ht-degree: 80%
    | --- | --- | --- |
    | `name` | string | 광고 이름을 나타내는 빈 문자열이 아닙니다. |
    | `adId` | string | 광고 식별자를 나타내는 빈 문자열이 아닙니다. |
-   | `position` | 수 | 광고 내의 광고 번호 위치(1부터 시작). |
-   | `length` | 수 | 광고의 길이를 나타내는 양수. |
+   | `position` | number | 광고 브레이크 내에 있는 광고의 번호 위치(1로 시작). |
+   | `length` | number | 광고 길이를 나타내는 양수입니다. |
 
    광고 개체 작성:
 
