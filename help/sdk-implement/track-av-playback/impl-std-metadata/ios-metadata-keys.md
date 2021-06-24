@@ -1,12 +1,16 @@
 ---
-title: iOS 메타데이터 키
-description: 이 항목에서는 사용 가능한 iOS 메타데이터 키를 설명합니다.
+title: iOS 메타데이터 키 설명
+description: 사용 가능한 iOS 메타데이터 키에 대해 알아봅니다.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 90%
 
 ---
-
 
 # iOS 메타데이터 키{#ios-metadata-keys}
 
@@ -31,7 +35,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBVideoMetadataKeySHOW_TYPE` | 표시 유형 | 비디오 |
 | `ADBVideoMetadataKeyAD_LOAD` | 광고 로드 | 비디오 |
 | `ADBVideoMetadataKeyMVPD` | mvpd | 비디오 |
-| `ADBVideoMetadataKeyAUTHORIZED` | 승인 | 비디오 |
+| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | 비디오 |
 | `ADBVideoMetadataKeyDAY_PART` | 방송 시간대 | 비디오 |
 | `ADBVideoMetadataKeyFEED` | 피드 | 비디오 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 스트림 형식 | 비디오 |
@@ -57,4 +61,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBAdMetadataKeyPLACEMENT_ID` | 게재위치 ID | 광고 |
 | `ADBAdMetadataKeySITE_ID` | 사이트 ID | 광고 |
 | `ADBAdMetadataKeyCREATIVE_URL` | 광고 URL | 광고 |
-
