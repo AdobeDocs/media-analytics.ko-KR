@@ -1,11 +1,15 @@
 ---
-title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - iOS
-description: Media SDK에서 iOS용 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
-translation-type: ht
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+title: '"독립형 Media SDK에서 Launch로 마이그레이션 - iOS"'
+description: Media SDK에서 iOS용 Launch로 마이그레이션하는 방법을 알아봅니다.
+exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 93%
 
 ---
-
 
 # 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - iOS
 
