@@ -1,12 +1,16 @@
 ---
-title: iOS에서 버퍼링 추적
-description: iOS에서 버퍼링 추적 이벤트에 대해 설명합니다.
+title: iOS에서 버퍼링을 추적하는 방법 알아보기
+description: iOS에서 버퍼링 이벤트를 추적하는 방법을 알아봅니다.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
-
 
 # iOS에서 버퍼링 추적{#track-buffering-on-ios}
 
