@@ -1,12 +1,16 @@
 ---
 title: 테스트 2 미디어 중단
-description: 이 항목에서는 유효성 검사에 사용된 미디어 중단 테스트를 설명합니다.
+description: 유효성 검사에 사용된 미디어 중단 테스트에 대해 알아봅니다.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
-
 
 # 테스트 2: 미디어 중단{#test-media-interruption}
 
@@ -23,6 +27,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
    1. Adobe Analytics(AppMeasurement) 시작
    1. Media Analytics(하트비트) 시작
    1. Media Analytics(하트비트) Adobe Analytics 시작 호출 요청
+
    위의 처음 두 호출에는 추가 메타데이터와 변수가 포함되어 있습니다. 호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)을 참조하십시오.
 
    위에서 세 번째 호출은 Media SDK가 Adobe Analytics 시작 호출(`pev2=ms_s`)을 Adobe Analytics 서버로 전송하도록 요청했음을 Media Analytics 서버에 알려줍니다.
