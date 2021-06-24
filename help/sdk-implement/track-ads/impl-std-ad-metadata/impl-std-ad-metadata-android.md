@@ -1,12 +1,16 @@
 ---
-title: Android에서 표준 광고 메타데이터 구현
+title: Android에서 표준 광고 메타데이터를 구현하는 방법을 알아봅니다.
 description: Android에서 광고 추적에 표준 광고 메타데이터를 사용하는 방법입니다.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 86%
 
 ---
-
 
 # Android에서 표준 광고 메타데이터 구현{#implement-standard-ad-metadata-on-android}
 
@@ -27,4 +31,3 @@ standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, "Sample Adverti
 standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, "Sample Campaign"); 
 adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, standardAdMetadata); 
 ```
-
