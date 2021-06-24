@@ -1,13 +1,14 @@
 ---
 title: 계산된 지표
-description: 계산된 지표
+description: Adobe 스트리밍 미디어 계산된 지표 및 지표 공식에 대해 알아봅니다.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '198'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 100%
 | 평균 미디어 사용 시간 | 미디어 시작당 총 체류 시간(HH:MM:SS) | `Media Time Spent / Media Starts` |
 | 평균 컨텐츠 체류 시간 | 컨텐츠 시작당 컨텐츠 체류 시간(HH:MM:SS) | `Content Time Spent / Content Start` |
 | 평균 광고 체류 시간 | 광고 시작당 광고 체류 시간(HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| 평균 챕터 체류 시간 | 챕터 시작당 챕터 체류 시간(HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| 평균 챕터 체류 시간 | 장 시작당 체류 시간(HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | 미디어 완료율 | 시작된 미디어에 대한 완료된 컨텐츠의 비율(%) | `Content Completes/ Media Starts` |
 | 컨텐츠 완료율 | 컨텐츠 시작에 대한 완료된 컨텐츠의 비율(%) | `Content Completes / Content Starts` |
 | 광고 완료율 | 광고 완료와 광고 시작 비율(%) | `Ad Completes / Ad Starts` |
