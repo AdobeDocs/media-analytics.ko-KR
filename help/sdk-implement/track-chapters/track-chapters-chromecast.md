@@ -1,12 +1,16 @@
 ---
-title: Chromecast에서 챕터 및 세그먼트 추적
-description: 이 항목에서는 Chromecast에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
+title: Chromecast에서 장 및 세그먼트를 추적하는 방법 알아보기
+description: Chromecast에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 90%
 
 ---
-
 
 # Chromecast에서 챕터 및 세그먼트 추적{#track-chapters-and-segments-on-chromecast}
 
@@ -62,4 +66,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 추가 챕터가 있는 경우 1~5단계를 반복합니다.
-
