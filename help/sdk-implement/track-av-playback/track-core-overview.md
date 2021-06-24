@@ -1,12 +1,16 @@
 ---
-title: 추적 개요
-description: '이 항목에서는 미디어 로드, 미디어 시작, 미디어 일시 중지, 미디어 완료 추적을 포함한 코어 재생 추적에 대해 설명합니다. '
+title: 컨텐츠 재생 추적 설명
+description: 미디어 로드, 미디어 시작, 미디어 일시 중지, 미디어 완료 추적을 포함하여 코어 재생 추적에 대해 알아봅니다. "
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
-
 
 # 추적 개요{#tracking-overview}
 
@@ -235,4 +239,3 @@ if (e.type == “buffered”) {
 ## 유효성 검사 {#validate}
 
 구현의 유효성 검사에 대한 자세한 내용은 [유효성 검사](/help/sdk-implement/validation/validation-overview.md)를 참조하십시오.
-
