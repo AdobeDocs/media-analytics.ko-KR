@@ -1,12 +1,16 @@
 ---
-title: 개요
+title: 경험 추적 품질 설명
 description: Media SDK를 사용한 체감 품질(QoE, QoS) 추적에 대한 개요입니다.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 98%
 
 ---
-
 
 # 개요{#overview}
 
@@ -70,4 +74,3 @@ if (e.type == "bitrate_change") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
 };
 ```
-
