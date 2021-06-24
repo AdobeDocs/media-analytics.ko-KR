@@ -1,15 +1,16 @@
 ---
 title: Adobe Debug 구성
-description: 이 항목에서는 Media SDK 구현 문제를 해결하는 데 사용할 수 있는 Adobe Debug를 구성하는 방법을 설명합니다.
+description: '"Media SDK 구현 문제를 해결하는 데 사용할 수 있는 Adobe 디버그를 구성하는 방법을 알아봅니다."'
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: ht
+exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Adobe Debug 구성{#configure-adobe-debug}
 
@@ -120,4 +121,3 @@ Android 장치에 SSL 인증서를 설치하려면 다음을 수행하십시오.
 
 1. 랩탑에서 Adobe Debug 세션을 시작합니다.
 1. Android 장치에서 테스트를 시작합니다.
-
