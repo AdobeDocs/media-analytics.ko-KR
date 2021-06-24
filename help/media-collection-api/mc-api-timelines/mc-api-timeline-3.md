@@ -1,15 +1,16 @@
 ---
-title: 타임라인 3 - 챕터
-description: null
+title: 미디어 추적 타임라인 장에 대해 � 알아보기
+description: 플레이헤드 타임라인과 장이 시작되고 종료되는 시점에 대해 알아봅니다.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
-workflow-type: ht
-source-wordcount: '1219'
-ht-degree: 100%
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 98%
 
 ---
-
 
 # 타임라인 3 - 챕터 {#timeline-3-chapters}
 
@@ -381,7 +382,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 **구현 세부 사항**
 
-버퍼링은 3초 후에 종료되므로 플레이어를 &quot;재생 중&quot; 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart`다음에`play`를 호출하면 &quot;버퍼엔드&quot;가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
+버퍼링은 3초 후에 종료되므로 플레이어를 &quot;재생 중&quot; 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart` 다음에 `play`를 호출하면 &quot;버퍼엔드&quot;가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
@@ -468,7 +469,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 미드롤 광고 3 시작 추적 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| 미드롤 광고 3 시작 추적 | 46 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -503,7 +504,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 앱에서 ping 이벤트 보내기 | 47 | 21 | `/api/v1/sessions/{sid}/events` |
+| 앱에서 ping 이벤트 보내기 | 47 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -525,7 +526,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 미드롤 광고 1 완료 추적 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 미드롤 광고 1 완료 추적 | 54 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -547,7 +548,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 미드롤 광고 브레이크 완료 추적 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 미드롤 광고 브레이크 완료 추적 | 54 | 21년 | `/api/v1/sessions/{sid}/events` |
 
 **구현 세부 사항**
 
@@ -664,7 +665,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 **구현 세부 사항**
 
-재생 상태를 &quot;재생 중&quot;으로 이동합니다.  **`play`다음에`pauseStart`를 호출하면 &quot;resume&quot;이 백 엔드를 호출한다고 유추하므로** `resume` 이벤트가 필요하지 않습니다.
+재생 상태를 &quot;재생 중&quot;으로 이동합니다.  **`play` 다음에 `pauseStart`를 호출하면 &quot;resume&quot;이 백 엔드를 호출한다고 유추하므로** `resume` 이벤트가 필요하지 않습니다.
 
 **샘플 요청 본문**
 
