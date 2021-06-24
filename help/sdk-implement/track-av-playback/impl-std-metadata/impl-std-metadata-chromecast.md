@@ -1,12 +1,16 @@
 ---
-title: Chromecast에서 표준 메타데이터 구현
-description: Chromecast에서 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
+title: Chromecast에서 표준 메타데이터를 구현하는 방법을 알아봅니다.
+description: Chromecast에서 표준 비디오 및 광고 메타데이터를 설정하는 방법을 알아봅니다.
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 68%
 
 ---
-
 
 # Chromecast에서 표준 메타데이터 구현{#implement-standard-metadata-on-chromecast}
 
