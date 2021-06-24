@@ -1,15 +1,16 @@
 ---
 title: SceneGraph에서 추적(Roku)
-description: Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 미디어를 추적합니다.
+description: Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 미디어를 추적하는 방법을 알아봅니다.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: ht
-source-wordcount: '1171'
-ht-degree: 100%
+exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 98%
 
 ---
-
 
 # SceneGraph에서 추적(Roku){#tracking-in-scenegraph-roku}
 
@@ -358,4 +359,3 @@ function onAdbmobileApiResponse() as void
     endif 
 end function
 ```
-
