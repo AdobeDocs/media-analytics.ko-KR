@@ -1,12 +1,16 @@
 ---
 title: 마이그레이션 개요
-description: 이 항목에서는 Media SDK 1.x에서 2.x 버전으로 마이그레이션하는 방법에 대한 개요를 제공합니다.
+description: Media SDK 1.x에서 2.x 버전으로 마이그레이션하는 방법에 대해 알아봅니다.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 94%
 
 ---
-
 
 # 마이그레이션 개요{#migration-overview}
 
