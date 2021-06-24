@@ -1,12 +1,16 @@
 ---
-title: 개요
-description: Media SDK를 사용한 오류 추적입니다.
+title: 오류 추적 설명
+description: Media SDK를 사용하여 오류 추적을 자세히 살펴보십시오.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 87%
 
 ---
-
 
 # 개요{#overview}
 
@@ -23,4 +27,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >미디어 플레이어 오류를 추적해도 미디어 추적 세션이 중지되지 않습니다. 미디어 플레이어 오류로 인해 재생이 계속되지 않는 경우 `trackError` 호출 후 `trackSessionEnd`를 호출하여 미디어 추적 세션이 종료되었는지 확인하십시오.
-
