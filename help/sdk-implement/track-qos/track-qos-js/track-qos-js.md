@@ -1,17 +1,18 @@
 ---
-title: JavaScript 2.x를 사용하여 경험 품질 추적
-description: 이 항목에서는 JavaScript 2.x를 사용하는 브라우저 앱에서 미디어 SDK를 사용하여 QoE, QoS(체감 품질) 추적을 구현하는 방법을 설명합니다.
+title: JavaScript 2.x를 사용하여 체감 품질 추적 학습
+description: '"JavaScript 2.x를 사용하는 브라우저 앱에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."'
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
+exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '222'
 ht-degree: 84%
 
 ---
 
-
-# JavaScript 2.x를 사용하여 경험 품질 추적{#track-quality-of-experience-on-javascript}
+# JavaScript 2.x를 사용하여 체감 품질 추적{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
