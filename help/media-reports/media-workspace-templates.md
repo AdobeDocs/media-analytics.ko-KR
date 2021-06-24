@@ -1,13 +1,14 @@
 ---
 title: 미디어 작업 공간 템플릿
-description: null
+description: 미디어 작업 공간 템플릿을 사용하여 추적 데이터를 분석합니다. 획득 또는 스트리밍 미디어에 대한 표준 템플릿을 선택하거나 고유한 사용자 지정 템플릿을 만듭니다.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+feature: '"Media Analytics, 작업 공간 기본 사항"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 87%
 
 ---
 
