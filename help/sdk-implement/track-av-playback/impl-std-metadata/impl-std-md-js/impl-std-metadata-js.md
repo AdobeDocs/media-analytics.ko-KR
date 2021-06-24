@@ -1,15 +1,16 @@
 ---
-title: JavaScript 2.x를 사용하여 표준 메타데이터 구현
-description: 브라우저 앱(JS)에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 설명합니다.
+title: JavaScript 2.x를 사용하여 표준 메타데이터를 구현하는 방법을 알아봅니다.
+description: 브라우저 앱에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 알아봅니다(JS 2.x).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 80%
+source-wordcount: '69'
+ht-degree: 50%
 
 ---
-
 
 # JavaScript 2.x를 사용하여 표준 메타데이터 구현{#implement-standard-metadata-on-javascript}
 
