@@ -1,12 +1,16 @@
 ---
 title: 새 디버그 보고서 만들기
-description: 이 항목에서는 새 디버그 보고서를 만드는 방법을 설명합니다.
+description: 새 디버그 보고서를 만드는 방법을 알아봅니다.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 96%
 
 ---
-
 
 # 새 디버그 보고서 만들기{#create-a-new-debug-report}
 
@@ -25,14 +29,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
          다음 중 한 방법으로 액세스할 수 있습니다.
 
-         * [!UICONTROL Analytics &gt; 관리 &gt; 회사 설정 &gt; 웹 서비스]
-         * [!UICONTROL Analytics &gt; 관리 &gt; 사용자 관리 &gt; 사용자 &gt; 개별 사용자 설정] 새 사용자에 대한 웹 서비스 API 자격 증명을 작성하려면 [!UICONTROL 사용자 관리]에서 사용자를 **웹 서비스 액세스** 사용자 그룹에 추가합니다.
+         * [!UICONTROL Analytics > 관리 > 회사 설정 > 웹 서비스]
+         * [!UICONTROL Analytics > 관리 > 사용자 관리 > 사용자 > 개별 사용자 설정] 새 사용자에 대한 웹 서비스 API 자격 증명을 작성하려면 [!UICONTROL 사용자 관리]에서 사용자를 **웹 서비스 액세스** 사용자 그룹에 추가합니다.
       * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며, 변경할 수 없습니다.
       * [!UICONTROL 추가 끝점] – `metrics.companyname.com`과 같은 추적 서버에 사용할 수 있는 경우 `CNAMES`를 추가합니다.
    * **비디오 하트비트(Media Analytics)**
 
       * [!UICONTROL 기본 끝점] - 이 필드의 데이터는 Adobe에서 제공하며, 변경할 수 없습니다.
       * [!UICONTROL 추가 끝점] – `metrics.companyname.com`과 같은 추적 서버에 사용할 수 있는 경우 `CNAMES`를 추가합니다.
-
-
-
