@@ -1,12 +1,14 @@
 ---
 title: Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 가져오기
-description: null
+description: Analytics 2.0 API를 사용하여 동시 뷰어 보고서 데이터를 가져오는 방법을 알아봅니다. 샘플 요청 및 응답을 봅니다.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+feature: '"Media Analytics, Reports & Analytics 기본 사항"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 87%
 
 ---
 
