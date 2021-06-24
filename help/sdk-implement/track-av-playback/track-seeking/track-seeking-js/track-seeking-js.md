@@ -1,17 +1,18 @@
 ---
-title: JavaScript 2.x를 사용하여 검색 추적
-description: 이 항목에서는 브라우저 앱(JS)에서 Media SDK를 사용하여 찾기 추적을 구현하는 방법에 대해 설명합니다.
+title: JavaScript 2.x를 사용하여 찾기를 추적하는 방법 알아보기
+description: 브라우저 앱(JS 2.x)에서 Media SDK를 사용하여 찾기 시작 및 찾기 완료 이벤트를 추적하는 방법을 알아봅니다.
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 92%
+source-wordcount: '137'
+ht-degree: 76%
 
 ---
 
-
-# JavaScript 2.x를 사용하여 검색 추적{#track-seeking-on-javascript}
+# JavaScript 2.x를 사용하여 찾기 추적{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
