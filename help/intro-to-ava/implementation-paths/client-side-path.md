@@ -3,15 +3,16 @@ title: Media Analytics 및 클라이언트측 통합이란 무엇입니까?
 description: Media Analytics가 클라이언트측 통합 및 Media SDK 및/또는 Media Collection API와 작동하는 방식을 알아봅니다.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '152'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '154'
 ht-degree: 100%
 
 ---
 
-# 클라이언트측{#client-side}
+# 고객측{#client-side}
 
 Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다. Adobe의 Milestone 모델을 대체했습니다.
 
