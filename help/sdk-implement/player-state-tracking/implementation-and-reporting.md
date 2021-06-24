@@ -1,14 +1,15 @@
 ---
 title: 구현 및 보고
-description: 이 항목에서는 다음을 포함한 플레이어 상태 추적 기능을 구현하는 방법에 대해 설명합니다.
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+description: 을 포함한 플레이어 상태 추적 기능을 구현하는 방법에 대해 알아봅니다.
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 96%
 
 ---
-
 
 # 구현 및 보고
 
