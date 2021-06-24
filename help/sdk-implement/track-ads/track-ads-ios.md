@@ -1,12 +1,16 @@
 ---
-title: iOS에서 광고 추적
+title: iOS에서 광고를 추적하는 방법 알아보기
 description: Media SDK를 사용하여 iOS 애플리케이션에서 광고 추적을 구현합니다.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
-
 
 # iOS에서 광고 추적{#track-ads-on-ios}
 
