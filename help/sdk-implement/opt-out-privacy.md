@@ -1,12 +1,14 @@
 ---
-title: 옵트아웃 및 개인 정보
-description: 옵트인, 옵트아웃 및 개인 정보 보호를 처리하는 방법입니다.
+title: '"옵트아웃 및 개인 정보 설명"'
+description: '"옵트인, 옵트아웃 및 개인 정보를 처리하는 방법을 알아봅니다."'
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 96%
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
