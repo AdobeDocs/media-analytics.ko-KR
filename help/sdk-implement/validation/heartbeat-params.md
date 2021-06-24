@@ -1,12 +1,16 @@
 ---
 title: 하트비트 매개 변수 설명
-description: Adobe가 Media Analytics(하트비트) 서버에서 수집하고 처리하는 하트비트 매개 변수 목록입니다.
+description: Adobe이 Media Analytics(하트비트) 서버에서 수집하고 처리하는 하트비트 매개 변수를 탐색합니다.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
+feature: '"Media Analytics, 변수"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
-
 
 # Media Analytics(하트비트) 매개 변수 설명{#heartbeat-parameter-descriptions}
 
@@ -16,17 +20,17 @@ Adobe가 Media Analytics(하트비트) 서버에서 수집하고 처리하는 Me
 
 |  이름  | 데이터 소스 |  설명  |
 | ---  | --- | --- |
-| s:event:type | Media SDK | (필수)<br/><br/>추적 중인 이벤트 유형입니다. 이벤트 유형: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
+| s:event:유형 | Media SDK | (필수)<br/><br/>추적 중인 이벤트 유형입니다. 이벤트 유형: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | (필수)<br/><br/>이 세션에서 같은 유형의 마지막 이벤트의 타임스탬프입니다. 값은 -1입니다. |
 | l:event:ts | Media SDK | (필수)<br/><br/>이벤트의 타임스탬프입니다. |
-| l:event:duration | Media SDK | (필수)<br/><br/>이 값은 플레이어가 아닌 Media SDK에 의해 내부적으로 설정됩니다(밀리초). 백엔드에서 보낸 지표 시간을 계산하는 데 사용됩니다. 예: a.media.totalTimePlayed는 생성된 모든 Play(type=play) 하트비트에 대한 기간 합계로 계산됩니다. <br/>*참고:*이 매개 변수는 &quot;상태 변경 이벤트&quot;(예: type=complete, type=chapter_complete 또는 type=bitrate_change)이므로 특정 이벤트에 대해 0으로 설정됩니다. |
-| l:event:playhead | VideoInfo | (필수)<br/><br/>플레이헤드는 이벤트가 기록될 때 현재 활성 자산(주 자산 또는 광고 자산) 내부에 있었습니다. |
+| l:event:기간 | Media SDK | (필수)<br/><br/>이 값은 플레이어가 아닌 Media SDK에 의해 내부적으로 설정됩니다(밀리초). 백엔드에서 보낸 지표 시간을 계산하는 데 사용됩니다. 예: a.media.totalTimePlayed는 생성된 모든 Play(type=play) 하트비트에 대한 기간 합계로 계산됩니다. <br/>*참고:* 이 매개 변수는 &quot;상태 변경 이벤트&quot;(예: type=complete, type=chapter_complete 또는 type=bitrate_change)이므로 특정 이벤트에 대해 0으로 설정됩니다. |
+| l:event:플레이헤드 | VideoInfo | (필수)<br/><br/>플레이헤드는 이벤트가 기록될 때 현재 활성 자산(주 자산 또는 광고 자산) 내부에 있었습니다. |
 | s:event:sid | Media SDK | (필수)<br/><br/>세션 ID(임의로 생성된 문자열)입니다. 특정 세션(비디오 + 광고)의 모든 이벤트는 같아야 합니다. |
 | l:asset:duration / l:asset:length <br/>(길이 지속 시간에서 이름이 변경됨) | VideoInfo | (필수)<br/><br/>주 자산의 비디오 자산 길이입니다. |
-| s:asset:publisher | MediaHeartbeatConfig | (필수)<br/><br/>자산 게시자입니다. |
+| s:asset:게시자 | MediaHeartbeatConfig | (필수)<br/><br/>자산 게시자입니다. |
 | s:asset:video_id | VideoInfo | (필수)<br/><br/>게시자의 카탈로그에서 비디오를 고유하게 식별하는 ID입니다. |
-| s:asset:type | Media SDK | (필수)<br/><br/>자산 유형(주 자산 또는 광고 자산)입니다. |
-| s:stream:type | VideoInfo | (필수)<br/><br/>스트림 유형입니다. 다음 중 하나일 수 있습니다. <ul> <li> live </li> <li> vod </li> <li> linear </li> </ul> |
+| s:asset:유형 | Media SDK | (필수)<br/><br/>자산 유형(주 자산 또는 광고 자산)입니다. |
+| s:stream:유형 | VideoInfo | (필수)<br/><br/>스트림 유형입니다. 다음 중 하나일 수 있습니다. <ul> <li> live </li> <li> vod </li> <li> linear </li> </ul> |
 | s:user:id | 모바일, 앱 측정 VisitorID에 대한 구성 개체 | (선택 사항)<br/><br/>사용자가 특별히 설정한 방문자 ID입니다. |
 | s:user:aid | Experience Cloud 조직 | (선택 사항)<br/><br/>사용자의 Analytics 방문자 ID 값입니다. |
 | s:user:mid | Experience Cloud 조직 | (필수)<br/><br/>사용자의 Experience Cloud 방문자 ID 값입니다. |
@@ -39,15 +43,15 @@ Adobe가 Media Analytics(하트비트) 서버에서 수집하고 처리하는 Me
 | s:sp:ovp | MediaHeartbeatConfig | (선택 사항)<br/><br/>Primetime 플레이어의 경우 &quot;primetime&quot;으로 설정되고, 다른 플레이어의 경우 실제 OVP로 설정됩니다. |
 | s:sp:sdk | MediaHeartbeatConfig | (필수)<br/><br/>OVP 버전 문자열입니다. |
 | s:sp:player_name | VideoInfo | (필수)<br/><br/>비디오 플레이어 이름(실제 플레이어 소프트웨어, 플레이어를 식별하는 데 사용됨)입니다. |
-| s:sp:channel | MediaHeartbeatConfig | (선택 사항)<br/><br/>사용자가 컨텐츠를 보고 있는 채널입니다. 모바일 앱의 경우 앱 이름입니다. 웹 사이트의 경우 도메인 이름입니다. |
+| s:sp:채널 | MediaHeartbeatConfig | (선택 사항)<br/><br/>사용자가 컨텐츠를 보고 있는 채널입니다. 모바일 앱의 경우 앱 이름입니다. 웹 사이트의 경우 도메인 이름입니다. |
 | s:sp:hb_version | Media SDK | (필수)<br/><br/>호출을 실행하는 Media SDK 라이브러리의 버전 번호입니다. |
-| l:stream:bitrate | QoSInfo | (필수)<br/><br/>스트림 비트율의 현재 값(bps)입니다. |
+| l:stream:비트율 | QoSInfo | (필수)<br/><br/>스트림 비트율의 현재 값(bps)입니다. |
 
 ## 오류 이벤트
 
 |  이름  | 데이터 소스 | 설명   |
 | ---  | --- | --- |
-| s:event:source | Media SDK | (필수)<br/><br/>오류 원인으로, 플레이어 내부 또는 애플리케이션 수준입니다. |
+| s:event:소스 | Media SDK | (필수)<br/><br/>오류 원인으로, 플레이어 내부 또는 애플리케이션 수준입니다. |
 | s:event:id | Media SDK | (필수)<br/><br/>오류를 고유하게 식별하는 오류 ID입니다. |
 
 ## 광고 이벤트
@@ -78,4 +82,3 @@ Adobe가 Media Analytics(하트비트) 서버에서 수집하고 처리하는 Me
 |  이름  | 데이터 소스 | 설명   |
 | ---  | --- | --- |
 | s:event:type=end | Media SDK | (필수)<br/><br/> `end` `close` |
-
