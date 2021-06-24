@@ -1,20 +1,21 @@
 ---
-title: JavaScript 3.x를 사용하여 장 및 세그먼트 추적
-description: 이 항목에서는 브라우저 앱(JS)에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 설명합니다.
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: JavaScript 3.x를 사용하여 장 및 세그먼트를 추적하는 방법 알아보기
+description: 브라우저 앱(JS)에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 71%
+source-wordcount: '220'
+ht-degree: 64%
 
 ---
-
 
 # JavaScript 3.x를 사용하여 장 및 세그먼트 추적{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. If you are implementing any previous versions of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다.[SDK 다운로드](/help/sdk-implement/download-sdks.md)
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
@@ -27,9 +28,9 @@ ht-degree: 71%
    | 변수 이름 | 유형 | 설명 |
    | --- | --- | --- |
    | `name` | string | 장 이름을 나타내는 빈 문자열이 아닙니다. |
-   | `position` | 수 | 컨텐츠 내의 장(1부터 시작)의 위치입니다. |
-   | `length` | 수 | 장의 길이를 나타내는 양수. |
-   | `startTime` | 수 | 장 시작 시 재생 헤드 값. |
+   | `position` | number | 컨텐츠 내에서 1부터 시작하는 장의 위치입니다. |
+   | `length` | number | 장 길이를 나타내는 양수입니다. |
+   | `startTime` | number | 장 시작 시 플레이헤드 값입니다. |
 
    챕터 개체:
 
