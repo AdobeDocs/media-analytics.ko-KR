@@ -1,12 +1,16 @@
 ---
-title: Android에서 광고 추적
+title: Android에서 광고를 추적하는 방법 알아보기
 description: Media SDK를 사용하여 Android 애플리케이션에서 광고 추적을 구현합니다.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
-
 
 # Android에서 광고 추적{#track-ads-on-android}
 
