@@ -1,15 +1,16 @@
 ---
-title: JavaScript 2.x를 사용하여 버퍼링 추적
-description: 브라우저 앱(JS)의 버퍼링 추적 이벤트에 대해 설명합니다.
+title: JavaScript 2.x를 사용하여 버퍼링을 추적하는 방법 알아보기
+description: 브라우저 앱(JS)에서 버퍼링 이벤트를 추적하는 방법을 알아봅니다.
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 91%
+source-wordcount: '123'
+ht-degree: 81%
 
 ---
-
 
 # JavaScript 2.x를 사용하여 버퍼링 추적{#track-buffering-on-javascript}
 
