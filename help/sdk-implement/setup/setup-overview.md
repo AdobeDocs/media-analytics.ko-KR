@@ -1,15 +1,16 @@
 ---
-title: 설정 개요
-description: 모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위한 Media SDK 설정에 대한 개요입니다.
+title: Media SDK 구현 설명
+description: '"모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위한 Media SDK를 설정하는 방법을 알아봅니다."'
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
-
 
 # 설정 개요{#setup-overview}
 
