@@ -1,12 +1,16 @@
 ---
-title: 프리롤 광고가 있는 VOD 재생
-description: Media SDK를 사용하여 프리롤 광고가 포함된 VOD 컨텐츠를 추적하는 방법의 예입니다.
+title: '"프리롤 광고가 있는 VOD 재생"'
+description: '"Media SDK를 사용하여 프리롤 광고가 포함된 VOD 컨텐츠를 추적하는 방법의 예를 봅니다."'
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 95%
 
 ---
-
 
 # 프리롤 광고가 있는 VOD 재생{#vod-playback-with-pre-roll-ads}
 
