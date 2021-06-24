@@ -1,15 +1,16 @@
 ---
 title: SDK 디버깅
-description: 이 항목에서는 Media SDK에서 사용할 수 있는 추적/로그에 대해 설명합니다.
+description: Media SDK에서 사용할 수 있는 추적/로그에 대해 알아봅니다.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+exl-id: c2de6454-8538-4d07-a099-e278b153d894
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
-
 
 # SDK 디버깅{#sdk-debugging}
 
@@ -114,4 +115,3 @@ Media SDK 라이브러리의 로그 출력을 사용하여 구현을 확인할 �
 [16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```
-
