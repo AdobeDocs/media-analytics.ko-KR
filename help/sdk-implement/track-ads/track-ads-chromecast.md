@@ -1,12 +1,16 @@
 ---
-title: Chromecast에서 광고 추적
+title: Chromecast에서 광고를 추적하는 방법 알아보기
 description: Media SDK를 사용하여 Chromecast 애플리케이션에서 광고 추적을 구현합니다.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 97%
 
 ---
-
 
 # Chromecast에서 광고 추적{#track-ads-on-chromecast}
 
