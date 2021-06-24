@@ -1,12 +1,16 @@
 ---
 title: 광고 사이에 표시되는 기본 재생 해결
-description: 광고 사이에 표시되는 main:play 호출을 처리하는 방법입니다.
+description: '"광고 사이에 표시되는 main:play 호출을 처리하는 방법을 배웁니다."'
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 96%
 
 ---
-
 
 # 광고 사이에 표시되는 main:play 해결{#resolving-main-play-appearing-between-ads}
 
@@ -45,11 +49,11 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 **모든 광고 자산 시작 시:**
 
-* **`trackEvent(MediaHeartbeat.Event.AdComplete);`호출**
+* **호출`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >이전 광고가 완료되지 않은 경우에만 이를 호출합니다. 이전 광고에 대한 "`isinAd`" 상태를 유지 관리하려면 부울 값을 고려하십시오.
+   >이전 광고가 완료되지 않은 경우에만 이를 호출합니다. 이전 광고에 대한 &quot;`isinAd`&quot; 상태를 유지 관리하려면 부울 값을 고려하십시오.
 
 * 광고 자산에 대한 광고 개체 인스턴스(예: `adObject`)를 만듭니다.
 * 광고 메타데이터, `adCustomMetadata`를 채웁니다.
@@ -70,11 +74,10 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 **광고 브레이크 완료 시:**
 
-* **`trackEvent(MediaHeartbeat.Event.AdComplete);`호출**
+* **호출`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
    >이 단계를 마지막 `trackEvent:AdComplete` 호출의 일부로 위에서 이미 수행한 경우에는 건너뛸 수 있습니다.
 
 * 호출 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-
