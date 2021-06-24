@@ -1,12 +1,16 @@
 ---
-title: Android에서 버퍼링 추적
-description: Android에서 버퍼링 추적 이벤트에 대해 설명합니다.
+title: Android에서 버퍼링을 추적하는 방법 알아보기
+description: Android에서 버퍼링 이벤트를 추적하는 방법을 알아봅니다.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
-
 
 # Android에서 버퍼링 추적{#track-buffering-on-android}
 
