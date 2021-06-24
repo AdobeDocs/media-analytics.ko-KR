@@ -1,12 +1,16 @@
 ---
 title: 광고를 건너뛰고 VOD 재생
-description: Media SDK를 사용하여 사용자가 건너뛴 VOD 컨텐츠를 추적하는 방법의 예입니다.
+description: Media SDK를 사용하여 사용자가 건너뛴 VOD 컨텐츠를 추적하는 방법의 예를 봅니다.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 91%
 
 ---
-
 
 # 광고를 건너뛰고 VOD 재생{#vod-playback-with-skipped-ads}
 
@@ -292,4 +296,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
