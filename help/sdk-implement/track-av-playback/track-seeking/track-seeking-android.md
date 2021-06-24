@@ -1,12 +1,16 @@
 ---
-title: Android에서 찾기 추적
-description: 이 항목에서는 Android에서 Media SDK를 사용하여 찾기 추적을 구현하는 방법에 대해 설명합니다.
+title: Android에서 찾기를 추적하는 방법 알아보기
+description: Android에서 Media SDK를 사용하여 찾기 시작 및 찾기 완료 이벤트를 추적하는 방법을 알아봅니다.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
-
 
 # Android에서 찾기 추적{#track-seeking-on-android}
 
