@@ -1,12 +1,16 @@
 ---
-title: iOS에서 체감 품질 추적
-description: 이 항목에서는 iOS에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 설명합니다.
+title: iOS에서 체감 품질 추적 방법을 알아봅니다.
+description: '"iOS에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."'
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
-
 
 # iOS에서 체감 품질 추적{#track-quality-of-experience-on-ios}
 
@@ -54,4 +58,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >비트율 변경 시마다 QoS 개체를 업데이트하고 비트율 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoS 데이터가 제공됩니다.
-
