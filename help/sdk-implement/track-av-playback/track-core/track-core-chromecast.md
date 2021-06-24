@@ -1,12 +1,16 @@
 ---
-title: Chromecast에서 코어 재생 추적
-description: 이 항목에서는 Chromecast에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 설명합니다.
+title: Chromecast에서 코어 재생을 추적하는 방법 알아보기
+description: Chromecast에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
-
 
 # Chromecast에서 코어 재생 추적{#track-core-playback-on-chromecast}
 
@@ -115,8 +119,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    비디오 플레이어에서 일시 정지할 시나리오를 식별하고 `trackPause`가 제대로 호출되는지 확인하십시오. 다음 시나리오에서는 모두 앱 호출 `trackPause()`가 필요합니다.
 
-   * 사용자가 앱에서 일시 정지를 명시적으로 누릅니다.
-   * 플레이어가 일시 정지 상태로 전환합니다.
+   * 사용자가 앱에서 일시 정지를 명시적으로 실행합니다.
+   * 플레이어가 일시 정지 상태로 전환됩니다.
    * (*모바일 앱*) - 백그라운드로 전환된 애플리케이션의 세션을 열어 두려고 합니다.
    * (*모바일 앱*) - 애플리케이션을 백그라운드로 전환하는 시스템 인터럽트 유형이 발생합니다. 예를 들어 사용자가 호출을 받거나 다른 애플리케이션에서 팝업이 발생하지만 애플리케이션이 중단 지점에서 사용자가 비디오를 재개할 수 있도록 세션을 라이브로 유지할 수 있습니다.
 
@@ -132,4 +136,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 전체 추적 예를 제공하기 위해 Chromecast SDK에 포함된 샘플 플레이어.
-
