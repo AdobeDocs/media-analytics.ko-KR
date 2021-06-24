@@ -1,12 +1,16 @@
 ---
-title: Roku에서 버퍼링 추적
-description: Roku에서 버퍼링 추적 이벤트에 대해 설명합니다.
+title: Roku에서 버퍼링을 추적하는 방법 알아보기
+description: Roku에서 버퍼링 이벤트를 추적하는 방법을 알아봅니다.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
-
 
 # Roku에서 버퍼링 추적{#track-buffering-on-roku}
 
