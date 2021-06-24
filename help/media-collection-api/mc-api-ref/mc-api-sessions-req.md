@@ -1,13 +1,14 @@
 ---
-title: 세션 요청
-description: 세션 요청
+title: 스트리밍 미디어 컬렉션 API � 세션 요청 끝점
+description: '"Media Collection API 세션 요청 끝점 매개 변수 및 응답이란 무엇입니까?"'
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 100%
+source-wordcount: '97'
+ht-degree: 80%
 
 ---
 
