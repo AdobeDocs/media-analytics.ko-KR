@@ -1,12 +1,16 @@
 ---
-title: 1.x에서 2.x API로 전환
-description: 이 항목에는 API 참조에 대한 링크와, Media SDK의 1.x 및 2.x 버전에 대한 필수 및 선택적 추적 API 목록이 포함되어 있습니다.
+title: 버전 1.x에서 2.x API로 전환
+description: Media SDK의 1.x 및 2.x 버전에 대한 API 참조 및 필수 및 선택적 추적 API를 나열합니다.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
-
 
 # API 1.x에서 2.x로 전환 {#one-x-to-two-x-conv}
 
@@ -50,4 +54,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
