@@ -1,12 +1,16 @@
 ---
 title: 테스트 호출 세부 사항
-description: 이 항목에서는 구현의 유효성을 확인하기 위해 수행해야 하는 호출에 대해 자세히 설명합니다.
+description: 구현의 유효성을 확인하기 위해 수행해야 하는 호출을 탐색합니다.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 98%
 
 ---
-
 
 # 테스트 호출 세부 사항{#test-call-details}
 
@@ -19,7 +23,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
 | _**`a.media.name`**_ | _**123456**_ |
-| _**`a.media.length`**_ | _**120**_ |
+| _**`a.media.length`**_ | _**120년**_ |
 | `a.media.playerName` | HTML5 |
 | _**`a.media.view`**_ | _**true**_ |
 | `a.contentType` | vod |
@@ -37,7 +41,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | 에피소드 제목 |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016년 7월 4일 |
@@ -64,7 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 에피소드 제목 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -83,13 +87,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `s:meta:a.media.show` | 표시 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | 에피소드 제목 |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018년 7월 4일 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.network` | 네트워크 |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
@@ -110,9 +114,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 에피소드 제목 |
 | `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120 |
+| `l:asset:length` | 120년 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
@@ -129,7 +133,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| _**`a.media.ad.name`**_ | _**9378**_ |
+| _**`a.media.ad.name`**_ | _**9378년**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
 | _**`a.media.ad.length`**_ | _**15**_ |
@@ -150,15 +154,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
-| `a.media.show` | Show Title |
+| `a.media.show` | 제목 표시 |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | 에피소드 제목 |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016년 7월 4일 |
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | production house |
-| `a.media.network` | network |
+| `a.media.network` | 네트워크 |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | unlocked |
@@ -176,11 +180,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 매개 변수 |  값(샘플)  |
 |---|---|
-| _**`s:event:type`**_ | _**시작**_ |
+| _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _**`l:asset:length`**_ | _**120**_ |
+| _**`l:asset:length`**_ | _**120년**_ |
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 | _**`s:meta:custom.[value]`**_ | _**사용자 지정 메타데이터 필드**_ |
@@ -197,13 +201,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `s:meta:a.media.show` | 표시 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | 에피소드 제목 |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018년 7월 4일 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.network` | 네트워크 |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
@@ -224,7 +228,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378년 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
@@ -236,10 +240,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378년 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**광고**_ |
 
 ### Media Analytics(하트비트) 광고 일시 중지 호출 {#ma-ad-pause-call}
 
@@ -248,10 +252,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378년 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**광고**_ |
 
 ### Media Analytics(하트비트) Adobe Analytics 광고 전체 호출 {#ma-aa-ad-complete-call}
 
@@ -260,10 +264,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378년 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**광고**_ |
 
 ## 주 컨텐츠 재생 {#play-main-content}
 
@@ -274,9 +278,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 에피소드 제목 |
 | `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120 |
+| `l:asset:length` | 120년 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
@@ -294,10 +298,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 에피소드 제목 |
 | `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120 |
+| `l:asset:length` | 120년 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-
-
