@@ -1,13 +1,14 @@
 ---
-title: Roku에서 코어 재생 추적
-description: 이 항목에서는 Roku에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 설명합니다.
+title: Roku에서 코어 재생을 추적하는 방법 알아보기
+description: Roku에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **표준 메타데이터**
 
-      [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
