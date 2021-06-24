@@ -1,12 +1,16 @@
 ---
 title: 앱 상태 추적
-description: '앱 상태는 애플리케이션의 다른 화면이나 보기이며, 표시되는 경우 trackState가 호출됩니다. '
+description: '앱 상태는 애플리케이션의 다양한 화면 또는 보기입니다. trackState 호출을 사용하여 애플리케이션에서 앱 상태를 추적하는 방법을 알아봅니다. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
-
 
 # 앱 상태 추적{#track-app-states}
 
@@ -28,7 +32,7 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-상태 이름은 Adobe Mobile Services의 "보기 상태" 변수에 보고되며, 보기가 `trackState` 호출 별로 기록됩니다. 다른 Analytics 인터페이스에서 "보기 상태"는 "페이지 이름"으로 보고되며, "상태 보기"는 "페이지 보기"로 보고됩니다.
+상태 이름은 Adobe Mobile Services의 &quot;보기 상태&quot; 변수에 보고되며, 보기가 `trackState` 호출 별로 기록됩니다. 다른 Analytics 인터페이스에서 &quot;보기 상태&quot;는 &quot;페이지 이름&quot;으로 보고되며, &quot;상태 보기&quot;는 &quot;페이지 보기&quot;로 보고됩니다.
 
 ## 컨텍스트 데이터 보내기
 
@@ -53,4 +57,3 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 >[!NOTE]
 >
 >컨텍스트 데이터 값은 Adobe Mobile Services에서 사용자 지정 변수에 매핑되어야 합니다.
-
