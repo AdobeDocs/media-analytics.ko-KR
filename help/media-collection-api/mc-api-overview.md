@@ -1,14 +1,15 @@
 ---
 seo-title: 개요
-title: 개요
-description: null
+title: 스트리밍 미디어 컬렉션 API 개요
+description: Media Collection API와 플레이어가 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적하는 방법에 대해 알아봅니다.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 92%
 
 ---
 
@@ -82,7 +83,7 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 
 각 `eventType`의 경우 매개 변수 유형을 확인하고 매개 변수가 특정 이벤트에 필수인지 또는 선택 사항인지 확인하는 데 사용해야 하는 [JSON 유효성 검사 스키마](mc-api-ref/mc-api-json-validation.md)가 있으며, 이 스키마는 공개적으로 제공됩니다.
 
-### 이벤트 유형{#mc-api-event-types}
+### 이벤트 유형 {#mc-api-event-types}
 
 * `sessionStart`
 * `play`
