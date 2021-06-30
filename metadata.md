@@ -1,18 +1,12 @@
 ---
 cloud: Experience Cloud
-solution-title: 학습 및 지원
-solution-hub-url: https://helpx.adobe.com/kr/support/analytics.html
-solution-image: assets/analytics-icon-24.png
-getting-started-title: 시작하기
-getting-started-url: https://helpx.adobe.com/kr/analytics/get-started.html
-tutorials-title: 자습서
-tutorials-url: https://helpx.adobe.com/analytics/kt/index/analytics-videos.html
+solution: Analytics
+feature-set: Analytics
 git-repo: https://git.corp.adobe.com/AdobeDocs/media-analytics.ko-KR
 index: true
-translation-type: tm+mt
-source-git-commit: 171053b49a2fda22cbd228f49170c3acdd7bc681
+source-git-commit: 10faed698a8c4b0531a032bdfbb24fc8693055ce
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '114'
 ht-degree: 100%
 
 ---
@@ -20,7 +14,7 @@ ht-degree: 100%
 
 # 내부용 메타데이터
 
-metadata.md 파일에는 리포지토리의 사용 안내서 TOC.md 파일에 전달되는 리포지토리 수준 메타데이터가 포함되어 있습니다. 모든 사용 안내서를 위한 metadata.md 컨텐츠를 변경하려면 TOC.md 파일에서 이 작업을 수행합니다.
+metadata.md 파일에는 리포지토리의 사용 안내서 TOC.md 파일에 전달되는 리포지토리 수준 메타데이터가 포함되어 있습니다. 모든 사용 안내서를 위한 metadata.md 콘텐츠를 변경하려면 TOC.md 파일에서 이 작업을 수행하십시오.
 
 | 메타데이터 | 기능 |
 |--- |--- |
