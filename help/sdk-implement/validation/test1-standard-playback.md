@@ -5,10 +5,10 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 9fc75eb94603238aa85779b5f26f7b7de049dc8f
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -125,7 +125,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)을 참조하십시오.
 
-1. **10분 동안 중단 없이 기본 컨텐츠 재생.**  **컨텐츠 재생**
+1. **10초 동안 중단 없이 기본 컨텐츠 재생.**  **컨텐츠 재생**
 
    기본 컨텐츠 재생 중에 Media SDK는 10초마다 하트비트(재생 호출)를 Media Analytics 서버로 전송합니다.
 
