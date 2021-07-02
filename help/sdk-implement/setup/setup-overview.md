@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 96%
+source-wordcount: '742'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 96%
    |  메서드 이름  |  설명  | 필수 여부 |
    | --- | --- | :---: |
    | `getQoSObject()` | 현재 QoS 정보가 포함된 `MediaObject` 인스턴스를 반환합니다. 이 메서드는 재생 세션 중에 여러 번 호출됩니다. 플레이어 구현은 항상 최근에 사용 가능한 QoS 데이터를 반환해야 합니다. | 예 |
-   | `getCurrentPlaybackTime()` | 플레이헤드의 현재 위치를 반환합니다. VOD 추적의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. LINEAR/LIVE 추적의 경우 이 값은 프로그램이 시작된 후 현재까지의 시간(초)으로 지정됩니다. | 예 |
+   | `getCurrentPlaybackTime()` | 플레이헤드의 현재 위치를 반환합니다. VOD 추적의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. LINEAR/LIVE 추적의 경우 이 값은 해당 날의 자정 UTC 이후 시간(초)으로 지정됩니다. | 예 |
 
    >[!TIP]
    >
