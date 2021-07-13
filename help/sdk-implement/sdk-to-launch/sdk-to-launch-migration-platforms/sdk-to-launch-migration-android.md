@@ -3,8 +3,8 @@ title: '"독립형 Media SDK에서 Launch로 마이그레이션 - Android"'
 description: Media SDK에서 Android용 Launch로 마이그레이션하는 방법을 알아봅니다.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 93%
