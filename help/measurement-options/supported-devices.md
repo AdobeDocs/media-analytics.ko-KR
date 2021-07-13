@@ -3,8 +3,8 @@ title: 지원되는 장치 및 플랫폼에 대해 알아보기
 description: '"Adobe Analytics for Streaming Media에서 지원하는 iOS, Android, OTT 장치 및 JavaScript 브라우저와 같은 주요 장치에 대해 알아봅니다."'
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 92%
