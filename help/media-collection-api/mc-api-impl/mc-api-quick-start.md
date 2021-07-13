@@ -4,8 +4,8 @@ description: 스트리밍 미디어 API를 시작합니다. 요청 데이터를 
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 92%
