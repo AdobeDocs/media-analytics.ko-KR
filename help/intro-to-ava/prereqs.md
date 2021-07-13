@@ -4,11 +4,11 @@ description: Adobe Analytics 스트리밍 미디어 시작. 스트리밍 미디�
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: '"Media Analytics, 시스템 요구 사항"'
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 87%
 
    ID 서비스를 구현하지 않았다면 지금이 바로 마이그레이션 전략을 시작할 적기입니다. ID 서비스의 중요성과 역할에 대한 자세한 내용은 [Identity 서비스가 나의 레이더가 되어야 하는 이유](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)를 참조하십시오.
 
-   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요,](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=kr) 및 [Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
+   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요,](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=kr) 및 [Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko-KR)를 참조하십시오.
 
 1. **Adobe Analytics 보고서를 사용할 수 있도록 설정.**
 
