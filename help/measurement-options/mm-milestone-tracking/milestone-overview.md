@@ -4,8 +4,8 @@ description: 사용되지 � 않음 이정표 구현에 대한 비디오 보고
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '3353'
 ht-degree: 99%
@@ -87,7 +87,7 @@ ht-degree: 99%
 
 |  변수    | 설명 |
 | --- | --- |
-| `Media.autoTrack` | **구문:** <br/><br/> `s.Media.autoTrack = true` <br/><br/>지원되는 플레이어에 대해 자동 추적을 활성화합니다. 지원되는 플레이어는 다음과 같습니다. <ul> <li> OSMF(Open Source Media Framework) </li> <li> FLVPlayback(Flash Professional에서 비디오 가져오기 마법사로 만든 비디오 플레이어) </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API 버전 2 및 3([Brightcove](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=kr) 참조) </li> <li> Windows Media Player, Quicktime 또는 Real Player(JavaScript 사용) </li> </ul> <br/><br/>위의 플레이어를 사용하지 않는 경우 `Media.open` `Media.play` `Media.stop` `Media.close`를 사용하여 플레이어 이벤트를 추적할 수 있습니다. |
+| `Media.autoTrack` | **구문:** <br/><br/> `s.Media.autoTrack = true` <br/><br/>지원되는 플레이어에 대해 자동 추적을 활성화합니다. 지원되는 플레이어는 다음과 같습니다. <ul> <li> OSMF(Open Source Media Framework) </li> <li> FLVPlayback(Flash Professional에서 비디오 가져오기 마법사로 만든 비디오 플레이어) </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API 버전 2 및 3([Brightcove](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko-KR) 참조) </li> <li> Windows Media Player, Quicktime 또는 Real Player(JavaScript 사용) </li> </ul> <br/><br/>위의 플레이어를 사용하지 않는 경우 `Media.open` `Media.play` `Media.stop` `Media.close`를 사용하여 플레이어 이벤트를 추적할 수 있습니다. |
 | `Media.autoTrackNetStreams` | **구문:** <br/><br/> `s.Media.autoTrackNetStreams = true` <br/><br/>Flash 10.3에는 NetStream 구성 요소에 향상된 비디오 추적을 활성화하는 새로운 기능이 도입되었습니다. 사용자 지정 Flash NetStream 플레이어를 사용하는 경우 이 변수를 활성화하여 autoTrack과 유사한 기능을 활성화할 수 있습니다. 이 방법을 사용하려면 비디오를 Flash 10.3 이상에서 봐야 합니다. |
 | `Media.completeByCloseOffset` | **구문:** <br/><br/> <br/><br/>`s.Media.completeByCloseOffset = true` <br/><br/>이 설정을 사용하여 실제 비디오가 종료되기 전에 몇 초 전 비디오 보기 완료를 카운트할 수 있습니다.  <br/><br/>이 이벤트는 `completeCloseOffsetThreshold`에 지정된 초 수를 기반으로 하여 전송됩니다. 이를 통해 오프셋이 비디오 길이와 같다고 보고하지 않는 비디오 플레이어에서 완료를 측정할 수 있습니다.<br/><br/>기본적으로 이 값은 true로 설정되고, 임계값은 1초로 설정됩니다. 이들 기본값을 사용하여 완료 이벤트는 비디오 종료 1초 전에 전송됩니다. |
 | `Media.completeCloseOffsetThreshold` | **구문:** <br/><br/> `s.Media.completeCloseOffsetThreshold = 1` <br/><br/>이 임계값을 사용하여 실제 비디오가 종료되기 몇 초 전에 비디오 보기 완료를 카운트할 수 있습니다.  이 임계값을 사용하려면 `Media.completeByCloseOffset`을 true로 설정해야 합니다.<br/><br/>제공한 정수 값은 종료 시 비디오 길이에서 오프셋하고 완료로 카운트할 수 있는 시간(초)을 결정합니다. 이를 통해 오프셋이 비디오 길이와 같다고 보고하지 않는 비디오 플레이어에서 완료를 측정할 수 있습니다.  <br/><br/>기본 임계값은 1초입니다. |
