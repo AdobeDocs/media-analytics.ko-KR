@@ -3,8 +3,8 @@ title: 표준 및 사용자 지정 상태 정보
 description: 표준 및 사용자 지정 플레이어 상태 구현 및 보고를 위한 요구 사항 및 지침을 비롯한 플레이어 상태 추적 기능에 대해 알아봅니다.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 92%
