@@ -4,8 +4,8 @@ description: '"Media Collection API 요청 매개 변수, 요청 키 및 설명�
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 93%
@@ -49,7 +49,7 @@ ht-degree: 93%
 
 | 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
 | --- | :---: | :---: | :---: | --- |
-| `media.streamFormat` | N | string | `sessionStart` | 스트림 형식(예:&quot;HD&quot; |
+| `media.streamFormat` | N | string | `sessionStart` | 스트림 형식(예: &quot;HD&quot; |
 | `media.show` | N | string | `sessionStart` | 프로그램 또는 시리즈 이름 |
 | `media.season` | N | string | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
 | `media.episode` | N | string | `sessionStart` | 에피소드의 번호 |
