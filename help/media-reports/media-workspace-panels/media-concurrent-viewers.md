@@ -3,8 +3,8 @@ title: 미디어 동시 뷰어 보고
 description: '"미디어 동시 뷰어 패널을 사용하여 동시 뷰어를 분석하고 최대 동시 시청 시간 및 드롭오프를 이해하는 방법을 알아봅니다."'
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: '"Media Analytics, 작업 공간 기본 사항"'
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 87%
