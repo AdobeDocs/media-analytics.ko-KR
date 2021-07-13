@@ -3,8 +3,8 @@ title: JavaScript 3.x를 사용하여 광고를 추적하는 방법 알아보기
 description: Media SDK를 사용하여 브라우저(JS) 애플리케이션에서 광고 추적을 구현합니다.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 80%
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 >[!IMPORTANT]
 >
->다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다.[SDK 다운로드](/help/sdk-implement/download-sdks.md)
+>다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다. [SDK 다운로드](/help/sdk-implement/download-sdks.md)
 
 ## 광고 추적 상수
 
