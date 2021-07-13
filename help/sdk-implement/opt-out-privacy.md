@@ -4,11 +4,11 @@ description: '"옵트인, 옵트아웃 및 개인 정보를 처리하는 방법�
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 추적 활동을 특정 장치에서 허용할지 여부를 제어할 수 있습니다.
 
 * **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인 정보 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인 정보 설정에 대한 자세한 내용은 [옵트아웃 및 개인 정보 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인 정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
+* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인 정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko-KR)를 참조하십시오.
 * **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
 
    >[!NOTE]
