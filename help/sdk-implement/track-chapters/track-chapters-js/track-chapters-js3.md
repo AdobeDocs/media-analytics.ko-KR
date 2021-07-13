@@ -3,8 +3,8 @@ title: JavaScript 3.x를 사용하여 장 및 세그먼트를 추적하는 방�
 description: 브라우저 앱(JS)에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 64%
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 >[!IMPORTANT]
 >
->다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다.[SDK 다운로드](/help/sdk-implement/download-sdks.md)
+>다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다. [SDK 다운로드](/help/sdk-implement/download-sdks.md)
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
