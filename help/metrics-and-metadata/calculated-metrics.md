@@ -4,8 +4,8 @@ description: Adobe 스트리밍 미디어 계산된 지표 및 지표 공식에 
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 59%
