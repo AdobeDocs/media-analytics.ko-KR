@@ -4,11 +4,11 @@ description: 다음 단계에 따라 Roku에서 Media SDK 애플리케이션을 
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 78%
 
 Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다.
 
-자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)에서 알아보십시오.
+자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ko-KR)에서 알아보십시오.
 
 Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작성된 Roku 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 사용 및 수집하고, 비디오 하트비트를 통해 비디오 참여를 측정할 수 있습니다.
 
@@ -134,7 +134,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
    | `visitorMarketingCloudID` | 방문자 ID 서비스에서 Experience Cloud 방문자 ID를 검색합니다.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Experience Cloud 방문자 ID를 사용하면 각 방문자와 연결할 수 있는 추가 고객 ID를 설정할 수 있습니다. 방문자 API는 여러 다른 고객 ID의 범위를 구분하기 위해 동일한 방문자의 여러 고객 ID와 고객 유형 식별자를 허용합니다. 이 메서드는 `setCustomerIDs`에 해당합니다. 예: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | SDK에서 RIDA(Roku ID for Advertising)를 설정하는 데 사용됩니다. 예: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API를 사용하여 RIDA(Roku ID for Advertising)를 가져옵니다. |
-   | `getAllIdentifiers` | Analytics, 방문자, Audience Manager 및 사용자 지정 식별자를 포함하여 SDK에 저장된 모든 식별자 목록을 반환합니다.<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
+   | `getAllIdentifiers` | Analytics, 방문자, Audience Manager 및 사용자 지정 식별자를 포함하여 SDK에 저장된 모든 식별자 목록을 반환합니다. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
@@ -167,8 +167,8 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
    |  메서드   | 설명 |
    | --- | --- |
-   | `processMessages` | 처리할 SDK에 Analytics 이벤트를 전달할 책임이 있습니다. <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | 처리할 SDK에 미디어 이벤트를 전달할 책임이 있습니다.<br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | 처리할 SDK에 Analytics 이벤트를 전달할 책임이 있습니다.  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 처리할 SDK에 미디어 이벤트를 전달할 책임이 있습니다. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
