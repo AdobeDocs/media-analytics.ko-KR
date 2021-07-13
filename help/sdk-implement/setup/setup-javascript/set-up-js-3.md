@@ -3,8 +3,8 @@ title: JavaScript 3.x를 사용하여 Media SDK를 설정하는 방법
 description: 다음 단계에 따라 JavaScript 3.x에서 Media SDK 애플리케이션을 설정합니다.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 87%
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 * **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **미디어 애플리케이션 `AppMeasurement` 에서 JavaScript용 및  `Experience Cloud Identity Service` 구현**
-자세한 내용은 JavaScript [를 사용하여 Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 구현 및  [Experience Cloud Identity 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
+자세한 내용은 JavaScript [를 사용하여 Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 구현 및  [Experience Cloud Identity 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
