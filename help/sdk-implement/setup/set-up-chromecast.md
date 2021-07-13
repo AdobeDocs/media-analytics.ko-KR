@@ -4,11 +4,11 @@ description: 다음 단계에 따라 Chromecast에서 Media SDK 애플리케이�
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ _Chromecast JavaScript SDK를 사용해야 합니까, 아니면 표준 JavaScrip
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
-Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)에서 알아보십시오.
+Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ko-KR)에서 알아보십시오.
 
 Experience Cloud 솔루션용 Chromecast SDK 2.x를 사용하여 JavaScript로 작성된 Chromecast 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 활용 및 수집하고, 비디오 하트비트를 통해 비디오 참여를 측정할 수 있습니다.
 
