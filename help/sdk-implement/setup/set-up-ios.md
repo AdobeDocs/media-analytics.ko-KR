@@ -4,8 +4,8 @@ description: iOS에서 Media SDK 애플리케이션을 설정하려면 다음 �
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 95%
@@ -23,7 +23,7 @@ ht-degree: 95%
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **애플리케이션에 iOS용 ADBMobile 구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)를 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=ko-KR)를 참조하십시오.
 
    >[!IMPORTANT]
    >
