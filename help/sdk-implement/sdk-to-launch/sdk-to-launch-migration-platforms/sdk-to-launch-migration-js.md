@@ -3,8 +3,8 @@ title: '"독립형 Media SDK에서 Launch로 마이그레이션 - 웹(JS)"'
 description: Media SDK에서 JS용 Launch로 마이그레이션하는 방법을 알아봅니다.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 91%
@@ -120,5 +120,5 @@ Launch는 추적 인프라를 만드는 두 가지 방법을 제공합니다. �
 
 ### Launch
 
-* [Launch 개요](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=kr)
+* [Launch 개요](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ko-KR)
 * [Media Analytics 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
