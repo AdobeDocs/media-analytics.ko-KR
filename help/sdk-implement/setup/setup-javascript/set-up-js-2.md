@@ -4,8 +4,8 @@ description: 다음 단계에 따라 JavaScript 2.x에서 Media SDK 애플리케
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 94%
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 * **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)을 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
