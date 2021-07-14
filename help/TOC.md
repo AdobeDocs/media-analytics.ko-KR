@@ -5,7 +5,7 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: Media Analytics
-source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
+source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -224,10 +224,12 @@ ht-degree: 100%
    + [구현 및 보고](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [플레이어 상태 추적 예](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
++ 추가 리소스 {#additional-resources}
+   + [릴리스 노트](additional-resources/doc-updates.md)
+
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
-+ 추가 리소스 {#additional-resources}
-   + [릴리스 노트](additional-resources/doc-updates.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+-->
