@@ -101,7 +101,7 @@ ht-degree: 97%
 
    * **표준 메타데이터**
 
-[Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
