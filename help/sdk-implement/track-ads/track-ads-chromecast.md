@@ -5,7 +5,7 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # Chromecast에서 광고 추적{#track-ads-on-chromecast}
 
+다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 광고 추적 상수
 
@@ -35,7 +37,7 @@ ht-degree: 97%
    광고 브레이크 개체 작성:[ createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
 
    ```
-   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
+   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName);
    ```
 
 1. 광고 브레이크 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdBreakStart`를 사용하여 `trackEvent()`를 호출합니다([trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)).
@@ -49,7 +51,7 @@ ht-degree: 97%
    광고 개체 작성:[ createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
-   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
+   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
    ```
 
 1. 원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 광고 메타데이터를 미디어 추적 세션에 첨부합니다.
@@ -68,7 +70,7 @@ ht-degree: 97%
 1. 광고 자산 재생이 광고 끝에 도달하면 `AdComplete` 이벤트를 사용하여 `trackEvent()`를 호출합니다([trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)).
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
    ```
 
 1. 같은 `AdBreak` 내에 추가 광고가 있는 경우 3~6단계를 다시 반복합니다.
