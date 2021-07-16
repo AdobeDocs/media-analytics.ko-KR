@@ -5,7 +5,7 @@ uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 98%
@@ -14,9 +14,11 @@ ht-degree: 98%
 
 # 개요{#overview}
 
+다음은 모든 2.x SDK에 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 체감 품질 추적에 QoS(서비스 품질) 및 오류 추적이 포함됩니다. 둘 다 선택적 옵션이며 코어 미디어 추적 구현에 필요하지 **않습니다**. 미디어 플레이어 API를 사용하여 QoS 및 오류 추적과 관련된 변수를 식별할 수 있습니다. 다음은 경험 추적 품질의 핵심 요소입니다.
 
@@ -57,20 +59,20 @@ ht-degree: 98%
 다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다. 이 코드는 코어 미디어 재생 코드와 함께 사용해야 합니다.
 
 ```js
-var mediaDelegate = new MediaHeartbeatDelegate(); 
+var mediaDelegate = new MediaHeartbeatDelegate();
 ...  
- 
-// This is called periodically by MediaHeartbeat instance 
-mediaDelegate.prototype.getQoSObject = function() { 
-    return this.qosInfo; 
-}; 
- 
-if (e.type == "qos_update") { 
-    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>); 
-    mediaDelegate.qosInfo = qosInfo; 
-}; 
- 
-if (e.type == "bitrate_change") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+
+// This is called periodically by MediaHeartbeat instance
+mediaDelegate.prototype.getQoSObject = function() {
+    return this.qosInfo;
+};
+
+if (e.type == "qos_update") {
+    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>);
+    mediaDelegate.qosInfo = qosInfo;
+};
+
+if (e.type == "bitrate_change") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
 };
 ```
