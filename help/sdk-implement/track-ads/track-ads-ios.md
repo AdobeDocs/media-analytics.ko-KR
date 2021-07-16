@@ -5,7 +5,7 @@ uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
@@ -14,9 +14,11 @@ ht-degree: 98%
 
 # iOS에서 광고 추적{#track-ads-on-ios}
 
+다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 광고 추적 상수
 
@@ -43,7 +45,7 @@ ht-degree: 98%
    광고 브레이크 개체 작성:
 
    ```
-   id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME] 
+   id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME]
                                position:[POSITION]  
                                startTime:[START_TIME]];
    ```
@@ -51,10 +53,10 @@ ht-degree: 98%
 1. 광고 브레이크 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdBreakStart`를 사용하여 `trackEvent()`를 호출합니다.
 
    ```
-   - (void)onAdBreakStart:(NSNotification *)notification { 
+   - (void)onAdBreakStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakStart  
                         mediaObject:adBreakObject  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
@@ -72,9 +74,9 @@ ht-degree: 98%
    광고 개체 작성:
 
    ```
-   id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME] 
-                                    adId:[AD_ID] 
-                                    position:[POSITION] 
+   id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME]
+                                    adId:[AD_ID]
+                                    position:[POSITION]
                                     length:[LENGTH]];
    ```
 
@@ -84,9 +86,9 @@ ht-degree: 98%
    * **사용자 지정 광고 메타데이터 -**&#x200B;사용자 지정 메타데이터의 경우 사용자 지정 데이터 변수에 대한 변수 개체를 만들고, 현재 광고의 데이터로 채웁니다.
 
       ```
-      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init]; 
-      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"]; 
-      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"]; 
+      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
       [adDictionary setObject:@"Sample creative" forKey:@"creative"];
       ```
 
@@ -95,30 +97,30 @@ ht-degree: 98%
    사용자 지정 메타데이터 변수(또는 빈 개체)에 대한 참조를 이벤트 호출의 세 번째 매개 변수로 포함하십시오.
 
    ```
-   - (void)onAdStart:(NSNotification *)notification { 
+   - (void)onAdStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdStart  
                         mediaObject:adObject  
-                        data:adDictionary]; 
+                        data:adDictionary];
    }
    ```
 
 1. 광고 재생이 광고 끝에 도달하면 `AdComplete` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 
    ```
-   - (void)onAdComplete:(NSNotification *)notification { 
+   - (void)onAdComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. 사용자가 광고를 건너뛰도록 선택했기 때문에 광고 재생이 완료되지 않은 경우 `AdSkip` 이벤트를 추적합니다.
 
    ```
-   - (void)onAdSkip:(NSNotification *)notification { 
+   - (void)onAdSkip:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdSkip  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
@@ -126,10 +128,10 @@ ht-degree: 98%
 1. 광고 브레이크가 완료되면 `AdBreakComplete` 이벤트를 사용하여 추적합니다.
 
    ```
-   - (void)onAdBreakComplete:(NSNotification *)notification { 
+   - (void)onAdBreakComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
