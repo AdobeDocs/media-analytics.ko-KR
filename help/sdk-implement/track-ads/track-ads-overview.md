@@ -5,7 +5,7 @@ uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 99%
@@ -14,9 +14,11 @@ ht-degree: 99%
 
 # 개요{#overview}
 
+다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 광고 재생에는 추적 광고 브레이크, 광고 시작, 광고 완료 및 광고 건너뛰기가 포함되어 있습니다. 미디어 플레이어의 API를 사용하여 핵심 플레이어 이벤트를 식별하고 필수 및 선택적 광고 변수를 채웁니다. 포괄적인 메타데이터 목록은 [광고 매개 변수](/help/metrics-and-metadata/ad-parameters.md)를 참조하십시오.
 
@@ -109,37 +111,37 @@ ht-degree: 99%
 다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다.
 
 ```js
-/* Call on ad break start */ 
- 
-if (e.type == "ad break start") { 
-    var adBreakObject = MediaHeartbeat.createAdBreakObject("mid-roll", 2, 500); 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject); 
-}; 
- 
-/* Call on ad start */ 
-if (e.type == "ad start") { 
-    var adObject = MediaHeartbeat.createAdObject("PepsiOne", "123456ab", 1, 30); 
-    /* Set custom context data */ 
-    var adCustomMetadata = { 
-        affiliate:"Sample affiliate", 
-        campaign:"Sample ad campaign", 
-        creative:"Sample creative" 
-    } 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata); 
-}; 
- 
-/* Call on ad complete */ 
-if (e.type == "ad complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
-}; 
- 
-/* Call on ad skip */ 
-if (e.type == "ad skip") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
-}; 
-     
-/* Call on ad break complete */ 
-if (e.type == "ad break complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
-}; 
+/* Call on ad break start */
+
+if (e.type == "ad break start") {
+    var adBreakObject = MediaHeartbeat.createAdBreakObject("mid-roll", 2, 500);
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);
+};
+
+/* Call on ad start */
+if (e.type == "ad start") {
+    var adObject = MediaHeartbeat.createAdObject("PepsiOne", "123456ab", 1, 30);
+    /* Set custom context data */
+    var adCustomMetadata = {
+        affiliate:"Sample affiliate",
+        campaign:"Sample ad campaign",
+        creative:"Sample creative"
+    }
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);
+};
+
+/* Call on ad complete */
+if (e.type == "ad complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
+};
+
+/* Call on ad skip */
+if (e.type == "ad skip") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
+};
+
+/* Call on ad break complete */
+if (e.type == "ad break complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
+};
 ```
