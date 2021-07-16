@@ -4,7 +4,7 @@ description: JavaScript 3.x 앱을 사용하는 브라우저에서 Media SDK를 
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # JavaScript 3.x를 사용하여 코어 재생 추적{#track-core-playback-on-javascript}
 
+이 설명서는 SDK의 버전 3.x에 있는 추적 기능에 대해 설명합니다.
+
 >[!IMPORTANT]
->이 설명서는 SDK의 버전 3.x에 있는 추적 기능에 대해 설명합니다. SDK의 이전 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
+> SDK의 이전 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
