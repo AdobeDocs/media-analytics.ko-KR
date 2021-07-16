@@ -5,7 +5,7 @@ uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 89%
@@ -14,9 +14,11 @@ ht-degree: 89%
 
 # Roku에서 챕터 및 세그먼트 추적{#track-chapters-and-segments-on-roku}
 
+다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 2.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
+> SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 표준 광고 메타데이터 구현
 
@@ -48,9 +50,9 @@ ht-degree: 89%
 1. 챕터에 대한 사용자 지정 메타데이터를 포함하는 경우 메타데이터에 대한 컨텍스트 데이터 변수를 작성합니다.
 
    ```
-   chapterContextData = {} 
-   chapterContextData["seg_type"] = "seg_type" 
-   chapterContextData["seg_name"] = "seg_name" 
+   chapterContextData = {}
+   chapterContextData["seg_type"] = "seg_type"
+   chapterContextData["seg_name"] = "seg_name"
    chapterContextData["seg_info"] = "seg_info"
    ```
 
@@ -63,14 +65,14 @@ ht-degree: 89%
 1. 재생이 챕터 종료 경계에 도달하면 사용자 지정 코드에서 정의한 대로 인스턴스에서 `ChapterComplete` 이벤트를 호출합니다.`MediaHeartbeat`
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_COMPLETE, chapterInfo, chapterContextData)
    ```
 
 1. 사용자가 챕터를 건너뛰도록 선택했기 때문에(예: 사용자가 챕터 경계를 찾는 경우) 챕터 재생이 완료되지 않은 경우 MediaHeartbeat 인스턴스에서 `ChapterSkip` 이벤트를 호출합니다.
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_SKIP, chapterInfo, chapterContextData)
    ```
 
