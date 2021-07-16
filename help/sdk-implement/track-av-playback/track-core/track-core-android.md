@@ -5,7 +5,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 97%
@@ -14,8 +14,9 @@ ht-degree: 97%
 
 # Android에서 코어 재생 추적{#track-core-playback-on-android}
 
+이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다.
 >[!IMPORTANT]
->이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 Android용 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 Android용 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -74,9 +75,9 @@ ht-degree: 97%
 
       ```java
       HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>(); 
-      mediaMetadata.put("isUserLoggedIn", "false"); 
-      mediaMetadata.put("tvStation", "Sample TV Station"); 
+        new HashMap<String, String>();
+      mediaMetadata.put("isUserLoggedIn", "false");
+      mediaMetadata.put("tvStation", "Sample TV Station");
       mediaMetadata.put("programmer", "Sample programmer");
       ```
 
@@ -87,7 +88,7 @@ ht-degree: 97%
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
-       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata);
    }
    ```
 
@@ -109,8 +110,8 @@ ht-degree: 97%
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
-   public void onVideoPlay(Observable observable, Object data) { 
-       _heartbeat.trackPlay(); 
+   public void onVideoPlay(Observable observable, Object data) {
+       _heartbeat.trackPlay();
    }
    ```
 
@@ -119,8 +120,8 @@ ht-degree: 97%
    미디어 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 미디어 재생 완료에 대한 이벤트를 식별하고, `trackComplete`를 호출합니다.
 
    ```java
-   public void onVideoComplete(Observable observable, Object data) { 
-       _heartbeat.trackComplete(); 
+   public void onVideoComplete(Observable observable, Object data) {
+       _heartbeat.trackComplete();
    }
    ```
 
@@ -132,7 +133,7 @@ ht-degree: 97%
    // Closes the media and/or the media completed and unloaded,  
    // and call trackSessionEnd().  
    public void onMainVideoUnload(Observable observable, Object data) {  
-       _heartbeat.trackSessionEnd(); 
+       _heartbeat.trackSessionEnd();
    }
    ```
 
@@ -146,7 +147,7 @@ ht-degree: 97%
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
-       _heartbeat.trackPause(); 
+       _heartbeat.trackPause();
    }
    ```
 
@@ -162,9 +163,9 @@ ht-degree: 97%
 1. 플레이어에서 미디어 재생 및/또는 일시 중지에서 미디어 재개를 위한 이벤트를 식별하고 `trackPlay`를 호출합니다.
 
    ```java
-   // trackPlay() 
+   // trackPlay()
    public void onVideoPlay(Observable observable, Object data) {  
-       _heartbeat.trackPlay(); 
+       _heartbeat.trackPlay();
    }
    ```
 
