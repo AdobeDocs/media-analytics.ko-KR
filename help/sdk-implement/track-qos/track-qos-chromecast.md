@@ -5,7 +5,7 @@ uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 91%
@@ -14,9 +14,11 @@ ht-degree: 91%
 
 # Chromecast에서 체감 품질 추적{#track-quality-of-experience-on-chromecast}
 
+다음은 모든 2.x SDK에 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 개요 {#overview}
 
@@ -53,13 +55,13 @@ ht-degree: 91%
    **QoS 개체 작성:** [createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
-   qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10); 
+   qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);
    ```
 
 1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다([trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)).
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
    ```
 
    >[!IMPORTANT]
