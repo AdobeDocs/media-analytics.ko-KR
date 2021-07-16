@@ -5,7 +5,7 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 95%
@@ -14,8 +14,10 @@ ht-degree: 95%
 
 # iOS에서 코어 재생 추적{#track-core-playback-on-ios}
 
+이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다.
+
 >[!IMPORTANT]
->이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -53,10 +55,10 @@ ht-degree: 95%
 
    ```
    ADBMediaObject *mediaObject =  
-     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME> 
-                                          mediaId:<MEDIA_ID> 
+     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME>
+                                          mediaId:<MEDIA_ID>
                                            length:<MEDIA_LENGTH>                       
-                                       streamType:<STREAM_TYPE> 
+                                       streamType:<STREAM_TYPE>
                                         mediaType: <MEDIA_TYPE>];
    ```
 
@@ -81,8 +83,8 @@ ht-degree: 95%
       사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
 
       ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"]; 
+      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
       [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
       ```
 
@@ -96,9 +98,9 @@ ht-degree: 95%
    >두 번째 값은 2단계에서 작성한 사용자 지정 비디오 메타데이터 개체 이름입니다.
 
    ```
-   - (void)onMainVideoLoaded:(NSNotification *)notification { 
-   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil]; 
-       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata]; 
+   - (void)onMainVideoLoaded:(NSNotification *)notification {
+   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil];
+       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata];
    }
    ```
 
@@ -115,8 +117,8 @@ ht-degree: 95%
    비디오 플레이어에서 비디오의 첫 번째 프레임이 화면에서 렌더링되는 비디오 재생 시작에 대한 이벤트를 식별하고, `trackPlay`()를 호출합니다.
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
@@ -125,8 +127,8 @@ ht-degree: 95%
    비디오 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 비디오 재생 완료에 대한 이벤트를 식별하고, `trackComplete`()를 호출합니다.
 
    ```
-   - (void)onVideoComplete:(NSNotification *)notification { 
-       [_mediaHeartbeat trackComplete]; 
+   - (void)onVideoComplete:(NSNotification *)notification {
+       [_mediaHeartbeat trackComplete];
    }
    ```
 
@@ -135,8 +137,8 @@ ht-degree: 95%
    비디오 플레이어에서 사용자가 비디오를 닫거나 비디오가 완료 및 업로드된 비디오 재생 업로드/종료에 대한 이벤트를 식별하고, `trackSessionEnd`()를 호출합니다.
 
    ```
-   - void)onMainVideoUnloaded:(NSNotification *)notification { 
-       [_mediaHeartbeat trackSessionEnd]; 
+   - void)onMainVideoUnloaded:(NSNotification *)notification {
+       [_mediaHeartbeat trackSessionEnd];
    }
    ```
 
@@ -149,8 +151,8 @@ ht-degree: 95%
    비디오 플레이어에서 비디오 일시 중지에 대한 이벤트를 식별하고 `trackPause`를 호출합니다.
 
    ```
-   - (void)onVideoPause:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPause]; 
+   - (void)onVideoPause:(NSNotification *)notification {
+       [_mediaHeartbeat trackPause];
    }
    ```
 
@@ -166,8 +168,8 @@ ht-degree: 95%
 1. 플레이어에서 비디오 재생 및/또는 일시 정지에서 비디오 재개에 대한 이벤트를 식별하고 `trackPlay`를 호출합니다.
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
