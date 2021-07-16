@@ -5,7 +5,7 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 96%
@@ -14,9 +14,11 @@ ht-degree: 96%
 
 # Chromecast에서 코어 재생 추적{#track-core-playback-on-chromecast}
 
+이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다.
+
 >[!IMPORTANT]
 >
->이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -27,7 +29,7 @@ ht-degree: 96%
    [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 
    ```
-   mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
+   mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>);
    ```
 
    **`StreamType`상수:**
@@ -55,11 +57,11 @@ ht-degree: 96%
       사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
