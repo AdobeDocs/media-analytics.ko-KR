@@ -4,7 +4,7 @@ description: 브라우저 앱(JS)에서 Media SDK를 사용하여 장 및 세그
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 64%
@@ -13,9 +13,11 @@ ht-degree: 64%
 
 # JavaScript 3.x를 사용하여 장 및 세그먼트 추적{#track-chapters-and-segments-on-javascript}
 
+다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 3.x SDK를 사용하는 구현과 관련된 지침입니다. SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다. [SDK 다운로드](/help/sdk-implement/download-sdks.md)
+> SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다. [SDK 다운로드](/help/sdk-implement/download-sdks.md)
 
 1. 챕터 시작 이벤트가 발생하는 시점을 식별하고, 챕터 정보를 사용하여 `ChapterObject` 인스턴스를 작성합니다.
 
