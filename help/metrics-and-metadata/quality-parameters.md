@@ -5,9 +5,9 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: '"Media Analytics, 변수"'
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2997'
 ht-degree: 92%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 92%
 | <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.qoe.timeToStart </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 30,000 </li><li> **설명:**<br/> QoSObject를 통해 설정하지 않은 경우 이 값은 기본값 0으로 설정됩니다. 이 값의 설정 단위는 밀리초입니다. 값은 Analysis Workspace 및 Reports &amp; Analytics에서 시간 형식(HH:MM:SS)으로 표시됩니다. 데이터 피드, Data Warehouse 및 보고 API에서는 값이 초 단위로 표시됩니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>  (a.media.qoe.<br/>timeToStart) </li> <li> **하트비트:**<br/>  (:stream:lstartup_time) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;시작 시간 </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **데이터 피드:**<br/> videoqoetimetostartevar </li> <li> **Audience Manager:**<br/>  (c_contextdata)<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
 
-### FPS
+### 초당 프레임 수
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- | --- |
-| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.qoe.framesPerSecond </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 24 </li><li> **설명:**<br/>&#x200B;초당 프레임 수로 나타낸 스트림 프레임 속도의 현재 값입니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/>  (:stream:lfps) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;아니요 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/> N/A </li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.qoe.framesPerSecond </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 24 </li><li> **설명:**<br/>&#x200B;초당 프레임 수로 나타낸 스트림 프레임 속도의 현재 값입니다. 필드는 닫기 호출의 fps 필드에 매핑되며 처리 규칙을 통해 액세스할 수 있습니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/>  (:stream:lfps) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;아니요 </li> <li> **예약된 변수:**<br/> N/A </li> <li> **보고서 이름:**<br/> N/A </li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
