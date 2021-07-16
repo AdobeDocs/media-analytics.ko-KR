@@ -5,7 +5,7 @@ uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 87%
@@ -14,9 +14,11 @@ ht-degree: 87%
 
 # 개요{#overview}
 
+다음은 모든 2.x SDK에 구현과 관련된 지침입니다.
+
 >[!IMPORTANT]
 >
->다음은 모든 2.x SDK에 구현과 관련된 지침입니다. SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
+>SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/sdk-implement/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 오류 추적 구현
 
