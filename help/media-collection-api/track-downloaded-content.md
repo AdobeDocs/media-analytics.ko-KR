@@ -5,10 +5,10 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 87%
 
 ---
 
@@ -61,13 +61,11 @@ ht-degree: 97%
 
 ## 샘플 세션 비교 {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### 온라인 컨텐츠
 
 ```
+POST /api/v1/sessions HTTP/1.1
+
 {
   eventType: "sessionStart",
   playerTime: {
@@ -82,13 +80,49 @@ ht-degree: 97%
 ### 다운로드한 컨텐츠
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### 사용 중지 알림
+
+이전에 다운로드한 컨텐츠는 `/api/v1/sessions` API로 전송될 수도 있습니다. 다운로드한 컨텐츠를 추적하는 이러한 방식은 **더 이상 사용되지 않는**&#x200B;이며, 나중에 **제거된**입니다.
+`/api/v1/sessions` API는 세션 초기화 이벤트만 허용합니다.
+새 API를 사용할 때 이전에 필수 `media.downloaded` 플래그가 더 이상 필요하지 않습니다.
+새로운 다운로드한 컨텐츠 구현에 `/api/v1/downloaded` API를 사용하고, 이전 API를 사용하는 기존 구현을 업데이트하는 것이 좋습니다.
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
