@@ -6,10 +6,10 @@ description: Media SDK에서 Launch로 마이그레이션하는 방법을 알아
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 89%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ Launch 고객은 앱 스토어 환경에서 확장을 사용할 수 있으므로
 
 오디오 및 비디오용 Adobe Media Analytics는 웹 및 모바일용 Launch 확장으로 사용할 수 있습니다.
 
-* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=kr)
+* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [모바일 Launch 설명서](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## 플랫폼
