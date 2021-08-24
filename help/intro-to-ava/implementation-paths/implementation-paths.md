@@ -4,10 +4,10 @@ description: Adobe Launch를 포함한 Adobe 스트리밍 미디어 구현 경�
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 * **Adobe Media Analytics 확장이 있는 Adobe Launch**
 
-   Adobe Launch는 Adobe의 차세대 tag management 솔루션입니다. Launch는 관련 고객 환경을 향상하는 데 필요한 모든 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 제공합니다. Launch와의 자체 통합을 구축하고 유지 관리하기 위해 확장을 사용합니다. 확장은 Launch UI 및 클라이언트 기능을 확장하는 JavaScript, HTML 및 CSS 패키지입니다. 자세한 내용은 [Experience Platform Launch 사용 안내서](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ko-KR)를 참조하십시오.
+   Adobe Launch는 Adobe의 차세대 tag management 솔루션입니다. Launch는 관련 고객 환경을 향상하는 데 필요한 모든 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 제공합니다. Launch와의 자체 통합을 구축하고 유지 관리하기 위해 확장을 사용합니다. 확장은 Launch UI 및 클라이언트 기능을 확장하는 JavaScript, HTML 및 CSS 패키지입니다. 자세한 내용은 [Experience Platform Launch 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)를 참조하십시오.
 
    Adobe Media Analytics(MA) 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 Launch 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
    Media Analytics 확장을 사용하는 Adobe Launch를 사용하려면 다음 사항을 충족해야 합니다.
    * Adobe Experience Cloud 고객이어야 합니다.
    * 웹 페이지에 Launch 또는 DTM 포함 코드를 배포해야 합니다.
-   * [Analytics 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=kr)
-   * [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=kr)
+   * [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko-KR)
+   * [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 * **고객측 -** Media Analytics 전용 통합입니다. 비디오 하트비트 SDK 및/또는 Media Collection API 통합을 선택할 수 있습니다. 이 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 비디오 플레이어에서 사용할 수 있습니다.
