@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -41,8 +41,8 @@ ht-degree: 96%
 
 | MA Launch 구성 요소   | 설명서 | 샘플 |
 |---|---|---|
-| **웹 확장 프로그램** | [Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=kr) | [Adobe Media Analytics for Audio 및 Video 확장](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **웹 확장 프로그램(3.x SDK)** | [Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [오디오 및 비디오 확장 프로그램용 Adobe Media Analytics(3.x SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **웹 확장 프로그램** | [Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html) | [Adobe Media Analytics for Audio 및 Video 확장](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **웹 확장 프로그램(3.x SDK)** | [Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html) | [오디오 및 비디오 확장 프로그램용 Adobe Media Analytics(3.x SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | **모바일 확장** | [Adobe Analytics - 오디오 및 비디오용 Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - 오디오 및 비디오 확장 프로그램용 Media Analytics](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## 1.x Media SDK 다운로드 {#download-the-1.x-media-sDKs}
