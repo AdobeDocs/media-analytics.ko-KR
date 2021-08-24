@@ -4,10 +4,10 @@ description: Media SDK에서 JS용 Launch로 마이그레이션하는 방법을 
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Media 확장은 추적을 위해 구성된 매개 변수를 사용합니다.
 
    ![](assets/launch_config_js.png)
 
-[Launch 사용 안내서 - Media 확장 설치 및 구성](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch 사용 안내서 - Media 확장 설치 및 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## 추적기 만들기의 차이점
 
@@ -120,5 +120,5 @@ Launch는 추적 인프라를 만드는 두 가지 방법을 제공합니다. �
 
 ### Launch
 
-* [Launch 개요](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ko-KR)
-* [Media Analytics 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)
+* [Media Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
