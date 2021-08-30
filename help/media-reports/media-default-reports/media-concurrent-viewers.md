@@ -1,24 +1,24 @@
 ---
-title: 미디어 Concurrent Viewer
-description: '"하루 동안 동시 뷰어를 표시하는 데 사용되는 미디어 Concurrent Viewer 대시보드에 대해 알아봅니다. 데이터는 컨텐츠, 장치 유형, 국가별로 필터링됩니다."'
+title: 미디어 동시 뷰어
+description: “하루 동안의 동시 뷰어를 표시하는 미디어 동시 뷰어 대시보드에 대해 알아보십시오. 데이터는 콘텐츠, 디바이스 유형, 국가별로 필터링됩니다.”
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: '"Media Analytics, Reports & Analytics 기본 사항"'
+feature: “Media Analytics 및 Reports & Analytics 기본 사항”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# 미디어 Concurrent Viewer{#media-concurrent-viewers}
+# 미디어 동시 뷰어{#media-concurrent-viewers}
 
-미디어 Concurrent Viewer 대시보드는 하루 동안의 동시 뷰어를 표시합니다. 데이터는 컨텐츠, 장치 유형, 국가별로 필터링됩니다.
+미디어 Concurrent Viewer 대시보드는 하루 동안의 동시 뷰어를 표시합니다. 데이터는 콘텐츠, 디바이스 유형, 국가별로 필터링됩니다.
 
 >[!TIP]
 >
-> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  세그먼트를 적용하고 분류하고 비교할 수 있는 추가 기능과 함께 고유 방문자별로 동시 뷰어를 보려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=kr)을 사용하십시오.
+> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  고유 방문자에 의한 동시 뷰어를 확인하려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=ko-KR)을 통해 추가 기능인 세그먼트 적용, 분류 및 비교 기능을 사용하십시오.
 
 
 ![](assets/video-concurrent-viewers.png)
