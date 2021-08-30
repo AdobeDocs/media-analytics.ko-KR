@@ -1,14 +1,14 @@
 ---
-title: 스트리밍 미디어용 사전 요구 사항에 대해 알아봅니다.
-description: Adobe Analytics 스트리밍 미디어 시작. 스트리밍 미디어용 Adobe Analytics을 구현하는 데 필요한 사항을 알아봅니다.
+title: 스트리밍 미디어에 대한 사전 요구 사항에 대해 알아봅니다.
+description: 스트리밍 미디어용 Adobe Analytics를 시작합니다. 스트리밍 미디어용 Adobe Analytics을 구현하기 위해 필요한 사항을 알아봅니다.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: '"Media Analytics, 시스템 요구 사항"'
+feature: “Media Analytics 및 시스템 요구 사항”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 93%
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID 서비스는 다른 솔루션별 ID(예: Analytics AID)를 대체할 수도 있습니다. ID 서비스에서는 [고객 ID 및 인증 상태](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=kr) 기능을 통해 고유한 고객 ID를 Experience Cloud에 전달할 수 있습니다. 그러나 ID 서비스는 이미 구독한 솔루션에서만 작동한다는 점을 잊지 마십시오. 다른 제품에 액세스할 수 있도록 등록하지 않았다면 ID 서비스에서는 액세스 권한을 제공하지 않습니다.
+   ID 서비스는 다른 솔루션별 ID(예: Analytics AID)를 대체할 수도 있습니다. ID 서비스에서는 [고객 ID 및 인증 상태](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko-KR) 기능을 통해 고유한 고객 ID를 Experience Cloud에 전달할 수 있습니다. 단, ID 서비스는 이미 구독한 솔루션에서만 작동한다는 점을 잊지 마십시오. 다른 제품에 액세스할 수 있도록 등록하지 않았다면 ID 서비스에서는 액세스 권한을 제공하지 않습니다.
 
    나아가 ID 서비스는 현재 및 미래의 수 많은 Experience Cloud 기능, 개선 사항 및 서비스의 필수 구성 요소입니다. 현재 ID 서비스는 [Analytics](https://www.adobe.com/kr/marketing-cloud/web-analytics.html), [Audience Manager](https://www.adobe.com/kr/marketing-cloud/data-management-platform.html) 및 [Target](https://www.adobe.com/kr/marketing-cloud/testing-targeting.html)을 지원합니다.
 
@@ -44,7 +44,7 @@ ht-degree: 93%
 
    ID 서비스를 구현하지 않았다면 지금이 바로 마이그레이션 전략을 시작할 적기입니다. ID 서비스의 중요성과 역할에 대한 자세한 내용은 [Identity 서비스가 나의 레이더가 되어야 하는 이유](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)를 참조하십시오.
 
-   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) 및 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
+   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ko-KR) 및 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko-KR)를 참조하십시오.
 
 1. **Adobe Analytics 보고서를 사용할 수 있도록 설정.**
 
