@@ -1,15 +1,15 @@
 ---
 seo-title: 개요
-title: 스트리밍 미디어 컬렉션 API 개요
-description: Media Collection API와 플레이어가 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적하는 방법에 대해 알아봅니다.
+title: 스트리밍 Media Collection API 개요
+description: Media Collection API에 대하여 알아보고 플레이어가 RESTful HTTP 호출을 사용하여 오디오 및 비디오를 추적하는 방법에 대해 알아봅니다.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
