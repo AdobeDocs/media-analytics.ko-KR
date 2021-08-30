@@ -1,14 +1,14 @@
 ---
-title: 이정표에서 Media Analytics로 마이그레이션하는 방법을 알아봅니다.
-description: 이정표 변수를 Media Analytics 지표 및 이정표 모듈 메서드로 Media Analytics 구문으로 변경하는 방법을 알아봅니다.
+title: 이정표에서 Media Analytics로 마이그레이션하는 방법에 대해 알아봅니다.
+description: 이정표 변수를 Media Analytics 지표로, 이정표 모듈 메서드를 Media Analytics 구문으로 변환하는 방법에 대해 알아봅니다.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
