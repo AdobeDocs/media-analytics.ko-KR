@@ -1,14 +1,14 @@
 ---
 title: 미디어 개요
-description: 미디어 개요 대시보드를 사용하여 집계 측정을 표시할 수 있습니다. 미디어 성능을 빠르게 모니터링하는 방법을 알아봅니다.
+description: 미디어 개요 대시보드를 사용하여 용량 측정을 표시합니다. 미디어 성능을 빠르게 모니터링하는 방법에 대해 알아봅니다.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: '"Media Analytics, Reports & Analytics 기본 사항"'
+feature: “Media Analytics 및 Reports & Analytics 기본 사항”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
