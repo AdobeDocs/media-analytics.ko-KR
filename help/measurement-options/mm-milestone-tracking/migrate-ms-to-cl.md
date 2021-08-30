@@ -1,14 +1,14 @@
 ---
-title: 이정표에서 사용자 지정 링크로의 마이그레이션에 대해 알아보기
-description: 이정표 변수를 사용자 지정 링크 및 이정표 모듈 메서드로 사용자 지정 링크 구문으로 변경하는 방법을 알아봅니다.
+title: 이정표에서 사용자 지정 링크로의 마이그레이션에 대해 알아봅니다.
+description: 이정표 변수를 사용자 지정 링크로, 이정표 모듈 메서드를 사용자 지정 링크 구문으로 변환하는 방법에 대해 알아봅니다.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '598'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
