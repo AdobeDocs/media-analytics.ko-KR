@@ -5,10 +5,10 @@ uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ca709046e477bd471e2f55eb6dcf45e5c3c2be17
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 80%
+source-wordcount: '130'
+ht-degree: 46%
 
 ---
 
@@ -62,8 +62,8 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime` (필수입니다)
-   * `playhead` - 초 단위이어야 하지만, float일 수 있습니다.
-   * `ts` - 타임스탬프이며, 밀리초 단위여야 합니다.
+   * `playhead` - 컨텐츠가 라이브 상태인 경우 플레이헤드가 오늘 두 번째, 0이어야 합니다.  &lt;> 컨텐츠가 기록되면 플레이헤드가 컨텐츠의 현재 초, 0 &lt;= playhead &lt; 컨텐츠 길이여야 합니다. 값은 부동 소수점 숫자일 수 있습니다.
+   * `ts` - 타임스탬프; 밀리초 단위여야 합니다. UTC(Coordinated Universal Time).
 * `eventType` (필수입니다)
 
    **유효한 값:** `sessionStart`
