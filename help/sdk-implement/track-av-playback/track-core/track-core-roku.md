@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 97%
+source-wordcount: '729'
+ht-degree: 90%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 97%
 
    * **표준 메타데이터**
 
-      [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
@@ -141,6 +141,14 @@ ht-degree: 97%
 
    ```
    ADBMobile().mediaTrackPlay()
+   ```
+
+1. **플레이헤드 값 업데이트**
+
+   미디어 플레이헤드가 변경되면 `mediaUpdatePlayhead` API를 호출하여 SDK에 알립니다. VOD(Video-on-demand)의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. 라이브 스트리밍의 경우 값은 해당 날의 자정 UTC 이후 시간(초)으로 지정됩니다.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **재생 완료 추적**
