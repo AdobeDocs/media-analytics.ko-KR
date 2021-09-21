@@ -5,9 +5,9 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: d8b10249c542d2875cba4916e4a2c7942c5589c4
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1329'
 ht-degree: 93%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 93%
 
 | 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | 정수 | 임의 | 스트림의 비트율 |
+| `media.qoe.bitrate` | N | 정수 | 임의 | 평균 비트율(bps)입니다. 평균 비트율은 재생 기간과 관련하여 재생 세션 중에 발생한 모든 비트율 값의 가중 평균으로. |
 | `media.qoe.droppedFrames` | N | 정수 | 임의 | 스트림의 드롭된 프레임 수 |
 | `media.qoe.framesPerSecond` | N | 정수 | 임의 | 초당 프레임 수 |
 | `media.qoe.timeToStart` | N | 정수 | 임의 | 사용자가 재생을 누르는 때와 컨텐츠가 로드되어 재생을 시작할 때 사이에 경과된 시간(밀리초)입니다. |
