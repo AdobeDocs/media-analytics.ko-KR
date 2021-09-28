@@ -4,16 +4,16 @@ description: '"미디어 재생 시간 패널을 사용하여 재생 체류 시�
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # 미디어 재생 시간 {#media-playback-time-spent}
 
-재생 시간 분석을 사용하면 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 미디어 재생 시간 을 사용하면 컨텐츠 품질, 뷰어 참여 및 컨텐츠가 시청 시간 초과에 미치는 영향에 대한 중요한 통찰력을 얻을 수 있습니다. 미디어 재생 시간 기능은 볼륨 또는 규모에 대한 문제 해결 또는 계획에 도움이 됩니다.
+재생 시간 분석을 사용하면 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 미디어 재생 시간 을 사용하면 컨텐츠 품질, 뷰어 참여 및 컨텐츠가 시간 경과에 따른 시청자에게 미치는 영향에 대한 중요한 통찰력을 얻을 수 있습니다. 미디어 재생 시간 기능은 볼륨 또는 규모에 대한 문제 해결 또는 계획에 도움이 됩니다.
 
 ## Analysis Workspace의 미디어 재생 시간 패널
 
