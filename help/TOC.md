@@ -6,9 +6,9 @@ breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
 source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -218,7 +218,7 @@ ht-degree: 99%
       + [미디어 재생 소요 시간 패널](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [미디어 작업 영역 템플릿](media-reports/media-workspace-templates.md)
    + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
-   + [API를 통해 미디어 재생 체류 시간 데이터 가져오기](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
+   + [API를 통해 미디어 재생 소요 시간 데이터 가져오기](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [다운로드한 콘텐츠 추적](media-collection-api/track-downloaded-content.md)
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
