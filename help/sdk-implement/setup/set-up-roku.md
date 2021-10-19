@@ -1,14 +1,14 @@
 ---
-title: Roku용 Media SDK를 설정하는 방법
-description: 다음 단계에 따라 Roku에서 Media SDK 애플리케이션을 설정합니다.
+title: Roku용 미디어 SDK를 설정하는 방법
+description: Roku에서 미디어 SDK 애플리케이션을 설정하려면 다음 단계를 따르십시오.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 79%
 
 Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다.
 
-자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)에서 알아보십시오.
+자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ko-KR)에서 알아보십시오.
 
 Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작성된 Roku 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 사용 및 수집하고, 비디오 하트비트를 통해 비디오 참여를 측정할 수 있습니다.
 
@@ -143,32 +143,38 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
    <br/><br/>
 
-   **추가 공용 API**
+   **추가 공개 API**
 
    **DebugLogging**
-| 메서드   | 설명 | | — | — | |  `setDebugLogging` | SDK에 대한 디버그 로깅을 활성화 또는 비활성화하는 데 사용됩니다.  <br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` | 디버그 로깅이 활성화되면 true를 반환합니다.   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+|  메서드   | 설명 |
+| --- | --- |
+| `setDebugLogging` | SDK에 대한 디버그 로깅을 활성화하거나 비활성화하는 데 사용됩니다.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+| `getDebugLogging` | 디버그 로깅이 활성화된 경우 true를 반환합니다.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    <br/><br/>
 
    **PrivacyStatus**
-| 상수   | 설명 | | — | — | |  `PRIVACY_STATUS_OPT_IN` | setPrivacyStatus를 옵트인으로 호출하는 동안 전달할 상수. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` | 옵트아웃하도록 setPrivacyStatus를 호출하는 동안 전달할 상수.  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+|  상수   | 설명 |
+| --- | --- |
+| `PRIVACY_STATUS_OPT_IN` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
+| `PRIVACY_STATUS_OPT_OUT` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
    <br/>
 
    |  메서드   | 설명 |
    | --- | --- |
-   | `setPrivacyStatus` | SDK에 대한 개인 정보 상태를 설정합니다. <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-   | `getPrivacyStatus` | SDK에 설정된 현재 개인 정보 상태를 가져옵니다. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+   | `setPrivacyStatus` | SDK의 개인 정보 상태를 설정합니다.  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | SDK에 설정된 현재 개인 정보 상태를 가져옵니다.  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    <br/><br/>
    >[!IMPORTANT]
    >
-   >250밀리초마다 기본 이벤트 루프에서 `processMessages` 및 `processMediaMessages` 함수를 호출하여 SDK가 Ping을 제대로 전송하는지 확인합니다.
+   >SDK가 ping을 제대로 전송하도록 250ms마다 `processMessages` 및 `processMediaMessages` 함수를 호출해야 합니다.
 
    |  메서드   | 설명 |
    | --- | --- |
-   | `processMessages` | 처리할 SDK에 Analytics 이벤트를 전달할 책임이 있습니다.  <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | 처리할 SDK에 미디어 이벤트를 전달할 책임이 있습니다. <br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | 처리할 SDK에 Analytics 이벤트를 전달하는 일을 담당합니다.  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 처리할 SDK에 미디어 이벤트를 전달하는 일을 담당합니다. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
