@@ -1,20 +1,20 @@
 ---
-title: iOS에서 Media SDK를 설정하는 방법
-description: iOS에서 Media SDK 애플리케이션을 설정하려면 다음 단계를 따르십시오.
+title: iOS에서 미디어 SDK를 설정하는 방법
+description: iOS에서 미디어 SDK 애플리케이션을 설정하려면 다음 단계를 따르십시오.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # iOS 설정{#set-up-ios}
 
-iOS 장치용 스트리밍 Media Analytics를 설정하는 방법을 알아봅니다.
+iOS 디바이스용 스트리밍 미디어 분석을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
    >[!IMPORTANT]
    >
-   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
+   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=ko-KR)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
