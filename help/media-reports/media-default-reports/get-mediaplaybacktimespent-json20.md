@@ -1,24 +1,24 @@
 ---
-title: Analytics 2.0 API를 사용하여 미디어 재생 시간 JSON 보고서 데이터 가져오기
-description: Analytics 2.0 API를 사용하여 미디어 재생 체류 시간 보고서 데이터를 가져오는 방법을 알아봅니다. 요청 및 응답 샘플을 확인하십시오.
+title: Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 JSON 보고서 데이터 가져오기
+description: Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 보고서 데이터를 가져오는 방법에 대해 알아봅니다. 요청 및 응답 샘플을 확인하십시오.
 uuid: null
 exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# Analytics 2.0 API를 사용하여 미디어 재생 시간 JSON 보고서 데이터 가져오기{#get-media-playback-time-spent-json-report-data}
+# Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 JSON 보고서 데이터 가져오기{#get-media-playback-time-spent-json-report-data}
 
-[_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)를 사용하여 미디어 재생 체류 시간 보고서 데이터를 가져올 수 있습니다.
+[_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)를 사용하여 미디어 재생 소요 시간 보고서 데이터를 가져올 수 있습니다.
 
 1. UI를 기반으로 구축된 세그먼트를 사용하여 데이터를 필터링합니다. 특정 콘텐츠 ID별로 필터링하려면 새 세그먼트를 만듭니다.
-1. 초 또는 분 단위로 출력을 원하는지 여부에 따라 요청 본문에서 `elements` -> `id`을 `metrics/playback_time_spent_seconds` 또는 `metrics/playback_time_spent_minutes`로 설정합니다.
+1. 출력을 초 단위로 원하는지 분 단위로 원하는지에 따라 요청 본문의 `elements` -> `id`를 `metrics/playback_time_spent_seconds` 또는 `metrics/playback_time_spent_minutes`로 설정하십시오.
 1. 충분한 양의 데이터를 요청합니다.
 
    * 보고서에서 지정한 데이터 범위는 모든 동시 뷰어 데이터를 _비디오 세션이 종료된 시점에 수집합니다._
