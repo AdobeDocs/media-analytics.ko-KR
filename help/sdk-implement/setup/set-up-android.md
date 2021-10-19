@@ -1,20 +1,20 @@
 ---
-title: Android에서 Media SDK를 설정하는 방법
-description: 다음 단계에 따라 Android에서 Media SDK 애플리케이션을 설정합니다.
+title: Android에서 미디어 SDK를 설정하는 방법
+description: Android에서 미디어 SDK 애플리케이션을 설정하려면 다음 단계를 따르십시오.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Android 설정{#set-up-android}
 
-Android 장치용 스트리밍 Media Analytics를 설정하는 방법을 알아봅니다.
+Android 디바이스용 스트리밍 미디어 분석을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
