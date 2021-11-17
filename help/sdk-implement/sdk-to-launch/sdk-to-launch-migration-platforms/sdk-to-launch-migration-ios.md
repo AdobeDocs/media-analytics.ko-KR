@@ -4,10 +4,10 @@ description: Media SDK에서 iOS용 Launch로 마이그레이션하는 방법을
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 93%
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 93%
 
 ### 독립형 Media SDK
 
-독립형 Media SDK에서는 앱에서 추적 구성을 지정하고 추적기를 만들 때 이 구성을 SDK에 전달합니다.
+독립형 Media SDK에서는 앱에서 추적 구성을 지정하고 추적기를 만들 때 SDK에 전달합니다.
 
 ```objective-c
-ADBMediaHeartbeatConfig *config = 
+ADBMediaHeartbeatConfig *config =
   [[ADBMediaHeartbeatConfig alloc] init];
 
 config.trackingServer = @"namespace.hb.omtrdc.net";
@@ -31,8 +31,8 @@ config.playerName = @"native-player";
 config.ssl = YES;
 config.debugLogging = YES;
 
-ADBMediaHeartbeat* tracker = 
-  [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+ADBMediaHeartbeat* tracker =
+  [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config];
 ```
 
 ### Launch 확장
@@ -83,7 +83,7 @@ config.ssl = YES;
 config.debugLogging = YES;
 ADBMediaHeartbeatDelegate* delegate = [[PlayerDelegate alloc] init];
 
-ADBMediaHeartbeat* tracker = 
+ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
@@ -144,11 +144,11 @@ Media 확장이 등록되면 다음 API를 사용하여 추적기를 만들 수 
 * 표준 미디어 메타데이터:
 
    ```objective-c
-   ADBMediaObject *mediaObject = 
-     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name" 
-                        mediaId:@"media-id" 
-                        length:60 
-                        streamType:ADBMediaHeartbeatStreamTypeVod 
+   ADBMediaObject *mediaObject =
+     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
+                        mediaId:@"media-id"
+                        length:60
+                        streamType:ADBMediaHeartbeatStreamTypeVod
                         mediaType:ADBMediaTypeVideo];
    
    // Standard metadata keys provided by adobe.
@@ -168,28 +168,28 @@ Media 확장이 등록되면 다음 API를 사용하여 추적기를 만들 수 
 * 표준 광고 메타데이터:
 
    ```objective-c
-   ADBMediaObject* adObject = 
-     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"] 
+   ADBMediaObject* adObject =
+     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
                         adId:[adData objectForKey:@"id"]
                         position:[[adData objectForKey:@"position"] doubleValue]
                         length:[[adData objectForKey:@"length"] doubleValue]];
    
    // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata = 
+   NSMutableDictionary *standardMetadata =
      [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample Advertiser" 
+   [standardMetadata setObject:@"Sample Advertiser"
                      forKey:ADBAdMetadataKeyADVERTISER];
-   [standardMetadata setObject:@"Sample Campaign" 
+   [standardMetadata setObject:@"Sample Campaign"
                      forKey:ADBAdMetadataKeyCAMPAIGN_ID];
-   [adObject setValue:standardMetadata 
+   [adObject setValue:standardMetadata
                      forKey:ADBMediaObjectKeyStandardAdMetadata];
    
    //Attaching custom metadata
    NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
    [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
    
-   [tracker trackEvent:ADBMediaHeartbeatEventAdStart 
-            mediaObject:adObject 
+   [tracker trackEvent:ADBMediaHeartbeatEventAdStart
+            mediaObject:adObject
             data:adDictionary];
    ```
 
@@ -198,14 +198,14 @@ Media 확장이 등록되면 다음 API를 사용하여 추적기를 만들 수 
 * 표준 미디어 메타데이터:
 
    ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
+   NSDictionary *mediaObject =
+     [ACPMedia createMediaObjectWithName:@"media-name"
+               mediaId:@"media-id"
+               length:60
+               streamType:ACPMediaStreamTypeVod
                mediaType:ACPMediaTypeVideo];
    
-   NSMutableDictionary *mediaMetadata = 
+   NSMutableDictionary *mediaMetadata =
      [[NSMutableDictionary alloc] init];
    
    // Standard metadata keys provided by adobe.
@@ -221,13 +221,13 @@ Media 확장이 등록되면 다음 API를 사용하여 추적기를 만들 수 
 * 표준 광고 메타데이터:
 
    ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
+   NSDictionary* adObject =
+     [ACPMedia createAdObjectWithName:@"ad-name"
+               adId:@"ad-id"
+               position:1
                length:15];
    
-   NSMutableDictionary* adMetadata = 
+   NSMutableDictionary* adMetadata =
      [[NSMutableDictionary alloc] init];
    
    // Standard metadata keys provided by adobe.
