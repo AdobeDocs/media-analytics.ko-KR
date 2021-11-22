@@ -1,13 +1,13 @@
 ---
-title: '"독립형 Media SDK에서 Launch로 마이그레이션 - iOS"'
-description: Media SDK에서 iOS용 Launch로 마이그레이션하는 방법을 알아봅니다.
+title: “독립형 Media SDK에서 Adobe Launch로 마이그레이션 - iOS”
+description: Media SDK에서 iOS용 Launch로 마이그레이션하는 방법에 대해 알아봅니다.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 ### 독립형 Media SDK
 
-독립형 Media SDK에서는 앱에서 추적 구성을 지정하고 추적기를 만들 때 SDK에 전달합니다.
+독립형 Media SDK에서는 앱에서 추적 구성을 지정하고 추적기를 만들 때 이를 SDK에 전달합니다.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
