@@ -4,10 +4,10 @@ description: “미디어 재생 소요 시간 패널을 사용하여 재생 소
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 Analysis Workspace에서 재생 소요 시간은 특정 시점에서 미디어 스트림을 시청하는 데 소요된 시간이며 일시 중지, 버퍼 및 시작 시간을 포함합니다. 미디어 재생 소요 시간 기능을 사용하여 재생 기간을 5분, 15분, 30분 또는 1시간 등 다양한 시간 간격으로 분할할 수 있습니다.
 
 
-미디어 재생 소요 시간은 최대 동시 시청과 분류 및 비교 기능에 대한 세부 정보와 함께 시간 경과에 따른 재생을 분석하는 데 도움이 됩니다. 미디어 재생 소요 시간 패널에 액세스하려면 Media Analytics 구성 요소가 활성화된 보고서 세트로 이동하십시오. 그런 다음 맨 왼쪽에 있는 패널 아이콘을 클릭하고 패널을 Analysis Workspace 프로젝트로 드래그합니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html?lang=ko-KR)
+미디어 재생 소요 시간은 최대 동시 시청과 분류 및 비교 기능에 대한 세부 정보와 함께 시간 경과에 따른 재생을 분석하는 데 도움이 됩니다. 미디어 재생 소요 시간 패널에 액세스하려면 Media Analytics 구성 요소가 활성화된 보고서 세트로 이동하십시오. 그런 다음 맨 왼쪽에 있는 패널 아이콘을 클릭하고 패널을 Analysis Workspace 프로젝트로 드래그합니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
