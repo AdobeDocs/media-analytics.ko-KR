@@ -6,7 +6,7 @@ breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
 source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
 ht-degree: 100%
 
@@ -191,7 +191,7 @@ ht-degree: 100%
       + [타임라인 1 - 콘텐츠 끝까지 보기](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-+ 요리책 {#media-analytics-cookbook}
++ Cookbook {#media-analytics-cookbook}
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
