@@ -4,7 +4,7 @@ description: “미디어 재생 소요 시간 패널을 사용하여 재생 소
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
 ht-degree: 100%
 
