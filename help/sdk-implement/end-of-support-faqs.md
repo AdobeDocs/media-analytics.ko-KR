@@ -4,16 +4,20 @@ description: 이 항목에는 Media Analytics SDK에 대한 지원 종료 FAQ가
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 78%
+source-wordcount: '723'
+ht-degree: 80%
 
 ---
 
 # Media Analytics SDK 지원 종료 FAQ
 
-2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다. 2021년 8월 31일 이후 Adobe는 수정 사항, OS 관련 업데이트 또는 Media Analytics SDK에 대한 지원을 제공하지 않습니다.  이러한 새 Experience Platform SDK로 마이그레이션하는 동안 스트리밍 미디어용 Adobe Analytics을 활성화하려면 [Media Analytics 확장 프로그램](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)을 구현해야 한다는 점을 유의하십시오.
+2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다. 2021년 8월 31일 이후 Adobe는 수정 사항, OS 관련 업데이트 또는 Media Analytics SDK에 대한 지원을 제공하지 않습니다.  이러한 새로운 Experience Platform SDK로 마이그레이션하는 동안 [Media Analytics 확장](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) 스트리밍 미디어용 Adobe Analytics을 활성화하려면 구현해야 합니다.
+
+>[!NOTE]
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)를 참조하십시오.
+
 
 ## 알아야 할 상위 5가지 항목
 

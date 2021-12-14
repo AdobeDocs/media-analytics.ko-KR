@@ -1,19 +1,22 @@
 ---
-seo-title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션
+seo-title: Migrating from the standalone Media SDK to Adobe Launch
 title: 독립형 Media SDK에서 Launch로 마이그레이션
-seo-description: Media SDK에서 Launch로 마이그레이션하는 데 도움이 되는 지침 및 코드 샘플입니다.
+seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Media SDK에서 Launch로 마이그레이션하는 방법을 알아봅니다.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 84%
+source-wordcount: '207'
+ht-degree: 86%
 
 ---
 
 # 독립형 Media SDK에서 Adobe Launch로 마이그레이션
+
+>[!NOTE]
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)를 참조하십시오.
 
 이 설명서는 주로 독립형 Media SDK와 Media Analytics Launch 확장 프로그램의 Media Analytics 구현 차이점을 중점으로 다룹니다.
 

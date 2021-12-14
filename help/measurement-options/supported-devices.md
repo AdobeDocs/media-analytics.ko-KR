@@ -4,10 +4,10 @@ description: “iOS, Android 및 OTT 디바이스 및 JavaScript 브라우저와
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Media SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데�
 
 아래 표는 현재 지원되는 디바이스 및 플랫폼 목록입니다. 최신 버전의 SDK를 다운로드하려면 [SDK 다운로드를 참조하십시오](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=ko-KR). 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
 
-| 스트리밍 플랫폼 및 디바이스 |  | AEP 모바일 SDK를 사용하는 Media Launch 확장 | Media SDK | Media Collection API |
+| 스트리밍 플랫폼 및 디바이스 |  | AEP Mobile SDK를 사용한 데이터 수집 | Media SDK | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | 웹/모바일 웹 |  |  |  |  |
 |  | JavaScript 브라우저 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
