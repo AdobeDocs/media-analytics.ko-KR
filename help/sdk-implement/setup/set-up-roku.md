@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: ht
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
+workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -141,32 +141,27 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **추가 공개 API**
 
-   **DebugLogging**
-|  메서드   | 설명 |
-| --- | --- |
-| `setDebugLogging` | SDK에 대한 디버그 로깅을 활성화하거나 비활성화하는 데 사용됩니다.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-| `getDebugLogging` | 디버그 로깅이 활성화된 경우 true를 반환합니다.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   **디버그 로깅**
 
-   <br/><br/>
+   |  메서드   | 설명 |
+   | --- | --- |
+   | `setDebugLogging` | SDK에 대한 디버그 로깅을 활성화하거나 비활성화하는 데 사용됩니다.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | 디버그 로깅이 활성화된 경우 true를 반환합니다.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-|  상수   | 설명 |
-| --- | --- |
-| `PRIVACY_STATUS_OPT_IN` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
-| `PRIVACY_STATUS_OPT_OUT` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  상수   | 설명 |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | 옵트인하도록 setPrivacyStatus를 호출하는 동안 전달할 상수. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  메서드   | 설명 |
    | --- | --- |
    | `setPrivacyStatus` | SDK의 개인 정보 상태를 설정합니다.  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | SDK에 설정된 현재 개인 정보 상태를 가져옵니다.  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
    >SDK가 ping을 제대로 전송하도록 250ms마다 `processMessages` 및 `processMediaMessages` 함수를 호출해야 합니다.
