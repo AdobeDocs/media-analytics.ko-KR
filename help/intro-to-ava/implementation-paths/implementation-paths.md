@@ -5,9 +5,9 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f88e8b02bc9723793822fa7647a2ceab9ada45e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '640'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -15,28 +15,28 @@ ht-degree: 68%
 
 이 구현 경로의 경우 스트리밍 미디어 Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다.
 
-## Adobe Medium Analytics 확장을 사용한 Adobe Experience Platform 데이터 수집
+## Adobe Media Analytics 확장을 통한 Adobe Experience Platform 데이터 수집
 
 >[!NOTE]
->Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)를 참조하십시오.
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko-KR)를 참조하십시오.
 
 
-Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능입니다. 태그는 관련 고객 환경을 향상하는 데 필요한 모든 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 고객에게 제공합니다. 태그에 포함된 부가 기능으로 Adobe Experience Cloud 고객에게 태그가 제공됩니다.
+Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능입니다. 태그를 통해 관련 고객 경험을 강화하는 데 필요한 모든 분석, 마케팅 및 광고 태그를 고 관리하는 간단한 방법을 고객에게 제공합니다. 태그는 포함된 부가 가치 기능으로 포함되어 Adobe Experience Cloud 고객에게 제공됩니다.
 
 태그는 확장이라고 하는 자체 통합을 구축하고 유지할 수 있는 권한을 누구에게나 부여합니다. Adobe Experience Cloud 고객은 앱 스토어 환경에서 이러한 확장을 사용할 수 있으므로 태그를 신속하게 설치, 구성 및 배포할 수 있습니다.
 
-확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프 서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하기 위해 사용하는 앱으로 생각할 수 있습니다.자세한 내용은 *태그 개요* 의 문서 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)
+확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다. 자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko-KR)의 *태그 개요* 문서를 참조하십시오.
 
-Adobe Media Analytics(MA) 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 `MediaHeartbeat` 추적기 인스턴스를 데이터 수집 사이트 또는 프로젝트에 추가합니다.
+Adobe Media Analytics(MA) 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
-Media Analytics 확장을 사용하는 Adobe 데이터 수집에는 다음 항목이 필요합니다.
+Media Analytics 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
-* 웹 페이지에 데이터 수집 또는 DTM 포함 코드를 배포해야 합니다.
+* 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
 * [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko-KR)
 * [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko-KR)
 
 
-## 고객측
+## 클라이언트측
 
 Media Analytics 전용 통합입니다. 비디오 하트비트 SDK 및/또는 Media Collection API 통합을 선택할 수 있습니다. 이 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 비디오 플레이어에서 사용할 수 있습니다.
 
