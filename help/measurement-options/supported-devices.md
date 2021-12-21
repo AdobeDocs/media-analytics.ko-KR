@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Analytics for Streaming Media는 다음을 비롯한 모든 주요 디바�
 
 * iOS 및 Android 스마트폰 및 태블릿
 * ROKU, AppleTV, FireTV 및 Android TV용 OTT 디바이스
-* 데스크탑 및 랩탑용 JavaScript 브라우저
+* 데스크탑 및 노트북용 JavaScript 브라우저
 
 Media SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데이트되므로, SDK를 사용하여 Brightcove 및 Ooyala와 같은 가장 큰 미디어 플레이어와 통합할 수 있습니다.
 
@@ -29,7 +29,7 @@ Media SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데�
 
 아래 표는 현재 지원되는 디바이스 및 플랫폼 목록입니다. 최신 버전의 SDK를 다운로드하려면 [SDK 다운로드를 참조하십시오](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=ko-KR). 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
 
-| 스트리밍 플랫폼 및 디바이스 |  | AEP Mobile SDK를 사용한 데이터 수집 | Media SDK | Media Collection API |
+| 스트리밍 플랫폼 및 디바이스 |  | AEP Mobile SDK를 사용하는 데이터 수집 | Media SDK | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | 웹/모바일 웹 |  |  |  |  |
 |  | JavaScript 브라우저 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
@@ -43,7 +43,7 @@ Media SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데�
 |  | Fire TV(Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
-|  | 게임 콘솔(예: Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | 게임 콘솔 (예: Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 셋톱 박스(예: Exfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 스마트 TV(예: 삼성, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(웹 기반)    | ![](/help/assets/icon-blue-check.png) |
 | 기타 |  |  |  |  |
