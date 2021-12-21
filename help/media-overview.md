@@ -6,7 +6,7 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Adobe Analytics for Streaming Media를 사용하면 사이트에서의 전체 �
 Adobe Analytics에서는 &quot;하트비트&quot;를 사용하여 비디오 지표를 수집합니다. 비디오 재생 중에 하트비트가 하트비트 추적 서버로 전송되어 재생 시간이 측정됩니다. 하트비트 호출은 10초마다 전송됩니다. 하트비트는 세부적인 비디오 참여 지표와 보다 정확한 비디오 폴아웃 보고서를 생성합니다. Adobe Analytics for Streaming Media는 Media Analytics 확장, Media SDK 및 Media Collection API와 함께 Adobe Launch를 사용하여 하트비트를 측정합니다. `AppMeasurement` 및 `VisitorID` 구성 요소가 비디오 데이터를 받는 데 사용됩니다.
 
 >[!NOTE]
->Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)를 참조하십시오.
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko-KR)를 참조하십시오.
 
 
 Adobe Analytics for Streaming Media에서 하트비트를 사용하면 다음과 같은 이점이 있습니다.
