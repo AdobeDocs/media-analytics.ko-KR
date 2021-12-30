@@ -6,9 +6,9 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
    **추가 공개 API**
 
-   **디버그 로깅**
+   **DebugLogging**
 
    |  메서드   | 설명 |
    | --- | --- |
@@ -154,7 +154,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
    |  상수   | 설명 |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | 옵트인하도록 setPrivacyStatus를 호출하는 동안 전달할 상수. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_IN` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
    | `PRIVACY_STATUS_OPT_OUT` | 옵트인을 위해 setPrivacyStatus를 호출하는 동안 전달될 상수입니다. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  메서드   | 설명 |
