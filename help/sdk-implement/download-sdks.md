@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: ht
-source-wordcount: '602'
+source-git-commit: 6c42e5d51a2b23c3fe721a36100fe47b7afb14e6
+workflow-type: tm+mt
+source-wordcount: '604'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 100%
 | 3.x Media SDK  | 최신 Media SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
 | JavaScript | [JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Chromecast v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Chromecast v3.0.3용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API 참조](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
@@ -40,7 +40,7 @@ ht-degree: 100%
 | Android/FireTV | [Android용 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [iOS v2.3.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (기존 2.0 SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [JS v2.2.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x 설정](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Roku v2.2.3용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [Roku 설정](/help/sdk-implement/setup/set-up-roku.md) |
+| Roku | [Roku v2.2.6용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku 설정](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 확장 {#media-analytics-launch-extension}
@@ -59,5 +59,5 @@ ht-degree: 100%
 | iOS | [iOS용 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [시작하기 - iOS용 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript용 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [시작하기 - JS용 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [TVML용 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [시작하기 - TVML용 Media 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | Apple TV v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Apple TV용 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | Chromecast v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Chromecast용 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | Apple TV v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Apple TV용 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | Chromecast v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Chromecast용 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
