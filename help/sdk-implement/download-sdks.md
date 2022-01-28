@@ -6,7 +6,7 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 23dea585347d57a7f2958344af4f8a6861d6fa3f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
 ht-degree: 100%
 
@@ -59,5 +59,5 @@ ht-degree: 100%
 | iOS | [iOS용 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [시작하기 - iOS용 Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript용 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [시작하기 - JS용 Media 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [TVML용 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [시작하기 - TVML용 Media 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | Apple TV v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Apple TV용 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | Chromecast v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Chromecast용 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | Apple TV v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Apple TV용 Media 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | Chromecast v1.0.0용 SDK(이전 1.x SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [시작하기 - Chromecast용 Media 1.x](setup/chromecast_1.x_sdk.pdf) |
