@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
-workflow-type: ht
-source-wordcount: '828'
-ht-degree: 100%
+source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ ht-degree: 100%
       + [타임라인 1 - 콘텐츠 끝까지 보기](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-+ Cookbook {#media-analytics-cookbook}
++ 요리책 {#media-analytics-cookbook}
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
@@ -211,8 +211,9 @@ ht-degree: 100%
       + [미디어 날짜 보고서](media-reports/media-default-reports/media-reports-daypart.md)
       + [미디어 동시 뷰어 보고서](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 미디어 작업 영역 패널 {#media-workspace-panels}
-      + [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-      + [미디어 재생 소요 시간 패널](media-reports/media-workspace-panels/media-playback-time-spent.md)
+   + [미디어 평균 시간(분) 대상 패널](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [미디어 재생 소요 시간 패널](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [미디어 작업 영역 템플릿](media-reports/media-workspace-templates.md)
    + [API를 통해 동시 뷰어 데이터 가져오기](media-reports/media-default-reports/get-concurrent-json20.md)
    + [API를 통해 미디어 재생 소요 시간 데이터 가져오기](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
