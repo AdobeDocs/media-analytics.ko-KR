@@ -1,13 +1,13 @@
 ---
 title: 미디어 대상 평균 시간
-description: 미디어 대상 평균 시간 패널을 사용하여 ______하는 방법을 알아보십시오.
+description: 미디어 평균 시간(분) 대상 패널을 사용하여 특정 컨텐츠 또는 사용자 지정된 기간 동안 평균 시간(분) 대상을 분석하는 방법을 알아봅니다.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 45a566dd66b7ace05e3b63fb63df9266a9912b91
+source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 95%
+source-wordcount: '264'
+ht-degree: 85%
 
 ---
 
