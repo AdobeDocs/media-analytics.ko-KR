@@ -7,7 +7,7 @@ exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ Analysis Workspace에서 대상 평균 시간은 미디어 스트림을 보는 �
 
 Media Average Minute Audience 패널은 분류를 사용하여 지속 시간을 사용할 수 있는 경우 선택된 특정 콘텐츠별로 대상 평균 시간 분석을 제공합니다.
 
-Average Minute Audience 패널은 또한 분류를 사용하여 기간을 사용할 수 있는지 여부에 관계없이 특정 콘텐츠로 필터링할 수 있는 선택된 기간에 대한 분석을 제공합니다. 미디어 대상 평균 시간 패널에 액세스하려면 Media Analytics 구성 요소가 활성화된 보고서 세트로 이동합니다. 그런 다음 맨 왼쪽에 있는 패널 아이콘을 클릭하고 패널을 Analysis Workspace 프로젝트로 드래그합니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
+Average Minute Audience 패널은 또한 분류를 사용하여 기간을 사용할 수 있는지 여부에 관계없이 특정 콘텐츠로 필터링할 수 있는 선택된 기간에 대한 분석을 제공합니다. 미디어 대상 평균 시간 패널에 액세스하려면 Media Analytics 구성 요소가 활성화된 보고서 세트로 이동합니다. 그런 다음 맨 왼쪽에 있는 패널 아이콘을 클릭하고 패널을 Analysis Workspace 프로젝트로 드래그합니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=ko-KR)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
