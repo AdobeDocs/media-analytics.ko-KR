@@ -5,14 +5,14 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 97%
+source-wordcount: '1203'
+ht-degree: 96%
 
 ---
 
-# 타임라인 1 - 컨텐츠 끝까지 보기{#timeline-view-to-end-of-content}
+# 타임라인 1 - 콘텐츠 끝까지 보기{#timeline-view-to-end-of-content}
 
 ## VOD, 프리롤 광고, 일시 정지, 버퍼링, 컨텐츠 끝까지 보기
 
@@ -136,6 +136,8 @@ ht-degree: 97%
     }
 }
 ```
+
+**참고: AdBreakStart와 AdStart 이벤트 사이에 추가 재생 이벤트가 없어야 합니다.**
 
 ### 작업 5 - 광고 Ping {#Action-5}
 
