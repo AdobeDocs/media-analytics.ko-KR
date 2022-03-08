@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 94%
+source-wordcount: '781'
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 94%
    |  메서드 이름  |  설명  | 필수 여부 |
    | --- | --- | :---: |
    | `getQoSObject()` | 현재 QoS 정보가 포함된 `MediaObject` 인스턴스를 반환합니다. 이 메서드는 재생 세션 중에 여러 번 호출됩니다. 플레이어 구현은 항상 최근에 사용 가능한 QoS 데이터를 반환해야 합니다. | 예 |
-   | `getCurrentPlaybackTime()` | 플레이헤드의 현재 위치를 반환합니다. VOD 추적의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. LINEAR/LIVE 추적의 경우 이 값은 해당 날의 자정 UTC 이후 시간(초)으로 지정됩니다. | 예 |
+   | `getCurrentPlaybackTime()` | 플레이헤드의 현재 위치를 반환합니다. <br /> VOD 추적의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. <br /> 라이브 스트리밍의 경우, 플레이어가 컨텐츠 지속 시간에 대한 정보를 제공하지 않는 경우 해당 값은 해당 날짜의 자정 UTC 이후 시간(초)으로 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 때는 컨텐츠 지속 시간이 필요하며 미디어 항목이 시작된 후 0으로 시작하는 플레이헤드를 초 수로 업데이트해야 합니다. | 예 |
 
    >[!TIP]
    >

@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 85%
 
 ---
 
@@ -87,6 +87,14 @@ ht-degree: 96%
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **플레이헤드 값 업데이트**
+
+   업데이트 `mediaUpdatePlayhead`&#39; 플레이헤드가 변경될 때 위치 값을 여러 번 사용합니다. <br /> VOD(Video-on-demand)의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. <br /> 라이브 스트리밍의 경우, 플레이어가 컨텐츠 지속 시간에 대한 정보를 제공하지 않는 경우 해당 값은 해당 날짜의 자정 UTC 이후 시간(초)으로 지정할 수 있습니다. <br />  참고: 진행률 마커를 사용할 때는 컨텐츠 지속 시간이 필요하며 미디어 항목이 시작된 후 0으로 시작하는 플레이헤드를 초 수로 업데이트해야 합니다.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **재생 완료 추적**

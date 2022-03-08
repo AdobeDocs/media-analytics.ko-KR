@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 90%
+source-wordcount: '771'
+ht-degree: 85%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 90%
 
    * **표준 메타데이터**
 
-   [Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku에서 표준 메타데이터 구현](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
@@ -145,7 +145,8 @@ ht-degree: 90%
 
 1. **플레이헤드 값 업데이트**
 
-   미디어 플레이헤드가 변경되면 `mediaUpdatePlayhead` API를 호출하여 SDK에 알립니다. VOD(Video-on-demand)의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. 라이브 스트리밍의 경우 값은 해당 날의 자정 UTC 이후 시간(초)으로 지정됩니다.
+   미디어 플레이헤드가 변경되면 를 호출하여 SDK에 알립니다 `mediaUpdatePlayhead` API. <br /> VOD(Video-on-demand)의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. <br /> 라이브 스트리밍의 경우, 플레이어가 컨텐츠 지속 시간에 대한 정보를 제공하지 않는 경우 해당 값은 해당 날짜의 자정 UTC 이후 시간(초)으로 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 때는 컨텐츠 지속 시간이 필요하며 미디어 항목이 시작된 후 0으로 시작하는 플레이헤드를 초 수로 업데이트해야 합니다.
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

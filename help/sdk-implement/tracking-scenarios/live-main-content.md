@@ -5,14 +5,14 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 75%
+source-wordcount: '577'
+ht-degree: 71%
 
 ---
 
-# 라이브 주 컨텐츠{#live-main-content}
+# 라이브 주요 콘텐츠{#live-main-content}
 
 ## 시나리오 {#scenario}
 
@@ -63,13 +63,13 @@ Adobe Analytics 컨텐츠 시작 호출 시 표시되는 같은 값의 대부분
 
 ### 시작 시
 
-라이브 미디어의 경우 사용자가 스트림 재생을 시작할 때 해당 날의 자정 UTC 이후 시간(초 수)으로 `l:event:playhead`을(를) 설정해야 합니다. 이것은 플레이헤드를 &quot;0&quot;으로 설정한 VOD와 대조적입니다.
+라이브 미디어의 경우 사용자가 스트림 재생을 시작할 때 를 설정해야 합니다 `l:event:playhead` 해당 날짜의 자정 UTC 이후 시간(초)입니다. 이것은 플레이헤드를 &quot;0&quot;으로 설정한 VOD와 대조적입니다. 참고: 진행률 마커를 사용할 때는 컨텐츠 지속 시간이 필요하며 미디어 항목이 시작된 후 0으로 시작하는 플레이헤드를 초 수로 업데이트해야 합니다.
 
-예를 들어 라이브 스트리밍 이벤트는 자정에 시작해서 24시간 동안 실행된다고 가정합니다(`a.media.length=86400`; `l:asset:length=86400`). 그런 다음 사용자가 오후 12시에 해당 라이브 스트림 재생을 시작한다고 가정합니다. 이 시나리오에서는 `l:event:playhead`을 43200(해당 날의 자정 UTC 이후 12시간(초)로 설정해야 합니다.
+예를 들어 라이브 스트리밍 이벤트는 자정에 시작해서 24시간 동안 실행된다고 가정합니다(`a.media.length=86400`; `l:asset:length=86400`). 그런 다음 사용자가 오후 12시에 해당 라이브 스트림 재생을 시작한다고 가정합니다. 이 시나리오에서는 `l:event:playhead` 43200(해당 날의 자정 UTC 이후 12시간(초)).
 
 ### 일시 중지 시
 
-사용자가 재생을 일시 중지할 때 재생 시작 시 적용된 것과 동일한 &quot;라이브 플레이헤드&quot; 논리를 적용해야 합니다. 사용자가 라이브 스트림을 재생으로 돌아가면 사용자가 라이브 스트림을 일시 중지한 지점까지 자정 UTC 이후 새 시간(초)에 따라 `l:event:playhead` 값을 설정해야 합니다. _이 아닌_&#x200B;은(는)
+사용자가 재생을 일시 중지할 때 재생 시작 시 적용된 것과 동일한 &quot;라이브 플레이헤드&quot; 논리를 적용해야 합니다. 사용자가 라이브 스트림을 재생으로 돌아가면 다음을 설정해야 합니다 `l:event:playhead` 값은 자정 UTC 이후 새 시간(초)에 따라 _not_ 사용자가 라이브 스트림을 일시 중지한 지점까지.
 
 ## 샘플 코드 {#sample-code}
 
