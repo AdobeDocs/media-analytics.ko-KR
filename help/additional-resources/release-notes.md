@@ -2,17 +2,17 @@
 title: Adobe Analytics for Streaming Media 릴리스 노트
 description: Adobe Analytics 릴리스 노트를 표시합니다.
 feature: Release Notes
-source-git-commit: c9a1007e0d2ae37014faeffebe89a14175c8506f
+exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
+source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 67%
+source-wordcount: '545'
+ht-degree: 68%
 
 ---
 
-
 # Adobe Analytics for Streaming Media 릴리스 노트(2022년 3월)
 
-**마지막 업데이트**: 2022년 3월 3일
+**마지막 업데이트**: 2022년 3월 23일
 
 ## *현재 릴리스 노트*
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 | 기능 | 설명 | 목표 날짜 |
 | ----------- | ---------- | ------- |
-| **분당 평균 시청 시간** | Media Analytics 고객은 대상 평균 시간(분) 패널을 사용하여 평균 컨텐츠 소비를 더 잘 이해할 수 있습니다. <br>대상 평균 시간을 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 시간(분) 대상을 선형 TV 평균 시간(분) 지표에 비교하거나 추가할 수 있습니다. 이 패널에서는 기간 분류를 업데이트한 시점과 사용자 지정 기간의 평균 대상을 측정할 수 있는 유연성을 제공합니다.  [자세히 알아보기](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **제한된 릴리스** <br>2022년 2월 16일 |
+| **분당 평균 시청 시간** | Media Analytics 고객은 대상 평균 시간(분) 패널을 사용하여 평균 컨텐츠 소비를 더 잘 이해할 수 있습니다. <br>대상 평균 시간을 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 시간(분) 대상을 선형 TV 평균 시간(분) 지표에 비교하거나 추가할 수 있습니다. 이 패널에서는 기간 분류를 업데이트한 시점과 사용자 지정 기간의 평균 대상을 측정할 수 있는 유연성을 제공합니다.  [자세히 알아보기](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022년 16월 3일 |
 
 ## 스트리밍 미디어용 Analytics 도움말 리소스
 
