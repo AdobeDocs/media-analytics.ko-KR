@@ -1,14 +1,14 @@
 ---
 title: Chromecast에서 코어 재생을 추적하는 방법 알아보기
-description: Chromecast에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
+description: Chromecast에서 미디어 SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 85%
 
 1. **비디오 메타데이터 첨부**
 
-   원할 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 개체를 비디오 추적 세션에 첨부합니다.
+   필요한 경우 컨텍스트 데이터 변수를 통해 표준 및/또는 사용자 지정 비디오 메타데이터 개체를 비디오 추적 세션에 첨부합니다.
 
    * **표준 비디오 메타데이터**
 
@@ -91,7 +91,7 @@ ht-degree: 85%
 
 1. **플레이헤드 값 업데이트**
 
-   업데이트 `mediaUpdatePlayhead`&#39; 플레이헤드가 변경될 때 위치 값을 여러 번 사용합니다. <br /> VOD(Video-on-demand)의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. <br /> 라이브 스트리밍의 경우, 플레이어가 컨텐츠 지속 시간에 대한 정보를 제공하지 않는 경우 해당 값은 해당 날짜의 자정 UTC 이후 시간(초)으로 지정할 수 있습니다. <br />  참고: 진행률 마커를 사용할 때는 컨텐츠 지속 시간이 필요하며 미디어 항목이 시작된 후 0으로 시작하는 플레이헤드를 초 수로 업데이트해야 합니다.
+   플레이헤드가 변경되면 `mediaUpdatePlayhead`’ 위치 값을 여러 번 업데이트하십시오. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -99,7 +99,7 @@ ht-degree: 85%
 
 1. **재생 완료 추적**
 
-   비디오 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 비디오 재생 완료에 대한 이벤트를 식별하고 [trackComplete](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)를 호출합니다.
+   비디오 플레이어에서 사용자가 콘텐츠의 끝까지 시청한 비디오 재생 완료에 대한 이벤트를 식별하고 [trackComplete](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)를 호출합니다.
 
    ```
    ADBMobile.media.trackComplete();
@@ -115,7 +115,7 @@ ht-degree: 85%
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd`는 비디오 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 비디오 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
+   >`trackSessionEnd`는 비디오 추적 세션의 끝을 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 콘텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 비디오 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
 
 1. **가능한 모든 일시 중지 시나리오 추적**
 
@@ -145,4 +145,4 @@ ht-degree: 85%
    >이 이벤트 소스는 4단계에서 사용한 이벤트 소스와 같을 수 있습니다. 비디오 재생이 다시 시작될 때 각 `trackPause()` API 호출이 다음 `trackPlay()` API 호출과 연결되는지 확인하십시오.
 
 * 추적 시나리오: [광고가 없는 VOD 재생](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-* 전체 추적 예를 제공하기 위해 Chromecast SDK에 포함된 샘플 플레이어.
+* 전체 추적 예를 제공하기 위해 Chromecast SDK에 포함된 샘플 플레이어
