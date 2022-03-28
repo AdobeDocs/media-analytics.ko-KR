@@ -1,14 +1,14 @@
 ---
-title: Media SDK 구현 설명
-description: '"모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위한 Media SDK를 설정하는 방법을 알아봅니다."'
+title: 미디어 SDK 구현 설명
+description: “모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위해 미디어 SDK를 설정하는 방법을 알아보십시오.”
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -48,19 +48,19 @@ ht-degree: 89%
    |  변수 이름  | 설명  | 필수 여부 |  기본값  |
    |---|---|:---:|---|
    | `trackingServer` | 미디어 분석을 위한 추적 서버입니다. 분석 추적 서버와 다릅니다. | 예 | 빈 문자열 |
-   | `channel` | 채널 이름 | 아니오 | 빈 문자열 |
-   | `ovp` | 컨텐츠가 배포되는 온라인 미디어 플랫폼의 이름입니다. | 아니오 | 빈 문자열 |
-   | `appVersion` | 미디어 플레이어 앱/SDK의 버전입니다. | 아니오 | 빈 문자열 |
-   | `playerName` | 사용 중인 미디어 플레이어의 이름입니다. 예: &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | 아니오 | 빈 문자열 |
-   | `ssl` | 호출이 HTTPS를 통해 수행되야 하는지 여부를 나타냅니다. | 아니오 | false |
-   | `debugLogging` | 디버그 로깅이 사용되는지 여부를 나타냅니다. | 아니오 | false |
+   | `channel` | 채널 이름 | 아니요 | 빈 문자열 |
+   | `ovp` | 콘텐츠가 배포되는 온라인 미디어 플랫폼의 이름입니다. | 아니요 | 빈 문자열 |
+   | `appVersion` | 미디어 플레이어 앱/SDK의 버전입니다. | 아니요 | 빈 문자열 |
+   | `playerName` | 사용 중인 미디어 플레이어의 이름입니다. 예: &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | 아니요 | 빈 문자열 |
+   | `ssl` | 호출이 HTTPS를 통해 수행되야 하는지 여부를 나타냅니다. | 아니요 | false |
+   | `debugLogging` | 디버그 로깅이 사용되는지 여부를 나타냅니다. | 아니요 | false |
 
 1. `MediaHeartbeatDelegate`를 구현합니다.
 
    |  메서드 이름  |  설명  | 필수 여부 |
    | --- | --- | :---: |
    | `getQoSObject()` | 현재 QoS 정보가 포함된 `MediaObject` 인스턴스를 반환합니다. 이 메서드는 재생 세션 중에 여러 번 호출됩니다. 플레이어 구현은 항상 최근에 사용 가능한 QoS 데이터를 반환해야 합니다. | 예 |
-   | `getCurrentPlaybackTime()` | 플레이헤드의 현재 위치를 반환합니다. <br /> VOD 추적의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. <br /> 라이브 스트리밍의 경우, 플레이어가 컨텐츠 지속 시간에 대한 정보를 제공하지 않는 경우 해당 값은 해당 날짜의 자정 UTC 이후 시간(초)으로 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 때는 컨텐츠 지속 시간이 필요하며 미디어 항목이 시작된 후 0으로 시작하는 플레이헤드를 초 수로 업데이트해야 합니다. | 예 |
+   | `getCurrentPlaybackTime()` | 플레이헤드의 현재 위치를 반환합니다. <br /> VOD 추적의 경우 이 값은 미디어 항목이 시작된 후 현재까지의 시간(초)으로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다. | 예 |
 
    >[!TIP]
    >
@@ -151,13 +151,13 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
 | Video Analytics 1.x SDKs  |  개발자 안내서(PDF만 해당) |
 | --- | --- |
 | Android | [Android에 대한 구성 ](vhl-dev-guide-v15_android.pdf) |
-| AppleTV | [AppleTV에 대한 구성](vhl-dev-guide-v1x_appletv.pdf)  |
+| AppleTV | [AppleTV에 대한 구성 ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast에 대한 구성 ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS에 대한 구성 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript에 대한 구성 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Media Analytics 구성](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Media Analytics 구성](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Media Analytics 구성](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML에 대한 구성 ](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 설명서 {#primetime-docs}
 
-* [Primetime 사용자 안내서](https://helpx.adobe.com/kr/primetime/user-guide.html)
+* [Primetime 사용 안내서](https://helpx.adobe.com/kr/primetime/user-guide.html)
