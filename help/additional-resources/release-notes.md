@@ -3,9 +3,9 @@ title: Adobe Analytics for Streaming Media 릴리스 노트
 description: Adobe Analytics 릴리스 노트를 표시합니다.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '525'
 ht-degree: 68%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 | 기능 | 설명 | 목표 날짜 |
 | ----------- | ---------- | ------- |
-| **분당 평균 시청 시간** | Media Analytics 고객은 대상 평균 시간(분) 패널을 사용하여 평균 컨텐츠 소비를 더 잘 이해할 수 있습니다. <br>대상 평균 시간을 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 시간(분) 대상을 선형 TV 평균 시간(분) 지표에 비교하거나 추가할 수 있습니다. 이 패널에서는 기간 분류를 업데이트한 시점과 사용자 지정 기간의 평균 대상을 측정할 수 있는 유연성을 제공합니다.  [자세히 알아보기](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022년 16월 3일 |
+| **분당 평균 시청 시간** | Media Analytics 고객은 대상 평균 시간(분) 패널을 사용하여 평균 컨텐츠 소비를 더 잘 이해할 수 있습니다. <br>대상 평균 시간을 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 시간(분) 대상을 선형 TV 평균 시간(분) 지표에 비교하거나 추가할 수 있습니다. 이 패널에서는 기간 분류를 업데이트한 시점과 사용자 지정 기간의 평균 대상을 측정할 수 있는 유연성을 제공합니다.  [자세히 알아보기](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022년 3월 16일 |
 
 ## 스트리밍 미디어용 Analytics 도움말 리소스
 
@@ -48,7 +48,7 @@ Experience League에서 최신 자가 진단 설명서 튜토리얼 및 과정�
 
 | 기능 | 일반 공급 | 설명 |
 | ----------- | ---------- | -------------- |
-| **미디어 재생 소요 시간** | 2021년 9월 28일 | Adobe 스트리밍 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 통찰력을 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 통찰력을 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **미디어 재생 소요 시간** | 2021년 9월 28일 | Adobe 스트리밍 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 통찰력을 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 통찰력을 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## 2021년 1월
 
@@ -65,7 +65,7 @@ Media Analytics의 새로운 기능
 
 | 기능 | 일반 공급 | 설명 |
 | -------- | -------------------- | ----------- |
-| **작업 공간의 미디어 동시 뷰어 패널** | 2020년 9월 17일 | 미디어 동시 뷰어 패널을 사용하면 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 컨텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 제공하고 볼륨/규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| **작업 공간의 미디어 동시 뷰어 패널** | 2020년 9월 17일 | 미디어 동시 뷰어 패널을 사용하면 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 컨텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 제공하고 볼륨/규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## 2020년 7월
