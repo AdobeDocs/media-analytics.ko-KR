@@ -5,16 +5,18 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '920'
-ht-degree: 100%
+source-git-commit: d2a6f9648b682079ca858e9025d41dcb9dc6554f
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 96%
 
 ---
 
 # 미디어 보고서 지원{#media-reports-enablement}
 
 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 각 보고서 세트를 구성해야 합니다.
+
+고급 고객은 Media Core가 활성화되고 추적이 활성화된 후에만 Analysis Workspace에서 미디어 패널을 사용할 수 있습니다 [경험 품질](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
 
 >[!TIP]
 >
