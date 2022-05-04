@@ -3,13 +3,13 @@ title: Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 JSON 보
 description: Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 보고서 데이터를 가져오는 방법에 대해 알아봅니다. 요청 및 응답 샘플을 확인하십시오.
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
-workflow-type: tm+mt
+exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
+workflow-type: ht
 source-wordcount: '205'
 ht-degree: 100%
 
 ---
-
 
 # Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 JSON 보고서 데이터 가져오기{#get-media-playback-time-spent-json-report-data}
 
