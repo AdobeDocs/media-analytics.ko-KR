@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 각 보고서 세트를 구성해야 합니다.
 
-고급 고객은 Media Core가 활성화되고 추적이 활성화된 후에만 Analysis Workspace에서 미디어 패널을 사용할 수 있습니다 [경험 품질](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+고급 고객은 미디어 코어가 활성화되고 [체감 품질](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=kr)에 대한 추적이 활성화된 후에만 Analysis Workspace의 미디어 패널을 사용할 수 있습니다.
 
 >[!TIP]
 >
