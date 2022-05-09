@@ -1,6 +1,6 @@
 ---
 title: 스트리밍 미디어용 Adobe Analytics의 새로운 기능
-description: 스트리밍 미디어용 Adobe Analytics의 새로운 기능 알아보기
+description: 스트리밍 미디어용 Adobe Analytics의 새로운 기능에 대해 알아봅니다.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -9,17 +9,17 @@ exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 43%
+workflow-type: ht
+source-wordcount: '28'
+ht-degree: 100%
 
 ---
 
 # 리소스{#resources}
 
-## 릴리스 노트{#release-notes}
+## 릴리스 정보{#release-notes}
 
-* [릴리스 정보](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ko-KR)
+* [릴리스 정보](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
 <!--
 ## Documentation Updates{#documentation-updates}
