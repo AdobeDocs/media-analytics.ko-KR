@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: 6794ba332945047c821628b79e6e796de321fbeb
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ ht-degree: 100%
       + [타임라인 1 - 콘텐츠 끝까지 보기](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-+ Cookbook {#media-analytics-cookbook}
++ 요리책 {#media-analytics-cookbook}
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
@@ -222,6 +222,7 @@ ht-degree: 100%
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
    + [표준 및 사용자 지정 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [구현 및 보고](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [여러 플레이어 상태 추적](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [플레이어 상태 추적 예](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + 추가 리소스 {#additional-resources}
