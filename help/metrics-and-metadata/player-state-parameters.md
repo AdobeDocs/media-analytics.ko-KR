@@ -3,9 +3,9 @@ title: 플레이어 상태 매개 변수
 description: “전체 화면, 닫힌 캡션, 음소거 및 화면 속 화면 속성에 대한 플레이어 상태 추적 매개 변수에 대해 알아봅니다.”
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 94%
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 ## 플레이어 상태 속성 {#player-state-properties}
 
-플레이어 상태 추적 기능을 오디오 또는 비디오 스트림에 연결할 수 있습니다. 표준화된 플레이어 상태 추적 지표는 솔루션 변수로 저장됩니다. 표준 상태는 fullScreen, mute, closeCaption, pictureInPicture 및 inFocus입니다.
+플레이어 상태 추적 기능을 오디오 또는 비디오 스트림에 연결할 수 있습니다. 표준화된 플레이어 상태 추적 지표는 솔루션 변수로 저장됩니다. 표준 상태는 다음과 같습니다. fullscreen, mute, closedCaptioning, pictureInPicture 및 inFocus
 
 ### 전체 화면 속성
 
