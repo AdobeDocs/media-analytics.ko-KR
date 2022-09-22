@@ -3,16 +3,16 @@ title: 스트리밍 미디어용 Adobe Analytics 릴리스 정보
 description: Adobe Analytics 릴리스 정보를 살펴보십시오.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 24471de7f56212d29001ce23aea155fb56dbad8b
+source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
-# 스트리밍 미디어용 Adobe Analytics 릴리스 정보 (2022년 3월)
+# Adobe Analytics for Streaming Media 릴리스 노트(2022년 9월)
 
-**마지막 업데이트**: 2022년 9월 23일
+**마지막 업데이트**: 2022년 9월 22일
 
 ## 관련 리소스
 
