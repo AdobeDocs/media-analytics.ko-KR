@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
+source-git-commit: c26f472f8b35f15f594e32334f6cbfb038f77698
 workflow-type: tm+mt
 source-wordcount: '7004'
 ht-degree: 91%
@@ -272,7 +272,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개 변수 | 보고 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/> AUTHORIZED </li> <li> **API 키:**<br/> media.pass.auth </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> &quot;TRUE&quot; </li> <li> **설명:**<br/> 사용자가 Adobe 인증을 통해 인증되었습니다.  <br/>**중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.pass.auth) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.pass.<br/>auth) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;인증됨 </li> <li> **컨텍스트 데이터:**<br/> (a.media.pass.auth) </li> <li> **데이터 피드:**<br/> videoauthorized </li> <li> **Audience Manager:**<br/> (c_contextdata).<br/>a.media.pass.auth) </li> <li> **XDM 필드 패스:**<br/> media.mediaTimed.mediaAuth </li> <li> **컬렉션 XDM 필드 경로:**<br/> mediaCollection.sessionDetails.<br/>isAuthorized </li> <li> **보고 XDM 필드 경로:**<br/> mediaReporting.sessionDetails.<br/>isAuthorized </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> AUTHORIZED </li> <li> **API 키:**<br/> media.pass.auth </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> &quot;TRUE&quot; </li> <li> **설명:**<br/> 사용자가 Adobe 인증을 통해 인증되었습니다.  <br/>**중요:** 설정된 경우에만 true일 수 있습니다. 설정되지 않은 경우 값이 반환되지 않습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.pass.auth) </li> <li> **하트비트:**<br/> (s:meta:<br/>a.media.pass.<br/>auth) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;인증됨 </li> <li> **컨텍스트 데이터:**<br/> (a.media.pass.auth) </li> <li> **데이터 피드:**<br/> videoauthorized </li> <li> **Audience Manager:**<br/> (c_contextdata).<br/>a.media.pass.auth) </li> <li> **XDM 필드 패스:**<br/> media.mediaTimed.mediaAuth </li> <li> **컬렉션 XDM 필드 경로:**<br/> mediaCollection.sessionDetails.<br/>권한 </li> <li> **보고 XDM 필드 경로:**<br/> mediaReporting.sessionDetails.<br/>권한 </li> </ul> |
 
 ### 방송 시간대
 
