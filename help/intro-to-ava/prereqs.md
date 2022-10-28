@@ -1,14 +1,14 @@
 ---
-title: 스트리밍 미디어용 사전 요구 사항에 대해 알아보기
+title: 스트리밍 미디어에 대한 사전 요구 사항에 대해 알아봅니다.
 description: 스트리밍 미디어용 Adobe Analytics를 시작합니다. 스트리밍 미디어용 Adobe Analytics을 구현하기 위해 필요한 사항을 알아봅니다.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: e5d1d86a2534a8c0fac63948e37a14b1dc1e896e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
