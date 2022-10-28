@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
-user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API에 대해 알아봅니다.
+user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 미디어 컬렉션 API에 대해 알아봅니다.
 sub-product: media analytics
 source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 98%
          + 미디어 모듈 이정표 추적 {#mm-milestone-tracking}
             + [이정표 개요](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [이정표를 Media Analytics로 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-            + [이정표에서 사용자 지정 링크로의 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
-         + Analytics의 사용자 지정 링크 {#cl-in-aa}
-            + [사용자 지정 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [이정표에서 사용자 정의 링크로의 마이그레이션](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+         + Analytics의 사용자 정의 링크 {#cl-in-aa}
+            + [사용자 정의 링크 구현 안내서](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager 지원](intro-to-ava/am-enablement.md)
@@ -78,9 +78,9 @@ ht-degree: 98%
             + [JavaScript 2.x에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
             + [JavaScript 3.x에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Chromecast에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [표준 메타데이터 매개 변수 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [표준 메타데이터 매개변수 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Roku에서 표준 메타데이터 구현](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [표준 메타데이터 매개 변수 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [표준 메타데이터 매개변수 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 광고 추적 {#track-ads}
       + [개요](sdk-implement/track-ads/track-ads-overview.md)
       + [Android에서 광고 추적](sdk-implement/track-ads/track-ads-android.md)
@@ -142,7 +142,7 @@ ht-degree: 98%
       + [테스트 1: 표준 재생](sdk-implement/validation/test1-standard-playback.md)
       + [테스트 2: 미디어 중단](sdk-implement/validation/test2-media-interrupt.md)
       + [테스트 호출 세부 사항](sdk-implement/validation/test-call-details.md)
-      + [하트비트 매개 변수 설명](sdk-implement/validation/heartbeat-params.md)
+      + [하트비트 매개변수 설명](sdk-implement/validation/heartbeat-params.md)
       + 디버깅 {#debugging}
          + [SDK 디버깅](sdk-implement/validation/debugging/sdk-debugging.md)
    + OTT 앱용 분석 {#analytics-with-ott}
@@ -172,7 +172,7 @@ ht-degree: 98%
    + API 참조 {#mc-api-ref}
       + [세션 요청](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [이벤트 요청](media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [요청 매개 변수](media-collection-api/mc-api-ref/mc-api-req-params.md)
+      + [요청 매개변수](media-collection-api/mc-api-ref/mc-api-req-params.md)
       + [이벤트 유형 및 설명](media-collection-api/mc-api-ref/mc-api-event-types.md)
       + [JSON 유효성 검사 스키마](media-collection-api/mc-api-ref/mc-api-json-validation.md)
    + API 구현 {#mc-api-impl}
@@ -183,7 +183,7 @@ ht-degree: 98%
       + [이벤트 요청 확인](media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
       + [Ping 이벤트 보내기](media-collection-api/mc-api-impl/mc-api-sed-pings.md)
       + [QoE 데이터 보내기](media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
-      + [사용자 지정 메타데이터 지원](media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+      + [사용자 정의 메타데이터 지원](media-collection-api/mc-api-impl/mc-api-custom-meta.md)
       + [시간 제한 조건](media-collection-api/mc-api-impl/mc-api-timeout.md)
       + [이벤트 순서 제어](media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
       + [세션 응답이 느린 경우 큐에 이벤트 저장](media-collection-api/mc-api-impl/mc-api-queuing.md)
@@ -191,15 +191,15 @@ ht-degree: 98%
       + [타임라인 1 - 콘텐츠 끝까지 보기](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [타임라인 2 - 사용자가 세션을 중단함](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [타임라인 3 - 챕터](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-+ 요리책 {#media-analytics-cookbook}
++ Cookbook {#media-analytics-cookbook}
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [미디어 스트림 속성](media-analytics-cookbook/media-dimensions.md)
 + 지표 및 메타데이터 {#metrics-and-metadata}
-   + [스트리밍 미디어 매개 변수](metrics-and-metadata/audio-video-parameters.md)
-   + [광고 매개 변수](metrics-and-metadata/ad-parameters.md)
-   + [챕터 매개 변수](metrics-and-metadata/chapter-parameters.md)
-   + [플레이어 상태 매개 변수](metrics-and-metadata/player-state-parameters.md)
-   + [품질 매개 변수](metrics-and-metadata/quality-parameters.md)
+   + [스트리밍 미디어 매개변수](metrics-and-metadata/audio-video-parameters.md)
+   + [광고 매개변수](metrics-and-metadata/ad-parameters.md)
+   + [챕터 매개변수](metrics-and-metadata/chapter-parameters.md)
+   + [플레이어 상태 매개변수](metrics-and-metadata/player-state-parameters.md)
+   + [품질 매개변수](metrics-and-metadata/quality-parameters.md)
    + [세그먼트](metrics-and-metadata/segments.md)
    + [계산된 지표](metrics-and-metadata/calculated-metrics.md)
 + 보고 및 분석 {#media-reports}
@@ -211,7 +211,7 @@ ht-degree: 98%
       + [미디어 날짜 보고서](media-reports/media-default-reports/media-reports-daypart.md)
       + [미디어 동시 뷰어 보고서](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 미디어 작업 영역 패널 {#media-workspace-panels}
-   + [미디어 대상 평균 시간 패널](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [미디어 대상자 평균 시간 패널](media-reports/media-workspace-panels/average-minute-audience.md)
    + [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [미디어 재생 소요 시간 패널](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [미디어 작업 영역 템플릿](media-reports/media-workspace-templates.md)
@@ -220,7 +220,7 @@ ht-degree: 98%
 + [다운로드한 콘텐츠 추적](media-collection-api/track-downloaded-content.md)
 + 플레이어 상태 추적 {#player-state-tracking}
    + [개요](sdk-implement/player-state-tracking/player-state-overview.md)
-   + [표준 및 사용자 지정 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+   + [표준 및 사용자 정의 상태](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [구현 및 보고](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [여러 플레이어 상태 추적](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [플레이어 상태 추적 예](sdk-implement/player-state-tracking/player-state-examples.md)
