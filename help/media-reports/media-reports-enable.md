@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 1. [Reports &amp; Analytics](https://my.omniture.com/login/)에서 **[!UICONTROL 관리 > 보고서 세트]를 클릭합니다.**
 1. 미디어 데이터를 수집하는 보고서 세트를 선택한 다음 **[!UICONTROL 설정 편집 > 미디어 관리 > 미디어 보고]를 클릭합니다.**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. **[!UICONTROL 미디어 보고]** 페이지에서 **[!UICONTROL 미디어 코어],**&#x200B;를 활성화하고, **[!UICONTROL 미디어 광고],** **[!UICONTROL 미디어 챕터],** 및 **[!UICONTROL 미디어 품질]을 선택적으로 활성화합니다.**
 
