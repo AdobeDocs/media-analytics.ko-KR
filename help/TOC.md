@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 1d30415b0874c1e0f35045026cb341bab1833d98
+source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '880'
 ht-degree: 78%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 78%
          + [시간 제한 조건](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + 미디어 추적 타임라인 {#mc-api-timelines}
+         + [타임라인 1 - 콘텐츠 끝까지 보기](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+         + [타임라인 2 - 사용자가 세션을 중단함](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
+         + [타임라인 3 - 챕터](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + 변수 {#variables}
       + [스트리밍 미디어 매개변수](implementation/variables/audio-video-parameters.md)
       + [광고 매개 변수](implementation/variables/ad-parameters.md)
@@ -179,8 +183,7 @@ ht-degree: 78%
    + [오프라인 다운로드한 컨텐츠 추적](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [재생 중 애플리케이션 중단 처리](use-cases/cookbook/app-interrupts.md)
-   + [기존 SDK Cookbook 개요](use-cases/cookbook/sdk-cookbook-overview.md)
-   + [기존 - Media Analytics Cookbook](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
+   + [Media SDK 사용 사례](use-cases/cookbook/sdk-cookbook-overview.md)
    + [미디어 스트림 속성](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [비활성 세션 다시 시작](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph에서 Roku 추적](use-cases/cookbook/sdk-track-scenegraph.md)
