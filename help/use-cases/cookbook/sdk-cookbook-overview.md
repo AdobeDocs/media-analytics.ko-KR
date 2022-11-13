@@ -4,7 +4,7 @@ description: 스트리밍 미디어 사용 사례에 대해 알아보기
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 47%
@@ -14,7 +14,7 @@ ht-degree: 47%
 # 스트리밍 미디어 사용 사례 {#media-sdk-use-cases}
 
 * [플레이어 상태 추적](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [오프라인 다운로드한 컨텐츠 추적](using/media-use-cases/track-downloaded-content.html)
+* [오프라인 다운로드한 컨텐츠 추적](/help/use-cases/track-downloaded-content.md)
 * [재생 중 애플리케이션 중단 처리](/help/use-cases/cookbook/app-interrupts.md)
 * [광고 사이에 표시되는 간격 처리](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [비활성 세션 다시 시작](/help/use-cases/cookbook/resuming-inactive.md)
