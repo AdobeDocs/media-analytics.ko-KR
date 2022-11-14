@@ -3,8 +3,8 @@ title: 스트리밍 미디어용 Adobe Analytics 릴리스 정보
 description: Adobe Analytics 릴리스 정보를 살펴보십시오.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ ht-degree: 100%
 
 | 기능 | 설명 | 목표 일자 또는 업데이트 일자 |
 | ----------- | ---------- | -------------- |
-| 미디어 재생 소요 시간 | Adobe 스트리밍 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 통찰력을 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 통찰력을 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | 2021년 9월 |
-| Analytics Workspace의 미디어 동시 뷰어 패널 | 최대 동시성이 발생한 위치 또는 중단이 발생한 위치를 이해합니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Analytics Workspace의 미디어 동시 뷰어 패널(튜토리얼)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=kr#analysis-workspace) | 2020년 9월 <br><br><br>2021년 1월 |
+| 미디어 재생 소요 시간 | Adobe 스트리밍 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 통찰력을 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 통찰력을 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기...](/help/reporting/workspace/media-playback-time-spent.md) | 2021년 9월 |
+| Analytics Workspace의 미디어 동시 뷰어 패널 | 최대 동시성이 발생한 위치 또는 중단이 발생한 위치를 이해합니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기…](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Analytics Workspace의 미디어 동시 뷰어 패널(튜토리얼)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=kr#analysis-workspace) | 2020년 9월 <br><br><br>2021년 1월 |
 | 지원되는 디바이스 및 플랫폼 | 이제 AEP SDK가 포함된 미디어 실행 확장자는 다음과 같은 OTT 디바이스를 지원합니다. <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | 2020년 6월 |
 
 
