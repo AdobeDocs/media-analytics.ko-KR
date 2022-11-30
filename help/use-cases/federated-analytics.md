@@ -1,14 +1,14 @@
 ---
 title: Federated Analytics
-description: Federated Analytics 서비스는 두 파트너 간에 Adobe Analytics 스트리밍 미디어 데이터를 공유하는 시스템을 제공합니다.
+description: Federated Analytics 서비스는 두 파트너 간에 스트리밍 미디어용 Adobe Analytics 데이터를 공유하는 시스템을 제공합니다.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 ## 이점 {#benefits}
 
 * **투명:** 여러 회사에서 동일한 논리를 사용하여 데이터 작성의 비밀스런 부분 제거
-* **광범위:**&#x200B;파트너십, 플랫폼 및 장치 간의 완전한 연결과 오디오 및 비디오 사용이 미치는 영향 이해
+* **광범위:**&#x200B;파트너십, 플랫폼 및 디바이스 간의 완전한 연결과 오디오 및 비디오 사용이 미치는 영향 이해
 * **보안:** 규칙 및 논리를 통해 서버측 데이터 공유 제어
 * **표준화:** 파트너와 동일한 데이터 언어 사용
 * **동작 가능:** Adobe Analytics를 통해 플레이어를 벤치마킹하고, 트렌드를 모니터링하고, 이상 현상을 감지하도록 오디오 및 비디오 데이터 정량화
@@ -41,18 +41,18 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 * **Media 스트림 계약:** 보낸 사람과 받는 사람은 Adobe Analytics 내의 오디오 및 비디오 데이터에 액세스하려면 Adobe Analytics for Media Streams에 등록해야 합니다. 자세한 내용은 계정 팀에게 문의하십시오.
 * **연합 부록:** 데이터를 전송하거나 수신하기 전에 각 발신자와 수신자는 Adobe와 함께 서명된 부록이 있어야 합니다. 고객당 하나의 부록이 필요합니다. 파트너십당 하나의 부록이 아닙니다. 자세한 내용은 계정 팀에게 문의하십시오.
 
-* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. 다음 설명서를 참조하십시오. [Adobe Analytics에서 스트리밍 미디어 측정](/help/media-overview.md)
+* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. [Adobe Analytics에서 스트리밍 미디어 측정](/help/media-overview.md) 설명서를 참조하십시오.
 
 * **Adobe Consulting Contract:**&#x200B;보낸 사람과 받은 사람 간의 초기 페더레이션 규칙 설정의 경우 컨설팅 서비스 팀과 함께 작업하여 데이터를 검토하고 데이터 공유 계약을 작성하는 것이 중요합니다.
 
 ## Federated Analytics 양식 다운로드
 
-Federated Analytics에 참여하려면 다음을 다운로드하여 완료하십시오 [페더레이션 규칙 계약](assets/federated_analytics_form.pdf) 양식.
+Federated Analytics에 참여하려면 [페더레이션 규칙 계약](assets/federated_analytics_form.pdf) 양식을 다운로드해 작성하십시오.
 
 ## 프로세스 {#process}
 
 1. 보낸 사람과 받은 사람은 함께 페더레이션 규칙 계약 양식을 작성합니다. 페더레이션 규칙 계약 양식은 엔지니어링 팀을 위한 특수 필드를 포함하며 Adobe Acrobat만 사용하여 편집해야 합니다. [Acrobat을 무료로 다운로드하십시오.](https://get.adobe.com/reader/)
-1. 데이터 파일이 있다면, 컨설팅 서비스는 보낸 사람의 플레이어에서 실제 데이터가 있는 받는 사람에게 샘플 데이터 파일을 제공하여 올바른 데이터 공유 규칙이 정의되어 있는지 확인합니다.
+1. 데이터 파일이 있다면 컨설팅 서비스는 보낸 사람의 플레이어에서 실제 데이터가 있는 받는 사람에게 샘플 데이터 파일을 제공하여 올바른 데이터 공유 규칙이 정의되어 있는지 확인합니다.
 1. 보낸 사람과 받는 사람은 데이터 공유 계약이 두 당사자 간의 계약 요구 사항을 모두 충족하는지 확인합니다.
 1. 컨설팅 서비스는 완성된 양식을 Adobe 엔지니어링 팀에 보내 데이터 공유 규칙을 설정합니다.
 1. 데이터는 받는 사람이 데이터를 검토하고 확인하는 개발 보고서 세트에 공유됩니다.
