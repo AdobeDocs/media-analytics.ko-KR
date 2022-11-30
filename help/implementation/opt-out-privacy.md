@@ -1,32 +1,32 @@
 ---
-title: 옵트아웃 및 개인 정보 설명
-description: 옵트인, 옵트아웃 및 개인 정보를 처리하는 방법을 알아봅니다.
+title: 옵트아웃 및 개인정보 보호 설명
+description: 옵트인, 옵트아웃 및 개인정보 보호를 처리하는 방법에 대해 알아봅니다.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# 옵트아웃 및 개인 정보{#opt-out-and-privacy}
+# 옵트아웃 및 개인정보 보호{#opt-out-and-privacy}
 
 ## 옵트아웃 / 옵트인 {#opt-out-opt-in}
 
-추적 활동을 특정 장치에서 허용할지 여부를 제어할 수 있습니다.
+추적 활동을 특정 디바이스에서 허용할지 여부를 제어할 수 있습니다.
 
-* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인 정보 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인 정보 설정에 대한 자세한 내용은 [옵트아웃 및 개인 정보 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인 정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
-* **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
+* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인정보 보호 설정에 대한 자세한 내용은 [옵트아웃 및 개인정보 보호 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
+* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
+* **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해 주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
 
    >[!NOTE]
    >
-   >개인 정보 상태가 옵트아웃으로 설정된 경우 미디어 하트비트 추적 호출도 비활성화됩니다.
+   >개인정보 보호 상태가 옵트아웃으로 설정된 경우 미디어 하트비트 추적 호출도 비활성화됩니다.
 
-   다음 설정을 사용하여 Analytics 데이터가 특정 장치에서 전송되는지 여부를 제어할 수 있습니다.
+   다음 설정을 사용하여 Analytics 데이터가 특정 디바이스에서 전송되는지 여부를 제어할 수 있습니다.
 
    * `ADBMobile.json` 구성 파일의 `privacyDefault` 설정. 이 설정은 코드에서 변경되기 전까지 초기 설정을 제어하고 유지됩니다.
 
@@ -36,48 +36,48 @@ ht-degree: 88%
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
             >[!IMPORTANT]
             >
-            >사용자가 추적을 옵트아웃하면 사용자가 다시 옵트인할 때까지 유지된 모든 장치 데이터와 ID가 삭제됩니다.
+            >사용자가 추적을 옵트아웃하면 사용자가 다시 옵트인할 때까지 유지된 모든 디바이스 데이터와 ID가 삭제됩니다.
       * **다시 옵트인:**
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             * **현재 설정 반환:**
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().getPrivacyStatus()
-                &quot;
-            `setPrivacyStatus`를 사용하여 개인 정보 설정을 변경한 후에는 이 메서드를 사용하여 다시 변경할 때까지 또는 앱을 제거하고 다시 설치하기 전까지 변경 내용이 영구적으로 유지됩니다.
+                ```
+            `setPrivacyStatus`를 사용하여 개인정보 보호 설정을 변경한 후에는 이 메서드를 사용하여 다시 변경할 때까지 또는 앱을 제거하고 다시 설치하기 전까지 변경 내용이 영구적으로 유지됩니다.
 
-## 저장된 ID 검색(OTT 앱) {#retrieving-stored-identifiers-ott-apps}
+## 저장된 ID 검색 (OTT 앱) {#retrieving-stored-identifiers-ott-apps}
 
 이 정보는 Roku 앱에서 로컬로 저장된 사용자 ID를 검색하는 데 도움이 됩니다.
 
@@ -89,10 +89,10 @@ ht-degree: 88%
 
 * 회사 컨텍스트 - IMS 조직 ID
 * 사용자 ID
-* Experience Cloud ID(MCID)
-* 데이터 소스 ID(DPID, DPUUID)
-* Analytics ID(AVID, AID, VID 및 관련 RSID)
-* Audience Manager ID(UUID)
+* Experience Cloud ID (MCID)
+* 데이터 소스 ID (DPID, DPUUID)
+* Analytics ID (AVID, AID, VID 및 관련 RSID)
+* Audience Manager ID (UUID)
 
 예:
 
