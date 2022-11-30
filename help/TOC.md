@@ -6,22 +6,22 @@ breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
 source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '865'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
 # 스트리밍 미디어용 Adobe Analytics {#using}
 
-+ [스트리밍 미디어 분석 안내서](media-overview.md)
++ [스트리밍 Media Analytics 안내서](media-overview.md)
 + 릴리스 정보 {#release-notes}
-   + [스트리밍 미디어 릴리스 노트](additional-resources/release-notes.md)
+   + [스트리밍 미디어 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
    + [개요](getting-started/getting-started.md)
-   + [SDK, 라이브러리 및 확장](getting-started/download-sdks.md)
-   + [지원되는 장치](getting-started/supported-devices.md)
+   + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
+   + [지원되는 디바이스](getting-started/supported-devices.md)
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원 종료](additional-resources/end-of-support-faqs.md)
    + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
@@ -30,7 +30,7 @@ ht-degree: 78%
    + Media SDK - 구현 {#media-sdk}
       + [Media SDK 개요](implementation/media-sdk/media-sdk-overview.md)
       + 설치 및 구성 {#setup}
-         + [웹 SDK 설치](implementation/media-sdk/setup/web-implementation.md)
+         + [Web SDK 설치](implementation/media-sdk/setup/web-implementation.md)
          + [모바일 SDK 설치](implementation/media-sdk/setup/mobile-implementation.md)
          + OTT SDK 설치 {#ott-setup}
             + [Chromecast SDK 설치](implementation/media-sdk/setup/set-up-chromecast.md)
@@ -56,14 +56,14 @@ ht-degree: 78%
          + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 변수 {#variables}
       + [스트리밍 미디어 매개변수](implementation/variables/audio-video-parameters.md)
-      + [광고 매개 변수](implementation/variables/ad-parameters.md)
+      + [광고 매개변수](implementation/variables/ad-parameters.md)
       + [챕터 매개변수](implementation/variables/chapter-parameters.md)
       + [플레이어 상태 매개변수](implementation/variables/player-state-parameters.md)
       + [품질 매개변수](implementation/variables/quality-parameters.md)
       + [계산된 지표](implementation/variables/calculated-metrics.md)
 + 보고 {#media-reports}
    + [미디어 보고서 지원](reporting/media-reports-enable.md)
-   + [세그먼트 ](reporting/segments.md)
+   + [세그먼트 정보](reporting/segments.md)
    + 미디어 기본 보고서 {#media-default-reports}
       + [기본 보고서 개요](reporting/reports-and-analytics/default-reports-overview.md)
       + [미디어 개요](reporting/reports-and-analytics/media-reports-overview.md)
@@ -85,48 +85,48 @@ ht-degree: 78%
       + [구현 및 보고](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [여러 플레이어 상태 추적](use-cases/player-state-tracking/multiple-player-states.md)
       + [플레이어 상태 추적 예](use-cases/player-state-tracking/player-state-examples.md)
-   + [오프라인 다운로드한 컨텐츠 추적](use-cases/track-downloaded-content.md)
+   + [오프라인 다운로드 콘텐츠 추적](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [재생 중 애플리케이션 중단 처리](use-cases/cookbook/app-interrupts.md)
    + [미디어 스트림 속성](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [비활성 세션 다시 시작](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph에서 Roku 추적](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [광고 간 간격 처리](use-cases/cookbook/fix-ad-play-ad.md)
+   + [광고 사이의 간격 나누기](use-cases/cookbook/fix-ad-play-ad.md)
    + 타임라인 {#timelines}
-      + [장 시작 및 종료](use-cases/timelines/chapter-start-end.md)
-      + [컨텐츠 끝까지 보기](use-cases/timelines/view-to-end-of-content.md)
-      + [세션 중단](use-cases/timelines/user-abandons-session.md)
-   + OTT 앱에서 Analytics 사용 {#analytics-with-ott}
+      + [챕터 시작과 끝](use-cases/timelines/chapter-start-end.md)
+      + [콘텐츠 끝까지 보기](use-cases/timelines/view-to-end-of-content.md)
+      + [세션 포기](use-cases/timelines/user-abandons-session.md)
+   + OTT 앱의 분석 사용 {#analytics-with-ott}
       + [앱 상태 추적](use-cases/analytics-with-ott/track-app-states.md)
       + [앱 작업 추적](use-cases/analytics-with-ott/track-app-actions.md)
       + [사용자 ID 설정](use-cases/analytics-with-ott/set-user-ids.md)
       + [OTT 및 Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT 및 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
-+ 개인 정보 및 보안 {#streaming-media-privacy}
-   + [옵트아웃 및 개인 정보 설정](privacy/opt-out-privacy.md)
++ 개인정보 보호 및 보안 {#streaming-media-privacy}
+   + [옵트아웃 및 개인정보 보호 설정](privacy/opt-out-privacy.md)
    + [보안](privacy/security.md)
-+ 이전 구현 {#legacy-implementations}
-   + [이전 - 개요](legacy/setup/legacy-setup-overview.md)
-   + [기존 — SDK 다운로드](legacy/legacy-download-sdks.md)
++ 레거시 구현 {#legacy-implementations}
+   + [레거시 개요](legacy/setup/legacy-setup-overview.md)
+   + [레거시 — SDK 다운로드](legacy/legacy-download-sdks.md)
    + 레거시 - Media SDK {#legacy-media-sdks}
-      + [기존 - Media SDK 개요](legacy/media-sdk/setup/setup-overview.md)
+      + [레거시 - Media SDK 개요](legacy/media-sdk/setup/setup-overview.md)
       + [Android 설정](legacy/media-sdk/setup/set-up-android.md)
       + [iOS 설정](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript 설정 {#setup-javascript}
          + [JavaScript 3.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + 기존 - Media SDK에서 Launch로 마이그레이션 {#sdk-to-launch}
+   + 레거시 - Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
       + [개요](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - Media SDK에서 Launch로](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - Media SDK에서 Launch로](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - Media SDK에서 Launch로](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+      + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [하트비트 측정 정보](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime 및 스트리밍 미디어 분석](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Adobe 대상 관리 지원](legacy/intro-to-ava/am-enablement.md)
-   + [사용자 지정 링크 구현](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + 이전 이정표 추적 {#legacy-milestone-tracking}
-      + [이전 이정표 추적](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [이정표를 VA로 마이그레이션](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-      + [이정표를 CL로 마이그레이션](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+   + [Adobe Primetime 및 스트리밍 Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe 대상자 관리 지원](legacy/intro-to-ava/am-enablement.md)
+   + [사용자 정의 링크 구현](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
+   + 이전 마일스톤 추적 {#legacy-milestone-tracking}
+      + [이전 마일스톤 추적](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+      + [마일스톤을 VA로 마이그레이션](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [마일스톤을 CL로 마이그레이션](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + 유효성 검사 {#validation}
       + [유효성 검사 개요](legacy/validation/validation-overview.md)
       + [테스트 1: 표준 재생](legacy/validation/test1-standard-playback.md)
@@ -137,10 +137,10 @@ ht-degree: 78%
          + [SDK 디버깅](legacy/validation/debugging/sdk-debugging.md)
    + [이전 마이그레이션: VHL 1.x에서 VHL 2.x로](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [JavaScript 2.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-   + [코드 비교 v1.x와 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
+   + [코드 비교 v1.x대 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API 1x에서 2x로 추적](legacy/va-1x-to-2x/1x-2x-api-change.md)
-   + [기존 - AVA 소개](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
-   + [클라이언트 측 경로](legacy/intro-to-ava/implementation-paths/client-side-path.md)
+   + [레거시 - AVA 소개](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
+   + [클라이언트측 경로](legacy/intro-to-ava/implementation-paths/client-side-path.md)
    + 추적 {#track-av-playback}
       + [개요](use-cases/track-av-playback/track-core-overview.md)
       + 코어 스트리밍 미디어 재생 추적 {#track-core}
