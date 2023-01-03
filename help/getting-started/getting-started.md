@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
-workflow-type: ht
-source-wordcount: '439'
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 100%
 * OTT
 * 스트리밍 미디어 또는 서버 간 통합에 사용할 수 있는 연결된 디바이스
 
-자세한 내용은 [지원되는 디바이스 및 플랫폼](#_Supported_devices_and)을 참조하십시오.
+자세한 내용은 [지원되는 디바이스 및 플랫폼](/help/getting-started/supported-devices.md)을 참조하십시오.
 
 >[!IMPORTANT]
 >
@@ -45,11 +45,3 @@ Media SDK 다운로드 및 설치에 대한 자세한 내용은 [Media SDK, 태�
 **Media Collection API**&#x200B;는 미디어 분석 구현을 사용자 정의할 수 있게 합니다. SDK 등을 사용하여 작업을 수행하려면 Media Collection API를 사용해 Adobe 서버를 직접 호출하십시오. 데이터 수집을 사용자 정의하여 스트리밍 미디어 데이터에 대해 탐색하고 통찰력을 얻거나 중요한 질문에 답변이 되는 보고서를 생성하십시오.
 
 Media Collection API 사용에 대한 자세한 내용은 [Steaming Media API 설명서](/help/implementation/media-collection-api/mc-api-overview.md)를 참조하십시오.
-
-## Adobe 확장 기능 {#adobe-extensions}
-
-* [**오디오 및 비디오 확장 기능용 Adobe Media Analytics**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko)(Media Analytics 확장 기능)은 iOS 및 tvOS 구현에 필요합니다. 태그 사이트 또는 프로젝트에 추적기 인스턴스를 추가하는 기능을 제공합니다. MA 확장 기능에는 Analytics 확장 기능 및 Experience Cloud ID 확장 기능도 필요합니다.
-
-* [Analytics 확장 기능 v1.6 이상](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko-KR)—이 확장 기능을 사용하면 Adobe Experience Platform Web SDK JavaScript 라이브러리를 로드하여 데이터를 Adobe 솔루션으로 보낼 수 있습니다.
-
-* [Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko-KR)—이 확장 기능은 모든 Experience Cloud 솔루션에서 방문자를 식별하는 Experience Cloud ID 서비스를 구현합니다. Experience Cloud ID 서비스는 Adobe Experience Platform의 개인화 확장 기능입니다.

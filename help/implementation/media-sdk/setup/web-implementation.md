@@ -3,20 +3,21 @@ title: 스트리밍 미디어용 Analytics에 대한 웹 구현을 설정하는 
 description: 웹 앱용 Adobe 스트리밍 미디어를 구현하는 방법을 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 71%
+source-wordcount: '449'
+ht-degree: 73%
 
 ---
 
-
 # 웹 SDK 설치 {#install-web-sdks}
 
-JavaScript용 Media SDK v3.x 설정 > 다운로드 페이지/링크에서 링크가 원하는 사항
+이 섹션에서는 웹 독립형 SDK를 설치하고 JavaScript를 설정하는 방법에 대해 설명합니다.
 
-이 섹션에서는 웹 SDK를 설치하고 JavaScript를 설정하는 방법에 대해 설명합니다.
+* [독립형 웹 SDK](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [웹 확장 SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko){target=_blank}
 
 ## 사전 요구 사항 {#prerequesites}
 

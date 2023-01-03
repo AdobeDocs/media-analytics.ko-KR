@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 작동 방법
 
-스트리밍 미디어 추적 데이터는 Media SDK, Media Collection API 또는 미디어 확장 기능(태그 포함)을 사용하여 플레이어에서 수집됩니다. 모든 세분화된 데이터(최대 10초)는 개별 재생 세션에 대한 데이터를 수집하고 처리하는 Media Analytics 서비스로 전송됩니다. 재생 세션이 종료되면 저장 및 보고를 위해 계산된 추적 데이터가 Adobe Analytics로 전송됩니다. Adobe Customer Journey Analytics(CJA) 구현을 사용하면 고객이 보고 도구로 CJA를 활용할 수 있도록 Analytics 데이터 커넥터(ADC)를 사용하여 데이터를 CJA로 보낼 수 있습니다.
+스트리밍 미디어 추적 데이터는 Media SDK 또는 Adobe Experience Platform Media 확장 프로그램 및 Media Collection API를 사용하여 플레이어에서 수집됩니다. 모든 세분화된 데이터(최대 10초)는 개별 재생 세션에 대한 데이터를 수집하고 처리하는 Media Analytics 서비스로 전송됩니다. 재생 세션이 종료되면 저장 및 보고를 위해 계산된 추적 데이터가 Adobe Analytics로 전송됩니다. Adobe Customer Journey Analytics(CJA) 구현을 사용하면 고객이 보고 도구로 CJA를 활용할 수 있도록 Analytics 데이터 커넥터(ADC)를 사용하여 데이터를 CJA로 보낼 수 있습니다.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 

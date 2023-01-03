@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '645'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 99%
 
 ---
 
@@ -39,8 +39,8 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 
 | 지원되는 플랫폼 | 버전 |  설명서   |  샘플  |
 |:---:|---|---|---|
-| ![Android 아이콘](assets/android-icon.png) | Android - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS 아이콘](assets/ios-icon.png)<br>tvOS 아이콘 추가 | iOS / tvOS - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android 아이콘](assets/android-icon.png) | Android - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Apple iOS 아이콘](assets/ios-icon.png)<br>tvOS 아이콘 추가 | iOS / tvOS - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 
 ### OTT 구현 {#download-ott-libraries}
 
@@ -48,25 +48,3 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 |:---:|---|---|---|
 | ![Chromecast 아이콘](assets/chromecast-icon.png) | [Chromecast v3.0.3용 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast용 Mobile SDK v3.x 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
 | ![Roku 아이콘](assets/roku-icon.png) | [Roku v2.2.6용 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 참조](/help/implementation/media-sdk/setup/set-up-roku.md) | [Roku용 Mobile SDK v2.x 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
-
-## Adobe 확장 기능 {#adobe-extensions}
-
-### 스트리밍 미디어 확장 기능 {#streaming-media-extension}
-
-**오디오 및 비디오 확장 기능용 Adobe Media Analytics**&#x200B;는 미디어 애드온 SKU용 Adobe Analytics가 필요합니다. 자세한 내용은 Adobe 영업 담당자, 계정 관리자 또는 고객 성공 관리자에게 문의하십시오.
-
-**오디오 및 비디오 확장 기능용 Adobe Media Analytics** 설치, 구성 및 구현에 대한 자세한 내용은 [오디오 및 비디오 확장 기능용 Adobe Media Analytics 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko) 및 [Media Analytics 확장 기능 구성](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics#configure-the-media-analytics-extension)을 참조하십시오.
-
-### Analytics 확장 기능 {#analytics-extension}
-
-[Analytics 확장 기능 v1.6 이상](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko-KR)—이 확장 기능을 사용하면 Adobe Experience Platform Web SDK JavaScript 라이브러리를 로드하여 데이터를 Adobe 솔루션으로 보낼 수 있습니다. **Analytics 확장 기능** v1.6 이상이 필요합니다.
-
-이 확장 기능 구성에 대한 자세한 내용은 [Adobe Analytics 확장 기능 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko-KR)을 참조하십시오.
-
-### Experience Cloud ID 확장 기능 {#cloud-id-extension}
-
-[Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko-KR)—이 확장 기능은 모든 Experience Cloud 솔루션에서 방문자를 식별하는 Experience Cloud ID 서비스를 구현합니다. Experience Cloud ID 서비스는 Adobe Experience Platform의 개인화 확장 기능입니다.
-
-이 확장 기능을 사용하여 Experience Cloud ID 서비스를 속성과 통합합니다. Experience Cloud ID 서비스를 사용하여 사이트 방문자에 대해 고유하고 영구적인 식별자를 만들고 저장할 수 있습니다.
-
-이 확장 기능 구성에 대한 자세한 내용은 [Experience Cloud ID 확장 기능 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko-KR)을 참조하십시오.

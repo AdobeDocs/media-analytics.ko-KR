@@ -3,13 +3,13 @@ title: Adobe 스트리밍 미디어 SDK를 구현하는 방법
 description: Media SDK를 사용하여 스트리밍 미디어용 Adobe Analytics을 구현하는 방법에 대해 알아보십시오.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Media SDK 개요 {#implementation-overview}
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 | 플랫폼 | 버전 |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [JavaScript용 Media SDK v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Javascript v3.x용 태그가 있는 Analytics 확장(데이터 수집) Adobe Medium](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Javascript v3.x용 태그(데이터 수집)가 있는 Analytics 확장 Adobe Medium](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### 모바일 구현
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 * iOS Media Analytics for Audio and Video 확장은 iOS, iPadOS 및 tvOS를 지원합니다.
 
-### 최상위 구현
+### OTT 구현
 
 | 플랫폼 | 버전 |
 |:------:|:-----|

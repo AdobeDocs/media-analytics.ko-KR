@@ -4,10 +4,10 @@ description: Media SDK에서 Android용 Launch로 마이그레이션하는 방�
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -45,7 +45,7 @@ Media 확장은 추적을 위해 구성된 매개 변수를 사용합니다.
 
 ![](assets/launch_config_mobile.png)
 
-[모바일 확장 사용](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[모바일 확장 사용](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 추적기 만들기
 
@@ -86,7 +86,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Launch 확장
 
-[Media API 참조 - 미디어 추적기 만들기](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Media API 참조 - 미디어 추적기 만들기](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 추적기를 만들기 전에 Media 확장 및 종속 확장을 모바일 코어에 등록해야 합니다.
 
@@ -134,11 +134,11 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 이 구현은 추적기에 의해 노출된 `updateCurrentPlayhead` 메서드를 호출하여 현재 플레이어 플레이헤드를 업데이트해야 합니다. 정확한 추적을 위해 이 메서드를 초당 한 번 이상 호출해야 합니다.
 
-[Media API 참조 - 현재 플레이어 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Media API 참조 - 현재 플레이어 업데이트](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 이 구현은 추적기에 의해 노출된 `updateQoEObject` 메서드를 호출하여 QoE 정보를 업데이트해야 합니다. 품질 지표가 변경될 때마다 이 메서드가 호출됩니다.
 
-[Media API 참조 - QoE 개체 업데이트](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Media API 참조 - QoE 개체 업데이트](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 표준 미디어/광고 메타데이터 전달
 

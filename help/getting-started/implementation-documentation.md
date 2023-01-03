@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 | 구현 | 설명서 |
 |:-----------------------:|----------------|
 | **웹** | * [스트리밍 미디어용 웹 구현](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [오디오 및 비디오 확장 기능용 Adobe Media Analytics 웹 구현 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) |
-| **모바일** | *[Adobe Experience Platform Mobile SDK 안내서](https://aep-sdks.gitbook.io/docs/) <br> *[오디오 및 비디오 확장 기능용 Adobe Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)<br> *[최신 Mobile SDK 버전](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions) <br> *[스트리밍 미디어를 위한 모바일 구현](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
+| **모바일** | *[Adobe Experience Platform Mobile SDK 안내서](https://developer.adobe.com/client-sdks/documentation/) <br> *[오디오 및 비디오 확장 기능용 Adobe Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[최신 Mobile SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[스트리밍 미디어를 위한 모바일 구현](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
 | **OTT** | *[Adobe Marketing Cloud Solutions용 Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Roku 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 | 제품 | 설명서 |
 |:-----------------------:|----------------|
-| **Adobe Analytics** | *[Adobe Analytics 구현 안내서](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)<br> *[Adobe Analytics 구성 요소 안내서](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=ko)<br> *[Adobe Analytics 도구 안내서](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=ko)<br> *[Adobe Analytics 튜토리얼](https://experienceleague.adobe.com/docs/analytics.html?lang=ko#tutorials) <br> *[Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics를 위한 모바일 구현](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics) |
+| **Adobe Analytics** | *[Adobe Analytics 구현 안내서](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)<br> *[Adobe Analytics 구성 요소 안내서](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=ko)<br> *[Adobe Analytics 도구 안내서](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=ko)<br> *[Adobe Analytics 튜토리얼](https://experienceleague.adobe.com/docs/analytics.html?lang=ko#tutorials) <br> *[Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics를 위한 모바일 구현](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
 | **태그** | *[Adobe Experience Platform 태그 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
 
 ## Adobe 엔터프라이즈 튜토리얼 {#adobe-tutorials}

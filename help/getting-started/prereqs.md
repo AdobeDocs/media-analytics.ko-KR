@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 96%
 
 ---
 
@@ -27,10 +27,10 @@ Adobe Analytics용 스트리밍 미디어에는 Adobe Analytics 기본 구현도
 `collection-api-server` 모바일 SDK, JavaScript SDK 및 Roku용 비수집 API 추적 서버의 URL입니다. API 구현을 위한 도메인 이름은 다음과 같습니다. `[your_namespace].hb-api.omtrdc.net`.
 
 1. **현재 Media SDK 다운로드 또는 필요한 확장 기능 구현**<br>
-구현 경로에 따라 웹, 모바일 또는 OTT 플랫폼용 [현재 SDK를 다운로드](download-sdks.md)하십시오. 스트리밍 미디어용 Adobe Analytics를 활성화하려면 필수 확장 기능을 구현해야 합니다. 필수 확장 기능에 대한 정보는 [ Adobe 확장 기능](download-sdks.md#media-extension)을 참조하십시오. (Media SDK 다운로드 또는 확장 기능 얻기를 명확히 해야 함)
+구현 경로에 따라 웹, 모바일 또는 OTT 플랫폼용 [현재 SDK를 다운로드](download-sdks.md)하십시오. Adobe Analytics for Streaming Media 확장 경로를 활성화하려면 필요한 확장을 구현해야 합니다.
 
 1. **Adobe Analytics 보고서 활성화**<br>
-Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 데이터를 보려면 Analytics에서 보고서를 활성화해야 합니다. [미디어 보고서 지원](/help/reporting/media-reports-enable.md)을 확인하십시오.
+Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 데이터를 보려면 Analytics에서 보고서를 활성화해야 합니다. 자세한 내용은 [미디어 보고서 지원](/help/reporting/media-reports-enable.md).
 
 1. **Experience Cloud를 사용할 수 있도록 설정**<br>
 
