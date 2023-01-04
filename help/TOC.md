@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 98%
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 98%
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
    + [사전 요구 사항](getting-started/prereqs.md)
-   + [지원 종료](additional-resources/end-of-support-faqs.md)
+   + 지원 종료 {#end-of-support}
+      + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
+      + 레거시 - Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
+      + [개요](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
@@ -160,11 +166,6 @@ ht-degree: 98%
       + [iOS 설정](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript 설정 {#setup-javascript}
          + [JavaScript 3.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + 레거시 - Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
-      + [개요](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [하트비트 측정 정보](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 및 스트리밍 Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 대상자 관리 지원](legacy/intro-to-ava/am-enablement.md)
