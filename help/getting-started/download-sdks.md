@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '385'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 
 | 지원되는 플랫폼 | 버전 |  API   |  설명서  |  샘플  |
 |:---:|---|---|---|---|
-| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - «[JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript용 Media SDK v3.x 설정](/help/implementation/media-sdk/setup/web-implementation.md) | [JS v3.0.2용 Media SDK 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - «[JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript를 사용하여 Analytics 구현](/help/implementation/media-sdk/setup/web-implementation.md) | [JS v3.0.2용 Media SDK 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - 미디어 확장 기능 |  | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) — 태그 사용(데이터 수집)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### 모바일 구현 {#get-mobile-extension}
