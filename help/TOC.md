@@ -5,7 +5,7 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
+source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -20,9 +20,10 @@ ht-degree: 97%
    + [스트리밍 미디어 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
    + [개요](getting-started/getting-started.md)
-   + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
-   + [지원되는 디바이스](getting-started/supported-devices.md)
    + [사전 요구 사항](getting-started/prereqs.md)
+   + [지원되는 디바이스](getting-started/supported-devices.md)
+   + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
+   + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + 지원 종료 {#end-of-support}
       + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
       + 레거시 - Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
@@ -30,7 +31,6 @@ ht-degree: 97%
          + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
    + Media SDK - 구현 {#media-sdk}
