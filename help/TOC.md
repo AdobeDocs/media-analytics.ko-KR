@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '895'
 ht-degree: 97%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 97%
 
 # 스트리밍 미디어용 Adobe Analytics {#using}
 
-+ [스트리밍 Media Analytics 안내서](media-overview.md)
++ [스트리밍 미디어용 Analytics 안내서](media-overview.md)
 + 릴리스 정보 {#release-notes}
-   + [스트리밍 미디어 릴리스 정보](additional-resources/release-notes.md)
+   + [Streaming Media 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
    + [개요](getting-started/getting-started.md)
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
-   + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
+   + [Streaming Media 설명서](getting-started/implementation-documentation.md)
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + 지원 종료 {#end-of-support}
       + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
-      + 레거시 - Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
+      + 기존 - 독립형 Media SDK에서 Launch로 마이그레이션 {#sdk-to-launch}
          + [개요](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -48,7 +48,7 @@ ht-degree: 97%
       + [API 빠른 시작](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [세션 요청](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [이벤트 요청](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [요청 매개변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+      + [요청 매개 변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
       + [이벤트 유형 및 설명](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
       + API 구현 {#mc-api-impl}
          + [플레이어에서 HTTP 요청 유형 설정](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
@@ -63,11 +63,11 @@ ht-degree: 97%
          + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 변수 {#variables}
-      + [스트리밍 미디어 매개변수](implementation/variables/audio-video-parameters.md)
-      + [광고 매개변수](implementation/variables/ad-parameters.md)
-      + [챕터 매개변수](implementation/variables/chapter-parameters.md)
-      + [플레이어 상태 매개변수](implementation/variables/player-state-parameters.md)
-      + [품질 매개변수](implementation/variables/quality-parameters.md)
+      + [Streaming Media 매개 변수](implementation/variables/audio-video-parameters.md)
+      + [광고 매개 변수](implementation/variables/ad-parameters.md)
+      + [챕터 매개 변수](implementation/variables/chapter-parameters.md)
+      + [플레이어 상태 매개 변수](implementation/variables/player-state-parameters.md)
+      + [품질 매개 변수](implementation/variables/quality-parameters.md)
       + [계산된 지표](implementation/variables/calculated-metrics.md)
 + 보고 {#media-reports}
    + [미디어 보고서 지원](reporting/media-reports-enable.md)
@@ -113,7 +113,7 @@ ht-degree: 97%
 + 추적 {#tracking}
    + 추적 {#track-av-playback}
       + [개요](use-cases/track-av-playback/track-core-overview.md)
-      + 코어 스트리밍 미디어 재생 추적 {#track-core}
+      + 코어 Streaming Media 재생 추적 {#track-core}
          + [JavaScript 3.x에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
          + [Chromecast에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-chromecast.md)
          + [Roku에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-roku.md)
@@ -128,9 +128,9 @@ ht-degree: 97%
       + 표준 메타데이터 구현 {#impl-std-metadata}
          + [JavaScript 3.x에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Chromecast에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [표준 메타데이터 매개변수 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [표준 메타데이터 매개 변수 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Roku에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [표준 메타데이터 매개변수 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [표준 메타데이터 매개 변수 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
       + 광고 추적 {#track-ads}
          + [개요](use-cases/track-ads/track-ads-overview.md)
          + [JavaScript 3.x에서 광고 추적](use-cases/track-ads/track-ads-js/track-ads-js3.md)
@@ -167,7 +167,7 @@ ht-degree: 97%
       + JavaScript 설정 {#setup-javascript}
          + [JavaScript 3.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
    + [하트비트 측정 정보](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime 및 스트리밍 Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime 및 스트리밍 미디어용 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 대상자 관리 지원](legacy/intro-to-ava/am-enablement.md)
    + [사용자 정의 링크 구현](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + 이전 마일스톤 추적 {#legacy-milestone-tracking}
@@ -179,7 +179,7 @@ ht-degree: 97%
       + [테스트 1: 표준 재생](legacy/validation/test1-standard-playback.md)
       + [테스트 2: 미디어 중단](legacy/validation/test2-media-interrupt.md)
       + [테스트 호출 세부 사항](legacy/validation/test-call-details.md)
-      + [하트비트 매개변수 설명](legacy/validation/heartbeat-params.md)
+      + [하트비트 매개 변수 설명](legacy/validation/heartbeat-params.md)
       + 디버깅 {#debugging}
          + [SDK 디버깅](legacy/validation/debugging/sdk-debugging.md)
    + [이전 마이그레이션: VHL 1.x에서 VHL 2.x로](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
@@ -238,6 +238,6 @@ ht-degree: 97%
          + [주요 콘텐츠에 찾기가 있는 VOD 재생](use-cases/tracking-scenarios/vod-seeking.md)
          + [버퍼링이 있는 VOD 재생](use-cases/tracking-scenarios/vod-buffering.md)
          + [VOD 여러 추적기 동시 실행](use-cases/tracking-scenarios/vod-multi-trackers.md)
-         + [VOD 여러 세션에 대한 1개의 추적기](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
+         + [VOD 여러 세션에 대한 한 개의 추적기](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
          + [라이브 주요 콘텐츠](use-cases/tracking-scenarios/live-main-content.md)
          + [순차적 추적을 사용하는 라이브 주요 콘텐츠](use-cases/tracking-scenarios/live-sequential.md)

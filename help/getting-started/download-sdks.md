@@ -5,20 +5,18 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 98%
+source-wordcount: '366'
+ht-degree: 90%
 
 ---
 
 # Media SDK, 태그를 사용한 확장 기능 및 OTT SDK 가져오기 {#download-sdks}
 
-이 페이지의 정보에는 최신 Media SDK를 다운로드하고 미디어 확장 기능을 가져올 수 있는 링크가 포함되어 있습니다.
+이 페이지의 정보에는 현재 Media SDK를 다운로드하고 태그를 사용하는 미디어 확장을 가져오는 링크가 포함되어 있습니다.
 
-이 페이지의 정보에는 최신 Media SDK를 다운로드하고 태그가 포함된 미디어 확장 기능을 얻을 수 있는 링크가 포함되어 있습니다.
-
-Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 및 모바일 SDK 관리 기능입니다. 태그는 관련 고객 경험을 향상하는 데 필요한 분석, 마케팅 및 광고 솔루션을 배포하고 관리하는 간단한 방법을 제공합니다. 태그에 대한 자세한 내용은 [태그 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ko)를 참조하십시오.
+Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 및 모바일 SDK 관리 기능입니다. 태그는 관련 고객 경험을 향상하는 데 필요한 분석, 마케팅 및 광고 솔루션을 배포하고 관리하는 간단한 방법을 제공합니다. 태그에 대한 자세한 내용은 [태그 개요](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ko).
 
 
 >[!NOTE]
