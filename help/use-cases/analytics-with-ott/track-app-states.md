@@ -1,14 +1,14 @@
 ---
 title: 앱 상태 추적
-description: 앱 상태는 애플리케이션의 다양한 화면 또는 보기입니다. trackState 호출을 사용하여 애플리케이션에서 앱 상태를 추적하는 방법을 알아봅니다.
+description: 앱 상태는 애플리케이션의 다양한 화면 또는 보기입니다. trackState 호출을 사용하여 애플리케이션에서 앱 상태를 추적하는 방법에 대해 알아봅니다.
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
