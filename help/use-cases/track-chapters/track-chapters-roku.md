@@ -1,14 +1,14 @@
 ---
-title: Roku에서 장 및 세그먼트를 추적하는 방법 알아보기
-description: Roku에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
+title: Roku에서 챕터 및 세그먼트를 추적하는 방법에 대해 알아보기
+description: Roku에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
