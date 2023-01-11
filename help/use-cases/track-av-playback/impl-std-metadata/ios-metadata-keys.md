@@ -6,9 +6,9 @@ exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 90%
 | `ADBVideoMetadataKeySHOW_TYPE` | 표시 유형 | 비디오 |
 | `ADBVideoMetadataKeyAD_LOAD` | 광고 로드 | 비디오 |
 | `ADBVideoMetadataKeyMVPD` | mvpd | 비디오 |
-| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | 비디오 |
+| `ADBVideoMetadataKeyAUTHORIZED` | 인증 | 비디오 |
 | `ADBVideoMetadataKeyDAY_PART` | 방송 시간대 | 비디오 |
 | `ADBVideoMetadataKeyFEED` | 피드 | 비디오 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 스트림 형식 | 비디오 |
