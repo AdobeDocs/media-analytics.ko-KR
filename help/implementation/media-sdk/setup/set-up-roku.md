@@ -6,9 +6,9 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 82%
 
 ## 사전 요구 사항 {#roku-prerequisites}
 
-* **Media Analytics에 대한 올바른 구성 매개 변수 가져오기**
+* **미디어 분석에 대한 유효한 구성 매개 변수 얻기**
 
-   이러한 매개 변수는 Media Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
-* **미디어 플레이어에 다음 API 포함**
+   이러한 매개 변수는 미디어 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
+* **미디어 플레이어에서 다음 API 포함**
 
    * _플레이어 이벤트에 가입할 API_ - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * _플레이어 정보를 제공하는 API_ - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
-Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작성된 Roku 애플리케이션을 측정하고, 대상 관리를 통해 대상 데이터를 사용 및 수집하고, 비디오 이벤트를 통해 비디오 참여를 측정할 수 있습니다.
+Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작성된 Roku 애플리케이션을 측정하고, 대상자를 통해 대상 데이터를 사용 및 수집하고, 비디오 이벤트를 통해 비디오 참여를 측정할 수 있습니다.
 
-## 모바일 라이브러리/SDK 구현
+## 모바일 라이브러리 / SDK 구현
 
 1. [다운로드한](/help/getting-started/download-sdks.md) Roku 라이브러리를 프로젝트에 추가합니다.
 
@@ -37,7 +37,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
       * `ADBMobileConfig.json`: 앱에 맞게 사용자 지정된 SDK 구성 파일입니다.
    1. 라이브러리 파일 및 json 구성 파일을 프로젝트 소스에 추가합니다.
 
-      Adobe Mobile을 구성하는 데 사용되는 JSON에는 라는 미디어 분석에 대한 배타 키가 있습니다. `mediaHeartbeat`. 여기에서 Media Analytics에 대한 구성 매개 변수가 속합니다.
+      Adobe Mobile을 구성하는 데 사용되는 JSON에는 `mediaHeartbeat`라는 미디어 분석에 대한 배타 키가 있습니다. 여기에 미디어 분석에 대한 구성 매개 변수가 속해 있습니다.
 
       >[!TIP]
       >
@@ -88,9 +88,9 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
       | 구성 매개 변수 | 설명     |
       | --- | --- |
-      | `server` | 백엔드에 대한 추적 끝점의 URL을 나타내는 문자열입니다. |
-      | `publisher` | 컨텐츠 게시자 고유 식별자를 나타내는 문자열입니다. |
-      | `channel` | 컨텐츠 배포 채널의 이름을 나타내는 문자열입니다. |
+      | `server` | 백엔드에 대한 추적 엔드포인트의 URL을 나타내는 문자열입니다. |
+      | `publisher` | 콘텐츠 게시자 고유 식별자를 나타내는 문자열입니다. |
+      | `channel` | 콘텐츠 배포 채널의 이름을 나타내는 문자열입니다. |
       | `ssl` | 추적 호출에 SSL을 사용해야 하는지 여부를 나타내는 부울입니다. |
       | `ovp` | 비디오 플레이어 공급자의 이름을 나타내는 문자열입니다. |
       | `sdkversion` | 앱/SDK의 현재 버전을 나타내는 문자열입니다. |
@@ -103,7 +103,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
 1. Experience Cloud 방문자 ID를 구성합니다.
 
-   Experience Cloud 방문자 ID 서비스는 Experience Cloud 솔루션에 관계없이 유니버설 방문자 ID를 제공합니다. 방문자 ID 서비스는 비디오 이벤트 및 기타 Marketing Cloud 통합에 필요합니다.
+   Experience Cloud 방문자 ID 서비스는 Experience Cloud 솔루션에 관계없이 유니버설 방문자 ID를 제공합니다. 방문자 ID 서비스는 비디오 이벤트 및 다른 Marketing Cloud 통합에 필요합니다.
 
    `ADBMobileConfig` 구성에 `marketingCloud` 조직 ID가 포함되어 있는지 확인합니다.
 
@@ -117,7 +117,7 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
 
    >[!IMPORTANT]
    >
-   >`@AdobeOrg`를 포함해야 합니다. 
+   >`@AdobeOrg`를 포함해야 합니다.
 
    구성이 완료되면 Experience Cloud 방문자 ID가 생성되고, 모든 히트 수에 포함됩니다. 각 히트 수와 함께 `custom` 및 `automatically-generated` 같은 다른 방문자 ID는 계속 전송됩니다.
 
