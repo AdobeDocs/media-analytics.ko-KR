@@ -1,14 +1,14 @@
 ---
-title: 오류 추적 설명
-description: Media SDK를 사용하여 오류 추적을 자세히 살펴보십시오.
+title: 추적 오류 설명
+description: Media SDK를 사용하여 오류 추적에 대해 자세히 알아봅니다.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
