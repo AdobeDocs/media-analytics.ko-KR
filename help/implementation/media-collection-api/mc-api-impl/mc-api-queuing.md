@@ -1,14 +1,14 @@
 ---
 title: 세션 응답이 느린 경우 큐에 이벤트 저장
-description: 플레이어가 이벤트를 실행한 후 세션 ID가 반환될 때 수행할 작업을 알아봅니다.
+description: 플레이어에서 이벤트를 실행한 후 세션 ID가 반환될 때 수행할 작업에 대해 알아봅니다.
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
