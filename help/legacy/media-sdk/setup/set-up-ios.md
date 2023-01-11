@@ -6,30 +6,30 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # iOS 설정{#set-up-ios}
 
-iOS 디바이스용 스트리밍 미디어 분석을 설정하는 방법에 대해 알아봅니다.
+iOS 디바이스를 위한 스트리밍 미디어용 Analytics을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
 >2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
-## 전제 조건
+## 사전 요구 사항
 
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **애플리케이션에 iOS용 ADBMobile 구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=ko-KR)를 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)를 참조하십시오.
 
    >[!IMPORTANT]
    >
-   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=ko-KR)을 참조하십시오.
+   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
@@ -47,7 +47,7 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 * 바이너리 라이브러리 파일이 언급될 때마다 대신 해당 XCFramework 대체 파일을 사용해야 합니다.
    * MediaSDK.a > MediaSDK.xcframework
    * MediaSDK_TV.a > MediaSDKTV.xcframework
-* Adobe XCFrameworks를 프로젝트에 수동으로 추가하는 경우 XCFrameworks가 포함되지 않았는지 확인합니다.
+* Adobe XCFrameworks를 프로젝트에 수동으로 추가하는 경우 XCFrameworks가 임베드되지 않았는지 확인합니다.
 
 1. [다운로드한](/help/getting-started/download-sdks.md) Media SDK를 프로젝트에 추가합니다.
 
@@ -161,7 +161,7 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
 버전 2.x에서 모든 공개 메서드는 개발자가 쉽게 만들 수 있도록 `ADBMediaHeartbeat` 클래스에 통합되어 있습니다. 모든 구성은 `ADBMediaHeartbeatConfig` 클래스에 통합되었습니다.
 
-1.x에서 2.x로 마이그레이션에 대한 자세한 내용은 이전 구현 설명서를 참조하십시오.)
+1.x에서 2.x로의 마이그레이션에 대한 자세한 내용은 이전 구현 설명서를 참조하십시오.
 
 ## tvOS용 기본 앱 구성
 
