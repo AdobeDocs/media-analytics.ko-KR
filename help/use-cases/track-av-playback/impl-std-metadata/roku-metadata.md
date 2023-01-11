@@ -1,14 +1,14 @@
 ---
 title: Roku 메타데이터 키 설명
-description: 사용 가능한 Roku 메타데이터 키에 대해 알아보고 표준 메타데이터 상수의 전체 목록을 확인합니다.
+description: 사용 가능한 Roku 메타데이터 키에 대해 알아보고 표준 메타데이터 상수의 전체 목록을 봅니다.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -76,9 +76,9 @@ ht-degree: 95%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 메타데이터를 `MediaInfo` `trackLoad`에서 설정할 상수 |
 | `MEDIA_STANDARD_AD_METADATA` | 광고 메타데이터를 `EventData` `trackEvent`에서 설정할 상수 |
-| `MEDIA_RESUMED` | 비디오가 재개된 하트비트를 전송하기 위한 상수입니다. 이전에 중지된 컨텐츠의 비디오 추적을 재개하려면 `mediaTrackLoad`를 호출할 때 `mediaInfo` 개체에 대해 `MEDIA_RESUMED` 속성을 설정해야 합니다. (`MEDIA_RESUMED`는 `mediaTrackEvent` API를 사용하여 추적할 수 있는 이벤트가 아닙니다.) `MEDIA_RESUMED`는 사용자가 시청을 중단했지만 현재 시청을 재개하려는 컨텐츠를 애플리케이션이 계속 추적하려는 경우 true로 설정해야 합니다. <br/><br/>예를 들어, 사용자가 컨텐츠의 30%를 시청한 다음 앱을 닫는다고 가정합니다. 이 경우 세션이 종료됩니다. 나중에 동일한 사용자가 동일한 컨텐츠로 돌아갔을 때 애플리케이션에서 사용자가 중지된 동일한 지점에서 다시 시작할 수 있도록 허용하는 경우 `MEDIA_RESUMED` API를 호출하는 동안에는 애플리케이션에서 `mediaTrackLoad`를 &quot;참&quot;으로 설정해야 합니다. 결국 동일한 비디오 컨텐츠에 대해 서로 다른 두 개의 미디어 세션을 함께 연결할 수 있습니다. 다음은 구현 예제입니다. <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>이렇게 하면 비디오에 대한 새 세션이 생성되지만, SDK가 이벤트 유형이 &quot;이력서&quot;인 하트비트 요청을 전송하게 됩니다. 이 이벤트 유형은 두 개의 서로 다른 미디어 세션을 함께 연결하여 보고하는 데 사용할 수 있습니다. |
+| `MEDIA_RESUMED` | 비디오가 재개된 하트비트를 전송하기 위한 상수입니다. 이전에 중지된 콘텐츠의 비디오 추적을 재개하려면 `mediaTrackLoad`를 호출할 때 `mediaInfo` 개체에 대해 `MEDIA_RESUMED` 속성을 설정해야 합니다. (`MEDIA_RESUMED`는 `mediaTrackEvent` API를 사용하여 추적할 수 있는 이벤트가 아닙니다.) `MEDIA_RESUMED`는 사용자가 시청을 중단했지만 현재 시청을 재개하려는 콘텐츠를 애플리케이션이 계속 추적하려는 경우 true로 설정해야 합니다. <br/><br/>예를 들어, 사용자가 콘텐츠의 30%를 시청한 다음 앱을 닫는다고 가정합니다. 이 경우 세션이 종료됩니다. 나중에 동일한 사용자가 동일한 콘텐츠로 돌아갔을 때 애플리케이션에서 사용자가 중지된 동일한 지점에서 다시 시작할 수 있도록 허용하는 경우 `MEDIA_RESUMED` API를 호출하는 동안에는 애플리케이션에서 `mediaTrackLoad`를 &quot;참&quot;으로 설정해야 합니다. 결국 동일한 비디오 콘텐츠에 대해 서로 다른 두 개의 미디어 세션을 함께 연결할 수 있습니다. 다음은 구현 예제입니다. <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>이렇게 하면 비디오에 대한 새 세션이 생성되지만, SDK가 이벤트 유형이 “이력서”인 하트비트 요청을 전송하게 됩니다. 이 이벤트 유형은 두 개의 서로 다른 미디어 세션을 함께 연결하여 보고하는 데 사용할 수 있습니다. |
 
-### 컨텐츠 유형 상수
+### 콘텐츠 유형 상수
 
 | 상수 | 설명   |
 |---|---|
