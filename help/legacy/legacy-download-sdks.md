@@ -1,34 +1,34 @@
 ---
-title: 레거시 - Media SDK에 대한 액세스 링크
-description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 이전 SDK 다운로드 링크입니다.
+title: 레거시 - Media SDK 링크에 액세스
+description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 레거시 SDK 다운로드 링크입니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d1066f05-f46f-46fa-897f-039657704d05
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
+# 레거시 — SDK 다운로드{#legacy-download-sdks}
 
-# 기존 — SDK 다운로드{#legacy-download-sdks}
+이 페이지의 정보에는 **이전** 2.x Media SDK 및 1.x 이전 Media SDK를 다운로드할 수 있는 링크가 포함되어 있습니다.
 
-이 페이지의 정보에는 **이전**  2.x Media SDK 및 1.x 레거시 Media SDK입니다.
+**최신** SDK 다운로드에 대한 자세한 내용은 [SDK 다운로드](/help/getting-started/download-sdks.md)를 참조하십시오.
 
-다운로드에 대한 자세한 정보 **현재** SDK는 [SDK 다운로드](/help/getting-started/download-sdks.md).
+지원 종료에 대한 중요한 정보는 [지원 종료 FAQ ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
-지원 종료에 대한 중요한 정보는 [지원 종료 FAQ](/help/additional-resources/end-of-support-faqs.md).
+## Streaming Media 및 Adobe Media Analytics 확장
 
-## 스트리밍 미디어 및 Adobe Medium Analytics 확장
+Adobe Media Analytics 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
-Adobe Medium 분석 확장은 오디오 및 비디오용 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
-
-Media Analytics 확장을 사용하는 Adobe 데이터 수집에는 다음 요구 사항이 있습니다.
+미디어 분석 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* 를 구성해야 합니다 [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
-* 를 구성해야 합니다 [Adobe Medium Analytics for Audio 및 Video Launch 확장](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics).
-* 를 구성해야 합니다 [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
+* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구성해야 합니다.
+* [오디오 및 비디오용 Adobe Media Analytics 시작 확장](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)을 구성해야 합니다.
+* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)을 구성해야 합니다.
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
 
