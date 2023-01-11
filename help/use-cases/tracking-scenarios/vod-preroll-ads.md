@@ -1,33 +1,33 @@
 ---
-title: "프리롤 광고가 있는 VOD 재생"
-description: "Media SDK를 사용하여 프리롤 광고가 포함된 VOD 컨텐츠를 추적하는 방법의 예를 봅니다."
+title: “프리롤 광고가 있는 VOD 재생”
+description: “Media SDK를 사용하여 프리롤 광고가 포함된 VOD 콘텐츠를 추적하는 방법의 예를 봅니다.”
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 프리롤 광고가 있는 VOD 재생{#vod-playback-with-pre-roll-ads}
 
-이 시나리오에서는 주 컨텐츠 앞에 프리롤 광고가 삽입되었습니다. 명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출은 동시에 발생하지만 페이로드가 다릅니다.
+이 시나리오에서는 주 콘텐츠 앞에 프리롤 광고가 삽입되었습니다. 명시하지 않은 경우, 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출은 동시에 발생하지만 페이로드가 다릅니다.
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 모르므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 콘텐츠 시작, 하트비트 콘텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 모르므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 광고가 시작됨. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 광고 시작, 하트비트 광고 시작 |  |
-| 광고 1의 프레임이 재생됨. | `trackPlay` | 하트비트 광고 재생 | 광고 컨텐츠는 기본 컨텐츠 전에 재생되며 광고가 시작될 때 하트비트가 시작됩니다. |
+| 광고 1의 프레임이 재생됨. | `trackPlay` | 하트비트 광고 재생 | 광고 콘텐츠는 기본 콘텐츠 전에 재생되며 광고가 시작될 때 하트비트가 시작됩니다. |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
 | 광고 2 재생이 완료됨. | `trackEvent:trackAdComplete` | 하트비트 광고 완료 | 광고 끝에 도달했습니다. |
 | 광고 2의 첫 번째 프레임이 재생됨. | `trackEvent:AdStart` | Analytics 광고 시작, 하트비트 광고 시작 |  |
 | 광고가 재생됨. |  | 광고 하트비트 |  |
 | 광고 2 재생이 완료됨. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 하트비트 광고 완료 | 광고와 pod의 끝에 도달했습니다. |
-| 컨텐츠가 재생됨. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 재생됨. |  | 콘텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 완료됨. | `trackComplete` | 하트비트 콘텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 매개 변수 {#parameters}
@@ -50,7 +50,7 @@ ht-degree: 95%
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-이러한 매개 변수는 `Content Heartbeats` 호출과 유사하지만, `Ad Heartbeats` 호출에는 몇 가지 추가 매개 변수가 포함됩니다. 
+이러한 매개 변수는 `Content Heartbeats` 호출과 유사하지만, `Ad Heartbeats` 호출에는 몇 가지 추가 매개 변수가 포함됩니다.
 
 ### 광고 하트비트
 
@@ -61,7 +61,7 @@ ht-degree: 95%
 | `s:asset:ad_id` | &lt;광고 ID> |  |
 | `s:asset:pod_id` | &lt;광고 pod ID> |  |
 
-광고 재생이 `Heartbeat Content Complete` 호출과 마찬가지로 완료되고 플레이헤드의 끝에 도달하면 `Heartbeat Ad Complete` 호출이 전송됩니다. 이 호출은 다른 `Heartbeat Ad` 호출과 비슷하게 보이지만 다음 두 가지 특정 항목을 포함합니다. 
+광고 재생이 `Heartbeat Content Complete` 호출과 마찬가지로 완료되고 플레이헤드의 끝에 도달하면 `Heartbeat Ad Complete` 호출이 전송됩니다. 이 호출은 다른 `Heartbeat Ad` 호출과 비슷하게 보이지만 다음 두 가지 특정 항목을 포함합니다.
 
 ### 하트비트 광고 완료 호출
 
@@ -72,7 +72,7 @@ ht-degree: 95%
 
 ## 프리롤 광고 브레이크용 샘플 코드 {#sample-code-for-a-pre-roll-ad-break}
 
-이 시나리오에서 VOD는 첫 번째 프리롤 광고, 두 번째 프리롤 광고로 구성된 다음 컨텐츠가 재생됩니다.
+이 시나리오에서 VOD는 첫 번째 프리롤 광고, 두 번째 프리롤 광고로 구성된 다음 콘텐츠가 재생됩니다.
 
 ![](assets/preroll-regular-playback.png)
 
@@ -382,7 +382,7 @@ ht-degree: 95%
 
 ## 여러 광고 브레이크용 샘플 코드 {#sample-code-for-multiple-ad-breaks}
 
-이 시나리오에서 VOD 컨텐츠는 프리롤 광고, 컨텐츠, 미드롤 광고, 컨텐츠 및 포스트롤 광고로 재생됩니다.
+이 시나리오에서 VOD 콘텐츠는 프리롤 광고, 콘텐츠, 미드롤 광고, 콘텐츠 및 포스트롤 광고로 재생됩니다.
 
 ![](assets/ad-content-regular-playback.png)
 
