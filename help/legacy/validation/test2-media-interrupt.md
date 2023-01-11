@@ -1,14 +1,14 @@
 ---
 title: 테스트 2 미디어 중단
-description: 유효성 검사에 사용된 미디어 중단 테스트에 대해 알아봅니다.
+description: 유효성 검사에 사용되는 미디어 중단 테스트에 대해 알아봅니다.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 89%
 
    위에서 세 번째 호출은 Media SDK가 Adobe Analytics 시작 호출(`pev2=ms_s`)을 Adobe Analytics 서버로 전송하도록 요청했음을 Media Analytics 서버에 알려줍니다.
 
-1. **적어도 5분 동안 중단되지 않은 상태로 기본 컨텐츠 재생**
+1. **적어도 5분 동안 중단되지 않은 상태로 기본 콘텐츠 재생**
 
-   **컨텐츠 재생**
+   **콘텐츠 재생**
 
-   컨텐츠를 재생하는 동안 Media SDK는 10초마다 재생 호출(하트비트)을 Media Analytics 서버로 전송합니다.
+   콘텐츠를 재생하는 동안 Media SDK는 10초마다 재생 호출(하트비트)을 Media Analytics 서버로 전송합니다.
 
    호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/legacy/validation/test-call-details.md#play-main-content)을 참조하십시오.
 
-   플랫폼의 [광고 추적](/help/use-cases/track-ads/track-ads-overview.md) 이러한 광고 호출에 대한 추가 정보를 위한 지침.
+   이러한 광고 호출에 대한 추가 정보가 필요하면 플랫폼의 [광고 추적](/help/use-cases/track-ads/track-ads-overview.md) 지침을 참조하십시오.
 
 1. **앱 또는 브라우저를 백그라운드로 이동**
 
@@ -48,9 +48,9 @@ ht-degree: 89%
 
 1. **앱 또는 브라우저를 전경으로 다시 가져오기**
 
-   백그라운드에서 돌아올 때 컨텐츠 재생이 재개되어야 합니다.
+   백그라운드에서 돌아올 때 콘텐츠 재생이 재개되어야 합니다.
 
-1. **적어도 5분 동안 중단되지 않은 상태로 기본 컨텐츠 미디어 재생**
+1. **적어도 5분 동안 중단되지 않은 상태로 기본 콘텐츠 미디어 재생**
 
    호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/legacy/validation/test-call-details.md#play-main-content)을 참조하십시오.
 
