@@ -1,14 +1,14 @@
 ---
-title: VOD 재생 1장
-description: 한 장이 포함된 VOD 재생 추적의 예를 봅니다.
+title: 한 개의 챕터가 있는 VOD 재생
+description: 한 개의 챕터가 포함된 VOD 재생 추적의 예를 봅니다.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 ## 시나리오 {#scenario}
 
-이 시나리오에서는 VOD 컨텐츠 부분이 챕터로 표시됩니다.
+이 시나리오에서는 VOD 콘텐츠 부분이 챕터로 표시됩니다.
 
 명시하지 않은 경우, 이 시나리오의 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오의 호출과 동일합니다. 네트워크 호출이 동시에 발생하지만 페이로드가 다릅니다.
 
@@ -24,11 +24,11 @@ ht-degree: 96%
 |---|---|---|---|
 | 사용자가 **[!UICONTROL 재생]** 클릭 | `trackSessionStart` | Analytics 콘텐츠 시작, 하트비트 콘텐츠 시작 | 아직 측정 라이브러리에 프리롤 광고가 있다는 사실을 알리지 않았으므로 이러한 네트워크 호출은 아직 단일 VoD와 동일합니다. |
 | 챕터가 시작됨. | `trackEvent:ChapterStart` | 하트비트 챕터 시작 |  |
-| 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠 전에 재생되면 챕터가 시작될 때 하트비트가 시작됩니다. |
+| 챕터의 첫 번째 프레임이 재생됨. | `trackPlay` | 하트비트 콘텐츠 재생 | 챕터 콘텐츠가 주 콘텐츠 전에 재생되면 챕터가 시작될 때 하트비트가 시작됩니다. |
 | 챕터가 재생됩니다. |  | 챕터 하트비트 |  |
 | 챕터가 완료됨. | `trackEvent:trackChapterComplete` | 하트비트 챕터 완료 | 챕터의 끝에 도달하는 때입니다. |
-| 컨텐츠가 재생됩니다. |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 컨텐츠가 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 재생됩니다. |  | 콘텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 완료됨. | `trackComplete` | 하트비트 콘텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 끝에 도달했음을 의미합니다. 이 API는 사용자가 미디어를 끝까지 시청하지 않은 경우에도 호출해야 합니다. |
 
 ## 매개 변수 {#parameters}
@@ -48,7 +48,7 @@ ht-degree: 96%
 
 ## 샘플 코드, 가운데 챕터 {#sample-code-chapter-in-the-middle}
 
-이 시나리오에서는 VOD 컨텐츠의 일부가 챕터입니다.
+이 시나리오에서는 VOD 콘텐츠의 일부가 챕터입니다.
 
 ![](assets/chapter-regular-playback.png)
 
@@ -260,7 +260,7 @@ this._mediaHeartbeat.trackSessionEnd();
 
 ## 샘플 코드, 시작 부분의 챕터 {#sample-code-chapter-at-the-beginning}
 
-이 시나리오에서 VOD 컨텐츠는 재생 시작 부분의 한 개의 챕터로 재생됩니다.
+이 시나리오에서 VOD 콘텐츠는 재생 시작 부분의 한 개의 챕터로 재생됩니다.
 
 ![](assets/pre-chapter-regular.png)
 
