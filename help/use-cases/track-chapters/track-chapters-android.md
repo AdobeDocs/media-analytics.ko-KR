@@ -1,14 +1,14 @@
 ---
-title: Android에서 장 및 세그먼트를 추적하는 방법 알아보기
-description: Android에서 Media SDK를 사용하여 장 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
+title: Android에서 챕터 및 세그먼트를 추적하는 방법에 대해 알아보기
+description: Android에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 88%
    }
    ```
 
-1. 재생이 챕터 종료 경계에 도달하면 사용자 지정 코드에서 정의한 대로 인스턴스에서 `ChapterComplete` 이벤트를 호출합니다:`MediaHeartbeat`
+1. 재생이 챕터 종료 경계에 도달하면 사용자 지정 코드에서 정의한 대로 인스턴스에서 `ChapterComplete` 이벤트를 호출합니다.`MediaHeartbeat`
 
    ```java
    public void onChapterComplete(Observable observable, Object data) {  
@@ -75,7 +75,7 @@ ht-degree: 88%
    }
    ```
 
-1. 사용자가 챕터를 건너뛰도록 선택했기 때문에(예: 사용자가 챕터 경계를 찾는 경우) 챕터 재생이 완료되지 않은 경우 MediaHeartbeat 인스턴스에서 `ChapterSkip` 이벤트를 호출합니다:
+1. 사용자가 챕터를 건너뛰도록 선택했기 때문에(예: 사용자가 챕터 경계를 찾는 경우) 챕터 재생이 완료되지 않은 경우 MediaHeartbeat 인스턴스에서 `ChapterSkip` 이벤트를 호출합니다.
 
    ```java
    public void onChapterSkip(Observable observable, Object data) {  
