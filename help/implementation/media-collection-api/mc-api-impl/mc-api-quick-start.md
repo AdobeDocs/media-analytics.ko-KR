@@ -1,14 +1,14 @@
 ---
-title: "스트리밍 미디어 컬렉션 API - 빠른 시작"
-description: 스트리밍 미디어 API를 시작합니다. 요청 데이터를 신속하게 확인하는 방법을 알아봅니다.
+title: “스트리밍 미디어 컬렉션 API - 빠른 시작”
+description: Streaming Media API를 시작합니다. 요청 데이터를 빠르게 확인하는 방법에 대해 알아봅니다.
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 92%
    >
    >JSON 요청 본문에 올바른 데이터 유형을 사용해야 합니다. 예: `analytics.enableSSL`에는 부울을 사용하고, `media.length`에는 숫자를 사용해야 합니다. 매개 변수 유형과 필수 및 옵션 요구 사항을 [JSON 유효성 검사 스키마](mc-api-validate-reqs.md)를 확인하여 확인할 수 있습니다.
 
-1. MA Collection API 끝점에 세션 요청을 보냅니다. 요청 페이로드가 올바르지 않은 경우 문제를 식별하고 `201 Created` 응답이 나타날 때까지 재시도합니다. 이 `curl` 예제에서 JSON 요청 본문은 `sample_data_session` 파일에 있습니다.
+1. MA Collection API 엔드포인트에 세션 요청을 보냅니다. 요청 페이로드가 올바르지 않은 경우 문제를 식별하고 `201 Created` 응답이 나타날 때까지 재시도합니다. 이 `curl` 예제에서 JSON 요청 본문은 `sample_data_session` 파일에 있습니다.
 
    ```sh
    $ curl -i -d \
