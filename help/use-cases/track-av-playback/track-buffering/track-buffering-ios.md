@@ -1,14 +1,14 @@
 ---
-title: iOS에서 버퍼링을 추적하는 방법 알아보기
-description: iOS에서 버퍼링 이벤트를 추적하는 방법을 알아봅니다.
+title: iOS에서 버퍼링을 추적하는 방법에 대해 알아보기
+description: iOS에서 버퍼링 이벤트를 추적하는 방법에 대해 알아보십시오.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
