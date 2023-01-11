@@ -1,20 +1,20 @@
 ---
 title: 마이그레이션 개요
-description: Media SDK 1.x에서 2.x 버전으로 마이그레이션하는 방법에 대해 알아봅니다.
+description: 1.x에서 2.x 버전의 Media SDK로 마이그레이션하는 방법에 대해 알아봅니다.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# VHL 1.x에서 VHL 2.x로 이전 마이그레이션 개요 {#migration-overview}
+# VHL 1.x에서 VHL 2.x로의 이전 마이그레이션 개요 {#migration-overview}
 
-VHL 1.x에서 VHL 2.x로 마이그레이션은 초기화, 구성 및 플레이어 대리자를 위한 간소화된 API를 제공하는 새로운 버전을 사용하여 간단합니다.
+VHL 1.x에서 VHL 2.x로 마이그레이션하는 방법은 간단합니다. 새 버전이 초기화, 구성 및 플레이어 위임에 단순화된 API 기능을 제공하기 때문입니다
 
 다음은 1.x와 2.x의 주요 차이점입니다.
 
