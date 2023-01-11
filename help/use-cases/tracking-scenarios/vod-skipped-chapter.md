@@ -1,14 +1,14 @@
 ---
-title: 장을 건너뛰고 VOD 재생
-description: Media SDK를 사용하여 사용자가 장을 건너뛴 VOD 컨텐츠를 추적하는 방법의 예를 봅니다.
+title: 건너뛴 챕터가 있는 VOD 재생
+description: Media SDK를 사용하여 사용자가 챕터를 건너뛴 VOD 콘텐츠를 추적하는 방법의 예를 봅니다.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 91%
 
 ## 시나리오 {#scenario}
 
-이 시나리오에서는 사용자가 주 컨텐츠의 챕터를 건너뜁니다.
+이 시나리오에서는 사용자가 주 콘텐츠의 챕터를 건너뜁니다.
 
-이 시나리오는 사용자가 챕터를 찾으려고 하므로 건너뛰고 주 컨텐츠로 이동한다는 것을 제외하면 [한 개의 챕터가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-one-chapter.md) 시나리오와 동일합니다.
+이 시나리오는 사용자가 챕터를 찾으려고 하므로 건너뛰고 주 콘텐츠로 이동한다는 것을 제외하면 [한 개의 챕터가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-one-chapter.md) 시나리오와 동일합니다.
 
 | 트리거 | 하트비트 메서드 | 네트워크 호출   | 참고 |
 |---|---|---|---|
 | 사용자가 **[!UICONTROL 재생]** 클릭 | `trackSessionStart` | Analytics 콘텐츠 시작, 하트비트 콘텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있다는 것을 인식하지 못합니다. 이러한 네트워크 호출은 [iOS에서 중단 없이 재생](vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 챕터가 시작됨. | `trackEvent:ChapterStart` | 하트비트 챕터 시작 |  |
-| 챕터의 첫 번째 프레임이 재생됩니다. | `trackPlay` | 하트비트 챕터 재생 | 챕터 컨텐츠가 주 컨텐츠 전에 재생되면 챕터가 시작될 때 하트비트를 시작하려고 합니다. |
+| 챕터의 첫 번째 프레임이 재생됩니다. | `trackPlay` | 하트비트 챕터 재생 | 챕터 콘텐츠가 주 콘텐츠 전에 재생되면 챕터가 시작될 때 하트비트를 시작하려고 합니다. |
 | 챕터가 재생됩니다. |  | 챕터 하트비트 |  |
 | 찾기는 첫 번째 챕터를 건너뛰기 시작합니다. | `trackEvent:trackSeekStart` |  | 찾는 동안 하트비트 없음 |
 | 찾기가 완료되었습니다. | `trackEvent:trackSeekComplete` |  | 하트비트가 이 게시를 다시 시작합니다. |
 | 애플리케이션은 사용자가 일반 챕터 경계서 찾은 것을 인식합니다. | `trackEvent:trackChapterSkip` |  |  |
-| 컨텐츠가 재생됩니다. |  | 컨텐츠 하트비트 |  |
-| 컨텐츠 재생이 완료됨. | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [iOS에서 중단 없이 재생](vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 재생됩니다. |  | 콘텐츠 하트비트 |  |
+| 콘텐츠 재생이 완료됨. | `trackComplete` | 하트비트 콘텐츠 완료 | 이 네트워크 호출은 [iOS에서 중단 없이 재생](vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd` |  | `SessionEnd`는 보고 있는 세션의 종료를 의미합니다. 이 API는 사용자가 미디어를 끝까지 시청하지 않은 경우에도 호출해야 합니다. |
 
 ## 매개 변수 {#parameters}
 
-챕터 재생 중에 사용된 매개 변수는 챕터 전체 네트워크 호출이 없다는 점을 제외하고 ](/help/use-cases/tracking-scenarios/vod-one-chapter.md)한 개의 챕터가 있는 VOD 재생[ 시나리오의 매개 변수와 동일합니다.
+챕터 재생 중에 사용된 매개 변수는 챕터 전체 네트워크 호출이 없다는 점을 제외하고 [한 개의 챕터가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-one-chapter.md) 시나리오의 매개 변수와 동일합니다.
 
 ## 샘플 코드 {#sample-code}
 
