@@ -6,9 +6,9 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 84%
 
 ## 일반 구현 지침 {#general-implementation-guidelines}
 
-Adobe 스트리밍 미디어 추적에 사용되는 세 가지 기본 SDK 구성 요소가 있습니다.
-* 미디어 하트비트 구성 - `MediaHeartbeatConfig` 보고를 위한 기본 설정을 포함합니다.
-* 미디어 하트비트 위임 - `MediaHeartbeatDelegate` 재생 시간 및 QoS 개체를 제어합니다.
-* 미디어 하트비트 - `MediaHeartbeat` 는 멤버와 메서드가 포함된 기본 라이브러리입니다.
+Adobe Streaming Media 추적에 사용되는 세 가지 주요 SDK 구성 요소는 다음과 같습니다.
+* 미디어 하트비트 구성 - `MediaHeartbeatConfig`에는 보고할 기본 설정이 포함되어 있습니다.
+* 미디어 하트비트 위임 - `MediaHeartbeatDelegate`는 재생 시간 및 QoS 개체를 제어합니다.
+* 미디어 하트비트 - `MediaHeartbeat`는 구성원 및 메서드가 포함된 기본 라이브러리입니다.
 
-## 스트리밍 미디어 SDK 구현
+## Streaming Media SDK 구현
 
-스트리밍 미디어 SDK를 설정하고 사용하려면 다음 구현 단계를 완료하십시오.
+Streaming Media SDK를 설정하고 사용하려면 다음 구현 단계를 완료합니다.
 
-1. 만들기 `MediaHeartbeatConfig` 를 인스턴스화하고 구성 매개 변수 값을 설정합니다.
+1. `MediaHeartbeatConfig` 인스턴스를 생성하고 매개 변수 값을 구성합니다.
 
    |  변수 이름  | 설명  | 필수 여부 |  기본값  |
    |---|---|:---:|---|
