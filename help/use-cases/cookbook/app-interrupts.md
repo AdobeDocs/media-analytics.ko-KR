@@ -1,20 +1,20 @@
 ---
 title: 재생 중 애플리케이션 중단 처리
-description: 미디어를 재생하는 동안 추적을 중단하는 방법을 알아봅니다.
+description: 미디어를 재생하는 동안 추적을 중단하는 방법에 대해 알아봅니다.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # 재생 중 애플리케이션 중단 처리{#handling-application-interrupts-during-playback}
 
-미디어 애플리케이션에서의 재생은 다양한 방법으로 중단될 수 있습니다. 예를 들어 사용자가 일시 정지를 명시적으로 누르거나 사용자가 애플리케이션을 배경에 넣을 수 있습니다. 미디어 재생이 중단되는 원인에 관계없이 추적 지침은 동일합니다.
+미디어 application의 재생은 다양한 방법으로 중단될 수 있습니다. 예를 들어 사용자는 명시적으로 일시 정지를 누르거나 애플리케이션을 백그라운드로 전환할 수 있습니다. 미디어 재생이 중단되는 원인에 관계없이 추적 지침은 다음과 같습니다.
 
 1. 애플리케이션이 중단(배경으로 이동, 미디어 일시 중지 등)되면 **`trackPause`**&#x200B;를 호출합니다.
 1. 애플리케이션이 전경으로 돌아가거나 미디어가 재생을 재개하면 **`trackPlay`**&#x200B;를 호출합니다.
@@ -33,6 +33,6 @@ ht-degree: 75%
 
    애플리케이션이 `trackSessionEnd`를 호출하여 추적 세션을 종료해야 합니다. 버전 2.1부터 SDK는 &quot;end&quot; ping을 전송하여 추적 세션이 닫혔음을 백엔드에 알립니다.
 
-* _동일한 세션을 다시 시작하는 것은 어떻습니까?_ 
+* _동일한 세션을 다시 시작하는 것은 어떻습니까?_
 
-   추적 세션 재개에 대한 자세한 내용은 [비활성 세션 다시 시작](resuming-inactive.md).SDK가 재개 ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
+   추적 세션 재개에 대한 자세한 내용은 [비활성 세션 재개](resuming-inactive.md)를 참조하십시오. SDK는 재개 Ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
