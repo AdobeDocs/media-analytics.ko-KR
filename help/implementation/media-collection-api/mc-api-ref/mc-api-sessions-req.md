@@ -1,14 +1,14 @@
 ---
-title: 스트리밍 미디어 컬렉션 API — 세션 요청 끝점
-description: "Media Collection API 세션 요청 끝점 매개 변수 및 응답이란 무엇입니까?"
+title: 스트리밍 미디어 컬렉션 API - 세션 요청 엔드포인트
+description: “미디어 컬렉션 API 세션 요청 엔드포인트 매개 변수 및 응답은 무엇입니까?”
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -62,8 +62,8 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime` (필수입니다)
-   * `playhead` - 컨텐츠가 라이브 상태인 경우 플레이헤드는 하루 중 현재 두 번째 플레이헤드여야 합니다. 0 &lt;= playhead &lt; 86400. 컨텐츠가 기록되면 플레이헤드가 컨텐츠의 현재 초, 0 &lt;= playhead &lt; 컨텐츠 길이여야 합니다. 값은 부동 소수점 숫자일 수 있습니다.
-   * `ts` - 타임스탬프; 밀리초 단위여야 합니다. UTC(Coordinated Universal Time).
+   * `playhead`- 콘텐츠가 라이브인 경우, 플레이헤드는 해당 요일의 현재 초여야 합니다(0 &lt;= 플레이헤드 &lt; 86,400). 콘텐츠가 기록된 경우, 플레이헤드는 콘텐츠의 현재 초여야 합니다(0 &lt;= 플레이헤드 &lt; 콘텐츠 길이). 값은 부동 소수점 숫자일 수 있습니다.
+   * `ts`- 타임스탬프는 밀리초 단위이고, 협정 세계시(UTC)여야 합니다.
 * `eventType` (필수입니다)
 
    **유효한 값:** `sessionStart`
