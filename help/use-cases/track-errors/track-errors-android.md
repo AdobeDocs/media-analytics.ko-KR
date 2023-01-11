@@ -1,14 +1,14 @@
 ---
-title: Android에서 오류를 추적하는 방법 알아보기
+title: Android에서 오류를 추적하는 방법에 대해 알아보기
 description: Android에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
