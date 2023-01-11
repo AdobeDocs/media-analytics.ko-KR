@@ -6,9 +6,9 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 99%
    | 변수 이름 | 설명 | 필수 여부 |
    | --- | --- | :---: |
    | `name` | 프리롤, 미드롤 및 포스트롤과 같은 광고 브레이크 이름입니다. | 예 |
-   | `position` | 컨텐츠 내 광고 브레이크의 번호 위치로서, 1로 시작합니다. | 예 |
+   | `position` | 콘텐츠 내 광고 브레이크의 번호 위치로서, 1로 시작합니다. | 예 |
    | `startTime` | 광고 브레이크의 시작 위치에 있는 플레이헤드 값입니다. | 예 |
 
 1. 광고 브레이크 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdBreakStart`를 사용하여 `trackEvent()`를 호출합니다.
@@ -106,7 +106,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->광고 재생(`s:asset:type=ad`) 중에 컨텐츠 플레이어 플레이헤드(`l:event:playhead`)를 증가시키지 않도록 하십시오. 증가시킬 경우 컨텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
+>광고 재생(`s:asset:type=ad`) 중에 콘텐츠 플레이어 플레이헤드(`l:event:playhead`)를 증가시키지 않도록 하십시오. 증가시킬 경우 콘텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
 
 다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다.
 
