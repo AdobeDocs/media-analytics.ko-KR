@@ -1,14 +1,14 @@
 ---
-title: Android에서 체감 품질을 추적하는 방법 알아보기
-description: "Android에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."
+title: Android에서 체감 품질을 추적하는 방법에 대해 알아보기
+description: “Android에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.”
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 84%
    ```
 
 1. `getQoSObject()` 메서드가 업데이트된 최신 QoS 정보를 반환하는지 확인합니다.
-1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다:
+1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다.
 
    ```java
    public void onBitrateChange(Observable observable, Object data) {  
