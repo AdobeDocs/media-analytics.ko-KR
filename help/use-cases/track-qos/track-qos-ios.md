@@ -1,14 +1,14 @@
 ---
-title: iOS에서 체감 품질 추적 방법을 알아봅니다.
-description: "iOS에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."
+title: iOS에서 체감 품질을 추적하는 방법에 대해 알아보기
+description: “iOS에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.”
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 84%
    ```
 
 1. `getQoSObject` 메서드가 업데이트된 최신 QoS 정보를 반환하는지 확인합니다.
-1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다:
+1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다.
 
    ```
    - (void)onBitrateChange:(NSNotification *)notification {
