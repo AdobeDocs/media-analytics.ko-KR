@@ -1,13 +1,13 @@
 ---
-title: JavaScript 3.x를 사용하여 체감 품질 추적 학습
-description: "JavaScript 3x를 사용하는 브라우저 앱에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."
+title: JavaScript 3.x를 사용하여 체감 품질을 추적하는 방법에 대해 알아보기
+description: “JavaScript 3.x를 사용하는 브라우저 앱에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.”
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 49%
 
 >[!IMPORTANT]
 >
->SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다. [SDK 다운로드.](/help/getting-started/download-sdks.md)
+>SDK의 이전 버전을 구현하는 경우, [SDK 다운로드](/help/getting-started/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
 
 ## QOE 구현
 
-1. 미디어 재생 중에 비트율이 변경되는 시점을 식별하고 `qoeObject` QoE 정보를 사용한 인스턴스.
+1. 미디어 재생 중에 비트율이 변경되는 시점을 식별하고 QoE 정보를 사용하여 `qoeObject` 인스턴스를 만듭니다.
 
    QoEObject 변수:
 
@@ -31,10 +31,10 @@ ht-degree: 49%
 
    | 변수 | 유형 | 설명 |
    | --- | --- | --- |
-   | `bitrate` | number | 현재 비트율 |
-   | `startupTime` | number | 시작 시간 |
-   | `fps` | number | FPS 값 |
-   | `droppedFrames` | number | 드롭된 프레임 수 |
+   | `bitrate` | 숫자 | 현재 비트율 |
+   | `startupTime` | 숫자 | 시작 시간 |
+   | `fps` | 숫자 | FPS 값 |
+   | `droppedFrames` | 숫자 | 드롭된 프레임 수 |
 
    QoE 개체 작성:
 
@@ -48,7 +48,7 @@ ht-degree: 49%
    tracker.updateQoEObject(qoeObject);
    ```
 
-1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다:
+1. 재생 시 비트율이 변경되면 미디어 하트비트 인스턴스에서 `BitrateChange`를 호출합니다.
 
    ```js
    _onBitrateChange = function() {
@@ -64,7 +64,7 @@ ht-degree: 49%
    >
    >비트율 변경 시마다 QoE 개체를 업데이트하고 비트율 변경 이벤트를 호출합니다. 이렇게 하면 가장 정확한 QoE 데이터가 제공됩니다.
 
-1. 반드시 호출하십시오 `updateQoEObject()` sdk에 최신 QoE 정보를 제공하는 방법입니다.
+1. 최신 QoE 정보를 SDK에 제공하려면 `updateQoEObject()` 메서드를 호출해야 합니다.
 1. 미디어 플레이어에 오류가 발생하여 플레이어 API에 오류 이벤트를 사용할 수 있는 경우 `trackError()`를 사용하여 오류 정보를 캡처합니다. ([개요](/help/use-cases/track-errors/track-errors-overview.md)를 참조하십시오.)
 
    >[!TIP]
