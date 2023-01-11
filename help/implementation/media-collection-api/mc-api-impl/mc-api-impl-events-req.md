@@ -1,14 +1,14 @@
 ---
 title: 이벤트 요청 구현
-description: 세션 ID를 가져온 후 모든 후속 추적 호출에 이벤트 요청 종단점을 사용하는 방법을 알아봅니다
+description: 세션 ID를 얻은 후 모든 후속 추적 호출에 대해 이벤트 요청 엔드포인트를 사용하는 방법에 대해 알아보기
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
