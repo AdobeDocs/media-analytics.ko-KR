@@ -5,16 +5,16 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko-KR)를 참조하십시오.
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko)를 참조하십시오.
 
 ## 구성
 
