@@ -1,22 +1,22 @@
 ---
 title: SceneGraph에서 추적(Roku)
-description: Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 미디어를 추적하는 방법을 알아봅니다.
+description: Roku SceneGraph XML 프로그래밍 프레임워크로 미디어를 추적하는 방법에 대해 알아봅니다.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Roku — SceneGraph에서 추적 {#tracking-in-scenegraph-roku}
+# Roku - SceneGraph에서 추적 {#tracking-in-scenegraph-roku}
 
 ## 소개 {#introduction}
 
-Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 응용 프로그램을 개발할 수 있습니다. 이 프레임워크는 다음과 같은 두 가지 주요 개념을 제공합니다.
+Roku SceneGraph XML 프로그래밍 프레임워크를 사용하여 애플리케이션을 개발할 수 있습니다. 이 프레임워크는 다음과 같은 두 가지 주요 개념을 제공합니다.
 
 * 애플리케이션 화면의 SceneGraph 렌더링
 * SceneGraph 화면의 XML 구성
@@ -87,20 +87,20 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 |  | 자세한 내용은 레거시 SDK의 Experience Cloud 섹션을 참조하십시오. |  |
 |  |  |  |
 | **Audience Manager** |  |  |
-|  | `audienceSubmitSignal` | 트레이트를 이용하여 고객 관리 신호를 전송하기 위한 SceneGraph API입니다. |
-|  | `audienceVisitorProfile` | ADBMobile SDK에서 대상 관리자 방문자 프로필을 가져오기 위한 SceneGraph API입니다. |
-|  | `audienceDpid` | ADBMobile SDK에서 대상 Dpid를 가져오기 위한 SceneGraph API입니다. |
-|  | `audienceDpuuid` | ADBMobile SDK에서 대상 Dpuuid를 가져오기 위한 SceneGraph API입니다. |
-|  | `audienceSetDpidAndDpuuid` | ADBMobile SDK에서 대상 Dpid 및 Dpuuid를 설정하기 위한 SceneGraph API입니다. |
+|  | `audienceSubmitSignal` | 트레이트를 이용하여 대상자 관리 신호를 전송하기 위한 SceneGraph API입니다. |
+|  | `audienceVisitorProfile` | ADBMobile SDK에서 대상자 관리자 방문자 프로필을 가져오기 위한 SceneGraph API입니다. |
+|  | `audienceDpid` | ADBMobile SDK에서 대상자 Dpid를 가져오기 위한 SceneGraph API입니다. |
+|  | `audienceDpuuid` | ADBMobile SDK에서 대상자 Dpuuid를 가져오기 위한 SceneGraph API입니다. |
+|  | `audienceSetDpidAndDpuuid` | ADBMobile SDK에서 대상자 Dpid 및 Dpuuid를 설정하기 위한 SceneGraph API입니다. |
 |  | 자세한 내용은 레거시 SDK의 Audience Manager 섹션을 참조하십시오. |  |
 |  |  |  |
 | **MediaHeartbeat** |  |  |
-|  | `mediaTrackLoad` | MediaHeartbeat 추적을 위해 비디오 컨텐츠를 업로드할 SceneGraph API입니다. |
+|  | `mediaTrackLoad` | MediaHeartbeat 추적을 위해 비디오 콘텐츠를 업로드할 SceneGraph API입니다. |
 |  | mediaTrackStart | MediaHeartbeat를 사용하여 비디오 추적 세션을 시작할 SceneGraph API입니다. |
-|  | `mediaTrackUnload` | MediaHeartbeat 추적에서 비디오 컨텐츠를 업로드하기 위한 SceneGraph API입니다. |
-|  | `mediaTrackPlay` | 비디오 컨텐츠 재생을 추적할 SceneGraph API입니다. |
-|  | mediaTrackPause | 일시 정지된 비디오 컨텐츠를 추적할 SceneGraph API입니다. |
-|  | `mediaTrackComplete` | 비디오 컨텐츠 재생 완료를 추적하기 위한 SceneGraph API입니다. |
+|  | `mediaTrackUnload` | MediaHeartbeat 추적에서 비디오 콘텐츠를 업로드하기 위한 SceneGraph API입니다. |
+|  | `mediaTrackPlay` | 비디오 콘텐츠 재생을 추적할 SceneGraph API입니다. |
+|  | mediaTrackPause | 일시 정지된 비디오 콘텐츠를 추적할 SceneGraph API입니다. |
+|  | `mediaTrackComplete` | 비디오 콘텐츠 재생 완료를 추적하기 위한 SceneGraph API입니다. |
 |  | `mediaTrackError` | 재생 오류를 추적할 SceneGraph API입니다. |
 |  | mediaTrackEvent | 추적 중에 재생 이벤트를 추적할 SceneGraph API입니다. 예: 광고, 챕터. |
 |  | `mediaUpdatePlayhead` | 비디오 추적 중에 플레이헤드 업데이트를 MediaHeartbeat로 보내기 위한 SceneGraph API입니다. |
