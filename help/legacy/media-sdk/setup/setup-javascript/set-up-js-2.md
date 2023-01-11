@@ -6,19 +6,19 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # JavaScript 2.x 설정{#set-up-javascript}
 
-## 전제 조건
+## 사전 요구 사항
 
 * **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR)을 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
@@ -43,7 +43,7 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용�
       src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.min.js"></script>
       ```
 
-   1.  라이브러리를 성공적으로 가져왔는지 확인하려면 `ADB.va.MediaHeartbeatConfig` 클래스를 인스턴스화합니다.
+   1. 라이브러리를 성공적으로 가져왔는지 확인하려면 `ADB.va.MediaHeartbeatConfig` 클래스를 인스턴스화합니다.
 
       >[!NOTE]
       >
@@ -120,4 +120,4 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용�
 
 버전 2.x에서 모든 공개 메서드는 개발자가 쉽게 만들 수 있도록 `ADB.va.MediaHeartbeat` 클래스에 통합되어 있습니다. 또한 모든 구성이 이제 `ADB.va.MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
-1.x에서 2.x로 마이그레이션에 대한 자세한 내용은 이전 구현 설명서를 참조하십시오.
+1.x에서 2.x로의 마이그레이션에 대한 자세한 내용은 이전 구현 설명서를 참조하십시오.
