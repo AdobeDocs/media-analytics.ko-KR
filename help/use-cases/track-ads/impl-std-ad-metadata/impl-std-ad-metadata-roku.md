@@ -1,14 +1,14 @@
 ---
-title: Roku에서 표준 광고 메타데이터를 구현하는 방법을 알아봅니다.
+title: Roku에서 표준 광고 메타데이터를 구현하는 방법에 대해 알아보기
 description: Roku에서 광고 추적에 표준 광고 메타데이터를 사용하는 방법입니다.
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
