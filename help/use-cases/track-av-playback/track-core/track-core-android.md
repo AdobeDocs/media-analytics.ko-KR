@@ -1,14 +1,14 @@
 ---
-title: Android에서 코어 재생을 추적하는 방법 알아보기
-description: Android에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
+title: Android에서 코어 재생을 추적하는 방법에 대해 알아보기
+description: Android에서 Media SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 97%
    | 상수 이름 | 설명 |
    |---|---|
    | `VOD` | Video on Demand에 대한 스트림 유형입니다. |
-   | `LIVE` | 라이브 컨텐츠에 대한 스트림 유형입니다. |
-   | `LINEAR` | 선형 컨텐츠에 대한 스트림 유형입니다. |
+   | `LIVE` | 라이브 콘텐츠에 대한 스트림 유형입니다. |
+   | `LINEAR` | 선형 콘텐츠에 대한 스트림 유형입니다. |
    | `AOD` | Audio On Demand에 대한 스트림 유형입니다. |
    | `AUDIOBOOK` | 오디오북에 대한 스트림 유형입니다. |
    | `PODCAST` | 팟캐스트에 대한 스트림 유형입니다. |
@@ -117,7 +117,7 @@ ht-degree: 97%
 
 1. **재생 완료 추적**
 
-   미디어 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 미디어 재생 완료에 대한 이벤트를 식별하고, `trackComplete`를 호출합니다.
+   미디어 플레이어에서 사용자가 콘텐츠의 끝까지 시청한 미디어 재생 완료에 대한 이벤트를 식별하고, `trackComplete`를 호출합니다.
 
    ```java
    public void onVideoComplete(Observable observable, Object data) {
@@ -139,7 +139,7 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >미디어 추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 미디어 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
+   >미디어 추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 콘텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 미디어 추적 세션에 필요한 `track*`를 제외하고, 다른 모든 `trackSessionEnd` API 호출은 `trackSessionStart` 이후 무시됩니다.
 
 1. **가능한 모든 일시 중지 시나리오 추적**
 
