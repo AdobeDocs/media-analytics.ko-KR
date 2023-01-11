@@ -6,26 +6,26 @@ exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Android 설정{#set-up-android}
 
-Android 디바이스용 스트리밍 미디어 분석을 설정하는 방법에 대해 알아봅니다.
+Android 디바이스를 위한 스트리밍 미디어용 Analytics을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
 >2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다.  자세한 내용은 [Media Analytics SDK 지원 종료 FAQ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
 
-## 전제 조건
+## 사전 요구 사항
 
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
-* **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ko-KR)를 참조하십시오.
+* **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)를 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
@@ -58,7 +58,7 @@ Android 디바이스용 스트리밍 미디어 분석을 설정하는 방법에 
       1. **[!UICONTROL 빌드 경로]** > **[!UICONTROL 외부 아카이브 추가]**&#x200B;를 클릭합니다.
       1. `MediaSDK.jar`을 선택합니다.
       1. **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
-      1. 프로젝트를 다시 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 빌드 경로]** > **[!UICONTROL 빌드 경로 구성]**&#x200B;을 클릭합니다.
+      1. 프로젝트를 다시 마우스 오른쪽 버튼으로 클릭한 다음 **[!UICONTROL 빌드 경로]** > **[!UICONTROL 빌드 경로 구성]**&#x200B;을 클릭합니다.
       1. **[!UICONTROL 주문]** 및 **[!UICONTROL 내보내기]** 탭을 클릭합니다.
 
       1. `MediaSDK.jar` 파일을 선택했는지 확인합니다.
@@ -142,4 +142,4 @@ Media SDK를 사용하는 앱에서는 추적 호출에서 데이터를 전송�
 
 버전 2.x에서는 모든 공개 메서드가 개발자가 쉽게 만들 수 있도록 `com.adobe.primetime.va.simple.MediaHeartbeat` 클래스에 통합되어 있습니다. 또한 모든 구성이 이제 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
-1.x에서 2.x로 마이그레이션에 대한 자세한 내용은 이전 구현 설명서를 참조하십시오.
+1.x에서 2.x로의 마이그레이션에 대한 자세한 내용은 이전 구현 설명서를 참조하십시오.
