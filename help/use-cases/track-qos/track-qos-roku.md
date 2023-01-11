@@ -1,14 +1,14 @@
 ---
-title: Roku에서 체감 품질을 추적하는 방법 알아보기
-description: "Roku에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."
+title: Roku에서 체감 품질을 추적하는 방법에 대해 알아보기
+description: “Roku에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.”
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
