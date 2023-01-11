@@ -1,20 +1,20 @@
 ---
-title: JavaScript 2.x를 사용하여 코어 재생을 추적하는 방법 알아보기
-description: JavaScript 2.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
+title: JavaScript 2.x를 사용하여 코어 재생을 추적하는 방법에 대해 알아보기
+description: JavaScript 2.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '689'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # JavaScript 2.x를 사용하여 코어 재생 추적{#track-core-playback-on-javascript}
 
-다음은 2.x SDK에서 구현과 관련된 지침입니다.
+다음은 2.x SDK에 구현과 관련된 지침입니다.
 
 >[!IMPORTANT]
 >SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/getting-started/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
@@ -39,7 +39,7 @@ ht-degree: 94%
    |---|---|
    | `VOD` | Video on Demand에 대한 스트림 유형입니다. |
    | `LIVE` | 라이브 콘텐츠에 대한 스트림 유형입니다. |
-   | `LINEAR` | 선형 컨텐츠에 대한 스트림 유형입니다. |
+   | `LINEAR` | 선형 콘텐츠에 대한 스트림 유형입니다. |
    | `AOD` | Audio On Demand에 대한 스트림 유형입니다. |
    | `AUDIOBOOK` | 오디오북에 대한 스트림 유형입니다. |
    | `PODCAST` | 팟캐스트에 대한 스트림 유형입니다. |
@@ -119,7 +119,7 @@ ht-degree: 94%
 
 1. **재생 완료 추적**
 
-   미디어 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 재생 완료에 대한 이벤트를 식별하고 `trackComplete`를 호출합니다.
+   미디어 플레이어에서 사용자가 콘텐츠의 끝까지 시청한 재생 완료에 대한 이벤트를 식별하고 `trackComplete`를 호출합니다.
 
    ```js
    mediaHeartbeat.trackComplete();
@@ -135,7 +135,7 @@ ht-degree: 94%
 
    >[!IMPORTANT]
    >
-   >추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 추적 세션에 필요한 `trackSessionStart`를 제외하고, 다른 모든 `track*` API 호출은 `trackSessionEnd` 이후 무시됩니다.
+   >추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 콘텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 추적 세션에 필요한 `trackSessionStart`를 제외하고, 다른 모든 `track*` API 호출은 `trackSessionEnd` 이후 무시됩니다.
 
 1. **가능한 모든 일시 중지 시나리오 추적**
 
