@@ -1,14 +1,14 @@
 ---
-title: Roku에서 광고를 추적하는 방법 알아보기
+title: Roku에서 광고를 추적하는 방법에 대해 알아보기
 description: Media SDK를 사용하여 Roku 애플리케이션에서 광고 추적을 구현합니다.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
