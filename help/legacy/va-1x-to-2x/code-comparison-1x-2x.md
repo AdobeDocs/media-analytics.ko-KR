@@ -1,18 +1,18 @@
 ---
-title: 코드 비교 v1.x와 v2.x
-description: Media SDK 1.x 및 2.x 버전의 코드 간의 차이점을 알아봅니다.
+title: 코드 비교 v1.x대 v2.x
+description: Media SDK 1.x 버전과 2.x 버전 코드의 차이점에 대해 알아봅니다.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# 이전 코드 비교 — 1.x와 2.x {#code-comparison-x-to-x}
+# 이전 코드 비교 - 1.x와 2.x {#code-comparison-x-to-x}
 
 모든 구성 매개 변수와 추적 API는 이제 `MediaHeartbeats` 및 `MediaHeartbeatConfig` 클래스에 통합되어 있습니다.
 
