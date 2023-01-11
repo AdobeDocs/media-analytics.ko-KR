@@ -1,13 +1,13 @@
 ---
-title: JavaScript v3.x를 사용하여 코어 재생을 추적하는 방법 알아보기
-description: JavaScript 3.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
+title: JavaScript v3.x를 사용하여 코어 재생을 추적하는 방법에 대해 알아보기
+description: JavaScript 3.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 95%
 
    | 변수 이름 | 유형 | 설명 |
    | --- | --- | --- |
-   | `name` | string | 미디어 이름을 나타내는 빈 문자열이 아닙니다. |
-   | `id` | string | 고유한 미디어 식별자를 나타내는 빈 문자열이 아닙니다. |
-   | `length` | number | 미디어의 길이(초)를 나타내는 양수입니다. 길이를 알 수 없으면 0을 사용합니다. |
-   | `streamType` | string |  |
+   | `name` | 문자열 | 미디어 이름을 나타내는 빈 문자열이 아닙니다. |
+   | `id` | 문자열 | 고유한 미디어 식별자를 나타내는 빈 문자열이 아닙니다. |
+   | `length` | 숫자 | 미디어의 길이(초)를 나타내는 양수입니다. 길이를 알 수 없으면 0을 사용합니다. |
+   | `streamType` | 문자열 |  |
    | `mediaType` |  | 미디어 유형(오디오 또는 비디오)입니다. |
 
    **`StreamType`상수:**
@@ -127,7 +127,7 @@ ht-degree: 95%
 
 1. **재생 완료 추적**
 
-   미디어 플레이어에서 사용자가 컨텐츠의 끝까지 시청한 재생 완료에 대한 이벤트를 식별하고 `trackComplete`를 호출합니다.
+   미디어 플레이어에서 사용자가 콘텐츠의 끝까지 시청한 재생 완료에 대한 이벤트를 식별하고 `trackComplete`를 호출합니다.
 
    ```js
    tracker.trackComplete();
@@ -143,7 +143,7 @@ ht-degree: 95%
 
    >[!IMPORTANT]
    >
-   >추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 컨텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 추적 세션에 필요한 `trackSessionStart`를 제외하고, 다른 모든 `track*` API 호출은 `trackSessionEnd` 이후 무시됩니다.
+   >추적 세션의 끝을 `trackSessionEnd`는 표시합니다. 세션을 끝까지 성공적으로 시청한 경우, 즉, 사용자가 끝까지 콘텐츠를 시청한 경우 `trackComplete`가 `trackSessionEnd` 전에 호출되는지 확인합니다. 새 추적 세션에 필요한 `trackSessionStart`를 제외하고, 다른 모든 `track*` API 호출은 `trackSessionEnd` 이후 무시됩니다.
 
 1. **가능한 모든 일시 중지 시나리오 추적**
 
