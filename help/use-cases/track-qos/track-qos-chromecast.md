@@ -1,14 +1,14 @@
 ---
-title: Chromecast에서 체감 품질을 추적하는 방법 알아보기
-description: "Chromecast에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다."
+title: Chromecast에서 체감 품질을 추적하는 방법에 대해 알아보기
+description: “Chromecast에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.”
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
