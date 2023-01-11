@@ -6,15 +6,15 @@ exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 클라이언트측{#client-side}
 
-**이 페이지 제거??**
+**이 페이지를 제거하시겠습니까?**
 
 Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루션입니다.
 
