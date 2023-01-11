@@ -1,14 +1,14 @@
 ---
-title: JavaScript 2.x를 사용하여 표준 광고 메타데이터를 구현하는 방법을 알아봅니다.
-description: JavaScript 2.x 앱을 사용하는 브라우저에서 광고 추적에 표준 광고 메타데이터를 사용하는 방법입니다.
+title: JavaScript 2.x를 사용하여 표준 광고 메타데이터를 구현하는 방법에 대해 알아보기
+description: JavaScript 2.x 앱을 사용하여 브라우저에서 광고 추적에 표준 광고 메타데이터를 사용하는 방법입니다.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
