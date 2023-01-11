@@ -1,13 +1,13 @@
 ---
 title: 스트리밍 미디어용 Analytics에 대한 웹 구현을 설정하는 방법
-description: 웹 앱용 Adobe 스트리밍 미디어를 구현하는 방법을 알아봅니다.
+description: 웹 앱용 Adobe Streaming Media를 구현하는 방법에 대해 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 69%
 
 ## 사전 요구 사항 {#prerequesites}
 
-* **올바른 구성 매개 변수 가져오기**
+* **유효한 구성 매개 변수 얻기**
 
-   이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
+   이러한 매개 변수는 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 
-* **구현 `AppMeasurement` 및 `Experience Cloud Identity Service` 미디어 애플리케이션에서 JavaScript용**
+* **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 및 `Experience Cloud Identity Service` 구현**
 
-   자세한 내용은 [JavaScript를 사용하여 Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [Experience Cloud Identity 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ko-KR).
+   자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [Experience Cloud ID 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
 
-* **미디어 플레이어에 다음 API 포함**
+* **미디어 플레이어에서 다음 API 포함**
 
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
-   * *플레이어 정보를 제공하는 API* - 현재 재생 중인 미디어, 광고 및 장에 대한 정보가 포함됩니다.
+   * *플레이어 정보를 제공하는 API* - 현재 재생 중인 미디어, 광고 및 챕터에 대한 정보가 포함되어 있습니다.
 
 ## JavaScript 3.x 설정 {#set-up-javascript}
 
@@ -92,7 +92,7 @@ ht-degree: 69%
 
 1. `MediaTracker` 인스턴스를 생성합니다.
 
-   Media SDK를 구성한 후 미디어 컨텐츠를 추적하기 위한 추적기 인스턴스를 `getInstance` API를 사용하여 만들 수 있습니다.
+   Media SDK를 구성한 후 미디어 콘텐츠를 추적하기 위한 추적기 인스턴스를 `getInstance` API를 사용하여 만들 수 있습니다.
 
    ```js
    var tracker = ADB.Media.getInstance();
@@ -106,4 +106,4 @@ ht-degree: 69%
 
 2.x에서 3.x로 마이그레이션에 대한 자세한 정보는 [ 2.x에서 3.x로 마이그레이션](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)을 참조하십시오.
 
-기존 컨텐츠의 경우 [기존 구현](/help/legacy/media-sdk/setup/setup-overview.md)
+이전 콘텐츠의 경우, [레거시 구현](/help/legacy/media-sdk/setup/setup-overview.md)을 참조하십시오.
