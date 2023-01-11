@@ -1,22 +1,23 @@
 ---
 title: 레거시 Media SDK 구현 설명
-description: 모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위한 **legacy** 2.x Media SDK를 설정하는 방법을 알아봅니다."
+description: “모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위해 **레거시** 2.x Media SDK를 설정하는 방법을 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# 기존 2.x 스트리밍 미디어 SDK 설정 개요{#setup-overview}
+# 레거시 2.x Streaming Media SDK 설정 개요{#setup-overview}
 
-이 섹션의 지침은 **이전** 2.x Media SDK
+이 섹션의 지침은 **레거시** 2.x Media SDK에 적용됩니다.
 
-* Media SDK의 1.x 버전 구현에 대한 자세한 내용은 [1.x Media SDK 설명서.](/help/getting-started/download-sdks.md)
+* Media SDK의 1.x 버전의 구현에 대한 내용은 [1.x Media SDK 설명서를 참조하십시오.](/help/getting-started/download-sdks.md)
 
-* Primetime 통합 업체의 경우 다음을 참조하십시오. _Primetime Media SDK 설명서_.
+* Primetime 통합 업체의 경우, _Primetime Media SDK 설명서_&#x200B;를 참조하십시오.
 
 >[!IMPORTANT]
 >
@@ -157,9 +158,9 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
 | Chromecast | [Chromecast에 대한 구성 ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS에 대한 구성 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript에 대한 구성 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Media Analytics 구성](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/android/1.4/index.html) </li> <li> DHLS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML에 대한 구성 ](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 설명서 {#primetime-docs}
 
-* [Primetime 사용 안내서](https://helpx.adobe.com/kr/primetime/user-guide.html)
+* [Primetime 사용 안내서](https://helpx.adobe.com/primetime/user-guide.html)
