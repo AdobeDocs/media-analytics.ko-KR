@@ -1,14 +1,14 @@
 ---
-title: iOS에서 광고를 추적하는 방법 알아보기
+title: iOS에서 광고를 추적하는 방법에 대해 알아보기
 description: Media SDK를 사용하여 iOS 애플리케이션에서 광고 추적을 구현합니다.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
    | 변수 이름 | 설명 | 필수 여부 |
    | --- | --- | :---: |
    | `name` | 프리롤, 미드롤 및 포스트롤과 같은 광고 브레이크 이름입니다. | 예 |
-   | `position` | 컨텐츠 내 광고 브레이크의 번호 위치로서, 1로 시작합니다. | 예 |
+   | `position` | 콘텐츠 내 광고 브레이크의 번호 위치로서, 1로 시작합니다. | 예 |
    | `startTime` | 광고 브레이크의 시작 위치에 있는 플레이헤드 값입니다. | 예 |
 
    광고 브레이크 개체 작성:
