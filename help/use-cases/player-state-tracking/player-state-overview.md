@@ -5,9 +5,9 @@ exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 * Adobe Marketing Cloud 솔루션용 Chromecast 3.0 SDK
 * Media Analytics 확장 프로그램(AEP(Adobe Experience Platform) SDK에서 사용)
    * 웹: 오디오 및 비디오 v1.0+용 Adobe Media Analytics(3.x SDK)
-   * 모바일: Adobe Media Analytics for Audio 및 Video v2.0+
+   * 모바일: 오디오 및 비디오용 Adobe Media Analytics v2.0+
 * Media Collection API
 
 ## 지침
