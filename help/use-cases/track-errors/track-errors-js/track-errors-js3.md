@@ -1,13 +1,13 @@
 ---
-title: JavaScript 3.x를 사용하여 오류를 추적하는 방법 알아보기
+title: JavaScript 3.x를 사용하여 오류를 추적하는 방법에 대해 알아보기
 description: 브라우저 앱(JS)에서 Media SDK를 사용하여 오류 추적을 구현하는 방법에 대해 알아봅니다.
 exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 53%
 
 >[!IMPORTANT]
 >
->SDK의 이전 버전을 구현하는 경우 다음 위치에서 개발자 안내서를 다운로드할 수 있습니다. [SDK 다운로드.](/help/getting-started/download-sdks.md)
+>SDK의 이전 버전을 구현하는 경우, [SDK 다운로드](/help/getting-started/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
 
 ## 오류 추적 구현
 
