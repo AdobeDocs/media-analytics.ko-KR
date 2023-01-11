@@ -1,14 +1,14 @@
 ---
-title: 주 컨텐츠에서 찾기를 사용하여 VOD 재생
-description: Media SDK를 사용하여 프리롤 찾기가 발생한 VOD 컨텐츠를 추적하는 방법의 예를 봅니다.
+title: 주요 콘텐츠에 찾기가 있는 VOD 재생
+description: Media SDK를 사용하여 찾기가 발생한 VOD 콘텐츠를 추적하는 방법의 예를 봅니다.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,23 +16,23 @@ ht-degree: 90%
 
 ## 시나리오 {#scenario}
 
-이 시나리오는 재생 중에 주 컨텐츠에서 찾기를 구성합니다.
+이 시나리오는 재생 중에 주 콘텐츠에서 찾기를 구성합니다.
 
-이 시나리오는 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일하지만, 컨텐츠의 일부가 스크러빙되고 주 컨텐츠의 한 지점에서 다른 지점으로 찾기가 완료됩니다.
+이 시나리오는 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일하지만, 콘텐츠의 일부가 스크러빙되고 주 콘텐츠의 한 지점에서 다른 지점으로 찾기가 완료됩니다.
 
 | 트리거   | 하트비트 메서드   | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
-| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 컨텐츠 시작, 하트비트 컨텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 모르므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 컨텐츠의 첫 번째 프레임이 재생됩니다. | `trackPlay` | 하트비트 컨텐츠 재생 | 챕터 컨텐츠가 주 컨텐츠 전에 재생되면 챕터가 시작될 때 하트비트가 시작됩니다. |
-| 컨텐츠 재생 |  | 컨텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 사용자가 컨텐츠에 대한 찾기 작업 시작 | `trackSeekStart` |  | 찾기가 완료될 때까지(예: `trackSeekComplete`) 하트비트는 시작되지 않습니다. |
+| 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart` | Analytics 콘텐츠 시작, 하트비트 콘텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 모르므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠의 첫 번째 프레임이 재생됩니다. | `trackPlay` | 하트비트 콘텐츠 재생 | 챕터 콘텐츠가 주 콘텐츠 전에 재생되면 챕터가 시작될 때 하트비트가 시작됩니다. |
+| 콘텐츠 재생 |  | 콘텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 사용자가 콘텐츠에 대한 찾기 작업 시작 | `trackSeekStart` |  | 찾기가 완료될 때까지(예: `trackSeekComplete`) 하트비트는 시작되지 않습니다. |
 | 이동 작업이 완료됨 | `trackSeekComplete` |  | 이동이 완료되었으므로 하트비트가 시작됩니다.  팁: 플레이헤드 값은 이동 후 올바른 새 플레이헤드를 나타냅니다. |
-| 컨텐츠가 완료됨 | `trackComplete` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 완료됨 | `trackComplete` | 하트비트 콘텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션 종료 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 샘플 코드 {#sample-code}
 
-이 시나리오에서는 주 컨텐츠가 재생 중일 때 사용자가 컨텐츠 이동을 합니다.
+이 시나리오에서는 주 콘텐츠가 재생 중일 때 사용자가 콘텐츠 이동을 합니다.
 
 ![](assets/seek-main-to-main.png)
 
