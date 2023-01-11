@@ -1,14 +1,14 @@
 ---
-title: Roku에서 표준 메타데이터를 구현하는 방법을 알아봅니다.
-description: Roku에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법을 알아봅니다.
+title: Roku에서 표준 메타데이터를 구현하는 방법에 대해 알아보기
+description: Roku에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 알아봅니다.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
