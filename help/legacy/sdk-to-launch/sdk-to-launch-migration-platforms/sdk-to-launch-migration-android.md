@@ -5,16 +5,16 @@ exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - Android
 
 >[!NOTE]
->Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko-KR)를 참조하십시오.
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko)를 참조하십시오.
 
 
 ## 구성
@@ -128,7 +128,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 ### 독립형 Media SDK
 
-독립형 Media SDK에서는 추적기를 만드는 동안 `MediaHeartbeartDelegate` 인터페이스를 구현하는 위임 개체를 전달합니다. 이 구현은 추적기가 `getQoSObject()` 및 `getCurrentPlaybackTime()` 인터페이스 메서드를 호출할 때마다 최신 QoE 플레이헤드를 반환해야 합니다.
+독립형 Media SDK에서는 추적기를 만드는 동안 `MediaHeartbeartDelegate` 인터페이스를 구현하는 위임 개체를 전달합니다.  이 구현은 추적기가 `getQoSObject()` 및 `getCurrentPlaybackTime()` 인터페이스 메서드를 호출할 때마다 최신 QoE 플레이헤드를 반환해야 합니다.
 
 ### Launch 확장
 
