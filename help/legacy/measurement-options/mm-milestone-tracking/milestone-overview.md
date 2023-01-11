@@ -6,9 +6,9 @@ exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3349'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 99%
 
 ## 광고 추적 변수 {#ad-tracking-variables}
 
-이들 변수는 openAd 메서드와 함께 광고 정보를 전송하는 데 사용됩니다. [VAST 비디오 광고 추적](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko-KR)을 참조하십시오.
+이들 변수는 openAd 메서드와 함께 광고 정보를 전송하는 데 사용됩니다. [VAST 비디오 광고 추적](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)을 참조하십시오.
 
 | 변수    | 설명 |
 | --- | --- |
