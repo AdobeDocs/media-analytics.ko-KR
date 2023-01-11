@@ -1,14 +1,14 @@
 ---
-title: 광고를 건너뛰고 VOD 재생
-description: Media SDK를 사용하여 사용자가 건너뛴 VOD 컨텐츠를 추적하는 방법의 예를 봅니다.
+title: 건너뛴 광고가 있는 VOD 재생
+description: Media SDK를 사용하여 사용자가 건너뛴 VOD 콘텐츠를 추적하는 방법의 예를 봅니다.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 91%
 
 ## 시나리오 {#scenario}
 
-이 시나리오는 광고를 건너뛴 VOD 컨텐츠 재생으로 구성됩니다.
+이 시나리오는 광고를 건너뛴 VOD 콘텐츠 재생으로 구성됩니다.
 
 ### 프리롤 광고를 건너뛴 한 개의 VOD
 
-이 시나리오는 애플리케이션에서 사용자가 건너뛰기 단추를 클릭하면 광고를 건너뛸 수 있는 기능을 제공한다는 점을 제외하고, [프리롤 광고가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) 시나리오와 동일합니다.
+이 시나리오는 애플리케이션에서 사용자가 건너뛰기 버튼을 클릭하면 광고를 건너뛸 수 있는 기능을 제공한다는 점을 제외하고, [프리롤 광고가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) 시나리오와 동일합니다.
 
 | 트리거   | 하트비트 메서드  | 네트워크 호출   | 참고   |
 | --- | --- | --- | --- |
 | 사용자가 [!UICONTROL 재생] 클릭 | `trackSessionStart()` | Analytics 콘텐츠 시작, 하트비트 콘텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있다는 것을 인식하지 못합니다. 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)과 동일합니다. |
 | 광고가 시작됨. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 광고 시작, 하트비트 광고 시작 |  |
-| 광고의 첫 프레임이 재생됩니다. | `trackPlay()` | 하트비트 광고 재생 | 광고 컨텐츠가 주 컨텐츠 전에 재생되면 광고 재생이 시작될 때 하트비트가 시작됩니다. |
+| 광고의 첫 프레임이 재생됩니다. | `trackPlay()` | 하트비트 광고 재생 | 광고 콘텐츠가 주 콘텐츠 전에 재생되면 광고 재생이 시작될 때 하트비트가 시작됩니다. |
 | 광고가 재생됩니다. |  | 광고 하트비트 |  |
 | 광고를 건너뜀. | `trackEvent:trackAdSkip` |  | 광고 완료 네트워크 호출이 없습니다. |
-| 컨텐츠가 재생됩니다. |  | 컨텐츠 하트비트 | 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
-| 컨텐츠 재생이 완료됨. | `trackComplete()` | 하트비트 컨텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠가 재생됩니다. |  | 콘텐츠 하트비트 | 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠 재생이 완료됨. | `trackComplete()` | 하트비트 콘텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## 매개 변수 {#parameters}
