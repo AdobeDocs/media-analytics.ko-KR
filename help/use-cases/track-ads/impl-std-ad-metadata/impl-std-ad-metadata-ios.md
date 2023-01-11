@@ -1,14 +1,14 @@
 ---
-title: iOS에서 표준 광고 메타데이터를 구현하는 방법을 알아봅니다.
+title: iOS에서 표준 광고 메타데이터를 구현하는 방법에 대해 알아보기
 description: iOS에서 광고 추적에 표준 광고 메타데이터를 사용하는 방법입니다.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
