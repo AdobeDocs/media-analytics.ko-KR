@@ -1,14 +1,14 @@
 ---
 title: 테스트 1 표준 재생
-description: 유효성 검사에 사용된 표준 재생 테스트에 대해 알아봅니다.
+description: 유효성 검사에 사용되는 표준 재생 테스트에 대해 알아봅니다.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 97%
 Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니다.
 * Adobe Analytics(AppMeasurement) 서버에 직접 수행된 호출 - 이러한 호출은 &quot;미디어 시작&quot; 및 &quot;광고 시작&quot; 이벤트에서 발생합니다.
 * Media Analytics(하트비트) 서버에 대한 호출 - 여기에 대역 내 및 대역 외 호출이 포함됩니다.
-   * 대역 내 - SDK는 컨텐츠 재생 중 10초 간격으로, 광고 중 1초 간격으로 시간 재생 호출 또는 &quot;ping&quot;을 전송합니다.
-   * 대역 외 - 이러한 호출은 언제든지 발생할 수 있으며, 일시 중지, 버퍼링, 오류, 컨텐츠 완료, 광고 완료 등을 포함합니다.
+   * 대역 내 - SDK는 콘텐츠 재생 중 10초 간격으로, 광고 중 1초 간격으로 시간 재생 호출 또는 &quot;ping&quot;을 전송합니다.
+   * 대역 외 - 이러한 호출은 언제든지 발생할 수 있으며, 일시 중지, 버퍼링, 오류, 콘텐츠 완료, 광고 완료 등을 포함합니다.
 
 >[!NOTE]
->미디어 추적은 모든 플랫폼에서 동일하게 동작합니다. 
+>미디어 추적은 모든 플랫폼에서 동일하게 동작합니다.
 
 ## 테스트 절차
 
@@ -125,9 +125,9 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/legacy/validation/test-call-details.md#ma-ad-pause-call)을 참조하십시오.
 
-1. **10초 동안 중단 없이 기본 컨텐츠 재생.**  **컨텐츠 재생**
+1. **10초 동안 중단 없이 기본 콘텐츠 재생.**  **콘텐츠 재생**
 
-   기본 컨텐츠 재생 중에 Media SDK는 10초마다 하트비트(재생 호출)를 Media Analytics 서버로 전송합니다.
+   기본 콘텐츠 재생 중에 Media SDK는 10초마다 하트비트(재생 호출)를 Media Analytics 서버로 전송합니다.
 
    참고:
 
@@ -140,7 +140,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/legacy/validation/test-call-details.md#pause-main-content)을 참조하십시오.
 
-1. **미디어 검색/스크러빙.** 미디어 플레이헤드를 스크럽할 때 특수 추적 호출이 전송되지 않지만, 스크럽 후 미디어 재생이 재개될 때는 플레이헤드 값이 기본 컨텐츠 내의 새로운 위치를 반영해야 합니다.
+1. **미디어 검색/스크러빙.** 미디어 플레이헤드를 스크럽할 때 특수 추적 호출이 전송되지 않지만, 스크럽 후 미디어 재생이 재개될 때는 플레이헤드 값이 기본 콘텐츠 내의 새로운 위치를 반영해야 합니다.
 
 1. **미디어 재생(VOD만 해당).** 미디어를 재생하면 새 미디어 시작 호출 세트를 (새로 시작하는 것처럼) 전송해야 합니다.
 
