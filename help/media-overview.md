@@ -1,14 +1,14 @@
 ---
 title: 스트리밍 미디어용 Adobe Analytics 개요
-description: 스트리밍 미디어 분석을 사용하여 콘텐츠, 오디오 및 광고에 대한 강력한 통찰력을 얻으십시오.
+description: 스트리밍 미디어용 Analytics를 사용하여 콘텐츠, 오디오 및 광고에 대한 강력한 통찰력을 얻으십시오.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 95%
 
 스트리밍 미디어용 Adobe Analytics의 추가 기능으로서, 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. 스트리밍 미디어용 Analytics를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
 
-스트리밍 미디어용 Adobe Analytics를 사용하면 사이트 및 스트리밍 앱에서의 전체 고객 여정을 추적할 수 있습니다. 스트리밍 미디어 지표를 Audience Analytics, Mobile 또는 Cross-Device Analytics와 같은 다른 Adobe Analytics 기능과 결합할 수 있습니다. 이 지표는 Adobe Analytics 보고서 및 기타 Adobe Experience Platform 제품에 쉽게 통합됩니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
+스트리밍 미디어용 Adobe Analytics를 사용하면 사이트 및 스트리밍 앱에서의 전체 고객 여정을 추적할 수 있습니다. Streaming Media 지표를 Audience Analytics, Mobile 또는 Cross-Device Analytics와 같은 다른 Adobe Analytics 기능과 결합할 수 있습니다. 이 지표는 Adobe Analytics 보고서 및 기타 Adobe Experience Platform 제품에 쉽게 통합됩니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
 
 프레임, 버퍼링 시간 및 평균 비트율과 같이 체감 품질(QoE)과 관련된 중요한 게재 지표를 측정할 수 있습니다. 또한 측정 지표는 웹 사이트 또는 앱 데이터와 결합하여 고객 경로 및 관심사를 시각화함으로써 향상된 추천을 제공하고 Adobe Experience Platform을 사용하여 고객 경험을 개인화할 수 있습니다.
 
 ## 작동 방법
 
-스트리밍 미디어 추적 데이터는 Media SDK 또는 Adobe Experience Platform Media 확장 프로그램 및 Media Collection API를 사용하여 플레이어에서 수집됩니다. 모든 세분화된 데이터(최대 10초)는 개별 재생 세션에 대한 데이터를 수집하고 처리하는 Media Analytics 서비스로 전송됩니다. 재생 세션이 종료되면 저장 및 보고를 위해 계산된 추적 데이터가 Adobe Analytics로 전송됩니다. Adobe Customer Journey Analytics(CJA) 구현을 사용하면 고객이 보고 도구로 CJA를 활용할 수 있도록 Analytics 데이터 커넥터(ADC)를 사용하여 데이터를 CJA로 보낼 수 있습니다.
+Streaming Media 추적 데이터는 Media SDK, Adobe Experience Platform 미디어 확장 기능 및 Media Collection API을 사용하여 플레이어에서 수집됩니다. 모든 세분화된 데이터(최대 10초)는 개별 재생 세션에 대한 데이터를 수집하고 처리하는 Media Analytics 서비스로 전송됩니다. 재생 세션이 종료되면 저장 및 보고를 위해 계산된 추적 데이터가 Adobe Analytics로 전송됩니다. Adobe Customer Journey Analytics(CJA) 구현을 사용하면 고객이 보고 도구로 CJA를 활용할 수 있도록 Analytics 데이터 커넥터(ADC)를 사용하여 데이터를 CJA로 보낼 수 있습니다.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
 <div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="스트리밍 미디어 프로세스" width="75%">
+<img src="./assets/streaming-process1.png" alt="Streaming Media 프로세스" width="75%">
 </div>
 
 ## 기능
