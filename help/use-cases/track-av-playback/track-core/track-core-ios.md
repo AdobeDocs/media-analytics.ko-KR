@@ -1,14 +1,14 @@
 ---
 title: iOS에서 코어 재생을 추적하는 방법 알아보기
-description: iOS에서 Media SDK를 사용하여 코어 추적을 구현하는 방법을 알아봅니다.
+description: iOS에서 Media SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 97%
    | 상수 이름 | 설명 |
    |---|---|
    | `ADBMediaHeartbeatStreamTypeVOD` | Video on Demand에 대한 스트림 유형입니다 |
-   | `ADBMediaHeartbeatStreamTypeLIVE` | 라이브 컨텐츠에 대한 스트림 유형입니다 |
-   | `ADBMediaHeartbeatStreamTypeLINEAR` | 선형 컨텐츠에 대한 스트림 유형입니다 |
+   | `ADBMediaHeartbeatStreamTypeLIVE` | 라이브 콘텐츠에 대한 스트림 유형입니다 |
+   | `ADBMediaHeartbeatStreamTypeLINEAR` | 선형 콘텐츠에 대한 스트림 유형입니다 |
    | `ADBMediaHeartbeatStreamTypeAOD` | Audio On Demand에 대한 스트림 유형입니다. |
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | 오디오북에 대한 스트림 유형입니다. |
    | `ADBMediaHeartbeatStreamTypePODCAST` | 팟캐스트에 대한 스트림 유형입니다. |
