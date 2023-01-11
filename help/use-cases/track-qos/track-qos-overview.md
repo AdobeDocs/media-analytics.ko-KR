@@ -1,14 +1,14 @@
 ---
-title: 경험 추적 품질 설명
+title: 체감 품질 추적 설명
 description: Media SDK를 사용한 체감 품질(QoE, QoS) 추적에 대한 개요입니다.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
