@@ -1,14 +1,14 @@
 ---
-title: iOS에서 찾기를 추적하는 방법 알아보기
-description: iOS에서 Media SDK를 사용하여 찾기 시작 및 찾기 완료 이벤트를 추적하는 방법을 알아봅니다.
+title: iOS에서 찾기 추적하는 방법에 대해 알아보기
+description: iOS에서 Media SDK를 사용하여 찾기 시작 및 찾기 완료 이벤트를 추적하는 방법에 대해 알아봅니다.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -49,4 +49,4 @@ ht-degree: 82%
    }
    ```
 
-자세한 내용은 추적 시나리오 [주 컨텐츠에서 찾기를 사용하여 VOD 재생](/help/use-cases/tracking-scenarios/vod-seeking.md)을 참조하십시오.
+자세한 내용은 추적 시나리오 [주 콘텐츠에서 찾기를 사용하여 VOD 재생](/help/use-cases/tracking-scenarios/vod-seeking.md)을 참조하십시오.
