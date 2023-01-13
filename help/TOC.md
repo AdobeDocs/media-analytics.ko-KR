@@ -6,9 +6,9 @@ breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 97%
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + 지원 종료 {#end-of-support}
       + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
-      + 기존 - 독립형 Media SDK에서 Launch로 마이그레이션 {#sdk-to-launch}
+      + 레거시 - 독립형 Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
          + [개요](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -48,7 +48,7 @@ ht-degree: 97%
       + [API 빠른 시작](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [세션 요청](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [이벤트 요청](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [요청 매개 변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+      + [요청 매개변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
       + [이벤트 유형 및 설명](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
       + API 구현 {#mc-api-impl}
          + [플레이어에서 HTTP 요청 유형 설정](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
@@ -63,11 +63,11 @@ ht-degree: 97%
          + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 변수 {#variables}
-      + [Streaming Media 매개 변수](implementation/variables/audio-video-parameters.md)
-      + [광고 매개 변수](implementation/variables/ad-parameters.md)
-      + [챕터 매개 변수](implementation/variables/chapter-parameters.md)
-      + [플레이어 상태 매개 변수](implementation/variables/player-state-parameters.md)
-      + [품질 매개 변수](implementation/variables/quality-parameters.md)
+      + [Streaming Media 매개변수](implementation/variables/audio-video-parameters.md)
+      + [광고 매개변수](implementation/variables/ad-parameters.md)
+      + [챕터 매개변수](implementation/variables/chapter-parameters.md)
+      + [플레이어 상태 매개변수](implementation/variables/player-state-parameters.md)
+      + [품질 매개변수](implementation/variables/quality-parameters.md)
       + [계산된 지표](implementation/variables/calculated-metrics.md)
 + 보고 {#media-reports}
    + [미디어 보고서 지원](reporting/media-reports-enable.md)
@@ -128,9 +128,9 @@ ht-degree: 97%
       + 표준 메타데이터 구현 {#impl-std-metadata}
          + [JavaScript 3.x에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Chromecast에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [표준 메타데이터 매개 변수 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [표준 메타데이터 매개변수 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Roku에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [표준 메타데이터 매개 변수 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [표준 메타데이터 매개변수 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
       + 광고 추적 {#track-ads}
          + [개요](use-cases/track-ads/track-ads-overview.md)
          + [JavaScript 3.x에서 광고 추적](use-cases/track-ads/track-ads-js/track-ads-js3.md)
@@ -179,7 +179,7 @@ ht-degree: 97%
       + [테스트 1: 표준 재생](legacy/validation/test1-standard-playback.md)
       + [테스트 2: 미디어 중단](legacy/validation/test2-media-interrupt.md)
       + [테스트 호출 세부 사항](legacy/validation/test-call-details.md)
-      + [하트비트 매개 변수 설명](legacy/validation/heartbeat-params.md)
+      + [하트비트 매개변수 설명](legacy/validation/heartbeat-params.md)
       + 디버깅 {#debugging}
          + [SDK 디버깅](legacy/validation/debugging/sdk-debugging.md)
    + [이전 마이그레이션: VHL 1.x에서 VHL 2.x로](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
