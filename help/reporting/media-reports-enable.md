@@ -5,9 +5,9 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '950'
+source-git-commit: e0a8d2d16a746a717d54bdb171f66f3a7d112251
+workflow-type: tm+mt
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 각 보고서 세트를 구성해야 합니다.
 
-고급 고객은 미디어 코어가 활성화되고 [체감 품질](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=ko)에 대한 추적이 활성화된 후에만 Analysis Workspace의 미디어 패널을 사용할 수 있습니다.
+고급 고객은 미디어 코어가 활성화되고 [체감 품질](/help/use-cases/track-qos/track-qos-overview.md)에 대한 추적이 활성화된 후에만 Analysis Workspace의 미디어 패널을 사용할 수 있습니다.
 
 >[!TIP]
 >
