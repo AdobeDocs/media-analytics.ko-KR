@@ -4,10 +4,10 @@ description: Adobe Primetime 솔루션과 이 솔루션을 통해 Streaming Medi
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 82%
 
 ---
 
@@ -31,4 +31,4 @@ TVSDK는 이미 Media SDK에 통합되었으므로 지원되는 모든 플랫폼
 
 >[!NOTE]
 >
->이 구현 경로의 경우 Media Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 미디어 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다. 또한 영업 담당자/계정 관리자에게 연락하여 TVSDK 구매에 대해서도 논의해야 합니다.
+>이 구현 경로의 경우 Media Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 미디어 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/Adobe 계정 팀에 연락하여 새 판매 주문에 서명해야 합니다. 또한 영업 담당자/계정 관리자에게 연락하여 TVSDK 구매에 대해서도 논의해야 합니다.

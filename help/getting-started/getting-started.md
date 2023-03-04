@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->스트리밍 미디어용 Adobe Analytics를 구현하려면 Adobe 영업 담당자 또는 계정 관리자에게 문의하여 스트리밍 미디어가 제품 포트폴리오에 포함되어 있는지 확인하십시오.
+>Adobe Analytics 스트리밍 미디어를 구현하려면 Adobe 영업 담당자 또는 Adobe 계정 팀에 문의하여 스트리밍 미디어가 제품 포트폴리오에 포함되어 있는지 확인하십시오.
 
 ## 스트리밍 미디어용 Media SDK {#media-sdks}
 

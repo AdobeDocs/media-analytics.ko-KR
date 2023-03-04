@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '486'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 스트리밍 미디어용 Adobe Analytics를 구현하려면 다음 작업을 완료하십시오.
 
 1. **Steaming Media 가격 책정 모델 확인**<br>
-현재 가격 책정 모델은 비디오 스트림을 기반으로 합니다. 스트리밍 미디어용 Analytics는 Adobe Analytics와 별도로 판매되므로 필요한 경우 영업 담당자 또는 계정 관리자에게 문의하여 새 판매 주문을 등록하십시오.
+현재 가격 책정 모델은 비디오 스트림을 기반으로 합니다. 스트리밍 미디어용 Analytics는 Adobe Analytics과 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe 계정 팀에 문의하여 새 판매 주문에 서명하십시오.
 
 1. **Adobe Analytics를 구현하고 있는지 확인**<br>
 Adobe Analytics용 Streaming Media에는 Adobe Analytics 기본 구현도 필요합니다. 자세한 내용은 [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)을 참조하십시오.

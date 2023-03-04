@@ -4,10 +4,10 @@ description: Adobe Experience Platform 데이터 수집을 포함한 Adobe Strea
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **이 콘텐츠는 현재 구현 경로 파일**&#x200B;로 이동되었습니다.
 
-이 구현 경로의 경우 스트리밍 미디어용 Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 고객이 영업 담당자/계정 관리자에게 연락하여 새 판매 주문에 서명해야 합니다.
+스트리밍 미디어용 Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 각 구현 경로의 경우 고객이 영업 담당자/Adobe 계정 팀에 연락하여 새 판매 주문에 서명해야 합니다.
 
 ## Adobe Media Analytics 확장을 통한 Adobe Experience Platform 데이터 수집
 
