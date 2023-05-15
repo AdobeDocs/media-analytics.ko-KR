@@ -4,14 +4,14 @@ description: 웹 앱용 Adobe Streaming Media를 구현하는 방법에 대해 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 98%
 
 ---
 
-# JavaScript를 사용하여 Analytics 설치 {#install-web-sdks}
+# JavaScript를 사용하여 Media Analytics 설치 {#install-web-sdks}
 
 이 페이지의 정보에는 웹 독립형 SDK를 설치하고 JavaScript를 설정하는 방법이 설명되어 있습니다.
 

@@ -4,14 +4,14 @@ description: 웹 앱용 Adobe Streaming Media를 구현하는 방법에 대해 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: a6dba33839bba976b67a9b1e9669fce266d1cabd
-workflow-type: ht
-source-wordcount: '121'
-ht-degree: 100%
+source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 93%
 
 ---
 
-# Media Analytics 확장을 사용하여 Analytics 설치
+# Media Analytics 확장을 사용하여 Media Analytics 설치
 
 Adobe Media Analytics 확장을 사용하여 Analytics를 구현할 수 있습니다. Media Analytics 확장은 Core JavaScript Media SDK(Media 3.x SDK)를 추가합니다. 이 확장은 태그 활성화 사이트 또는 프로젝트에 미디어 추적기 인스턴스를 추가하는 기능을 제공합니다.
 

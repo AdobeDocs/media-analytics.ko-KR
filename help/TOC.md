@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 100%
             + [JavaScript를 사용하여 Analytics 설치](implementation/media-sdk/setup/web-implementation.md)
             + [Media Analytics 확장을 사용하여 Analytics 설치](implementation/media-sdk/setup/web-implementation-tags.md)
          + [모바일 SDK 설치](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Adobe Experience Platform Edge를 사용하여 Analytics 설치](implementation/media-sdk/implementation-edge.md)
          + OTT SDK 설치 {#ott-setup}
             + [Chromecast SDK 설치](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Roku SDK 설치](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 100%
       + [iOS에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-ios.md)
       + JavaScript에서 코어 재생 추적 {#track-core-javascript}
          + [JavaScript 2.x에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Android에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [iOS에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + JavaScript에서 버퍼링 추적 {#track-buffering-js}
-         + [JavaScript 2.x에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Android에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [iOS에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + JavaScript에서 찾기 추적 {#track-seeking-js}
-         + [JavaScript 2.x에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Android에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [iOS에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [iOS 메타데이터 키](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + JavaScript에서 표준 메타데이터 구현 {#impl-std-md-js}
-         + [JavaScript 2.x에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [Android에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [iOS에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + JavaScript에서 버퍼링 추적 {#track-buffering-js}
+            + [JavaScript 2.x에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [Android에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [iOS에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + JavaScript에서 찾기 추적 {#track-seeking-js}
+            + [JavaScript 2.x에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [Android에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [iOS에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [iOS 메타데이터 키](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + JavaScript에서 표준 메타데이터 구현 {#impl-std-md-js}
+            + [JavaScript 2.x에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 광고 추적 {#track-ads}
          + [Android에서 광고 추적](use-cases/track-ads/track-ads-android.md)
          + [iOS에서 광고 추적](use-cases/track-ads/track-ads-ios.md)
