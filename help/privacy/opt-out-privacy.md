@@ -45,6 +45,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >사용자가 추적을 옵트아웃하면 사용자가 다시 옵트인할 때까지 유지된 모든 디바이스 데이터와 ID가 삭제됩니다.
@@ -62,6 +63,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **현재 설정 반환:**
 
          * **Chromecast:**
@@ -75,6 +77,7 @@ ht-degree: 100%
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    `setPrivacyStatus`를 사용하여 개인정보 보호 설정을 변경한 후에는 이 메서드를 사용하여 다시 변경할 때까지 또는 앱을 제거하고 다시 설치하기 전까지 변경 내용이 영구적으로 유지됩니다.
 
 ## 저장된 ID 검색 (OTT 앱) {#retrieving-stored-identifiers-ott-apps}
