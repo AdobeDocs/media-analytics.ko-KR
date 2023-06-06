@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '7004'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '7002'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/> `config.downloadedcontent` </li> <li> **API 키:**<br/>&#x200B;백엔드에서 가져옴 </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 부울 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** <br/>Android 및 iOS 확장 기능 v1.1.0 실행 </li> <li> **샘플 값:**<br/> true </li> <li> **설명:**<br/> 다운로드한 콘텐츠 미디어 세션 재생으로 인해 히트가 생성되면 참으로 설정합니다. 다운로드한 콘텐츠가 재생되지 않을 경우 나타나지 않습니다.<br/><br/>[Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **하트비트:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 정의 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;해당 사항 없음 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 정의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.downloaded) </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM 필드 패스:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> `config.downloadedcontent` </li> <li> **API 키:**<br/>&#x200B;백엔드에서 가져옴 </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 부울 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** <br/>Android 및 iOS 확장 기능 v1.1.0 실행 </li> <li> **샘플 값:**<br/> true </li> <li> **설명:**<br/> 다운로드한 콘텐츠 미디어 세션 재생으로 인해 히트가 생성되면 참으로 설정합니다. 다운로드한 콘텐츠가 재생되지 않을 경우 나타나지 않습니다.<br/><br/>[Launch](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **하트비트:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 정의 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;해당 사항 없음 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 정의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.downloaded) </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM 필드 패스:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### 콘텐츠 플레이어 이름
 

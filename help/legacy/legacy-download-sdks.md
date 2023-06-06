@@ -4,10 +4,10 @@ description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Media Analytics 확장은 오디오 및 비디오를 위한 핵심 JavaScr
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
 * [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구성해야 합니다.
-* [오디오 및 비디오용 Adobe Media Analytics 시작 확장](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)을 구성해야 합니다.
+* 다음을 구성해야 합니다. [오디오 및 비디오용 Adobe Medium 분석 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)을 구성해야 합니다.
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
