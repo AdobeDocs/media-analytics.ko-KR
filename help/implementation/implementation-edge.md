@@ -4,9 +4,9 @@ description: Adobe 스트리밍 미디어를 구현하는 방법에 대해 알�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1883'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 ## AEP Mobile SDK를 사용하여 Experience Platform Edge로 데이터 보내기
 
-Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Experience Platform Edge로 전송할 수 있습니다. (또는 edge API의 사용자 지정 구현을 사용할 수 있습니다.<!-- I guess we don't need/want to document this? -->)
+Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Experience Platform Edge로 전송할 수 있습니다. (또는 edge API의 사용자 지정 구현을 사용할 수 있습니다.<!-- Waiting for link from John -->)
 
 다음 설명서 리소스를 사용하여 iOS 및 Android 모두에 대한 구현을 완료하십시오.
 
@@ -352,5 +352,5 @@ Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Expe
 
 * [API 참조](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (Media 확장에서 Edge로 마이그레이션하는 사용자의 경우)
+* [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
