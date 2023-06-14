@@ -4,10 +4,10 @@ description: Adobe 스트리밍 미디어를 구현하는 방법에 대해 알�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
+source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 11%
+source-wordcount: '1939'
+ht-degree: 10%
 
 ---
 
@@ -344,7 +344,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 ## AEP Mobile SDK를 사용하여 Experience Platform Edge로 데이터 보내기
 
-Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Experience Platform Edge로 전송할 수 있습니다. (또는 edge API의 사용자 지정 구현을 사용할 수 있습니다.<!-- Waiting for link from John -->)
+Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Experience Platform Edge로 전송할 수 있습니다.
 
 다음 설명서 리소스를 사용하여 iOS 및 Android 모두에 대한 구현을 완료하십시오.
 
@@ -354,3 +354,13 @@ Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Expe
 
 * [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
+
+또는 다음 리소스를 사용하여 Edge API의 사용자 지정 구현을 사용할 수 있습니다.
+
+* [Media Edge API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+
+* [Media Edge API 시작](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+
+* [Media Edge API 문제 해결 안내서](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+
+* [Media Edge API용 Open API 사양 파일 사용](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
