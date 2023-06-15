@@ -4,10 +4,10 @@ description: 모바일 앱용 Adobe Streaming Media를 구현하는 방법에 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,9 @@ Android 또는 iOS에서 모바일 앱용 Streaming Media를 구현하려면 다
 
 * **Adobe Experience Platform Mobile SDK**
 
-   데이터를 수집하려면 Adobe Experience Platform에서 태그를 사용합니다. Adobe Experience Platform의 태그는 다른 태그 지정 요구 사항과 함께 Analytics 코드를 배포할 수 있도록 해 주는 태그 관리 솔루션입니다.
+  데이터를 수집하려면 다음 중 하나를 사용합니다.
+   * Adobe Experience Platform의 태그. Adobe Experience Platform의 태그는 다른 태그 지정 요구 사항과 함께 Analytics 코드를 배포할 수 있도록 해 주는 태그 관리 솔루션입니다.
+   * Adobe Experience Platform Edge
 
 * **Android용 Media SDK** 또는 **iOS용 Media SDK**
 
@@ -27,7 +29,7 @@ SDK를 다운로드하고 추가 설명서 리소스를 보려면 [Media SDK, �
 
 * **유효한 구성 매개 변수 얻기**
 
-   이러한 매개 변수는 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
+  이러한 매개 변수는 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 
 * **미디어 플레이어에서 다음 API 포함**
 

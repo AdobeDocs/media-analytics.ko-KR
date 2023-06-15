@@ -4,10 +4,10 @@ description: Adobe 스트리밍 미디어를 구현하는 방법에 대해 알�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
+source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 10%
+source-wordcount: '1837'
+ht-degree: 11%
 
 ---
 
@@ -15,45 +15,17 @@ ht-degree: 10%
 
 Adobe Experience Platform Edge를 사용하면 여러 제품을 대상으로 한 데이터를 중앙 위치에 전송할 수 있습니다. Experience Edge는 적절한 정보를 원하는 제품에 전달합니다. 이 개념을 사용하면 특히 여러 데이터 솔루션에 걸쳐 구현 노력을 통합할 수 있습니다.
 
-다음 그래픽은 Experience Platform 에지를 사용하는 Media Analytics 구현을 보여 줍니다.
+다음 그래픽은 Media Analytics 구현에서 Experience Platform Edge를 사용하여 Analysis Workspace(Adobe Analytics 또는 Customer Journey Analytics)에서 데이터를 사용할 수 있도록 하는 방법을 보여줍니다.
 
-![Edge 구현](assets/media-analytics-implementation-overview.png)
+![CJA 워크플로](assets/cja-implementation.png)
+
+Experience Platform Edge를 사용하지 않는 구현 방법을 포함한 모든 구현 옵션에 대한 개요는 를 참조하십시오. [Adobe Analytics 또는 Customer Journey Analytics용 Streaming Media 구현](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->현재 Adobe Experience Platform Mobile SDK를 사용해야만 Experience Edge로 데이터를 보낼 수 있습니다.
+>Streaming Media는 아직 AEP 웹 SDK와 통합되지 않았습니다.
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-다음 섹션을 완료하여 Experience Platform Edge를 사용하여 Media Analytics를 구현합니다.
-
-* [보고서 세트 정의](#define-a-report-suite)
-* [Adobe Experience Platform에서 스키마 설정](#set-up-the-schema-in-adobe-experience-platform)
-* [Adobe Experience Platform에서 데이터 세트 만들기](#create-a-dataset-in-adobe-experience-platform)
-* [Adobe Experience Platform에서 데이터 스트림 구성](#configure-a-datastream-in-adobe-experience-platform)
-* [Customer Journey Analytics에 연결 만들기](#create-a-connection-in-customer-journey-analytics)
-* [Customer Journey Analytics에서 데이터 보기 만들기](#create-a-data-view-in-customer-journey-analytics)
-* [Customer Journey Analytics에서 프로젝트 만들기 및 구성](#create-and-configure-a-project-in-customer-journey-analytics)
-* [Edge 확장을 사용하여 데이터를 Experience Platform Edge로 보내기](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## 보고서 세트 정의
-
->[!NOTE]
->
->Adobe Analytics을 사용하는 경우에만 보고서 세트가 필요합니다. 보고에 Customer Journey Analytics을 사용하려는 경우 보고서 세트가 필요하지 않습니다.
-
-보고에 Adobe Analytics을 사용할 계획이라면 스트리밍 미디어 구현에 사용할 보고서 세트가 있어야 합니다. 보고서 세트 정의에 대한 자세한 내용은 [보고서 세트 관리자](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-보고서 세트가 정의된 후 다음을 계속합니다. [Adobe Experience Platform에서 스키마 설정](#set-up-the-schema-in-adobe-experience-platform).
+Mobile SDK 또는 API를 사용하여 Experience Edge로 스트리밍 미디어를 구현하는지 여부에 관계없이 먼저 다음 섹션을 완료해야 합니다.
 
 ## Adobe Experience Platform에서 스키마 설정
 
@@ -353,7 +325,6 @@ Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Expe
 * [API 참조](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 또는 다음 리소스를 사용하여 Edge API의 사용자 지정 구현을 사용할 수 있습니다.
 
