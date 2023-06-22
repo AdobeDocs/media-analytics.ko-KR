@@ -4,9 +4,9 @@ description: Adobe 스트리밍 미디어를 구현하는 방법에 대해 알�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
+source-git-commit: 008f5a694ffa6416c0ff64f4f0ba06bf807ff5a6
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1778'
 ht-degree: 11%
 
 ---
@@ -46,60 +46,61 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    ![필드 그룹 추가됨](assets/schema-field-groups-added.png)
 
-
-이 섹션의 다음 단계는 선택 사항이며, Media Edge API에 대한 요청은 AEP 스키마 UI에서 지정된 필드를 숨기지 않고도 작동합니다.
-그러나 숨겨진 필드는 Media Edge API에서 사용되지 않으므로 필드를 숨기면 스키마를 더 쉽게 읽고 이해할 수 있습니다.
-다음 단계는 의 필드만 참조합니다. `MediaAnalytics Interaction Details` 필드 그룹입니다.
-
-1. 다음에서 [!UICONTROL **구조**] 영역을 선택하고 `Media Collection Details` 필드, 선택 [!UICONTROL **관련 필드 관리**]&#x200B;를 클릭한 다음 다음과 같이 스키마를 업데이트합니다.
-
-   ![관련 필드 관리](assets/manage-related-fields.png)
-
-   * 다음에서 `Media Collection Details` 필드, 숨기기 `List Of States` 필드.
-
-     ![미디어 컬렉션 상태 숨기기](assets/schema-hide-media-collection-states.png)
-
-   * 다음에서 `Media Collection Details` > `Advertising Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Completed`, `Ad Started`, 및 `Ad Time Played`.
-
-   * 다음에서 `Media Collection Details` > `Advertising Pod Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Break ID`
-
-   * 다음에서 `Media Collection Details` > `Chapter Details` 필드, 다음 보고 필드를 숨깁니다. `Chapter ID`, `Chapter Completed`, `Chapter Started`, 및 `Chapter Time Played`.
-
-   * 다음에서 `Media Collection Details` > `Qoe Data Details` 필드, 다음 보고 필드를 숨깁니다. `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, 및 `Total Stalling Duration`.
-
-   * 다음에서 `Media Collection Details` > `Session Details` 필드, 다음 보고 필드를 숨깁니다. `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, 및 `Pccr`.
-
-   * 다음에서 `Media Collection Details` > `List Of States End` 및 `Media Collection Details` > `List Of States Start` 필드, 다음 보고 필드를 숨깁니다. `Player State Count`, `Player State Set`, 및 `Player State Time`.
-
-     ![숨길 필드](assets/schema-hide-listofstates.png)
-
 1. 선택 [!UICONTROL **확인**] 변경 사항을 저장합니다.
 
-1. 다음에서 [!UICONTROL **구조**] 영역을 선택하고 `List Of Media Collection Downloaded Content Events` 필드, 선택 [!UICONTROL **관련 필드 관리**]&#x200B;를 클릭한 다음 다음과 같이 스키마를 업데이트합니다.
+1. (선택 사항) Media Edge API에서 사용되지 않는 특정 필드를 숨길 수 있습니다. 이러한 필드를 숨기면 스키마를 읽고 이해하는 것이 쉬워지지만 필수는 아닙니다. 이 필드는 의 필드만 참조합니다. `MediaAnalytics Interaction Details` 필드 그룹입니다.
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` 필드, 숨기기 `List Of States` 필드.
++++ 숨길 수 있는 필드에 대한 지침을 보려면 여기를 확장하십시오.
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Completed`, `Ad Started`, 및 `Ad Time Played`.
+   1. 다음에서 [!UICONTROL **구조**] 영역을 선택하고 `Media Collection Details` 필드, 선택 [!UICONTROL **관련 필드 관리**]&#x200B;를 클릭한 다음 다음과 같이 스키마를 업데이트합니다.
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Break ID`
+      ![관련 필드 관리](assets/manage-related-fields.png)
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 필드, 다음 보고 필드를 숨깁니다. `Chapter ID`, `Chapter Completed`, `Chapter Started`, 및 `Chapter Time Played`.
+      * 다음에서 `Media Collection Details` 필드, 숨기기 `List Of States` 필드.
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 필드, 다음 보고 필드를 숨깁니다. `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, 및 `Total Stalling Duration`.
+        ![미디어 컬렉션 상태 숨기기](assets/schema-hide-media-collection-states.png)
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 필드, 다음 보고 필드를 숨깁니다. `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, 및 `Pccr`.
+      * 다음에서 `Media Collection Details` > `Advertising Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Completed`, `Ad Started`, 및 `Ad Time Played`.
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 및 `Media Collection Details` > `List Of States Start` 필드, 다음 보고 필드를 숨깁니다. `Player State Count`, `Player State Set`, 및 `Player State Time`.
+      * 다음에서 `Media Collection Details` > `Advertising Pod Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Break ID`
 
-   * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details`  필드, 숨기기 `Media Session ID` 필드.
+      * 다음에서 `Media Collection Details` > `Chapter Details` 필드, 다음 보고 필드를 숨깁니다. `Chapter ID`, `Chapter Completed`, `Chapter Started`, 및 `Chapter Time Played`.
 
-1. 선택 [!UICONTROL **확인**] 변경 사항을 저장합니다.
+      * 다음에서 `Media Collection Details` > `Qoe Data Details` 필드, 다음 보고 필드를 숨깁니다. `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, 및 `Total Stalling Duration`.
 
-1. 다음에서 [!UICONTROL **구조**] 영역을 선택하고 `Media Reporting Details` 필드, 선택 [!UICONTROL **관련 필드 관리**]&#x200B;를 클릭한 다음 다음과 같이 스키마를 업데이트합니다.
+      * 다음에서 `Media Collection Details` > `Session Details` 필드, 다음 보고 필드를 숨깁니다. `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, 및 `Pccr`.
 
-   * 다음에서 `Media Reporting Details` 필드, 다음 필드를 숨깁니다. `Error Details`, `List Of States End`, `List of States Start`, 및 `Media Session ID`.
+      * 다음에서 `Media Collection Details` > `List Of States End` 및 `Media Collection Details` > `List Of States Start` 필드, 다음 보고 필드를 숨깁니다. `Player State Count`, `Player State Set`, 및 `Player State Time`.
 
-1. 선택 [!UICONTROL **확인**] > [!UICONTROL **저장**]  변경 사항을 저장합니다.
+        ![숨길 필드](assets/schema-hide-listofstates.png)
+
+   1. 선택 [!UICONTROL **확인**] 변경 사항을 저장합니다.
+
+   1. 다음에서 [!UICONTROL **구조**] 영역을 선택하고 `List Of Media Collection Downloaded Content Events` 필드, 선택 [!UICONTROL **관련 필드 관리**]&#x200B;를 클릭한 다음 다음과 같이 스키마를 업데이트합니다.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` 필드, 숨기기 `List Of States` 필드.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Completed`, `Ad Started`, 및 `Ad Time Played`.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 필드, 다음 보고 필드를 숨깁니다. `Ad Break ID`
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 필드, 다음 보고 필드를 숨깁니다. `Chapter ID`, `Chapter Completed`, `Chapter Started`, 및 `Chapter Time Played`.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 필드, 다음 보고 필드를 숨깁니다. `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, 및 `Total Stalling Duration`.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 필드, 다음 보고 필드를 숨깁니다. `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, 및 `Pccr`.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 및 `Media Collection Details` > `List Of States Start` 필드, 다음 보고 필드를 숨깁니다. `Player State Count`, `Player State Set`, 및 `Player State Time`.
+
+      * 다음에서 `List Of Media Collection Downloaded Content Events` > `Media Details`  필드, 숨기기 `Media Session ID` 필드.
+
+   1. 선택 [!UICONTROL **확인**] 변경 사항을 저장합니다.
+
+   1. 다음에서 [!UICONTROL **구조**] 영역을 선택하고 `Media Reporting Details` 필드, 선택 [!UICONTROL **관련 필드 관리**]&#x200B;를 클릭한 다음 다음과 같이 스키마를 업데이트합니다.
+
+      * 다음에서 `Media Reporting Details` 필드, 다음 필드를 숨깁니다. `Error Details`, `List Of States End`, `List of States Start`, 및 `Media Session ID`.
+
+   1. 선택 [!UICONTROL **확인**] > [!UICONTROL **저장**]  변경 사항을 저장합니다.
 
 1. 계속 [Adobe Experience Platform에서 데이터 세트 만들기](#create-a-dataset-in-adobe-experience-platform).
 
