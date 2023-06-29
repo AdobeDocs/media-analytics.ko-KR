@@ -5,10 +5,10 @@ uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b191a79e02e0f542368470830e1662a434f3ff88
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -18,4 +18,4 @@ Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루�
 
 클라이언트측 통합은 Media Analytics로만 구현됩니다. Media SDK나 Media Collection API(또는 둘 다)를 구현하도록 선택할 수 있습니다. 이 클라이언트측 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 플레이어에서 사용할 수 있습니다.
 
-Media Analytics가 의도한 경로인 경우 [Media SDK 구현](/help/implementation/media-sdk/media-sdk-overview.md) 및 [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md)를 참조하십시오.
+Media Analytics가 의도한 경로인 경우 [Media SDK 구현](/help/implementation/media-sdk-overview.md) 및 [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md)를 참조하십시오.

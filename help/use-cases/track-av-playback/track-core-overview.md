@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->플레이헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 `getCurrentPlayheadTime`에 대한 내용은 [개요: 일반 구현 지침](/help/implementation/media-sdk/media-sdk-overview.md)을 참조하십시오.
+>플레이헤드 위치는 설정 및 구성 코드의 일부로 설정됩니다. 자세한 `getCurrentPlayheadTime`에 대한 내용은 [개요: 일반 구현 지침](/help/implementation/media-sdk-overview.md)을 참조하십시오.
 
 
 ## 구현 {#implement}
@@ -107,13 +107,13 @@ ht-degree: 100%
 
    * **표준 메타데이터 -**
 
-      >[!NOTE]
-      >
-      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+     >[!NOTE]
+     >
+     >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
-      표준 메타데이터 개체를 인스턴스화하고, 원하는 변수를 채우고, 미디어 하트비트 개체에서 메타데이터 개체를 설정합니다.
+     표준 메타데이터 개체를 인스턴스화하고, 원하는 변수를 채우고, 미디어 하트비트 개체에서 메타데이터 개체를 설정합니다.
 
-      메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](../../implementation/variables/audio-video-parameters.md)에서 참조하십시오.
+     메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](../../implementation/variables/audio-video-parameters.md)에서 참조하십시오.
 
    * **사용자 지정 메타데이터 -** 사용자 지정 변수에 대한 변수 개체를 만들고, 이 콘텐츠의 데이터로 채웁니다.
 

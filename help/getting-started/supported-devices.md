@@ -4,7 +4,7 @@ description: “iOS, Android 및 OTT 디바이스 및 JavaScript 브라우저와
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 69%
@@ -25,7 +25,7 @@ ht-degree: 69%
 
 아래 표는 현재 지원되는 디바이스 목록입니다. 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
 
-Media on Edge 구현에 대한 자세한 내용은 다음을 참조하십시오. [Experience Platform Edge로 Media Analytics 설치](/help/implementation/implementation-edge.md).
+Media on Edge 구현에 대한 자세한 내용은 다음을 참조하십시오. [Experience Platform Edge로 Media Analytics 설치](/help/implementation/edge/implementation-edge.md).
 
 | 스트리밍 플랫폼 및 디바이스 | | Edge Network SDK/확장 프로그램용 미디어 | Media Edge API | 태그 또는 AEP 모바일 SDK가 포함된 미디어 확장 | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

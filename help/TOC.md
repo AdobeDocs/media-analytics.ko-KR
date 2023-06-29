@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 129818d73bdcc63fcf922d295e3f360ab1375dbe
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 99%
+source-wordcount: '904'
+ht-degree: 96%
 
 ---
 
@@ -33,36 +33,39 @@ ht-degree: 99%
          + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
-   + Media SDK - 구현 {#media-sdk}
-      + [Media SDK 개요](implementation/media-sdk/media-sdk-overview.md)
-      + 설치 및 구성 {#setup}
-         + Web SDK 설치 {#install-web-sdk}
-            + [JavaScript를 사용하여 Analytics 설치](implementation/media-sdk/setup/web-implementation.md)
-            + [Media Analytics 확장을 사용하여 Analytics 설치](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [모바일 SDK 설치](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDK 설치 {#ott-setup}
+   + [Media SDK 개요](/help/implementation/media-sdk-overview.md)
+   + Edge 구현(권장) {#edge-recommended}
+      + Media Edge SDK / 확장 {#media-edge-sdk}
+         + [Media Edge SDK/확장 설정](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
+      + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
+   + Adobe Analytics 전용 구현 {#analytics-only}
+      + Media SDK / 확장 {#media-sdk}
+         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+         + [미디어 분석 확장](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
+         + OTT SDK {#ott-setup}
             + [Chromecast SDK 설치](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Roku SDK 설치](implementation/media-sdk/setup/set-up-roku.md)
-   + [Adobe Experience Platform Edge로 Analytics 설치](implementation/implementation-edge.md)
-   + Media Collection API - 구현 {#streaming-media-apis}
-      + [미디어 컬렉션](implementation/media-collection-api/mc-api-overview.md)
-      + [API 빠른 시작](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
-      + [세션 요청](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
-      + [이벤트 요청](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [요청 매개변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [이벤트 유형 및 설명](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-      + API 구현 {#mc-api-impl}
-         + [플레이어에서 HTTP 요청 유형 설정](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
-         + [세션 ID 가져오기](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-         + [이벤트 요청 구현](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
-         + [JSON 유효성 검사 스키마](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
-         + [이벤트 요청 확인](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
-         + [Ping 이벤트 보내기](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
-         + [QoE 데이터 보내기](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
-         + [사용자 정의 메타데이터 지원](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
-         + [시간 제한 조건](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
-         + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
-         + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + Media Collection API - 구현 {#streaming-media-apis}
+         + [미디어 컬렉션](implementation/media-collection-api/mc-api-overview.md)
+         + [API 빠른 시작](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
+         + [세션 요청](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+         + [이벤트 요청](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
+         + [요청 매개변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+         + [이벤트 유형 및 설명](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
+         + API 구현 {#mc-api-impl}
+            + [플레이어에서 HTTP 요청 유형 설정](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+            + [세션 ID 가져오기](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
+            + [이벤트 요청 구현](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+            + [JSON 유효성 검사 스키마](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
+            + [이벤트 요청 확인](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+            + [Ping 이벤트 보내기](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
+            + [QoE 데이터 보내기](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+            + [사용자 정의 메타데이터 지원](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+            + [시간 제한 조건](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
+            + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
+            + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 변수 {#variables}
       + [Streaming Media 매개변수](implementation/variables/audio-video-parameters.md)
       + [광고 매개변수](implementation/variables/ad-parameters.md)
