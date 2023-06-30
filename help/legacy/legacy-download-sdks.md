@@ -4,16 +4,16 @@ description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 93%
+source-wordcount: '339'
+ht-degree: 76%
 
 ---
 
 # 레거시 — SDK 다운로드{#legacy-download-sdks}
 
-이 페이지의 정보에는 **이전** 2.x Media SDK 및 1.x 이전 Media SDK를 다운로드할 수 있는 링크가 포함되어 있습니다.
+이 페이지의 정보에는 를 다운로드할 수 있는 링크가 포함되어 있습니다. **legacy**  2.x Media SDK 및 **legacy** 1.x Media SDKs.
 
 **최신** SDK 다운로드에 대한 자세한 내용은 [SDK 다운로드](/help/getting-started/download-sdks.md)를 참조하십시오.
 
@@ -34,8 +34,8 @@ Adobe Media Analytics 확장은 오디오 및 비디오를 위한 핵심 JavaScr
 
 | 2.x Media SDK  | 최신 Media SDK 다운로드 |  API   |  설명서  |
 | --- | --- | --- | --- |
-| Android/Fire TV | [Android용 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/legacy/media-sdk/setup/set-up-android.md) |
-| iOS/Apple TV | [iOS v2.3.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (기존 2.0 SDK를 얻으려면 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/legacy/media-sdk/setup/set-up-ios.md) |
-| JavaScript | [JS v2.2.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x 설정](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Roku v2.2.6용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| Chromecast | [Chromecast v2.2.0용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| Android/Fire TV | [Android v2.2.4용 레거시 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android 설정](/help/legacy/media-sdk/setup/set-up-android.md) |
+| iOS/Apple TV | [iOS v2.3.0용 레거시 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (연락처 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 기존 2.0 SDK를 얻으려면 ) | [iOS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS 설정](/help/legacy/media-sdk/setup/set-up-ios.md) |
+| JavaScript | [JS v2.2.2용 레거시 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x 설정](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
+| Roku | [Roku v2.2.6용 레거시 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [Roku 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| Chromecast | [Chromecast v2.2.0용 레거시 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md) |

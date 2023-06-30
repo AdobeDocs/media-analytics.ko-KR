@@ -2,8 +2,9 @@
 title: 스트리밍 미디어용 Adobe Analytics 릴리스 정보
 description: Adobe Analytics 릴리스 정보를 살펴보십시오.
 feature: Release Notes
+role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 91%
