@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: cb45048d77edc188b5fdbd60ae89c165ff9befa0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 96%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 96%
       + [Android 설정](legacy/media-sdk/setup/set-up-android.md)
       + [iOS 설정](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript 설정 {#setup-javascript}
-         + [JavaScript 3.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [JavaScript 2.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [하트비트 측정 정보](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 및 스트리밍 미디어용 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 대상자 관리 지원](legacy/intro-to-ava/am-enablement.md)
@@ -187,7 +187,6 @@ ht-degree: 96%
       + 디버깅 {#debugging}
          + [SDK 디버깅](legacy/validation/debugging/sdk-debugging.md)
    + [이전 마이그레이션: VHL 1.x에서 VHL 2.x로](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [JavaScript 2.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [코드 비교 v1.x대 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API 1x에서 2x로 추적](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [레거시 - AVA 소개](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
