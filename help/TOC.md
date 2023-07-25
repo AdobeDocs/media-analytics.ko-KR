@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: 미디어 분석 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: fa72159d968e50c3b3e02853e8509533d91f1785
+source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '896'
 ht-degree: 96%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 96%
 + 릴리스 정보 {#release-notes}
    + [Streaming Media 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
-   + [개요](getting-started/getting-started.md)
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
    + [Streaming Media 설명서](getting-started/implementation-documentation.md)
