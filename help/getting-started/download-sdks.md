@@ -6,9 +6,9 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '405'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 |:---:|---|---|---|---|
 | ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - «[JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript를 사용하여 Analytics 설치](/help/implementation/media-sdk/setup/web-implementation.md) | [JS v3.0.2용 Media SDK 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - 미디어 확장 기능 |  | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) — 태그 사용(데이터 수집)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - Experience Platform 에지(준비 중) |  | [Experience Platform 에지로 Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
+| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - Experience Platform Edge (준비 중) |  | [Experience Platform Edge로 Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
 
 ### 모바일 구현 {#get-mobile-extension}
 
@@ -40,8 +40,8 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 |:---:|---|---|---|
 | ![Android 아이콘](assets/android-icon.png) | Android - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android 아이콘](assets/android-icon.png) | Android - Experience Platform 에지 | [Experience Platform 에지로 Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
-| ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform 에지 | [Experience Platform 에지로 Analytics 설치](/help/implementation/edge/implementation-edge.md) |  |
+| ![Android 아이콘](assets/android-icon.png) | Android - Experience Platform Edge | [Experience Platform Edge로 Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Experience Platform Edge로 Analytics 설치](/help/implementation/edge/implementation-edge.md) |  |
 
 ### OTT 구현 {#download-ott-libraries}
 
