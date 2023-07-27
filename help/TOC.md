@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 96%
          + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
-   + Edge 구현(권장) {#edge-recommended}
+   + Edge 구현 (권장) {#edge-recommended}
       + Media Edge SDK / 확장 {#media-edge-sdk}
-         + [Media Edge SDK/확장 설정](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge SDK / 확장 설정](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
       + Media SDK / 확장 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [미디어 분석 확장](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [Media Analytics 확장 기능](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
          + OTT SDK {#ott-setup}
             + [Chromecast SDK 설치](implementation/media-sdk/setup/set-up-chromecast.md)

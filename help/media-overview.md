@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 65%
 
 ![배너](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media는 Adobe Analytics 및 Customer Journey Analytics의 추가 기능으로서, 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. 스트리밍 미디어용 Analytics을 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
+스트리밍 미디어용 Adobe Analytics 및 Customer Journey Analytics의 추가 기능으로서, 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. 스트리밍 미디어용 Analytics를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
 
 스트리밍 미디어용 Adobe Analytics를 사용하면 사이트 및 스트리밍 앱에서의 전체 고객 여정을 추적할 수 있습니다. Streaming Media 지표를 Audience Analytics, Mobile 또는 Cross-Device Analytics와 같은 다른 Adobe Analytics 기능과 결합할 수 있습니다. 이 지표는 Adobe Analytics 보고서 및 기타 Adobe Experience Platform 제품에 쉽게 통합됩니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
 
@@ -24,23 +24,23 @@ Adobe Analytics for Streaming Media는 Adobe Analytics 및 Customer Journey Anal
 
 >[!IMPORTANT]
 >
->Adobe Analytics 스트리밍 미디어를 구현하려면 Adobe 영업 담당자 또는 Adobe 계정 팀에 문의하여 스트리밍 미디어가 제품 포트폴리오에 포함되어 있는지 확인하십시오.
+>스트리밍 미디어용 Adobe Analytics를 구현하려면 Adobe 영업 담당자 또는 Adobe 계정 팀에게 문의하여 스트리밍 미디어가 제품 포트폴리오에 포함되어 있는지 확인하십시오.
 
 
 ## 작동 방법
 
-Streaming Media 추적 데이터는 Edge Network SDK/Extension용 Media, 태그가 있는 Media Extension, Media SDK, Media Edge API 또는 Media Collection API를 사용하여 플레이어에서 수집됩니다.
+스트리밍 미디어 추적 데이터는 Edge Network SDK/확장용 미디어, 태그가 포함된 Media Extension, Media SDK, Media Edge API 또는 미디어 컬렉션 API를 사용하여 플레이어에서 수집됩니다.
 
-모든 세분화된 데이터(최대 10초)는 다음에 따라 Media Analytics 서비스 또는 Experience Edge로 전송됩니다. [구현 방법](/help/implementation/overview.md) 를 선택합니다. 각 개별 재생 세션에 대한 데이터를 수집하고 처리합니다.
+모든 세분화된 데이터(최대 10초)는 개별 재생 세션에 대한 데이터를 수집하고 처리하는 Media Analytics Service 또는 Experience Edge(선택한 [구현 방법](/help/implementation/overview.md)에 따라 다름)로 전송됩니다.
 
-재생 세션이 종료되면 저장 및 보고를 위해 계산된 추적 데이터가 Adobe Analytics 또는 Customer Journey Analytics으로 전송됩니다.
+재생 세션이 종료되면 저장 및 보고를 위해 계산된 추적 데이터가 Adobe Analytics 또는 Customer Journey Analytics로 전송됩니다.
 
 >[!NOTE]
 >
->Customer Journey Analytics 구현을 사용하면 Experience Edge나 Analytics 데이터 커넥터(ADC)를 사용하여 데이터를 Customer Journey Analytics으로 전송할 수 있습니다.
+>Customer Journey Analytics 구현을 사용하면 Experience Edge 또는 ADC(Analytics Data Connector)를 사용하여 데이터를 Customer Journey Analytics로 보낼 수 있습니다.
 
 
-다음을 참조하십시오 [Adobe Analytics 또는 Customer Journey Analytics용 Streaming Media 구현](/help/implementation/overview.md) 추가 정보.
+자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics용 Streaming Media 구현](/help/implementation/overview.md)을 참조하십시오.
 
 ## 기능
 
