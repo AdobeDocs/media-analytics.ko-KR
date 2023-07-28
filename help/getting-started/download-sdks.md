@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
-workflow-type: ht
-source-wordcount: '405'
-ht-degree: 100%
+source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 91%
 
 ---
 
@@ -28,24 +28,24 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 
 ### 웹 구현 {#download-web-sdk}
 
-| 지원되는 플랫폼 | 버전 |  API   |  설명서  |  샘플  |
-|:---:|---|---|---|---|
-| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - «[JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript를 사용하여 Analytics 설치](/help/implementation/media-sdk/setup/web-implementation.md) | [JS v3.0.2용 Media SDK 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
-| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - 미디어 확장 기능 |  | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) — 태그 사용(데이터 수집)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript 아이콘](assets/javascript-icon.png) | 웹 - Experience Platform Edge (준비 중) |  | [Experience Platform Edge로 Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
+| 지원되는 플랫폼 | 지원되는 솔루션 | 구현 방법 | 버전 |  API   |  설명서  |  샘플  |
+|:---:|---|---|---|---| ---| ---|
+| ![JavaScript 아이콘](assets/javascript-icon.png) | Adobe Analytics | Analytics 전용 | 웹 - «[JS v3.0.2용 Media SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript를 사용하여 Media Analytics 설치](/help/implementation/media-sdk/setup/web-implementation.md) | [JS v3.0.2용 Media SDK 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript 아이콘](assets/javascript-icon.png) | Adobe Analytics | Analytics 전용 | 웹 - 미디어 확장 기능 |  | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) — 태그 사용(데이터 수집)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) | [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| ![JavaScript 아이콘](assets/javascript-icon.png) | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | 웹 - Experience Platform Edge (준비 중) |  | [Experience Platform Edge로 Media Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
 
 ### 모바일 구현 {#get-mobile-extension}
 
-| 지원되는 플랫폼 | 버전 |  설명서   |  샘플  |
-|:---:|---|---|---|
-| ![Android 아이콘](assets/android-icon.png) | Android - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android 아이콘](assets/android-icon.png) | Android - Experience Platform Edge | [Experience Platform Edge로 Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
-| ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Experience Platform Edge로 Analytics 설치](/help/implementation/edge/implementation-edge.md) |  |
+| 지원되는 플랫폼 | 지원되는 솔루션 | 구현 방법 | 버전 |  설명서   |  샘플  |
+|:---:|---|---|---|---|---|
+| ![Android 아이콘](assets/android-icon.png) | Adobe Analytics | Analytics 전용 | Android - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | Adobe Analytics | Analytics 전용 | iOS / tvOS - 미디어 확장 기능 | [Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - 오디오 및 비디오용 Media Analytics 샘플](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android 아이콘](assets/android-icon.png) | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android - Experience Platform Edge | [Experience Platform Edge로 Media Analytics 설치](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS 아이콘&#x200B;](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS / tvOS - Experience Platform Edge | [Experience Platform Edge로 Media Analytics 설치](/help/implementation/edge/implementation-edge.md) |  |
 
 ### OTT 구현 {#download-ott-libraries}
 
-| 지원되는 플랫폼 | 버전 |  API   |  설명서  |
-|:---:|---|---|---|
-| ![Chromecast 아이콘](assets/chromecast-icon.png) | [Chromecast v3.0.3용 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast용 Mobile SDK v3.x 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
-| ![Roku 아이콘](assets/roku-icon.png) | [Roku v2.2.6용 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 참조](/help/implementation/media-sdk/setup/set-up-roku.md) | [Roku용 Mobile SDK v2.x 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| 지원되는 플랫폼 | 지원되는 솔루션 | 구현 방법 | 버전 |  API   |  설명서  |
+|:---:|---|---|---|---|---|
+| ![Chromecast 아이콘](assets/chromecast-icon.png) | Adobe Analytics | Analytics 전용 | [Chromecast v3.0.3용 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 참조](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast용 Mobile SDK v3.x 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| ![Roku 아이콘](assets/roku-icon.png) | Adobe Analytics | Analytics 전용 | [Roku v2.2.6용 SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 참조](/help/implementation/media-sdk/setup/set-up-roku.md) | [Roku용 Mobile SDK v2.x 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
