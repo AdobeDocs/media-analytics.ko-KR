@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '471'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -44,13 +44,13 @@ Edge 구현 방법 외에도 다른 구현 방법을 사용할 수 있습니다.
 
   태그가 포함된 미디어 확장 설치, 구성 및 구현에 대한 자세한 내용은 [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)를 참조하십시오.
 
-* **Media SDK:**  Media SDK를 사용하면 웹 사이트, 휴대폰, 연결된 TV, 태블릿, OTT 장치, 셋톱 박스 및 게임 콘솔 등 여러 미디어 플랫폼을 측정할 수 있습니다. (자세한 내용은 [지원되는 디바이스 및 플랫폼](/help/getting-started/supported-devices.md).)
+* **Media SDK:** Media SDK를 사용하면 웹 사이트, 휴대폰, 연결된 TV, 태블릿, OTT 디바이스, 셋톱 박스 및 게임 콘솔을 포함한 여러 미디어 플랫폼을 측정할 수 있습니다. (자세한 내용은 [지원되는 디바이스 및 플랫폼](/help/getting-started/supported-devices.md)을 참조하십시오.)
 
-  Media SDK는 추적을 위해 Media Collection API를 사용합니다. 데이터는 Adobe Analytics로 전송됩니다.
+  Media SDK는 추적을 위해 Media Collection API를 사용합니다. 데이터는 Adobe Analytics로 전송됩니다.
 
   Media SDK 및 확장 기능 다운로드 및 설치에 대한 자세한 내용은 [Media SDK, 태그를 사용한 확장 기능 및 OTT SDK 가져오기](/help/getting-started/download-sdks.md)를 참조하십시오.
 
-* **Media Collection API:** Media Collection API는 사용자 지정할 수 있으므로 사용자 지정 추적 기능이 필요한 애플리케이션 및 Media SDK에서 지원하지 않는 디바이스에 사용할 수 있습니다. Media Collection API는 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적합니다. 데이터는 Adobe Analytics로 전송됩니다.
+* **Media Collection API:** Media Collection API는 사용자 정의가 가능하므로 사용자 정의 추적 기능이 필요한 애플리케이션과 Media SDK에서 지원되지 않는 디바이스에 사용할 수 있습니다. Media Collection API는 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적합니다. 데이터는 Adobe Analytics로 전송됩니다.
 
   Media Collection API 사용에 대한 자세한 내용은 [Media Collection API](media-collection-api/mc-api-overview.md)를 참조하십시오.
 
