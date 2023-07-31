@@ -6,7 +6,7 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ![배너](./assets/media_analytics_banner.png)
 
-스트리밍 미디어용 Adobe Analytics 및 Customer Journey Analytics의 추가 기능으로서, 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. 스트리밍 미디어용 Analytics를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
+스트리밍 미디어용 Adobe Analytics 및 Customer Journey Analytics의 추가 기능으로서 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. 스트리밍 미디어용 Analytics를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
 
 스트리밍 미디어용 Adobe Analytics를 사용하면 사이트 및 스트리밍 앱에서의 전체 고객 여정을 추적할 수 있습니다. Streaming Media 지표를 Audience Analytics, Mobile 또는 Cross-Device Analytics와 같은 다른 Adobe Analytics 기능과 결합할 수 있습니다. 이 지표는 Adobe Analytics 보고서 및 기타 Adobe Experience Platform 제품에 쉽게 통합됩니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >스트리밍 미디어용 Adobe Analytics를 구현하려면 Adobe 영업 담당자 또는 Adobe 계정 팀에게 문의하여 스트리밍 미디어가 제품 포트폴리오에 포함되어 있는지 확인하십시오.
 
 
-## 작동 방법
+## 작동 방식
 
 스트리밍 미디어 추적 데이터는 Edge Network SDK/확장용 미디어, 태그가 포함된 Media Extension, Media SDK, Media Edge API 또는 미디어 컬렉션 API를 사용하여 플레이어에서 수집됩니다.
 
