@@ -17,11 +17,11 @@ ht-degree: 100%
 
 + [스트리밍 미디어용 Analytics 안내서](media-overview.md)
 + 릴리스 정보 {#release-notes}
-   + [Streaming Media 릴리스 정보](additional-resources/release-notes.md)
+   + [스트리밍 미디어 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
-   + [Streaming Media 설명서](getting-started/implementation-documentation.md)
+   + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + 지원 종료 {#end-of-support}
       + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
@@ -34,13 +34,13 @@ ht-degree: 100%
    + [구현 개요](implementation/overview.md)
    + Edge 구현 (권장) {#edge-recommended}
       + [사전 요구 사항](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK / 확장 {#media-edge-sdk}
-         + [Media Edge SDK / 확장 설정](/help/implementation/edge/implementation-edge.md)
+      + Media Edge SDK / 확장 기능 {#media-edge-sdk}
+         + [Media Edge SDK / 확장 기능 설정](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
       + [사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + Media SDK / 확장 {#media-sdk}
+      + Media SDK / 확장 기능 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics 확장 기능](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
@@ -67,7 +67,7 @@ ht-degree: 100%
             + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 변수 {#variables}
-      + [Streaming Media 매개변수](implementation/variables/audio-video-parameters.md)
+      + [스트리밍 미디어 매개변수](implementation/variables/audio-video-parameters.md)
       + [광고 매개변수](implementation/variables/ad-parameters.md)
       + [챕터 매개변수](implementation/variables/chapter-parameters.md)
       + [플레이어 상태 매개변수](implementation/variables/player-state-parameters.md)
@@ -116,7 +116,7 @@ ht-degree: 100%
       + [OTT 및 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + 추적 {#tracking}
    + [개요](use-cases/track-av-playback/track-core-overview.md)
-   + 코어 Streaming Media 재생 추적 {#track-core}
+   + 코어 스트리밍 미디어 재생 추적 {#track-core}
       + [JavaScript 3.x에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Chromecast에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Roku에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-roku.md)

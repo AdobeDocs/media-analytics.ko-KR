@@ -1,5 +1,5 @@
 ---
-title: Streaming Media에 대한 사전 요구 사항에 대해 알아봅니다.
+title: 스트리밍 미디어에 대한 사전 요구 사항에 대해 알아봅니다.
 description: 스트리밍 미디어용 Adobe Analytics를 시작합니다. 스트리밍 미디어용 Adobe Analytics을 구현하기 위해 필요한 사항을 알아봅니다.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 92%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 74%
 스트리밍 미디어 구현을 시작하기 전에 다음 작업을 완료하십시오.
 
 1. **스트리밍 미디어 개요 검토**<br>
-Streaming Media 구현을 시작하기 전에 [Streaming Media 개요](/help/media-overview.md) Streaming Media가 사용자의 요구 사항을 충족하는지 확인합니다.
+스트리밍 미디어 구현을 시작하기 전에 [스트리밍 미디어 개요](/help/media-overview.md)를 검토하여 해당 스트리밍 미디어가 내 요구 사항을 충족하는지 확인합니다.
 
-1. **Steaming Media 가격 책정 모델 확인**<br>
+1. **스트리밍 미디어 가격 책정 모델 확인**<br>
 현재 가격 책정 모델은 비디오 스트림을 기반으로 합니다. 스트리밍 미디어는 Adobe Analytics의 추가 기능으로 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe 계정 팀에 문의하십시오.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Adobe Analytics 보고서 활성화**<br>
@@ -39,9 +39,9 @@ Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 
 
    Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) 및 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
 
-1. **구현 방법에 대한 추가 전제 조건 보기**
+1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 
-   스트리밍 미디어를 구현하는 방법에 따라 다음 구현 방법 중 하나에 대한 사전 요구 사항을 확인합니다.
+   스트리밍 미디어 구현 계획에 따라 다음 구현 방식 중 하나에 대한 사전 요구 사항을 확인하십시오.
 
    * [Adobe Analytics 전용 구현을 위한 사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
