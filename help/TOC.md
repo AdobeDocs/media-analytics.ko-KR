@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: Media Analytics 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -75,20 +75,21 @@ ht-degree: 100%
       + [계산된 지표](implementation/variables/calculated-metrics.md)
 + 보고 {#media-reports}
    + [미디어 보고서 지원](reporting/media-reports-enable.md)
-   + [세그먼트 정보](reporting/segments.md)
-   + 미디어 기본 보고서 {#media-default-reports}
-      + [기본 보고서 개요](reporting/reports-and-analytics/default-reports-overview.md)
-      + [미디어 개요](reporting/reports-and-analytics/media-reports-overview.md)
-      + [미디어 세부 사항](reporting/reports-and-analytics/media-reports-detail.md)
-      + [미디어 날짜 보고서](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [미디어 동시 뷰어 보고서](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 미디어 작업 영역 패널 {#media-workspace-panels}
+   + 작업 영역의 미디어 패널 {#media-workspace-panels}
       + [미디어 대상자 평균 시간 패널](reporting/workspace/average-minute-audience.md)
       + [미디어 동시 뷰어 패널](reporting/workspace/media-concurrent-viewers-overview.md)
       + [미디어 재생 소요 시간 패널](reporting/workspace/media-playback-time-spent.md)
-   + [미디어 작업 영역 템플릿](reporting/workspace/media-workspace-templates.md)
-   + [API를 통해 동시 뷰어 데이터 가져오기](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [API를 통해 미디어 재생 소요 시간 데이터 가져오기](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+   + [작업 영역의 미디어 보고서](reporting/workspace/media-workspace-templates.md)
+   + [미디어 세그먼트](reporting/segments.md)
+   + 기본 미디어 보고서 {#media-default-reports}
+      + [기본 보고서 개요](reporting/reports-and-analytics/default-reports-overview.md)
+      + [미디어 개요](reporting/reports-and-analytics/media-reports-overview.md)
+      + [미디어 세부 사항](reporting/reports-and-analytics/media-reports-detail.md)
+      + [미디어 방송 시간 보고서](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [미디어 동시 뷰어 보고서](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + 미디어 API {#media-api}
+      + [Concurrent Viewer 데이터 가져오기](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [미디어 재생 소요 시간 데이터 가져오기](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 사용 사례 {#media-use-cases}
    + [Media SDK 사용 사례](use-cases/cookbook/sdk-cookbook-overview.md)
    + 플레이어 상태 추적 {#player-state-tracking}

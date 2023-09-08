@@ -5,25 +5,41 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 11%
 
 ---
 
-# 미디어 작업 영역 템플릿{#media-workspace-templates}
+# Analysis Workspace의 미디어 보고서 {#media-workspace-templates}
 
-Adobe Analytics Workspace는 추적 데이터를 분석할 수 있도록 대시보드를 빠르게 설정할 수 있는 기능을 제공합니다. 새 프로젝트를 생성하거나 작업 공간으로 이동하여 기존 프로젝트를 관리하는 경우, 고객 확보, 스트리밍 미디어 이용 등과 같은 일반적인 추적 시나리오에 적용되는 표준 템플릿 중에서 선택할 수 있습니다. 자신만의 사용자 지정 템플릿을 작성, 수정 및 저장할 수도 있습니다.
+>[!NOTE]
+>
+>*보고서* 작업 영역에서는 이전에 (으)로 알려졌습니다. *템플릿*.
 
-프로젝트를 작성하거나 관리할 때에는 Adobe Analytics의 작업 공간 탭의 템플릿으로 작업합니다. 처음 작업 공간으로 이동할 때에는 새 프로젝트를 작성하거나 기존 프로젝트를 여는 선택 사항이 표시됩니다.
+Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 기본적으로 사용할 수 있는 미리 작성된 보고서 세트를 제공합니다. 사용 가능한 모든 기본 보고서에 대한 자세한 내용은 [보고서 보기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 위치: [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
 
-* **새 프로젝트 만들기 -** 작업 공간에서 **[!UICONTROL 새 프로젝트 만들기]** 버튼을 클릭하면 템플릿 컬렉션(표준 및 사용자 지정 포함)에서 선택할 수 있는 대화 상자가 표시됩니다.
+이러한 보고서 중 일부는 다음 섹션에 설명된 대로 스트리밍 미디어 데이터를 분석하는 데 특히 유용합니다.
 
-   ![](/help/reporting/assets/all-templates-audio.png)
+## 기본 미디어 보고서 이해
 
-   예를 들어, **[!UICONTROL 오디오 소비]** 템플릿을 선택하면 다음 오디오 기반 대시보드가 있는 프로젝트가 표시됩니다.
+다음은 스트리밍 미디어 데이터를 분석할 때 유용한 기본 보고서 목록입니다.
 
-   ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **미디어 콘텐츠 사용량**]: 가장 많이 소비되고 사용자가 참여하는 콘텐츠를 표시하는 보고서를 만듭니다.
 
-* **프로젝트 관리 -** 기존 프로젝트에서 데이터 프레젠테이션을 수정하고 다른 이름으로 저장하여 자신만의 사용자 지정 템플릿 컬렉션을 만들 수 있습니다.
+* [!UICONTROL **스트리밍 미디어 사용량**]: 아래 예에 표시된 대로 대시보드를 사용하여 보고서를 만듭니다.
+
+* [!UICONTROL **미디어 최신성, 빈도, 충성도**]: 최근(마지막 방문 이후 며칠), 빈도(방문자당 방문 횟수) 및 충성도(사용자 집단이 사이트로 돌아오는 빈도)를 보여주는 보고서를 만듭니다
+
+예를 들어  [!UICONTROL **스트리밍 미디어 사용량**] 보고서에서 다음 대시보드가 있는 프로젝트가 표시됩니다.
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## 기본 미디어 보고서 사용
+
+새 프로젝트를 만들 때 다음과 같은 방법으로 기본 미디어 보고서를 사용할 수 있습니다. 기존 프로젝트를 수정하거나 수정할 수도 있습니다.
+
+* **새 프로젝트를 만들 때:** 기본 보고서에서 새 프로젝트를 만드는 방법에 대한 자세한 내용은 [빈 프로젝트 또는 보고서에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) 위치: [Analysis Workspace에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **사용자 지정 회사 보고서를 만들 때:** 사용자 지정 회사 보고서를 만드는 방법에 대한 자세한 내용은 [사용자 정의 회사 보고서 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 위치: [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
