@@ -4,8 +4,8 @@ description: JavaScript 3.x 앱을 사용하는 브라우저에서 Media SDK를 
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 이 설명서는 SDK의 버전 3.x에 있는 추적 기능에 대해 설명합니다.
 
 >[!IMPORTANT]
-> SDK의 이전 버전을 구현하는 경우 [SDK 다운로드](/help/getting-started/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
+>
+>SDK의 이전 버전을 구현하는 경우 [SDK 다운로드](/help/getting-started/download-sdks.md)에서 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
 
@@ -29,8 +30,8 @@ ht-degree: 100%
    | `name` | 문자열 | 미디어 이름을 나타내는 빈 문자열이 아닙니다. |
    | `id` | 문자열 | 고유한 미디어 식별자를 나타내는 빈 문자열이 아닙니다. |
    | `length` | 숫자 | 미디어의 길이(초)를 나타내는 양수입니다. 길이를 알 수 없으면 0을 사용합니다. |
-   | `streamType` | 문자열 |  |
-   | `mediaType` |  | 미디어 유형(오디오 또는 비디오)입니다. |
+   | `streamType` | 문자열 |   |
+   | `mediaType` | | 미디어 유형(오디오 또는 비디오)입니다. |
 
    **`StreamType`상수:**
 
@@ -60,30 +61,30 @@ ht-degree: 100%
 
    * **표준 메타데이터**
 
-      >[!NOTE]
-      >
-      >표준 메타데이터 첨부는 선택 사항입니다.
+     >[!NOTE]
+     >
+     >표준 메타데이터 첨부는 선택 사항입니다.
 
       * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         사용 가능한 메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](/help/implementation/variables/audio-video-parameters.md)에서 참조하십시오.
+        사용 가능한 메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](/help/implementation/variables/audio-video-parameters.md)에서 참조하십시오.
+
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수에 대한 변수 개체를 만들고, 이 미디어의 데이터로 채웁니다. 예:
+     사용자 지정 변수에 대한 변수 개체를 만들고, 이 미디어의 데이터로 채웁니다. 예:
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **재생을 시작하려는 의도 추적**
 
