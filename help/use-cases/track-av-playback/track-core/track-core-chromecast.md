@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '750'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 93%
 
 ---
 
@@ -46,24 +46,24 @@ ht-degree: 100%
 
    * **표준 비디오 메타데이터**
 
-      [Chromecast에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+     [Chromecast에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
-      >[!NOTE]
-      >
-      >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+     >[!NOTE]
+     >
+     >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
+     사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **재생을 시작하려는 의도 추적**
 
@@ -91,11 +91,17 @@ ht-degree: 100%
 
 1. **플레이헤드 값 업데이트**
 
-   플레이헤드가 변경되면 `mediaUpdatePlayhead`’ 위치 값을 여러 번 업데이트하십시오. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
+   플레이헤드가 변경되면 `mediaUpdatePlayhead`’ 위치 값을 여러 번 업데이트하십시오. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다.
 
    ```
-   ADBMobile().mediaUpdatePlayhead(position)
+   ADBMobile().media.updatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >호출 시 다음 사항을 고려하십시오. `media.updatePlayhead` API:
+   >* 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
+   >* Media SDK를 사용할 때 `media.updatePlayhead` 초당 한 번 이상 API입니다.
 
 1. **재생 완료 추적**
 

@@ -4,7 +4,7 @@ description: Media SDK를 사용하여 브라우저(JS) 애플리케이션에서
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 88%
@@ -133,13 +133,14 @@ ht-degree: 88%
 
 ## 세분화된 광고 추적
 
+기본 광고 Ping 간격은 입니다. `10 seconds`.
+
 세분화된 광고 추적을 설정하여 활성화할 수 있습니다 `1 second` 광고 추적.
 
-추적 세션을 시작할 때 이 정보를 제공해야 합니다.
-
->[!NOTE]
+>[!IMPORTANT]
 >
->   기본 광고 Ping 간격은 입니다. `10 seconds`.
+>추적 세션을 시작할 때 이 정보를 제공해야 합니다.
+
 
 
 **구문**

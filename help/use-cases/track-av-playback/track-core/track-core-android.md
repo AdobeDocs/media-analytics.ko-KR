@@ -5,8 +5,8 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다.
 >[!IMPORTANT]
+>
 >SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/getting-started/download-sdks.md)에서 Android용 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
@@ -61,26 +62,26 @@ ht-degree: 100%
 
    * **표준 메타데이터**
 
-      [Android에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [Android에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+     >[!NOTE]
+     >
+     >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
       * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * [오디오 및 비디오 매개 변수](/help/implementation/variables/audio-video-parameters.md)에서 사용 가능한 비디오 메타데이터에 대한 종합 세트를 참조하십시오.
+
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수에 대한 사전을 만들고, 이 미디어의 데이터로 채웁니다. 예:
+     사용자 지정 변수에 대한 사전을 만들고, 이 미디어의 데이터로 채웁니다. 예:
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **재생을 시작하려는 의도 추적**
 

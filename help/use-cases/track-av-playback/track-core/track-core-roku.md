@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다.
 
 >[!IMPORTANT]
+>
 >SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/getting-started/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
@@ -105,18 +106,19 @@ ht-degree: 100%
 
 [Roku에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+     >[!NOTE]
+     >
+     >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
+     사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **재생을 시작하려는 의도 추적**
 
@@ -127,12 +129,15 @@ ht-degree: 100%
    ```
 
    >[!TIP]
+   >
    >두 번째 값은 2단계에서 작성한 사용자 지정 비디오 메타데이터 개체 이름입니다.
 
    >[!IMPORTANT]
+   >
    >재생 시작이 아니라 `trackSessionStart`는 사용자의 재생 의도를 추적합니다. 이 API는 비디오 데이터/메타데이터를 로드하고, QoS 지표(`trackSessionStart`와 `trackPlay` 사이의 기간)를 시작할 시간을 예상하는 데 사용됩니다.
 
    >[!NOTE]
+   >
    >사용자 지정 비디오 메타데이터를 사용하지 않는 경우 위의 iOS 예에서 주석 처리된 행에 표시된 대로 `trackSessionStart`의 `data` 인수에 대해 빈 개체를 보내면 됩니다.
 
 1. **실제 재생 시작 추적**
@@ -145,12 +150,18 @@ ht-degree: 100%
 
 1. **플레이헤드 값 업데이트**
 
-   미디어 플레이헤드가 변경되면 `mediaUpdatePlayhead` API를 호출하여 SDK에 알립니다. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다. <br /> 참고: 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
-
+   미디어 플레이헤드가 변경되면 를 호출하여 SDK에 알립니다. `mediaUpdatePlayhead` API. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >호출 시 다음 사항을 고려하십시오. `mediaUpdatePlayhead` API:
+   >* 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
+   >* Media SDK를 사용할 때 `mediaUpdatePlayhead` 초당 한 번 이상 API입니다.
+
 
 1. **재생 완료 추적**
 

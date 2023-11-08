@@ -5,8 +5,8 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 이 설명서는 SDK의 버전 2.x에 있는 추적 기능에 대해 설명합니다.
 
 >[!IMPORTANT]
+>
 >SDK의 1.x 버전을 구현하는 경우 [SDK 다운로드](/help/getting-started/download-sdks.md)에서 1.x 개발자 안내서를 다운로드할 수 있습니다.
 
 1. **초기 추적 설정**
@@ -70,24 +71,23 @@ ht-degree: 100%
 
       * [iOS에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **비디오 메타데이터 키**
-
-         [iOS 메타데이터 키](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+        [iOS 메타데이터 키](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * [오디오 및 비디오 매개 변수](/help/implementation/variables/audio-video-parameters.md)에서 비디오 메타데이터에 대한 종합 목록을 참조하십시오.
-      >[!NOTE]
-      >
-      >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
+
+     >[!NOTE]
+     >
+     >표준 비디오 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
    * **사용자 지정 메타데이터**
 
-      사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
+     사용자 지정 변수에 대한 변수 개체를 만들고, 이 비디오의 데이터로 채웁니다. 예:
 
-      ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-      [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-      ```
-
+     ```
+     NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+     [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+     [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+     ```
 
 1. **재생을 시작하려는 의도 추적**
 
