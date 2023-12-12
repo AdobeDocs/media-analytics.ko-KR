@@ -2,11 +2,11 @@
 title: 미디어 재생 소요 시간
 description: 미디어 재생 소요 시간 패널을 사용하여 재생 소요 시간을 분석하고 최대 동시 시청 및 시청 감소가 발생한 위치를 이해하는 방법에 대해 알아보십시오.
 feature: Media Analytics, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '219'
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
+source-wordcount: '215'
 ht-degree: 100%
 
 ---

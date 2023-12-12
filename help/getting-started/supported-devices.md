@@ -3,23 +3,23 @@ title: 지원되는 디바이스 및 플랫폼에 대해 알아봅니다.
 description: “iOS, Android 및 OTT 디바이스 및 JavaScript 브라우저와 같이 스트리밍 미디어용 Adobe Analytics가 지원하는 주요 디바이스에 대해 알아보십시오.”
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
-role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 69%
+ht-degree: 59%
 
 ---
 
 # 지원되는 디바이스 및 플랫폼 {#devices-supported}
 
-스트리밍 미디어용 Adobe Analytics는 다음을 포함한 모든 주요 장치를 지원합니다.
+適用於串流媒體的 Adobe Analytics은 다음을 포함한 모든 주요 장치를 지원합니다.
 
 * iOS 및 Android 스마트폰 및 태블릿
 * Roku, Fire TV 및 Android TV용 OTT 디바이스
 * 데스크탑 및 노트북용 JavaScript 브라우저
 
- SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데이트되므로, SDK를 사용하여 개별 플랫폼의 기본 플레이어 또는 사용 가능한 그 밖의 미디어 플레이어와 통합할 수 있습니다.
+SDK는 새 버전의 장치가 출시될 때 관례적으로 업데이트되므로, SDK를 사용하여 각 개별 플랫폼의 기본 플레이어 또는 사용 가능한 다른 미디어 플레이어와 통합할 수 있습니다.
 
 현재 SDK가 지원되지 않는 디바이스의 경우나 구현을 사용자 정의해야 하는 상황에서는 Media Collection API 또는 Media Edge API를 사용할 수 있습니다. 이러한 API를 사용하면 디바이스에서 Media Analytics 백엔드로 직접 RESTful API를 호출할 수 있습니다.
 

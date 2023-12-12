@@ -4,10 +4,10 @@ description: “하루 동안의 동시 뷰어를 표시하는 미디어 동시 
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '291'
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
+source-wordcount: '285'
 ht-degree: 100%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 100%
 >[!TIP]
 >
 > 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  고유 방문자에 의한 동시 뷰어를 확인하려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)을 통해 추가 기능인 세그먼트 적용, 분류 및 비교 기능을 사용하십시오.
+>
 
 ![](assets/video-concurrent-viewers.png)
 

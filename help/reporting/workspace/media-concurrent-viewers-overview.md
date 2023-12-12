@@ -3,10 +3,10 @@ title: 미디어 동시 뷰어 보고
 description: “미디어 동시 뷰어 패널을 사용하여 동시 시청자를 분석하고 최대 동시 시청 및 시청 감소를 이해하는 방법에 대해 알아보십시오.”
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '183'
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
+source-wordcount: '178'
 ht-degree: 100%
 
 ---
