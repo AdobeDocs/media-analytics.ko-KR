@@ -5,16 +5,16 @@ uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '108'
-ht-degree: 100%
+source-git-commit: e84864164adf056f47f24d65f0400c89d53d1630
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 70%
 
 ---
 
 # Ping 이벤트 보내기{#sending-ping-events}
 
-**기본 콘텐츠의 경우 전송한 다른 API 이벤트와 관계없이 재생 10초 후부터 ping 이벤트를 10초마다 실행해야 합니다. 광고 추적의 경우 1초마다 ping 이벤트를 실행해야 합니다.**
+**전송한 다른 API 이벤트와 관계없이 재생 10초 후부터 ping 이벤트를 10초마다 실행해야 합니다. 이는 기본 콘텐츠와 광고 추적 모두에 적용됩니다.**
 
 ping 이벤트는 말 그대로 Media Analytics의 &quot;하트비트&quot;입니다. ping 호출에 대한 유일한 필수 매개 변수는 `playerTime` 개체(플레이헤드 위치 및 타임스탬프)와 함께`eventType: ping`입니다.
 
