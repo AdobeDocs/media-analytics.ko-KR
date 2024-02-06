@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Ping 이벤트는 요청 본문에 *를 포함하지*&#x200B;않아야`params` �
 
 사용자가 콘텐츠 보기를 중단한 경우 세션을 즉시 닫도록 Media Analytics 백 엔드에 통지하는 데 사용되며, 반환 가능성이 낮습니다.
 
-중단된 세션이 `sessionEnd`를 보내지 않는 경우 시간 초과되어(10분 동안 이벤트가 수신되지 않았거나 30분 동안 플레이헤드 이동이 발생하지 않은 경우) 백 엔드에서 해당 세션이 삭제됩니다.
+다음과 같은 경우 `sessionEnd` 이(가) 전송되지 않고 중단된 세션이 [표준 시간 초과](../mc-api-impl/mc-api-timeout.md) (10분 동안 이벤트가 수신되지 않았거나 30분 동안 플레이헤드 이동이 발생하지 않은 경우) 또한 해당 세션 ID로 수행된 모든 후속 미디어 호출이 삭제됩니다.
 
 ## sessionComplete
 
