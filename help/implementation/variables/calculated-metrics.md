@@ -5,10 +5,10 @@ uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -26,10 +26,10 @@ Adobe Analytics 계산된 지표에 대한 자세한 내용은 Adobe Analytics �
 |---|---|---|
 | 미디어 스트림당 평균 광고 수 | 미디어 시작당 광고 시작 | `Ad Starts / Media Starts` |
 | 미디어 스트림당 평균 챕터 수 | 미디어 시작당 챕터 시작 | `Chapter Start / Media Starts` |
-| 평균 미디어 사용 시간 | 미디어 시작당 총 체류 시간 (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| 평균 콘텐츠 체류 시간 | 콘텐츠 시작당 콘텐츠 체류 시간 (HH:MM:SS) | `Content Time Spent / Content Start` |
-| 평균 광고 체류 시간 | 광고 시작당 광고 체류 시간 (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| 평균 챕터 체류 시간 | 챕터 시작당 챕터 체류 시간 (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| 평균 미디어 사용 시간 | 미디어 시작당 총 체류 시간 (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| 평균 콘텐츠 체류 시간 | 콘텐츠 시작당 콘텐츠 체류 시간 (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| 평균 광고 체류 시간 | 광고 시작당 광고 체류 시간 (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
+| 평균 챕터 체류 시간 | 챕터 시작당 챕터 체류 시간 (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | 미디어 완료율 | 시작된 미디어에 대한 완료된 콘텐츠의 비율 (%) | `Content Completes/ Media Starts` |
 | 콘텐츠 완료율 | 콘텐츠 시작에 대한 완료된 콘텐츠의 비율 (%) | `Content Completes / Content Starts` |
 | 광고 완료율 | 광고 완료와 광고 시작 비율 (%) | `Ad Completes / Ad Starts` |
