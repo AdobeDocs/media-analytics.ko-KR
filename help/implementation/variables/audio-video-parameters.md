@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 268b381e6c28f0ebcbb9d31777b6d23a46be70bc
 workflow-type: tm+mt
 source-wordcount: '6995'
 ht-degree: 97%
@@ -186,7 +186,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **설명:**<br/> 추적 세션에 사용되는 Media SDK 버전입니다. <br/><br/>고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다. <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **하트비트:**<br/> (<code>s:sp:hb_version</code>). </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 정의 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;해당 사항 없음 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 정의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.vhlVersion) </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> <li> **XDM 필드 패스:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.implementationDetails.<br/>version </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.implementationDetails.<br/>version </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/>&quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **설명:**<br/> 추적 세션에 사용되는 Media SDK 버전입니다. <br/><br/>고객이 보고에 사용할 수 있는 값을 갖도록 고유한 처리 규칙을 만들어야 합니다. <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **하트비트:**<br/> (<code>s:sp:hb_version</code>). </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;사용자 정의 처리 규칙 </li> <li> **예약된 변수:**<br/>&#x200B;해당 사항 없음 </li> <li> **보고서 이름:**<br/>&#x200B;사용자 정의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.vhlVersion) </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> <li> **XDM 필드 패스:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **컬렉션 XDM 필드 패스:**<br/> implementationDetails.<br/>version </li> <li> **보고 XDM 필드 패스:**<br/> implementationDetails.<br/>version </li> </ul> |
 
 ## 표준 스트리밍 미디어 메타데이터 {#standard-audio-and-video-metadata}
 
