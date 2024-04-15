@@ -4,9 +4,9 @@ description: “iOS, Android 및 OTT 디바이스 및 JavaScript 브라우저와
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
-workflow-type: ht
-source-wordcount: '307'
+source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+workflow-type: tm+mt
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Edge에서 미디어 구현에 대한 자세한 내용은 [Experience Platform E
 | | Windows 디바이스 | | ![지원됨](/help/assets/icon-blue-check.png) | | | ![지원됨](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
 | | Apple TV (tvOS) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | Roku | (계획 중) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png)<br>(밝은 스크립트) | ![지원됨](/help/assets/icon-blue-check.png)<br>(기본) |
+| | Roku | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png)<br>(밝은 스크립트) | ![지원됨](/help/assets/icon-blue-check.png)<br>(기본) |
 | | Fire TV (Fire OS) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
 | | Android TV | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |

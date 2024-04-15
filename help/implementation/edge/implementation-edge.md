@@ -4,9 +4,9 @@ description: Experience Platform Edge를 사용하여 Adobe 스트리밍 미디�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
+source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1807'
 ht-degree: 9%
 
 ---
@@ -307,9 +307,11 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 1. 계속 [Experience Platform 에지로 데이터 보내기](#send-data-to-experience-platform-edge).
 
-## AEP Mobile SDK를 사용하여 Experience Platform Edge로 데이터 보내기
+## Experience Platform 에지로 데이터 보내기
 
-Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Experience Platform Edge로 전송할 수 있습니다.
+Experience Platform Edge로 전송할 데이터 유형에 따라 다음 방법 중 하나를 사용할 수 있습니다.
+
+### 모바일: Adobe Experience Platform 모바일 SDK 사용
 
 다음 설명서 리소스를 사용하여 iOS 및 Android 모두에 대한 구현을 완료하십시오.
 
@@ -319,7 +321,21 @@ Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Expe
 
 * [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-또는 다음 리소스를 사용하여 Edge API의 사용자 지정 구현을 사용할 수 있습니다.
+### Roku: Adobe Experience Platform Roku SDK
+
+* [시작하기](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
+
+* [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+
+### API: 웹 및 기타
+
+API는 현재 웹 데이터를 Experience Platform Edge로 전송하는 유일한 지원 방법입니다.
+
+Edge API의 사용자 지정 구현을 사용하려는 경우에도 API를 사용할 수 있습니다.
+
+Media Edge API에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
 * [Media Edge API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
