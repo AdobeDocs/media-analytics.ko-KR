@@ -4,16 +4,16 @@ description: Adobe Analytics 릴리스 정보를 살펴보십시오.
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
+source-git-commit: 649438cebb6868d3d5799629317596c08c1c086f
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 91%
+source-wordcount: '871'
+ht-degree: 86%
 
 ---
 
-# 스트리밍 미디어용 Adobe Analytics 릴리스 정보 (2023년 5월)
+# 適用於串流媒體的 Adobe Analytics 릴리스 노트 (2023년 5월)
 
-**마지막 업데이트**: 2023년 5월 12일
+**마지막 업데이트**: 2023년 5월 12일 토요일
 
 ## 관련 리소스
 
@@ -31,7 +31,8 @@ ht-degree: 91%
 
 | 기능 | 설명 | 목표 일자 |
 | ----------- | ---------- | ------- |
-| Media Collection: Experience Edge(API 및 Mobile SDK)와 통합 | 이제 Experience Edge API 및 Mobile SDK를 사용하여 스트리밍 미디어를 구현할 수 있으므로 보다 개인화된 캠페인을 구축하고 보다 개인화된 콘텐츠를 제공하여 보고할 추적 데이터가 늘어납니다.<p>이 개선 사항은 Customer Journey Analytics 보고, RT-CDP, AJO 및 이벤트 전달과 같은 모든 솔루션에 통합 수집 방법을 제공합니다.  [자세히 알아보기](/help/implementation/edge/implementation-edge.md) | 2023년 5월 12일 |
+| Adobe Experience Platform Edge로 Roku 데이터 보내기 | 다음 경우에 [Experience Platform 에지로 Media Analytics 설치](/help/implementation/edge/implementation-edge.md), Adobe Experience Platform Roku SDK를 사용하여 스트리밍 미디어 데이터를 Adobe Experience Platform으로 전송할 수 있습니다. | 2024년 4월 12일 |
+| Media Collection: Experience Edge(API 및 Mobile SDK)와 통합 | 이제 Experience Edge API 및 Mobile SDK를 사용하여 스트리밍 미디어를 구현할 수 있으므로 보다 개인화된 캠페인을 구축하고 보다 개인화된 콘텐츠를 제공하여 보고할 추적 데이터가 늘어납니다.<p>이 개선 사항은 Customer Journey Analytics 보고, RT-CDP, AJO 및 이벤트 전달과 같은 모든 솔루션에 통합 수집 방법을 제공합니다.  [자세히 알아보기](/help/implementation/edge/implementation-edge.md) | 2023년 5월 12일 토요일 |
 | 미디어 동시 뷰어 패널 | 최대 동시성이 발생한 위치 또는 중단이 발생한 위치를 이해합니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 2022년 8월 9일 |
 | 미디어 재생 소요 시간 패널 | 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 통찰력을 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 통찰력을 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022년 8월 9일 |
 | 모바일 스코어카드에서 주석 공유 | 모바일 스코어카드에서 작업 영역에 생성된 주석을 표시할 수 있습니다. 이를 통해 Analytics 대시보드 모바일 앱에서 볼 수 있는 모바일 스코어카드 프로젝트 내에서 조직 및 캠페인에 대한 상황별 데이터 뉘앙스와 통찰력을 직접 공유할 수 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=en) | 2022년 6월 15일 |
