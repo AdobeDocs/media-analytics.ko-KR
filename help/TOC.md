@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: Media Analytics 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 6c377d7622a65e7bd41be0a4a105a0b1c7da477c
+source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '901'
 ht-degree: 99%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 99%
       + [사전 요구 사항](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK / 확장 기능 {#media-edge-sdk}
          + [Media Edge SDK / 확장 기능 설정](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge 웹](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
