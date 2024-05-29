@@ -4,9 +4,9 @@ description: Experience Platform Edge를 사용하여 Adobe 스트리밍 미디�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1862'
 ht-degree: 9%
 
 ---
@@ -315,7 +315,11 @@ Experience Platform Edge로 전송할 데이터 유형에 따라 다음 방법 �
 
 ### 웹: Adobe Experience Platform Web SDK 사용
 
+* [시작하기](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [Adobe Experience Platform Web SDK를 사용하여 웹 데이터를 Edge로 전송](/help/implementation/edge/edge-web-sdk.md)
+
+* [Edge Network 확장 기능용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### 모바일: Adobe Experience Platform Mobile SDK 사용
 

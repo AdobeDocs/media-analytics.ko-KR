@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 67%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 | 구현 | 설명서 |
 |:-----------------------:|----------------|
-| **웹** | * [Streaming Media용 웹 구현](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [오디오 및 비디오 확장 기능용 Adobe Media Analytics 웹 구현 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) |
-| **모바일** | *[Adobe Experience Platform Mobile SDK 안내서](https://developer.adobe.com/client-sdks/documentation/) <br> *[오디오 및 비디오 확장 기능용 Adobe Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[최신 Mobile SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Streaming Media를 위한 모바일 구현](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
-| **OTT** | *[Adobe Marketing Cloud Solutions용 Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Roku 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **웹** | * [Adobe Experience Platform Web SDK를 사용하여 웹 데이터를 Edge로 전송](/help/implementation/edge/edge-web-sdk.md) <br> * [스트리밍 미디어용 웹 구현](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [오디오 및 비디오 확장 기능용 Adobe Medium Analytics를 사용한 웹 구현](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) |
+| **모바일** | * [Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Edge로 전송합니다](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK 안내서](https://developer.adobe.com/client-sdks/documentation/) <br> *[오디오 및 비디오용 Adobe Medium 분석 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[최신 Mobile SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[스트리밍 미디어를 위한 모바일 구현](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **OTT** | *[Adobe Marketing Cloud 솔루션용 Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## 추가 문서 {#additional-documentation}

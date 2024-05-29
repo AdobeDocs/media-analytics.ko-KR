@@ -3,7 +3,7 @@ title: Adobe Experience Platform Web SDK를 사용하여 웹 데이터를 Edge�
 description: Adobe Experience Platform Web SDK를 사용하여 Adobe 스트리밍 미디어 데이터를 Experience Platform Edge로 전송하는 방법에 대해 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4e6ae687175b45680d8de071dbc3011f18921a44
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Media JS SDK를 사용하는 고객을 위해 Web SDK는 미디어 이벤트 처
 
 [!DNL Web SDK] media Analytics 추적기를 검색하는 명령이 포함되어 있습니다. 이 명령을 사용하여 개체 인스턴스를 만든 다음, [미디어 JS 라이브러리](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), 미디어 이벤트를 추적합니다.
 
-다음을 참조하십시오. [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) 지원되는 메서드에 대한 전체 세부 정보는 설명서에서 확인할 수 있습니다.
+다음을 참조하십시오. [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) 지원되는 메서드에 대한 전체 세부 정보는 설명서에서 확인할 수 있습니다.
 
 아래 스니펫은 Media JS에서 미디어 추적기 인스턴스를 검색하는 방법을 보여 줍니다.
 
