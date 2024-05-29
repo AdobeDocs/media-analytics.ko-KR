@@ -4,9 +4,9 @@ description: “iOS, Android 및 OTT 디바이스 및 JavaScript 브라우저와
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Edge에서 미디어 구현에 대한 자세한 내용은 [Experience Platform E
 | 스트리밍 플랫폼 및 디바이스 | | Edge Network SDK/확장용 미디어 | Media Edge API | 태그 또는 AEP Mobile SDK가 포함된 미디어 확장 | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | 웹/모바일 웹 | | | | | |
-| | JavaScript 브라우저 | (곧 제공 예정) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |
+| | JavaScript 브라우저 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |
 | 모바일 앱 | | | | | |
 | | iOS 디바이스 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) | |
 | | Android 디바이스 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
