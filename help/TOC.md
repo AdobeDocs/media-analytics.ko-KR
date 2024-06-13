@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 Adobe Analytics
 breadcrumb-title: Media Analytics 안내서
 user-guide-description: 스트리밍 미디어용 Adobe Analytics를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
+source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 99%
+source-wordcount: '900'
+ht-degree: 98%
 
 ---
 
@@ -99,13 +99,13 @@ ht-degree: 99%
       + [구현 및 보고](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [여러 플레이어 상태 추적](use-cases/player-state-tracking/multiple-player-states.md)
       + [플레이어 상태 추적 예](use-cases/player-state-tracking/player-state-examples.md)
-   + [오프라인 다운로드 콘텐츠 추적](use-cases/track-downloaded-content.md)
+   + [다운로드한 콘텐츠 추적](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [재생 중 애플리케이션 중단 처리](use-cases/cookbook/app-interrupts.md)
    + [미디어 스트림 속성](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [비활성 세션 다시 시작](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph에서 Roku 추적](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [광고 사이의 간격 나누기](use-cases/cookbook/fix-ad-play-ad.md)
+   + [광고 사이의 간격 처리](use-cases/cookbook/fix-ad-play-ad.md)
    + 타임라인 {#timelines}
       + [챕터 시작과 끝](use-cases/timelines/chapter-start-end.md)
       + [콘텐츠 끝까지 보기](use-cases/timelines/view-to-end-of-content.md)
