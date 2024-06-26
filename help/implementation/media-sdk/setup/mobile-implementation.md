@@ -4,16 +4,16 @@ description: 모바일 앱용 Adobe Streaming Media를 구현하는 방법에 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 93%
+source-wordcount: '198'
+ht-degree: 81%
 
 ---
 
 # 모바일 SDK 설치 {#install-mobile-sdks}
 
-Android 또는 iOS에서 모바일 앱용 Streaming Media를 구현하려면 다음을 설치하고 구성합니다.
+Android 또는 iOS에서 모바일 앱용 Streaming Media Collection 추가 기능을 구현하려면 다음을 설치하고 구성합니다.
 
 * **Adobe Experience Platform Mobile SDK**
 

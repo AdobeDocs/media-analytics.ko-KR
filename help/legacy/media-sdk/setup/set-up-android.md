@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 97%
 
 ---
 
 # Android 설정{#set-up-android}
 
-Android 디바이스를 위한 스트리밍 미디어용 Analytics을 설정하는 방법에 대해 알아봅니다.
+Android 디바이스용 스트리밍 미디어 컬렉션 추가 기능을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,6 @@ Android 디바이스를 위한 스트리밍 미디어용 Analytics을 설정하�
       1. **[!UICONTROL 주문]** 및 **[!UICONTROL 내보내기]** 탭을 클릭합니다.
 
       1. `MediaSDK.jar` 파일을 선택했는지 확인합니다.
-
 
 1. 라이브러리를 가져옵니다.
 

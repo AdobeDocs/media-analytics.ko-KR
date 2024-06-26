@@ -4,10 +4,10 @@ description: 이 항목에는 Media Analytics SDK에 대한 지원 종료 FAQ가
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 79%
+source-wordcount: '601'
+ht-degree: 76%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 79%
 
 2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라, Adobe은 iOS 및 Android용 Media Analytics Mobile SDK에 대한 지원도 종료했습니다. (웹(JS)용 Media Analytics SDK와 Chromecast 및 Roku와 같은 OTT 플랫폼은 아직 지원되지 않습니다.)
 
-즉, Adobe은 더 이상 수정 사항, OS 관련 업데이트 또는 Media Analytics Mobile SDK에 대한 지원을 제공하지 않습니다. 새 Experience Platform SDK로 마이그레이션할 때 [Media Analytics 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) 適用於串流媒體的 Adobe Analytics을 활성화하려면 을(를) 구현해야 합니다.
+즉, Adobe은 더 이상 수정 사항, OS 관련 업데이트 또는 Media Analytics Mobile SDK에 대한 지원을 제공하지 않습니다. 새 Experience Platform SDK로 마이그레이션할 때 [Media Analytics 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) Adobe 스트리밍 미디어 컬렉션 추가 기능을 활성화하려면 을 구현해야 합니다.
 
 
 ## 알아 두어야 할 상위 5가지 항목
 
-1. 모바일 v4 SDK는 2021년 8월 31일부터 더 이상 지원되지 않습니다. iOS 및 Android용 Adobe Experience Platform(AEP) 모바일 SDK로 마이그레이션해야 합니다.
+1. 모바일 v4 SDK는 2021년 8월 31일부터 더 이상 지원되지 않습니다. iOS 및 Android용 Adobe Experience Platform(AEP) Mobile SDK로 마이그레이션해야 합니다.
 
 1. Streaming Media용 분석 구현에는 AEP Mobile SDK가 필요하고 Analytics 및 Media Analytics 확장을 사용해야 합니다. 2021년 9월 1일부터 새로운 AEP Mobile SDK 및 확장을 사용해야 합니다.  Media Analytics 확장 기능은 Adobe 태그를 사용하여 구성됩니다(데이터 수집). 자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch로 마이그레이션](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)을 참조하십시오.
 

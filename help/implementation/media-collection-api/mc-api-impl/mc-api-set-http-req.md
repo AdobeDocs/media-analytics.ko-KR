@@ -1,14 +1,14 @@
 ---
 title: 플레이어에서 HTTP 요청 유형 설정
-description: 모든 스트리밍 미디어 컬렉션 API 요청의 요청 본문은 JSON 형식이어야 합니다. 플레이어에서 콘텐츠 요청 유형을 설정하는 방법에 대해 알아봅니다.
+description: 모든 Media Collection API 요청에 대한 요청 본문은 JSON 형식이어야 합니다. 플레이어에서 콘텐츠 요청 유형을 설정하는 방법에 대해 알아봅니다.
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
 exl-id: 9ab3eb07-8f0d-4f9a-8feb-db20c4de3db4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '76'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 81%
 
 ---
 

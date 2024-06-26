@@ -4,28 +4,28 @@ description: 웹 앱용 Adobe Streaming Media를 구현하는 방법에 대해 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 98%
+source-wordcount: '442'
+ht-degree: 92%
 
 ---
 
-# JavaScript를 사용하여 Media Analytics 설치 {#install-web-sdks}
+# JavaScript을 사용하여 Media SDK 설치 {#install-web-sdks}
 
 이 페이지의 정보에는 웹 독립형 SDK를 설치하고 JavaScript를 설정하는 방법이 설명되어 있습니다.
 
-또는 [Media Analytics 확장을 사용하여 Analytics 구현](/help/implementation/media-sdk/setup/web-implementation-tags.md)에 설명된 대로 Adobe Media Analytics 확장 기능을 사용하여 Analytics를 구현할 수 있습니다.
+또는, 다음에 설명된 대로 Adobe Medium 분석 확장 기능을 사용하여 Adobe 스트리밍 미디어 컬렉션 추가 기능을 구현할 수 있습니다. [Media Analytics 확장을 사용하여 Analytics 구현](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## 사전 요구 사항 {#prerequesites}
 
 * **유효한 구성 매개변수 얻기**
 
-   이러한 매개변수는 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
+  이러한 매개변수는 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 
 * **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 및 `Experience Cloud Identity Service` 구현**
 
-   자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [Experience Cloud ID 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
+  자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [Experience Cloud ID 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 API 포함**
 

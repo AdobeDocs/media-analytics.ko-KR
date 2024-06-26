@@ -1,21 +1,21 @@
 ---
 title: Federated Analytics
-description: Federated Analytics 서비스는 두 파트너 간에 스트리밍 미디어용 Adobe Analytics 데이터를 공유하는 시스템을 제공합니다.
+description: Federated Analytics 서비스는 두 파트너 간에 스트리밍 미디어 데이터를 공유하는 시스템을 제공합니다.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '552'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 80%
 
 ---
 
 # Federated Analytics{#federated-analytics}
 
-Federated Analytics 서비스는 두 파트너 간에 Adobe Media Analytics 데이터(오디오와 비디오)를 공유하는 시스템을 제공합니다.
-Media Analytics에서 만든 표준화된 비디오 측정 데이터는 동일한 데이터를 여러 소스에서 단일 보고서에 병합될 수 있도록 하는 Federated Analytics의 특징입니다.
+Federated Analytics 서비스는 두 파트너 간에 스트리밍 미디어 데이터(오디오 및 비디오)를 공유하는 시스템을 제공합니다.
+스트리밍 미디어 컬렉션 추가 기능으로 생성된 표준화된 측정 데이터는 동일한 데이터를 여러 소스에서 단일 보고서로 유입될 수 있도록 하는 Federated Analytics의 특징입니다.
 Federated Analytics를 제어하는 규칙 및 로직을 통해 각 파트너십의 요구를 충족하도록 데이터를 쉽게 제어하고 개별화할 수 있습니다.
 Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적이고 능률적이며 작동 가능하게 할 수 있습니다.
 
@@ -41,7 +41,7 @@ Federated Analytics를 통해 오디오 및 비디오 측정을 보다 효율적
 * **Media 스트림 계약:** 보낸 사람과 받는 사람은 Adobe Analytics 내의 오디오 및 비디오 데이터에 액세스하려면 Adobe Analytics for Media Streams에 등록해야 합니다. 자세한 내용은 계정 팀에게 문의하십시오.
 * **연합 부록:** 데이터를 전송하거나 수신하기 전에 각 발신자와 수신자는 Adobe와 함께 서명된 부록이 있어야 합니다. 고객당 하나의 부록이 필요합니다. 파트너십당 하나의 부록이 아닙니다. 자세한 내용은 계정 팀에게 문의하십시오.
 
-* **Media Analytics 구현:** 보낸 사람은 모든 플레이어에 Media Analytics가 구현되어 있어야 합니다. 이러한 분석은 페더레이션 데이터 세트의 일부가 됩니다. Media Analytics 데이터만 페더레이션될 수 있습니다. [Adobe Analytics에서 스트리밍 미디어 측정](/help/media-overview.md) 설명서를 참조하십시오.
+* **스트리밍 미디어 컬렉션 추가 기능 구현:** 보낸 사람은 모든 플레이어에 Streaming Media Collection 추가 기능이 구현되어 있어야 합니다. 이러한 추가 기능은 페더레이션 데이터 세트의 일부가 됩니다. 스트리밍 미디어 데이터만 페더레이션에 사용할 수 있습니다. 자세한 내용은 [Adobe 스트리밍 미디어 컬렉션 추가 기능 개요](/help/media-overview.md).
 
 * **Adobe Consulting Contract:**&#x200B;보낸 사람과 받은 사람 간의 초기 페더레이션 규칙 설정의 경우 컨설팅 서비스 팀과 함께 작업하여 데이터를 검토하고 데이터 공유 계약을 작성하는 것이 중요합니다.
 

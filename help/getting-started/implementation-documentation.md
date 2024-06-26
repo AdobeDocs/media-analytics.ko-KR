@@ -5,31 +5,31 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 67%
+source-wordcount: '259'
+ht-degree: 45%
 
 ---
 
-# Streaming Media 구현 설명서 {#streaming-media-documentation}
+# 스트리밍 미디어 컬렉션 추가 기능 구현 설명서 {#streaming-media-documentation}
 
-스트리밍 미디어용 Adobe Analytics 설명서는 여러 제품 웹 사이트에 있습니다. 스트리밍 미디어용 Analytics 구현 방법에 따라 하나 이상의 설명서 세트를 참조해야 할 수 있습니다.
+스트리밍 미디어 컬렉션 추가 기능에 대한 설명서는 여러 제품 웹 사이트에 있습니다. Streaming Media 컬렉션을 구현하는 방법에 따라 하나 이상의 설명서 세트를 참조해야 할 수 있습니다.
 
 다음 표의 정보를 사용하여 선택한 구현 방법에 대한 설명서를 찾으십시오.
 
-## Streaming Media 구현 설명서 {#media-documentation}
+## 구현 설명서 {#media-documentation}
 
 | 구현 | 설명서 |
 |:-----------------------:|----------------|
-| **웹** | * [Adobe Experience Platform Web SDK를 사용하여 웹 데이터를 Edge로 전송](/help/implementation/edge/edge-web-sdk.md) <br> * [스트리밍 미디어용 웹 구현](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [오디오 및 비디오 확장 기능용 Adobe Medium Analytics를 사용한 웹 구현](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) |
-| **모바일** | * [Adobe Experience Platform mobile SDK를 사용하여 모바일 데이터를 Edge로 전송합니다](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK 안내서](https://developer.adobe.com/client-sdks/documentation/) <br> *[오디오 및 비디오용 Adobe Medium 분석 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[최신 Mobile SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[스트리밍 미디어를 위한 모바일 구현](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **웹** | * [Adobe Experience Platform Web SDK를 사용하여 Edge에 웹 데이터 보내기](/help/implementation/edge/edge-web-sdk.md) <br> * [스트리밍 미디어용 웹 구현](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [오디오 및 비디오 확장 기능용 Adobe Medium Analytics를 사용한 웹 구현](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) |
+| **모바일** | * [Adobe Experience Platform mobile SDK를 사용하여 Edge에 모바일 데이터 보내기](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK 안내서](https://developer.adobe.com/client-sdks/documentation/) <br> *[오디오 및 비디오용 Adobe Medium 분석 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[최신 Mobile SDK 버전](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[스트리밍 미디어를 위한 모바일 구현](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[Adobe Marketing Cloud 솔루션용 Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast 설정](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku 설정](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
-## 추가 문서 {#additional-documentation}
+## 추가 설명서 {#additional-documentation}
 
-아래 표는 스트리밍 미디어용 Analytics와 함께 사용되는 Adobe 제품에 대한 설명서 목록입니다.
+아래 표는 스트리밍 미디어 컬렉션 추가 기능과 함께 사용되는 Adobe 제품에 대한 설명서 목록입니다.
 
 | 제품 | 설명서 |
 |:-----------------------:|----------------|

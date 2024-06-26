@@ -1,14 +1,14 @@
 ---
 title: 시간 제한 조건
-description: 스트리밍 미디어 컬렉션 API 시간 제한 조건에 대해 알아봅니다.
+description: Media Collection API 시간 제한 조건에 대해 알아봅니다.
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '162'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 95%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 100%
 
 * **10분: API 이벤트 없음**
 
-   백 엔드에서 API 이벤트를 받지 못하면 세션을 닫습니다.
+  백 엔드에서 API 이벤트를 받지 못하면 세션을 닫습니다.
 * **30분: 플레이헤드 변경 없음**
 
-   플레이헤드가 30분 동안 이동하지 않으면(예: 사용자가 일시 정지를 누르고 감) 백 엔드에서 세션을 닫습니다.
+  플레이헤드가 30분 동안 이동하지 않으면(예: 사용자가 일시 정지를 누르고 감) 백 엔드에서 세션을 닫습니다.
 
 >[!NOTE]
 >

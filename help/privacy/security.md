@@ -1,13 +1,13 @@
 ---
-title: 스트리밍 미디어 Adobe Analytics 및 보안 정보
-description: 스트리밍 미디어 Analytics 및 보안에 대해 알아봅니다.
+title: 보안
+description: 스트리밍 미디어 컬렉션 추가 기능과 관련된 보안에 대해 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '223'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 94%
 
 ---
 

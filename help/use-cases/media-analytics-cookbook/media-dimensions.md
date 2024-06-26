@@ -4,10 +4,10 @@ description: 추가 처리 규칙 및 사용자 정의 변수 없이도 애플�
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->미디어 지표는 미디어 추적 외부에서 사용할 수 _없습니다_. 미디어 지표의 대부분이 하트비트 이벤트를 기반으로 하여 스트리밍 미디어용 Analytics에서 계산되기 때문입니다. 또한 미디어 지표가 다른 구현에 의해 부풀려지지 않는 것이 중요합니다.
+>미디어 지표는 다음과 같습니다 _아님_ 미디어 추적 외부에서 사용할 수 있습니다. 미디어 추정의 대부분은 하트비트 이벤트를 기반으로 하여 스트리밍 미디어 컬렉션 추가 기능에 의해 계산되기 때문입니다. 또한 미디어 지표가 다른 구현에 의해 부풀려지지 않는 것이 중요합니다.
 
 ## 미디어 스트림 속성 사용
 

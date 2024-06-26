@@ -5,22 +5,22 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 97%
 
 ---
 
 # Chromecast용 Mobile SDK v3.x 설정 {#set-up-chromecast}
 
-이 섹션에서는 미디어 스트리밍용 Chromecast 설치를 설정하기 위한 사전 요구 사항을 설명합니다.
+이 섹션에서는 스트리밍 미디어 컬렉션 추가 기능에 대한 Chromecast 설치를 설정하기 위한 사전 요구 사항을 설명합니다.
 
 ## 사전 요구 사항
 
 * **유효한 구성 매개 변수 얻기**
 
-   이러한 매개 변수는 미디어 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
+  이러한 매개 변수는 미디어 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 * **미디어 플레이어에서 다음 API 포함**
 
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
@@ -38,11 +38,12 @@ Experience Cloud 솔루션용 Chromecast v3.x의 Adobe 모바일 라이브러리
 
       * `adbmobile-chromecast.min.js`:
 
-         이 라이브러리 파일은 Chromecast 앱 소스 폴더에 포함됩니다.
+        이 라이브러리 파일은 Chromecast 앱 소스 폴더에 포함됩니다.
 
       * `ADBMobileConfig` 구성
 
-         앱에 맞게 사용자 지정된 SDK 구성 파일입니다. 샘플 `ADBMobileConfig` 구현은 SDK(`samples/` / 아래)와 함께 제공됩니다. Adobe 담당자로부터 적절한 설정을 확보하십시오.
+        앱에 맞게 사용자 지정된 SDK 구성 파일입니다. 샘플 `ADBMobileConfig` 구현은 SDK(`samples/` / 아래)와 함께 제공됩니다. Adobe 담당자로부터 적절한 설정을 확보하십시오.
+
    1. 라이브러리 파일을 `index.html` 파일에 추가하고 `ADBMobileConfig` 전역 변수를 생성하십시오(Media Analytics용 Adobe Mobile을 구성하는 데 사용되는 전역 변수에는 `mediaHeartbeat`라는 배타적 키가 있음).
 
       ```js
@@ -91,6 +92,7 @@ Experience Cloud 솔루션용 Chromecast v3.x의 Adobe 모바일 라이브러리
       >`mediaHeartbeat`가 잘못 구성된 경우, 미디어 모듈은 오류 상태에 들어가고 추적 호출 전송을 중단합니다.
 
       mediaHeartbeat 키에 대한 ADBMobile 구성 매개 변수:
+
    | 구성 매개 변수 | 설명     |
    | --- | --- |
    | `server` | 백엔드에 대한 추적 엔드포인트의 URL을 나타내는 문자열입니다. |

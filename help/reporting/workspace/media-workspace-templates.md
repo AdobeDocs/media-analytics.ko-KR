@@ -5,7 +5,7 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -16,9 +16,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*보고서* 작업 영역에서는 이전에 (으)로 알려졌습니다. *템플릿*.
+>*보고서* Workspace의 경우 이전에 (으)로 알려짐 *템플릿*.
 
-Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 기본적으로 사용할 수 있는 미리 작성된 보고서 세트를 제공합니다. 사용 가능한 모든 기본 보고서에 대한 자세한 내용은 [보고서 보기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 위치: [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
+Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 기본적으로 사용할 수 있는 미리 작성된 보고서 세트를 제공합니다. 사용 가능한 모든 기본 보고서에 대한 자세한 내용은 [보고서 보기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 위치: [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko-KR).
 
 이러한 보고서 중 일부는 다음 섹션에 설명된 대로 스트리밍 미디어 데이터를 분석하는 데 특히 유용합니다.
 
@@ -42,4 +42,4 @@ Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 �
 
 * **새 프로젝트를 만들 때:** 기본 보고서에서 새 프로젝트를 만드는 방법에 대한 자세한 내용은 [빈 프로젝트 또는 보고서에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) 위치: [Analysis Workspace에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **사용자 지정 회사 보고서를 만들 때:** 사용자 지정 회사 보고서를 만드는 방법에 대한 자세한 내용은 [사용자 정의 회사 보고서 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 위치: [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
+* **사용자 지정 회사 보고서를 만들 때:** 사용자 지정 회사 보고서를 만드는 방법에 대한 자세한 내용은 [사용자 정의 회사 보고서 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 위치: [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko-KR).

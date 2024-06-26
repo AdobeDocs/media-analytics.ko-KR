@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Media Collection API 개요{#overview}
+# Media Collection API 개요 {#overview}
 
 Media Collection API는 고객 측 Media SDK에 대한 Adobe의 RESTful 대안입니다. Media Collection API를 사용하면 플레이어에서 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적할 수 있습니다.
 
-Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, Media SDK 설명서의 일부 측면이 Media Collection API와 관련되어 있습니다. 예를 들어, 두 솔루션은 동일한 [Streaming Media 매개 변수](../variables/audio-video-parameters.md)를 사용하고, 수집된 Streaming Media 추적 데이터는 동일한 [보고 및 분석](/help/reporting/media-reports-enable.md)으로 이어집니다.
+Media Collection API는 본질적으로 Media SDK의 서버 측 버전 역할을 하는 어댑터입니다. 즉, Media SDK 설명서의 일부 측면이 Media Collection API와 관련되어 있습니다. 예를 들어 두 솔루션은 동일한 것을 사용합니다 [스트리밍 미디어 매개 변수](../variables/audio-video-parameters.md), 그리고 수집된 스트리밍 미디어 추적 데이터는 동일한 것으로 이어집니다 [보고 및 분석.](/help/reporting/media-reports-enable.md)
 
 ## 미디어 추적 데이터 흐름 {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ Media Collection API로 캡처된 추적 데이터는 전송되고 Media SDK 플
 
 * **`sessions`-** 서버의 세션을 설정하고, 후속 `events` 호출에 사용된 세션 ID를 반환합니다. 앱에서 추적 세션이 시작될 때 이 ID를 한 번 호출합니다.
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** 미디어 추적 데이터를 보냅니다.
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### 요청 본문 {#mc-api-request-body}
 

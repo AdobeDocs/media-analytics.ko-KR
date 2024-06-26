@@ -1,24 +1,24 @@
 ---
-title: 스트리밍 미디어용 Adobe Analytics 개요
-description: 스트리밍 미디어용 Analytics를 사용하여 콘텐츠, 오디오 및 광고에 대한 강력한 통찰력을 얻으십시오.
+title: Adobe 스트리밍 미디어 컬렉션 추가 기능 개요
+description: 스트리밍 미디어 컬렉션 추가 기능을 사용하여 콘텐츠, 오디오 및 광고에 대한 강력한 통찰력을 얻으십시오.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: ht
-source-wordcount: '590'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 64%
 
 ---
 
-# 스트리밍 미디어용 Adobe Analytics 개요
+# Adobe 스트리밍 미디어 컬렉션 추가 기능 개요
 
 ![배너](./assets/media_analytics_banner.png)
 
-스트리밍 미디어용 Adobe Analytics는 오디오, 비디오 및 광고를 위한 강력한 측정 도구를 제공합니다. 스트리밍 미디어 지표를 Audience Analytics, Mobile 또는 Cross-Device Analytics와 같은 다른 Adobe Analytics 기능과 결합할 수 있습니다.
+Adobe 스트리밍 미디어 컬렉션 추가 기능은 스트리밍 미디어 공급자를 위한 오디오, 비디오 및 광고와 같은 스트리밍 미디어 콘텐츠에 대한 강력한 수집, 측정 및 개인화 도구를 제공합니다. 스트리밍 미디어 지표를 Audience Analytics, 모바일 또는 크로스 디바이스 분석과 같은 기능과 결합할 수 있습니다.
 
-스트리밍 미디어는 Adobe Analytics의 추가 기능으로 구매할 수 있습니다.<!-- update this when SKUs are available for other AEP products --> 또한 스트리밍 미디어 지표는 다음과 같은 Adobe Experience Platform 제품에 간편하게 통합됩니다.
+스트리밍 미디어 데이터는 다음 Adobe Experience Platform 제품에 쉽게 통합됩니다.
 
 * Adobe Analytics
 
@@ -30,21 +30,21 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->스트리밍 미디어용 Adobe Analytics를 구현하려면 Adobe 영업 담당자 또는 Adobe 계정 팀에게 문의하여 스트리밍 미디어가 제품 포트폴리오에 포함되어 있는지 확인하십시오.
+>스트리밍 미디어 컬렉션을 구현하려면 Adobe 영업 담당자 또는 Adobe 계정 팀에 문의하여 스트리밍 미디어 컬렉션 추가 기능이 제품 포트폴리오에 포함되어 있는지 확인하십시오.
 
 ## 주요 기능
 
-스트리밍 미디어용 Adobe Analytics의 이점으로는 실시간 모니터링, 세부 분석, 실행 가능한 인사이트, 수익 창출의 기회 등이 있습니다.
+Streaming Media Collection 추가 기능의 이점에는 실시간 모니터링, 세부 분석, 조치 가능한 통찰력, 수익 창출 기회 등이 있습니다.
 
 * **실시간 분석**: 미디어 시작과 같은 핵심 성능 지표를 활하여 여러 채널에 걸쳐 실시간 및 실용적인 결정을 내릴 수 있습니다.
 
-  스트리밍 미디어용 Analytics를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
+  스트리밍 미디어 컬렉션 추가 기능을 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 통찰력을 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
 
 * **참여 유도**: 버퍼링 이벤트 수를 최소화하고, 콘텐츠 내에서 광고를 재생할 위치와 시점을 파악하여 사용자 참여를 유도함으로써 재방문을 제공하는 유연하고 간단한 경험을 제공합니다.
 
 * **거시적 관점**: 모든 콘텐츠 배포자에 걸쳐 여러 데이터 지점을 결합하여 모든 미디어 활동을 전체적으로 파악할 수 있습니다. 가능한 모든 채널에 걸쳐 참여도와 조회수를 측정할 수 있습니다.
 
-  스트리밍 미디어용 Adobe Analytics를 사용하면 사이트 및 스트리밍 앱에서 전체 고객 여정을 추적하여 고객의 이동 경로와 관심도를 시각화하고 향상된 권장 사항을 제공하며 고객 경험을 개인화할 수 있습니다. 미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
+  Streaming Media Collection 추가 기능을 사용하면 사이트 및 스트리밍 앱에서 전체 고객 여정을 추적하여 고객 경로 및 관심사를 시각화하고 향상된 추천을 제공하고 고객 경험을 개인화할 수 있습니다.  미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
 
 * **주요 지표**: 프레임, 버퍼링 시간 및 평균 비트율과 같이 체감 품질(QoE)과 관련된 중요한 게재 지표를 측정합니다.
 
@@ -68,4 +68,4 @@ ht-degree: 100%
 >Customer Journey Analytics 구현을 사용하면 Experience Edge 또는 ADC(Analytics Data Connector)를 사용하여 데이터를 Customer Journey Analytics로 보낼 수 있습니다.
 
 
-다양한 구현 방식에 대한 자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics용 스트리밍 미디어 구현](/help/implementation/overview.md)을 참조하십시오.
+다양한 구현 방법에 대한 자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics용 스트리밍 미디어 컬렉션 추가 기능 구현](/help/implementation/overview.md).

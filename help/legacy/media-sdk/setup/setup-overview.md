@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 일반 구현 지침 {#general-implementation-guidelines}
 
-Adobe Streaming Media 추적에 사용되는 세 가지 주요 SDK 구성 요소는 다음과 같습니다.
+스트리밍 미디어 컬렉션 추가 기능을 사용한 추적에 사용되는 세 가지 기본 SDK 구성 요소가 있습니다.
 * 미디어 하트비트 구성 - `MediaHeartbeatConfig`에는 보고할 기본 설정이 포함되어 있습니다.
 * 미디어 하트비트 위임 - `MediaHeartbeatDelegate`는 재생 시간 및 QoS 개체를 제어합니다.
 * 미디어 하트비트 - `MediaHeartbeat`는 구성원 및 메서드가 포함된 기본 라이브러리입니다.
@@ -120,11 +120,11 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
 * **Adobe Analytics(AppMeasurement) 서버**
 추적 서버 옵션에 대한 자세한 내용은 [trackingServer 및 trackingServerSecure 변수를 올바르게 채우기](https://helpx.adobe.com/kr/analytics/kb/determining-data-center.html)를 참조하십시오.
 
-   >[!IMPORTANT]
-   >
-   >RDC 서버로 확인되는 RDC 추적 서버 또는 CNAME은 Experience Cloud 방문자 ID 서비스에 필요합니다.
+  >[!IMPORTANT]
+  >
+  >RDC 서버로 확인되는 RDC 추적 서버 또는 CNAME은 Experience Cloud 방문자 ID 서비스에 필요합니다.
 
-   Analytics 추적 서버는 &quot;`.sc.omtrdc.net`&quot;으로 끝나야 하거나 CNAME이어야 합니다.
+  Analytics 추적 서버는 &quot;`.sc.omtrdc.net`&quot;으로 끝나야 하거나 CNAME이어야 합니다.
 
 * ** Media Analytics(하트비트) 서버**
 항상 &quot;`[your_namespace].hb.omtrdc.net`&quot; 형식입니다. 다음 &quot;`[your_namespace]`&quot;의 값은 회사를 지정하며, Adobe에서 제공합니다.

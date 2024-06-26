@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 ## 사전 요구 사항 {#roku-prerequisites}
 
-* **미디어 분석에 대한 유효한 구성 매개 변수 얻기**
+* **스트리밍 미디어 컬렉션 추가 기능에 대한 올바른 구성 매개 변수 가져오기**
 
-   이러한 매개 변수는 미디어 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
+  이러한 매개 변수는 Adobe 스트리밍 미디어 컬렉션 추가 기능 계정을 설정한 후 Adobe 담당자로부터 얻을 수 있습니다.
 * **미디어 플레이어에서 다음 API 포함**
 
    * _플레이어 이벤트에 가입할 API_ - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
@@ -35,9 +35,10 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
       * `adbmobile.brs`: 이 라이브러리 파일은 Roku 앱 소스 폴더에 포함됩니다.
 
       * `ADBMobileConfig.json`: 앱에 맞게 사용자 지정된 SDK 구성 파일입니다.
+
    1. 라이브러리 파일 및 json 구성 파일을 프로젝트 소스에 추가합니다.
 
-      Adobe Mobile을 구성하는 데 사용되는 JSON에는 `mediaHeartbeat`라는 미디어 분석에 대한 배타 키가 있습니다. 여기에 미디어 분석에 대한 구성 매개 변수가 속해 있습니다.
+      Adobe Mobile을 구성하는 데 사용되는 JSON에는 `mediaHeartbeat`라는 미디어 분석에 대한 배타 키가 있습니다. 여기서 Media Analytics에 대한 구성 매개 변수가 속합니다.
 
       >[!TIP]
       >
@@ -99,7 +100,6 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
       >[!IMPORTANT]
       >
       >`mediaHeartbeat`가 잘못 구성된 경우 미디어 모듈(VHL)이 오류 상태에 들어가고 추적 호출 전송을 중단합니다.
-
 
 1. Experience Cloud 방문자 ID를 구성합니다.
 

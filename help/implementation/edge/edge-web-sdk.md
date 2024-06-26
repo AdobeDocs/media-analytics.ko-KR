@@ -1,16 +1,17 @@
 ---
-title: Adobe Experience Platform Web SDK를 사용하여 웹 데이터를 Edge로 전송
-description: Adobe Experience Platform Web SDK를 사용하여 Adobe 스트리밍 미디어 데이터를 Experience Platform Edge로 전송하는 방법에 대해 알아봅니다.
+title: Adobe Experience Platform Web SDK를 사용하여 Edge에 웹 데이터 보내기
+description: Adobe Experience Platform Web SDK를 사용하여 Adobe 스트리밍 미디어 데이터를 Experience Platform Edge으로 전송하는 방법에 대해 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Platform Web SDK를 사용하여 웹 데이터를 Edge로 전송
+# Adobe Experience Platform Web SDK를 사용하여 Edge에 웹 데이터 보내기
 
 버전 2.20.0부터 `streamingMedia` Adobe Experience Platform 구성 요소 [웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) 웹 사이트에서 미디어 세션과 관련된 데이터를 수집할 수 있습니다. 수집된 데이터에는 미디어 재생, 일시 정지, 완료 및 기타 관련 이벤트에 대한 정보가 포함될 수 있습니다.
 
@@ -22,14 +23,14 @@ Media JS SDK를 사용하는 고객을 위해 Web SDK는 미디어 이벤트 처
 
 을(를) 사용하려면 `streamingMedia` Web SDK의 구성 요소에서는 다음 사전 요구 사항을 충족해야 합니다.
 
-* Media Analytics 데이터를 Edge로 보내려면 먼저 의 단계를 완료하십시오. [Experience Platform Edge로 Media Analytics 설치](/help/implementation/edge/implementation-edge.md).
+* 스트리밍 미디어 데이터를 Edge으로 보내려면 먼저 의 단계를 완료하십시오. [Edge Experience Platform을 사용하여 스트리밍 미디어 컬렉션 추가 기능 설치](/help/implementation/edge/implementation-edge.md).
 * Adobe Experience Platform 및/또는 Adobe Analytics에 액세스할 수 있는지 확인하십시오.
 * 웹 SDK 버전 2.20.0 이상을 사용해야 합니다. 다음을 참조하십시오. [Web SDK 설치 개요](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) 최신 버전을 설치하는 방법을 알아봅니다.
 * 활성화 **[[!UICONTROL 미디어 분석]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** 사용 중인 데이터 스트림에 대한 옵션입니다.
 * 데이터 스트림에서 사용하는 스키마에 미디어 컬렉션 스키마 필드가 포함되어 있는지 확인합니다.
 * 다음 페이지를 통해 이 페이지에 표시된 대로 웹 SDK 구성에서 Streaming Media 기능을 구성합니다 [태그 확장](#tag-extension) 또는 을 통해 [JavaScript 라이브러리](#library).
 
-이 페이지에 설명된 단계에 따라 스트리밍 미디어용 Analytics 구현을 Media JS에서 Web SDK로 마이그레이션합니다.
+이 페이지에 설명된 단계에 따라 스트리밍 미디어 컬렉션 추가 기능 구현을 Media JS에서 Web SDK로 마이그레이션합니다.
 
 ### 1단계: Experience Platform Web SDK 설치
 

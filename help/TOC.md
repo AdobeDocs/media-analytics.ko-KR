@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 스트리밍 미디어용 Adobe Analytics
-breadcrumb-title: Media Analytics 안내서
-user-guide-description: 스트리밍 미디어용 Adobe Analytics를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
+user-guide-title: 스트리밍 미디어 컬렉션 추가 기능
+breadcrumb-title: 스트리밍 미디어 컬렉션 안내서
+user-guide-description: 스트리밍 미디어를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# 스트리밍 미디어용 Adobe Analytics {#using}
+# 스트리밍 미디어 컬렉션 추가 기능 {#using}
 
-+ [스트리밍 미디어용 Analytics 안내서](media-overview.md)
++ [스트리밍 미디어 컬렉션 안내서](media-overview.md)
 + 릴리스 정보 {#release-notes}
-   + [스트리밍 미디어 릴리스 정보](additional-resources/release-notes.md)
+   + [스트리밍 미디어 컬렉션 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
-   + [스트리밍 미디어 설명서](getting-started/implementation-documentation.md)
+   + [스트리밍 미디어 컬렉션 구현 설명서](getting-started/implementation-documentation.md)
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + 지원 종료 {#end-of-support}
       + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
@@ -36,7 +36,7 @@ ht-degree: 98%
       + [사전 요구 사항](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK / 확장 기능 {#media-edge-sdk}
          + [Media Edge SDK / 확장 기능 설정](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge 웹 SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
@@ -172,7 +172,7 @@ ht-degree: 98%
       + JavaScript 설정 {#setup-javascript}
          + [JavaScript 2.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [하트비트 측정 정보](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime 및 스트리밍 미디어용 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe 대상자 관리 지원](legacy/intro-to-ava/am-enablement.md)
    + [사용자 정의 링크 구현](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + 이전 마일스톤 추적 {#legacy-milestone-tracking}

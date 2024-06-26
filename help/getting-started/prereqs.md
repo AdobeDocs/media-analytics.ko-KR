@@ -1,29 +1,29 @@
 ---
-title: 스트리밍 미디어에 대한 사전 요구 사항에 대해 알아봅니다.
-description: 스트리밍 미디어용 Adobe Analytics를 시작합니다. 스트리밍 미디어용 Adobe Analytics을 구현하기 위해 필요한 사항을 알아봅니다.
+title: Adobe 스트리밍 미디어 컬렉션 추가 기능에 대한 사전 요구 사항에 대해 알아봅니다.
+description: 스트리밍 미디어 컬렉션 추가 기능을 시작합니다. 구현에 필요한 사항을 알아봅니다.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: ht
-source-wordcount: '442'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 62%
 
 ---
 
 # 사전 요구 사항 {#prerequisites}
 
-스트리밍 미디어 구현을 시작하기 전에 다음 작업을 완료하십시오.
+Adobe 스트리밍 미디어 컬렉션 추가 기능 구현을 시작하기 전에 다음 작업을 완료하십시오.
 
-1. **스트리밍 미디어 개요 검토**<br>
-스트리밍 미디어 구현을 시작하기 전에 [스트리밍 미디어 개요](/help/media-overview.md)를 검토하여 해당 스트리밍 미디어가 내 요구 사항을 충족하는지 확인합니다.
+1. **스트리밍 미디어 컬렉션 추가 기능 개요 검토**<br>
+스트리밍 미디어 컬렉션 추가 기능 구현을 시작하기 전에 다음을 검토하십시오. [스트리밍 미디어 컬렉션 추가 기능 개요](/help/media-overview.md) 여러분의 요구를 충족시킬 수 있도록.
 
-1. **스트리밍 미디어 가격 책정 모델 확인**<br>
-현재 가격 책정 모델은 비디오 스트림을 기반으로 합니다. 스트리밍 미디어는 Adobe Analytics의 추가 기능으로 별도 판매되므로 필요한 경우 영업 담당자 또는 Adobe 계정 팀에 문의하십시오.<!--update when media SKUs are added to other AEP apps -->
+1. **가격 책정 모델 확인**<br>
+Adobe 스트리밍 미디어 컬렉션 추가 기능의 현재 가격 모델은 비디오 스트림을 기반으로 합니다. 추가 기능은 Adobe Analytics 및 Adobe Experience Platform용으로 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe 계정 팀에 문의하십시오.
 
 1. **Adobe Analytics 보고서 활성화**<br>
-Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 데이터를 보려면 Analytics에서 보고서를 활성화해야 합니다. [미디어 보고서 지원](/help/reporting/media-reports-enable.md)을 확인하십시오.
+Analytics나 Customer Journey Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠와 광고 데이터를 보려면 보고서를 활성화해야 합니다. [미디어 보고서 지원](/help/reporting/media-reports-enable.md)을 확인하십시오.
 
 1. **Experience Cloud에서 Adobe Experience Platform ID 서비스 구현**
 
@@ -41,7 +41,7 @@ Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 
 
 1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 
-   스트리밍 미디어 구현 계획에 따라 다음 구현 방식 중 하나에 대한 사전 요구 사항을 확인하십시오.
+   Streaming Media 컬렉션 추가 기능을 구현하려는 방법에 따라 다음 구현 방법 중 하나에 대한 사전 요구 사항을 확인하십시오.
 
    * [Adobe Analytics 전용 구현을 위한 사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

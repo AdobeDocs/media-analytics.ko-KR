@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 94%
 
 ---
 
 # iOS 설정{#set-up-ios}
 
-iOS 디바이스를 위한 스트리밍 미디어용 Analytics을 설정하는 방법에 대해 알아봅니다.
+iOS 디바이스용 스트리밍 미디어 컬렉션 추가 기능을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
@@ -27,9 +27,9 @@ iOS 디바이스를 위한 스트리밍 미디어용 Analytics을 설정하는 �
 * **애플리케이션에 iOS용 ADBMobile 구현**
 Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)를 참조하십시오.
 
-   >[!IMPORTANT]
-   >
-   >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
+  >[!IMPORTANT]
+  >
+  >Apple은 iOS 9부터 ATS(앱 전송 보안)라는 기능을 도입했습니다. 이 기능은 앱에서 업계 표준 프로토콜과 암호만 사용하도록 함으로써 네트워크 보안을 개선하는 것을 목표로 합니다. 이 기능은 기본적으로 활성화되어 있지만 ATS 작업 옵션을 제공하는 구성 옵션이 있습니다. ATS에 대한 자세한 내용은 [앱 전송 보안](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 
@@ -57,11 +57,12 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
       * `ADBMediaHeartbeatConfig.h`: SDK 구성에 대한 Objective-C 헤더 파일입니다.
       * `MediaSDK.a`: iOS 장치(armv7, armv7s, arm64)와 시뮬레이터(i386 and x86_64)의 라이브러리 빌드가 포함된 비트코드 사용 패트 바이너리입니다.
 
-         iOS 앱이 타겟인 경우 이 바이너리를 연결해야 합니다.
+        iOS 앱이 타겟인 경우 이 바이너리를 연결해야 합니다.
 
       * `MediaSDK_TV.a`: 새 Apple TV 장치(arm64)와 시뮬레이터(x86_64)의 라이브러리 빌드가 포함된 비트코드 사용 패트 바이너리입니다.
 
-         Apple TV(tvOS) 앱이 타겟인 경우 이 바이너리를 연결해야 합니다.
+        Apple TV(tvOS) 앱이 타겟인 경우 이 바이너리를 연결해야 합니다.
+
    1. 라이브러리를 프로젝트에 추가합니다:
 
       1. Xcode IDE를 실행하고 앱을 엽니다.
@@ -87,11 +88,8 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
+
       1. 오류 없이 앱이 빌드되는지 확인합니다.
-
-
-
-
 
 1. 라이브러리를 가져옵니다.
 
@@ -169,9 +167,9 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
 Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 프로젝트에 tvOS를 타깃팅하는 Apple TV 앱이 있다고 가정하고 작성되었습니다.
 
-1. 프로젝트의 `lib` 폴더로 `VideoHeartbeat_TV.a` 라이브러리 파일을 드래그합니다.
+1. 드래그 `VideoHeartbeat_TV.a` 프로젝트의 라이브러리 파일 `lib` 폴더를 삭제합니다.
 
-1. tvOS 앱 대상의 **[!UICONTROL 빌드 단계]** 탭에서 **[!UICONTROL 라이브러리로 이진 링크]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
+1. 다음에서 **[!UICONTROL 빌드 단계]** tvOS 앱 타겟의 탭에서 **[!UICONTROL 바이너리를 라이브러리와 연결]** 섹션에 다음 라이브러리를 추가합니다.
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
