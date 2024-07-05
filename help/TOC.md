@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 스트리밍 미디어 컬렉션 추가 기능
 breadcrumb-title: 스트리밍 미디어 컬렉션 안내서
-user-guide-description: 스트리밍 미디어를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
+user-guide-description: 스트리밍 미디어 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
