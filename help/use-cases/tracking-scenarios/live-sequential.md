@@ -6,8 +6,8 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
+workflow-type: tm+mt
+source-wordcount: '526'
 ht-degree: 100%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | 사용자가 [!UICONTROL 재생] 클릭 | trackSessionStart | Analytics 콘텐츠 시작, 하트비트 콘텐츠 시작 | 측정 라이브러리는 프리롤 광고가 있는지 모르므로, 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 콘텐츠의 첫 번째 프레임이 재생됩니다. | trackPlay | 하트비트 콘텐츠 재생 | 챕터 콘텐츠가 주 콘텐츠 전에 재생되면 챕터가 시작될 때 하트비트가 시작됩니다. |
-| 콘텐츠 재생 |  | 콘텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
+| 콘텐츠 재생 | | 콘텐츠 하트비트 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션1 종료(에피소드1이 종료됨) | trackComplete/trackSessionEnd | 하트비트 콘텐츠 완료 | 완료는 첫 번째 에피소드의 세션1에 도달하여 완전히 시청했음을 의미합니다. 다음 에피소드에 대한 세션을 시작하기 전에 이 세션을 종료해야 합니다. |
 | 에피소드2가 시작됨(세션2 시작) | trackSessionStart | Analytics 콘텐츠 시작 하트비트 콘텐츠 시작 | 이는 사용자가 첫 번째 에피소드를 시청하고 다른 에피소드를 계속 시청했기 때문입니다. |
 | 미디어의 첫 번째 프레임 | trackPlay | 하트비트 콘텐츠 재생 | 이 메서드는 타이머를 트리거하고 이 시점부터 진행되므로 재생이 계속되는 한 10초마다 하트비트가 전송됩니다. |
-| 콘텐츠 재생 |  | 콘텐츠 하트비트 |  |
+| 콘텐츠 재생 | | 콘텐츠 하트비트 | |
 | 세션 종료(에피소드2가 종료됨) | trackComplete/trackSessionEnd | 하트비트 콘텐츠 완료 | 완료는 두 번째 에피소드의 세션2에 도달하여 완전히 시청했음을 의미합니다. 다음 에피소드에 대한 세션을 시작하기 전에 이 세션을 종료해야 합니다. |
 
 ## 매개 변수 {#parameters}

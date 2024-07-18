@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 * **호출`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >이전 광고가 완료되지 않은 경우에만 이를 호출합니다. 이전 광고에 대한 &quot;`isinAd`&quot; 상태를 유지 관리하려면 부울 값을 고려하십시오.
+  >[!NOTE]
+  >
+  >이전 광고가 완료되지 않은 경우에만 이를 호출합니다. 이전 광고에 대한 &quot;`isinAd`&quot; 상태를 유지 관리하려면 부울 값을 고려하십시오.
 
 * 광고 자산에 대한 광고 개체 인스턴스(예: `adObject`)를 만듭니다.
 * 광고 메타데이터, `adCustomMetadata`를 채웁니다.
@@ -65,9 +65,9 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 * **호출하지 않음**
 
-   >[!NOTE]
-   >
-   >애플리케이션이 광고 브레이크의 마지막 광고를 알고 있는 경우 여기서 `trackEvent:AdComplete`를 호출하고 `trackEvent:AdBreakComplete`에서 `trackEvent:AdComplete` 설정을 건너뜁니다.
+  >[!NOTE]
+  >
+  >애플리케이션이 광고 브레이크의 마지막 광고를 알고 있는 경우 여기서 `trackEvent:AdComplete`를 호출하고 `trackEvent:AdBreakComplete`에서 `trackEvent:AdComplete` 설정을 건너뜁니다.
 
 **광고를 건너뛸 때:**
 
@@ -77,8 +77,8 @@ Adobe Debug 또는 Charles와 같은 네트워크 패킷 스니퍼를 사용하�
 
 * **호출`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >이 단계를 마지막 `trackEvent:AdComplete` 호출의 일부로 위에서 이미 수행한 경우에는 건너뛸 수 있습니다.
+  >[!NOTE]
+  >
+  >이 단계를 마지막 `trackEvent:AdComplete` 호출의 일부로 위에서 이미 수행한 경우에는 건너뛸 수 있습니다.
 
 * 호출 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.

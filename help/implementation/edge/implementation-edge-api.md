@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Edge Network API를 사용하여 스트리밍 미디어 컬렉션 추가 기능 구현
 
-를 사용할 수 없는 경우 [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), API를 통해 Adobe Experience Platform Edge Network에 직접 데이터를 전송할 수 있습니다.
+[Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)를 사용할 수 없는 경우 API를 통해 Adobe Experience Platform Edge Network으로 직접 데이터를 보낼 수 있습니다.
 
 Edge API의 사용자 지정 구현을 수행하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-* [Media Edge API 개요](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [미디어 Edge API 개요](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [Media Edge API 시작](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
+* [미디어 Edge API 시작](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
 * [Media Edge API 문제 해결 안내서](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 

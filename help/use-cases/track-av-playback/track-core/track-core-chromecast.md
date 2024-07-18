@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 93%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -99,9 +99,9 @@ ht-degree: 93%
 
    >[!NOTE]
    >
-   >호출 시 다음 사항을 고려하십시오. `media.updatePlayhead` API:
+   >`media.updatePlayhead` API를 호출할 때는 다음 사항을 고려하십시오.
    >* 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
-   >* Media SDK를 사용할 때 `media.updatePlayhead` 초당 한 번 이상 API입니다.
+   >* Media SDK를 사용할 때는 `media.updatePlayhead` API를 초당 한 번 이상 호출해야 합니다.
 
 1. **재생 완료 추적**
 

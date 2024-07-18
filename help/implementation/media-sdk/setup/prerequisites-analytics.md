@@ -15,14 +15,14 @@ ht-degree: 43%
 
 이 섹션에 설명된 전제 조건은 Adobe 분석 전용 구현으로 스트리밍 미디어 컬렉션 추가 기능을 구현하는 것과 관련이 있습니다(Edge을 사용하지 않는 경우).
 
-1. **일반 사전 요구 사항 완료**<br>
-Adobe Analytics 전용 구현용 또는 Edge 구현용 스트리밍 미디어 컬렉션 추가 기능을 구현하는지 여부에 관계없이 다음을 충족하는지 확인하십시오. [일반 사전 요구 사항](/help/getting-started/prereqs.md).
+1. **일반 필수 구성 요소를 완료합니다**<br>
+Adobe Analytics 전용 구현용 또는 Edge 구현용 스트리밍 미디어 컬렉션 추가 기능을 구현하는지 여부에 관계없이 [일반 사전 요구 사항](/help/getting-started/prereqs.md)을 충족하는지 확인하십시오.
 
-1. **Adobe Analytics 구현이 있는지 확인합니다**<br>
+1. **Adobe Analytics 구현이 있는지 확인**<br>
 Analytics 전용 구현으로 스트리밍 미디어 컬렉션 추가 기능을 구현하는 경우 Adobe Analytics 기본 구현도 필요합니다. 자세한 내용은 [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)을 참조하십시오.
 
 1. **미디어 추적 서버 URL 얻기**<br>
-미디어 추적 서버 URL은 Adobe Analytics 담당자에게 문의하십시오. 다음 은 `collection-api-server` Mobile SDK, JavaScript SDK 및 Roku용 비수집 API 추적 서버의 URL입니다. API 구현을 위한 도메인 이름은 다음과 같습니다. `[your_namespace].hb-api.omtrdc.net`.
+미디어 추적 서버 URL은 Adobe Analytics 담당자에게 문의하십시오. Mobile SDK, JavaScript SDK 및 Roku용 비수집 API 추적 서버의 `collection-api-server` URL입니다. API 구현을 위한 도메인 이름은 다음과 같습니다. `[your_namespace].hb-api.omtrdc.net`.
 
 1. **현재 Media SDK 다운로드 또는 필요한 확장 기능 구현**<br>
 구현 경로에 따라 웹, 모바일 또는 OTT 플랫폼용 [현재 SDK를 다운로드](/help/getting-started/download-sdks.md)하십시오. 스트리밍 미디어 컬렉션 추가 기능 확장 경로를 활성화하려면 필수 확장 기능을 구현해야 합니다.

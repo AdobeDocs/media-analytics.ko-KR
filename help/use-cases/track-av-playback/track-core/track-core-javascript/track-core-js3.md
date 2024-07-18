@@ -6,8 +6,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 91%
+source-wordcount: '747'
+ht-degree: 87%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 91%
 
 1. **플레이헤드 값 업데이트**
 
-   미디어 플레이헤드가 변경되면 를 호출하여 SDK에 알립니다. `mediaUpdatePlayhead` API. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다.
+   미디어 플레이헤드가 변경되면 `mediaUpdatePlayhead` API를 호출하여 SDK에 알립니다. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다.
 
    ```
    tracker.updatePlayhead(position)
@@ -136,9 +136,9 @@ ht-degree: 91%
 
    >[!NOTE]
    >
-   >호출 시 다음 사항을 고려하십시오. `tracker.updatePlayhead` API:
+   >`tracker.updatePlayhead` API를 호출할 때는 다음 사항을 고려하십시오.
    >* 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
-   >* Media SDK를 사용할 때 `tracker.updatePlayhead` 초당 한 번 이상 API입니다.
+   >* Media SDK를 사용할 때는 `tracker.updatePlayhead` API를 초당 한 번 이상 호출해야 합니다.
 
 1. **재생 완료 추적**
 

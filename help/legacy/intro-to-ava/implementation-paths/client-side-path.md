@@ -18,4 +18,4 @@ Media Analytics(하트비트)는 Adobe의 표준화된 미디어 추적 솔루�
 
 클라이언트측 통합은 Media Analytics로만 구현됩니다. Media SDK나 Media Collection API(또는 둘 다)를 구현하도록 선택할 수 있습니다. 이 클라이언트측 경로는 Brightcove, Ooyala, thePlatform 등과 같은 고객 및/또는 OVP 플레이어를 포함한 모든 플레이어에서 사용할 수 있습니다.
 
-Media Analytics가 의도한 경로인 경우 다음을 참조하십시오. [Media SDK, 태그를 사용한 확장 기능 및 OTT SDK 가져오기](/help/getting-started/download-sdks.md) 및 [Media Collection API.](/help/implementation/media-collection-api/mc-api-overview.md)
+Media Analytics가 의도한 경로인 경우 [Media SDK, 태그를 사용한 확장 기능 및 OTT SDK 가져오기](/help/getting-started/download-sdks.md) 및 [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md)를 참조하십시오.

@@ -17,12 +17,12 @@ ht-degree: 62%
 Adobe 스트리밍 미디어 컬렉션 추가 기능 구현을 시작하기 전에 다음 작업을 완료하십시오.
 
 1. **스트리밍 미디어 컬렉션 추가 기능 개요 검토**<br>
-스트리밍 미디어 컬렉션 추가 기능 구현을 시작하기 전에 다음을 검토하십시오. [스트리밍 미디어 컬렉션 추가 기능 개요](/help/media-overview.md) 여러분의 요구를 충족시킬 수 있도록.
+스트리밍 미디어 컬렉션 추가 기능 구현을 시작하기 전에 [스트리밍 미디어 컬렉션 추가 기능 개요](/help/media-overview.md)를 검토하여 요구 사항을 충족하는지 확인하십시오.
 
 1. **가격 책정 모델 확인**<br>
 Adobe 스트리밍 미디어 컬렉션 추가 기능의 현재 가격 모델은 비디오 스트림을 기반으로 합니다. 추가 기능은 Adobe Analytics 및 Adobe Experience Platform용으로 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe 계정 팀에 문의하십시오.
 
-1. **Adobe Analytics 보고서 활성화**<br>
+1. **Adobe Analytics 보고서 사용**<br>
 Analytics나 Customer Journey Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠와 광고 데이터를 보려면 보고서를 활성화해야 합니다. [미디어 보고서 지원](/help/reporting/media-reports-enable.md)을 확인하십시오.
 
 1. **Experience Cloud에서 Adobe Experience Platform ID 서비스 구현**

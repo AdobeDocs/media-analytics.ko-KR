@@ -25,7 +25,7 @@ SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데이트�
 
 아래 표는 현재 지원되는 디바이스 목록입니다. 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
 
-Edge에서 미디어를 구현하는 방법에 대한 자세한 내용은 [Edge Experience Platform을 사용하여 스트리밍 미디어 컬렉션 추가 기능 설치](/help/implementation/edge/implementation-edge.md).
+Edge에서 미디어를 구현하는 방법에 대한 자세한 내용은 [Experience Platform Edge을 사용하여 스트리밍 미디어 컬렉션 추가 기능 설치](/help/implementation/edge/implementation-edge.md)를 참조하십시오.
 
 | 스트리밍 플랫폼 및 디바이스 | | Edge Network SDK/확장용 미디어 | Media Edge API | 태그 또는 AEP Mobile SDK가 포함된 미디어 확장 | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

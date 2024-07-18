@@ -6,8 +6,8 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1329'
+workflow-type: tm+mt
+source-wordcount: '1337'
 ht-degree: 100%
 
 ---
@@ -149,17 +149,17 @@ ht-degree: 100%
 
 * **analytics.aid:**
 
-   이 키 값은 Analytics 기존 사용자 ID를 나타내는 문자열이어야 합니다.
+  이 키 값은 Analytics 기존 사용자 ID를 나타내는 문자열이어야 합니다.
 * **visitor.customerIDs:**
 
-   이 키의 값은 다음 형식의 개체여야 합니다.
+  이 키의 값은 다음 형식의 개체여야 합니다.
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
 `visitor.customerIDs` 값은 제공된 형식의 개체를 임의의 수만큼 가질 수 있습니다.
 

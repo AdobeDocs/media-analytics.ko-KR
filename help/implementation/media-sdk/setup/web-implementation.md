@@ -15,7 +15,7 @@ ht-degree: 92%
 
 이 페이지의 정보에는 웹 독립형 SDK를 설치하고 JavaScript를 설정하는 방법이 설명되어 있습니다.
 
-또는, 다음에 설명된 대로 Adobe Medium 분석 확장 기능을 사용하여 Adobe 스트리밍 미디어 컬렉션 추가 기능을 구현할 수 있습니다. [Media Analytics 확장을 사용하여 Analytics 구현](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+또는 [Media Analytics 확장을 사용하여 Adobe Medium 구현](/help/implementation/media-sdk/setup/web-implementation-tags.md)에 설명된 대로 Media Analytics 확장을 사용하여 Adobe 스트리밍 미디어 컬렉션 추가 기능을 구현할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequesites}
 

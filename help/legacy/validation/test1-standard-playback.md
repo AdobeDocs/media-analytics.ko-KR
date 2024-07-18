@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    * **Adobe Analytics 시작 호출**
 
-      | 매개 변수 | 값(샘플) |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 매개 변수 | 값(샘플) |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **웹 사이트 페이지 호출**
 
-      | 매개 변수 | 값(샘플) |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 매개 변수 | 값(샘플) |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **라이프사이클 호출**
 
-      | 매개 변수 | 값(샘플) |
-      |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 매개 변수 | 값(샘플) |
+     |---|---|
+     | `pev2` | ADBINTERNAL:Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Media Analytics 시작 호출**
 
-      | 매개 변수 | 값(샘플) |
-      |---|---|
-      | `s:event:type` | start |
+     | 매개 변수 | 값(샘플) |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >Media Analytics 시작 호출(`s:event:type=start`)에서 `mid` 값이 없을 수 있습니다. 그래도 괜찮습니다. Media Analytics 재생이 호출(`s:event:type=play`)될 때까지 나타나지 않을 수 있습니다.
+     >[!NOTE]
+     >
+     >Media Analytics 시작 호출(`s:event:type=start`)에서 `mid` 값이 없을 수 있습니다. 그래도 괜찮습니다. Media Analytics 재생이 호출(`s:event:type=play`)될 때까지 나타나지 않을 수 있습니다.
 
    * **Media Analytics 재생 호출**
 
-      | 매개 변수 | 값(샘플) |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | 매개 변수 | 값(샘플) |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **미디어 플레이어 시작**
 
@@ -107,13 +106,11 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
 
    * **광고 재생**
 
-      광고 재생 중에 Media Analytics SDK는 &quot;광고&quot; 유형의 재생 이벤트를 매 초마다 Media Analytics 서버로 전송합니다.
+     광고 재생 중에 Media Analytics SDK는 &quot;광고&quot; 유형의 재생 이벤트를 매 초마다 Media Analytics 서버로 전송합니다.
 
    * **광고 완료**
 
-      광고의 100% 포인트에서 Media Analytics 전체 호출이 전송됩니다.
-
-
+     광고의 100% 포인트에서 Media Analytics 전체 호출이 전송됩니다.
 
 1. **가능한 경우 30초 동안 광고 재생 일시 정지.**  **광고 일시 정지**
 
@@ -134,7 +131,7 @@ Media Analytics 구현에는 두 가지 유형의 추적 호출이 포함됩니�
    * 플레이헤드 위치는 모든 재생 호출에서 10씩 증가해야 합니다.
    * `l:event:duration` 값은 마지막 추적 호출 이후의 시간(밀리초)을 나타내며 각 10초 호출에서 거의 동일한 값이어야 합니다.
 
-      호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/legacy/validation/test-call-details.md#play-main-content)을 참조하십시오.
+     호출 매개 변수 및 메타데이터에 대해서는 [테스트 호출 세부 사항](/help/legacy/validation/test-call-details.md#play-main-content)을 참조하십시오.
 
 1. **재생 도중 적어도 30초 동안 일시 정지.** 미디어 플레이어를 일시 중지하면, SDK에서 일시 중지 이벤트 호출을 10초마다 Media Analytics 서버로 전송합니다. 일시 정지가 종료되면 재생 이벤트가 재개되어야 합니다.
 

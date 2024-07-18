@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -133,9 +133,9 @@ ht-degree: 88%
 
 ## 세분화된 광고 추적
 
-기본 광고 Ping 간격은 입니다. `10 seconds`.
+기본 광고 Ping 간격은 `10 seconds`입니다.
 
-세분화된 광고 추적을 설정하여 활성화할 수 있습니다 `1 second` 광고 추적.
+세분화된 광고 추적을 설정하여 `1 second` 광고 추적을 활성화할 수 있습니다.
 
 >[!IMPORTANT]
 >

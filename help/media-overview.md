@@ -68,4 +68,4 @@ Streaming Media Collection 추가 기능의 이점에는 실시간 모니터링,
 >Customer Journey Analytics 구현을 사용하면 Experience Edge 또는 ADC(Analytics Data Connector)를 사용하여 데이터를 Customer Journey Analytics로 보낼 수 있습니다.
 
 
-다양한 구현 방법에 대한 자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics용 스트리밍 미디어 컬렉션 추가 기능 구현](/help/implementation/overview.md).
+다양한 구현 방법에 대한 자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics용 스트리밍 미디어 컬렉션 추가 기능 구현](/help/implementation/overview.md)을 참조하십시오.

@@ -6,9 +6,9 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 93%
 
 ---
 
@@ -52,10 +52,10 @@ ht-degree: 100%
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 해당 없음 | 콘텐츠 완료는 100% 진행률 마커만 지원합니다. |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK 키: playerName;<br> API 키: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 콘텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 해당 없음 | Media Analytics는 항상 10%, 25%, 50%, 75%, 95%의 진행률 마커를 추적합니다.. |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 해당 없음 | Media Analytics는 항상 10%, 25%, 50%, 75%, 95%의 진행률 마커를 추적합니다.. |
-| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다.. |
-| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다.. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 해당 없음 | Media Analytics는 항상 10%, 25%, 50%, 75%, 95%의 진행률 마커를 추적합니다. |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 해당 없음 | Media Analytics는 항상 10%, 25%, 50%, 75%, 95%의 진행률 마커를 추적합니다. |
+| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다. |
+| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다. |
 
 ### 광고 추적 변수
 
@@ -64,8 +64,8 @@ ht-degree: 100%
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 해당 없음 | Media Analytics는 콘텐츠에 대해서는 10초, 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 해당 없음 | 진행률 마커는 기본적으로 광고에는 제공되지 않습니다. 광고 진행률 마커를 작성하려면 계산된 지표를 사용하십시오. |
 | Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | 해당 없음 | Media Analytics는 광고에 대해서는 1초로 설정되어 있습니다. 다른 선택 사항은 없습니다. |
-| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다.. |
-| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다.. |
+| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다. |
+| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 해당 없음 | 자동 추적을 더 이상 사용할 수 없습니다. |
 
 ### 미디어 모듈 메서드
 

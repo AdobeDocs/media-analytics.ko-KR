@@ -6,8 +6,8 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '130'
+workflow-type: tm+mt
+source-wordcount: '133'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ https://{uri}/api/v1/sessions
    * `ts`- 타임스탬프는 밀리초 단위이고, 협정 세계시(UTC)여야 합니다.
 * `eventType` (필수입니다)
 
-   **유효한 값:** `sessionStart`
+  **유효한 값:** `sessionStart`
 * `params` (필수입니다)
 * `customMetadata` (선택 사항입니다)
 * `qoeData` (선택 사항입니다)

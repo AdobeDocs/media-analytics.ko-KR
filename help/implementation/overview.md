@@ -20,13 +20,13 @@ Adobe 스트리밍 미디어 컬렉션 추가 기능을 구현하는 방법에�
 
 모든 신규 Adobe Analytics 또는 Customer Journey Analytics 고객을 위해 스트리밍 미디어 컬렉션 추가 기능을 구현할 때 Edge을 사용하는 것이 좋습니다.
 
-* **Edge Network SDK용 Media / 확장:** 웹, iOS 및 Android 장치 또는 Roku 장치에서 데이터를 수집하여 Edge Network으로 보냅니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
+* **Edge Network SDK/확장 기능용 미디어:** 웹, iOS 및 Android 장치 또는 Roku 장치에서 데이터를 수집하여 Edge Network으로 보냅니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
 
-  Edge Network SDK/확장용 미디어에 대한 자세한 내용은 다음을 참조하십시오. [Edge Network을 사용하여 스트리밍 미디어 컬렉션 추가 기능 구현](/help/implementation/edge/implementation-edge.md).
+  Edge Network SDK/확장용 Media에 대한 자세한 내용은 [Edge Network을 사용하여 Streaming Media Collection 추가 기능 구현](/help/implementation/edge/implementation-edge.md)을 참조하십시오.
 
-* **Media Edge API:** 모든 장치 또는 형식(모바일, 웹 및 OTT 장치 포함)에서 데이터를 수집하도록 사용자 정의하고 데이터를 Edge Network으로 전송할 수 있습니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
+* **Media Edge API:** Edge Network을 사용하여 모든 장치 또는 형식(모바일, 웹 및 OTT 장치 포함)에서 데이터를 수집하고 데이터를 전송할 수 있습니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
 
-  Media Edge API에 대한 자세한 내용은 다음을 참조하십시오. [Media Edge API 개요](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  Media Edge API에 대한 자세한 내용은 [Media Edge API 개요](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)를 참조하십시오.
 
 ![CJA 워크플로](assets/streaming-media-edge.png)
 

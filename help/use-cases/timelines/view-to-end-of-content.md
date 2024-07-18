@@ -6,8 +6,8 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1074'
+workflow-type: tm+mt
+source-wordcount: '1130'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 자동 재생 또는 재생 버튼 누름, 비디오에서 로드 시작. | 0 | 0 | `/api/v1/sessions` |
+| 자동 재생 또는 재생 단추를 누르면 비디오가 로드되기 시작합니다. | 0 | 0 | `/api/v1/sessions` |
 
 이 호출은 비디오를 _재생하도록 사용자에게 신호_&#x200B;를 보냅니다.
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 앱 시작 ping 이벤트 타이머 | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| 앱 시작 ping 이벤트 타이머 | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 앱의 Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리롤 광고가 있는 경우 1초, 없는 경우에는 10초 실행됩니다.
 
@@ -174,7 +174,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 앱에서 ping 이벤트 보내기 | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
-광고 내에서 1초마다 백 엔드를 Ping합니다.
+광고 내에서 1초마다 백 엔드를 ping합니다.
 
 >[!NOTE]
 >

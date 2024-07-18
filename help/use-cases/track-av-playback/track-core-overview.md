@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 ### 스크러빙이 종료될 때
 
-* 호출 `trackEvent(SeekComplete)`
+* `trackEvent(SeekComplete)` 호출
 변경 내용 취소
 
 ### 버퍼링이 시작될 때

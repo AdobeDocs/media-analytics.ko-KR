@@ -7,8 +7,8 @@ feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
 source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 100%
+source-wordcount: '2328'
+ht-degree: 99%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 100%
    * *보고서 이름* - 변수에 대한 Adobe Analytics 보고서의 이름
    * *컨텍스트 데이터* - 보고 서버에 전달되고 처리 규칙에 사용되는 Adobe Analytics 컨텍스트 데이터의 이름
    * *데이터 피드* - 클릭스트림 또는 라이브 스트림 데이터 피드에 있는 변수의 열 이름
-   * *Audience Manager* - Adobe Audience Manager에 있는 트레이트 이름
+   * *Audience Manager* - Adobe Audience Manager의 특성 이름
 
 >[!IMPORTANT]
 >
->보고/예약 변수 아래에 &quot;분류&quot;로 설명되어 있는 변수의 분류 이름을 변경하지 마십시오.\
+>보고/예약 변수 아래에 “분류”로 설명되어 있는 변수의 분류 이름을 변경하지 마십시오.\
 >미디어 분류는 보고서 세트가 미디어 추적에 사용될 때 정의됩니다. Adobe는 수시로 새 속성을 추가하며, 이 경우 고객이 보고서 세트를 다시 활성화하여 새로운 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 중에 Adobe는 변수의 이름을 확인하여 분류를 사용할지 여부를 결정합니다. 누락된 항목이 있을 경우 Adobe가 다시 추가합니다.
 
 ## 플레이어 상태 속성 {#player-state-properties}

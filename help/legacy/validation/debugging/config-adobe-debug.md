@@ -6,8 +6,8 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -73,18 +73,17 @@ SSL 인증서를 다운로드하고 설치합니다:
    1. 다음 절차 중 하나를 완료합니다.
 
       * [로컬 컴퓨터의 신뢰할 수 있는 루트 인증 기관 저장소에 인증서 추가](https://technet.microsoft.com/ko-kr/library/cc754841.aspx#BKMK_addlocal)
+
    1. Firefox의 경우 [Mozilla Firefox에 루트 인증서 설치](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)의 절차를 완료합니다.
 
       변경 사항을 보려면 Firefox를 종료했다가 다시 열어야 할 수 있습니다.
+
    **iOS 장치**
    1. **[!UICONTROL 설정 앱]** **>** **[!UICONTROL Wi-Fi 설정]**&#x200B;을 클릭하여 Adobe Debug를 해당 HTTP 프록시로 사용하도록 iOS 장치를 설정합니다.
 
    1. Safari에서 [Debug](https://proxy.debug.adobe.com/ssl)로 이동합니다.
 
       Safari에서 SSL 인증서를 설치하라는 메시지가 표시됩니다.
-
-
-
 
 ## 모바일 장치에 대한 SSL 인증서 설치 {#install-sSL-for-mobile-device}
 

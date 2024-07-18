@@ -6,8 +6,8 @@ exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '360'
+workflow-type: tm+mt
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
@@ -90,13 +90,12 @@ ht-degree: 100%
 
    * **사용자 지정 광고 메타데이터 -**&#x200B;사용자 지정 메타데이터의 경우 사용자 지정 데이터 변수에 대한 변수 개체를 만들고, 현재 광고의 데이터로 채웁니다.
 
-      ```java
-      // Setting Ad Metadata
-      HashMap<String, String> adMetadata = new HashMap<String, String>();
-      adMetadata.put("affiliate", "Sample affiliate");
-      adMetadata.put("campaign", "Sample ad campaign");
-      ```
-
+     ```java
+     // Setting Ad Metadata
+     HashMap<String, String> adMetadata = new HashMap<String, String>();
+     adMetadata.put("affiliate", "Sample affiliate");
+     adMetadata.put("campaign", "Sample ad campaign");
+     ```
 
 1. 광고 재생 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdStart` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 

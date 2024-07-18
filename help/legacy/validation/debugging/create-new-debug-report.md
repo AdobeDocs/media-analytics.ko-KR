@@ -6,9 +6,9 @@ exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -27,12 +27,14 @@ ht-degree: 100%
 
       * [!UICONTROL 사용자 이름] 및 [!UICONTROL 공유 비밀] - 이러한 필드는 선택 사항이지만, 보고서 세트에 대한 변수 이름 및 변수 설정을 표시하기 위해 웹 서비스 API 자격 증명을 Adobe Debug에 추가할 수 있습니다.
 
-         다음 중 한 방법으로 액세스할 수 있습니다.
+        다음 중 한 방법으로 액세스할 수 있습니다.
 
          * [!UICONTROL Analytics > 관리 > 회사 설정 > 웹 서비스]
-         * [!UICONTROL Analytics > 관리 > 사용자 관리 > 사용자 > 개별 사용자 설정] 새 사용자에 대한 웹 서비스 API 자격 증명을 작성하려면 [!UICONTROL 사용자 관리]에서 사용자를 **웹 서비스 액세스** 사용자 그룹에 추가합니다.
+         * [!UICONTROL 분석 > 관리 > 사용자 관리 > 사용자 > 개별 사용자 설정] 새 사용자에 대한 웹 서비스 API 자격 증명을 만들려면 [!UICONTROL 사용자 관리]에서 사용자를 **웹 서비스 액세스** 사용자 그룹에 추가하십시오.
+
       * [!UICONTROL 기본 엔드포인트] - 이 필드의 데이터는 Adobe에서 제공하며, 변경할 수 없습니다.
       * [!UICONTROL 추가 엔드포인트] – `metrics.companyname.com`과 같은 추적 서버에 사용할 수 있는 경우 `CNAMES`를 추가합니다.
+
    * **비디오 하트비트(Media Analytics)**
 
       * [!UICONTROL 기본 엔드포인트] - 이 필드의 데이터는 Adobe에서 제공하며, 변경할 수 없습니다.

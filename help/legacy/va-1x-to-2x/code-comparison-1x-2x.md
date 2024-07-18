@@ -6,8 +6,8 @@ exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '571'
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 100%
 
 **1.x 및 2.x 샘플 플레이어에 대한 링크:**
 
-* [1.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x 샘플 플레이어 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [1.x 샘플 플레이어](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x 샘플 플레이어](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 다음 섹션은 1.x와 2.x의 코드 비교, 초기화 설명, 코어 재생, 광고 재생, 챕터 재생 및 일부 추가 이벤트를 제공합니다.
 
@@ -43,8 +43,8 @@ ht-degree: 100%
 | --- | --- |
 | `Heartbeat()` | `MediaHeartbeat()` |
 | `VideoPlayerPlugin()` | `MediaHeartbeatConfig()` |
-| `AdobeAnalyticsPlugin()` |  |
-| `HeartbeatPlugin()` |  |
+| `AdobeAnalyticsPlugin()` | |
+| `HeartbeatPlugin()` | |
 
 #### 비디오 플레이어 플러그인 초기화(1.x) {#plugin-init-1.x}
 
@@ -96,11 +96,11 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate()` | `MediaHeartbeatDelegate()` |
 | `VideoPlayerPluginDelegate().getVideoInfo` | `MediaHeartbeatDelegate().getCurrentPlaybackTime` |
 | `VideoPlayerPluginDelegate().getAdBreakInfo` | `MediaHeartbeatDelegate().getQoSObject` |
-| `VideoPlayerPluginDelegate().getAdInfo` |  |
-| `VideoPlayerPluginDelegate().getChapterInfo` |  |
-| `VideoPlayerPluginDelegate().getQoSInfo` |  |
-| `VideoPlayerPluginDelegate().get.onError` |  |
-| `AdobeAnalyticsPluginDelegate()` |  |
+| `VideoPlayerPluginDelegate().getAdInfo` | |
+| `VideoPlayerPluginDelegate().getChapterInfo` | |
+| `VideoPlayerPluginDelegate().getQoSInfo` | |
+| `VideoPlayerPluginDelegate().get.onError` | |
+| `AdobeAnalyticsPluginDelegate()` | |
 
 #### VideoPlayerPluginDelegate(1.x) {#player-plugin-delegate-1.x}
 
@@ -464,7 +464,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPlugin.trackAdStart()` | `MediaHeartbeat.createAdBreakObject()` |
 | `VideoPlayerPluginDelegate.getAdBreakInfo()` | `MediaHeartbeat.createAdObject()` |
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
-|  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
+| | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
 #### 광고 시작(1.x) {#ad-start-1.x}
 
@@ -559,7 +559,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
-|  | `MediaHeartbeat.trackAdStart()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### 사용자 지정 광고 메타데이터(1.x) {#custom-ad-meta-1.x}
 
@@ -610,7 +610,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
-|  | `MediaHeartbeat.trackAdStart()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### 광고 건너뛰기(1.x) {#ad-skip-1.x}
 
@@ -637,7 +637,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
-|  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
+| | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
 #### 광고 완료(1.x) {#ad-complete-1.x}
 
@@ -816,7 +816,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | --- | --- |
 | `VideoInfo.resumed()` | `MediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
-| `VideoPlayerPlugin.trackVideoLoad()` |  |
+| `VideoPlayerPlugin.trackVideoLoad()` | |
 
 #### 비디오 재개(1.x) {#video-resume-1.x}
 

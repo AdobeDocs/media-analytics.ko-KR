@@ -167,9 +167,9 @@ Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔�
 
 Xcode 프로젝트에서 다음 단계를 수행하십시오. 이 안내서는 프로젝트에 tvOS를 타깃팅하는 Apple TV 앱이 있다고 가정하고 작성되었습니다.
 
-1. 드래그 `VideoHeartbeat_TV.a` 프로젝트의 라이브러리 파일 `lib` 폴더를 삭제합니다.
+1. `VideoHeartbeat_TV.a` 라이브러리 파일을 프로젝트의 `lib` 폴더로 드래그합니다.
 
-1. 다음에서 **[!UICONTROL 빌드 단계]** tvOS 앱 타겟의 탭에서 **[!UICONTROL 바이너리를 라이브러리와 연결]** 섹션에 다음 라이브러리를 추가합니다.
+1. tvOS 앱 대상의 **[!UICONTROL 빌드 단계]** 탭에서 **[!UICONTROL 바이너리를 라이브러리와 연결]** 섹션을 확장하고 다음 라이브러리를 추가합니다.
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
