@@ -4,10 +4,10 @@ description: Experience Platform Edge을 사용하여 스트리밍 미디어 컬
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    1. 변경 내용을 저장하려면 [!UICONTROL **확인**] > [!UICONTROL **저장**]&#x200B;을 선택합니다.
 
++++
+
+1. (선택 사항) 사용자 지정 메타데이터를 스키마에 추가할 수 있습니다. 이를 통해 특정 요구 사항 또는 컨텍스트에 맞게 사용자 정의할 수 있는 추가 사용자 정의 메타데이터를 포함할 수 있습니다. 이러한 유연성은 기존 스키마가 원하는 데이터 포인트를 다루지 않는 시나리오에서 유용합니다. (Media Edge API를 사용하여 사용자 지정 메타데이터로 작업할 수도 있습니다. 자세한 내용은 [Media Edge API를 사용하여 사용자 지정 메타데이터 만들기](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/)를 참조하십시오.
+
++++ 사용자 지정 메타데이터를 스키마에 추가하는 방법에 대한 지침을 보려면 여기를 확장하십시오.
+
+   1. [!UICONTROL **계정 정보**] > [!UICONTROL **할당된 조직**] > [!UICONTROL _**조직 이름**_] > [!UICONTROL **테넌트**]&#x200B;를 선택하여 조직의 테넌트 이름을 찾습니다.
+
+      이러한 사용자 정의 필드는 이 경로를 통해 수신됩니다. (예: 테넌트 이름: _dcbl → myCustomField 경로: _dcbl.myCustomField.)
+
+   1. 정의된 미디어 스키마에 사용자 정의 필드 그룹을 추가합니다.
+
+      ![사용자 지정 메타데이터 추가](assets/add-custom-metadata-fieldgroup.png)
+
+   1. 추적할 사용자 지정 필드를 필드 그룹에 추가합니다.
+
+      ![사용자 지정 메타데이터 추가](assets/add-custom-fields.png)
+
+   1. 요청 페이로드의 사용자 지정 필드에 대해 [생성된 경로](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)을(를) 사용합니다.
+
+      ![사용자 지정 메타데이터 추가](assets/custom-fields-path.png)
+
++++
+
 1. [Adobe Experience Platform에서 데이터 세트 만들기](#create-a-dataset-in-adobe-experience-platform)를 계속합니다.
 
 ## Adobe Experience Platform에서 데이터 세트 만들기
@@ -135,8 +159,8 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
      >[!IMPORTANT]
      >
-         >     [!UICONTROL **매핑 저장 및 추가**]를 선택하지 마십시오. 그렇게 하면 타임스탬프 필드에 대한 매핑 오류가 발생합니다.
-     
+     >[!UICONTROL **매핑 저장 및 추가**]&#x200B;를 선택하지 마십시오. 그렇게 하면 타임스탬프 필드에 대한 매핑 오류가 발생합니다.
+
      ![데이터 스트림을 만들고 스키마 선택](assets/datastream-create-schema.png)
 
    * Adobe Analytics 또는 Customer Journey Analytics 사용 여부에 따라 데이터 스트림에 다음 서비스 중 하나를 추가합니다.
@@ -151,7 +175,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
      ![Adobe Analytics 서비스 추가](assets/datastream-add-service.png)
 
-   * [!UICONTROL **고급 옵션**]&#x200B;을 확장한 다음 [!UICONTROL **Media Analytics**] 옵션을 활성화합니다.
+      * [!UICONTROL **고급 옵션**]&#x200B;을 확장한 다음 [!UICONTROL **Media Analytics**] 옵션을 활성화합니다.
 
      ![Media Analytics 옵션](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 >[!NOTE]
 >
 >다음 절차는 Customer Journey Analytics을 사용하는 경우에만 필요합니다.
-
 
 1. [Customer Journey Analytics에서 데이터 스트림 구성](#configure-a-datastream-in-adobe-experience-platform)에 설명된 대로 데이터 스트림을 만들었는지 확인하십시오.
 
@@ -301,11 +324,22 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    ![미디어 재생 소요 시간 패널](assets/media-playback-time-spent-panels.png)
 
+1. (조건부) [Adobe Experience Platform에서 스키마 설정](#set-up-the-schema-in-adobe-experience-platform)의 8단계에 설명된 대로 스키마에 사용자 지정 메타데이터를 추가한 경우 Customer Journey Analytics 가이드의 [지속성 구성 요소 설정](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)에 설명된 대로 사용자 지정 필드에 대한 지속성을 설정해야 합니다.
+
+   데이터가 Customer Journey Analytics에 도착하면 사용자 지정 사용자 ID 차원을 사용할 수 있습니다.
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >Adobe Analytics을 데이터 스트림의 업스트림으로 설정하는 경우, 사용자 지정 메타데이터는 스키마에서 설정한 이름과 함께 ContextData에도 표시됩니다(테넌트 접두사(예: myCustomField). 이렇게 하면 [처리 규칙 만들기](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)와 같이 ContextData에 사용할 수 있는 모든 Adobe Analytics 기능을 사용할 수 있습니다.
+
 1. [프로젝트 공유](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)에 설명된 대로 프로젝트를 공유합니다.
 
    >[!NOTE]
    >
    >   공유하려는 사용자를 사용할 수 없는 경우 사용자에게 Adobe Admin Console의 Customer Journey Analytics에 대한 사용자 및 관리자 액세스 권한이 있는지 확인하십시오.
+
 
 1. [Experience Platform Edge으로 데이터 보내기](#send-data-to-experience-platform-edge)를 계속합니다.
 
