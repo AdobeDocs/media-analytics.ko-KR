@@ -5,7 +5,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 100%
@@ -143,7 +143,7 @@ ht-degree: 100%
 
 ### visitor.marketingCloudOrgId
 
-이 매개 변수는 제공하지 않은 경우 MCID 생성에 필요하며, 게시자 ID(Media Analytics에서 [페더레이션 규칙 일치](/help/use-cases/federated-analytics.md)를 수행할 때 기반으로 함)에 대한 값으로도 사용됩니다.
+이 매개 변수는 제공하지 않은 경우 MCID 생성에 필요하며, 게시자 ID(Media Analytics에서 [페더레이션 규칙 일치](/help/use-cases/federated-media.md)를 수행할 때 기반으로 함)에 대한 값으로도 사용됩니다.
 
 ### Analytics 기존 사용 ID(aid) 및 선언된 사용자 ID(customerIDs)
 

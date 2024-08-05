@@ -4,10 +4,10 @@ description: 하트비트를 사용하여 비디오 지표를 수집하는 방�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 86%
+ht-degree: 75%
 
 ---
 
@@ -24,5 +24,5 @@ Streaming Media Collection 추가 기능에서 하트비트를 사용하면 다�
 | 통합 | Experience Cloud ID가 보다 쉬운 교차 분석을 위해 Adobe Experience Cloud에 연결되어 있음. 자동 Adobe Experience Cloud 통합을 사용하므로 미디어 대상자를 세그먼트화하고, 타겟팅하고, 사용자 환경 설정을 기반으로 미디어를 추천할 수 있습니다. |
 | 가격 책정 | 미디어 스트림별 투명한 추적(단일) |
 | 구현 및 지원 | 지속적인 업데이트 및 개선 사항으로 간소화된 구성. 간소화된 구현 프로세스를 사용하므로 플레이어 API를 통해 변수를 빨리 매핑하고 Adobe Debug 도구를 통해 구현을 확인하여 필요한 모든 변수가 정확하게 추적되도록 합니다. |
-| 파트너 공유 | Federated Analytics 및 인증된 지표. Federated Analytics를 통해 공유된 데이터를 사용하므로 업계 최초 미디어 공유 기능을 통해 모든 미디어 배포 파트너(운영자, 프로그래머 및 배포자)의 데이터를 전체적으로 평가할 수 있습니다. |
+| 파트너 공유 | Federated Media 및 인증된 지표. Federated Media를 통해 공유된 데이터를 사용하면 업계 최초 미디어 공유 기능을 통해 모든 미디어 배포 파트너(운영자, 프로그래머 및 배포자)의 데이터를 전체적으로 평가할 수 있습니다. |
 | 고급 추적 | 다운로드한 콘텐츠 추적, 오류 복구 추적 및 Concurrent Viewer. 연결 여부에 관계없이 디바이스에서 다운로드 및 재생되는 Streaming Media 콘텐츠를 추적할 수 있습니다. |

@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어 컬렉션 추가 기능
 breadcrumb-title: 스트리밍 미디어 컬렉션 안내서
 user-guide-description: 스트리밍 미디어 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 97%
       + [여러 플레이어 상태 추적](use-cases/player-state-tracking/multiple-player-states.md)
       + [플레이어 상태 추적 예](use-cases/player-state-tracking/player-state-examples.md)
    + [다운로드한 콘텐츠 추적](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+   + [페더레이션 미디어](use-cases/federated-media.md)
    + [재생 중 애플리케이션 중단 처리](use-cases/cookbook/app-interrupts.md)
    + [미디어 스트림 속성](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [비활성 세션 다시 시작](use-cases/cookbook/resuming-inactive.md)

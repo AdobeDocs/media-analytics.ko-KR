@@ -4,10 +4,10 @@ description: Streaming Media 사용 사례에 대해 알아보기
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 94%
 * [미디어 스트림 속성](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 * Federated
-   * [Federated Analytics](/help/use-cases/federated-analytics.md)
+   * [페더레이션 미디어](/help/use-cases/federated-media.md)
 
 * 타임라인
    * [챕터 시작과 끝](/help/use-cases/timelines/chapter-start-end.md)
