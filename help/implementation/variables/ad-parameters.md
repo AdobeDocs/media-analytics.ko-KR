@@ -5,10 +5,10 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 4b120beb888923027ba4ec71daea0ecc53fe21c7
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 96%
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/> media.ad.podPosition </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 1 </li><li> **설명:**<br/>&#x200B;상위 광고 브레이크 내에 있는 광고의 위치(색인)입니다. 첫 번째 광고에는 색인 0, 두 번째 광고에 색인 1 등이 있습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **하트비트:**<br/> (<code>s:asset:pod_position</code>). </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/> Pod의 광고 위치의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **데이터 피드:**<br/> videoadinpod </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.podPosition) </li> <li> **XDM 필드 패스:**<br/> advertising.adAssetViewDetails.index </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.advertisingDetails.index </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.advertisingDetails.index </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/> media.ad.podPosition </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작, 광고 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 1 </li><li> **설명:**<br/>&#x200B;상위 광고 브레이크 내에 있는 광고의 위치(색인)입니다. 첫 번째 광고에는 색인 0, 두 번째 광고에 색인 1 등이 있습니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **하트비트:**<br/> (<code>s:asset:pod_position</code>). </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/> Pod의 광고 위치의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **데이터 피드:**<br/> videoadinpod </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.podPosition) </li> <li> **XDM 필드 패스:**<br/> advertising.adAssetViewDetails.index </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.advertisingDetails.podPosition </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.advertisingDetails.podPosition </li> </ul> |
 
 
 
@@ -91,7 +91,7 @@ ht-degree: 96%
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/> media.ad.podPosition </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 1 </li><li> **설명:**<br/>&#x200B;콘텐츠 내에 있는 광고 브레이크 색인(1부터 시작)입니다. 속성은 Media SDK에서 Pod ID를 생성하는 데&#x200B;**에만** 사용됩니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;아니요 </li> <li> **예약된 변수:**<br/>&#x200B;해당 사항 없음 </li> <li> **보고서 이름:**<br/>&#x200B;해당 사항 없음 </li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **Audience Manager:**<br/> </li> <li> **XDM 필드 패스:**<br/> advertising.adAssetViewDetails.index </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 키:**<br/> media.ad.podIndex </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;숫자 </li> <li> **전송 시점:**<br/> </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> 1 </li><li> **설명:**<br/>&#x200B;콘텐츠 내에 있는 광고 브레이크 색인(1부터 시작)입니다. 속성은 Media SDK에서 Pod ID를 생성하는 데&#x200B;**에만** 사용됩니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **하트비트:**<br/> </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;아니요 </li> <li> **예약된 변수:**<br/>&#x200B;해당 사항 없음 </li> <li> **보고서 이름:**<br/>&#x200B;해당 사항 없음 </li> <li> **컨텍스트 데이터:**<br/> </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **Audience Manager:**<br/> </li> <li> **XDM 필드 패스:**<br/> advertising.adAssetViewDetails.index </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
 
 
 
