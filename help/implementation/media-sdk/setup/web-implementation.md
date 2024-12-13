@@ -4,9 +4,9 @@ description: 웹 앱용 Adobe Streaming Media를 구현하는 방법에 대해 �
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '441'
 ht-degree: 92%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 이 페이지의 정보에는 웹 독립형 SDK를 설치하고 JavaScript를 설정하는 방법이 설명되어 있습니다.
 
-또는 [Media Analytics 확장을 사용하여 Adobe Medium 구현](/help/implementation/media-sdk/setup/web-implementation-tags.md)에 설명된 대로 Media Analytics 확장을 사용하여 Adobe 스트리밍 미디어 컬렉션 추가 기능을 구현할 수 있습니다.
+또는 [Media Analytics 확장을 사용하여 Adobe Medium 구현](/help/implementation/media-sdk/setup/web-implementation-tags.md)에 설명된 대로 Analytics 확장을 사용하여 Adobe 스트리밍 미디어 컬렉션을 구현할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequesites}
 

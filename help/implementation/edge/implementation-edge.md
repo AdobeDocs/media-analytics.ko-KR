@@ -1,27 +1,27 @@
 ---
-title: Edge Network을 사용하여 스트리밍 미디어 컬렉션 추가 기능 구현
-description: Experience Platform Edge을 사용하여 스트리밍 미디어 컬렉션 추가 기능을 구현하는 방법에 대해 알아봅니다.
+title: Edge Network을 사용하여 스트리밍 미디어 컬렉션 구현
+description: Experience Platform Edge을 사용하여 스트리밍 미디어 컬렉션을 구현하는 방법에 대해 알아봅니다.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2146'
 ht-degree: 8%
 
 ---
 
-# Edge Network을 사용하여 스트리밍 미디어 컬렉션 추가 기능 구현
+# Edge Network을 사용하여 스트리밍 미디어 컬렉션 구현
 
 Adobe Experience Platform Edge Network를 사용하면 여러 제품을 대상으로 한 데이터를 중앙 위치에 전송할 수 있습니다. Experience Edge는 적절한 정보를 원하는 제품에 전달합니다. 이 개념을 사용하면 특히 여러 데이터 솔루션에 걸쳐 구현 노력을 통합할 수 있습니다.
 
-다음 그래픽에서는 Adobe 스트리밍 미디어 컬렉션 추가 기능을 구현하여 Experience Platform Edge을 사용하여 Adobe Analytics 또는 Customer Journey Analytics에서 Analysis Workspace에서 데이터를 사용할 수 있도록 하는 방법을 보여줍니다.
+다음 그래픽은 Experience Platform Edge을 사용하여 Adobe 또는 Adobe Analytics에서 Analysis Workspace에서 데이터를 사용할 수 있도록 Customer Journey Analytics 스트리밍 미디어 컬렉션을 구현하는 방법을 보여 줍니다.
 
 ![CJA 워크플로](assets/streaming-media-edge.png)
 
-Experience Platform Edge을 사용하지 않는 구현 방법을 포함하여 모든 구현 옵션에 대한 개요를 보려면 [Streaming Media Collection 추가 기능 구현](/help/implementation/overview.md)을 참조하십시오.
+Experience Platform Edge을 사용하지 않는 구현 방법을 포함하여 모든 구현 옵션에 대한 개요를 보려면 [Streaming Media Collection 구현](/help/implementation/overview.md)을 참조하십시오.
 
-Adobe Experience Platform Web SDK, Adobe Experience Platform Mobile SDK, Adobe Experience Platform Roku SDK 또는 API를 사용하여 Experience Edge에서 스트리밍 미디어 컬렉션 추가 기능을 구현하는지 여부에 관계없이 먼저 다음 섹션을 완료해야 합니다.
+Adobe Experience Platform Web SDK, Adobe Experience Platform Mobile SDK, Adobe Experience Platform Roku SDK 또는 API를 사용하여 Experience Edge으로 스트리밍 미디어 컬렉션을 구현하는지 여부에 관계없이 먼저 다음 섹션을 완료해야 합니다.
 
 ## Adobe Experience Platform에서 스키마 설정
 
@@ -179,7 +179,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
      ![Media Analytics 옵션](assets/datastream-media-check.png)
 
-1. 이제 Media Analytics 데이터 수집을 시작하려면 [Media Edge API](/help/implementation/edge/implementation-edge-api.md) 또는 [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)를 구현할 준비가 되었습니다.
+1. 이제 Media Analytics 데이터 수집을 시작하려면 [Media Edge API](/help/implementation/edge/implementation-edge-api.md) 또는 [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)을(를) 구현할 준비가 되었습니다.
 
    일부 데이터를 수집한 후에는 [Customer Journey Analytics에서 연결을 만들 수 있습니다](#create-a-connection-in-customer-journey-analytics).
 
@@ -193,7 +193,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 1. [연결 만들기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ko-KR)에 설명된 대로 Customer Journey Analytics에서 연결을 만듭니다.
 
-   연결을 만들 때 Streaming Media 컬렉션 추가 기능을 구현하려면 다음 구성 선택이 필요합니다.
+   연결을 만들 때 Streaming Media 컬렉션을 구현하려면 다음 구성 선택이 필요합니다.
 
    1. [Adobe Experience Platform에서 데이터 세트 만들기](#create-a-dataset-in-adobe-experience-platform)에 설명된 대로 이전에 만든 데이터 세트를 선택합니다.
 
@@ -211,7 +211,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 1. 고객 여정 분석에서 [데이터 보기 만들기 또는 편집](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ko-KR)에 설명된 대로 데이터 보기를 만듭니다.
 
-   데이터 보기를 만들 때 스트리밍 미디어 컬렉션 추가 기능을 구현하려면 다음 구성 선택이 필요합니다.
+   데이터 보기를 만들 때 Streaming Media 컬렉션을 구현하려면 다음 구성 선택이 필요합니다.
 
    1. [Customer Journey Analytics에서 연결 만들기](#create-a-connection-in-customer-journey-analytics)에 설명된 대로 [!UICONTROL **연결**] 필드에서 이전에 만든 연결을 선택합니다.
 
@@ -347,11 +347,11 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 Experience Platform Edge으로 전송할 데이터 유형에 따라 다음 방법 중 하나를 사용할 수 있습니다.
 
-### 웹: Adobe Experience Platform Web SDK 사용
+### 웹: Adobe Experience Platform 웹 SDK 사용
 
 * [시작하기](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [Adobe Experience Platform Web SDK를 사용하여 Edge에 웹 데이터 보내기](/help/implementation/edge/edge-web-sdk.md)
+* [Adobe Experience Platform Web SDK을 사용하여 웹 데이터를 Edge으로 전송](/help/implementation/edge/edge-web-sdk.md)
 
 * [Edge Network 확장용 Adobe 스트리밍 미디어로 마이그레이션](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 

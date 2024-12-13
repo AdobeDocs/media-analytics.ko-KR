@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '755'
 ht-degree: 94%
 
 ---
 
 # iOS 설정{#set-up-ios}
 
-iOS 디바이스용 스트리밍 미디어 컬렉션 추가 기능을 설정하는 방법에 대해 알아봅니다.
+iOS 디바이스를 위한 스트리밍 미디어 컬렉션을 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >

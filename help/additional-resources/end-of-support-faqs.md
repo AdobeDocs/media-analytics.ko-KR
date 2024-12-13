@@ -4,18 +4,18 @@ description: 이 항목에는 Media Analytics SDK에 대한 지원 종료 FAQ가
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '600'
 ht-degree: 76%
 
 ---
 
 # Media Analytics Mobile SDK 지원 종료 FAQ
 
-2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라, Adobe은 iOS 및 Android용 Media Analytics Mobile SDK에 대한 지원도 종료했습니다. (웹(JS)용 Media Analytics SDK와 Chromecast 및 Roku와 같은 OTT 플랫폼은 아직 지원되지 않습니다.)
+2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라, Adobe은 iOS 및 Android용 Media Analytics Mobile SDK에 대한 지원도 종료했습니다. (여전히 지원되는 Chromecast 및 Roku와 같은 OTT 플랫폼과 웹(JS)용 Media Analytics SDK은 여기에 포함되지 않습니다.)
 
-즉, Adobe은 더 이상 수정 사항, OS 관련 업데이트 또는 Media Analytics Mobile SDK에 대한 지원을 제공하지 않습니다. 새 Experience Platform SDK로 마이그레이션할 때 Adobe 스트리밍 미디어 컬렉션 추가 기능을 활성화하려면 [Media Analytics 확장 기능](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)을 구현해야 합니다.
+즉, Adobe은 더 이상 수정 사항, OS 관련 업데이트 또는 Media Analytics Mobile SDK에 대한 지원을 제공하지 않습니다. 새 Experience Platform SDK로 마이그레이션할 때는 Adobe Streaming Media 컬렉션을 사용하려면 [Media Analytics 확장 기능](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)을 구현해야 합니다.
 
 
 ## 알아 두어야 할 상위 5가지 항목

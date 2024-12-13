@@ -1,20 +1,20 @@
 ---
 title: 계산된 지표
-description: 스트리밍 미디어 컬렉션 추가 기능의 계산된 지표 및 지표 공식에 대해 알아봅니다.
+description: 스트리밍 미디어 컬렉션의 계산된 지표 및 지표 공식에 대해 알아봅니다.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 71%
+source-wordcount: '244'
+ht-degree: 72%
 
 ---
 
 # 계산된 지표{#calculated-metrics}
 
-Adobe 스트리밍 미디어 컬렉션 추가 기능에 대한 계산된 지표는 평균 광고 체류 시간 또는 미디어 스트림당 평균 광고 수와 같은 타겟팅된 스트리밍 미디어 데이터를 얻을 수 있는 사용자 지정 지표입니다.
+Adobe 스트리밍 미디어 컬렉션에 대한 계산된 지표는 평균 광고 체류 시간 또는 미디어 스트림당 평균 광고 수와 같은 타겟팅된 스트리밍 미디어 데이터를 얻을 수 있는 사용자 지정 지표입니다.
 
 Adobe Analytics 계산된 지표에 대한 자세한 내용은 Adobe Analytics 구성 요소 안내서에서 [계산된 지표 및 고급 계산된(파생) 지표](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=ko-KR)를 참조하십시오.
 

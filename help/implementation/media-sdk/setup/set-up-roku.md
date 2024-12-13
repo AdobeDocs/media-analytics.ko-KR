@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 93%
+source-wordcount: '664'
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 ## 사전 요구 사항 {#roku-prerequisites}
 
-* **스트리밍 미디어 컬렉션 추가 기능에 대한 올바른 구성 매개 변수 가져오기**
+* **스트리밍 미디어 컬렉션에 대한 올바른 구성 매개 변수 가져오기**
 
-  이러한 매개 변수는 Adobe 스트리밍 미디어 컬렉션 추가 기능 계정을 설정한 후 Adobe 담당자로부터 얻을 수 있습니다.
+  이러한 매개 변수는 Adobe 스트리밍 미디어 컬렉션 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 * **미디어 플레이어에서 다음 API 포함**
 
    * _플레이어 이벤트에 가입할 API_ - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.

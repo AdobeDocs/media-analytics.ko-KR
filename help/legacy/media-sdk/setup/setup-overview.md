@@ -1,14 +1,14 @@
 ---
 title: 미디어 SDK 구현 설명
-description: “모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위해 미디어 SDK를 설정하는 방법을 알아보십시오.”
+description: 모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위해 미디어 SDK을 설정하는 방법을 알아봅니다.
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 97%
+source-wordcount: '617'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 ## 일반 구현 지침 {#general-implementation-guidelines}
 
-스트리밍 미디어 컬렉션 추가 기능을 사용한 추적에 사용되는 세 가지 기본 SDK 구성 요소가 있습니다.
+스트리밍 미디어 컬렉션을 사용한 추적에 사용되는 세 가지 주요 SDK 구성 요소는 다음과 같습니다.
 * 미디어 하트비트 구성 - `MediaHeartbeatConfig`에는 보고할 기본 설정이 포함되어 있습니다.
 * 미디어 하트비트 위임 - `MediaHeartbeatDelegate`는 재생 시간 및 QoS 개체를 제어합니다.
 * 미디어 하트비트 - `MediaHeartbeat`는 구성원 및 메서드가 포함된 기본 라이브러리입니다.
