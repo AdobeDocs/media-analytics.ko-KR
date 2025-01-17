@@ -4,25 +4,25 @@ description: 다음을 포함한 플레이어 상태 추적 기능을 구현하�
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # 구현 및 보고
 
-재생 세션 중에 각 상태 발생(처음부터 끝까지)을 개별적으로 추적해야 합니다. Media SDK 및 Media Collection API는 이 기능에 대한 새로운 추적 방법을 제공합니다.
+재생 세션 중에 각 상태 발생(처음부터 끝까지)을 개별적으로 추적해야 합니다. Media SDK 및 Media Collection API는 이 기능에 대한 추적 메서드를 제공합니다.
 
-Media SDK에는 사용자 지정 상태 추적을 위한 두 가지 새로운 방법이 포함되어 있습니다.
+Media SDK에는 사용자 지정 상태 추적을 위한 두 가지 방법이 포함됩니다.
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-Media Collection API에는 `media.stateName`을 필수 매개 변수로 사용하는 두 개의 새로운 이벤트가 포함되어 있습니다.
+Media Collection API에는 `media.stateName`을(를) 필수 매개 변수로 사용하는 두 개의 이벤트가 포함되어 있습니다.
 
 `stateStart` 및 `stateEnd`
 
@@ -91,11 +91,11 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 보고
 
-플레이어 상태 추적을 위해 보고서 세트를 활성화하면 Analysis Workspace 또는 구성 요소(세그먼트, 계산된 지표)에서 사용할 수 있는 모든 보고 시각화에 모든 플레이어 상태 지표를 사용할 수 있습니다. 미디어 보고 설정(설정 편집 > 미디어 관리 > 미디어 보고)을 사용하는 개별 보고서에 대한 새 지표를 Admin Console에서 활성화할 수 있습니다.
+플레이어 상태 추적을 위해 보고서 세트를 활성화하면 Analysis Workspace 또는 구성 요소(세그먼트, 계산된 지표)에서 사용할 수 있는 모든 보고 시각화에 모든 플레이어 상태 지표를 사용할 수 있습니다. 이러한 지표는 미디어 보고 설정(설정 편집 > 미디어 관리 > 미디어 보고)을 사용하는 각 개별 보고서에 대한 Admin Console에서 활성화할 수 있습니다.
 
 ![](assets/report-setup.png)
 
-Analytics Workspace에서 새 속성은 모두 지표 패널에 있습니다. 예를 들어 `full screen`별로 검색하여 지표 패널에서 전체 화면 데이터를 볼 수 있습니다.
+Analysis Workspace에서 새 속성은 모두 지표 패널에 있습니다. 예를 들어 `full screen`별로 검색하여 지표 패널에서 전체 화면 데이터를 볼 수 있습니다.
 
 ![](assets/full-screen-report.png)
 

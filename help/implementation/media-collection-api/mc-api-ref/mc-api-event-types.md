@@ -1,14 +1,14 @@
 ---
 title: Streaming Media 이벤트 유형 및 설명
-description: “미디어 컬렉션 이벤트 유형 및 설명은 무엇입니까? ”
+description: '미디어 컬렉션 이벤트 유형 및 설명은 무엇입니까? '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -90,3 +90,15 @@ Ping 이벤트는 요청 본문에 *를 포함하지*&#x200B;않아야`params` �
 >[!IMPORTANT]
 >
 >각 이벤트 유형에 대한 [JSON 유효성 검사 스키마](mc-api-json-validation.md)를 참조하여 올바른 이벤트 매개 변수 유형 및 요구 사항을 확인해야 합니다.
+
+## stateStart
+
+플레이어 상태 추적을 시작한다는 신호를 보냅니다.
+
+자세한 내용은 [구현 및 보고](/help/use-cases/player-state-tracking/implementation-and-reporting.md)를 참조하십시오.
+
+## stateEnd
+
+플레이어 상태 추적을 종료한다는 신호를 보냅니다.
+
+자세한 내용은 [구현 및 보고](/help/use-cases/player-state-tracking/implementation-and-reporting.md)를 참조하십시오.
