@@ -21,9 +21,9 @@ Adobe Analytics 전용 구현용 또는 Edge 구현용 Streaming Media Collectio
 1. **Edge Network 및 스트리밍 미디어 컬렉션과 호환되는 Adobe 솔루션을 구현하고 있는지 확인**<br>
 Edge을 사용하여 스트리밍 미디어 컬렉션을 구현하는 경우 작업 Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer 또는 Real-time Customer Data Platform 구현도 있어야 합니다. 자세한 내용은 다음 설명서 리소스를 참조하십시오.
    * [Customer Journey Analytics 안내서](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ko)
-   * [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
+   * [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)
    * [Adobe Journey Optimizer 설명서](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=ko)
-   * [Real-time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Real-time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=ko)
 
 1. **미디어 추적 서버 URL 가져오기**<br>
 미디어 추적 서버 URL은 Customer Journey Analytics 담당자에게 문의하십시오. <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
