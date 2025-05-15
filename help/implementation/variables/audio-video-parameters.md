@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 92%
@@ -218,7 +218,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/> ASSET_ID </li> <li> **API 키:**<br/> media.assetId </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> &quot;89745363&quot; </li> <li> **설명:**<br/> TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 미디어 자산 콘텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 권한에서 파생됩니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.asset) </li> <li> **하트비트:**<br/>(<code>초:meta:</code><br/>a.media.asset) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;분류 </li> <li> **보고서 이름:**<br/> 자산 ID </li> <li> **컨텍스트 데이터:**<br/> (a.media.asset) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.asset) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.primaryAssetReference.<br/>@ID </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.sessionDetails.assetID </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.assetID </li> </ul> |
+| <ul> <li> **SDK 키:**<br/> ASSET_ID </li> <li> **API 키:**<br/> media.assetId </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 </li> <li> **샘플 값:**<br/> &quot;89745363&quot; </li> <li> **설명:**<br/> TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 미디어 자산 콘텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 권한에서 파생됩니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.asset) </li> <li> **하트비트:**<br/>(<code>초:meta:</code><br/>a.media.asset) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;분류 </li> <li> **보고서 이름:**<br/> 자산 ID </li> <li> **컨텍스트 데이터:**<br/> (a.media.asset) </li> <li> **데이터 피드:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.asset) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.primaryAssetReference.<br/>_id </li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.sessionDetails.assetID </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.assetID </li> </ul> |
 
 ### 장르
 

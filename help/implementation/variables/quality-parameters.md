@@ -5,7 +5,7 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '3314'
 ht-degree: 90%
@@ -185,7 +185,7 @@ ht-degree: 90%
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;비디오가 시작되기 전에 사용자가 비디오를 종료한 횟수입니다. 이 지표는 광고에 관계없이 콘텐츠가 렌더링되지 않은 경우에만 1로 설정됩니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **하트비트:**<br/> (<code>s:event:</code><br/>type=aa_start) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;시작 전 드롭 </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **데이터 피드:**<br/> videoqoedropbeforestart </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot;</li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;비디오가 시작되기 전에 사용자가 비디오를 종료한 횟수입니다. 이 지표는 광고에 관계없이 콘텐츠가 렌더링되지 않은 경우에만 1로 설정됩니다.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **하트비트:**<br/> (<code>s:event:</code><br/>type=aa_start) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;시작 전 드롭 </li> <li> **컨텍스트 데이터:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **데이터 피드:**<br/> videoqoedropbeforestart </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.dropBeforeStarts.<br/>값 >= 1 => &quot;TRUE&quot;</li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
 
 
 

@@ -5,9 +5,9 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2036'
 ht-degree: 89%
 
 ---
@@ -176,7 +176,7 @@ ht-degree: 89%
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;비디오 광고 시작 수입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>view) </li> <li> **하트비트:**<br/> (<code>s:event:type=start</code>)<br/> (<code>s:asset:type=ad<code>) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;광고 시작 </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>view) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/> advertising.starts.value > 0 => &quot;TRUE&quot; </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 시작 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;비디오 광고 시작 수입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>view) </li> <li> **하트비트:**<br/> (<code>s:event:type=start</code>)<br/> (<code>s:asset:type=ad<code>) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;광고 시작 </li> <li> **데이터 피드:**<br/> videoadstart </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>view) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/> advertising.impressions.value > 0 => &quot;TRUE&quot; </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
 
 
 
@@ -184,7 +184,7 @@ ht-degree: 89%
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;비디오 광고 완료 수입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>complete) </li> <li> **하트비트:**<br/> (<code>s:event:type=complete</code>)<br/> (<code>s:asset:type=ad</code>).  </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;광고 완료 </li> <li> **데이터 피드:**<br/>&#x200B;해당 사항 없음 </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>complete) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.complete) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/> advertising.completes.value > 0 => &quot;TRUE&quot; </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>&#x200B;자동으로 설정됨 </li> <li> **API 키:**<br/>&#x200B;해당 사항 없음 </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/>&#x200B;광고 닫기 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/> TRUE </li><li> **설명:**<br/>&#x200B;비디오 광고 완료 수입니다.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>complete) </li> <li> **하트비트:**<br/> (<code>s:event:type=complete</code>)<br/> (<code>s:asset:type=ad</code>).  </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/>&#x200B;이벤트 </li> <li> **보고서 이름:**<br/>&#x200B;광고 완료 </li> <li> **데이터 피드:**<br/> videoadcomplete </li> <li> **컨텍스트 데이터:**<br/> (a.media.ad.<br/>complete) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.complete) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/> advertising.completes.value > 0 => &quot;TRUE&quot; </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
 
 
 
