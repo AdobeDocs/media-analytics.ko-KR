@@ -3,9 +3,9 @@ title: 건너뛴 챕터가 있는 VOD 재생
 description: Media SDK를 사용하여 사용자가 챕터를 건너뛴 VOD 콘텐츠를 추적하는 방법의 예를 봅니다.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 100%

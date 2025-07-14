@@ -1,11 +1,11 @@
 ---
 title: Adobe 스트리밍 미디어 컬렉션 개요
-description: 스트리밍 미디어 컬렉션을 사용하여 콘텐츠, 오디오 및 광고에 대한 강력한 통찰력을 얻으십시오.
+description: 스트리밍 미디어 컬렉션을 사용하여 컨텐츠, 오디오 및 광고를 위한 강력한 insight을 얻을 수 있습니다.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
@@ -16,7 +16,7 @@ ht-degree: 65%
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe 스트리밍 미디어 컬렉션은 스트리밍 미디어 제공업체를 위한 오디오, 비디오 및 광고와 같은 스트리밍 미디어 콘텐츠를 위한 강력한 수집, 측정 및 개인화 도구를 제공합니다. 스트리밍 미디어 지표를 Audience Analytics, 모바일 또는 크로스 디바이스 분석과 같은 기능과 결합할 수 있습니다.
+Adobe Streaming Media Collection은 스트리밍 미디어 공급자를 위한 오디오, 비디오 및 광고와 같은 스트리밍 미디어 콘텐츠를 위한 강력한 수집, 측정 및 개인화 도구를 제공합니다. 스트리밍 미디어 지표를 Audience Analytics, Mobile 또는 Cross-Device Analytics와 같은 기능과 결합할 수 있습니다.
 
 스트리밍 미디어 데이터는 다음 Adobe Experience Platform 제품에 쉽게 통합됩니다.
 
@@ -68,4 +68,4 @@ Streaming Media Collection의 이점에는 실시간 모니터링, 세부 분석
 >Customer Journey Analytics 구현을 사용하면 Experience Edge 또는 ADC(Analytics Data Connector)를 사용하여 데이터를 Customer Journey Analytics로 보낼 수 있습니다.
 
 
-다양한 구현 방법에 대한 자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics에 대한 스트리밍 미디어 컬렉션 구현](/help/implementation/overview.md)을 참조하십시오.
+다양한 구현 방법에 대한 자세한 내용은 [Adobe Analytics 또는 Customer Journey Analytics용 스트리밍 미디어 컬렉션 구현](/help/implementation/overview.md)을 참조하십시오.

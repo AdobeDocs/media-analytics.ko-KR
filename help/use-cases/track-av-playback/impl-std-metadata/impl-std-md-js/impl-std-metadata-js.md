@@ -3,9 +3,9 @@ title: JavaScript 2.x를 사용하여 표준 메타데이터를 구현하는 방
 description: 브라우저 앱(JS 2.x)에서 추적 호출을 사용하여 전송할 표준 비디오 및 광고 메타데이터를 설정하는 방법에 대해 알아봅니다.
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 100%

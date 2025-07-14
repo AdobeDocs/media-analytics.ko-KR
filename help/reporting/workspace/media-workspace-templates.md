@@ -3,9 +3,9 @@ title: 미디어 작업 영역 템플릿
 description: 미디어 작업 영역 템플릿을 사용하여 추적 데이터를 분석합니다. 확보 또는 스트리밍 미디어용 표준 템플릿을 선택하거나 사용자 지정 템플릿을 제작합니다.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: "Media Analytics, Workspace Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >Workspace의 *보고서*&#x200B;을(를) 이전에 *템플릿*(으)로 했습니다.
 
-Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 기본적으로 사용할 수 있는 미리 작성된 보고서 세트를 제공합니다. 사용 가능한 모든 기본 보고서에 대한 자세한 내용은 [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko-KR)에서 [보고서 보기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko#menus)를 참조하십시오.
+Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 기본적으로 사용할 수 있는 미리 작성된 보고서 세트를 제공합니다. 사용 가능한 모든 기본 보고서에 대한 자세한 내용은 [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus)에서 [보고서 보기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko)를 참조하십시오.
 
 이러한 보고서 중 일부는 다음 섹션에 설명된 대로 스트리밍 미디어 데이터를 분석하는 데 특히 유용합니다.
 
@@ -41,6 +41,6 @@ Analysis Workspace에서는 데이터를 분석하는 데 사용할 수 있는 �
 다음과 같은 방법으로 기본 미디어 보고서를 사용할 수 있습니다.
 새 프로젝트를 만들 때. 기존 프로젝트를 수정하거나 수정할 수도 있습니다.
 
-* **새 프로젝트를 만들 때:** 기본 보고서에서 새 프로젝트를 만드는 방법에 대한 자세한 내용은 [빈 프로젝트 또는 보고서에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=ko#create-a-project-from-a-blank-project-or-a-report)([Analysis Workspace에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=ko#create-a-project-from-a-blank-project-or-a-report))를 참조하십시오.
+* **새 프로젝트를 만들 때:** 기본 보고서에서 새 프로젝트를 만드는 방법에 대한 자세한 내용은 [빈 프로젝트 또는 보고서에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)&#x200B;([Analysis Workspace에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report))를 참조하십시오.
 
-* **사용자 지정 회사 보고서를 만들 때:** 사용자 지정 회사 보고서를 만드는 방법에 대한 자세한 내용은 [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko-KR)에서 [사용자 지정 회사 보고서 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko#company-report)를 참조하세요.
+* **사용자 지정 회사 보고서를 만들 때:** 사용자 지정 회사 보고서를 만드는 방법에 대한 자세한 내용은 [Adobe Analytics 랜딩 페이지](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report)에서 [사용자 지정 회사 보고서 만들기](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ko)를 참조하세요.

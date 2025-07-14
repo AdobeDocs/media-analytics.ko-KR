@@ -2,9 +2,9 @@
 title: JavaScript 3.x를 사용하여 버퍼링을 추적하는 방법에 대해 알아보기
 description: 브라우저 앱(JS)에서 버퍼링 이벤트를 추적하는 방법에 대해 알아봅니다.
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 100%

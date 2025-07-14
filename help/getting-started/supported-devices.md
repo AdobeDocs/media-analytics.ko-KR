@@ -2,9 +2,9 @@
 title: 지원되는 디바이스 및 플랫폼에 대해 알아봅니다.
 description: 스트리밍 미디어 컬렉션이 지원하는 iOS, Android, OTT 디바이스 및 JavaScript 브라우저와 같은 주요 디바이스에 대해 알아봅니다.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 77%
@@ -23,7 +23,7 @@ SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데이트�
 
 현재 SDK가 지원되지 않는 디바이스의 경우나 구현을 사용자 정의해야 하는 상황에서는 Media Collection API 또는 Media Edge API를 구현할 수 있습니다. 이러한 API를 사용하면 디바이스에서 스트리밍 미디어 컬렉션의 백엔드로 직접 RESTful API를 호출할 수 있습니다.
 
-아래 표는 현재 지원되는 디바이스 목록입니다. 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
+아래 테이블은 현재 지원되는 디바이스 목록입니다. 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
 
 Edge에서 미디어를 구현하는 방법에 대한 자세한 내용은 [Experience Platform Edge을 사용하여 스트리밍 미디어 컬렉션 설치](/help/implementation/edge/implementation-edge.md)를 참조하십시오.
 

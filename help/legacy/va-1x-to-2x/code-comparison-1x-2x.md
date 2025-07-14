@@ -3,12 +3,12 @@ title: 코드 비교 v1.x대 v2.x
 description: Media SDK 1.x 버전과 2.x 버전 코드의 차이점에 대해 알아봅니다.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -102,7 +102,7 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate().get.onError` | |
 | `AdobeAnalyticsPluginDelegate()` | |
 
-#### VideoPlayerPluginDelegate(1.x) {#player-plugin-delegate-1.x}
+#### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleVideoPlayerPluginDelegate.prototype, VideoPlayerPluginDelegate.prototype);
@@ -132,7 +132,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-#### AdobeAnalyticsPluginDelegate(1.x) {#analytics-plugin-delegate-1.x}
+#### AdobeAnalyticsPluginDelegate (1.x) {#analytics-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -144,7 +144,7 @@ SampleAdobeAnalyticsPluginDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### HeartbeatDelegate(1.x) {#hb-delegate-1.x}
+#### HeartbeatDelegate (1.x) {#hb-delegate-1.x}
 
 ```js
 $.extend(SampleHeartbeatDelegate.prototype, HeartbeatDelegate.prototype);
@@ -156,7 +156,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### MediaHeartbeatDelegate(2.x) {#mh-delegate-2.x}
+#### MediaHeartbeatDelegate (2.x) {#mh-delegate-2.x}
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);

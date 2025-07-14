@@ -3,9 +3,9 @@ title: 광고가 없는 VOD 재생
 description: 광고가 포함되지 않은 VOD 재생 추적의 예를 봅니다.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 57b4120518a6fecf6a9751f944d5bd20f04b15fe
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 100%
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ## 매개 변수 {#parameters}
 
-하트비트 콘텐츠 시작 호출 시 표시되는 동일한 값의 대부분이 Adobe Analytics `Content Start` 호출 시에도 표시됩니다. Adobe에서는 많은 매개 변수를 사용하여 다양한 미디어 보고서를 채우지만, 다음 표에는 가장 중요한 매개 변수만 나열되어 있습니다.
+하트비트 콘텐츠 시작 호출 시 표시되는 동일한 값의 대부분이 Adobe Analytics `Content Start` 호출 시에도 표시됩니다. Adobe에서는 많은 매개 변수를 사용하여 다양한 미디어 보고서를 채우지만, 다음 테이블에는 가장 중요한 매개 변수만 나열되어 있습니다.
 
 ### 하트비트 콘텐츠 시작
 

@@ -3,9 +3,9 @@ title: 광고 매개변수
 description: 구현, 네트워크 및 광고 비디오 데이터에 대한 변수 보고를 포함하여 광고 매개 변수에 대해 알아봅니다.
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 89%
@@ -37,13 +37,13 @@ ht-degree: 89%
 >[!IMPORTANT]
 >
 >보고/예약 변수 아래에 &quot;분류&quot;로 설명되어 있는 변수의
->분류 이름을 변경하지 마십시오.
->미디어 분류는 보고서 세트가 미디어 추적에 대해 활성화될 때
->정의됩니다. Adobe는 수시로 새로운 속성을 추가하며, 이런 경우
->고객이 보고서 세트를 다시 활성화하여 새 미디어 속성에
->액세스해야 합니다. 업데이트 프로세스 중에 Adobe는 변수의 이름을 확인하여
->분류를 사용할지 여부를 결정합니다. 누락된 항목이
->있을 경우 Adobe가 다시 추가합니다.
+>>분류 이름을 변경하지 마십시오.
+>>미디어 분류는 보고서 세트가 미디어 추적에 대해 활성화될 때
+>>정의됩니다. Adobe는 수시로 새로운 속성을 추가하며, 이런 경우
+>>고객이 보고서 세트를 다시 활성화하여 새 미디어 속성에
+>>액세스해야 합니다. 업데이트 프로세스 중에 Adobe는 변수의 이름을 확인하여
+>>분류를 사용할지 여부를 결정합니다. 누락된 항목이
+>>있을 경우 Adobe가 다시 추가합니다.
 
 ## 광고 비디오 데이터 {#ad-video-data}
 

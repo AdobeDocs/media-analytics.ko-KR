@@ -3,9 +3,9 @@ title: 미디어 추적 타임라인 - 사용자가 세션을 중단함에 대�
 description: 비디오 세션이 중단될 때 플레이헤드 타임라인 및 해당 사용자의 작업에 대해 알아봅니다. 각 작업과 요청에 대한 세부 사항에 대해 알아봅니다.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 100%

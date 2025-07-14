@@ -2,16 +2,16 @@
 title: Media SDK 사용 사례 개요
 description: Streaming Media 사용 사례에 대해 알아보기
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
 
 ---
 
-# Media SDK 사용 사례 {#media-sdk-use-cases}
+# 미디어 SDK 활용 사례 {#media-sdk-use-cases}
 
 * [플레이어 상태 추적](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [오프라인 다운로드 콘텐츠 추적](/help/use-cases/track-downloaded-content.md)

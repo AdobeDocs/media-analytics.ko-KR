@@ -3,9 +3,9 @@ title: Roku용 미디어 SDK를 설정하는 방법
 description: Roku에서 미디어 SDK 애플리케이션을 설정하려면 다음 단계를 따르십시오.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 94%
@@ -171,4 +171,4 @@ Experience Cloud 솔루션용 Roku SDK 2.x를 사용하여 BrightScript로 작�
    | `processMediaMessages` | 처리할 SDK에 미디어 이벤트를 전달하는 일을 담당합니다. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ko) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

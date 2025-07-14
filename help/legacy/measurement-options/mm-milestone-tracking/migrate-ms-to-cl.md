@@ -3,9 +3,9 @@ title: 이정표에서 사용자 지정 링크로의 마이그레이션에 대�
 description: 이정표 변수를 사용자 지정 링크로, 이정표 모듈 메서드를 사용자 지정 링크 구문으로 변환하는 방법에 대해 알아봅니다.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 이정표 추적과 사용자 지정 링크 추적에서 비디오 측정의 핵심 개념은 동일합니다. 이 추적에서는 비디오 플레이어 이벤트를 가져와서 분석 메서드에 매핑하는 동시에 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. 사용자 지정 링크 접근 방식은 구현과 수집된 데이터에서 불필요한 항목을 제거하여 모두 간소화한 것으로 간주해야 합니다. 사용자 지정 링크 솔루션을 사용하면 비디오 측정을 위해 미리 정의된 변수나 메서드가 없으므로 전체 사용자 지정 설정이 필요합니다. 시작 및 완료와 같은 기본 플레이어 이벤트에 대한 사용자 지정 링크 추적 호출을 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. 자세한 내용은 [사용자 지정 링크 구현 안내서](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md)를 참조하십시오.
 
-다음 표는 이정표 솔루션과 사용자 지정 링크 솔루션 간의 변환 내용을 제공합니다.
+다음 테이블은 이정표 솔루션과 사용자 지정 링크 솔루션 간의 변환 내용을 제공합니다.
 
 ## 마이그레이션 안내 {#migration-guide}
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 | 이름 | `name`: (필수) 광고 이름 또는 ID입니다. | 해당 없음 | 사용할 수 없음. |
 | length | `length`: (필수) 광고 길이입니다. | 해당 없음 | 사용할 수 없음. |
 | playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어 플레이어의 이름입니다. | 해당 없음 | 사용할 수 없음. |
-| parentName | `parentName`: 광고가 포함된 기본 콘텐츠의 이름 또는 ID입니다. | 해당 없음 | 사용할 수 없음. |
+| parentName | `parentName`: 광고가 임베드된 기본 콘텐츠의 이름 또는 ID입니다. | 해당 없음 | 사용할 수 없음. |
 | parentPod | `parentPod`: 기본 콘텐츠에서 광고가 재생되는 위치입니다. | 해당 없음 | 사용할 수 없음. |
 | parentPodPosition | `parentPodPosition`: Pod 내에서 광고가 재생되는 위치입니다. | 해당 없음 | 사용할 수 없음. |
 | CPM | `CPM`: 이 재생에 적용되는 CPM 또는 암호화된 CPM(앞에 &quot;~&quot;가 붙음)입니다. | 해당 없음 | 사용할 수 없음. |

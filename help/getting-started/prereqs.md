@@ -1,11 +1,11 @@
 ---
-title: 스트리밍 미디어용 Adobe 컬렉션에 대한 사전 요구 사항에 대해 알아봅니다
+title: Adobe 스트리밍 미디어 컬렉션을 위한 사전 요구 사항에 대해 알아봅니다
 description: 스트리밍 미디어 컬렉션을 시작합니다. 구현에 필요한 사항을 알아봅니다.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Media Analytics, System Requirements"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 64%
@@ -20,10 +20,10 @@ Adobe 스트리밍 미디어 컬렉션 구현을 시작하기 전에 다음 작�
 스트리밍 미디어 컬렉션 구현을 시작하기 전에 [스트리밍 미디어 컬렉션 개요](/help/media-overview.md)를 검토하여 요구 사항을 충족하는지 확인하십시오.
 
 1. **가격 책정 모델 확인**<br>
-Adobe 스트리밍 미디어 컬렉션 추가 기능의 현재 가격 모델은 비디오 스트림을 기반으로 합니다. 추가 기능은 Adobe Analytics 및 Adobe Experience Platform용으로 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe 계정 팀에 문의하십시오.
+Adobe 스트리밍 미디어 컬렉션 추가 기능의 현재 가격 모델은 비디오 스트림을 기반으로 합니다. 추가 기능은 Adobe Analytics 및 Adobe용으로 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe Experience Platform 계정 팀에 문의하십시오.
 
 1. **Adobe Analytics 보고서 사용**<br>
-Analytics나 Customer Journey Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠와 광고 데이터를 보려면 보고서를 활성화해야 합니다. [미디어 보고서 지원](/help/reporting/media-reports-enable.md)을 확인하십시오.
+Analytics 또는 Customer Journey Analytics에서 보고서를 활성화하고 수집 중인 컨텐츠 및 광고 데이터를 보려면 보고서를 활성화해야 합니다. [미디어 보고서 지원](/help/reporting/media-reports-enable.md)을 확인하십시오.
 
 1. **Experience Cloud에서 Adobe Experience Platform ID 서비스 구현**
 
@@ -37,7 +37,7 @@ Analytics나 Customer Journey Analytics에서 보고서를 활성화하고 수�
 
    ID 서비스를 구현하지 않았다면 지금이 바로 마이그레이션 전략을 시작할 적기입니다. ID 서비스의 중요성과 역할에 대한 자세한 내용은 [Identity 서비스가 나의 레이더가 되어야 하는 이유](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)를 참조하십시오.
 
-   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ko) 및 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) 및 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
 
 1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 

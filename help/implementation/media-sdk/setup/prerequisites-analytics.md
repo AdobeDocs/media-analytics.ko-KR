@@ -1,10 +1,10 @@
 ---
 title: Adobe Analytics 전용 구현을 위한 사전 요구 사항
 description: Adobe Analytics 전용 구현에서 스트리밍 미디어 컬렉션을 사용하기 위한 사전 요구 사항에 대해 알아봅니다
-feature: Media Analytics, System Requirements
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 44%
@@ -13,13 +13,13 @@ ht-degree: 44%
 
 # Adobe Analytics 전용 구현을 위한 사전 요구 사항
 
-이 섹션에 설명된 사전 요구 사항은 Adobe 분석 전용 구현으로 스트리밍 미디어 컬렉션을 구현하는 것(Edge을 사용하지 않는 경우)에만 해당됩니다.
+이 섹션에 설명된 사전 요구 사항은 Adobe-Analytics 전용 구현으로 스트리밍 미디어 컬렉션을 구현하는 것(Edge을 사용하지 않는 경우)에만 해당됩니다.
 
 1. **일반 필수 구성 요소를 완료합니다**<br>
 Adobe Analytics 전용 구현용 또는 Edge 구현용 Streaming Media Collection을 구현하는지 여부에 관계없이 [일반 사전 요구 사항](/help/getting-started/prereqs.md)을 충족하는지 확인하십시오.
 
 1. **Adobe Analytics 구현이 있는지 확인**<br>
-Analytics 전용 구현으로 스트리밍 미디어 컬렉션을 구현하는 경우 Adobe Analytics 기본 구현도 필요합니다. 자세한 내용은 [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)을 참조하십시오.
+Analytics 전용 구현으로 스트리밍 미디어 컬렉션을 구현하는 경우 Adobe Analytics 기본 구현도 필요합니다. 자세한 내용은 [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)을 참조하십시오.
 
 1. **미디어 추적 서버 URL 얻기**<br>
 미디어 추적 서버 URL은 Adobe Analytics 담당자에게 문의하십시오. 모바일 SDK, JavaScript SDK 및 Roku용 비수집 API 추적 서버의 `collection-api-server` URL입니다. API 구현을 위한 도메인 이름은 다음과 같습니다. `[your_namespace].hb-api.omtrdc.net`.

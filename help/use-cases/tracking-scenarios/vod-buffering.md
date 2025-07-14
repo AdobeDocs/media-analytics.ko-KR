@@ -3,9 +3,9 @@ title: 버퍼링이 있는 VOD 재생
 description: Media SDK를 사용하여 VOD 콘텐츠를 추적하는 방법의 예를 봅니다.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%

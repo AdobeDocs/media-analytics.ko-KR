@@ -2,9 +2,9 @@
 title: JavaScript v3.x를 사용하여 코어 재생을 추적하는 방법에 대해 알아보기
 description: JavaScript 3.x 앱을 사용하는 브라우저에서 Media SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 87%

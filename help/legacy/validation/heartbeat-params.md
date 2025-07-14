@@ -3,9 +3,9 @@ title: 하트비트 매개 변수 설명
 description: Adobe가 Media Analytics(하트비트) 서버에서 수집하고 처리하는 하트비트 매개 변수를 살펴봅니다.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
-feature: "Media Analytics, Variables"
+feature: "Streaming Media, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 99%

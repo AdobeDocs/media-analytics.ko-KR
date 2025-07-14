@@ -3,9 +3,9 @@ title: 이정표에서 Media Analytics로 마이그레이션하는 방법에 대
 description: 이정표 변수를 Media Analytics 지표로, 이정표 모듈 메서드를 Media Analytics 구문으로 변환하는 방법에 대해 알아봅니다.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 93%
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 비디오 측정의 핵심 개념은 이정표 및 Media Analytics에도 동일하며, 이러한 추적에서는 비디오 플레이어 이벤트를 가져와서 이를 분석 메서드에 매핑하고, 플레이어 메타데이터 및 값도 가져와서 분석 변수에 매핑합니다. Media Analytics 솔루션은 이정표에서 발전된 것이므로 많은 메서드와 지표가 동일하지만 구성 접근 방식과 코드는 크게 변경되었습니다. 새로운 Media Analytics 메서드를 가리키도록 플레이어 이벤트 코드를 업데이트할 수 있어야 합니다. Media Analytics 구현에 대한 자세한 내용은 [SDK 개요](/help/legacy/setup/legacy-setup-overview.md) 및 [추적 개요](/help/use-cases/track-av-playback/track-core-overview.md)를 참조하십시오.
 
-다음 표는 이정표 솔루션과 Media Analytics 솔루션 간의 변환 내용을 제공합니다.
+다음 테이블은 이정표 솔루션과 Media Analytics 솔루션 간의 변환 내용을 제공합니다.
 
 ## 마이그레이션 안내 {#migration-guide}
 
@@ -79,7 +79,7 @@ ht-degree: 93%
 | 이름 | `name`: (필수) 광고 이름 또는 ID입니다. | 이름 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`: (필수) 광고 길이입니다. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`: (필수) 광고를 보는 데 사용되는 미디어 플레이어의 이름입니다. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`: 광고가 포함된 기본 콘텐츠의 이름 또는 ID입니다. | 해당 없음 | 자동 상속됨. |
+| parentName | `parentName`: 광고가 임베드된 기본 콘텐츠의 이름 또는 ID입니다. | 해당 없음 | 자동 상속됨. |
 | parentPod | `parentPod`: 기본 콘텐츠에서 광고가 재생되는 위치입니다. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
 | parentPodPosition | `parentPodPosition`: Pod 내에서 광고가 재생되는 위치입니다. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | CPM | `CPM`: 이 재생에 적용되는 CPM 또는 암호화된 CPM(앞에 &quot;~&quot;가 붙음)입니다. | 해당 없음 | 기본적으로 Media Analytics에서 사용할 수 없음. |

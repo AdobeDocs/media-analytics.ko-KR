@@ -2,9 +2,9 @@
 title: 구현 및 보고
 description: 다음을 포함한 플레이어 상태 추적 기능을 구현하는 방법에 대해 알아봅니다.
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -91,7 +91,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 보고
 
-플레이어 상태 추적을 위해 보고서 세트를 활성화하면 Analysis Workspace 또는 구성 요소(세그먼트, 계산된 지표)에서 사용할 수 있는 모든 보고 시각화에 모든 플레이어 상태 지표를 사용할 수 있습니다. 이러한 지표는 미디어 보고 설정(설정 편집 > 미디어 관리 > 미디어 보고)을 사용하는 각 개별 보고서에 대한 Admin Console에서 활성화할 수 있습니다.
+플레이어 상태 추적을 위해 보고서 세트를 활성화하면 Analysis Workspace 또는 구성 요소(세그먼트, 계산된 지표)에서 사용할 수 있는 모든 보고 시각화에 모든 플레이어 상태 지표를 사용할 수 있습니다. 이러한 지표는 미디어 보고 설정(설정 편집 > 미디어 관리 > 미디어 보고)을 사용하는 각 개별 보고서에 대해 Admin Console에서 활성화할 수 있습니다.
 
 ![](assets/report-setup.png)
 

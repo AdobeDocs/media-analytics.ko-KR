@@ -3,9 +3,9 @@ title: 미디어 보고서 지원
 description: 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 미디어 보고서 세트에 대해 알아봅니다.  미디어 데이터를 보내기 전에 미디어 보고서를 구성하려면 다음 단계를 따르십시오.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 98%

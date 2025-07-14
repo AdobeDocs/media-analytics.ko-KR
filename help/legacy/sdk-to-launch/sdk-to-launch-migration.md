@@ -4,9 +4,9 @@ title: 독립형 Media SDK에서 Adobe Launch로 마이그레이션
 seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Media SDK에서 Launch로 마이그레이션하는 방법에 대해 알아봅니다.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Launch 고객은 앱 스토어 환경에서 확장을 사용할 수 있으므로
 
 오디오 및 비디오용 Adobe Media Analytics는 웹 및 모바일용 Launch 확장으로 사용할 수 있습니다.
 
-* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko)
+* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [모바일 Launch 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 플랫폼

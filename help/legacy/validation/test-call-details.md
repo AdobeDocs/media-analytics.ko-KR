@@ -3,9 +3,9 @@ title: 테스트 호출 세부 사항
 description: 구현의 유효성을 확인하기 위해 수행해야 하는 호출에 대해 살펴봅니다.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 100%

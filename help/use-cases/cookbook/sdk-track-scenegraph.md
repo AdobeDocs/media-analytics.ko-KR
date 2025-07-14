@@ -3,9 +3,9 @@ title: SceneGraph에서 추적(Roku)
 description: Roku SceneGraph XML 프로그래밍 프레임워크로 미디어를 추적하는 방법에 대해 알아봅니다.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -199,7 +199,7 @@ API 서명: `ADBMobile().sgConstants()`
 
 
 
-레거시 AdobeMobileLibrary에 전역으로 정의된 유틸리티 `MediaHeartbeat` API는 SceneGraph 노드에서 사용할 수 없는 Brightscript 구성 요소를 사용하지 않으므로 SceneGraph 환경에서 *그대로* 액세스할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 아래 표를 참조하십시오.
+레거시 AdobeMobileLibrary에 전역으로 정의된 유틸리티 `MediaHeartbeat` API는 SceneGraph 노드에서 사용할 수 없는 Brightscript 구성 요소를 사용하지 않으므로 SceneGraph 환경에서 *그대로* 액세스할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 아래 테이블을 참조하십시오.
 
 ### MediaHeartbeat에 대한 전역 메서드
 

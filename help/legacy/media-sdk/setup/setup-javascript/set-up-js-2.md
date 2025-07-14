@@ -3,9 +3,9 @@ title: JavaScript 2.x를 사용하여 미디어 SDK를 설정하는 방법
 description: JavaScript 2.x에서 미디어 SDK 애플리케이션을 설정하려면 다음 단계를 따르십시오.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 * **올바른 구성 매개 변수 가져오기** 이러한 매개 변수는 Analytics 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
 * **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 구현**
-Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko)을 참조하십시오.
+Adobe Mobile SDK 설명서에 대한 자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
 

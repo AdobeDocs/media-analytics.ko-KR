@@ -3,9 +3,9 @@ title: 이벤트 요청 구현
 description: 세션 ID를 얻은 후 모든 후속 추적 호출에 대해 이벤트 요청 엔드포인트를 사용하는 방법에 대해 알아보기
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 100%

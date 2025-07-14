@@ -1,14 +1,14 @@
 ---
 title: 스트리밍 미디어 컬렉션 API - 이벤트 요청 엔드포인트
-description: “미디어 컬렉션 API 이벤트 요청 엔드포인트 매개 변수 및 응답은 무엇입니까?”
+description: Media Collection API 이벤트 요청 엔드포인트 매개 변수 및 응답은 무엇입니까?
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

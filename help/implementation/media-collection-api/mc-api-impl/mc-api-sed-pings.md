@@ -3,9 +3,9 @@ title: Ping 이벤트 보내기
 description: Ping 이벤트는 스트리밍 미디어 컬렉션의 하트비트입니다. 주요 콘텐츠 또는 광고 추적을 위해 시간이 지정된 ping을 보내는 방법에 대해 알아봅니다.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 51%

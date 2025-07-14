@@ -1,14 +1,14 @@
 ---
-title: “스트리밍 미디어 컬렉션 API - 빠른 시작”
+title: 스트리밍 미디어 컬렉션 API - 빠른 시작
 description: Streaming Media API를 시작합니다. 요청 데이터를 빠르게 확인하는 방법에 대해 알아봅니다.
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

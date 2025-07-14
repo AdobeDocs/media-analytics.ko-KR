@@ -1,13 +1,13 @@
 ---
 title: JavaScript 3.x를 사용하여 체감 품질을 추적하는 방법에 대해 알아보기
-description: “JavaScript 3.x를 사용하는 브라우저 앱에서 Media SDK를 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.”
+description: JavaScript 3x를 사용하는 브라우저 앱에서 Media SDK을 사용하여 체감 품질(QoE, QoS) 추적을 구현하는 방법에 대해 알아봅니다.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 99%
+ht-degree: 90%
 
 ---
 

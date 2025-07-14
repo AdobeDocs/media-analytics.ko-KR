@@ -3,9 +3,9 @@ title: Roku에서 코어 재생을 추적하는 방법 알아보기
 description: Roku에서 미디어 SDK를 사용하여 코어 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 88%

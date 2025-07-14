@@ -1,10 +1,10 @@
 ---
 title: Edge Network을 사용하여 스트리밍 미디어 컬렉션 구현
 description: Experience Platform Edge을 사용하여 스트리밍 미디어 컬렉션을 구현하는 방법에 대해 알아봅니다.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: c7e9b7ca9dedbd0389240cb045d274ee6995ecbe
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2146'
 ht-degree: 9%
@@ -29,7 +29,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
 스키마를 만들고 설정하려면:
 
-1. [UI에서 스키마 만들기 및 편집](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ko)에 설명된 대로 Adobe Experience Platform에서 스키마 만들기를 시작합니다.
+1. [UI에서 스키마 만들기 및 편집](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)에 설명된 대로 Adobe Experience Platform에서 스키마 만들기를 시작합니다.
 
 1. 스키마를 만들 때 스키마 세부 정보 페이지에서 스키마에 대한 기본 클래스를 선택할 때 [!UICONTROL **경험 이벤트**]&#x200B;를 선택합니다.
 
@@ -129,7 +129,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
       ![사용자 지정 메타데이터 추가](assets/add-custom-fields.png)
 
-   1. 요청 페이로드의 사용자 지정 필드에 대해 [생성된 경로](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)을(를) 사용합니다.
+   1. 요청 페이로드의 사용자 지정 필드에 대해 [생성된 경로](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)을(를) 사용합니다.
 
       ![사용자 지정 메타데이터 추가](assets/custom-fields-path.png)
 
@@ -165,13 +165,13 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    * Adobe Analytics 또는 Customer Journey Analytics 사용 여부에 따라 데이터 스트림에 다음 서비스 중 하나를 추가합니다.
 
-      * [!UICONTROL **Adobe Analytics**] (Adobe Analytics을 사용하는 경우)
+      * [!UICONTROL **Adobe Analytics**](Adobe Analytics을 사용하는 경우)
 
-        Adobe Analytics을 사용하는 경우 [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의해야 합니다.
+        Adobe Analytics을 사용하는 경우 [보고서 세트 만들기](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의해야 합니다.
 
-      * [!UICONTROL **Adobe Experience Platform**] (Customer Journey Analytics을 사용하는 경우)
+      * [!UICONTROL **Adobe Experience Platform**](Customer Journey Analytics을 사용하는 경우)
 
-     데이터 스트림에 서비스를 추가하는 방법에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ko#view-details)의 &quot;데이터 스트림에 서비스 추가&quot; 섹션을 참조하십시오.
+     데이터 스트림에 서비스를 추가하는 방법에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)의 &quot;데이터 스트림에 서비스 추가&quot; 섹션을 참조하십시오.
 
      ![Adobe Analytics 서비스 추가](assets/datastream-add-service.png)
 
@@ -213,7 +213,7 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    데이터 보기를 만들 때 Streaming Media 컬렉션을 구현하려면 다음 구성 선택이 필요합니다.
 
-   1. [Customer Journey Analytics에서 연결 만들기](#create-a-connection-in-customer-journey-analytics)에 설명된 대로 [!UICONTROL **연결**] 필드에서 이전에 만든 연결을 선택합니다.
+   1. [!UICONTROL **Customer Journey Analytics에서 연결 만들기**]&#x200B;에 설명된 대로 [연결](#create-a-connection-in-customer-journey-analytics) 필드에서 이전에 만든 연결을 선택합니다.
 
       생성한 연결을 선택할 수 있을 때까지 최대 15분이 소요될 수 있습니다.
 
@@ -332,9 +332,9 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    >[!NOTE]
    >
-   >Adobe Analytics을 데이터 스트림의 업스트림으로 설정하는 경우, 사용자 지정 메타데이터는 스키마에서 설정한 이름과 함께 ContextData에도 표시됩니다(테넌트 접두사(예: myCustomField). 이렇게 하면 [처리 규칙 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)와 같이 ContextData에 사용할 수 있는 모든 Adobe Analytics 기능을 사용할 수 있습니다.
+   >Adobe Analytics을 데이터 스트림의 업스트림으로 설정하는 경우, 사용자 지정 메타데이터는 스키마에서 설정한 이름과 함께 ContextData에도 표시됩니다(테넌트 접두사(예: myCustomField). 이렇게 하면 [처리 규칙 만들기](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)와 같이 ContextData에 사용할 수 있는 모든 Adobe Analytics 기능을 사용할 수 있습니다.
 
-1. [프로젝트 공유](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ko)에 설명된 대로 프로젝트를 공유합니다.
+1. [프로젝트 공유](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)에 설명된 대로 프로젝트를 공유합니다.
 
    >[!NOTE]
    >
@@ -381,10 +381,10 @@ Edge API의 사용자 지정 구현을 사용하려는 경우에도 API를 사�
 
 Media Edge API에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-* [미디어 Edge API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=ko)
+* [미디어 Edge API 개요](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [미디어 Edge API 시작](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=ko)
+* [미디어 Edge API 시작](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Media Edge API 문제 해결 안내서](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=ko)
+* [Media Edge API 문제 해결 안내서](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [Media Edge API에 대한 Open API 사양 파일 사용](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

@@ -3,9 +3,9 @@ title: 스트리밍 미디어 컬렉션에서 오프라인으로 다운로드한
 description: 다운로드한 콘텐츠 기능을 사용하여 사용자가 오프라인일 때 미디어 소비를 추적할 수 있습니다.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 98%

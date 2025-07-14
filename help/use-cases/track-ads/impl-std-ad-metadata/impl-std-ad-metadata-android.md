@@ -3,9 +3,9 @@ title: Android에서 표준 광고 메타데이터를 구현하는 방법에 대
 description: Android에서 광고 추적에 표준 광고 메타데이터를 사용하는 방법입니다.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 100%

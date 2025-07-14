@@ -3,9 +3,9 @@ title: 이벤트 순서 제어
 description: 이벤트 순서 제어 및 경우에 따라 playerTime 개체에 제공된 타임스탬프를 기반으로 이벤트가 재정렬되는 방법에 대해 알아봅니다.
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%

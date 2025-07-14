@@ -3,9 +3,9 @@ title: iOS에서 챕터 및 세그먼트를 추적하는 방법에 대해 알아
 description: iOS에서 Media SDK를 사용하여 챕터 및 세그먼트 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%

@@ -1,14 +1,14 @@
 ---
 title: 광고 사이에 표시되는 기본 재생 해결
-description: “광고 사이에 표시되는 예상치 못한 main:play 호출을 처리하는 방법에 대해 알아봅니다.”
+description: 광고 사이에 표시되는 예상치 못한 main:play 호출을 처리하는 방법에 대해 알아봅니다.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

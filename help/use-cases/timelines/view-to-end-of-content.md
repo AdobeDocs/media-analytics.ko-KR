@@ -3,9 +3,9 @@ title: 미디어 추적 타임라인에 대해 알아보기
 description: 플레이헤드 타임라인과 해당 사용자의 작업을 자세히 알아보십시오. 각 작업과 그에 수반되는 요청에 대한 세부 사항을 알아보십시오.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
@@ -179,7 +179,7 @@ ht-degree: 99%
 >[!NOTE]
 >
 >타임라인의 후속 광고는 간결성을 위해 1초 동안의 일련의 Ping을
->표시하지 않습니다...
+>>표시하지 않습니다...
 
 ```json
 {

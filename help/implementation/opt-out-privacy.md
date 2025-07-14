@@ -3,9 +3,9 @@ title: 옵트아웃 및 개인정보 보호 설명
 description: 옵트인, 옵트아웃 및 개인정보 보호를 처리하는 방법에 대해 알아봅니다.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -18,8 +18,8 @@ ht-degree: 100%
 
 추적 활동을 특정 디바이스에서 허용할지 여부를 제어할 수 있습니다.
 
-* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인정보 보호 설정에 대한 자세한 내용은 [옵트아웃 및 개인정보 보호 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=ko)을 참조하십시오.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인정보 보호 설정에 대한 자세한 내용은 [옵트아웃 및 개인정보 보호 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
+* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
 * **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해 주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
 
   >[!NOTE]

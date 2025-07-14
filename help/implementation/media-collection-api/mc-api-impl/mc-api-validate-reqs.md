@@ -3,9 +3,9 @@ title: 이벤트 요청 확인
 description: JSON 유효성 검사 스키마를 사용하여 이벤트 요청의 유효성을 검사하는 방법에 대해 알아봅니다.
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%

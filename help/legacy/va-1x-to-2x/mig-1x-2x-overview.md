@@ -3,9 +3,9 @@ title: 마이그레이션 개요
 description: 1.x에서 2.x 버전의 Media SDK로 마이그레이션하는 방법에 대해 알아봅니다.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 100%

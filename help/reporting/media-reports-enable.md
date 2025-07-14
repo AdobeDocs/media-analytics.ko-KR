@@ -3,9 +3,9 @@ title: 미디어 보고서 지원
 description: 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 미디어 보고서 세트에 대해 알아봅니다.  미디어 데이터를 보내기 전에 미디어 보고서를 구성하려면 다음 단계를 따르십시오.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 98%
@@ -72,4 +72,4 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->지표 및 메타데이터 표(예: [오디오 및 비디오 매개변수](/help/implementation/variables/audio-video-parameters.md))의 변수에 대한 분류 이름을 변경하지 마십시오. 이 변수에는 보고/예약 변수 아래에 “분류”로 설명되어 있습니다. 미디어 분류는 보고서 세트가 미디어 추적에 사용될 때 정의됩니다. Adobe는 수시로 새 속성을 추가하며, 이 경우 고객이 보고서 세트를 다시 활성화하여 새로운 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 중에 Adobe는 변수의 이름을 확인하여 분류를 사용할지 여부를 결정합니다. 누락된 항목이 있을 경우 Adobe가 다시 추가합니다.
+>지표 및 메타데이터 테이블(예: [오디오 및 비디오 매개변수](/help/implementation/variables/audio-video-parameters.md))의 변수에 대한 분류 이름을 변경하지 마십시오. 이 변수에는 보고/예약 변수 아래에 “분류”로 설명되어 있습니다. 미디어 분류는 보고서 세트가 미디어 추적에 사용될 때 정의됩니다. Adobe는 수시로 새 속성을 추가하며, 이 경우 고객이 보고서 세트를 다시 활성화하여 새로운 미디어 속성에 액세스해야 합니다. 업데이트 프로세스 중에 Adobe는 변수의 이름을 확인하여 분류를 사용할지 여부를 결정합니다. 누락된 항목이 있을 경우 Adobe가 다시 추가합니다.

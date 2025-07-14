@@ -2,9 +2,9 @@
 title: 플레이어 상태 추적 정보
 description: 플레이어 상태 구현 및 보고를 위한 요구 사항 및 지침을 비롯한 플레이어 상태 추적 기능에 대해 알아봅니다.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%

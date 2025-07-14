@@ -2,10 +2,10 @@
 title: 스트리밍 미디어 컬렉션 구현
 description: 스트리밍 미디어 컬렉션의 구현 경로에 대해 알아봅니다.
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 69%
@@ -22,9 +22,9 @@ Adobe 스트리밍 미디어 컬렉션을 구현하는 방법에는 여러 가�
 
 * **Edge Network SDK/확장 프로그램용 미디어:** 웹, iOS 및 Android 장치 또는 Roku 장치에서 데이터를 수집하여 Edge Network으로 보냅니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
 
-  SDK/확장 Edge Network을 위한 Media에 대한 자세한 내용은 [Edge Network을 사용하여 스트리밍 미디어 컬렉션 구현](/help/implementation/edge/implementation-edge.md)을 참조하십시오.
+  Edge Network SDK/확장 기능용 Media에 대한 자세한 내용은 [Edge Network을 사용하여 스트리밍 미디어 컬렉션 구현](/help/implementation/edge/implementation-edge.md)을 참조하십시오.
 
-* **Media Edge API:** Edge Network을 사용하여 모든 장치 또는 형식(모바일, 웹 및 OTT 장치 포함)에서 데이터를 수집하고 데이터를 전송할 수 있습니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
+* **Media Edge API:** 사용자 지정하여 모든 장치 또는 형식(모바일, 웹 및 OTT 장치 포함)에서 데이터를 수집하고 Edge Network으로 데이터를 전송할 수 있습니다. 그런 다음 데이터를 Customer Journey Analytics 또는 Adobe Analytics로 전송할 수 있습니다.
 
   Media Edge API에 대한 자세한 내용은 [Media Edge API 개요](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)를 참조하십시오.
 
@@ -34,11 +34,11 @@ Adobe 스트리밍 미디어 컬렉션을 구현하는 방법에는 여러 가�
 
 위에서 설명한 Edge 구현 방법은 Customer Journey Analytics와 Adobe Analytics, 특히 새로운 구현의 경우 권장됩니다.
 
-Edge 구현 방법 외에도 다른 구현 방법을 사용할 수 있습니다. 이러한 구현 방법은 Adobe Analytics와 함께 사용하도록 설계되었습니다. 그러나 다음 구현 방법을 사용하는 기존 고객은 [Analytics 소스 연결](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ko)을 생성하여 Customer Journey Analytics에서 데이터를 계속 사용할 수 있습니다.
+Edge 구현 방법 외에도 다른 구현 방법을 사용할 수 있습니다. 이러한 구현 방법은 Adobe Analytics와 함께 사용하도록 설계되었습니다. 그러나 다음 구현 방법을 사용하는 기존 고객은 [Analytics 소스 연결](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)을 생성하여 Customer Journey Analytics에서 데이터를 계속 사용할 수 있습니다.
 
 * **태그가 포함된 미디어 확장:** 오디오 및 비디오용 Adobe Media Analytics 확장 기능은 태그 활성화 사이트 또는 프로젝트에 미디어 추적기 인스턴스를 추가하는 기능을 제공합니다. 데이터는 Adobe Analytics로 전송됩니다.
 
-  태그가 포함된 미디어 확장 설치, 구성 및 구현에 대한 자세한 내용은 [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=ko)를 참조하십시오.
+  태그가 포함된 미디어 확장 설치, 구성 및 구현에 대한 자세한 내용은 [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)를 참조하십시오.
 
 * **Media SDK:** Media SDK를 사용하면 웹 사이트, 휴대폰, 연결된 TV, 태블릿, OTT 디바이스, 셋톱 박스 및 게임 콘솔을 포함한 여러 미디어 플랫폼을 측정할 수 있습니다. (자세한 내용은 [지원되는 디바이스 및 플랫폼](/help/getting-started/supported-devices.md)을 참조하십시오.)
 

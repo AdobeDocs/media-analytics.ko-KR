@@ -1,14 +1,14 @@
 ---
 title: 사용자 정의 메타데이터 지원
-description: “sessionStart, chapterStart 및 adStart 이벤트에서 사용자 정의 key:value 쌍을 제공하는 방법에 대해 알아봅니다.”
+description: sessionStart, chapterStart 및 adStart 이벤트에서 사용자 지정 key:value 쌍을 제공하는 방법에 대해 알아봅니다.
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

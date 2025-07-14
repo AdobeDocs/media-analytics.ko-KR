@@ -4,9 +4,9 @@ title: 스트리밍 미디어 컬렉션 API 개요
 description: Media Collection API에 대하여 알아보고 플레이어가 RESTful HTTP 호출을 사용하여 오디오 및 비디오를 추적하는 방법에 대해 알아봅니다.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 7a1ae72af231659bd794fb18ce9e76685e6beff4
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 93%

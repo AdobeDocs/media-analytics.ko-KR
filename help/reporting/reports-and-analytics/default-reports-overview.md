@@ -1,14 +1,14 @@
 ---
 title: 기본 보고서 개요
-description: “웹 사이트에서 미디어 추적에 사용할 보고서 유형 및 지표에 대해 알아보십시오. 미디어 코어 모듈과 함께 사용할 수 있는 대시보드 스타일 보고서를 살펴보십시오.”
+description: 웹 사이트에서 미디어를 추적하는 데 사용되는 보고서 유형 및 지표에 대해 알아봅니다. 미디어 코어 모듈과 함께 사용할 수 있는 대시보드 스타일 보고서를 살펴보십시오.
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: "Media Analytics, Reports & Analytics Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -24,6 +24,6 @@ Adobe Analytics는 웹 사이트에서 미디어 성능을 추적할 여러 보�
 | --- | --- | --- |
 | [미디어 개요](media-reports-overview.md) | 미디어의 성과가 예상대로인지 신속히 모니터링하기 위한 몇 가지 집계 측정을 표시합니다. 이들 지표를 빠르게 보고 비교할 수 있도록 그래프에는 광고 노출 횟수 옆에 미디어 시작이 표시됩니다. | <ul> <li>콘텐츠 시작, 완료율, 스트림 평균 체류 시간 및 방문당 평균 미디어 항목 수를 포함한 최상위 지표들에 대한 합계입니다.  </li> <li>디바이스 유형 또는 국가별로 필터링된 미디어에 대한 총 콘텐츠 및 광고 시작 수입니다.  </li> </ul> |
 | [미디어 세부 사항](media-reports-detail.md) | 시작, 동시 시청자, 완료율, 재생 비율 및 광고 노출 횟수를 포함하여 모든 미디어 항목에 대한 세부 지표를 표시합니다. | <ul> <li>미디어 시작, 콘텐츠 및 광고 시작, 방문당 평균 콘텐츠를 포함하여 최상위 지표에 대한 합계입니다.  </li> <li>디바이스 유형 또는 국가별로 필터링된 미디어에 대한 총 콘텐츠 및 광고 시작 수입니다.  </li> </ul> |
-| [미디어 방송 시간](media-reports-daypart.md) | 대상이 참여할 때 빠르게 볼 수 있도록 시간별 콘텐츠 시작을 표시합니다. | <ul> <li>시간별 대상 참여  </li> <li>이전 날짜 범위와 비교되는 대상 참여  </li> </ul> |
-| [미디어 Concurrent Viewer](media-concurrent-viewers-reports.md) | 하루 동안 동시 시청자를 표시합니다. 데이터는 콘텐츠, 디바이스 유형, 국가별로 필터링됩니다. | <ul> <li>24시간이란 간격 동안 분당 대상 참여  </li> </ul> |
+| [미디어 방송 시간](media-reports-daypart.md) | 대상자가 참여할 때 빠르게 볼 수 있도록 시간별 콘텐츠 시작을 표시합니다. | <ul> <li>시간별 대상자 참여  </li> <li>이전 날짜 범위와 비교되는 대상자 참여  </li> </ul> |
+| [미디어 Concurrent Viewer](media-concurrent-viewers-reports.md) | 하루 동안 동시 시청자를 표시합니다. 데이터는 콘텐츠, 디바이스 유형, 국가별로 필터링됩니다. | <ul> <li>24시간이란 간격 동안 분당 대상자 참여  </li> </ul> |
 | 미디어 이벤트 및 미디어 변수 | 추가적인 보고서를 사용할 수 있습니다. 미디어 지표 및 차원은 다른 Analytics 보고서에 직접 보고하고 추가할 수 있는 표준 Analytics 변수입니다. | <ul> <li>미디어의 콘텐츠 유형을 포함한 방문 횟수로 보고서를 생성하여 미디어 전환(미디어를 시청한 후 발생한 이벤트).  </li> <li>미디어 이름 속성을 사용한 다음/이전 미디어 흐름.  </li> </ul> |

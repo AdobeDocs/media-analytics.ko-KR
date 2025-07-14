@@ -2,9 +2,9 @@
 title: 자세한 내용은 Media Analytics SDK 지원 종료 FAQ에 대해 알아봅니다.
 description: 이 항목에는 Media Analytics SDK에 대한 지원 종료 FAQ가 포함되어 있습니다.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 76%
@@ -13,16 +13,16 @@ ht-degree: 76%
 
 # Media Analytics Mobile SDK 지원 종료 FAQ
 
-2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라, Adobe은 iOS 및 Android용 Media Analytics Mobile SDK에 대한 지원도 종료했습니다. (여전히 지원되는 Chromecast 및 Roku와 같은 OTT 플랫폼과 웹(JS)용 Media Analytics SDK은 여기에 포함되지 않습니다.)
+2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe은 iOS 및 Android용 Media Analytics Mobile SDK에 대한 지원도 종료했습니다. (여전히 지원되는 Chromecast 및 Roku와 같은 OTT 플랫폼과 웹(JS)용 Media Analytics SDK은 여기에 포함되지 않습니다.)
 
-즉, Adobe은 더 이상 수정 사항, OS 관련 업데이트 또는 Media Analytics Mobile SDK에 대한 지원을 제공하지 않습니다. 새 Experience Platform SDK로 마이그레이션할 때는 Adobe Streaming Media 컬렉션을 사용하려면 [Media Analytics 확장 기능](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)을 구현해야 합니다.
+즉, Adobe은 더 이상 수정 사항, OS 관련 업데이트 또는 Media Analytics Mobile SDK에 대한 지원을 제공하지 않습니다. 새 Experience Platform SDK로 마이그레이션할 때는 Adobe Streaming Media Collection을 활성화하려면 [Media Analytics 확장 기능](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)을 구현해야 합니다.
 
 
 ## 알아 두어야 할 상위 5가지 항목
 
 1. 모바일 v4 SDK는 2021년 8월 31일부터 더 이상 지원되지 않습니다. iOS 및 Android용 Adobe Experience Platform(AEP) Mobile SDK로 마이그레이션해야 합니다.
 
-1. Streaming Media용 분석 구현에는 AEP Mobile SDK가 필요하고 Analytics 및 Media Analytics 확장을 사용해야 합니다. 2021년 9월 1일부터 새로운 AEP Mobile SDK 및 확장을 사용해야 합니다.  Media Analytics 확장 기능은 Adobe 태그를 사용하여 구성됩니다(데이터 수집). 자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch로 마이그레이션](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)을 참조하십시오.
+1. Streaming Media용 분석 구현에는 AEP Mobile SDK가 필요하고 Analytics 및 Media Analytics 확장을 사용해야 합니다. 2021년 9월 1일부터는 새로운 AEP Mobile SDK 및 확장을 사용해야 합니다.  Media Analytics 확장 기능은 Adobe 태그를 사용하여 구성됩니다(데이터 수집). 자세한 내용은 [독립 실행형 Media SDK에서 Adobe Launch로 마이그레이션](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)을 참조하십시오.
 
 1. iOS 및 Android용 Media Analytics SDK에 대한 기능 개발이 종료되었습니다. 2019년 가을부터 도입된 새로운 기능은 Media Analytics 확장 기능 및 Media Collection API를 사용하여 활성화됩니다.
 

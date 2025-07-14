@@ -3,9 +3,9 @@ title: 버전 1.x에서 2.x API로 전환
 description: API 참조에 대한 링크와 Media SDK의 1.x 및 2.x 버전에 대한 필수 및 선택적 추적 API 목록을 살펴보십시오.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
