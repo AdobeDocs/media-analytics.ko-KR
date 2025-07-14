@@ -18,7 +18,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
-> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  고유 방문자에 의한 동시 뷰어를 확인하려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)을 통해 추가 기능인 세그먼트 적용, 분류 및 비교 기능을 사용하십시오.
+> 이 보고서는 동시 활성 미디어 세션을 기반으로 합니다.  고유 방문자에 의한 동시 뷰어를 확인하려면 [Analysis Workspace의 미디어 동시 뷰어 패널](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=ko)을 통해 추가 기능인 세그먼트 적용, 분류 및 비교 기능을 사용하십시오.
 >
 
 ![](assets/video-concurrent-viewers.png)
