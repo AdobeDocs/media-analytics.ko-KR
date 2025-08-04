@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어 컬렉션
 breadcrumb-title: 스트리밍 미디어 컬렉션 안내서
 user-guide-description: 스트리밍 미디어 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 96%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -32,16 +32,16 @@ ht-degree: 96%
          + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
-   + Edge 구현 (권장) {#edge-recommended}
+   + Edge 구현(권장) {#edge-recommended}
       + [사전 요구 사항](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK / 확장 기능 {#media-edge-sdk}
+      + Media Edge SDK / 확장 {#media-edge-sdk}
          + [Media Edge SDK / 확장 기능 설정](/help/implementation/edge/implementation-edge.md)
          + [Media Edge 웹 SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
       + [사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + Media SDK / 확장 기능 {#media-sdk}
+      + Media SDK / 확장 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics 확장 기능](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
@@ -88,7 +88,7 @@ ht-degree: 96%
       + [미디어 세부 정보](reporting/reports-and-analytics/media-reports-detail.md)
       + [미디어 방송 시간 보고서](reporting/reports-and-analytics/media-reports-daypart.md)
       + [미디어 동시 뷰어 보고서](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Media API {#media-api}
+   + 미디어 API {#media-api}
       + [동시 뷰어 데이터 가져오기](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [미디어 재생 소요 시간 데이터 가져오기](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 사용 사례 {#media-use-cases}
@@ -103,6 +103,13 @@ ht-degree: 96%
    + [페더레이션 미디어](use-cases/federated-media.md)
    + [재생 중 애플리케이션 중단 처리](use-cases/cookbook/app-interrupts.md)
    + [미디어 스트림 속성](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + Analytics 소스 커넥터에 대한 XDM 필드 마이그레이션 {#xdm-updates}
+      + [소스 커넥터를 새 XDM 스트리밍 미디어 필드로 업데이트](/help/use-cases/xdm-updates/updated-xdm-fields.md)
+      + [대상자 마이그레이션](/help/use-cases/xdm-updates/migrate-audiences.md)
+      + [CJA 설정 마이그레이션](/help/use-cases/xdm-updates/migrate-cja-setup.md)
+      + [데이터 준비 마이그레이션](/help/use-cases/xdm-updates/migrate-dataprep.md)
+      + [프로필 마이그레이션](/help/use-cases/xdm-updates/migrate-profiles.md)
+      + [미디어 매개 변수 매핑](/help/use-cases/xdm-updates/parameters-mapping.md)
    + [비활성 세션 다시 시작](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph에서 Roku 추적](use-cases/cookbook/sdk-track-scenegraph.md)
    + [광고 사이의 간격 처리](use-cases/cookbook/fix-ad-play-ad.md)
@@ -118,7 +125,7 @@ ht-degree: 96%
       + [OTT 및 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + 추적 {#tracking}
    + [개요](use-cases/track-av-playback/track-core-overview.md)
-   + 코어 스트리밍 미디어 재생 추적 {#track-core}
+   + 코어 Streaming Media 재생 추적 {#track-core}
       + [JavaScript 3.x에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Chromecast에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Roku에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-roku.md)
@@ -149,7 +156,7 @@ ht-degree: 96%
       + [JavaScript 3.x에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Chromecast에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-chromecast.md)
       + [Roku에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-roku.md)
-   + 체감 품질 추적 {#track-qos}
+   + 경험 추적 품질 {#track-qos}
       + [개요](use-cases/track-qos/track-qos-overview.md)
       + [JavaScript 3.x에서 체감 품질 추적](use-cases/track-qos/track-qos-js/track-qos-js3.md)
       + [Chromecast에서 체감 품질 추적](use-cases/track-qos/track-qos-chromecast.md)
@@ -159,7 +166,7 @@ ht-degree: 96%
       + [JavaScript 3.x에서 오류 추적](use-cases/track-errors/track-errors-js/track-errors-js3.md)
       + [Chromecast에서 오류 추적](use-cases/track-errors/track-errors-chromecast.md)
       + [Roku에서 오류 추적](use-cases/track-errors/track-errors-roku.md)
-+ 개인정보 보호 및 보안 {#streaming-media-privacy}
++ 개인 정보 보호 및 보안 {#streaming-media-privacy}
    + [옵트아웃 및 개인정보 보호 설정](privacy/opt-out-privacy.md)
    + [보안](privacy/security.md)
 + 레거시 구현 {#legacy-implementations}
