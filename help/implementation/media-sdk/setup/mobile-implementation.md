@@ -1,19 +1,19 @@
 ---
-title: Streaming Media용 태그를 사용하여 모바일 SDK를 설정하는 방법
-description: 모바일 앱용 Adobe Streaming Media를 구현하는 방법에 대해 알아봅니다.
+title: 스트리밍 미디어용 태그를 사용하는 모바일 SDK을 설정하는 방법
+description: 모바일 앱용 Adobe 스트리밍 미디어 서비스를 구현하는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 82%
+source-wordcount: '199'
+ht-degree: 70%
 
 ---
 
 # 모바일 SDK 설치 {#install-mobile-sdks}
 
-Android 또는 iOS에서 모바일 앱용 Streaming Media 컬렉션을 구현하려면 다음을 설치하고 구성합니다.
+Android 또는 iOS에서 모바일 앱용 Adobe Streaming Media 서비스를 구현하려면 다음을 설치하고 구성합니다.
 
 * **Adobe Experience Platform Mobile SDK**
 

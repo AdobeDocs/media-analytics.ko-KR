@@ -1,10 +1,10 @@
 ---
 title: 보안
-description: 스트리밍 미디어 컬렉션과 관련된 보안에 대해 알아봅니다.
+description: 스트리밍 미디어 서비스와 관련된 보안에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 95%

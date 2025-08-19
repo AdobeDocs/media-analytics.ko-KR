@@ -4,10 +4,10 @@ description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 �
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 73%
 
 지원 종료에 대한 중요한 정보는 [지원 종료 FAQ ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
-## Streaming Media 및 Adobe Media Analytics 확장
+## 스트리밍 미디어 및 Adobe Media Analytics 확장
 
 Adobe Media Analytics 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
 미디어 분석 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)을 구성해야 합니다.
-* [오디오 및 비디오용 Adobe Media Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=ko)을 구성해야 합니다.
-* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)을 구성해야 합니다.
+* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구성해야 합니다.
+* [오디오 및 비디오용 Adobe Media Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)을 구성해야 합니다.
+* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)을 구성해야 합니다.
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
 

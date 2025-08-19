@@ -1,14 +1,14 @@
 ---
-title: 스트리밍 미디어 컬렉션 API - 요청 매개 변수
+title: 스트리밍 미디어 서비스 API � 요청 매개 변수
 description: Media Collection API 요청 매개 변수, 요청 키 및 설명은 무엇입니까?
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 

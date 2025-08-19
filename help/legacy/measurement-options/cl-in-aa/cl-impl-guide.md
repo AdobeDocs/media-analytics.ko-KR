@@ -1,13 +1,13 @@
 ---
 title: 사용자 지정 링크 구현 설명
-description: 스트리밍 미디어 컬렉션에서 사용자 지정 링크 추적을 구현하는 방법에 대해 알아봅니다.
+description: 스트리밍 미디어 서비스에서 사용자 지정 링크 추적을 구현하는 방법에 대해 알아봅니다.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 93%
 
 ---

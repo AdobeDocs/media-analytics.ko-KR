@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '441'
 ht-degree: 97%
 
 ---
 
 # Android 설정{#set-up-android}
 
-Android 디바이스를 위한 스트리밍 미디어 컬렉션을 설정하는 방법에 대해 알아봅니다.
+Android 디바이스용 스트리밍 미디어 서비스를 설정하는 방법에 대해 알아봅니다.
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ Android 디바이스를 위한 스트리밍 미디어 컬렉션을 설정하는 
 
 * **Media SDK에 대한 올바른 구성 매개 변수 가져오기**
 이러한 매개 변수는 분석 계정을 설정한 후 Adobe 담당자에게서 얻을 수 있습니다.
-* **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ko)를 참조하십시오.
+* **애플리케이션에 Android용 ADBMobile 구현** Adobe Mobile SDK 설명서에 대한 자세한 내용은 [Experience Cloud 솔루션용 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)를 참조하십시오.
 
 * **미디어 플레이어에서 다음 기능 제공:**
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.

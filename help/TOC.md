@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 스트리밍 미디어 컬렉션
-breadcrumb-title: 스트리밍 미디어 컬렉션 안내서
-user-guide-description: 스트리밍 미디어 구현. Media SDK 및 Media Collection API를 포함합니다.
+user-guide-title: Streaming Media 서비스 안내서
+breadcrumb-title: Streaming Media 서비스 안내서
+user-guide-description: 스트리밍 미디어 서비스를 구현합니다. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '926'
+ht-degree: 79%
 
 ---
 
 
-# 스트리밍 미디어 컬렉션 {#using}
+# Streaming Media 서비스 안내서 {#using}
 
-+ [스트리밍 미디어 컬렉션 안내서](media-overview.md)
++ [Adobe 스트리밍 미디어 서비스 안내서](media-overview.md)
 + 릴리스 정보 {#release-notes}
-   + [스트리밍 미디어 컬렉션 릴리스 정보](additional-resources/release-notes.md)
+   + [스트리밍 미디어 서비스 릴리스 정보](additional-resources/release-notes.md)
 + 시작하기 {#getting-started}
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
-   + [스트리밍 미디어 컬렉션 구현 설명서](getting-started/implementation-documentation.md)
+   + [Streaming Media 서비스 구현 설명서](getting-started/implementation-documentation.md)
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
    + 지원 종료 {#end-of-support}
       + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)

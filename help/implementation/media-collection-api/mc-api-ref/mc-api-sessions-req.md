@@ -1,14 +1,14 @@
 ---
-title: 스트리밍 미디어 컬렉션 API - 세션 요청 엔드포인트
+title: 스트리밍 미디어 서비스 API - 세션 요청 엔드포인트
 description: Media Collection API 세션 요청 엔드포인트 매개 변수 및 응답은 무엇입니까?
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 90%
+ht-degree: 85%
 
 ---
 

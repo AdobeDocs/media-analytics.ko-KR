@@ -1,24 +1,25 @@
 ---
-title: Analytics 소스 커넥터 구현을 업데이트된 XDM 스트리밍 미디어 필드로 마이그레이션
+title: Analytics 소스 커넥터 구현을 스트리밍 미디어 서비스를 위한 새 XDM 필드로 업데이트
 description: Analytics 소스 커넥터 구현을 업데이트된 XDM 스트리밍 미디어 필드로 마이그레이션하는 방법에 대해 알아봅니다
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# 스트리밍 미디어용 새 XDM 필드로 Analytics 소스 커넥터 구현 업데이트
+# Analytics 소스 커넥터 구현을 스트리밍 미디어 서비스를 위한 새 XDM 필드로 업데이트
 
 >[!NOTE]
 >
->이 정보는 [Analytics 소스 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics)를 사용하여 Adobe Analytics 보고 또는 다른 Platform 서비스와 함께 사용하기 위해 Streaming Media 데이터를 Customer Journey Analytics에서 Adobe Experience Platform으로 가져오는 조직을 위한 것입니다.
+>이 정보는 [Analytics 소스 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics)를 사용하여 Adobe Analytics 보고 또는 다른 Platform 서비스와 함께 사용할 수 있도록 스트리밍 미디어 데이터를 Customer Journey Analytics에서 Adobe Experience Platform으로 가져오는 조직을 위한 것입니다.
 >
 >변경 사항은 데이터 수집, 처리 및 보고를 포함하여 독립형 애플리케이션으로서의 Adobe Analytics에 영향을 주지 않습니다. 데이터 피드 및 처리 규칙과 같은 도구는 영향을 받지 않으므로 Analytics 구현을 업데이트할 필요가 없습니다.
 
-한 세트의 XDM 필드에서 다른 세트로 마이그레이션하는 스트리밍 미디어 서비스를 위한 새로운 Adobe 데이터 수집(Analytics 소스 커넥터) 구현을 사용할 수 있습니다.
+한 XDM 필드 세트에서 다른 XDM 필드로 마이그레이션하는 스트리밍 미디어 서비스를 위한 새로운 Adobe 데이터 수집(Analytics 소스 커넥터) 구현을 이제 사용할 수 있습니다.
 
 ## 새 XDM 필드 패스
 
@@ -87,4 +88,3 @@ CJA 보고서를 마이그레이션할 수 있는 방법에는 두 가지가 있
 스트리밍 미디어용 Adobe Data Collection을 사용하는 모든 고객은 지정된 전환 기간 내에 마이그레이션을 완료해야 합니다.
 
 문의 사항이나 지원 요구 사항이 있으면 언제든지 Adobe 지원 팀에 문의하십시오.
-

@@ -5,10 +5,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '7067'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -110,7 +110,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   구현   | 네트워크 매개변수 | 보고 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 키:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/> media.contentType </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;제한된 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>&quot;vod&quot; </li> <li> **설명:**<br/> **스트림 유형**&#x200B;별 사용 가능한 값: <br/> _오디오:_ &quot;song&quot;, &quot;podcast&quot;, &quot;audiobook&quot;, &quot;radio&quot; <br/> _비디오:_ &quot;VoD&quot;, &quot;Live&quot;, &quot;Linear&quot;, &quot;UGC&quot;, &quot;DVoD&quot; <br/> 고객은 이 매개변수에 대한 사용자 정의 값을 제공할 수 있습니다. 이는 `s:stream:type.`입니다. 설정이 해제된 경우 `missing_content_type.`입니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.contentType) </li> <li> **하트비트:**<br/>(<code>s:stream:type</code>). </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;콘텐츠 유형 </li> <li> **컨텍스트 데이터:**<br/> (a.contentType) </li> <li> **데이터 피드:**<br/> videocontenttype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.sessionDetails.contentType </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
+| <ul> <li> **SDK 키:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 키:**<br/> media.contentType </li> <li> **필수:**<br/>&#x200B;예 </li> <li> **유형:**<br/>&#x200B;제한된 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:**&#x200B;모두 </li> <li> **샘플 값:**<br/>&quot;vod&quot; </li> <li> **설명:**<br/> **스트림 유형당 사용 가능한 값**: <br/> _Audio :_&quot;song&quot;, &quot;podcast&quot;, &quot;audiobook&quot;, &quot;radio&quot; <br/> _Video:_ &quot;VoD&quot;, &quot;Live&quot;, &quot;Linear&quot;, &quot;UGC&quot;, &quot;DVoD&quot; <br/> 고객은 이 매개 변수에 대한 사용자 지정 값을 제공할 수 있습니다. 이는 `s:stream:type.`입니다. 설정이 해제된 경우 `missing_content_type.`입니다. </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.contentType) </li> <li> **하트비트:**<br/>(<code>s:stream:type</code>). </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/>&#x200B;콘텐츠 유형 </li> <li> **컨텍스트 데이터:**<br/> (a.contentType) </li> <li> **데이터 피드:**<br/> videocontenttype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **컬렉션 XDM 필드 패스:**<br/> mediaCollection.sessionDetails.contentType </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -322,7 +322,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul> <li> **SDK 키:**<br/> </li> <li> **API 키:**<br/> media.publisher </li> <li> **필수:**<br/>&#x200B;아니요 </li> <li> **유형:**<br/> 문자열 </li> <li> **전송 시점:**<br/> 미디어 시작, 미디어 종료 </li> <li> **최소. SDK 버전:** 1.5.7 <br/>[Media Collection 개요](/help/implementation/media-collection-api/mc-api-overview.md) 또는 [SDK 다운로드 -버전 2.2](/help/getting-started/download-sdks.md)에서 사용할 수 있습니다.  </li> <li> **샘플 값:**<br/> &quot;Random Bauhaus&quot; </li> <li> **설명:**<br/> 오디오 콘텐츠 게시자의 이름입니다. <br/> **릴리스 날짜: 2018년 9월 13일** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **하트비트:**<br/>(<code>초:meta:</code><br/>a.media.publisher) </li> </ul> | <ul> <li> **사용 가능:**<br/>&#x200B;예 </li> <li> **예약된 변수:**<br/> eVar </li> <li> **만료:**<br/>&#x200B;히트 시 </li> <li> **보고서 이름:**<br/> 사용자 정의 </li> <li> **컨텍스트 데이터:**<br/> (a.media.publisher) </li> <li> **데이터 피드:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> <li> **XDM 필드 패스:**(더 이상 사용되지 않음)<br/>media.mediaTimed.primaryAssetReference.<br/>_id3.audio._id3.TPUB</li> <li> **컬렉션 XDM 필드 경로:**<br/> mediaCollection.sessionDetails.publisher </li> <li> **보고 XDM 필드 패스:**<br/> mediaReporting.sessionDetails.publisher </li> </ul> |
 
-## 스트리밍 미디어 지표 {#audio-and-video-metrics}
+## Streaming Media 지표 {#audio-and-video-metrics}
 
 ### 미디어 시작
 

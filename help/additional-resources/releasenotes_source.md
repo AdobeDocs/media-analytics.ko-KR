@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # 스트리밍 미디어 릴리스 정보 - 소스 텍스트
 
-아래 내용은 Experience Cloud 릴리스 정보에서 복사되었습니다. 이는 새로운 스트리밍 미디어 릴리스 정보로 이전할 예정입니다.
+아래 내용은 Experience Cloud 릴리스 정보에서 복사되었습니다. 이는 새로운 스트리밍 미디어 서비스 릴리스 정보로 이전됩니다.
 
 
 [Adobe Experience Cloud 제품](https://business.adobe.com/products/adobe-experience-cloud-products.html)의 최신 릴리스 업데이트에 대해 알아봅니다. Experience League에서 최신 자가 진단 설명서 튜토리얼 및 과정을 살펴보십시오.
@@ -21,7 +21,7 @@ Media Analytics의 새로운 기능
 
 | 기능 | 일반 가용성 | 설명 |
 | -------- | -------------------- | ----------- |
-| 작업 영역의 미디어 분당 평균 시청 시간 패널 | 2022년 3월<br> (제한적 테스트) | 미디어 분당 평균 시청 시간 패널을 통해 Media Analytics 고객은 콘텐츠의 평균 소비에 대해 더 잘 이해할 수 있습니다. 분당 평균 시청 시간을 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 고객은 이 디지털 분당 평균 시청 시간을 유선 TV 평균 시청 시간 지표와 비교하거나 추가할 수 있습니다. 이 패널을 통해 기간 분류가 이후에 업데이트된 경우에도 사용자 정의 기간의 대상 평균을 보다 유연하게 측정할 수 있습니다. [자세히 알아보기…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=ko) |
+| 작업 영역의 미디어 평균 분당 시청자 패널 | 2022년 3월<br> (제한적 테스트) | 미디어 평균 분당 시청자 패널을 통해 Media Analytics 고객은 콘텐츠의 평균 소비에 대해 더 잘 이해할 수 있습니다. 평균 분당 시청자를 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 고객은 이 디지털 평균 분당 시청자를 유선 TV 평균 분당 지표와 비교하거나 추가할 수 있습니다. 이 패널을 통해 기간 분류가 이후에 업데이트된 경우에도 사용자 정의 기간의 평균 대상자를 보다 유연하게 측정할 수 있습니다. [자세히 알아보기…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=ko) |
 
 
 

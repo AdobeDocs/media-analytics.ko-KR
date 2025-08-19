@@ -1,6 +1,6 @@
 ---
-title: 스트리밍 미디어의 새로운 기능
-description: 스트리밍 미디어의 새로운 기능에 대해 알아봅니다.
+title: 스트리밍 미디어 서비스의 새로운 기능
+description: 스트리밍 미디어 서비스의 새로운 기능에 대해 알아봅니다.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -8,10 +8,10 @@ snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '17'
-ht-degree: 35%
+source-wordcount: '19'
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 35%
 
 ## 릴리스 정보{#release-notes}
 
-* [릴리스 정보](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ko)
+* [릴리스 정보](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
 <!--
 ## Documentation Updates{#documentation-updates}

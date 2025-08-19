@@ -4,18 +4,18 @@ description: 하트비트를 사용하여 비디오 지표를 수집하는 방�
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '312'
 ht-degree: 75%
 
 ---
 
 # 하트비트 측정 정보
 
-Adobe 스트리밍 미디어 컬렉션은 &quot;하트비트&quot;를 사용하여 비디오 지표를 수집합니다. 비디오 재생 중에 하트비트가 하트비트 추적 서버로 전송되어 재생 시간이 측정됩니다. 하트비트 호출은 10초마다 전송됩니다. 하트비트는 세부적인 비디오 참여 지표와 보다 정확한 비디오 폴아웃 보고서를 생성합니다. Streaming Media는 Media Analytics 확장, Media SDK 및 Media Collection API와 함께 Adobe Launch를 사용하여 하트비트를 측정합니다. `AppMeasurement` 및 `VisitorID` 구성 요소가 비디오 데이터를 받는 데 사용됩니다.
+Adobe 스트리밍 미디어 서비스는 &quot;하트비트&quot;를 사용하여 비디오 지표를 수집합니다. 비디오 재생 중에 하트비트가 하트비트 추적 서버로 전송되어 재생 시간이 측정됩니다. 하트비트 호출은 10초마다 전송됩니다. 하트비트는 세부적인 비디오 참여 지표와 보다 정확한 비디오 폴아웃 보고서를 생성합니다. 스트리밍 미디어 서비스는 Media Analytics 확장, Media SDK 및 Media Collection API와 함께 Adobe Launch를 사용하여 하트비트를 측정합니다. `AppMeasurement` 및 `VisitorID` 구성 요소가 비디오 데이터를 받는 데 사용됩니다.
 
-Streaming Media Collection에서 하트비트를 사용하면 다음과 같은 이점이 있습니다.
+Streaming Media 서비스에서 하트비트를 사용하면 다음과 같은 이점이 있습니다.
 
 | 기능 | 설명 |
 |---|---|

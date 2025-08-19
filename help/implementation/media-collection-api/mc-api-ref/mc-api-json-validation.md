@@ -1,11 +1,11 @@
 ---
-title: 스트리밍 미디어 컬렉션 JSON 유효성 검사 스키마
+title: 스트리밍 미디어 서비스 JSON 유효성 검사 스키마
 description: Streaming Media JSON 유효성 검사 스키마의 정의 및 각 이벤트 유형에 대한 올바른 요청 본문 매개 변수를 결정하기 위해 사용되는 방법.
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 72%

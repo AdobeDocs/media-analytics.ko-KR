@@ -3,7 +3,8 @@ title: 스트리밍 미디어용 새 Adobe Analytics 데이터 유형으로 대�
 description: 스트리밍 미디어용 새로운 Adobe Analytics 데이터 유형으로 대상자를 마이그레이션하는 방법을 알아봅니다
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 19e729c7d87b4e81b6952c7ebcb8b122043d516d
+exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -12,11 +13,11 @@ ht-degree: 1%
 
 # 새 스트리밍 미디어 필드를 사용하도록 Customer Journey Analytics 마이그레이션
 
-이 문서에서는 &quot;Media&quot;라는 Adobe 스트리밍 미디어 컬렉션 데이터 유형을 사용하는 Customer Journey Analytics 설정을 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 유형을 사용하도록 업데이트하는 방법에 대해 설명합니다.
+이 문서에서는 &quot;Media&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 유형을 사용하는 Customer Journey Analytics 설치를 업데이트하여 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 유형을 사용해야 하는 방법에 대해 설명합니다.
 
 ## Customer Journey Analytics 마이그레이션
 
-Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 이전 데이터 형식을 사용하는 다음 설정을 업데이트해야 합니다.
+Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 이전 데이터 형식을 사용하는 다음 설정을 업데이트해야 합니다.
 
 * 데이터 보기
 
@@ -42,7 +43,7 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
 1. 파생된 필드의 모든 이전 필드를 &quot;미디어 보고 세부 정보&quot;의 새 해당 필드로 바꿉니다.
 
-이전 필드와 새 필드 간에 매핑하려면 [오디오 및 비디오 매개 변수](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) 페이지에서 [콘텐츠 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 매개 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
+이전 필드와 새 필드 간에 매핑하려면 [오디오 및 비디오 매개 변수](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) 페이지에서 [콘텐츠 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 매개 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
 
 ![이전 및 새 XDM 필드 패스](assets/field-paths-updated.jpeg)
 
@@ -60,7 +61,7 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
    데이터 보기의 ![이전 필드 경로](assets/old-field-data-view.jpeg)
 
-1. [챕터 매개 변수](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) 문서의 [챕터 오프셋](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/chapter-parameters) 섹션에서 해당 새 필드를 확인하십시오.
+1. [챕터 매개 변수](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) 문서의 [챕터 오프셋](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/chapter-parameters) 섹션에서 해당 새 필드를 확인하십시오.
 
 1. 데이터 보기에서 새 해당 필드를 찾습니다.
 
@@ -80,7 +81,7 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
    ![데이터 보기를 만들려면 새 필드를 사용자 지정](assets/create-derived-field2.jpeg)
 
-1. [!UICONTROL **챕터 매개 변수**] 페이지의 **챕터 이름** 매개 변수에 표시된 대로 [보고 XDM 필드 경로](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name)의 값을 사용하여 [If](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/chapter-parameters) 절을 채웁니다.
+1. [!UICONTROL **챕터 매개 변수**] 페이지의 **챕터 이름** 매개 변수에 표시된 대로 [보고 XDM 필드 경로](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name)의 값을 사용하여 [If](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/chapter-parameters) 절을 채웁니다.
 
    ![챕터 이름](assets/chapter-name.jpeg)
 
@@ -110,7 +111,7 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
    ![이전 데이터 형식의 필드 찾기](assets/locate-fields-with-old-datatype.jpeg)
 
-1. [스트리밍 미디어 매개 변수](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 문서의 [콘텐츠 이름(변수)](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 섹션에서 해당 새 필드를 확인하십시오.
+1. [스트리밍 미디어 매개 변수](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 문서의 [콘텐츠 이름(변수)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 섹션에서 해당 새 필드를 확인하십시오.
 
 1. 이전 필드를 새 필드로 바꿉니다.
 
@@ -119,4 +120,3 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 1. 더 이상 사용되지 않는 이전 &quot;미디어&quot; 데이터 유형의 필드를 사용하여 파생된 모든 필드에 대해 이 프로세스를 반복합니다.
 
    CJA 설치 마이그레이션이 완료되었습니다.
-

@@ -4,10 +4,10 @@ description: Adobe Experience Platform 데이터 수집을 포함한 Adobe Strea
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 92%
+source-wordcount: '630'
+ht-degree: 90%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **이 콘텐츠는 현재 구현 경로 파일**&#x200B;로 이동되었습니다.
 
-스트리밍 미디어용 Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 각 구현 경로의 경우 고객이 영업 담당자/Adobe 계정 팀에 연락하여 새 판매 주문에 서명해야 합니다.
+Customer Journey Analytics 스트리밍 미디어 컬렉션 및 Adobe for 스트리밍 미디어용 Adobe Analytics는 고유한 SKU를 포함하며, 서버 호출을 기반으로 한 가격 책정 모델에서 비디오 스트림을 기반으로 한 모델로 변경되기 때문에 각 구현 경로의 경우 고객이 영업 담당자 또는 계정 팀에 연락하여 새 판매 주문에 서명해야 합니다.
 
 ## Adobe Media Analytics 확장을 통한 Adobe Experience Platform 데이터 수집
 
@@ -27,15 +27,15 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 태그는 확장이라고 하는 자체 통합을 구축하고 유지할 수 있는 권한을 누구에게나 부여합니다. Adobe Experience Cloud 고객은 앱 스토어 환경에서 이러한 확장을 사용할 수 있으므로 태그를 신속하게 설치, 구성 및 배포할 수 있습니다.
 
-확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다. 자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)의 *태그 개요* 문서를 참조하십시오.
+확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다. 자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)의 *태그 개요* 문서를 참조하십시오.
 
 Adobe Media Analytics(MA) 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
 Media Analytics 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* [Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)
-* [Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)
+* [Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
+* [Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 ## 클라이언트측

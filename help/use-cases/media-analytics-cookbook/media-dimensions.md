@@ -4,7 +4,7 @@ description: 추가 처리 규칙 및 사용자 정의 변수 없이도 애플�
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -23,7 +23,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->미디어 지표는 미디어 추적 외부에서 사용할 수 _없습니다_. 미디어 지표의 대부분이 하트비트 이벤트를 기반으로 하여 스트리밍 미디어 컬렉션에서 계산되기 때문입니다. 또한 미디어 지표가 다른 구현에 의해 부풀려지지 않는 것이 중요합니다.
+>미디어 지표는 미디어 추적 외부에서 사용할 수 _없습니다_. 미디어 지표의 대부분이 하트비트 이벤트를 기반으로 하여 스트리밍 미디어 서비스에서 계산되기 때문입니다. 또한 미디어 지표가 다른 구현에 의해 부풀려지지 않는 것이 중요합니다.
 
 ## 미디어 스트림 속성 사용
 

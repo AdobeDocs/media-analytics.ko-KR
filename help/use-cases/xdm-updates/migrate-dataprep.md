@@ -3,7 +3,8 @@ title: 사용자 정의 필드에 대한 데이터 준비를 새 스트리밍 �
 description: 사용자 정의 필드에 대한 데이터 유형 데이터 준비를 새 스트리밍 미디어 필드로 마이그레이션하는 방법에 대해 알아봅니다
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4e8bc7ba60c681510cb570c43a0f8193d4b39e11
+exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -12,11 +13,11 @@ ht-degree: 0%
 
 # 사용자 정의 필드에 대한 데이터 준비를 새 스트리밍 미디어 필드로 마이그레이션
 
-이 문서에서는 Adobe 스트리밍 미디어 컬렉션 데이터에 대해 활성화된 Adobe 데이터 컬렉션 흐름 위에 존재하는 데이터 준비 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 &quot;Media&quot;라는 Adobe 스트리밍 미디어 컬렉션 데이터 형식에서 데이터 준비 매핑을 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.
+이 문서에서는 Adobe 스트리밍 미디어 컬렉션 데이터에 대해 활성화된 Adobe 데이터 컬렉션 흐름 위에 존재하는 데이터 준비 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 &quot;Media&quot;라는 Adobe 스트리밍 미디어 컬렉션 데이터 형식에서 데이터 준비 매핑을 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.
 
 ## 사용자 정의 필드에 대한 데이터 준비 마이그레이션
 
-데이터 준비 매핑을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 데이터 준비 매핑을 편집해야 합니다.
+데이터 준비 매핑을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 데이터 준비 매핑을 편집해야 합니다.
 
 >[!IMPORTANT]
 >
@@ -34,7 +35,7 @@ ht-degree: 0%
 
 1. 매핑이 여전히 예상대로 작동하는지 확인합니다.
 
-이전 필드와 새 필드 간에 매핑하려면 [오디오 및 비디오 매개 변수](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) 페이지에서 [콘텐츠 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 매개 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
+이전 필드와 새 필드 간에 매핑하려면 [오디오 및 비디오 매개 변수](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) 페이지에서 [콘텐츠 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 매개 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
 
 ## 예
 
@@ -76,7 +77,7 @@ ht-degree: 0%
 
 위의 예에서 관련된 모든 데이터 유형은 문자열이므로 매핑은 직접 대체되었습니다.
 
-원본 필드 데이터 형식이 대상 필드 데이터 형식과 다른 경우 [데이터 준비 문제 해결 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/data-prep/troubleshooting-guide), [데이터 준비로 데이터 형식 처리](https://experienceleague.adobe.com/ko/docs/experience-platform/data-prep/data-handling) 및 [데이터 준비 매핑 기능](https://experienceleague.adobe.com/ko/docs/experience-platform/data-prep/data-handling)의 지침을 따라야 합니다.
+원본 필드 데이터 형식이 대상 필드 데이터 형식과 다른 경우 [데이터 준비 문제 해결 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [데이터 준비로 데이터 형식 처리](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) 및 [데이터 준비 매핑 기능](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)의 지침을 따라야 합니다.
 
 예를 들어 소스 유형이 문자열이고 대상 유형이 부울이면 데이터 준비는 값을 자동으로 구문 분석하고 소스 값을 부울로 변환할 수 있습니다.
 
@@ -89,5 +90,3 @@ ht-degree: 0%
 동일한 사용자 지정 필드에 `mediaReporting`을(를) 사용한 매핑:
 
 ![AEP 데이터 흐름이 계속됨](assets/aep-dataflow7.jpeg)
-
-

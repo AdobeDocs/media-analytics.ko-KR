@@ -1,17 +1,17 @@
 ---
-title: Edge Network API를 사용하여 스트리밍 미디어 컬렉션 구현
+title: Edge Network API를 사용하여 Adobe 스트리밍 미디어 서비스 구현
 description: Experience Platform Edge API를 사용하여 Media Analytics 설치에 대한 리소스입니다.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# Edge Network API를 사용하여 스트리밍 미디어 컬렉션 구현
+# Edge Network API를 사용하여 Adobe 스트리밍 미디어 서비스 구현
 
 [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)를 사용할 수 없는 경우 API를 통해 직접 Adobe Experience Platform Edge Network에 데이터를 보낼 수 있습니다.
 
