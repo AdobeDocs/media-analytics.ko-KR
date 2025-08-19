@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 프로필을 새 스트리밍 미디어 필드로 마이그레이션
 
-이 문서에서는 스트리밍 미디어용 Adobe Analytics에 대해 활성화된 Adobe 데이터 수집 흐름 위에 존재하는 프로필 필터링 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 프로필 필터링 서비스를 &quot;미디어&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 형식에서 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.
+이 문서에서는 스트리밍 미디어용 Adobe Analytics에 대해 활성화된 Adobe 데이터 수집 흐름 위에 존재하는 프로필 필터링 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 프로필 필터링 서비스를 &quot;미디어&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 형식에서 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.
 
 ## 프로필 마이그레이션
 
-프로필 필터링을 이전 데이터 유형인 &quot;Media&quot;에서 새 데이터 유형인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 기존 프로필 필터링 규칙을 편집해야 합니다.
+프로필 필터링을 이전 데이터 유형인 &quot;Media&quot;에서 새 데이터 유형인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 기존 프로필 필터링 규칙을 편집해야 합니다.
 
 1. Adobe Experience Platform의 [!UICONTROL **소스**] 섹션 아래에서 [!UICONTROL **데이터 흐름**] 탭으로 이동합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 프로필이 여전히 예상대로 작동하는지 확인합니다.
 
-이전 필드와 새 필드 간에 매핑하려면 [오디오 및 비디오 매개 변수](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) 페이지에서 [콘텐츠 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 매개 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
+이전 필드와 새 필드 간에 매핑하려면 [오디오 및 비디오 매개 변수](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) 페이지에서 [콘텐츠 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 매개 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
 
 ## 예
 
@@ -56,7 +56,7 @@ ht-degree: 0%
    ![AEP 데이터 흐름 필터 규칙](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   media.mediaTimed 개체를 사용하는 각 필터에 대해 `mediaReporting`오디오 및 비디오 매개 변수[ 페이지를 사용하여 ](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 개체에서 해당 연결자를 찾아 이전 필드와 새 필드 사이를 매핑합니다. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다. 예를 들어 [미디어 시작](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)의 경우 `media.mediaTimed.impressions.value`에 대한 받는 사람은 `mediaReporting.sessionDetails.isViewed`입니다.
+   media.mediaTimed 개체를 사용하는 각 필터에 대해 `mediaReporting`오디오 및 비디오 매개 변수[ 페이지를 사용하여 ](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 개체에서 해당 연결자를 찾아 이전 필드와 새 필드 사이를 매핑합니다. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다. 예를 들어 [미디어 시작](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)의 경우 `media.mediaTimed.impressions.value`에 대한 받는 사람은 `mediaReporting.sessionDetails.isViewed`입니다.
 
    ![새 XDM 필드 및 이전 XDM 필드](assets/xdm-fields-new-and-old.jpeg)
 
