@@ -4,10 +4,10 @@ description: 스트리밍 미디어 서비스와 관련된 보안에 대해 알�
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: c26f841118fd792958ab2bdfc26e776472b95956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 95%
+source-wordcount: '118'
+ht-degree: 70%
 
 ---
 
@@ -18,8 +18,5 @@ Adobe는 디지털 에셋에 대한 보안 및 개인정보 보호를 중요하�
 
 ## 전송 계층 보안 {#transport-layer-security}
 
-**전송 계층 보안 알림 —«** Adobe는 이전 보안 프로토콜의 사용을 종료해야 하는 보안 규정 준수 표준이 있습니다. Adobe는 발전하는 보안 프로토콜 표준을 지속적으로 준수하고자 최신 보안 버전을 사용하기 위해 전송 계층 보안(TLS) 1.2로 전환하고 있습니다. Adobe는 2019년 2월 20일부터 TLS 1.1 이상만 지원합니다. 이 변경 사항으로 인해 Adobe는 더 이상 TLS 1.0을 배포하는 이전 디바이스나 웹 브라우저를 사용하는 최종 사용자로부터 데이터를 수집하지 않습니다. TLS 1.2로 마이그레이션하면 보안이 개선됩니다. 세부 사항을 살펴보고 원활한 전환을 위한 변경을 계획하는 것이 중요합니다.
+**전송 계층 보안 알림 —** Adobe 보안 규정 준수 표준을 사용하려면 이전 보안 프로토콜의 사용을 종료해야 합니다. Adobe은 TLS(전송 계층 보안) 1.2 및 1.3을 지원합니다.
 
->[!NOTE]
->
->TLS는 네트워크를 통해 데이터를 안전하게 교환해야 하는 웹 브라우저 및 다른 애플리케이션에서 현재 사용되는 가장 널리 배포된 보안 프로토콜입니다.
