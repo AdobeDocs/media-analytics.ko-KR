@@ -141,7 +141,7 @@ ht-degree: 2%
 
    1. 배치 ID를 사용하여 프로그램 예약 데이터 레코드가 포함된 .json 파일을 푸시합니다.
 
-      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
+      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
 
       cURL을 사용하여 일정 레코드가 있는 파일을 푸시하는 다음 예를 생각해 보십시오.
 
@@ -301,9 +301,9 @@ ht-degree: 2%
 
    만든 다음 Customer Journey Analytics에서 보고할 수 있는 차원의 다음 예를 고려하십시오.
 
-   * **[&quot;_에피소드 이름_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: 이 차원은 특정 시리즈의 가장 성과가 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
+   * **[&quot;_에피소드 이름_&quot;](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: 이 차원은 특정 시리즈의 가장 성과가 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
 
-   * **[자산 ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[자산 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. [Customer Journey Analytics에서 데이터 분석](#analyze-data-in-customer-journey-analytics)을 계속합니다.
 

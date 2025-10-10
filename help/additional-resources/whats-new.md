@@ -25,16 +25,16 @@ Adobe Experience Cloud 릴리스 정보에서는 Adobe Experience Cloud의 새�
 
 ## 새로운 기능
 
-| 기능 | [일반 가용성](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) - 대상 날짜 | 설명 |
+| 기능 | [일반 가용성](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=ko) - 대상 날짜 | 설명 |
 | ----------- | ---------- | ---------- |
 | [미디어 동시 뷰어 패널](media-reports/media-workspace-panels/media-concurrent-viewers.md) | 2020년 9월 17일 | 작업 공간에서 미디어 동시 뷰어 패널을 사용하면 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 통찰력을 제공하고 볼륨/규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. |
 | [지원되는 디바이스 및 플랫폼](../getting-started/supported-devices.md) | 2020년 6월 18일 | 이제 AEP 모바일 SDK가 포함된 [!UICONTROL 미디어 실행 확장자]는 다음과 같은 OTT 디바이스를 지원합니다.<ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul> |
-| [플레이어 상태 추적](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/player-state-overview.html) | 2020년 5월 29일 토요일 | [!UICONTROL Media Analytics] 고객은 전체 화면 자막, 음소거, PIP(Picture-in-Picture) 및 인포커스에 대한 표준 솔루션 변수 세트를 사용하여 재생 중 뷰어 상호 작용을 캡처할 수 있습니다. 또한 사용자 정의 플레이어 상태를 생성할 수 있는 유연성을 가지게 됩니다. 이제 [!UICONTROL 플레이어 상태 추적 ] 변수를 [!UICONTROL Analysis Workspace] 보고에서 확인할 수 있습니다. 이 기능을 사용하려면 다음 중 하나가 필요합니다. <ul><li>Media [!DNL JavaScript] SDK 3.0 이상</li><li>[!DNL Adobe Experience Platform] (AEP) SDK와 함께 사용하는 경우:</li><li>[!UICONTROL Media Analytics 확장 기능] (웹용): 오디오 및 비디오 v1.0 이상용 [!UICONTROL Adobe Media Analytics] (3.x SDK)</li><li>[!UICONTROL Media Analytics 확장 기능] (모바일용): 오디오 및 비디오 v2.0 이상용 [!UICONTROL Adobe Media Analytics]</li><li>[!UICONTROL 미디어 컬렉션]</li></ul> |
+| [플레이어 상태 추적](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/player-state-overview.html?lang=ko) | 2020년 5월 29일 토요일 | [!UICONTROL Media Analytics] 고객은 전체 화면 자막, 음소거, PIP(Picture-in-Picture) 및 인포커스에 대한 표준 솔루션 변수 세트를 사용하여 재생 중 뷰어 상호 작용을 캡처할 수 있습니다. 또한 사용자 정의 플레이어 상태를 생성할 수 있는 유연성을 가지게 됩니다. 이제 [!UICONTROL 플레이어 상태 추적 ] 변수를 [!UICONTROL Analysis Workspace] 보고에서 확인할 수 있습니다. 이 기능을 사용하려면 다음 중 하나가 필요합니다. <ul><li>Media [!DNL JavaScript] SDK 3.0 이상</li><li>[!DNL Adobe Experience Platform] (AEP) SDK와 함께 사용하는 경우:</li><li>[!UICONTROL Media Analytics 확장 기능] (웹용): 오디오 및 비디오 v1.0 이상용 [!UICONTROL Adobe Media Analytics] (3.x SDK)</li><li>[!UICONTROL Media Analytics 확장 기능] (모바일용): 오디오 및 비디오 v2.0 이상용 [!UICONTROL Adobe Media Analytics]</li><li>[!UICONTROL 미디어 컬렉션]</li></ul> |
 
 
 ## 중요 알림
 
-| 기능 | [일반 가용성](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) - 대상 날짜 | 설명 |
+| 기능 | [일반 가용성](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=ko) - 대상 날짜 | 설명 |
 | ----------- | ---------- | ---------- |
 | [지원되는 디바이스 및 플랫폼](../getting-started/supported-devices.md) | 2021년 8월 31일 | 2021년 8월 31일에 버전 4 Mobile SDK에 대한 지원이 종료됨에 따라 Adobe는 iOS 및 Android용 Media Analytics SDK에 대한 지원도 종료할 예정입니다. 자세한 내용은 Media Analytics SDK 지원 종료 FAQ를 참조하십시오. |
 | [Media Analytics SDK 지원 종료 FAQ](sdk-implement/end-of-support-faqs.md) | 2019년 가을 | iOS 및 Android용 Media Analytics SDK에 대한 기능 개발이 종료되었습니다.  2019년 가을부터 도입된 새로운 기능은 Media Analytics 확장 기능 및 Media Collection API를 사용하여 활성화됩니다. |

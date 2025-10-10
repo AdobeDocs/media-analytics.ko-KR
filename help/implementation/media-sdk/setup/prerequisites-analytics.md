@@ -19,7 +19,7 @@ ht-degree: 43%
 Adobe Analytics 전용 구현용 또는 Edge 구현용 Streaming Media 서비스를 구현하는지 여부에 관계없이 [일반 사전 요구 사항](/help/getting-started/prereqs.md)을 충족하는지 확인하십시오.
 
 1. **Adobe Analytics 구현이 있는지 확인**<br>
-Analytics 전용 구현을 위해 스트리밍 미디어용 Adobe Analytics 추가 기능을 구현하는 경우 Adobe Analytics 기본 구현도 필요합니다. 자세한 내용은 [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)을 참조하십시오.
+Analytics 전용 구현을 위해 스트리밍 미디어용 Adobe Analytics 추가 기능을 구현하는 경우 Adobe Analytics 기본 구현도 필요합니다. 자세한 내용은 [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)을 참조하십시오.
 
 1. **미디어 추적 서버 URL 얻기**<br>
 미디어 추적 서버 URL은 Adobe Analytics 담당자에게 문의하십시오. 모바일 SDK, JavaScript SDK 및 Roku용 비수집 API 추적 서버의 `collection-api-server` URL입니다. API 구현을 위한 도메인 이름은 다음과 같습니다. `[your_namespace].hb-api.omtrdc.net`.

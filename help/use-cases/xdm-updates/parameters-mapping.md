@@ -13,7 +13,7 @@ ht-degree: 44%
 
 # Adobe Experience Platform 및 Customer Journey Analytics에 대한 Media Analytics 매개 변수 매핑
 
-이 문서에서는 Adobe Experience Platform 및 Customer Journey Analytics 내에서 사용되는 모든 Media Analytics 매개 변수의 포괄적인 목록을 제공합니다. 각 매개 변수를 해당 XDM 필드 경로에 매핑하여 [Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics) 또는 [분류용 Analytics Source 커넥터](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)를 통해 Adobe Analytics에서 플랫폼으로 가져온 데이터의 통합을 지원하기 위한 것입니다.
+이 문서에서는 Adobe Experience Platform 및 Customer Journey Analytics 내에서 사용되는 모든 Media Analytics 매개 변수의 포괄적인 목록을 제공합니다. 각 매개 변수를 해당 XDM 필드 경로에 매핑하여 [Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics) 또는 [분류용 Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/classifications)를 통해 Adobe Analytics에서 플랫폼으로 가져온 데이터의 통합을 지원하기 위한 것입니다.
 
 ## Media Analytics 예약 변수
 
