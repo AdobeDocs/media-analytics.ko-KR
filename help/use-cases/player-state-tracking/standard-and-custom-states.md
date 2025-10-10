@@ -42,4 +42,4 @@ ht-degree: 99%
 
 사용자 지정 상태를 만드는 기능을 사용하면 재생 세션 중에 사용자 지정 동작을 캡처하고 사용자 지정 메타데이터를 업데이트할 수 있습니다.
 
-사용자 지정 상태 만들기에 대한 자세한 내용은 [미디어 API 참조 안내서`createStateObject` ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)를 참조하십시오.
+사용자 지정 상태 만들기에 대한 자세한 내용은 [미디어 API 참조 안내서`createStateObject` &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)를 참조하십시오.

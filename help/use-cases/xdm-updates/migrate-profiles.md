@@ -56,7 +56,7 @@ ht-degree: 0%
    ![AEP 데이터 흐름 필터 규칙](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   media.mediaTimed 개체를 사용하는 각 필터에 대해 `mediaReporting`오디오 및 비디오 매개 변수[ 페이지를 사용하여 ](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 개체에서 해당 연결자를 찾아 이전 필드와 새 필드 사이를 매핑합니다. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다. 예를 들어 [미디어 시작](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)의 경우 `media.mediaTimed.impressions.value`에 대한 받는 사람은 `mediaReporting.sessionDetails.isViewed`입니다.
+   media.mediaTimed 개체를 사용하는 각 필터에 대해 `mediaReporting`오디오 및 비디오 매개 변수[&#x200B; 페이지를 사용하여 &#x200B;](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters) 개체에서 해당 연결자를 찾아 이전 필드와 새 필드 사이를 매핑합니다. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다. 예를 들어 [미디어 시작](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)의 경우 `media.mediaTimed.impressions.value`에 대한 받는 사람은 `mediaReporting.sessionDetails.isViewed`입니다.
 
    ![새 XDM 필드 및 이전 XDM 필드](assets/xdm-fields-new-and-old.jpeg)
 

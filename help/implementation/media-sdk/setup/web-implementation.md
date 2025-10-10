@@ -104,6 +104,6 @@ ht-degree: 92%
 
 ## JavaScript 2.x에서 3.x로 마이그레이션
 
-2.x에서 3.x로 마이그레이션에 대한 자세한 정보는 [ 2.x에서 3.x로 마이그레이션](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)을 참조하십시오.
+2.x에서 3.x로 마이그레이션에 대한 자세한 정보는 [&#x200B; 2.x에서 3.x로 마이그레이션](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)을 참조하십시오.
 
 이전 콘텐츠의 경우, [레거시 구현](/help/legacy/media-sdk/setup/setup-overview.md)을 참조하십시오.

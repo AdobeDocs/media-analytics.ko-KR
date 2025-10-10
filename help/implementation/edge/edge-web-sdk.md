@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Adobe Experience Platform Web SDK을 사용하여 웹 데이터를 Edge으로 전송
 
-버전 2.20.0부터 Adobe Experience Platform `streamingMedia`Web SDK[의 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) 구성 요소를 사용하여 웹 사이트에서 미디어 세션과 관련된 데이터를 수집할 수 있습니다. 수집된 데이터에는 미디어 재생, 일시 정지, 완료 및 기타 관련 이벤트에 대한 정보가 포함될 수 있습니다.
+버전 2.20.0부터 Adobe Experience Platform `streamingMedia`Web SDK[의 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) 구성 요소를 사용하여 웹 사이트에서 미디어 세션과 관련된 데이터를 수집할 수 있습니다. 수집된 데이터에는 미디어 재생, 일시 정지, 완료 및 기타 관련 이벤트에 대한 정보가 포함될 수 있습니다.
 
 데이터가 수집되면 Adobe Experience Platform 및/또는 Adobe Analytics으로 전송하여 보고서를 생성할 수 있습니다. 이 기능은 웹 사이트에서의 미디어 소비 행동을 추적하고 이해하는 포괄적인 솔루션을 제공합니다.
 
