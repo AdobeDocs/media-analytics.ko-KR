@@ -22,7 +22,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 웹 사이트 태그 �
 >[!NOTE]
 >
 >기존 SDK 다운로드에 대한 자세한 내용은 [레거시—SDK 다운로드](/help/legacy/legacy-download-sdks.md)를 참조하십시오.<br>
->&#x200B;>지원 종료에 대한 중요한 정보는 [지원 종료 FAQ ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
+>>지원 종료에 대한 중요한 정보는 [지원 종료 FAQ ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
 ## Media SDK 및 모바일 라이브러리 {#media-sdks-libraries}
 

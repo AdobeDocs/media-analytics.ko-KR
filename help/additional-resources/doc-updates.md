@@ -19,7 +19,7 @@ ht-degree: 31%
 
 ## 릴리스 정보{#release-notes}
 
-* [릴리스 정보](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ko)
+* [릴리스 정보](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
 <!--
 ## Documentation Updates{#documentation-updates}

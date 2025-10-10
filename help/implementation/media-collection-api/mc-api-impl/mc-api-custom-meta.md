@@ -7,22 +7,22 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '124'
+ht-degree: 62%
 
 ---
 
 # 사용자 지정 메타데이터 지원{#custom-metadata-support}
 
-`sessionStart`, `chapterStart` 및 `adStart` 이벤트에 사용자 지정 키:값 쌍을 제공할 수 있습니다. 이 정보는 `customMetadata` 키와 함께 배치된 JSON 키, `params`에 제공해야 합니다.
+:value, `sessionStart` 및 `chapterStart` 이벤트에 사용자 지정 키 `adStart` 쌍을 제공할 수 있습니다. 이 정보는 `customMetadata` 키와 함께 배치된 JSON 키, `params`에 제공해야 합니다.
 
-키:값 쌍의 개체를 `customMetadata` JSON 키는 포함해야 합니다. 이 키에는 영숫자, 밑줄 및 점/마침표만 사용해야 합니다.
+`customMetadata` JSON 키에는 키 :value 쌍의 개체가 포함되어야 합니다. 이 키에는 영숫자, 밑줄 및 점/마침표만 사용해야 합니다.
 
 [MA Collection API 이벤트](../mc-api-ref/mc-api-events-req.md)
 
 ## 예
 
-현재 다음 key:value 쌍을 사용하여 `sessionStart` 이벤트를 보낼 수 있습니다.
+현재 다음 키`sessionStart` 쌍을 사용하여 :value 이벤트를 보낼 수 있습니다.
 
 ```
 params: { "media.channel": "channel-1" },

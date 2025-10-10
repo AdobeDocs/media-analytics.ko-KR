@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe Analytics 콘텐츠 시작 호출 시 표시되는 같은 값의 대부분
 
 라이브 미디어의 경우 사용자가 스트림 재생을 시작할 때 `l:event:playhead`를 해당 날짜 자정(UTC) 이후 초 수로 설정해야 합니다. 이는 플레이헤드를 &quot;0&quot;으로 설정한 VOD와 대조적입니다. 참고: 진행률 마커를 사용할 경우 콘텐츠 지속 시간이 필요하며 플레이헤드는 0부터 시작하여 미디어 항목의 시작부터 초 단위로 업데이트해야 합니다.
 
-예를 들어 라이브 스트리밍 이벤트는 자정에 시작해서 24시간 동안 실행된다고 가정합니다(`a.media.length=86400`; `l:asset:length=86400`). 그런 다음 사용자가 오후 12시에 해당 라이브 스트림 재생을 시작한다고 가정합니다. 이 시나리오에서는 `l:event:playhead`를 43200(당일의 자정 UTC 이후 12시간(초 수))으로 설정해야 합니다.
+예를 들어 라이브 스트리밍 이벤트는 자정에 시작해서 24시간 동안 실행된다고 가정합니다(`a.media.length=86400`; `l:asset:length=86400`). 그런 다음 사용자가 12:00pm에 해당 라이브 스트림 재생을 시작한다고 가정합니다. 이 시나리오에서는 `l:event:playhead`를 43200(당일의 자정 UTC 이후 12시간(초 수))으로 설정해야 합니다.
 
 ### 일시 중지 시
 

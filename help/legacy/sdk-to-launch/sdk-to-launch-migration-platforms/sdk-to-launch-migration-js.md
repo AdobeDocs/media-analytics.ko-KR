@@ -50,7 +50,7 @@ Media 확장은 추적을 위해 구성된 매개 변수를 사용합니다.
 
    ![](assets/launch_config_js.png)
 
-[Launch 사용 안내서 - Media 확장 설치 및 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko#install-and-configure-the-ma-extension)
+[Launch 사용 안내서 - Media 확장 설치 및 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## 추적기 만들기의 차이점
 
@@ -119,5 +119,5 @@ Launch는 추적 인프라를 만드는 두 가지 방법을 제공합니다. �
 
 ### Launch
 
-* [Launch 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)
-* [Media Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko)
+* [Launch 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Media Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)

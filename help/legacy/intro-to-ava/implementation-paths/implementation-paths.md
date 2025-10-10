@@ -27,15 +27,15 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 태그는 확장이라고 하는 자체 통합을 구축하고 유지할 수 있는 권한을 누구에게나 부여합니다. Adobe Experience Cloud 고객은 앱 스토어 환경에서 이러한 확장을 사용할 수 있으므로 태그를 신속하게 설치, 구성 및 배포할 수 있습니다.
 
-확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다. 자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)의 *태그 개요* 문서를 참조하십시오.
+확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다. 자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)의 *태그 개요* 문서를 참조하십시오.
 
 Adobe Media Analytics(MA) 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
 Media Analytics 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* [Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)
-* [Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)
+* [Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
+* [Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 ## 클라이언트측
