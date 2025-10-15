@@ -10,7 +10,7 @@ ht-degree: 98%
 아래 내용은 Experience Cloud 릴리스 정보에서 복사되었습니다. 이는 새로운 스트리밍 미디어 서비스 릴리스 정보로 이전됩니다.
 
 
-[Adobe Experience Cloud 제품](https://business.adobe.com/products/adobe-experience-cloud-products.html)의 최신 릴리스 업데이트에 대해 알아봅니다. Experience League에서 최신 자가 진단 설명서 튜토리얼 및 과정을 살펴보십시오.
+[Adobe Experience Cloud 제품](https://business.adobe.com/kr/products/adobe-experience-cloud-products.html)의 최신 릴리스 업데이트에 대해 알아봅니다. Experience League에서 최신 자가 진단 설명서 튜토리얼 및 과정을 살펴보십시오.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=ko)의 최신 릴리스 업데이트에 대해 알아봅니다. Experience League에서 최신 자가 진단 설명서 튜토리얼 및 과정을 살펴보십시오.
 
