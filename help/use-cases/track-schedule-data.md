@@ -3,17 +3,19 @@ title: 예약 데이터를 업로드하여 라이브 콘텐츠 추적
 description: 라이브 콘텐츠를 추적하기 위해 일정 데이터를 업로드하는 방법을 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Data Engineer
-hide: true
-hidefromtoc: true
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
+source-git-commit: 65cd7987acb677b4f4c863b42dc809b5a23c2ed1
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
 # 예약 데이터를 업로드하여 라이브 콘텐츠 추적
+
+>[!AVAILABILITY]
+>
+>이 문서에서 설명하는 기능은 릴리스의 제한된 테스트 단계에 있으며 사용자 환경에서 아직 사용하지 못할 수 있습니다. 기능이 일반적으로 제공되면 이 메모는 제거됩니다. 릴리스 프로세스에 대한 정보는 [Customer Journey Analytics 기능 릴리스](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)를 참조하십시오.
 
 이전 라이브 스트리밍 미디어 콘텐츠의 예약 데이터를 업로드하여 라이브 콘텐츠의 시청률을 보다 쉽고 정확하게 추적할 수 있습니다. 개별 프로그램 및 특정 주제나 프로그램 세그먼트에 대한 시청률을 추적할 수 있습니다.
 
@@ -141,7 +143,7 @@ ht-degree: 2%
 
    1. 배치 ID를 사용하여 프로그램 예약 데이터 레코드가 포함된 .json 파일을 푸시합니다.
 
-      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
+      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
 
       cURL을 사용하여 일정 레코드가 있는 파일을 푸시하는 다음 예를 생각해 보십시오.
 
@@ -301,9 +303,9 @@ ht-degree: 2%
 
    만든 다음 Customer Journey Analytics에서 보고할 수 있는 차원의 다음 예를 고려하십시오.
 
-   * **[&quot;_에피소드 이름_&quot;](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: 이 차원은 특정 시리즈의 가장 성과가 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
+   * **[&quot;_에피소드 이름_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: 이 차원은 특정 시리즈의 가장 성과가 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
 
-   * **[자산 ID](https://experienceleague.adobe.com/ko/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[자산 ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. [Customer Journey Analytics에서 데이터 분석](#analyze-data-in-customer-journey-analytics)을 계속합니다.
 
