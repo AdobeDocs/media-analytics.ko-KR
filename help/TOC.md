@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 80%
       + [JavaScript 3.x에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Chromecast에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-chromecast.md)
       + [Roku에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-roku.md)
-   + 경험 추적 품질 {#track-qos}
+   + 체감 품질 추적 {#track-qos}
       + [개요](use-cases/track-qos/track-qos-overview.md)
       + [JavaScript 3.x에서 체감 품질 추적](use-cases/track-qos/track-qos-js/track-qos-js3.md)
       + [Chromecast에서 체감 품질 추적](use-cases/track-qos/track-qos-chromecast.md)
