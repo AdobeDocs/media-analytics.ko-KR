@@ -5,16 +5,16 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 91%
+ht-degree: 79%
 
 ---
 
 # Roku 메타데이터 키{#roku-metadata-keys}
 
-표준 비디오, 오디오 및 광고 메타데이터는 각각 미디어 및 광고 정보 개체에 설정할 수 있습니다. 비디오/광고 메타데이터에 상수 키를 사용하여 추적 API를 호출하기 전에 정보 개체에 표준 메타데이터를 포함하는 사전을 설정합니다. 아래 표에서 표준 메타데이터 상수의 전체 목록과 샘플을 참조하십시오.
+표준 비디오, 오디오 및 광고 메타데이터는 각각 미디어 및 광고 정보 개체에 설정할 수 있습니다. 비디오/광고 메타데이터에 상수 키를 사용하면 추적 API를 호출하기 전에 정보 개체에 표준 메타데이터가 포함된 사전을 설정할 수 있습니다. 아래 표에서 표준 메타데이터 상수의 전체 목록을 참조한 다음 샘플을 확인하십시오.
 
 ## 비디오 메타데이터 상수 {#video-metadata-constants}
 
