@@ -4,11 +4,11 @@ description: Media Collection API 시간 제한 조건에 대해 알아봅니다
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 95%
+ht-degree: 60%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 **Media Collection API 시간 제한 조건**
 
-상태를 저장하지 않는 Media Collection API는 시간 제한 조건이 발생할 때 새 세션 ID를 발급할 Media SDK와 동일한 메커니즘을 가지고 있지 않습니다. 시간 제한 조건이 발생하면 백 엔드에서 세션을 닫고, 해당 세션 ID로 작성된 모든 후속 호출이 삭제됩니다. 세션 시간 제한을 처리하는 논리는 클라이언트에서 처리해야 합니다. 즉, 플레이어에서 시간 제한 조건을 모니터링하고, 시간 초과가 발생하면 새 세션 ID를 가져와야 합니다.
+상태를 저장하지 않는 Media Collection API는 시간 제한 조건이 발생할 때 새 세션 ID를 발급할 Media SDK와 동일한 메커니즘을 가지고 있지 않습니다. 시간 제한 조건이 발생하면 백 엔드에서 세션을 닫고 해당 세션 ID로 수행된 모든 후속 호출이 삭제됩니다. 세션 시간 초과를 처리하는 논리는 클라이언트에서 처리해야 합니다. 즉, 플레이어는 시간 초과 조건을 모니터링하고, 시간 초과가 발생하는 경우 새 세션 ID를 얻어야 합니다.
 
 * **10분: API 이벤트 없음**
 

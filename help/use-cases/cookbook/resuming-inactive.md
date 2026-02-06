@@ -4,11 +4,11 @@ description: 비활성 세션 다시 시작을 처리하는 방법에 대해 알
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 Media SDK는 미디어 재생이 다음 비활성 상태 중 하나에 얼마나 오래 있는지를 자동으로 추적합니다.
 
-* 일시 정지됨
-* 이동
-* 정지
+* 일시 중지됨
+* 찾기
+* 정지됨
 * 버퍼링
 
 미디어 추적 세션이 30분 이상 비활성 상태에 남아 있는 경우 세션이 자동으로 닫힙니다. 이전의 비활성 비디오 추적 세션(`trackPlay`) 이후 사용자가 다시 시작하면 미디어 하트비트가 이전에 사용한 비디오 정보와 메타데이터를 사용하여 새 비디오 세션을 자동으로 생성하고, 하트비트 다시 시작 이벤트를 보냅니다. 자세한 내용은 [오디오 및 비디오 매개 변수](/help/implementation/variables/audio-video-parameters.md)를 참조하십시오.

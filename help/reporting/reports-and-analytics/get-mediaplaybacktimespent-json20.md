@@ -2,12 +2,12 @@
 title: Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 JSON 보고서 데이터 가져오기
 description: Analytics 2.0 API를 사용하여 미디어 재생 소요 시간 보고서 데이터를 가져오는 방법에 대해 알아봅니다. 요청 및 응답 샘플을 확인하십시오.
 feature: Streaming Media, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '205'
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ You can extract the Media Playback Time Spent report data using the Experience C
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=ko)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

@@ -2,9 +2,9 @@
 title: 스트리밍 미디어용 태그를 사용하는 모바일 SDK을 설정하는 방법
 description: 모바일 앱용 Adobe 스트리밍 미디어 서비스를 구현하는 방법에 대해 알아봅니다.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 70%

@@ -3,8 +3,8 @@ title: Adobe Primetime이란?
 description: Adobe Primetime 솔루션과 이 솔루션을 통해 스트리밍 미디어 서비스를 통해 수익을 창출하는 방법을 알아봅니다.
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 71%

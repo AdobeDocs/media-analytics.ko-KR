@@ -4,11 +4,11 @@ description: Chromecast에서 미디어 SDK를 사용하여 코어 추적을 구
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 88%
    * 사용자가 앱에서 일시 정지를 명시적으로 실행합니다.
    * 플레이어가 일시 정지 상태로 전환됩니다.
    * (*모바일 앱*) - 백그라운드로 전환된 애플리케이션의 세션을 열어 두려고 합니다.
-   * (*모바일 앱*) - 애플리케이션을 백그라운드로 전환하는 시스템 인터럽트 유형이 발생합니다. 예를 들어 사용자가 호출을 받거나 다른 애플리케이션에서 팝업이 발생하지만 애플리케이션이 중단 지점에서 사용자가 비디오를 재개할 수 있도록 세션을 라이브로 유지할 수 있습니다.
+   * (*모바일 앱*) - 애플리케이션을 백그라운드로 전환하는 시스템 인터럽트 유형이 발생합니다. 예를 들어 사용자가 호출을 받거나 다른 애플리케이션에서 팝업이 발생하지만 애플리케이션이 중단 지점에서 사용자가 비디오를 다시 시작할 수 있도록 세션을 종료되지 않은 상태로 유지할 수 있습니다.
 
 1. 플레이어에서 비디오 재생 및/또는 비디오 일시 중지에서 비디오 재개에 대한 이벤트를 식별하고 [trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)를 호출합니다.
 

@@ -4,11 +4,11 @@ description: Roku에서 미디어 SDK를 사용하여 코어 추적을 구현하
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 88%
    | 변수 이름 | 설명 | 필수 여부 |
    | --- | --- | :---: |
    | `name` | 비디오 이름 | 예 |
-   | `mediaid` | 비디오 고유 식별자입니다 | 예 |
+   | `mediaid` | 비디오 고유 식별자 | 예 |
    | `length` | 비디오 길이 | 예 |
    | `streamType` | 스트림 유형(아래 _StreamType 상수_ 참조) | 예 |
    | `mediaType` | 미디어 유형(아래 _MediaType 상수_ 참조) | 예 |
@@ -197,7 +197,7 @@ ht-degree: 88%
    * 사용자가 앱에서 일시 정지를 명시적으로 실행합니다.
    * 플레이어가 일시 정지 상태로 전환됩니다.
    * (*모바일 앱*) - 백그라운드로 전환된 애플리케이션의 세션을 열어 두려고 합니다.
-   * (*모바일 앱*) - 애플리케이션을 백그라운드로 전환하는 시스템 인터럽트 유형이 발생합니다. 예를 들어 사용자가 호출을 받거나 다른 애플리케이션에서 팝업이 발생하지만 애플리케이션이 중단 지점에서 사용자가 비디오를 재개할 수 있도록 세션을 라이브로 유지할 수 있습니다.
+   * (*모바일 앱*) - 애플리케이션을 백그라운드로 전환하는 시스템 인터럽트 유형이 발생합니다. 예를 들어 사용자가 호출을 받거나 다른 애플리케이션에서 팝업이 발생하지만 애플리케이션이 중단 지점에서 사용자가 비디오를 다시 시작할 수 있도록 세션을 종료되지 않은 상태로 유지할 수 있습니다.
 
 1. 플레이어에서 비디오 재생 및/또는 일시 정지에서 비디오 재개에 대한 이벤트를 식별하고 `trackPlay`를 호출합니다.
 

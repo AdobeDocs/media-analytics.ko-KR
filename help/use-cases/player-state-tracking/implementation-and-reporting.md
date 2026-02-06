@@ -3,8 +3,8 @@ title: 구현 및 보고
 description: 다음을 포함한 플레이어 상태 추적 기능을 구현하는 방법에 대해 알아봅니다.
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%

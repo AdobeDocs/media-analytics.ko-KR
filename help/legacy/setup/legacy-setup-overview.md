@@ -2,12 +2,12 @@
 title: 레거시 Media SDK 구현 설명
 description: “모바일, OTT 및 브라우저(JS) 애플리케이션에서 미디어 추적을 위해 **레거시** 2.x Media SDK를 설정하는 방법을 알아봅니다.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
 
   Analytics 추적 서버는 &quot;`.sc.omtrdc.net`&quot;으로 끝나야 하거나 CNAME이어야 합니다.
 
-* **&#x200B; Media Analytics(하트비트) 서버**
+* ** Media Analytics(하트비트) 서버**
 항상 &quot;`[your_namespace].hb.omtrdc.net`&quot; 형식입니다. 다음 &quot;`[your_namespace]`&quot;의 값은 회사를 지정하며, Adobe에서 제공합니다.
 
 미디어 추적은 모든 플랫폼, 데스크탑 및 모바일에서 동일하게 작동합니다. 오디오 추적은 현재 모바일 플랫폼에서 작동합니다. 모든 추적 호출에 대해 확인해야 하는 몇 가지 주요 범용 변수가 있습니다.
@@ -153,11 +153,11 @@ Media Analytics 추적 구현에서는 다음 두 가지 유형의 추적 호출
 
 | Video Analytics 1.x SDKs  |  개발자 안내서(PDF만 해당) |
 | --- | --- |
-| Android | [&#128279;](vhl-dev-guide-v15_android.pdf)Android에 대한 구성 |
+| Android | [Android에 대해 구성](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV에 대한 구성](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast에 대한 구성](chromecast_1.x_sdk.pdf) |
-| iOS | [iOS에 대한 구성](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [JavaScript에 대한 구성](vhl-dev-guide-v15_js.pdf) |
+| iOS | [iOS에 대해 구성](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [JavaScript에 대해 구성](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/android/1.4/index.html) </li> <li> DHLS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Media Analytics 구성](https://help.adobe.com/ko_KR/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML에 대한 구성](vhl_tvml.pdf) |
 

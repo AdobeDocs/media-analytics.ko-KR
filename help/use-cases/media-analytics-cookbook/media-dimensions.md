@@ -3,8 +3,8 @@ title: 미디어 스트림 속성이란 무엇입니까?
 description: 추가 처리 규칙 및 사용자 정의 변수 없이도 애플리케이션 작업을 미디어 추적 데이터에 연결 방법에 대해 알아봅니다.
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%

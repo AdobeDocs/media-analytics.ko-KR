@@ -4,17 +4,17 @@ description: JSON 유효성 검사 스키마를 사용하여 이벤트 요청의
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # 이벤트 요청 확인{#validating-event-requests}
 
-각 이벤트 유형에 대한 JSON 요청 본문은 백 엔드에서 JSON 스키마를 사용하여 확인됩니다. API 호출에 대한 유효성 검사가 실패하면 HTTP 응답 본문이 오류 메시지로 채워집니다.
+각 이벤트 유형에 대한 JSON 요청 본문은 JSON 스키마를 사용하여 백엔드에서 유효성이 검사됩니다. API 호출에 대한 유효성 검사가 실패하면 HTTP 응답 본문이 오류 메시지로 채워집니다.
 
 각 이벤트 유형에 대한 JSON 유효성 검사 스키마는 `{uri}/api/v1/schemas/{eventType}`에서 공개적으로 액세스할 수 있습니다(예: `{uri}/api/v1/schemas/sessionEnd`). 이러한 JSON 유효성 검사 스키마는 각 이벤트 유형에 대한 현재 올바른 요청 본문 매개 변수를 결정하는 절대 권한입니다.
 

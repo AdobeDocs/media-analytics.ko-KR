@@ -2,9 +2,9 @@
 title: 레거시 - Media SDK 링크에 액세스
 description: Android, iOS, JavaScript, Chromecast 및 Roku를 비롯한 사용 가능한 플랫폼에 대한 레거시 SDK 다운로드 링크입니다.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 70%
@@ -17,7 +17,7 @@ ht-degree: 70%
 
 **최신** SDK 다운로드에 대한 자세한 내용은 [SDK 다운로드](/help/getting-started/download-sdks.md)를 참조하십시오.
 
-지원 종료에 대한 중요한 정보는 [지원 종료 FAQ &#x200B;](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
+지원 종료에 대한 중요한 정보는 [지원 종료 FAQ ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
 ## 스트리밍 미디어 및 Adobe Media Analytics 확장
 
@@ -26,9 +26,9 @@ Adobe Media Analytics 확장은 오디오 및 비디오를 위한 핵심 JavaScr
 미디어 분석 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)을 구성해야 합니다.
-* [오디오 및 비디오용 Adobe Media Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=ko)을 구성해야 합니다.
-* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)을 구성해야 합니다.
+* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구성해야 합니다.
+* [오디오 및 비디오용 Adobe Media Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)을 구성해야 합니다.
+* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)을 구성해야 합니다.
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
 

@@ -4,11 +4,11 @@ description: Media SDK를 사용하여 브라우저(JS) 애플리케이션에서
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
    | 변수 이름 | 설명 | 필수 여부 |
    | --- | --- | :---: |
-   | `name` | 프리롤, 미드롤 및 포스트롤과 같은 광고 브레이크 이름입니다. | 예 |
+   | `name` | 프리롤, 미드롤 및 포스트롤 등 광고 브레이크 이름. | 예 |
    | `position` | 1로 시작하는 광고 브레이크의 번호 위치입니다. | 예 |
    | `startTime` | 광고 브레이크의 시작 위치에 있는 플레이헤드 값입니다. | 예 |
 
@@ -64,8 +64,8 @@ ht-degree: 100%
    | 변수 이름 | 설명 | 필수 여부 |
    | --- | --- | :---: |
    | `name` | 친숙한 광고 이름. | 예 |
-   | `adId` | 광고의 고유 식별자. | 예 |
-   | `position` | 광고 브레이크 내 광고 번호 위치로서, 1로 시작합니다. | 예 |
+   | `adId` | 광고에 대한 고유 식별자. | 예 |
+   | `position` | 광고 브레이크 내 광고 번호 위치로서 1로 시작합니다. | 예 |
    | `length` | 광고 길이 | 예 |
 
    광고 개체 작성:

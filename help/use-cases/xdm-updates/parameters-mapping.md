@@ -2,18 +2,18 @@
 title: 스트리밍 미디어용 새 Adobe Analytics 데이터 유형으로 대상자 마이그레이션
 description: 스트리밍 미디어용 새로운 Adobe Analytics 데이터 유형으로 대상자를 마이그레이션하는 방법을 알아봅니다
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
 # Adobe Experience Platform 및 Customer Journey Analytics에 대한 Media Analytics 매개 변수 매핑
 
-이 문서에서는 Adobe Experience Platform 및 Customer Journey Analytics 내에서 사용되는 모든 Media Analytics 매개 변수의 포괄적인 목록을 제공합니다. 각 매개 변수를 해당 XDM 필드 경로에 매핑하여 [Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics) 또는 [분류용 Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/classifications)를 통해 Adobe Analytics에서 플랫폼으로 가져온 데이터의 통합을 지원하기 위한 것입니다.
+이 문서에서는 Adobe Experience Platform 및 Customer Journey Analytics 내에서 사용되는 모든 Media Analytics 매개 변수의 포괄적인 목록을 제공합니다. 각 매개 변수를 해당 XDM 필드 경로에 매핑하여 [Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics) 또는 [분류용 Analytics Source 커넥터](https://experienceleague.adobe.com/kr/docs/experience-platform/sources/connectors/adobe-applications/classifications)를 통해 Adobe Analytics에서 플랫폼으로 가져온 데이터의 통합을 지원하기 위한 것입니다.
 
 ## Media Analytics 예약 변수
 
@@ -116,13 +116,13 @@ ht-degree: 44%
 
 | 필드 이름 | 현재 XDM 필드 패스(더 이상 사용되지 않음) | 보고 XDM 필드 패스 | 데이터 유형 | 파생 필드 | 참고 |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| 평균 비트율 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | 변수 | 평균 비트율 |           |
-| 시작 시간 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | 변수 | 시작 시간 |           |
-| 드롭된 프레임 | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | 변수 | 드롭된 프레임 |           |
-| 버퍼 이벤트 | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | 변수 | 버퍼 이벤트 |           |
-| 총 버퍼 지속 시간 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 변수 | 총 버퍼 지속 시간 |     |
-| 비트율 변경 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 변수 | 비트율 변경 |         |
-| 오류 이벤트 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 변수 | 오류 이벤트 |  |
+| 평균 비트율 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | 모두 | 평균 비트율 |           |
+| 시작 시간 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | 모두 | 시작 시간 |           |
+| 드롭된 프레임 | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | 모두 | 드롭된 프레임 |           |
+| 버퍼 이벤트 | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | 모두 | 버퍼 이벤트 |           |
+| 총 버퍼 지속 시간 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 모두 | 총 버퍼 지속 시간 |     |
+| 비트율 변경 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 모두 | 비트율 변경 |         |
+| 오류 이벤트 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 모두 | 오류 이벤트 |  |
 | 플레이어 SDK 오류 ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | 차원 | 지원되지 않음 | mediaReporting 필드 사용 |
 | 외부 오류 ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | 차원 | 지원되지 않음 | mediaReporting 필드 사용 |
 | 시작 전 드롭 | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | 지표 | 시작 전 드롭 |     |
@@ -223,7 +223,7 @@ Adobe Analytics에서 사용자 지정 변수는 각 보고서 세트 내에 정
 | 스트림 형식 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 차원 |
 | 최초 방송 날짜 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 차원 |
 | 최초 디지털 날짜 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 차원 |
-| 페더레이션된 데이터 | `_experience.analytics.customDimensions.eVars.eVar<number>` 및 `_experience.analytics.event<x>to<y>.event<number>.value` | 변수 |
+| 페더레이션된 데이터 | `_experience.analytics.customDimensions.eVars.eVar<number>` 및 `_experience.analytics.event<x>to<y>.event<number>.value` | 모두 |
 | 예상 스트림 | `_experience.analytics.event<x>to<y>.event<number>.value` | 지표 |
 | 광고 수 | `_experience.analytics.event<x>to<y>.event<number>.value` | 지표 |
 | 챕터 수 | `_experience.analytics.event<x>to<y>.event<number>.value` | 지표 |
@@ -231,7 +231,7 @@ Adobe Analytics에서 사용자 지정 변수는 각 보고서 세트 내에 정
 | 사이트 ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | 차원 |
 | 광고 URL | `_experience.analytics.customDimensions.eVars.eVar<number>` | 차원 |
 | 게재위치 ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | 차원 |
-| 초당 프레임 | `_experience.analytics.customDimensions.eVars.eVar<number>` 및 `_experience.analytics.event<x>to<y>.event<number>.value` | 변수 |
+| 초당 프레임 | `_experience.analytics.customDimensions.eVars.eVar<number>` 및 `_experience.analytics.event<x>to<y>.event<number>.value` | 모두 |
 | Media SDK 오류 ID | `_experience.analytics.event<x>to<y>.event<number>.value` | 지표 |
 | 지연 영향을 받은 스트림 | `_experience.analytics.event<x>to<y>.event<number>.value` | 지표 |
 | 지연 이벤트 | `_experience.analytics.event<x>to<y>.event<number>.value` | 지표 |

@@ -3,8 +3,8 @@ title: 표준 및 사용자 지정 상태 정보
 description: 표준 및 사용자 지정 플레이어 상태 구현 및 보고를 위한 요구 사항 및 지침을 비롯한 플레이어 상태 추적 기능에 대해 알아봅니다.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 99%
@@ -42,4 +42,4 @@ ht-degree: 99%
 
 사용자 지정 상태를 만드는 기능을 사용하면 재생 세션 중에 사용자 지정 동작을 캡처하고 사용자 지정 메타데이터를 업데이트할 수 있습니다.
 
-사용자 지정 상태 만들기에 대한 자세한 내용은 [미디어 API 참조 안내서`createStateObject` &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)를 참조하십시오.
+사용자 지정 상태 만들기에 대한 자세한 내용은 [미디어 API 참조 안내서`createStateObject` ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)를 참조하십시오.

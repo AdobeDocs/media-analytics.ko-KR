@@ -2,9 +2,9 @@
 title: 하트비트 측정 정보
 description: 하트비트를 사용하여 비디오 지표를 수집하는 방법에 대해 알아봅니다.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 75%

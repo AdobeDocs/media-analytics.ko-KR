@@ -4,8 +4,8 @@ description: Roku SceneGraph XML 프로그래밍 프레임워크로 미디어를
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -76,8 +76,8 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 |  | `trackState` | ADBMobile SDK에서 상태를 추적하기 위한 SceneGraph API입니다. |
 |  | `trackAction` | ADBMobile SDK에서 작업을 추적하기 위한 SceneGraph API입니다. |
 |  | `trackingIdentifier` | ADBMobile SDK에서 추적 식별자를 가져오기 위한 SceneGraph API입니다. |
-|  | `userIdentifier` | ADBMobile SDK에서 사용자 ID를 가져오기 위한 SceneGraph API입니다. |
-|  | `setUserIdentifier` | SceneGraph SDK에서 사용자 ID를 설정하기 위한 SceneGraph API입니다. |
+|  | `userIdentifier` | ADBMobile SDK에서 사용자 식별자를 가져오기 위한 SceneGraph API입니다. |
+|  | `setUserIdentifier` | SceneGraph SDK에서 사용자 식별자를 설정하기 위한 SceneGraph API입니다. |
 |  | `getAllIdentifiers` | SceneGraph API는 Roku SDK에서 인식되고 지속되는 모든 사용자 ID를 검색합니다. |
 |  | 자세한 내용은 레거시 SDK의 분석 섹션을 참조하십시오. | |
 |  | | |

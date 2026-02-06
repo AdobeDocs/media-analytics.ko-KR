@@ -4,8 +4,8 @@ description: 광고가 포함되지 않은 VOD 재생 추적의 예를 봅니다
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 100%
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ### 하트비트 콘텐츠 시작
 
-| 매개 변수 | 값 | 참고   |
+| 매개변수 | 값 | 참고   |
 |---|---|---|
 | `s:sc:rsid` | &lt;Adobe 보고서 세트 ID> |  |
 | `s:sc:tracking_server` | &lt;Analytics 추적 서버 URL> |  |
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 이러한 매개 변수는 `Heartbeat Content Start` 호출과 거의 비슷하게 보이지만, 주요한 차이점은 `s:event:type` 매개 변수입니다. 다른 모든 매개 변수는 여전히 존재해야 합니다.
 
-| 매개 변수 | 값 | 참고   |
+| 매개변수 | 값 | 참고   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |

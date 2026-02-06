@@ -4,8 +4,8 @@ description: Media Collection API 이벤트 요청 엔드포인트 매개 변수
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 95%
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 
 | HTTP 응답 코드 | 설명 | 클라이언트 작업 항목 |
 |---|---|---|
-| **204** | **콘텐츠 없음.**<br/><br/>하트비트 호출이 성공했습니다. | 해당 없음 |
+| **204** | **콘텐츠 없음.**<br/><br/>하트비트 호출이 성공했습니다. | 해당 사항 없음 |
 | **400** | **잘못된 요청.** <br/><br/>요청의 형식이 잘못되었습니다. | [JSON 유효성 검사 스키마](mc-api-json-validation.md)에서 요청 유형을 확인하십시오. |
 | **404** | **없음.** <br/><br/>미디어 세션의 세션 ID를 백 엔드 서비스에서 찾지 못했습니다. | 클라이언트 애플리케이션은 [세션 요청](mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **410** | **없어짐.** <br/><br/>미디어 세션이 백 엔드 서비스에서 발견되었지만 고객이 더 이상 이 세션에서 활동을 보고할 수 없습니다. | 클라이언트 애플리케이션은 [세션 요청](mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
-| **500** | **서버 오류** | 해당 없음 |
+| **500** | **서버 오류** | 해당 사항 없음 |

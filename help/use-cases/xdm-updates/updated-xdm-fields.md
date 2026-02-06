@@ -2,9 +2,9 @@
 title: Analytics 소스 커넥터 구현을 스트리밍 미디어 서비스를 위한 새 XDM 필드로 업데이트
 description: Analytics 소스 커넥터 구현을 업데이트된 XDM 스트리밍 미디어 필드로 마이그레이션하는 방법에 대해 알아봅니다
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
