@@ -165,11 +165,11 @@ Adobe Experience Platform을 활용하는 애플리케이션 전체에서 사용
 
    * Adobe Analytics 또는 Customer Journey Analytics 사용 여부에 따라 데이터 스트림에 다음 서비스 중 하나를 추가합니다.
 
-      * [!UICONTROL **Adobe Analytics**](Adobe Analytics을 사용하는 경우)
+      * [!UICONTROL **Adobe Analytics**] (Adobe Analytics을 사용하는 경우)
 
         Adobe Analytics을 사용하는 경우 [보고서 세트 만들기](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의해야 합니다.
 
-      * [!UICONTROL **Adobe Experience Platform**](Customer Journey Analytics을 사용하는 경우)
+      * [!UICONTROL **Adobe Experience Platform**] (Customer Journey Analytics을 사용하는 경우)
 
      데이터 스트림에 서비스를 추가하는 방법에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)의 &quot;데이터 스트림에 서비스 추가&quot; 섹션을 참조하십시오.
 

@@ -17,7 +17,7 @@ ht-degree: 70%
 
 **최신** SDK 다운로드에 대한 자세한 내용은 [SDK 다운로드](/help/getting-started/download-sdks.md)를 참조하십시오.
 
-지원 종료에 대한 중요한 정보는 [지원 종료 FAQ ](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
+지원 종료에 대한 중요한 정보는 [지원 종료 FAQ &#x200B;](/help/additional-resources/end-of-support-faqs.md)를 참조하십시오.
 
 ## 스트리밍 미디어 및 Adobe Media Analytics 확장
 

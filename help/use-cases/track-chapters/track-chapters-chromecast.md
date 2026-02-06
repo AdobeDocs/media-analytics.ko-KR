@@ -35,7 +35,7 @@ ht-degree: 95%
    | `length` | 챕터 길이 | 예 |
    | `startTime` | 챕터 시작 시간 | 예 |
 
-   챕터 개체:[ createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
+   챕터 개체:[&#x200B; createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
 
    ```js
    chapterInfo = ADBMobile.media.createChapterObject("First Chapter", 1, CHAPTER1_LENGTH, CHAPTER1_START_POS);
