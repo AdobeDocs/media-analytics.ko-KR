@@ -26,9 +26,9 @@ Adobe Media Analytics 확장은 오디오 및 비디오를 위한 핵심 JavaScr
 미디어 분석 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구성해야 합니다.
-* [오디오 및 비디오용 Adobe Media Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)을 구성해야 합니다.
-* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)을 구성해야 합니다.
+* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)을 구성해야 합니다.
+* [오디오 및 비디오용 Adobe Media Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=ko)을 구성해야 합니다.
+* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)을 구성해야 합니다.
 
 ## 2.x Media SDK 다운로드 {#download-2x-sdks}
 

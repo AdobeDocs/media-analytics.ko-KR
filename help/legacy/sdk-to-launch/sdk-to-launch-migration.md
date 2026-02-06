@@ -25,7 +25,7 @@ Launch 고객은 앱 스토어 환경에서 확장을 사용할 수 있으므로
 
 오디오 및 비디오용 Adobe Media Analytics는 웹 및 모바일용 Launch 확장으로 사용할 수 있습니다.
 
-* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko)
 * [모바일 Launch 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 플랫폼

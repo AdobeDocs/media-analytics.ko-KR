@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 프로필을 새 스트리밍 미디어 필드로 마이그레이션
 
-이 문서에서는 스트리밍 미디어용 Adobe Analytics에 대해 활성화된 Adobe 데이터 수집 흐름 위에 존재하는 프로필 필터링 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 프로필 필터링 서비스를 &quot;미디어&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 형식에서 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.
+이 문서에서는 스트리밍 미디어용 Adobe Analytics에 대해 활성화된 Adobe 데이터 수집 흐름 위에 존재하는 프로필 필터링 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 프로필 필터링 서비스를 &quot;미디어&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 형식에서 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.
 
 ## 프로필 마이그레이션
 
-프로필 필터링을 이전 데이터 유형인 &quot;Media&quot;에서 새 데이터 유형인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 기존 프로필 필터링 규칙을 편집해야 합니다.
+프로필 필터링을 이전 데이터 유형인 &quot;Media&quot;에서 새 데이터 유형인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 기존 프로필 필터링 규칙을 편집해야 합니다.
 
 1. Adobe Experience Platform의 [!UICONTROL **소스**] 섹션 아래에서 [!UICONTROL **데이터 흐름**] 탭으로 이동합니다.
 

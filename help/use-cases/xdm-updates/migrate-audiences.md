@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # 대상을 새 스트리밍 미디어 필드로 마이그레이션
 
-이 문서에서는 &quot;Media&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 유형의 필드를 사용하는 대상자가 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;라는 새로운 해당 데이터 유형을 사용하도록 마이그레이션하는 방법에 대해 설명합니다.
+이 문서에서는 &quot;Media&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 유형의 필드를 사용하는 대상자가 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;라는 새로운 해당 데이터 유형을 사용하도록 마이그레이션하는 방법에 대해 설명합니다.
 
 ## 대상자 마이그레이션
 
-대상을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 대상을 편집해야 하며, 각 규칙에서 더 이상 사용되지 않는 데이터 형식의 이전 필드를 새 데이터 형식의 새 해당 필드로 바꾸어야 합니다.
+대상을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 대상을 편집해야 하며, 각 규칙에서 더 이상 사용되지 않는 데이터 형식의 이전 필드를 새 데이터 형식의 새 해당 필드로 바꾸어야 합니다.
 
 1. 더 이상 사용되지 않는 &quot;미디어&quot; 데이터 유형에서 필드가 포함된 규칙을 찾습니다. `media.mediaTimed` 경로로 시작하는 모든 필드입니다.
 
-1. 새 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot; 데이터 형식의 필드를 사용하여 이러한 규칙을 복제합니다.
+1. 새 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot; 데이터 형식의 필드를 사용하여 이러한 규칙을 복제합니다.
 
 1. 대상자가 예상대로 작동하는지 확인할 때까지 두 규칙을 적절히 유지합니다.
 
