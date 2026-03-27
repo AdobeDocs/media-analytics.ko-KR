@@ -5,10 +5,10 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 98%
+source-wordcount: '1344'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 98%
 | `media.show` | N | 문자열 | `sessionStart` | 프로그램 또는 시리즈 이름 |
 | `media.season` | N | 문자열 | `sessionStart` | 프로그램 또는 시리즈가 속한 시즌 번호 |
 | `media.episode` | N | 문자열 | `sessionStart` | 에피소드의 번호 |
-| `media.assetId` | N | 문자열 | `sessionStart` | TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 비디오 자산 콘텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 기관에서 나옵니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다. |
+| `media.assetId` | N | 문자열 | `sessionStart` | TV 시리즈 에피소드 식별자, 동영상 자산 식별자 또는 라이브 이벤트 식별자와 같은 비디오 자산 콘텐츠에 대한 고유 식별자입니다. 일반적으로 이러한 ID는 EIDR, TMS/Gracenote 또는 Rovi와 같은 메타데이터 권한에서 파생됩니다. 이러한 식별자는 다른 소유권 또는 사내 시스템에서도 사용할 수 있습니다. |
 | `media.genre` | N | 문자열 | `sessionStart` | 콘텐츠 생성자에서 정의한 콘텐츠의 유형 |
 | `media.firstAirDate` | N | 문자열 | `sessionStart` | 콘텐츠가 TV에 처음 방송된 날짜 |
 | `media.firstDigitalDate` | N | 문자열 | `sessionStart` | 콘텐츠가 디지털 플랫폼에서 처음으로 방송된 날짜 |
@@ -136,10 +136,12 @@ ht-degree: 98%
 >
 >`appInstallationId`는 앱 및 *장치*&#x200B;를 고유하게 식별합니다. 각 장치의 각 앱에 대해 고유해야 합니다. 즉, 다른 장치에서 동일한 앱의 동일한 버전을 사용하는 두 명의 사용자가 각각 다른(고유) `appInstallationId`를 보내야 합니다.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+<!-- 
+Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
 \<ul id="ul_iwc_fqt_pbb"\>
  \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
-</ul> -->
+</ul> 
+-->
 
 ### visitor.marketingCloudOrgId
 

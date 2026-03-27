@@ -4,24 +4,26 @@ description: 미디어 재생 소요 시간 패널을 사용하여 재생 소요
 feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 91%
+source-wordcount: '232'
+ht-degree: 83%
 
 ---
 
 # 미디어 재생 소요 시간 {#media-playback-time-spent}
 
-재생 소요 시간 분석을 통해 최대 동시 시청이 발생한 위치 또는 시청 감소가 발생한 위치를 파악할 수 있습니다. 재생 소요 시간은 콘텐츠의 품질, 시청자 참여 및 콘텐츠가 시간 경과에 따라 시청에 미치는 영향에 대해 가치 있는 통찰력을 제공합니다. 미디어 재생 소요 시간 기능은 볼륨 또는 확장에 대한 문제 해결이나 계획 수립에 도움이 됩니다.
+재생 소요 시간 분석을 통해 최대 동시 시청이 발생한 위치 또는 시청 감소가 발생한 위치를 파악할 수 있습니다. 재생 소요 시간은 콘텐츠의 품질, 시청자 참여 및 콘텐츠가 시간 경과에 따라 시청에 미치는 영향에 대해 가치 있는 인사이트를 제공합니다. 미디어 재생 소요 시간 기능은 볼륨 또는 확장에 대한 문제 해결이나 계획 수립에 도움이 됩니다.
 
 ## Analysis Workspace의 미디어 재생 소요 시간 패널
 
 Analysis Workspace에서 재생 소요 시간은 특정 시점에서 미디어 스트림을 시청하는 데 소요된 시간이며 일시 중지, 버퍼 및 시작 시간을 포함합니다. 미디어 재생 소요 시간 기능을 사용하여 재생 기간을 5분, 15분, 30분 또는 1시간 등 다양한 시간 간격으로 분할할 수 있습니다.
 
 
-미디어 재생 소요 시간은 최대 동시 시청과 분류 및 비교 기능에 대한 세부 정보와 함께 시간 경과에 따른 재생을 분석하는 데 도움이 됩니다. 미디어 재생 소요 시간 패널에 액세스하려면 스트리밍 미디어 구성 요소가 활성화된 보고서 세트로 이동합니다. 그런 다음 맨 왼쪽에 있는 패널 아이콘을 클릭하고 패널을 Analysis Workspace 프로젝트로 드래그합니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ko)
+미디어 재생 소요 시간은 최대 동시 시청과 분류 및 비교 기능에 대한 세부 정보와 함께 시간 경과에 따른 재생을 분석하는 데 도움이 됩니다. 미디어 재생 소요 시간 패널에 액세스하려면 스트리밍 미디어 구성 요소가 활성화된 보고서 세트로 이동합니다. 그런 다음 맨 왼쪽에 있는 패널 아이콘을 클릭하고 패널을 Analysis Workspace 프로젝트로 드래그합니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
-<!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
+<!--
+## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
-REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). -->
+REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). 
+-->
