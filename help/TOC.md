@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 78%
+source-wordcount: '958'
+ht-degree: 79%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 78%
          + [Media Edge 웹 SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
+      + [사용자 지정 메타데이터 지원](/help/implementation/edge/implementation-edge-custom-metadata.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
       + [사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Media SDK / 확장 {#media-sdk}
