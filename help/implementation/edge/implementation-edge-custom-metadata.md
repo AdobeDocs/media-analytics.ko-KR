@@ -55,7 +55,7 @@ Media Collection API 구현의 경우 [사용자 지정 메타데이터 지원](
 }
 ```
 
-<InlineAlert variant="warning" slots="text" />
+&lt;InlineAlert variant="warning" slots="text" />
 
 `customMetadata`은(는) `xdm` 루트 수준이 아닌 `mediaCollection` 내의 **배열**&#x200B;이어야 합니다.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 임시 플래그, 디버깅 변수 또는 Analytics 관련 처리 힌트와 같은 Adobe Analytics 데이터 세트에 **저장하지**&#x200B;해야 하는 Analytics의 메타데이터가 필요한 경우 `_data` 개체를 사용합니다.
 
-<InlineAlert variant="warning" slots="text" />
+&lt;InlineAlert variant="warning" slots="text" />
 
 `_data`을(를) 통해 전송된 데이터는 Adobe Experience Platform에 저장되지 않으며 Real-Time CDP, Journey Orchestration 또는 기타 AEP 서비스에 사용할 수 없습니다.
 
@@ -308,7 +308,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 ## 다운스트림 데이터 위치
 
-<InlineAlert variant="info" slots="text" />
+&lt;InlineAlert variant="info" slots="text" />
 
 `xdm.mediaCollection.customMetadata`은(는) 이벤트를 사용하여 사용자 지정 메타데이터를 보내는 데 사용되는 **인바운드 API 경로**&#x200B;입니다. 처리 후 데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달되며 `mediaReporting.customMetadata` 및 최상위 병합된 필드로 Adobe Experience Platform에 저장됩니다.
 
