@@ -3,7 +3,7 @@ title: 사용자 지정 메타데이터 지원 - XDM 형식
 description: Experience Edge XDM 형식을 사용하여 미디어 추적 이벤트와 함께 사용자 지정 메타데이터를 보내는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a6ce0ddca6e52f3ad10bd69210e52e634641272
+source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
