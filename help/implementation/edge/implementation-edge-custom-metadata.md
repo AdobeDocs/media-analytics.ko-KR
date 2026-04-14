@@ -3,7 +3,7 @@ title: 사용자 지정 메타데이터 지원 - XDM 형식
 description: Experience Edge XDM 형식을 사용하여 미디어 추적 이벤트와 함께 사용자 지정 메타데이터를 보내는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -55,7 +55,7 @@ Media Collection API 구현의 경우 [사용자 지정 메타데이터 지원](
 }
 ```
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 `customMetadata`은(는) `xdm` 루트 수준이 아닌 `mediaCollection` 내의 **배열**&#x200B;이어야 합니다.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 임시 플래그, 디버깅 변수 또는 Analytics 관련 처리 힌트와 같은 Adobe Analytics 데이터 세트에 **저장하지**&#x200B;해야 하는 Analytics의 메타데이터가 필요한 경우 `_data` 개체를 사용합니다.
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 `_data`을(를) 통해 전송된 데이터는 Adobe Experience Platform에 저장되지 않으며 Real-Time CDP, Journey Orchestration 또는 기타 AEP 서비스에 사용할 수 없습니다.
 
@@ -301,22 +301,25 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ```
 
 이 예에서,
+
 - Analytics와 AEP 모두에 `_mycompany.league`을(를) →.
 - `debugMode` 및 `testFlag`(`_data.__adobe.analytics.contextData`에서)→ Analytics로만 전송됩니다.
 
 
 ## 다운스트림 데이터 위치
 
-&lt;InlineAlert variant="info" slots="text" />
+<InlineAlert variant="info" slots="text" />
 
 `xdm.mediaCollection.customMetadata`은(는) 이벤트를 사용하여 사용자 지정 메타데이터를 보내는 데 사용되는 **인바운드 API 경로**&#x200B;입니다. 처리 후 데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달되며 `mediaReporting.customMetadata` 및 최상위 병합된 필드로 Adobe Experience Platform에 저장됩니다.
 
 **Adobe Analytics:**
+
 - 처리 후 사용자 지정 메타데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달됩니다. `_tenant` 접두사가 자동으로 제거되므로 처리 규칙은 `_tenant` 이후의 필드 경로만 참조합니다(예: `_mycompany.contentCategory`이(가) `contentCategory`이(가) 됨).
 - `_data`을(를) 통해 전송된 데이터도 Adobe Analytics으로 전달되며 처리 규칙을 통해 사용할 수 있습니다.
 - 처리 규칙을 사용하여 컨텍스트 데이터 변수를 eVar, prop 또는 기타 Analytics 변수에 매핑합니다. 자세한 내용은 [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping)을 참조하십시오.
 
 **Adobe Experience Platform:**
+
 - 사용자 지정 메타데이터 필드는 XDM 스키마(예: `_mycompany`)에서 사용자 지정 필드로 정의되어야 하며 병합된 필드로 AEP에 저장하고 쿼리할 수 있습니다
 
   ![XDM 스키마의 사용자 지정 필드 정의](assets/custom_metadata.png)
@@ -334,8 +337,9 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ## 관련 설명서
 
 - [사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API(JSON 형식)
-- [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
+- [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
 - [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping) - XDM 필드에 대한 Analytics 컨텍스트 데이터 매핑
+
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions
