@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**챕터 길이**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [챕터 길이](/help/implementation/variables/chapters/chapter-length.md)를 참조하세요.*
+*이 페이지는&#x200B;**챕터 길이**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [챕터 길이](/help/implementation/variables/chapters/chapter-length.md)를 참조하세요.*
 
 >[!ENDSHADEBOX]
 
