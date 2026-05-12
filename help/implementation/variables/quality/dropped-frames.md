@@ -24,7 +24,7 @@ ht-degree: 12%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.qoe.droppedFrameCount` |
-| **XDM 컬렉션 필드** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **필수** | 아니요 |
 | **전송 시점** | 품질 이벤트, 세션 닫기 |
 

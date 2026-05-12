@@ -24,7 +24,7 @@ ht-degree: 14%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.chapter.friendlyName` |
-| **XDM 컬렉션 필드** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **필수** | 아니요 |
 | **전송 시점** | 챕터 시작, 챕터 닫기 |
 

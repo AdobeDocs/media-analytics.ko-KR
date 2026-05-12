@@ -24,7 +24,7 @@ ht-degree: 16%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.name` |
-| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **필수** | 예 |
 | **전송 시점** | 광고 시작, 광고 종료 |
 
