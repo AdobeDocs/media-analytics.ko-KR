@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**포커스 있음**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [초점의 영향을 받은 스트림](/help/reporting/metrics/in-focus-streams-impacted.md), [초점 카운트](/help/reporting/metrics/in-focus-count.md) 및 [초점 총 기간](/help/reporting/metrics/in-focus-total-duration.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**포커스 있음**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [초점의 영향을 받은 스트림](/help/reporting/metrics/in-focus-streams-impacted.md), [초점 카운트](/help/reporting/metrics/in-focus-count.md) 및 [초점 총 기간](/help/reporting/metrics/in-focus-total-duration.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

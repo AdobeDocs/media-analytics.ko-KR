@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**Bitrate**변수에 대한 데이터 수집을 다룹니다. 해당 보고 변수에 대해서는 [평균 비트 전송률(차원)](/help/reporting/dimensions/average-bitrate.md) 및 [평균 비트 전송률(지표)](/help/reporting/metrics/average-bitrate.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**Bitrate**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 변수에 대해서는 [평균 비트 전송률(차원)](/help/reporting/dimensions/average-bitrate.md) 및 [평균 비트 전송률(지표)](/help/reporting/metrics/average-bitrate.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

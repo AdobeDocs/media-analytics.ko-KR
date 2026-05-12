@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**작성자**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [작성자](/help/reporting/dimensions/author.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**작성자**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [작성자](/help/reporting/dimensions/author.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
