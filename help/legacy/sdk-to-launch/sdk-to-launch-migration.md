@@ -43,7 +43,7 @@ launch와 자체 통합. 이러한 통합을 확장이라고 합니다.
 
 오디오 및 비디오용 Adobe Media Analytics는 웹 및 모바일용 Launch 확장으로 사용할 수 있습니다.
 
-* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [웹 Launch 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ko)
 * [모바일 Launch 설명서](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 플랫폼

@@ -32,7 +32,7 @@ ht-degree: 69%
 
 ## Analysis Workspace의 미디어 동시 뷰어 패널
 
-Analysis Workspace에서 동시 뷰어는 세션 수에 관계없이 특정 시점에 미디어 스트림을 보는 고유 방문자 수입니다. 동시 뷰어를 시각화하고, 분류하고, 비교하기 위해 미디어 동시 뷰어 패널을 사용할 수 있습니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+Analysis Workspace에서 동시 뷰어는 세션 수에 관계없이 특정 시점에 미디어 스트림을 보는 고유 방문자 수입니다. 동시 뷰어를 시각화하고, 분류하고, 비교하기 위해 미디어 동시 뷰어 패널을 사용할 수 있습니다. [자세히 알아보기...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=ko)
 
 ## Analytics 보고 API를 통해 동시 뷰어 가져오기
 
