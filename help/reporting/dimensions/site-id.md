@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**사이트 ID**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [사이트 ID](/help/implementation/variables/ads/site-id.md)를 참조하십시오.*
+*이 페이지는&#x200B;**사이트 ID**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [사이트 ID](/help/implementation/variables/ads/site-id.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

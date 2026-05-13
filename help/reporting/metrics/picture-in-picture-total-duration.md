@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**화면 속 화면 총 시간**보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [화면 속 화면](/help/implementation/variables/player-state/picture-in-picture.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**화면 속 화면 총 시간**&#x200B;보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [화면 속 화면](/help/implementation/variables/player-state/picture-in-picture.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

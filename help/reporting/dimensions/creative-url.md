@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**Creative URL**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Creative URL](/help/implementation/variables/ads/creative-url.md)을 참조하세요.*
+*이 페이지는&#x200B;**Creative URL**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Creative URL](/help/implementation/variables/ads/creative-url.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

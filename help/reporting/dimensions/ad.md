@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**광고**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [광고 ID](/help/implementation/variables/ads/ad-id.md)를 참조하십시오.*
+*이 페이지는&#x200B;**광고**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [광고 ID](/help/implementation/variables/ads/ad-id.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

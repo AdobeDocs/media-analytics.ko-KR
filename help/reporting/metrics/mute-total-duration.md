@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**음소거 총 기간**보고 지표에 적용됩니다. 이 변수를 수집하는 방법은 [음소거](/help/implementation/variables/player-state/mute.md)를 참조하십시오.*
+*이 페이지는&#x200B;**음소거 총 기간**&#x200B;보고 지표에 적용됩니다. 이 변수를 수집하는 방법은 [음소거](/help/implementation/variables/player-state/mute.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

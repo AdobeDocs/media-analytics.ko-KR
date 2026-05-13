@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**초점의 영향을 받는 스트림**보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [초점](/help/implementation/variables/player-state/in-focus.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**초점의 영향을 받는 스트림**&#x200B;보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [초점](/help/implementation/variables/player-state/in-focus.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

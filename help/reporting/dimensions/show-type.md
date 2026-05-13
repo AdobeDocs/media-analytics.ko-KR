@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**표시 유형**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [유형 표시](/help/implementation/variables/standard-metadata/show-type.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**표시 유형**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [유형 표시](/help/implementation/variables/standard-metadata/show-type.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**시작 시간**지표를 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.timeToStart` 컨텍스트 데이터 변수에서 쌍을 이루는 [시작 시간(차원)](/help/reporting/dimensions/time-to-start.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `mediaReporting.qoeDataDetails.timeToStart` 필드를 노출합니다. 이 변수를 수집하는 방법은 [시작 시간](/help/implementation/variables/quality/time-to-start.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**시작 시간**&#x200B;지표를 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.timeToStart` 컨텍스트 데이터 변수에서 쌍을 이루는 [시작 시간(차원)](/help/reporting/dimensions/time-to-start.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `mediaReporting.qoeDataDetails.timeToStart` 필드를 노출합니다. 이 변수를 수집하는 방법은 [시작 시간](/help/implementation/variables/quality/time-to-start.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

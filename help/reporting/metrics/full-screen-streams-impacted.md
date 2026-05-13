@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 전체 화면&#x200B;**보고 지표의 영향을 받는**스트림을 다룹니다. 이 변수를 수집하는 방법은 [전체 화면](/help/implementation/variables/player-state/full-screen.md)을 참조하세요.*
+*이 페이지에서는 전체 화면&#x200B;**보고 지표의 영향을 받는**&#x200B;스트림을 다룹니다. 이 변수를 수집하는 방법은 [전체 화면](/help/implementation/variables/player-state/full-screen.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
