@@ -5,10 +5,15 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 94%
+source-wordcount: 382
+ht-degree: 92%
 
 ---
 
@@ -19,7 +24,7 @@ ht-degree: 94%
 추적 활동을 특정 디바이스에서 허용할지 여부를 제어할 수 있습니다.
 
 * **모바일 앱 -** 미디어 확장 기능은 데이터 수집 시 개인 정보 설정을 준수합니다. 추적을 옵트아웃하려면 태그에서 [옵트아웃됨](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)으로 개인 정보를 설정하거나 [Mobile SDK에서 개인 정보 상태를 업데이트](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)해야 합니다.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보에 대한 자세한 내용은 [Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보에 대한 자세한 내용은 [Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
 * **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해 주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
 
   >[!NOTE]

@@ -5,9 +5,14 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/nWQiQkx66U5JL19U4yV8o4dvm0nLivpyKq29uNlIXTc
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: 472
 ht-degree: 79%
 
 ---
@@ -76,7 +81,7 @@ ht-degree: 79%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 메타데이터를 `MediaInfo` `trackLoad`에서 설정할 상수 |
 | `MEDIA_STANDARD_AD_METADATA` | 광고 메타데이터를 `EventData` `trackEvent`에서 설정할 상수 |
-| `MEDIA_RESUMED` | 비디오가 재개된 하트비트를 전송하기 위한 상수입니다. 이전에 중지된 콘텐츠의 비디오 추적을 재개하려면 `mediaTrackLoad`를 호출할 때 `mediaInfo` 개체에 대해 `MEDIA_RESUMED` 속성을 설정해야 합니다. (`MEDIA_RESUMED`은(는) `mediaTrackEvent` API를 사용하여 추적할 수 있는 이벤트가 아닙니다. 사용자가 시청을 중단했지만 현재 시청을 재개하려는 콘텐츠를 응용 프로그램에서 계속 추적하려는 경우 `MEDIA_RESUMED`을(를) true로 설정해야 합니다. <br/><br/>예를 들어, 사용자가 콘텐츠의 30%를 시청한 다음 앱을 닫는다고 가정합니다. 이 경우 세션이 종료됩니다. 나중에 동일한 사용자가 동일한 콘텐츠로 돌아갔을 때 애플리케이션에서 사용자가 중지된 동일한 지점에서 다시 시작할 수 있도록 허용하는 경우 `MEDIA_RESUMED` API를 호출하는 동안에는 애플리케이션에서 `mediaTrackLoad`를 &quot;참&quot;으로 설정해야 합니다. 결국 동일한 비디오 콘텐츠에 대해 서로 다른 두 개의 미디어 세션을 함께 연결할 수 있습니다. 구현 예제는 다음과 같습니다. <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>이렇게 하면 비디오에 대한 새 세션이 생성되지만, SDK가 이벤트 유형이 “이력서”인 하트비트 요청을 전송하게 됩니다. 이 이벤트 유형은 두 개의 서로 다른 미디어 세션을 함께 연결하여 보고하는 데 사용할 수 있습니다. |
+| `MEDIA_RESUMED` | 비디오가 재개된 하트비트를 전송하기 위한 상수입니다. 이전에 중지된 콘텐츠의 비디오 추적을 재개하려면 `mediaTrackLoad`를 호출할 때 `mediaInfo` 개체에 대해 `MEDIA_RESUMED` 속성을 설정해야 합니다. `MEDIA_RESUMED`은(는) `mediaTrackEvent` API를 사용하여 추적할 수 있는 이벤트가 아닙니다. 사용자가 시청을 중단했지만 현재 시청을 재개하려는 콘텐츠를 응용 프로그램에서 계속 추적하려는 경우 `MEDIA_RESUMED`을(를) true로 설정해야 합니다. <br/><br/>예를 들어, 사용자가 콘텐츠의 30%를 시청한 다음 앱을 닫는다고 가정합니다. 이 경우 세션이 종료됩니다. 나중에 동일한 사용자가 동일한 콘텐츠로 돌아갔을 때 애플리케이션에서 사용자가 중지된 동일한 지점에서 다시 시작할 수 있도록 허용하는 경우 `MEDIA_RESUMED` API를 호출하는 동안에는 애플리케이션에서 `mediaTrackLoad`를 &quot;참&quot;으로 설정해야 합니다. 결국 동일한 비디오 콘텐츠에 대해 서로 다른 두 개의 미디어 세션을 함께 연결할 수 있습니다. 구현 예제는 다음과 같습니다. <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>이렇게 하면 비디오에 대한 새 세션이 생성되지만, SDK가 이벤트 유형이 “이력서”인 하트비트 요청을 전송하게 됩니다. 이 이벤트 유형은 두 개의 서로 다른 미디어 세션을 함께 연결하여 보고하는 데 사용할 수 있습니다. |
 
 ### 콘텐츠 유형 상수
 

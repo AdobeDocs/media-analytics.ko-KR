@@ -4,23 +4,29 @@ description: Media SDK에서 iOS용 Launch로 마이그레이션하는 방법에
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/drdnQd83UXJkMKj-isUKPeIHe9xGetwY31HzHf37IEo
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 97%
+source-wordcount: 429
+ht-degree: 60%
 
 ---
 
 # 독립형 Media SDK에서 Adobe Launch로 마이그레이션 - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko)를 참조하십시오.
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko-KR)를 참조하십시오.
 
 ## 구성
 
 ### 독립형 Media SDK
 
-독립형 Media SDK에서는 앱에서 추적 구성을 지정하고 추적기를 만들 때 이를 SDK에 전달합니다.
+독립형 Media SDK에서는 앱에서 추적 구성을 구성합니다.
+추적기를 만들 때 SDK에 전달합니다.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
@@ -53,7 +59,9 @@ Media 확장은 추적을 위해 구성된 매개 변수를 사용합니다.
 
 ### 독립형 Media SDK
 
-독립형 Media SDK에서는 `ADBMediaHeartbeatConfig` 개체를 수동으로 만들고 추적 매개 변수를 구성합니다. `getQoSObject()` 및 `getCurrentPlaybackTime()functions.`를 노출하는 위임 인터페이스 구현
+독립형 Media SDK에서 `ADBMediaHeartbeatConfig` 개체를 수동으로 만듭니다
+추적 매개 변수를 구성합니다. 다음을 노출하는 위임 인터페이스 구현
+`getQoSObject()` 및 `getCurrentPlaybackTime()functions.`
 
 추적할 MediaHeartbeat 인스턴스를 만듭니다.
 
@@ -127,16 +135,23 @@ Media 확장이 등록되면 다음 API를 사용하여 추적기를 만들 수 
 
 ### 독립형 Media SDK
 
-독립형 Media SDK에서는 추적기를 만드는 동안 `ADBMediaHeartbeartDelegate` 프로토콜을 구현하는 위임 개체가 전달됩니다.
-이 구현은 추적기가 `getQoSObject()` 및 `getCurrentPlaybackTime()` 인터페이스 메서드를 호출할 때마다 최신 QoE 플레이헤드를 반환해야 합니다.
+독립형 Media SDK에서 다음을 구현하는 위임 개체
+추적기를 만드는 동안 `ADBMediaHeartbeartDelegate` 프로토콜이 전달되었습니다.
+구현은 다음과 같을 때마다 최신 QoE 및 플레이헤드를 반환해야 합니다.
+추적기가 `getQoSObject()` 및 `getCurrentPlaybackTime()` 인터페이스를 호출합니다.
+메서드를 사용합니다.
 
 ### Launch 확장
 
-이 구현은 추적기에 의해 노출된 `updateCurrentPlayhead` 메서드를 호출하여 현재 플레이어 플레이헤드를 업데이트해야 합니다. 정확한 추적을 위해 이 메서드를 초당 한 번 이상 호출해야 합니다.
+구현은 를 호출하여 현재 플레이어 플레이헤드를 업데이트해야 합니다.
+추적기에 `updateCurrentPlayhead` 메서드가 노출되었습니다. 정확한 추적을 위해
+이 메서드는 초당 한 번 이상 호출해야 합니다.
 
 [Media API 참조 - 현재 플레이헤드 업데이트](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-이 구현은 추적기에 의해 노출된 `updateQoEObject` 메서드를 호출하여 QoE 정보를 업데이트해야 합니다. 품질 지표가 변경될 때마다 이 메서드를 호출해야 합니다.
+구현은 를 호출하여 QoE 정보를 업데이트해야 합니다.
+추적기에 `updateQoEObject` 메서드가 노출되었습니다. 이 메서드를 호출해야 합니다.
+품질 지표가 변경될 때마다.
 
 [Media API 참조 - QoE 개체 업데이트](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 

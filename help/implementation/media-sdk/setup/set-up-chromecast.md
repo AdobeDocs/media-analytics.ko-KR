@@ -5,9 +5,14 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/O7cW-LPndHjkiqZm1b14EHSi0q4cRmG1U3tvFRMPd6Y
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: 578
 ht-degree: 97%
 
 ---
@@ -18,7 +23,7 @@ ht-degree: 97%
 
 ## 사전 요구 사항
 
-* **유효한 구성 매개 변수 얻기**
+* **유효한 구성 매개변수 얻기**
 
   이러한 매개 변수는 미디어 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 * **미디어 플레이어에서 다음 API 포함**
@@ -26,7 +31,7 @@ ht-degree: 97%
    * *플레이어 이벤트에 가입할 API* - Media SDK를 사용하려면 이벤트가 플레이어에서 발생할 때 단순 API 세트를 호출해야 합니다.
    * *플레이어 정보를 제공하는 API* - 이 정보에는 미디어 이름 및 재생 헤드 위치와 같은 세부 정보가 포함됩니다.
 
-Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ko)에서 알아보십시오.
+Adobe Mobile Services는 Adobe Marketing Cloud에서 모바일 애플리케이션에 대한 모바일 마케팅 기능을 종합하여 제공하는 신규 UI를 제공합니다. 처음에, Mobile Service는 Adobe Analytics와 Adobe Target 솔루션의 앱 분석 및 타깃팅 기능을 매끄럽게 통합합니다. 자세한 내용은 [Adobe Mobile Services 문서](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)에서 알아보십시오.
 
 Experience Cloud 솔루션용 Chromecast v3.x의 Adobe 모바일 라이브러리를 사용하여 JavaScript로 작성된 Chromecast 애플리케이션을 측정하고, 고객 관리를 통해 대상자 데이터를 활용 및 수집하고, 비디오 참여를 측정할 수 있습니다.
 
@@ -153,4 +158,4 @@ Experience Cloud 솔루션용 Chromecast v3.x의 Adobe 모바일 라이브러리
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ko) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

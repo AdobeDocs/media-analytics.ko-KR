@@ -3,11 +3,17 @@ title: 기본 보고서 개요
 description: 웹 사이트에서 미디어를 추적하는 데 사용되는 보고서 유형 및 지표에 대해 알아봅니다. 미디어 코어 모듈과 함께 사용할 수 있는 대시보드 스타일 보고서를 살펴보십시오.
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/d-9u-isbIO6PQCPrZtTt-jS2L3Q5ukETFvQubaCOpko
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: 355
 ht-degree: 92%
 
 ---

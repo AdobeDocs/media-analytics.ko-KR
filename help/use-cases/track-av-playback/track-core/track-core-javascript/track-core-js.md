@@ -5,10 +5,16 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/efxauhuL5aOcMQhSuayeodzUOtgfppMgZTAiwTiHsEE
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: 693
+ht-degree: 99%
 
 ---
 
@@ -73,8 +79,6 @@ ht-degree: 100%
      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
       * 미디어 메타데이터 키 API 참조 - [표준 메타데이터 키 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-        사용 가능한 메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](/help/implementation/variables/audio-video-parameters.md)에서 참조하십시오.
 
    * **사용자 지정 메타데이터**
 

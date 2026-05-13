@@ -5,10 +5,16 @@ uuid: null
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/XqlNBPWJBTXi3Nqukt4HhAOU03wVI4Y3aeazc-w-sjw
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 38%
+source-wordcount: 362
+ht-degree: 52%
 
 ---
 
@@ -34,8 +40,8 @@ Customer Journey Analytics 스트리밍 미디어 컬렉션 추가 기능 또는
 | 제품 | 설명서 |
 |:-----------------------:|----------------|
 | **Adobe Analytics** | *[Adobe Analytics 구현 안내서](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)<br> *[Adobe Analytics 구성 요소 안내서](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=ko)<br> *[Adobe Analytics 도구 안내서](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=ko)<br> *[Adobe Analytics 튜토리얼](https://experienceleague.adobe.com/docs/analytics.html?lang=ko#tutorials) <br> *[Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics를 위한 모바일 구현](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
-| **태그** | *[Adobe Experience Platform 태그 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko) |
+| **태그** | *[Adobe Experience Platform 태그 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
 
 ## Adobe 엔터프라이즈 튜토리얼 {#adobe-tutorials}
 
-[Adobe 엔터프라이즈 튜토리얼](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ko)을 통해 비즈니스 요구 사항에 맞는 Adobe 엔터프라이즈 애플리케이션을 활용하는 방법을 살펴볼 수 있습니다. Adobe Experience Cloud, Adobe Experience Platform 및 Adobe Analytics에 대한 튜토리얼 및 교육자료를 찾을 수 있습니다.
+[Adobe 엔터프라이즈 튜토리얼](https://experienceleague.adobe.com/docs/home-tutorials.html)을 통해 비즈니스 요구 사항에 맞는 Adobe 엔터프라이즈 애플리케이션을 활용하는 방법을 살펴볼 수 있습니다. Adobe Experience Cloud, Adobe Experience Platform 및 Adobe Analytics에 대한 튜토리얼 및 교육자료를 찾을 수 있습니다.

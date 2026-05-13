@@ -3,18 +3,23 @@ title: 미디어 스트림 세그먼트 설명
 description: 미디어 스트림 유형에 대한 세그먼트, 설명 및 규칙을 포함하여 미디어 스트림 유형과 연관된 보고 세그먼트에 대해 알아봅니다.
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
-feature: "Streaming Media, Segmentation"
+feature: Streaming Media, Segmentation
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/7RwJQtw-jHlMMV1yc80lUyEYIwIxR-3oh7vN04cPcRg
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 89%
+source-wordcount: 209
+ht-degree: 90%
 
 ---
 
 # 미디어 세그먼트{#segments}
 
-세그먼트를 사용하여 특성 또는 웹 사이트 상호 작용에 따라 방문자 하위 집합을 식별할 수 있습니다. 스트림 미디어 세그먼트를 사용하면 오디오, 라이브 또는 팟캐스트 스트림과 같은 방문자 스트림 유형을 식별할 수 있습니다. Adobe Analytics 세그먼트에 대한 정보는 Adobe Analytics 구성 요소 안내서에서 [세그먼트 및 컨테이너 정보](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ko)를 참조하십시오.
+세그먼트를 사용하여 특성 또는 웹 사이트 상호 작용에 따라 방문자 하위 집합을 식별할 수 있습니다. 스트림 미디어 세그먼트를 사용하면 오디오, 라이브 또는 팟캐스트 스트림과 같은 방문자 스트림 유형을 식별할 수 있습니다. Adobe Analytics 세그먼트에 대한 정보는 Adobe Analytics 구성 요소 안내서에서 [세그먼트 및 컨테이너 정보](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en)를 참조하십시오.
 
 >[!NOTE]
 >

@@ -5,10 +5,15 @@ uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yaQY00G4Tz-rR-Vs--nQXJ05ruXyD3oUwP2BPyocYDM
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: 1168
+ht-degree: 97%
 
 ---
 
@@ -142,14 +147,14 @@ AdobeMobile SDK에 SceneGraph 지원을 추가하기 위해 Adobe SDK와 `adbmob
 <td> 유효하지 않습니다 </td>
 <td> AdobeMobileSDK에서 실행된 모든 읽기 전용 API는 이 필드에 대한 응답을 반환합니다. 응답 개체를 수신하려면 이 필드에 대한 업데이트를 수신할 콜백을 등록합니다. 다음은 응답 개체에 대한 형식입니다.  
 <pre>
-response = {
+응답 = {
   "apiName" : &lt;SceneGraphConstants.
-               API_NAME&gt; 
+               API_NAME&gt;
   "returnValue : &lt;API_RESPONSE&gt;
 }</pre>
 이 응답 개체의 인스턴스는 API 참조 가이드에 따라 값을 반환해야 하는 AdobeMobileSDK의 API 호출에 대해 전송됩니다. 예를 들어 visitorMarketingCloudID()에 대한 API 호출은 다음 응답 개체를 반환합니다.
 <pre>
-response = {
+응답 = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
@@ -158,11 +163,11 @@ response = {
 </pre>
 또는 응답 데이터도 올바르지 않을 수 있습니다.
 <pre>
-response = {  
+응답 = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
-  "returnValue : invalid
+  "returnValue : 잘못됨
 }
 </pre>
 </td>
@@ -191,7 +196,7 @@ API 서명: `ADBMobile().sgConstants()`
 
 |  기능  | 상수 이름 | 설명   |
 |---|---|---|
-| 버전 매기기 | `version` | AdobeMobileLibrary 버전 정보를 검색할 상수 |
+| 버전 관리 | `version` | AdobeMobileLibrary 버전 정보를 검색할 상수 |
 | 개인 정보/옵트아웃 | `PRIVACY_STATUS_OPT_IN` | 개인 정보 상태 옵트인에 대한 상수 |
 |   | `PRIVACY_STATUS_OPT_OUT` | 개인 정보 상태 옵트아웃에 대한 상수 |
 | MediaHeartbeat 상수 | 이 페이지의 상수<br/><br/>[(미디어 하트비트 메서드)를 참조하십시오.](/help/use-cases/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat API에서 이러한 상수 사용 |

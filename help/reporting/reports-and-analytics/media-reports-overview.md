@@ -3,18 +3,23 @@ title: 미디어 개요
 description: 미디어 개요 대시보드를 사용하여 용량 측정을 표시합니다. 미디어 성능을 빠르게 모니터링하는 방법에 대해 알아봅니다.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+TQID: https://experienceleague.adobe.com/engzFFk1A-g6oRqo-MnlNfEmVGUmR316Po152Wajm8c
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: 109
+ht-degree: 69%
 
 ---
 
 # 미디어 개요{#media-overview}
 
-미디어 개요 대시보드는 사이트에서 미디어를 모니터링할 수 있도록 디자인되었습니다. 미디어 개요 화면은 미디어의 성과가 예상대로인지 신속히 모니터링할 수 있도록 몇 가지 집계 측정을 표시합니다. 각 미디어 항목에 대해 이들 지표를 빠르게 볼 수 있도록 그래프에서 광고 시작 옆에 콘텐츠 시작이 표시됩니다.
+미디어 개요 대시보드는 사이트 전체에서 미디어를 모니터링할 수 있도록 설계되었습니다. 미디어 개요 표시에는 몇 가지 집계 측정값이 표시되므로 미디어가 예상대로 작동하는지 빠르게 모니터링할 수 있습니다. 각 미디어 항목에 대해 이들 지표를 빠르게 볼 수 있도록 그래프에서 광고 시작 옆에 콘텐츠 시작이 표시됩니다.
 
 ![](assets/media_overview.png)
 
