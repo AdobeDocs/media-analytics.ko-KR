@@ -5,10 +5,18 @@ exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/QdUkyWt6cTcdmQXpj6Qe6-s3aYkGfro-G7DYegOVKvA
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 287
@@ -47,4 +55,4 @@ ht-degree: 96%
 
 사용자 지정 상태를 만드는 기능을 사용하면 재생 세션 중에 사용자 지정 동작을 캡처하고 사용자 지정 메타데이터를 업데이트할 수 있습니다.
 
-사용자 지정 상태 만들기에 대한 자세한 내용은 [미디어 API 참조 안내서`createStateObject` ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)를 참조하십시오.
+사용자 지정 상태 만들기에 대한 자세한 내용은 [미디어 API 참조 안내서`createStateObject` &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)를 참조하십시오.
