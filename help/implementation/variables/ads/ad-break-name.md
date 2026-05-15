@@ -24,7 +24,7 @@ ht-degree: 11%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.podFriendlyName` |
-| **XDM 컬렉션 필드** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **필수** | 예(모바일 SDK), 아니요(Edge, Media Collection API) |
 | **전송 시점** | [광고 브레이크 시작](/help/implementation/events/ads/ad-break-start.md), 광고 닫기 |

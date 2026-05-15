@@ -29,7 +29,7 @@ ht-degree: 9%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.contentType` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.contentType` |
 | **필수** | 예 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
