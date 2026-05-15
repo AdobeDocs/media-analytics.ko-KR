@@ -3,10 +3,10 @@ title: 세션 시작
 description: 미디어 세션의 시작 신호를 보내고 모든 후속 이벤트에 필요한 세션 ID를 얻습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 12%
 # 세션 시작
 
 세션 시작 이벤트는 미디어 추적 세션을 엽니다. 재생에 대해 전송된 첫 번째 이벤트여야 합니다. 응답은 동일한 세션에 대한 모든 후속 이벤트에 포함되어야 하는 세션 ID를 반환합니다.
+
+**10분 동안 이벤트가 수신되지 않았거나**, **30분 동안 플레이헤드 이동이 없으면** 세션이 자동으로 만료됩니다. 세션이 만료되면 세션 시작을 다시 호출하여 새 세션 ID를 얻어야 합니다.
 
 * **필수 구성 요소**: 없음, 항상 첫 번째 이벤트
 * **관련 지표**: [미디어 시작](/help/reporting/metrics/media-starts.md)

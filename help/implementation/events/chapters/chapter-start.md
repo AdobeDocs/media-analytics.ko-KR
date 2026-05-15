@@ -3,17 +3,17 @@ title: 챕터 시작
 description: 콘텐츠 내의 챕터 세그먼트 시작 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 17%
+source-wordcount: '149'
+ht-degree: 15%
 
 ---
 
 
 # 챕터 시작
 
-챕터 시작 이벤트는 콘텐츠 내의 챕터 시작 신호를 보냅니다. 챕터 추적은 선택 사항이며 코어 미디어 추적에는 필요하지 않습니다.
+챕터 시작 이벤트는 콘텐츠 내의 챕터 시작 신호를 보냅니다. 챕터 추적은 선택 사항이며 코어 미디어 추적에는 필요하지 않습니다. 챕터를 겹칠 수 없습니다. 새 챕터를 시작하기 전에 [챕터 완료](chapter-complete.md) 또는 [챕터 건너뛰기](chapter-skip.md)를 보내 현재 챕터를 닫으십시오.
 
 * **필수 구성 요소**: [세션 시작](../session/session-start.md)
 * **관련 지표**: [챕터 시작](/help/reporting/metrics/chapter-starts.md)

@@ -3,17 +3,17 @@ title: Ping
 description: 하트비트를 전송하여 미디어 세션을 유지하고 일정한 간격으로 재생 진행률을 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 6%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
 
 # Ping
 
-ping 이벤트는 세션을 활성 상태로 유지하고 재생 진행률을 추적하는 하트비트입니다. 재생 도중 타이머로 보냅니다.
+ping 이벤트는 세션을 활성 상태로 유지하고 재생 진행률을 추적하는 하트비트입니다. 재생 도중 타이머로 보냅니다. Mobile SDK에서는 Ping이 자동으로 전송됩니다. 다른 모든 플랫폼에서는 지정된 간격에 따라 수동으로 전송해야 합니다.
 
 * **기본 컨텐츠**: 재생이 시작된 후 먼저 10초 후에 ping하고, 그 후에는 10초마다 ping합니다.
 * **광고 콘텐츠**: 광고 추적 중 1초마다
