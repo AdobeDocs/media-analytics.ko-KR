@@ -1,18 +1,17 @@
 ---
-source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
-workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 61%
-
----
-﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
+source-git-commit: 84574afd9d39e0643e7f12f44e8729e947c2ec1b
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 59%
+
 ---
+
 
 # 스트리밍 미디어용 서비스 안내서 {#using}
 
@@ -33,6 +32,32 @@ sub-product: media analytics
          + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
+   + 이벤트 {#events}
+      + [이벤트 개요](implementation/events/overview.md)
+      + 세션 {#session}
+         + [세션 시작](implementation/events/session/session-start.md)
+         + [세션 완료](implementation/events/session/session-complete.md)
+         + [세션 종료](implementation/events/session/session-end.md)
+      + 재생 {#playback}
+         + [재생](implementation/events/playback/play.md)
+         + [일시 중지 시작](implementation/events/playback/pause-start.md)
+         + [버퍼 시작](implementation/events/playback/buffer-start.md)
+         + [비트율 변경](implementation/events/playback/bitrate-change.md)
+         + [Ping](implementation/events/playback/ping.md)
+      + 광고 {#ads}
+         + [광고 브레이크 시작](implementation/events/ads/ad-break-start.md)
+         + [광고 시작](implementation/events/ads/ad-start.md)
+         + [광고 완료](implementation/events/ads/ad-complete.md)
+         + [광고 건너뛰기](implementation/events/ads/ad-skip.md)
+         + [광고 브레이크 완료](implementation/events/ads/ad-break-complete.md)
+      + 챕터 {#chapters}
+         + [챕터 시작](implementation/events/chapters/chapter-start.md)
+         + [챕터 완료](implementation/events/chapters/chapter-complete.md)
+         + [챕터 건너뛰기](implementation/events/chapters/chapter-skip.md)
+      + 플레이어 상태 {#player-state}
+         + [상태 시작](implementation/events/player-state/state-start.md)
+         + [상태 끝](implementation/events/player-state/state-end.md)
+      + [오류](implementation/events/error.md)
    + 변수 {#variables}
       + Core {#core}
          + [콘텐츠 채널](implementation/variables/core/content-channel.md)
@@ -121,7 +146,6 @@ sub-product: media analytics
          + [세션 요청](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
          + [이벤트 요청](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [요청 매개변수](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-         + [이벤트 유형 및 설명](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
          + API 구현 {#mc-api-impl}
             + [플레이어에서 HTTP 요청 유형 설정](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [세션 ID 가져오기](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
@@ -239,6 +263,8 @@ sub-product: media analytics
       + [화면 속 화면 카운트](reporting/metrics/picture-in-picture-count.md)
       + [화면 속 화면 총 시간](reporting/metrics/picture-in-picture-total-duration.md)
       + [진행률 마커](reporting/metrics/progress-markers.md)
+      + [중지 이벤트](reporting/metrics/stall-events.md)
+      + [영향을 받는 스트림 중단](reporting/metrics/stall-impacted-streams.md)
       + [자막의 영향을 받는 스트림](reporting/metrics/closed-captioning-streams-impacted.md)
       + [전체 화면의 영향을 받은 스트림](reporting/metrics/full-screen-streams-impacted.md)
       + [초점의 영향을 받는 스트림](reporting/metrics/in-focus-streams-impacted.md)
@@ -247,6 +273,7 @@ sub-product: media analytics
       + [시작 시간(지표)](reporting/metrics/time-to-start.md)
       + [총 버퍼 지속 시간(지표)](reporting/metrics/total-buffer-duration.md)
       + [총 일시 중단 기간](reporting/metrics/total-pause-duration.md)
+      + [총 중단 기간](reporting/metrics/total-stalling-duration.md)
       + [재생된 고유 시간](reporting/metrics/unique-time-played.md)
    + [계산된 지표](reporting/calculated-metrics.md)
    + [미디어 보고서 지원](reporting/media-reports-enable.md)

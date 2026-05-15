@@ -3,10 +3,10 @@ title: 컨텐츠 세그먼트
 description: 세션 중에 본 플레이헤드 범위를 분 단위로 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 5%
+source-wordcount: '200'
+ht-degree: 6%
 
 ---
 
@@ -22,8 +22,9 @@ ht-degree: 5%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.segment`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 데이터 피드 | `videosegment, post_videosegment` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드 | `videosegment`, `post_videosegment` |
+| Audience Manager | `c_contextdata.a.media.segment` |
 
 >[!IMPORTANT]
 >

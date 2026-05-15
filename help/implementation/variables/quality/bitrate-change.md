@@ -3,7 +3,7 @@ title: 비트율 변경
 description: 플레이어가 다른 비트율로 전환할 때마다 비트율 변경 이벤트를 실행합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ ht-degree: 11%
 | --- | --- |
 | **컨텍스트 데이터 변수** | (없음 — 백엔드에서 계산) |
 | **XDM 이벤트 유형** | `media.bitrateChange` |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **필수** | 아니요 |
-| **전송 시점** | 플레이어가 비트율을 전환할 때마다 |
+| **전송 시점** | [비트율 변경](/help/implementation/events/playback/bitrate-change.md) |
 
 ## Web SDK
 

@@ -3,10 +3,10 @@ title: 광고 창
 description: 자동 생성된 pod ID로 키로 표시되는 각 고유한 광고 브레이크를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 ## 이 차원이 채워지는 방법
 
-`media.adBreakStart`이(가) 실행될 때 SDK에서 광고 pod ID를 자동으로 생성합니다. 직접 API 구현은 브레이크 색인 및 시작 시간에서 이를 구성하거나 사용자 지정 pod ID를 제공합니다.
+광고 Pod ID는 [광고 브레이크 시작](/help/implementation/events/ads/ad-break-start.md) 이벤트가 실행될 때 SDK에서 자동으로 생성됩니다. 직접 API 구현은 브레이크 색인 및 시작 시간에서 이를 구성하거나 사용자 지정 pod ID를 제공합니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 광고]](/help/reporting/media-reports-enable.md)를 사용하도록 설정한 경우 컨텍스트 데이터 `a.media.ad.pod`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| 데이터 피드 | `videoadpod, post_videoadpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| 데이터 피드 | `videoadpod`, `post_videoadpod` |
+| Audience Manager | 해당 사항 없음 |
 
 ## 차원 항목
 

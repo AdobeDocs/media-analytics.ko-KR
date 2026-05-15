@@ -3,10 +3,10 @@ title: 표시
 description: 시리즈의 일부인 비디오 컨텐츠에 대한 프로그램 또는 시리즈 이름을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 7%
+source-wordcount: '156'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**표시**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [표시](/help/implementation/variables/standard-metadata/show.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**표시**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [표시](/help/implementation/variables/standard-metadata/show.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.show`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 데이터 피드 | `videoshow, post_videoshow` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드 | `videoshow`, `post_videoshow` |
+| Audience Manager | `c_contextdata.a.media.show` |
 
 ## 차원 항목
 

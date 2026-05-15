@@ -3,10 +3,10 @@ title: 자산 ID
 description: EIDR 또는 TMS/Gracenote ID와 같은 미디어 에셋에 대한 안정적인 업계 식별자인 에셋 ID를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 13%
+source-wordcount: '239'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**자산 ID**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [자산 ID](/help/reporting/dimensions/asset-id.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**자산 ID**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [자산 ID](/help/reporting/dimensions/asset-id.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,9 +28,10 @@ ht-degree: 13%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.asset` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.asset` |
 | **필수** | 아니요 |
-| **전송 시점** | 세션 시작, 세션 닫기 |
+| **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
 ## Web SDK
 

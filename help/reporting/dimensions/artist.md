@@ -3,10 +3,10 @@ title: 아티스트
 description: 오디오 콘텐츠에 대한 공연 아티스트를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 9%
+source-wordcount: '128'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**아티스트**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [아티스트](/help/implementation/variables/standard-metadata/artist.md)를 참조하세요.*
+*이 페이지는&#x200B;**아티스트**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [아티스트](/help/implementation/variables/standard-metadata/artist.md)를 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 9%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 오디오 메타데이터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.artist`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videoaudioartist` |
+| Audience Manager | `c_contextdata.a.media.artist` |
 
 ## 차원 항목
 

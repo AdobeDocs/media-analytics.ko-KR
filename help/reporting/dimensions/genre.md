@@ -3,10 +3,10 @@ title: 장르
 description: 컨텐츠 장르를 보고합니다. 다중 장르 컨텐츠는 라인 항목 간에 분할되며, 각 항목은 동일한 지표 가중치를 받습니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 6%
+source-wordcount: '179'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**장르**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [장르](/help/implementation/variables/standard-metadata/genre.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**장르**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [장르](/help/implementation/variables/standard-metadata/genre.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 6%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.genre`에서 자동으로 수집됩니다(목록 변수로 저장됨). |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) 또는 [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting)&#x200B;(레거시) |
-| 데이터 피드 | `videogenre, post_videogenre` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) 또는 [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting)&#x200B;(레거시) |
+| 데이터 피드 | `videogenre`, `post_videogenre` |
+| Audience Manager | `c_contextdata.a.media.genre` |
 
 ## 차원 항목
 

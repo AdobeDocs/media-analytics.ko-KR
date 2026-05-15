@@ -3,9 +3,9 @@ title: 초당 프레임
 description: 백엔드에 품질 보고를 위한 프레임 속도 컨텍스트가 있도록 QoE 개체에 대한 현재 프레임 속도를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ ht-degree: 12%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | 없음(Adobe Analytics에서 프레임 속도에 대해 예약된 컨텍스트 데이터 키를 할당하지 않음) |
-| **XDM 컬렉션 필드** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager 트레이트** | 해당 사항 없음 |
 | **필수** | 아니요 |
-| **전송 시점** | 품질 이벤트, 세션 닫기 |
+| **전송 시점** | 품질 이벤트([비트율 변경](/help/implementation/events/playback/bitrate-change.md), [버퍼 시작](/help/implementation/events/playback/buffer-start.md), [오류](/help/implementation/events/error.md)), 세션 닫기 |
 
 ## Web SDK
 

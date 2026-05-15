@@ -3,9 +3,9 @@ title: 음소거
 description: 뷰어가 오디오를 음소거하고 음소거를 해제하는 시점을 추적하여 백엔드가 음소거 참여를 보고할 수 있도록 합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '264'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**음소거**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [음소거의 영향을 받은 스트림](/help/reporting/metrics/mute-streams-impacted.md), [음소거 카운트](/help/reporting/metrics/mute-count.md) 및 [음소거 총 기간](/help/reporting/metrics/mute-total-duration.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**음소거**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [음소거의 영향을 받은 스트림](/help/reporting/metrics/mute-streams-impacted.md), [음소거 카운트](/help/reporting/metrics/mute-count.md) 및 [음소거 총 기간](/help/reporting/metrics/mute-total-duration.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM 컬렉션 필드** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "mute"`이(가) 있는 항목) |
+| **XDM 컬렉션 필드** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "mute"`이(가) 있는 항목) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **필수** | 아니요 |
-| **전송 시점** | 상태 시작, 상태 종료 |
+| **전송 시점** | [상태 시작](/help/implementation/events/player-state/state-start.md), [상태 끝](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

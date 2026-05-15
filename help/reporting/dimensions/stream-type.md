@@ -3,10 +3,10 @@ title: 스트림 유형
 description: 각 미디어 세션이 오디오 또는 비디오 컨텐츠인지 캡처합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 5%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**스트림 유형**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [스트림 형식](/help/implementation/variables/core/stream-type.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**스트림 유형**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [스트림 형식](/help/implementation/variables/core/stream-type.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 5%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.streamType`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videostreamtype` |
+| Audience Manager | `c_contextdata.a.media.streamType` |
 
 >[!IMPORTANT]
 >

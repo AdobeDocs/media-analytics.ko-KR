@@ -3,10 +3,10 @@ title: 작성자
 description: 콘텐츠 작성자를 보고합니다. 오디오북에 주로 사용됩니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 10%
+source-wordcount: '119'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**작성자**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [작성자](/help/implementation/variables/standard-metadata/author.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**작성자**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [작성자](/help/implementation/variables/standard-metadata/author.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 10%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 오디오 메타데이터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.author`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.author`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videoaudioauthor` |
+| Audience Manager | `c_contextdata.a.media.author` |
 
 ## 차원 항목
 

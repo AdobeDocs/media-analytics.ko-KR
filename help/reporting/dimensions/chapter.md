@@ -3,10 +3,10 @@ title: 챕터
 description: 자동 생성된 챕터 ID로 처리된 각 고유한 챕터를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 6%
 
 ## 이 차원이 채워지는 방법
 
-`media.chapterStart`이(가) 실행될 때 챕터 ID가 자동으로 생성됩니다. 값은 직접 설정되지 않습니다. 챕터 위치, 오프셋 및 콘텐츠 ID에서 파생됩니다.
+[챕터 시작](/help/implementation/events/chapters/chapter-start.md) 이벤트가 실행되면 챕터 ID가 자동으로 생성됩니다. 값은 직접 설정되지 않습니다. 챕터 위치, 오프셋 및 콘텐츠 ID에서 파생됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 챕터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.chapter.name`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| 데이터 피드 | `videochapter, post_videochapter` |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| 데이터 피드 | `videochapter`, `post_videochapter` |
+| Audience Manager | 해당 사항 없음 |
 
 ## 차원 항목
 

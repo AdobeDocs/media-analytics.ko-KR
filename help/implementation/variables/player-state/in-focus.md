@@ -3,10 +3,10 @@ title: 포커스
 description: 백엔드가 포커스 참여를 보고할 수 있도록 플레이어가 뷰어의 화면에 포커스가 있는 시기를 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 9%
+source-wordcount: '290'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**포커스 있음**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [초점의 영향을 받은 스트림](/help/reporting/metrics/in-focus-streams-impacted.md), [초점 카운트](/help/reporting/metrics/in-focus-count.md) 및 [초점 총 기간](/help/reporting/metrics/in-focus-total-duration.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**포커스 있음**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [초점의 영향을 받은 스트림](/help/reporting/metrics/in-focus-streams-impacted.md), [초점 카운트](/help/reporting/metrics/in-focus-count.md) 및 [초점 총 기간](/help/reporting/metrics/in-focus-total-duration.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 9%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM 컬렉션 필드** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "inFocus"`이(가) 있는 항목) |
+| **XDM 컬렉션 필드** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "inFocus"`이(가) 있는 항목) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **필수** | 아니요 |
-| **전송 시점** | 상태 시작, 상태 종료 |
+| **전송 시점** | [상태 시작](/help/implementation/events/player-state/state-start.md), [상태 끝](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

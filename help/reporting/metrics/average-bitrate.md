@@ -3,10 +3,10 @@ title: 평균 비트율(지표)
 description: 각 세션의 원시 가중 평균 비트율을 kbps 단위로 보고합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 7%
+source-wordcount: '175'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 세션당 원시 가중 평균 비트 전송률을 보고하는&#x200B;**평균 비트 전송률**&#x200B;이벤트 지표를 다룹니다. 버킷 차원에 대해서는 [평균 비트율(차원)](/help/reporting/dimensions/average-bitrate.md)을 참조하세요. 이 변수를 수집하는 방법은 [Bitrate](/help/implementation/variables/quality/bitrate.md)을(를) 참조하십시오.*
+*이 페이지에서는 세션당 원시 가중 평균 비트 전송률을 보고하는&#x200B;**평균 비트 전송률**이벤트 지표를 다룹니다. 버킷 차원에 대해서는 [평균 비트율(차원)](/help/reporting/dimensions/average-bitrate.md)을 참조하세요. 이 변수를 수집하는 방법은 [Bitrate](/help/implementation/variables/quality/bitrate.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,5 +28,6 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 품질]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.qoe.bitrateAverage`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverage`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverage`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateAverage` |

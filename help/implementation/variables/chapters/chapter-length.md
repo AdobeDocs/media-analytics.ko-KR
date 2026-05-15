@@ -3,10 +3,10 @@ title: 챕터 길이
 description: 각 챕터의 길이(초)를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 14%
+source-wordcount: '179'
+ht-degree: 13%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**챕터 길이**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [챕터 길이](/help/reporting/dimensions/chapter-length.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**챕터 길이**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [챕터 길이](/help/reporting/dimensions/chapter-length.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 14%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.chapter.length` |
-| **XDM 컬렉션 필드** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.chapter.length` |
 | **필수** | 아니요(모바일 SDK), 예(Edge, Media Collection API) |
-| **전송 시점** | 챕터 시작, 챕터 닫기 |
+| **전송 시점** | [챕터 시작](/help/implementation/events/chapters/chapter-start.md), 챕터 닫기 |
 
 ## Web SDK
 

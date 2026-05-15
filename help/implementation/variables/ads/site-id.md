@@ -3,9 +3,9 @@ title: 사이트 ID
 description: 광고 배치 사이트별로 구분을 활성화하려면 각 광고에 대한 광고 사이트 ID를 설정하십시오.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '182'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**사이트 ID**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [사이트 ID](/help/reporting/dimensions/site-id.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**사이트 ID**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [사이트 ID](/help/reporting/dimensions/site-id.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 17%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.site` |
-| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.ad.site` |
 | **필수** | 아니요 |
-| **전송 시점** | 광고 시작, 광고 종료 |
+| **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |
 
 ## Web SDK
 

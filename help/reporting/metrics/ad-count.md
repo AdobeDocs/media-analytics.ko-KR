@@ -3,10 +3,10 @@ title: 광고 카운트
 description: 세션 중에 시작된 광고의 수를 보고합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 7%
+source-wordcount: '174'
+ht-degree: 9%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 7%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드는 세션 중에 받은 `media.adStart` 이벤트마다 `mediaReporting.sessionDetails.adCount`을(를) 증가시킵니다. 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 세션 중에 받은 [광고 시작](/help/implementation/events/ads/ad-start.md) 이벤트마다 `mediaReporting.sessionDetails.adCount`을(를) 증가시킵니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | `a.media.adCount`을(를) 사용자 지정 이벤트에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.adCount`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`(처리 규칙이 `a.media.adCount`을(를) 매핑하는 사용자 지정 이벤트. [`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Adobe Analytics | `a.media.adCount`을(를) 사용자 지정 이벤트에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.adCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`(처리 규칙이 `a.media.adCount`을(를) 매핑하는 사용자 지정 이벤트. [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Audience Manager | 해당 사항 없음 |

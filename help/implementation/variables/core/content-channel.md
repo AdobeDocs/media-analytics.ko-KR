@@ -3,9 +3,9 @@ title: 콘텐츠 채널
 description: 콘텐츠가 재생되는 배포 스테이션, 네트워크 또는 속성을 식별하도록 채널을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '214'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 채널**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 채널](/help/reporting/dimensions/content-channel.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**콘텐츠 채널**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 채널](/help/reporting/dimensions/content-channel.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.channel` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.channel` |
 | **필수** | 예 |
-| **전송 시점** | 세션 시작, 세션 닫기 |
+| **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
 ## Web SDK
 

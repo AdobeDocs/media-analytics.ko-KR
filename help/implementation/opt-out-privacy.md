@@ -5,10 +5,10 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 92%
+source-wordcount: '496'
+ht-degree: 69%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 92%
 
 추적 활동을 특정 디바이스에서 허용할지 여부를 제어할 수 있습니다.
 
-* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인 정보 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인 정보 설정에 대한 자세한 내용은 [옵트아웃 및 개인 정보 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=ko)을 참조하십시오.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+* **모바일 앱 -** VA 라이브러리는 `AdobeMobile` 라이브러리의 개인 정보 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 `AdobeMobile` 라이브러리를 사용해야 합니다. `AdobeMobile` 라이브러리의 옵트아웃 및 개인 정보 설정에 대한 자세한 내용은 [옵트아웃 및 개인 정보 설정](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)을 참조하십시오.
+* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인정보 보호에 대한 자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
 * **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해 주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
 
   >[!NOTE]
@@ -110,3 +110,19 @@ ht-degree: 92%
   ```
   vids = ADBMobile().getAllIdentifiers()
   ```
+
+## Analytics 옵트아웃 매개변수 {#analytics-opt-out}
+
+예약된 매개 변수 2개를 사용하면 서버측에서 Audience Manager으로 데이터를 전달하고 서드파티와 데이터를 공유하는 Media Analytics 데이터를 표시하지 않을 수 있습니다. 이러한 매개 변수는 SDK 구성 개체에 설정되지 않고 API 수준에서 세션 매개 변수와 함께 전달됩니다.
+
+| 매개변수 | API 키 | 컨텍스트 데이터 |
+| --- | --- | --- |
+| 서버측 전달 거부 | `analytics.optOutServerSideForwarding` | `cm.dmp` |
+| 데이터 공유 옵트아웃 | `analytics.optOutSellToThirdParty` | `cm.sell` |
+
+* **`analytics.optOutServerSideForwarding`**: `true`에서 이 히트의 서버측 전달을 Audience Manager 및 기타 Adobe 대상으로 표시하지 않습니다.
+* **`analytics.optOutSellToThirdParty`**: `true`일 때 은(는) 서드파티 파트너와의 이 히트 데이터 공유를 억제합니다.
+
+>[!NOTE]
+>
+>이러한 매개 변수는 [미디어 컬렉션 API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)에 설명되어 있습니다. Media Collection API 및 Media Edge API 구현에 적용됩니다. 위에서 설명한 SDK 수준 옵트아웃 컨트롤은 모바일 및 OTT 구현에 적용됩니다.

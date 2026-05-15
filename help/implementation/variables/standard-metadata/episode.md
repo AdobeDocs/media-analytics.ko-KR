@@ -3,10 +3,10 @@ title: 에피소드
 description: 개별 에피소드를 개별적으로 보고할 수 있도록 에피소드 콘텐츠에 대한 에피소드 번호를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 16%
+source-wordcount: '182'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**Episode**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [에피소드](/help/reporting/dimensions/episode.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**Episode**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [에피소드](/help/reporting/dimensions/episode.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.episode` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.episode` |
 | **필수** | 아니요 |
-| **전송 시점** | 세션 시작, 세션 닫기 |
+| **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
 ## Web SDK
 

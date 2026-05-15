@@ -3,9 +3,9 @@ title: 미디어 다운로드 플래그
 description: 세션을 다운로드된 오프라인 재생으로 표시하여 스트리밍된 세션과 별도로 보고되도록 합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**미디어 다운로드 플래그**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [미디어 다운로드됨](/help/reporting/dimensions/media-downloaded-flag.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**미디어 다운로드 플래그**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [미디어 다운로드됨](/help/reporting/dimensions/media-downloaded-flag.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.downloaded` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.downloaded` |
 | **필수** | 아니요 |
-| **전송 시점** | 세션 시작, 세션 닫기 |
+| **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
 ## Web SDK
 

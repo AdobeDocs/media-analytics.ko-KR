@@ -3,9 +3,9 @@ title: 광고 브레이크 시작 시간
 description: 콘텐츠 내부의 광고 브레이크 시작 시간(오프셋)을 초 단위로 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '210'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**광고 브레이크 시작 시간**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [Pod 위치](/help/reporting/dimensions/pod-position.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**광고 브레이크 시작 시간**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [Pod 위치](/help/reporting/dimensions/pod-position.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.podSecond` |
-| **XDM 컬렉션 필드** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.ad.podSecond` |
 | **필수** | 예 |
-| **전송 시점** | 광고 시작, 광고 종료 |
+| **전송 시점** | [광고 브레이크 시작](/help/implementation/events/ads/ad-break-start.md), 광고 닫기 |
 
 ## Web SDK
 

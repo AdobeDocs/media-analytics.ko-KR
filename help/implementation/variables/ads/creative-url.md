@@ -3,9 +3,9 @@ title: 광고 URL
 description: 각 광고에 대한 광고 크리에이티브의 URL을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '193'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**Creative URL**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [Creative URL](/help/reporting/dimensions/creative-url.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**Creative URL**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [Creative URL](/help/reporting/dimensions/creative-url.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.creativeURL` |
-| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager 트레이트** | `c_contextdata.a.media.ad.creativeURL` |
 | **필수** | 아니요 |
-| **전송 시점** | 광고 시작, 광고 종료 |
+| **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |
 
 ## Web SDK
 

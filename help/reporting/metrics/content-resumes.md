@@ -3,10 +3,10 @@ title: 콘텐츠 다시 시작
 description: 이전에 중단된 재생을 재개한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 7%
+source-wordcount: '169'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 다시 시작**&#x200B;보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 다시 시작](/help/implementation/variables/core/content-resumes.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**콘텐츠 다시 시작**보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 다시 시작](/help/implementation/variables/core/content-resumes.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -23,10 +23,11 @@ ht-degree: 7%
 
 ## 이 지표의 계산 방법
 
-`media.sessionStart` 이벤트에서 `mediaCollection.sessionDetails.hasResume`이(가) `true`인 경우 미디어 백엔드가 `mediaReporting.sessionDetails.hasResume = true`을(를) 설정합니다. 플레이어는 명시적으로 세션을 다시 시작으로 플래그를 지정해야 합니다. 지표는 닫기 호출에 보고됩니다.
+[세션 시작](/help/implementation/events/session/session-start.md) 이벤트에서 `mediaCollection.sessionDetails.hasResume`이(가) `true`인 경우 미디어 백엔드가 `mediaReporting.sessionDetails.hasResume = true`을(를) 설정합니다. 플레이어는 명시적으로 세션을 다시 시작으로 플래그를 지정해야 합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.resume`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Audience Manager | 해당 사항 없음 |

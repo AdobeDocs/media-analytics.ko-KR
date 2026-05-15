@@ -3,10 +3,10 @@ title: 미디어 다운로드됨
 description: 다운로드한 오프라인 콘텐츠를 재생한 세션에 플래그를 지정합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 6%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**다운로드된 미디어**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [미디어 다운로드 플래그](/help/implementation/variables/core/media-downloaded-flag.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**다운로드된 미디어**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [미디어 다운로드 플래그](/help/implementation/variables/core/media-downloaded-flag.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 6%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | `a.media.downloaded`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | `a.media.downloaded`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.downloaded`을(를) 매핑하는 eVar) |
+| Audience Manager | `c_contextdata.a.media.downloaded` |
 
 ## 차원 항목
 

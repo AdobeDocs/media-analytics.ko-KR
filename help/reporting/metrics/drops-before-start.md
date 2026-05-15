@@ -3,10 +3,10 @@ title: 시작 전 드롭
 description: 기본 컨텐츠가 렌더링되기 전에 뷰어가 종료되는 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '158'
+ht-degree: 9%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 8%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드는 기본 콘텐츠에 `media.play` 이벤트를 생성하지 않고 종료되는 세션에 대해 `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 기본 콘텐츠에 대한 [play](/help/implementation/events/playback/play.md) 이벤트를 생성하지 않고 종료되는 세션에 대해 `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 품질]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.qoe.dropBeforeStart`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Audience Manager | `c_contextdata.a.media.qoe.dropBeforeStart` |

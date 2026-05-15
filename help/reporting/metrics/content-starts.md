@@ -3,10 +3,10 @@ title: 컨텐츠 시작
 description: 기본 콘텐츠가 실제로 재생되기 시작한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 9%
+source-wordcount: '146'
+ht-degree: 10%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 9%
 
 ## 이 지표의 계산 방법
 
-기본 콘텐츠에 대한 `media.play` 이벤트가 처음 수신될 때 미디어 백엔드가 `mediaReporting.sessionDetails.isPlayed = true`을(를) 설정합니다. 지표는 해당 재생 이벤트에서 트리거되지만 닫기 호출에 보고됩니다. 프리롤 드롭 속도를 계산하려면 `(Media starts − Content starts) / Media starts`을(를) 사용합니다.
+미디어 백엔드가 기본 콘텐츠에 대한 [재생](/help/implementation/events/playback/play.md) 이벤트를 처음 받을 때 `mediaReporting.sessionDetails.isPlayed = true`을(를) 설정합니다. 지표는 해당 재생 이벤트에서 트리거되지만 닫기 호출에 보고됩니다. 프리롤 드롭 속도를 계산하려면 `(Media starts − Content starts) / Media starts`을(를) 사용합니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.play`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Audience Manager | `c_contextdata.a.media.play` |
