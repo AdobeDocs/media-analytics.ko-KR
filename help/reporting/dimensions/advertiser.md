@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**Advertiser**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Advertiser](/help/implementation/variables/ads/advertiser.md)를 참조하십시오.*
+*이 페이지는&#x200B;**Advertiser**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Advertiser](/help/implementation/variables/ads/advertiser.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

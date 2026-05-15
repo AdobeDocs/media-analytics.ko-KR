@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**화면 속 화면**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [화면 속 화면](/help/reporting/metrics/picture-in-picture-streams-impacted.md), [화면 속 화면 카운트](/help/reporting/metrics/picture-in-picture-count.md) 및 [화면 속 화면 총 기간](/help/reporting/metrics/picture-in-picture-total-duration.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**화면 속 화면**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [화면 속 화면](/help/reporting/metrics/picture-in-picture-streams-impacted.md), [화면 속 화면 카운트](/help/reporting/metrics/picture-in-picture-count.md) 및 [화면 속 화면 총 기간](/help/reporting/metrics/picture-in-picture-total-duration.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

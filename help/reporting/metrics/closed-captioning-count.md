@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**자막 카운트**보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [자막](/help/implementation/variables/player-state/closed-captioning.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**자막 카운트**&#x200B;보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [자막](/help/implementation/variables/player-state/closed-captioning.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

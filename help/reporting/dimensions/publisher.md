@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**게시자**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [게시자](/help/implementation/variables/standard-metadata/publisher.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**게시자**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [게시자](/help/implementation/variables/standard-metadata/publisher.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

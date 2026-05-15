@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**일 파트**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [일 파트](/help/implementation/variables/standard-metadata/day-part.md)를 참조하십시오.*
+*이 페이지는&#x200B;**일 파트**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [일 파트](/help/implementation/variables/standard-metadata/day-part.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

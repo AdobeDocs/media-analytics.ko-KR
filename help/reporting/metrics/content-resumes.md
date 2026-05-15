@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 다시 시작**보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 다시 시작](/help/implementation/variables/core/content-resumes.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**콘텐츠 다시 시작**&#x200B;보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 다시 시작](/help/implementation/variables/core/content-resumes.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
