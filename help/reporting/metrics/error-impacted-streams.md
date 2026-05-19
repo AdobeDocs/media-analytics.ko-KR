@@ -3,9 +3,9 @@ title: 오류의 영향을 받은 스트림
 description: 하나 이상의 오류가 발생한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '143'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-세션 중에 [오류](/help/implementation/events/error.md) 이벤트가 처음 수신되면 미디어 백엔드가 `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
+세션 중에 [오류](/help/implementation/events/error.md) 이벤트가 처음 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 품질]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.qoe.error`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
 | Audience Manager | `c_contextdata.a.media.qoe.error` |

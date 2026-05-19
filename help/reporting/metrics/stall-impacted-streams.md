@@ -3,9 +3,9 @@ title: 영향을 받는 스트림 중단
 description: 재생 도중 하나 이상의 지연이 발생한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 8%
 
 ## 이 지표의 계산 방법
 
-세션 중에 최소 3개의 연속 이벤트 동안 기본 콘텐츠에 플레이헤드 이동이 기록되지 않으면 미디어 백엔드가 `mediaReporting.qoeDataDetails.hasStallImpactedStreams = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
+세션 중에 최소 3개의 연속 이벤트 동안 기본 콘텐츠에 플레이헤드 이동이 기록되지 않으면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | `a.media.qoe.stall`을(를) 사용자 지정 이벤트에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasStallImpactedStreams`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`(처리 규칙이 `a.media.qoe.stall`을(를) 매핑하는 사용자 지정 이벤트. [`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Adobe Analytics | `a.media.qoe.stall`을(를) 사용자 지정 이벤트에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasStallImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`(처리 규칙이 `a.media.qoe.stall`을(를) 매핑하는 사용자 지정 이벤트. [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
 | Audience Manager | `c_contextdata.a.media.qoe.stall` |

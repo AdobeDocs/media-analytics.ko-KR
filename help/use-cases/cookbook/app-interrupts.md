@@ -6,18 +6,13 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 56%
+source-wordcount: 473
+ht-degree: 43%
 
 ---
 
@@ -45,3 +40,11 @@ ht-degree: 56%
 * _동일한 세션을 다시 시작하는 것은 어떻습니까?_
 
   추적 세션을 다시 시작하는 방법에 대한 자세한 내용은 [비활성 세션 다시 시작](resuming-inactive.md)을 참조하십시오.SDK이 재개 ping을 전송하여 사용자가 세션을 수동으로 재개하고 있음을 백엔드에 알립니다.
+
+* _같은 세션에 대해 `trackSessionEnd`이(가) 두 번 호출되면 어떻게 됩니까?_
+
+  같은 세션에 대해 `trackSessionEnd`을(를) 두 번 이상 호출하면 안전합니다. 백엔드는 첫 번째 이벤트에서 세션을 닫고 두 번째 `trackSessionEnd`을(를) 포함하여 해당 세션 ID에 대한 모든 후속 이벤트를 자동으로 삭제합니다. 즉, 뷰어가 플레이어를 닫을 때 동시에 실행되는 30분 비활성 시간 제한 과 같은 경합 조건은 중복 데이터를 생성하지 않습니다.
+
+* _세션이 이미 활성화된 상태에서 `trackSessionStart`을(를) 호출하면 어떻게 됩니까?_
+
+  세션이 아직 닫히지 않은 경우 SDK에서 두 번째 `trackSessionStart` 호출을 무시합니다. 새 세션을 시작해야 하는 경우 먼저 `trackSessionEnd`을(를) 호출하여 현재 세션을 명시적으로 닫은 다음 새 세션에 대해 `trackSessionStart`을(를) 호출합니다.

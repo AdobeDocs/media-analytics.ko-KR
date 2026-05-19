@@ -3,10 +3,10 @@ title: 미디어 시작
 description: 프리롤 광고 또는 버퍼링으로 종료된 세션을 포함하여 시작된 모든 미디어 세션을 계산합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 6%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 8%
 
 ## 이 지표의 계산 방법
 
-[세션 시작](/help/implementation/events/session/session-start.md) 이벤트가 수신되면 미디어 백엔드가 `mediaReporting.sessionDetails.isViewed = true`을(를) 설정합니다. 보고된 지표는 세션당 `1`입니다. 종료 호출이 아닌 시작 호출 시 미디어 시작이 보고됩니다. 세션 닫기를 기다리지 않는 유일한 1단계 지표입니다.
+[세션 시작](/help/implementation/events/session/session-start.md) 이벤트가 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 보고된 지표는 세션당 `1`입니다. 미디어 시작은 닫기 호출이 아닌 시작 호출 시 보고되며 세션 닫기를 기다리지 않는 유일한 지표입니다. [콘텐츠 시작](/help/reporting/metrics/content-starts.md), [콘텐츠 체류 시간](/help/reporting/metrics/content-time-spent.md) 및 [진행률 마커](/help/reporting/metrics/progress-markers.md)를 포함한 다른 모든 미디어 지표는 닫기 호출에 보고되며 재생 중에 실시간으로 사용할 수 없습니다. [광고 시작](/help/reporting/metrics/ad-starts.md)은(는) 종료 시간이 아닌 트리거 이벤트에 대해 보고된 추가적인 지표입니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.view`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
 | Audience Manager | `c_contextdata.a.media.view` |

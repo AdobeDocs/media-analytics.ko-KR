@@ -6,24 +6,15 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 79%
+source-wordcount: 641
+ht-degree: 60%
 
 ---
 
@@ -110,7 +101,7 @@ ht-degree: 79%
 
 1. 광고 재생 추적을 시작하려면 `MediaHeartbeat` 인스턴스에서 `AdStart` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 
-   사용자 지정 메타데이터 변수(또는 빈 개체)에 대한 참조를 이벤트 호출의 세 번째 매개 변수로 포함하십시오.
+   사용자 지정 메타데이터 변수(또는 빈 개체)에 대한 참조를 이벤트 호출의 세 번째 매개 변수로 포함하십시오. 광고가 재생되는 동안 컨텐츠 플레이헤드(`l:event:playhead`)를 광고 브레이크가 시작된 위치에 고정시켜 두십시오. 광고 재생 시 컨텐츠 재생 시간이 [컨텐츠 체류 시간](/help/reporting/metrics/content-time-spent.md)을 초과합니다.
 
 1. 광고 재생이 광고 끝에 도달하면 `AdComplete` 이벤트를 사용하여 `trackEvent()`를 호출합니다.
 
@@ -120,7 +111,11 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->광고 재생(`s:asset:type=ad`) 중에 콘텐츠 플레이어 플레이헤드(`l:event:playhead`)를 증가시키지 않도록 하십시오. 증가시킬 경우 콘텐츠 체류 시간 지표가 부정적인 영향을 받습니다.
+>**프리롤 광고: `AdBreakStart` 및 `AdStart` 전에 `trackPlay`을(를) 호출하지 마십시오.** 기본 콘텐츠의 첫 번째 `play` ping은 [콘텐츠 시작](/help/reporting/metrics/content-starts.md)을 증가시킵니다. 프리롤 광고 이벤트가 실행되기 전에 `trackPlay`이(가) 호출되고 광고 중에 뷰어가 사라지면 기본 콘텐츠가 재생되지 않았더라도 콘텐츠 시작이 증가합니다. 프리롤 시나리오의 경우 `AdBreakStart` 및 `AdStart`이(가) 전송될 때까지 `trackPlay`을(를) 지연합니다.
+
+>[!NOTE]
+>
+>광고 재생 중에 보고된 플레이헤드 값은 광고 내부가 아닌 **기본 콘텐츠** 내의 뷰어 위치를 나타냅니다. 10분 비디오 앞에 있는 프리롤 광고의 경우 플레이헤드는 전체 광고에서 `0`입니다. 5분 표시에서 시작하는 미드롤 광고의 경우 플레이헤드는 광고 기간 동안 `300`(초)에 유지됩니다.
 
 다음 샘플 코드는 HTML5 미디어 플레이어에 JavaScript 2.x SDK를 사용합니다.
 

@@ -6,25 +6,15 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/ypN5kYhjEzqtO-Zt3mah1H5I5f9s12NnFFBk6hYy7MI
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 285
-ht-degree: 100%
+source-wordcount: 319
+ht-degree: 80%
 
 ---
 
@@ -45,13 +35,14 @@ ht-degree: 100%
 | 광고의 첫 프레임이 재생됩니다. | `trackPlay()` | 하트비트 광고 재생 | 광고 콘텐츠가 주 콘텐츠 전에 재생되면 광고 재생이 시작될 때 하트비트가 시작됩니다. |
 | 광고가 재생됨. | | 광고 하트비트 | |
 | 광고를 건너뜀. | `trackEvent:trackAdSkip` | | 광고 완료 네트워크 호출이 없습니다. |
+| 광고 브레이크가 종료됩니다. | `trackEvent:AdBreakComplete` | | 광고를 건너뛴 경우에도 필수입니다. 이 이벤트가 없으면 광고 이벤트가 무시되고 건너뛴 광고 기간은 기본 콘텐츠로 계산됩니다. |
 | 콘텐츠가 재생됩니다. | | 콘텐츠 하트비트 | 이러한 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 콘텐츠 재생이 완료됨. | `trackComplete()` | 하트비트 콘텐츠 완료 | 이 네트워크 호출은 [광고 없이 VOD 재생](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) 시나리오와 동일합니다. |
 | 세션이 끝남. | `trackSessionEnd()` | | `SessionEnd` |
 
 ## 매개 변수 {#parameters}
 
-매개 변수는 광고 완료가 없고 광고 브레이크 완료 호출이 없다는 점을 제외하고는 [프리롤 광고가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) 시나리오의 매개 변수와 동일합니다.
+매개 변수는 광고 완료 호출이 없다는 점을 제외하고 [프리롤 광고가 있는 VOD 재생](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) 시나리오의 매개 변수와 동일합니다. 건너뛰기 후에도 광고 브레이크를 닫으려면 `AdBreakComplete`이(가) 필요합니다.
 
 ## 샘플 코드 {#sample-code}
 
@@ -128,14 +119,22 @@ _mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip, null, null);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., when the media  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content.  
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete, null, null); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., when the media  
 //    completes and finishes playing.  
 _mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called  
 //    even if the user does not watch the media to completion.  
 _mediaHeartbeat.trackSessionEnd(); 
 
@@ -212,13 +211,20 @@ NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
 ....... 
 ....... 
 
-// 6. Call trackComplete when the playback reaches the end, i.e., when the media 
+// 6. Track the ADBMediaHeartbeatEventAdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete mediaObject:nil data:nil]; 
+....... 
+....... 
+
+// 7. Call trackComplete when the playback reaches the end, i.e., when the media 
 //    completes and finishes playing. 
 [_mediaHeartbeat trackComplete]; 
 ....... 
 ....... 
 
-// 7. Call trackSessionEnd when the playback session is over. This method must  
+// 8. Call trackSessionEnd when the playback session is over. This method must  
 //    be called even if the user does not watch the media to completion. 
 [_mediaHeartbeat trackSessionEnd]; 
 ....... 
@@ -298,14 +304,22 @@ this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., playback completes  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break. 
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., playback completes  
 //    and finishes playing. 
 this._mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called even  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called even  
 //    if the user does not watch the media to completion. 
 this._mediaHeartbeat.trackSessionEnd(); 
 
