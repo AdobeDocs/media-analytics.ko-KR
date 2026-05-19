@@ -3,9 +3,9 @@ title: 예상 스트림
 description: 세션당 오디오 또는 비디오 스트림 수와 비슷합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드가 `mediaReporting.sessionDetails.estimatedStreams = FLOOR(totalTimePlayed / 1800) + 1`을(를) 계산합니다. 여기서 `totalTimePlayed`은(는) [미디어 체류 시간](media-time-spent.md)입니다(초). 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 이 지표를 `FLOOR(totalTimePlayed / 1800) + 1`(으)로 계산합니다. 여기서 `totalTimePlayed`은(는) [미디어 체류 시간](media-time-spent.md)입니다(초). 지표는 닫기 호출에 보고됩니다.
 
 | 미디어 체류 시간 | 예상 스트림 |
 | --- | --- |

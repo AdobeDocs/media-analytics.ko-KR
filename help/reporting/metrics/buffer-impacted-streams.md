@@ -3,9 +3,9 @@ title: 버퍼의 영향을 받는 스트림
 description: 플레이어가 버퍼 상태에 들어간 세션을 한 번 이상 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-세션 중에 [버퍼 시작](/help/implementation/events/playback/buffer-start.md) 이벤트가 처음 수신되면 미디어 백엔드가 `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
+세션 중에 [버퍼 시작](/help/implementation/events/playback/buffer-start.md) 이벤트가 처음 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

@@ -3,9 +3,9 @@ title: 화면 속 화면 카운트
 description: 세션 중 뷰어가 PIP(Picture-in-Picture)를 입력한 횟수를 보고합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드는 모든 PIP(Picture-in-Picture) 상태 시작 이벤트에서 `mediaReporting.states[]`의 `pictureInPicture` 항목의 `count` 필드를 증가시킵니다. 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 모든 PIP(Picture-in-Picture) 상태 시작 이벤트에서 이 수를 증가시킵니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

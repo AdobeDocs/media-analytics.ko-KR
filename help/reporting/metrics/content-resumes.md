@@ -3,10 +3,10 @@ title: 콘텐츠 다시 시작
 description: 이전에 중단된 재생을 재개한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-[세션 시작](/help/implementation/events/session/session-start.md) 이벤트에서 `mediaCollection.sessionDetails.hasResume`이(가) `true`인 경우 미디어 백엔드가 `mediaReporting.sessionDetails.hasResume = true`을(를) 설정합니다. 플레이어는 명시적으로 세션을 다시 시작으로 플래그를 지정해야 합니다. 지표는 닫기 호출에 보고됩니다.
+[세션 시작](/help/implementation/events/session/session-start.md) 이벤트에서 `mediaCollection.sessionDetails.hasResume`이(가) `true`인 경우 미디어 백엔드가 이 플래그를 설정합니다. 플레이어는 명시적으로 세션을 다시 시작으로 플래그를 지정해야 합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

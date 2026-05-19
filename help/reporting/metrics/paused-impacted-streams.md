@@ -3,9 +3,9 @@ title: 일시 중지된 영향을 받은 스트림
 description: 뷰어가 일시 중지된 세션을 한 번 이상 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## 이 지표의 계산 방법
 
-세션 중에 [일시 중지 시작](/help/implementation/events/playback/pause-start.md) 이벤트가 처음 수신되면 미디어 백엔드가 `mediaReporting.sessionDetails.hasPauseImpactedStreams = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
+세션 중에 [일시 중지 시작](/help/implementation/events/playback/pause-start.md) 이벤트가 처음 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

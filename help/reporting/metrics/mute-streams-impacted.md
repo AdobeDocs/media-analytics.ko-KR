@@ -3,9 +3,9 @@ title: 음소거의 영향을 받는 스트림
 description: 뷰어가 오디오를 음소거한 세션을 한 번 이상 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드는 `statesStart`에 `mute`이(가) 있는 `media.statesUpdate` 이벤트가 처음 수신될 때 `mute` 항목에 대한 `mediaReporting.states[]`의 `isSet` 플래그를 `true`(으)로 설정합니다. 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 세션 중에 음소거 상태 시작 이벤트가 처음 수신될 때 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

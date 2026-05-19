@@ -3,10 +3,10 @@ title: 광고 시작
 description: 세션 중에 재생되기 시작한 모든 광고를 계산합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 이 지표의 계산 방법
 
-[광고 시작](/help/implementation/events/ads/ad-start.md) 이벤트가 수신되면 미디어 백엔드가 `mediaReporting.advertisingDetails.isStarted = true`을(를) 설정합니다. 지표는 광고 시작 호출에 보고됩니다.
+[광고 시작](/help/implementation/events/ads/ad-start.md) 이벤트가 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 광고 시작 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

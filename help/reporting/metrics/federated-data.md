@@ -3,9 +3,9 @@ title: 페더레이션된 데이터
 description: 고객 자체 구현이 아닌 페더레이션 데이터 공유를 통해 받은 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 ## 이 지표의 계산 방법
 
-세션이 페더레이션 채널을 통해 도달하면 미디어 백엔드가 `mediaReporting.sessionDetails.isFederated = true`을(를) 설정합니다. 지표는 자격 부여 세션당 한 번씩 증가하며 닫기 호출 시 보고됩니다.
+세션이 페더레이션 채널을 통해 도달하면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 자격 부여 세션당 한 번씩 증가하며 닫기 호출 시 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

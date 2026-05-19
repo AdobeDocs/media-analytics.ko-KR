@@ -3,9 +3,9 @@ title: 컨텐츠 완료
 description: 플레이헤드가 콘텐츠 끝에 도달한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-[세션 완료](/help/implementation/events/session/session-complete.md) 이벤트가 수신되면 미디어 백엔드가 `mediaReporting.sessionDetails.isCompleted = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다. 명시적 `sessionComplete` 없이 시간 초과된 세션은 완료로 계산되지 않습니다.
+[세션 완료](/help/implementation/events/session/session-complete.md) 이벤트가 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다. 명시적 `sessionComplete` 없이 시간 초과된 세션은 완료로 계산되지 않습니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

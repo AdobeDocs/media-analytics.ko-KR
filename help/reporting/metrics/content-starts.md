@@ -3,9 +3,9 @@ title: 컨텐츠 시작
 description: 기본 콘텐츠가 실제로 재생되기 시작한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드가 기본 콘텐츠에 대한 [재생](/help/implementation/events/playback/play.md) 이벤트를 처음 받을 때 `mediaReporting.sessionDetails.isPlayed = true`을(를) 설정합니다. 지표는 해당 재생 이벤트에서 트리거되지만 닫기 호출에 보고됩니다. 프리롤 드롭 속도를 계산하려면 `(Media starts − Content starts) / Media starts`을(를) 사용합니다.
+미디어 백엔드는 기본 콘텐츠에 대한 [play](/help/implementation/events/playback/play.md) 이벤트가 처음 수신될 때 이 플래그를 설정합니다. 지표는 해당 재생 이벤트에서 트리거되지만 닫기 호출에 보고됩니다. 프리롤 드롭 속도를 계산하려면 `(Media starts − Content starts) / Media starts`을(를) 사용합니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

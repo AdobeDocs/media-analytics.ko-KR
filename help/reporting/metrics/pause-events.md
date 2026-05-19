@@ -3,10 +3,10 @@ title: 이벤트 일시 중지
 description: 세션 중에 발생한 개별 일시 중지를 모두 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 이 지표의 계산 방법
 
-미디어 백엔드는 [일시 중지 시작](/help/implementation/events/playback/pause-start.md) 이벤트마다 `mediaReporting.sessionDetails.pauseCount`을(를) 증가시킵니다. 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 [일시 중지 시작](/help/implementation/events/playback/pause-start.md) 이벤트마다 이 카운트를 증가시킵니다. 단일 연속 일시 중지는 지속 시간에 관계없이 하나의 증분을 생성합니다. 플레이어가 일시 중지된 상태를 유지하는 동안 전송된 하트비트 [ping](/help/implementation/events/playback/ping.md)은(는) 모두 동일한 일시 중지 기간에 속하며 카운트를 다시 증가시키지 않습니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

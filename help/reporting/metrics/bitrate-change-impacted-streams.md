@@ -3,9 +3,9 @@ title: 비트율 변경의 영향을 받는 스트림
 description: 하나 이상의 비트율 변경이 발생한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '145'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 이 지표의 계산 방법
 
-세션 중에 [비트율 변경](/help/implementation/events/playback/bitrate-change.md) 이벤트를 처음 받으면 미디어 백엔드가 `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true`을(를) 설정합니다. 지표는 닫기 호출에 보고됩니다.
+미디어 백엔드는 세션 중에 [비트율 변경](/help/implementation/events/playback/bitrate-change.md) 이벤트를 처음 받을 때 이 플래그를 설정합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

@@ -3,9 +3,9 @@ title: 광고 완료
 description: 완료까지 재생된 모든 광고를 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 이 지표의 계산 방법
 
-[광고 완료](/help/implementation/events/ads/ad-complete.md) 이벤트가 수신되면 미디어 백엔드가 `mediaReporting.advertisingDetails.isCompleted = true`을(를) 설정합니다. 지표는 광고 닫기 호출에 보고됩니다. 생략되거나 포기된 광고는 완료로 계산되지 않습니다.
+[광고 완료](/help/implementation/events/ads/ad-complete.md) 이벤트가 수신되면 미디어 백엔드가 이 플래그를 설정합니다. 지표는 광고 닫기 호출에 보고됩니다. 생략되거나 포기된 광고는 완료로 계산되지 않습니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |

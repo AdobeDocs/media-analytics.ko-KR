@@ -3,10 +3,10 @@ title: 드롭된 프레임
 description: 백엔드가 프레임 드롭 품질을 보고할 수 있도록 QoE 개체에서 드롭된 프레임의 실행 수를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 드롭된 프레임 변수는 세션 중에 플레이어가 드롭한 프레임의 실행 횟수입니다. QoE 개체에 설정하고 플레이어가 새 드롭을 보고할 때마다 값을 업데이트합니다. 백엔드가 세션 종료 시 최신 값을 보고합니다.
+
+>[!NOTE]
+>
+>간격 델타가 아닌 해당 시점까지 전체 세션에 대해 드롭된 프레임의 **누적 합계**&#x200B;를 항상 전달하십시오. 업데이트 사이에 값을 `0`(으)로 재설정하면 백엔드가 `0`을(를) 최종 값으로 수신하고 이전에 실제로 삭제한 내용과 관계없이 세션에 대해 0개의 삭제된 프레임을 보고합니다.
 
 | 속성 | 값 |
 | --- | --- |

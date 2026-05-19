@@ -3,9 +3,9 @@ title: 드롭된 프레임의 영향을 받는 스트림
 description: 하나 이상의 프레임이 드롭된 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## 이 지표의 계산 방법
 
-세션 종료 시 QoE 개체의 `droppedFrames` 값이 0보다 큰 경우 미디어 백엔드가 `mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true`을(를) 설정합니다.
+세션 종료 시 QoE 개체의 `droppedFrames` 값이 0보다 큰 경우 미디어 백엔드가 이 플래그를 설정합니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
