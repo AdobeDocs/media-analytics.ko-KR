@@ -5,10 +5,26 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: 882
+ht-degree: 96%
 
 ---
 
@@ -53,7 +69,7 @@ ht-degree: 97%
 
 ### 스크러빙이 종료될 때
 
-* `trackEvent(SeekComplete)` 호출
+* 호출 `trackEvent(SeekComplete)`
 변경 내용 취소
 
 ### 버퍼링이 시작될 때
@@ -108,8 +124,6 @@ ht-degree: 97%
      >표준 메타데이터 개체를 미디어 개체에 첨부하는 것은 선택 사항입니다.
 
      표준 메타데이터 개체를 인스턴스화하고, 원하는 변수를 채우고, 미디어 하트비트 개체에서 메타데이터 개체를 설정합니다.
-
-     메타데이터의 전체 목록을 [오디오 및 비디오 매개 변수](../../implementation/variables/audio-video-parameters.md)에서 참조하십시오.
 
    * **사용자 지정 메타데이터 -** 사용자 지정 변수에 대한 변수 개체를 만들고, 이 콘텐츠의 데이터로 채웁니다.
 
@@ -239,3 +253,12 @@ if (e.type == "buffered") {
 ## 유효성 검사 {#validate}
 
 *이전* 구현의 유효성 검사에 대한 자세한 내용은 [레거시 유효성 검사를 참조하십시오.](/help/legacy/validation/validation-overview.md)
+
+>[!MORELIKETHIS]
+>
+>* [세션 시작](/help/implementation/events/session/session-start.md)
+>* [재생](/help/implementation/events/playback/play.md)
+>* [시작 일시 중지](/help/implementation/events/playback/pause-start.md)
+>* [버퍼 시작](/help/implementation/events/playback/buffer-start.md)
+>* [세션 완료](/help/implementation/events/session/session-complete.md)
+>* [세션 종료](/help/implementation/events/session/session-end.md)

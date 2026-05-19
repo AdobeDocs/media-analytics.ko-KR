@@ -5,10 +5,22 @@ uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/F7NHDQkJVwVc-Th-blxBP8gifT7V55xLqlI1YT-pswc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 97%
+source-wordcount: 294
+ht-degree: 90%
 
 ---
 
@@ -53,7 +65,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >JSON 요청 본문에 올바른 데이터 유형을 사용해야 합니다. 예: `analytics.enableSSL`에는 부울을 사용하고, `media.length`에는 숫자를 사용해야 합니다. 매개 변수 유형과 필수 및 옵션 요구 사항을 [JSON 유효성 검사 스키마](mc-api-validate-reqs.md)를 확인하여 확인할 수 있습니다.
+   >JSON 요청 본문에 올바른 데이터 유형을 사용해야 합니다. 예를 들어, `analytics.enableSSL`에는 부울이 필요하고, `media.length`은(는) 숫자입니다. [JSON 유효성 검사 스키마](mc-api-validate-reqs.md)를 확인하여 매개 변수 유형과 필수 및 선택적 요구 사항을 확인할 수 있습니다.
 
 1. MA Collection API 엔드포인트에 세션 요청을 보냅니다. 요청 페이로드가 올바르지 않은 경우 문제를 식별하고 `201 Created` 응답이 나타날 때까지 재시도합니다. 이 `curl` 예제에서 JSON 요청 본문은 `sample_data_session` 파일에 있습니다.
 

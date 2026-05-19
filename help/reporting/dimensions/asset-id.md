@@ -1,0 +1,55 @@
+---
+title: 자산 ID
+description: 기본 미디어 자산에 대한 안정적인 업계 식별자를 보고합니다.
+feature: Dimensions
+role: User, Admin
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+workflow-type: tm+mt
+source-wordcount: '408'
+ht-degree: 2%
+
+---
+
+
+# 자산 ID
+
+>[!BEGINSHADEBOX]
+
+*이 페이지는&#x200B;**자산 ID**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [자산 ID](/help/implementation/variables/standard-metadata/asset-id.md)를 참조하십시오.*
+
+>[!ENDSHADEBOX]
+
+**자산 ID** 차원은 기본 미디어 자산(일반적으로 EIDR, TMS/Gracenote 또는 Rovi ID이지만 소유 ID도 허용됨)에 대한 안정적인 업계 식별자를 보고합니다.
+
+## 이 차원이 채워지는 방법
+
+자산 ID는 세션 시작 시 플레이어가 설정합니다.
+
+| 보고 시스템 | 소스 |
+| --- | --- |
+| Adobe Analytics(처리 규칙) | `a.media.asset`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Adobe Analytics(분류) | [컨텐츠(ID)](content.md) 차원의 분류 — 보고서 세트에 대해 **[[!UICONTROL 비디오 메타데이터]](/help/reporting/media-reports-enable.md)**&#x200B;를 활성화하면 Adobe에서 이 분류를 자동으로 만듭니다. 분류 값을 채우고 유지 관리합니다. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 데이터 피드(처리 규칙) | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.asset`을(를) 매핑하는 eVar) |
+| 데이터 피드(분류) | 해당 사항 없음 — 데이터 피드는 분류를 지원하지 않습니다. |
+| Audience Manager | `c_contextdata.a.media.asset` |
+
+## 분류 접근 방식
+
+보고서 세트에 대해 **[[!UICONTROL 비디오 메타데이터]](/help/reporting/media-reports-enable.md)**&#x200B;를 사용하도록 설정하면 Adobe에서 자산 ID 분류 구조를 자동으로 만듭니다. [분류 세트](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)를 사용하여 분류를 채우고 유지 관리합니다.
+
+이 방법은 각 콘텐츠 ID와 해당 에셋 ID 간에 보장된 1:1 관계를 제공합니다. 분류 업데이트는 해당 ID의 모든 내역 데이터에 소급하여 적용됩니다.
+
+>[!IMPORTANT]
+>
+>자산 ID 분류 이름을 변경하지 마십시오. 이름을 바꾸면 Adobe에서 원래 분류를 다시 만들어 복제가 발생할 수 있습니다.
+
+## 처리 규칙 접근 방식
+
+`a.media.asset`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. 이 접근 방법에서는 분류 유지 관리 없이도 자산 ID를 히트당 값으로 캡처합니다.
+
+자산 ID와 상위 [콘텐츠(ID)](content.md) 차원 간에 보장된 1:1 관계가 손실되는 것이 단점입니다. 구현에서 이벤트 간에 동일한 콘텐츠 ID에 대해 일관되지 않은 값을 전송하는 경우 동일한 콘텐츠 아래에 여러 에셋 ID가 표시될 수 있습니다. 값 업데이트는 앞으로 이동하는 데이터에만 적용됩니다.
+
+## 차원 항목
+
+각 항목은 보고서 기간 동안 보고된 고유한 자산 ID 값입니다. 동일한 콘텐츠가 단일 라인 항목으로 롤업되도록 모든 배포 플랫폼에서 에셋당 하나의 안정적인 식별자를 사용합니다.

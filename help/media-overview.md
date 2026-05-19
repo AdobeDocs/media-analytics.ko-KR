@@ -5,10 +5,35 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/EJ6osO9PkXBubSF7a7HebRJhpSTamNnghofASOs7E-E
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 59%
+source-wordcount: 606
+ht-degree: 53%
 
 ---
 
@@ -42,7 +67,7 @@ Adobe 스트리밍 미디어 서비스는 스트리밍 미디어 공급업체를
 
 * **참여 유도**: 버퍼링 이벤트 수를 최소화하고, 콘텐츠 내에서 광고를 재생할 위치와 시점을 파악하여 사용자 참여를 유도함으로써 재방문을 제공하는 유연하고 간단한 경험을 제공합니다.
 
-* **거시적 관점**: 모든 콘텐츠 배포자에 걸쳐 여러 데이터 지점을 결합하여 모든 미디어 활동을 전체적으로 파악할 수 있습니다. 가능한 모든 채널에 걸쳐 참여도와 조회수를 측정할 수 있습니다.
+* **전체적인 그림**: 모든 콘텐츠 배포자의 여러 데이터 포인트를 결합하여 모든 미디어 활동에 대한 전체 보기를 표시합니다. 가능한 모든 채널에서 참여 및 보기/듣기를 측정합니다.
 
   Streaming Media 서비스를 사용하면 사이트 및 스트리밍 앱에서 전체 고객 여정을 추적하여 고객 경로 및 관심사를 시각화하고 향상된 추천을 제공하고 고객 경험을 개인화할 수 있습니다.  미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
 

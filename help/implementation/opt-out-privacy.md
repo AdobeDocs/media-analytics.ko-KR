@@ -5,10 +5,10 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 92%
+source-wordcount: '496'
+ht-degree: 69%
 
 ---
 
@@ -110,3 +110,19 @@ ht-degree: 92%
   ```
   vids = ADBMobile().getAllIdentifiers()
   ```
+
+## Analytics 옵트아웃 매개변수 {#analytics-opt-out}
+
+예약된 매개 변수 2개를 사용하면 서버측에서 Audience Manager으로 데이터를 전달하고 서드파티와 데이터를 공유하는 Media Analytics 데이터를 표시하지 않을 수 있습니다. 이러한 매개 변수는 SDK 구성 개체에 설정되지 않고 API 수준에서 세션 매개 변수와 함께 전달됩니다.
+
+| 매개변수 | API 키 | 컨텍스트 데이터 |
+| --- | --- | --- |
+| 서버측 전달 거부 | `analytics.optOutServerSideForwarding` | `cm.dmp` |
+| 데이터 공유 옵트아웃 | `analytics.optOutSellToThirdParty` | `cm.sell` |
+
+* **`analytics.optOutServerSideForwarding`**: `true`에서 이 히트의 서버측 전달을 Audience Manager 및 기타 Adobe 대상으로 표시하지 않습니다.
+* **`analytics.optOutSellToThirdParty`**: `true`일 때 은(는) 서드파티 파트너와의 이 히트 데이터 공유를 억제합니다.
+
+>[!NOTE]
+>
+>이러한 매개 변수는 [미디어 컬렉션 API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)에 설명되어 있습니다. Media Collection API 및 Media Edge API 구현에 적용됩니다. 위에서 설명한 SDK 수준 옵트아웃 컨트롤은 모바일 및 OTT 구현에 적용됩니다.

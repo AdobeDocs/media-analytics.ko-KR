@@ -5,10 +5,22 @@ uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yFHQhj33PM209WycWdPZsV-Yi8qN1DN-DC0KyyqFK1I
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 95%
+source-wordcount: 263
+ht-degree: 70%
 
 ---
 
@@ -45,7 +57,7 @@ ht-degree: 95%
 * `customMetadata` (선택 사항이며, `adStart` 및 `chapterStart` 이벤트 유형과 함께 보냄)
 * `qoeData` (선택 사항입니다)
 
-이 릴리스의 유효한 이벤트 유형 목록에 대해서는 [이벤트 유형 및 설명](mc-api-event-types.md)을 참조하십시오.
+올바른 이벤트 형식 및 SDK 단위 구현 예제에 대한 자세한 내용은 [이벤트 개요](/help/implementation/events/overview.md)를 참조하십시오.
 
 >[!IMPORTANT]
 >
@@ -70,8 +82,8 @@ Access-Control-Expose-Headers Location
 
 | HTTP 응답 코드 | 설명 | 클라이언트 작업 항목 |
 |---|---|---|
-| **204** | **콘텐츠 없음.**<br/><br/>하트비트 호출이 성공했습니다. | 해당 사항 없음 |
+| **204** | **콘텐츠 없음.** <br/><br/>하트비트 호출이 성공했습니다. | 해당 사항 없음 |
 | **400** | **잘못된 요청.** <br/><br/>요청의 형식이 잘못되었습니다. | [JSON 유효성 검사 스키마](mc-api-json-validation.md)에서 요청 유형을 확인하십시오. |
-| **404** | **없음.** <br/><br/>미디어 세션의 세션 ID를 백 엔드 서비스에서 찾지 못했습니다. | 클라이언트 애플리케이션은 [세션 요청](mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
+| **404** | **찾을 수 없음.** <br/><br/>미디어 세션의 세션 ID를 백 엔드 서비스에서 찾을 수 없습니다. | 클라이언트 애플리케이션은 [세션 요청](mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **410** | **없어짐.** <br/><br/>미디어 세션이 백 엔드 서비스에서 발견되었지만 고객이 더 이상 이 세션에서 활동을 보고할 수 없습니다. | 클라이언트 애플리케이션은 [세션 요청](mc-api-sessions-req.md) API를 사용하여 다른 미디어 세션을 작성하고 이에 대한 추적을 보고해야 합니다. |
 | **500** | **서버 오류** | 해당 사항 없음 |

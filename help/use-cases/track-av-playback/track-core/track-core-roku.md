@@ -5,10 +5,25 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/n-ox7dhsEPOQCJqHFm8ZLG-7puJ7kfn1ZE7GEg-KFas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 83%
+source-wordcount: 802
+ht-degree: 80%
 
 ---
 
@@ -104,7 +119,7 @@ ht-degree: 83%
 
    * **표준 메타데이터**
 
-[Roku에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+     [Roku에서 표준 메타데이터 구현](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
@@ -150,7 +165,7 @@ ht-degree: 83%
 
 1. **플레이헤드 값 업데이트**
 
-   미디어 플레이헤드가 변경되면 `mediaUpdatePlayhead` API를 호출하여 SDK에 알립니다. <br /> VOD(video-on-demand)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다.
+   미디어 플레이헤드가 변경되면 `mediaUpdatePlayhead` API를 호출하여 SDK에 알립니다. <br /> Video-on-demand(VOD)의 경우 값은 미디어 항목의 시작 부분부터 초 단위로 지정됩니다. <br /> 라이브 스트리밍의 경우 플레이어가 콘텐츠 지속 시간에 대한 정보를 제공하지 않으면 해당 날짜의 자정(UTC) 이후 경과된 시간(초 수)으로 값을 지정할 수 있습니다.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

@@ -3,15 +3,27 @@ title: Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 
 description: Analytics 2.0 API를 사용하여 동시 뷰어 보고서 데이터를 가져오는 방법에 대해 알아봅니다. 요청 및 응답 샘플을 확인하십시오.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/rXu8Om0i6ELI2TGRANqhn9GTqq1DM1Obo7ZbCC1Ox4E
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 100%
+source-wordcount: 190
+ht-degree: 90%
 
 ---
-
 
 # Analytics 2.0 API를 사용하여 동시 뷰어 JSON 보고서 데이터 가져오기{#get-concurrent-viewers-json-report-data}
 

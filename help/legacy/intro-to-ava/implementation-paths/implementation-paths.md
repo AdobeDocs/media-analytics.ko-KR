@@ -4,10 +4,30 @@ description: Adobe Experience Platform 데이터 수집을 포함한 Adobe Strea
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/U9PBQc7dHNmONZc06t1Xi7EITkveGUkzcst6Sakqqzo
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 88%
+source-wordcount: 676
+ht-degree: 85%
 
 ---
 
@@ -20,22 +40,22 @@ Customer Journey Analytics 스트리밍 미디어 컬렉션 및 Adobe for 스트
 ## Adobe Media Analytics 확장을 통한 Adobe Experience Platform 데이터 수집
 
 >[!NOTE]
->Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko)를 참조하십시오.
+>Adobe Experience Platform Launch는 Experience Platform의 데이터 수집 기술군으로 새롭게 브랜딩되었습니다. 그 결과로 제품 설명서 전반에서 몇 가지 용어 변경이 있었습니다. 용어 변경에 대한 통합 참고 자료는 다음 [문서](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ko-KR)를 참조하십시오.
 
 
 Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능입니다. 태그를 통해 관련 고객 경험을 강화하는 데 필요한 모든 분석, 마케팅 및 광고 태그를 고 관리하는 간단한 방법을 고객에게 제공합니다. 태그는 포함된 부가 가치 기능으로 포함되어 Adobe Experience Cloud 고객에게 제공됩니다.
 
 태그는 확장이라고 하는 자체 통합을 구축하고 유지할 수 있는 권한을 누구에게나 부여합니다. Adobe Experience Cloud 고객은 앱 스토어 환경에서 이러한 확장을 사용할 수 있으므로 태그를 신속하게 설치, 구성 및 배포할 수 있습니다.
 
-확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다. 자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)의 *태그 개요* 문서를 참조하십시오.
+확장은 태그 기능을 확장하는 코드 패키지(JavaScript, HTML 및 CSS)입니다. 사실상의 셀프서비스 인터페이스를 사용하여 통합을 구축, 관리 및 업데이트합니다. 확장은 작업을 수행하는 데 사용하는 앱으로 간주할 수 있습니다.자세한 내용은 [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)의 *태그 개요* 문서를 참조하십시오.
 
 Adobe Media Analytics(MA) 확장은 오디오 및 비디오를 위한 핵심 JavaScript Media SDK(Media 2.x SDK)를 추가합니다. 이 확장은 데이터 수집 사이트 또는 프로젝트에 `MediaHeartbeat` 추적기 인스턴스를 추가하는 기능을 제공합니다.
 
 Media Analytics 확장이 포함된 Adobe 데이터 수집을 사용하려면 다음 사항을 충족해야 합니다.
 * Adobe Experience Cloud 고객이어야 합니다.
 * 웹 페이지에 데이터 수집 또는 DTM 임베드 코드를 배포해야 합니다.
-* [Analytics 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)
-* [Experience Cloud ID 확장 기능](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)
+* [Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko-KR)
+* [Experience Cloud ID 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)
 
 
 ## 클라이언트측

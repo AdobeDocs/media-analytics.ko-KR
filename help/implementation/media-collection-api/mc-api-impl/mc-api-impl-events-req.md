@@ -5,10 +5,21 @@ uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/xJntEcDm5sCGoCeuCjl9x51EOaYcOO2FzFAtK8mbt38
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: 99
+ht-degree: 56%
 
 ---
 
@@ -16,6 +27,6 @@ ht-degree: 100%
 
 **`{uri}/api/v1/sessions/{sid}/events`**
 
-다음 작업을 사용하여 세션 ID를 가져온 이후 모든 후속 추적 호출에 [이벤트 요청](../mc-api-ref/mc-api-events-req.md) 사용: [세션 요청](../mc-api-ref/mc-api-sessions-req.md) 포함하려는 선택적 매개 변수, 플레이헤드 위치 및 타임스탬프, 이벤트 유형을 JSON 요청 본문에 지정합니다.
+[&#128279;](../mc-api-ref/mc-api-sessions-req.md)세션 요청을 사용하여 세션 ID를 가져온 후 모든 후속 추적 호출에 [이벤트 요청](../mc-api-ref/mc-api-events-req.md)을 사용하십시오. 포함하려는 선택적 매개 변수, 플레이헤드 위치 및 타임스탬프, 이벤트 유형을 JSON 요청 본문에 지정합니다.
 
 세션 요청의 본문 구조와 [이벤트 요청](../mc-api-ref/mc-api-events-req.md)에 대한 JSON 요청 본문의 구조는 동일하지만, [JSON 유효성 검사 스키마](../mc-api-ref/mc-api-json-validation.md)에서 매개 변수 요구 사항 및 유형을 확인합니다.

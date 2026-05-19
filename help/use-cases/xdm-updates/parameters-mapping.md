@@ -4,10 +4,22 @@ description: 스트리밍 미디어용 새로운 Adobe Analytics 데이터 유�
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 43%
+source-wordcount: 1376
+ht-degree: 44%
 
 ---
 
@@ -26,10 +38,10 @@ ht-degree: 43%
 | 필드 이름 | 현재 XDM 필드 패스(더 이상 사용되지 않음) | 보고 XDM 필드 패스 | 데이터 유형 | 파생 필드 | 참고 |
 |--------------------|---------------------------------------------------------------------------|---------------------------------------------------|-----------|-------------------|-----------------------------------------------------------------------|
 | 스트림 유형 | media.mediaTimed.primaryAssetReference.streamType | mediaReporting.sessionDetails.streamType | 차원 | 스트림 유형 |                                                                       |
-| 콘텐츠 ID | media.mediaTimed.primaryAssetReference._ID | mediaReporting.sessionDetails.name | 차원 | 콘텐츠 ID |                                                                       |
+| 콘텐츠 ID | media.mediaTimed.primaryAssetReference._id | mediaReporting.sessionDetails.name | 차원 | 콘텐츠 ID |                                                                       |
 | 콘텐츠 길이 | media.mediaTimed.primaryAssetReference._xmpDM.duration | mediaReporting.sessionDetails.length | 차원 | 콘텐츠 길이 |                                                                       |
 | 콘텐츠 유형 | media.mediaTimed.primaryAssetViewDetails.broadcastContentType | mediaReporting.sessionDetails.contentType | 차원 | 콘텐츠 유형 |                                                                       |
-| 미디어 세션 ID | media.mediaTimed.primaryAssetViewDetails._ID | mediaReporting.sessionDetails.ID | 차원 | 미디어 세션 ID |                                                                       |
+| 미디어 세션 ID | media.mediaTimed.primaryAssetViewDetails._id | mediaReporting.sessionDetails.ID | 차원 | 미디어 세션 ID |                                                                       |
 | 콘텐츠 플레이어 이름 | media.mediaTimed.primaryAssetViewDetails.playerName | mediaReporting.sessionDetails.playerName | 차원 | 콘텐츠 플레이어 이름 |                                                                       |
 | 콘텐츠 채널 | media.mediaTimed.primaryAssetViewDetails.broadcastChannel | mediaReporting.sessionDetails.channel | 차원 | 콘텐츠 채널 |                                                                       |
 | 콘텐츠 세그먼트 | media.mediaTimed.primaryAssetViewDetails.videoSegment | mediaReporting.sessionDetails.segment | 차원 | 콘텐츠 세그먼트 |                                                                       |
@@ -52,7 +64,7 @@ ht-degree: 43%
 | 방송국 | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TRSN | mediaReporting.sessionDetails.station | 차원 | 방송국 |                                                                       |
 | 게시자 | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TPUB | mediaReporting.sessionDetails.publisher | 차원 | 게시자 |                                                                       |
 | 미디어 시작 | media.mediaTimed.impressions.value | mediaReporting.sessionDetails.isViewed | 지표 | 미디어 시작 |                                                                       |
-| 콘텐츠 시작 | media.mediaTimed.starts.value | mediaReporting.sessionDetails.isPlayed | 지표 | 콘텐츠 시작 |                                                                       |
+| 콘텐츠 시작 | media.mediaTimed.starts.value | mediaReporting.sessionDetails.isPlay | 지표 | 콘텐츠 시작 |                                                                       |
 | 콘텐츠 완료 | media.mediaTimed.completes.value | mediaReporting.sessionDetails.isCompleted | 지표 | 콘텐츠 완료 |                                                                       |
 | 콘텐츠 체류 시간 | media.mediaTimed.timePlayed.value | mediaReporting.sessionDetails.timePlayed | 지표 | 콘텐츠 체류 시간 |                                                                       |
 | 미디어 사용 시간 | media.mediaTimed.totalTimePlayed.value | mediaReporting.sessionDetails.totalTimePlayed | 지표 | 미디어 사용 시간 |                                                                       |
@@ -87,7 +99,7 @@ ht-degree: 43%
 
 | 필드 이름 | 현재 XDM 필드 패스(더 이상 사용되지 않음) | 보고 XDM 필드 패스 | 데이터 유형 | 파생 필드 | 참고 |
 |------------------|--------------------------------------------------------------|-------------------------------------------|-----------|----------------|-----------|
-| 챕터 | media.mediaTimed.mediaChapter.chapterAssetReference._ID | mediaReporting.chapterDetails.ID | 차원 | 챕터 |           |
+| 챕터 | media.mediaTimed.mediaChapter.chapterAssetReference._id | mediaReporting.chapterDetails.ID | 차원 | 챕터 |           |
 | 챕터 시작 | media.mediaTimed.mediaChapter.impressions.value | mediaReporting.chapterDetails.isStarted | 지표 | 챕터 시작 |           |
 | 챕터 완료 | media.mediaTimed.mediaChapter.completes.value | mediaReporting.chapterDetails.isCompleted | 지표 | 챕터 완료 |          |
 | 챕터 체류 시간 | media.mediaTimed.mediaChapter.timePlayed.value | mediaReporting.chapterDetails.timePlayed | 지표 | 챕터 체류 시간 |        |
@@ -98,14 +110,14 @@ ht-degree: 43%
 
 | 필드 이름 | 현재 XDM 필드 패스(더 이상 사용되지 않음) | 보고 XDM 필드 패스 | 데이터 유형 | 파생 필드 | 참고 |
 |------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| 광고 ID | advertising.adAssetReference._ID | mediaReporting.advertisingDetails.name | 차원 | 광고 ID |           |
+| 광고 ID | advertising.adAssetReference._id | mediaReporting.advertisingDetails.name | 차원 | 광고 ID |           |
 | Pod의 광고 위치 | advertising.adAssetViewDetails.index | mediaReporting.advertisingDetails.podPosition | 차원 | Pod의 광고 위치 |     |
 | 광고 길이 | advertising.adAssetReference._xmpDM.duration | mediaReporting.advertisingDetails.length | 지표 | 광고 길이 |           |
 | 광고 플레이어 이름 | advertising.adAssetViewDetails.playerName | mediaReporting.advertisingDetails.playerName | 차원 | 광고 플레이어 이름 |           |
-| 광고 브레이크 ID | advertising.adAssetViewDetails.adBreak._ID | mediaReporting.advertisingPodDetails.ID | 차원 | 광고 브레이크 ID |           |
+| 광고 브레이크 ID | advertising.adAssetViewDetails.adBreak._id | mediaReporting.adPodDetails.ID | 차원 | 광고 브레이크 ID |           |
 | 광고 이름 | advertising.adAssetReference._dc.title | mediaReporting.advertisingDetails.friendlyName | 차원 | 광고 이름 |           |
 | 광고주 | advertising.adAssetReference.advertiser | mediaReporting.advertisingDetails.advertiser | 차원 | 광고주 |           |
-| 캠페인 ID | advertising.adAssetReference.campaign | mediaReporting.advertisingDetails.campaignID | 차원 | 캠페인 ID |           |
+| 캠페인 ID | advertising.adAssetReference.campaign | mediaReporting.advertisingDetails.campaignId | 차원 | 캠페인 ID |           |
 | 광고 시작 | advertising.impressions.value | mediaReporting.advertisingDetails.isStarted | 지표 | 광고 시작 |           |
 | 광고 완료 | advertising.completes.value | mediaReporting.advertisingDetails.isCompleted | 지표 | 광고 완료 |           |
 | 광고 체류 시간 | advertising.timePlayed.value | mediaReporting.advertisingDetails.timePlayed | 지표 | 광고 체류 시간 |           |
@@ -123,13 +135,13 @@ ht-degree: 43%
 | 총 버퍼 지속 시간 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 모두 | 총 버퍼 지속 시간 |     |
 | 비트율 변경 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 모두 | 비트율 변경 |         |
 | 오류 이벤트 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 모두 | 오류 이벤트 |  |
-| 플레이어 SDK 오류 ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | 차원 | 지원되지 않음 | mediaReporting 필드 사용 |
+| 플레이어 SDK 오류 ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkError | mediaReporting.qoeDataDetails.playerSdkError | 차원 | 지원되지 않음 | mediaReporting 필드 사용 |
 | 외부 오류 ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | 차원 | 지원되지 않음 | mediaReporting 필드 사용 |
 | 시작 전 드롭 | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | 지표 | 시작 전 드롭 |     |
-| 버퍼 영향을 받은 스트림 | 지원되지 않음 | mediaReporting.qoeDataDetails.hasBufferImpactedStreams | 지표 | 버퍼 영향을 받은 스트림 | 다른 이벤트에서 계산됨 |
+| 버퍼 영향을 받은 스트림 | 지원되지 않음 | mediaReporting.qoeDataDetails.hasBufferImpactStreams | 지표 | 버퍼 영향을 받은 스트림 | 다른 이벤트에서 계산됨 |
 | 비트율 변경의 영향을 받은 스트림 | 지원되지 않음 | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams | 지표 | 비트율 변경의 영향을 받은 스트림 | 다른 이벤트에서 계산됨 |
 | 오류 영향을 받은 스트림 | 지원되지 않음 | mediaReporting.qoeDataDetails.hasErrorImpactedStreams | 지표 | 오류 영향을 받은 스트림 | 다른 이벤트에서 계산됨 |
-| 드롭된 프레임 영향을 받은 스트림 | 지원되지 않음 | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams | 지표 | 드롭된 프레임 영향을 받은 스트림 | 다른 이벤트에서 계산됨 |
+| 드롭된 프레임 영향을 받은 스트림 | 지원되지 않음 | mediaReporting.qoeDataDetails.hasDropFrameImpactedStreams | 지표 | 드롭된 프레임 영향을 받은 스트림 | 다른 이벤트에서 계산됨 |
 
 {style="table-layout:auto"}
 

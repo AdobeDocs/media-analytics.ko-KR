@@ -5,9 +5,22 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/O7cW-LPndHjkiqZm1b14EHSi0q4cRmG1U3tvFRMPd6Y
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: 578
 ht-degree: 97%
 
 ---
@@ -18,7 +31,7 @@ ht-degree: 97%
 
 ## 사전 요구 사항
 
-* **유효한 구성 매개 변수 얻기**
+* **유효한 구성 매개변수 얻기**
 
   이러한 매개 변수는 미디어 분석 계정을 설정한 후에 Adobe 담당자로부터 얻을 수 있습니다.
 * **미디어 플레이어에서 다음 API 포함**
