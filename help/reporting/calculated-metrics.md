@@ -3,13 +3,12 @@ title: 계산된 지표
 description: Adobe Analytics 및 Customer Journey Analytics의 스트리밍 미디어 보고를 위한 사용자 지정 계산된 지표입니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-
 
 # 계산된 지표
 
@@ -34,3 +33,4 @@ Analysis Workspace에서 이러한 계산된 지표를 만들려면 [Adobe Analy
 | 컨텐츠 버퍼 지속 시간 비율 | 총 버퍼 지속 시간과 콘텐츠 체류 시간의 비율 | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | 컨텐츠 TTL(Time-To-Start) 비율 | 시작 시간과 콘텐츠 체류 시간의 비율 | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | 광고 체류 시간 비율 | 광고 체류 시간과 콘텐츠 체류 시간의 비율 | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
