@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**Pod 위치의 광고**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Pod의 광고 위치](/help/implementation/variables/ads/ad-in-pod-position.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**Pod 위치의 광고**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Pod의 광고 위치](/help/implementation/variables/ads/ad-in-pod-position.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

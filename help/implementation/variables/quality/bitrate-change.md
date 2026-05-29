@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 비트율 변경 이벤트를 구현하는 방법에 대해 설명합니다. 해당 보고 변수에 대해서는 [[!UICONTROL 비트율 변경](차원)](/help/reporting/dimensions/bitrate-changes.md) 및 [[!UICONTROL 비트율 변경](지표)](/help/reporting/metrics/bitrate-changes.md)을 참조하십시오.*
+*이 페이지에서는 비트율 변경 이벤트를 구현하는 방법에 대해 설명합니다. 해당 보고 변수에 대해서는 [[!UICONTROL 비트율 변경] (차원)](/help/reporting/dimensions/bitrate-changes.md) 및 [[!UICONTROL 비트율 변경] (지표)](/help/reporting/metrics/bitrate-changes.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

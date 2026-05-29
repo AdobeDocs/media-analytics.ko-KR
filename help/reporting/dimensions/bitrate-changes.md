@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**비트율 변경**차원을 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.bitrateChangeCount` 컨텍스트 데이터 변수에서 쌍을 이루는 [비트율 변경(지표)](/help/reporting/metrics/bitrate-changes.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.bitrateChangeCount` 필드를 노출합니다. 비트 전송률 변경 이벤트를 실행하는 방법은 [비트 전송률 변경](/help/implementation/variables/quality/bitrate-change.md)을 참조하십시오.*
+*이 페이지는&#x200B;**비트율 변경**&#x200B;차원을 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.bitrateChangeCount` 컨텍스트 데이터 변수에서 쌍을 이루는 [비트율 변경(지표)](/help/reporting/metrics/bitrate-changes.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.bitrateChangeCount` 필드를 노출합니다. 비트 전송률 변경 이벤트를 실행하는 방법은 [비트 전송률 변경](/help/implementation/variables/quality/bitrate-change.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**콘텐츠 등급**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 등급](/help/implementation/variables/standard-metadata/content-rating.md)을 참조하세요.*
+*이 페이지는&#x200B;**콘텐츠 등급**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 등급](/help/implementation/variables/standard-metadata/content-rating.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

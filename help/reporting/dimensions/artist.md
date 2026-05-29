@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**아티스트**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [아티스트](/help/implementation/variables/standard-metadata/artist.md)를 참조하세요.*
+*이 페이지는&#x200B;**아티스트**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [아티스트](/help/implementation/variables/standard-metadata/artist.md)를 참조하세요.*
 
 >[!ENDSHADEBOX]
 

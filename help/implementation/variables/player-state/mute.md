@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**음소거**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [음소거의 영향을 받은 스트림](/help/reporting/metrics/mute-streams-impacted.md), [음소거 카운트](/help/reporting/metrics/mute-count.md) 및 [음소거 총 기간](/help/reporting/metrics/mute-total-duration.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**음소거**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [음소거의 영향을 받은 스트림](/help/reporting/metrics/mute-streams-impacted.md), [음소거 카운트](/help/reporting/metrics/mute-count.md) 및 [음소거 총 기간](/help/reporting/metrics/mute-total-duration.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

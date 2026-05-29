@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**미디어 피드 유형**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [미디어 피드 유형](/help/reporting/dimensions/media-feed-type.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**미디어 피드 유형**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [미디어 피드 유형](/help/reporting/dimensions/media-feed-type.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**다운로드된 미디어**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [미디어 다운로드 플래그](/help/implementation/variables/core/media-downloaded-flag.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**다운로드된 미디어**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [미디어 다운로드 플래그](/help/implementation/variables/core/media-downloaded-flag.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

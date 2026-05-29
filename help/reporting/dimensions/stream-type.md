@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**스트림 유형**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [스트림 형식](/help/implementation/variables/core/stream-type.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**스트림 유형**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [스트림 형식](/help/implementation/variables/core/stream-type.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

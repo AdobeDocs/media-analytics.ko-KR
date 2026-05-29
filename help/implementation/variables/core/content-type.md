@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 형식**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 형식](/help/reporting/dimensions/content-type.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**콘텐츠 형식**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 형식](/help/reporting/dimensions/content-type.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
