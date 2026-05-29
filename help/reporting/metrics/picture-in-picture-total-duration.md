@@ -3,7 +3,7 @@ title: 화면 속 화면 총 시간
 description: 세션 중 뷰어가 PIP(Picture-in-Picture)에서 보낸 누적 시간(초)을 보고합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 7%
@@ -28,6 +28,6 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 플레이어 상태 추적]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.states.pictureinpicture.time`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details) 항목 위치: `name = "pictureInPicture"`, 필드: `time` |
+| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details) 항목 위치: `name = "pictureInPicture"`, 필드: `time` |
 | 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
 | Audience Manager | `c_contextdata.a.media.states.pictureinpicture.time` |

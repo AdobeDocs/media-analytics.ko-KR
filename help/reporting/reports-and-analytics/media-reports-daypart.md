@@ -16,13 +16,13 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 45
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # 미디어 방송 시간{#media-daypart}
 
-미디어 방송 시간 대시보드는 시청자가 참여하는 시간을 빠르게 확인할 수 있도록 시간별 콘텐츠 시작을 표시합니다.  ![](assets/video-daypart-report.png)
+미디어 방송 시간 대시보드는 대상이 참여할 때 빠르게 볼 수 있도록 시간별로 [[!UICONTROL 콘텐츠 시작]](/help/reporting/metrics/content-starts.md)을 표시합니다.  ![](assets/video-daypart-report.png)

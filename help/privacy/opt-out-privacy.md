@@ -18,108 +18,208 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
-source-wordcount: 382
-ht-degree: 92%
+source-wordcount: 750
+ht-degree: 4%
 
 ---
 
-# 옵트아웃 및 개인정보 보호{#opt-out-and-privacy}
+# 옵트아웃 및 개인정보 보호
 
-## 옵트아웃 / 옵트인 {#opt-out-opt-in}
+사용자가 추적을 옵트아웃하면 스트리밍 미디어 라이브러리는 즉시 모든 데이터 수집 활동을 중지합니다. 해당 사용자에 대해 세션 시작 호출, 하트비트 Ping 및 이벤트 추적 데이터가 Adobe 데이터 수집 서버로 전송되지 않습니다.
 
-추적 활동을 특정 디바이스에서 허용할지 여부를 제어할 수 있습니다.
+## 옵트아웃 / 옵트인
 
-* **모바일 앱 -** 미디어 확장 기능은 데이터 수집 시 개인 정보 설정을 준수합니다. 추적을 옵트아웃하려면 태그에서 [옵트아웃됨](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)으로 개인 정보를 설정하거나 [Mobile SDK에서 개인 정보 상태를 업데이트](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)해야 합니다.
-* **JavaScript/브라우저 앱 -** VA 라이브러리는 `VisitorAPI` 개인정보 보호 및 옵트아웃 설정을 따릅니다. 추적을 옵트아웃하려면 방문자 API 서비스에서 옵트아웃해야 합니다. 옵트아웃 및 개인 정보에 대한 자세한 내용은 [Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
-* **OTT 앱(Chromecast, Roku) -** OTT SDK는 데이터 수집 및 전송에 대한 `opt` 상태 플래그를 설정하고 로컬로 저장된 ID를 검색할 수 있도록 해 주는 GDPR(General Data Protection Regulation) 사용 API를 제공합니다.
+옵트아웃 컨트롤은 장치 또는 브라우저별로 작동합니다. 사용자 동의를 존중하는 것은 구현 조직의 책임입니다. Adobe의 개인 정보 보호 방침에 대한 개요는 [Adobe 개인 정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
-  >[!NOTE]
-  >
-  >개인정보 보호 상태가 옵트아웃으로 설정된 경우 미디어 하트비트 추적 호출도 비활성화됩니다.
+## 권장 구현 유형
 
-  다음 설정을 사용하여 Analytics 데이터가 특정 디바이스에서 전송되는지 여부를 제어할 수 있습니다.
+>[!BEGINTABS]
 
-   * `ADBMobile.json` 구성 파일의 `privacyDefault` 설정. 이 설정은 코드에서 변경되기 전까지 초기 설정을 제어하고 유지됩니다.
+>[!TAB 웹 SDK]
 
-   * `ADBMobile().setPrivacyStatus()` 메서드.
+웹 SDK은 `setConsent` 명령을 사용하여 설정된 동의 환경 설정을 준수합니다. 동의가 `"out"`(으)로 설정되면 웹 SDK에서 스트리밍 미디어 추적 호출을 포함한 모든 이벤트를 Edge Network으로 전달하는 것을 중지합니다. 동의 상태는 세션 간 브라우저 스토리지에서 유지됩니다.
 
-      * **옵트아웃:**
+옵트아웃을 구현하기 전에 웹 SDK이 스트리밍 미디어 구성 요소로 구성되었는지 확인하십시오. 자세한 내용은 [웹 SDK 설정](../implementation/edge/edge-web-sdk.md)을 참조하세요.
 
-         * **Chromecast:**
+Adobe 2.0 동의 표준을 사용하여 동의 를 옵트아웃에 설정합니다.
 
-           ```
-           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-           ```
+```javascript
+alloy("setConsent", {
+  consent: [{
+    standard: "Adobe",
+    version: "2.0",
+    value: {
+      collect: { val: "n" }
+    }
+  }]
+});
+```
 
-         * **Roku:**
+동의 값:
 
-           ```
-           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-           ```
+* `"y"`: 옵트인(데이터 수집 허용)
+* `"n"`: 옵트아웃(데이터 수집이 제외됨)
+* `"p"`: 보류 중(사용자 결정 대기 중, 확인될 때까지 수집된 데이터 없음)
 
-        >[!IMPORTANT]
-        >
-        >사용자가 추적을 옵트아웃하면 사용자가 다시 옵트인할 때까지 유지된 모든 디바이스 데이터와 ID가 삭제됩니다.
+추적을 복원하려면 `"y"`을(를) `collect.val` 값으로 사용하여 `setConsent`을(를) 다시 호출하십시오.
 
-      * **다시 옵트인:**
+IAB TCF 2.0을 포함한 다른 형식은 웹 SDK 설명서에서 [setConsent 명령](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/setconsent)을 참조하십시오.
 
-         * **Chromecast:**
+>[!TAB iOS]
 
-           ```
-           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-           ```
+Adobe Experience Platform Mobile SDK은 `MobileCore.setPrivacyStatus()`을(를) 사용하여 설정된 개인 정보 상태를 준수합니다. 상태를 `.optedOut`(으)로 설정하면 Streaming Media를 포함한 모든 AEP 확장에 대한 모든 데이터 수집이 억제됩니다. 상태는 앱 세션 간에 지속됩니다.
 
-         * **Roku:**
+```swift
+MobileCore.setPrivacyStatus(.optedOut)
+```
 
-           ```
-           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-           ```
+추적을 복원하려면 개인 정보 상태를 `.optedIn`(으)로 다시 설정합니다.
 
-      * **현재 설정 반환:**
+```swift
+MobileCore.setPrivacyStatus(.optedIn)
+```
 
-         * **Chromecast:**
+자세한 내용은 AEP Mobile SDK 설명서에서 [개인 정보 및 GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)을 참조하십시오.
 
-           ```
-           ADBMobile.config.getPrivacyStatus()
-           ```
+>[!TAB Android]
 
-         * **Roku:**
+Adobe Experience Platform Mobile SDK은 `MobileCore.setPrivacyStatus()`을(를) 사용하여 설정된 개인 정보 상태를 준수합니다. 상태를 `MobilePrivacyStatus.OPT_OUT`(으)로 설정하면 Streaming Media를 포함한 모든 AEP 확장에 대한 모든 데이터 수집이 억제됩니다. 상태는 앱 세션 간에 지속됩니다.
 
-           ```
-           ADBMobile().getPrivacyStatus()
-           ```
+```kotlin
+MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_OUT)
+```
 
-  `setPrivacyStatus`를 사용하여 개인정보 보호 설정을 변경한 후에는 이 메서드를 사용하여 다시 변경할 때까지 또는 앱을 제거하고 다시 설치하기 전까지 변경 내용이 영구적으로 유지됩니다.
+추적을 복원하려면 개인 정보 상태를 `MobilePrivacyStatus.OPT_IN`(으)로 다시 설정합니다.
 
-## 저장된 식별자 검색(OTT 앱) {#retrieving-stored-identifiers-ott-apps}
+```kotlin
+MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
+```
 
-이 정보는 Roku 앱에서 로컬로 저장된 사용자 ID를 검색하는 데 도움이 됩니다.
+자세한 내용은 AEP Mobile SDK 설명서에서 [개인 정보 및 GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)을 참조하십시오.
 
->[!IMPORTANT]
->
->모든 식별자를 검색하는 메서드는 SDK에 의해 인식되고 지속되는 모든 사용자 식별자를 가져옵니다. 사용자가 옵트아웃하기 **전에** 이 메서드를 호출해야 합니다.
+>[!TAB Roku]
 
-로컬에 저장된 ID는 다음 정보를 포함할 수도 있는 JSON 문자열로 반환됩니다.
+AEP Roku SDK은 Adobe 2.0 동의 표준과 함께 `setConsent()`을(를) 사용합니다. `collect.val`을(를) `"n"`(으)로 설정하면 스트리밍 미디어 이벤트를 포함한 모든 데이터 수집이 즉시 중지됩니다.
 
-* 회사 컨텍스트 - IMS 조직 ID
-* 사용자 ID
-* Experience Cloud ID (MCID)
-* 데이터 소스 ID (DPID, DPUUID)
-* Analytics ID (AVID, AID, VID 및 관련 RSID)
-* Audience Manager ID (UUID)
+동의 값:
 
-예:
+* `"y"` — 옵트인(데이터 수집 허용)
+* `"n"` — 옵트아웃(데이터 수집이 제외됨)
+* `"p"` — 보류 중(사용자 결정 대기 중, 확인될 때까지 수집된 데이터 없음)
 
-* **Chromecast:**
+```brightscript
+currentDate = CreateObject("roDateTime")
+timestampInISO8601 = currentDate.ToISOString("milliseconds")
 
-  ```
-  ADBMobile.config.getAllIdentifiersAsync(callback)
-  ```
+collectConsentNo = {
+  "consent": [{
+    "standard": "Adobe",
+    "version": "2.0",
+    "value": {
+      "metadata": { "time": timestampInISO8601 },
+      "collect": { "val": "n" }
+    }
+  }]
+}
 
-* **Roku:**
+m.aepSdk.setConsent(collectConsentNo)
+```
 
-  ```
-  vids = ADBMobile().getAllIdentifiers()
-  ```
+추적을 복원하려면 `collect.val`을(를) `"y"`(으)로 설정하고 `setConsent()`을(를) 다시 호출하십시오.
+
+`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` 키와 함께 `updateConfiguration()`을(를) 사용하여 SDK 초기화 시 기본 동의 값을 설정할 수도 있습니다. 자세한 내용은 [AEP Roku SDK 설명서](https://github.com/adobe/aepsdk-roku)를 참조하세요.
+
+>[!TAB 미디어 Edge API]
+
+Media Edge API는 서버측 구현입니다. 자동으로 동의를 강제하는 SDK 레이어가 없습니다. 애플리케이션이 API를 호출하기 전에 사용자 동의 상태를 확인하고 옵트아웃된 사용자에 대한 요청을 억제해야 합니다.
+
+전체 옵트아웃의 경우 옵트아웃한 사용자의 `/va/v2/sessions` 엔드포인트(또는 후속 이벤트 엔드포인트)에 POST를 수행하지 마십시오.
+
+```javascript
+// Check consent status before initiating a media session
+if (userHasOptedOut) {
+  // Do not call the Media Edge API
+  return;
+}
+
+// Only call the API for users who have not opted out
+fetch("https://edge.adobedc.net/va/v2/sessions", {
+  method: "POST",
+  body: JSON.stringify(sessionStartPayload)
+});
+```
+
+자세한 내용은 [Media Edge API 참조](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)를 참조하십시오.
+
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
+
+Media SDK JS 3.x 라이브러리는 Adobe 방문자 API(ID 서비스) 옵트아웃 상태를 따릅니다. 사용자가 방문자 API를 사용하여 옵트아웃하면 Media SDK은 모든 추적 호출을 자동으로 억제합니다.
+
+```javascript
+var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
+visitor.setOptOut(true);
+```
+
+`YOUR_ORG_ID@AdobeOrg`을(를) Adobe Admin Console의 조직 ID로 바꾸십시오.
+
+추적을 복원하려면 `false`을(를) `setOptOut()`에 전달합니다.
+
+자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+
+>[!TAB Chromecast]
+
+Chromecast Media SDK 3.x는 `ADBMobile.config.setPrivacyStatus()`을(를) 사용하여 설정된 개인 정보 상태를 따릅니다. 상태를 `PRIVACY_STATUS_OPT_OUT`(으)로 설정하면 모든 데이터 수집이 제외됩니다.
+
+```javascript
+ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT);
+```
+
+추적을 복원하려면 상태를 다시 옵트인으로 설정합니다.
+
+```javascript
+ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN);
+```
+
+`ADBMobileConfig` 개체에서 SDK 초기화 시 기본 개인 정보 상태를 설정할 수도 있습니다.
+
+```javascript
+var ADBMobileConfig = {
+  "analytics": {
+    "privacyDefault": "optedout"
+  }
+};
+```
+
+>[!TAB 미디어 컬렉션 API]
+
+Media Collection API는 서버측 구현입니다. 애플리케이션이 API를 호출하기 전에 사용자 동의 상태를 확인하고 옵트아웃 사용자에 대한 요청을 억제해야 합니다.
+
+전체 옵트아웃의 경우 옵트아웃한 사용자의 세션 엔드포인트에 POST를 수행하지 마십시오.
+
+CCPA에서 부분 옵트아웃을 수행하려면 `sessionStart` 요청의 `params` 개체에 옵트아웃 플래그를 포함하십시오.
+
+```json
+{
+  "playerTime": { "playhead": 0, "ts": 1699523820000 },
+  "eventType": "sessionStart",
+  "params": {
+    "analytics.optOutServerSideForwarding": true,
+    "analytics.optOutShare": true
+  }
+}
+```
+
+* `analytics.optOutServerSideForwarding`: Adobe Analytics과 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 공유되는 데이터를 옵트아웃하려면 `true`(으)로 설정합니다.
+* `analytics.optOutShare`: 다른 Adobe Analytics 클라이언트와의 페더레이션 데이터 공유를 옵트아웃하려면 `true`(으)로 설정하십시오.
+
+사용 가능한 매개 변수의 전체 목록을 보려면 [Media Collection API 요청 매개 변수 참조](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)를 참조하십시오.
+
+>[!ENDTABS]

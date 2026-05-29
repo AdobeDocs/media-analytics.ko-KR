@@ -3,10 +3,10 @@ title: 음소거
 description: 뷰어가 오디오를 음소거하고 음소거를 해제하는 시점을 추적하여 백엔드가 음소거 참여를 보고할 수 있도록 합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 10%
+source-wordcount: '288'
+ht-degree: 6%
 
 ---
 
@@ -24,12 +24,16 @@ ht-degree: 10%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM 컬렉션 필드** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "mute"`이(가) 있는 항목) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "mute"`이(가) 있는 항목) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **필수** | 아니요 |
 | **전송 시점** | [상태 시작](/help/implementation/events/player-state/state-start.md), [상태 끝](/help/implementation/events/player-state/state-end.md) |
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 사용하여 상태가 `statesStart`에 추가된 `media.statesUpdate` 이벤트를 보냅니다.
 
@@ -61,11 +65,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `MediaConstants.PlayerState.MUTE` 상수와 함께 `tracker.trackPlayerStateStart()` 및 `tracker.trackPlayerStateEnd()`을(를) 사용합니다.
-
-**iOS(Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.MUTE)
@@ -74,7 +76,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+`MediaConstants.PlayerState.MUTE` 상수와 함께 `tracker.trackPlayerStateStart()` 및 `tracker.trackPlayerStateEnd()`을(를) 사용합니다.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.MUTE)
@@ -83,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `sendMediaEvent`을(를) 사용하여 상태가 `statesStart`에 추가된 `media.statesUpdate` 이벤트를 보냅니다.
 
@@ -113,7 +117,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 `statesStart`에서 `mute`(또는 뷰어가 음소거 해제할 때 `statesEnd`)로 [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) 끝점을 호출합니다.
 
@@ -132,7 +136,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.createStateObject` 및 `ADB.Media.PlayerState.Mute` 상수 사용:
 
@@ -143,7 +153,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Chromecast에는 `PlayerState` 상수가 없으므로 `"mute"` 문자열과 함께 `ADBMobile.media.createStateObject`을(를) 직접 사용하십시오.
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("mute");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the viewer unmutes:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 뷰어가 음소거하면 `stateStart` POST 요청을 보내고 음소거를 해제하면 `stateEnd` POST를 보냅니다.
 
@@ -158,3 +179,5 @@ tracker.trackPlayerStateEnd(stateObject);
 ```
 
 전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+
+>[!ENDTABS]

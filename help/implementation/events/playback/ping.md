@@ -3,10 +3,10 @@ title: Ping
 description: 하트비트를 전송하여 미디어 세션을 유지하고 일정한 간격으로 재생 진행률을 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,11 @@ Ping 요청 본문에 `params` 개체를 포함하지 마십시오.
 * **필수 구성 요소**: [세션 시작](../session/session-start.md)
 * **관련 지표**: 없음
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.ping"`(으)로 반복 `sendEvent` 통화를 예약합니다. 각 호출에서 `playhead`을(를) 현재 재생 위치로 업데이트합니다.
 
@@ -39,11 +43,15 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Mobile SDK은 ping 이벤트를 자동으로 전송합니다. 명시적인 호출이 필요하지 않습니다.
 
-## Roku(BrightScript)
+>[!TAB Android]
+
+Mobile SDK은 ping 이벤트를 자동으로 전송합니다. 명시적인 호출이 필요하지 않습니다.
+
+>[!TAB Roku]
 
 `eventType: "media.ping"`(으)로 반복 `sendMediaEvent` 통화를 예약합니다. 각 호출에서 `playhead`을(를) 현재 재생 위치로 업데이트합니다.
 
@@ -58,7 +66,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 타이머에서 [ping](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ping/) 끝점을 호출합니다. Adobe에서는 기본 재생이 시작된 후 첫 번째 ping은 10초 후를, 10초 후를, 광고 추적 중에는 1초를 권장합니다.
 
@@ -79,11 +87,21 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/ping?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Media SDK은 ping 이벤트를 자동으로 전송합니다. 명시적인 호출이 필요하지 않습니다.
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Chromecast SDK은 ping 이벤트를 자동으로 전송합니다. 명시적인 호출이 필요하지 않습니다.
+
+>[!TAB 미디어 컬렉션 API]
 
 타이머의 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `ping` POST를 보냅니다. `params` 개체 포함 안 함:
 
@@ -93,3 +111,5 @@ Media SDK은 ping 이벤트를 자동으로 전송합니다. 명시적인 호출
   "eventType": "ping"
 }
 ```
+
+>[!ENDTABS]

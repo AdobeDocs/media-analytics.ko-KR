@@ -3,7 +3,7 @@ title: 광고 URL
 description: 각 광고 크리에이티브의 에셋 URL을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 10%
@@ -28,7 +28,7 @@ ht-degree: 10%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | `a.media.ad.creativeURL`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 데이터 피드 | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.ad.creativeURL`을(를) 매핑하는 eVar) |
 | Audience Manager | `c_contextdata.a.media.ad.creativeURL` |
 

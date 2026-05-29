@@ -3,10 +3,10 @@ title: 콘텐츠 이름
 description: 콘텐츠의 친숙한 이름(사람이 읽을 수 있는 제목은 보고에 표시됨)을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 15%
+source-wordcount: '233'
+ht-degree: 9%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 15%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.friendlyName` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.friendlyName` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
-## Web SDK
+## 권장 구현 유형
 
-[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `mediaCollection.sessionDetails` 내에서 `friendlyName`을(를) 설정합니다.
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `friendlyName`을(를) 설정합니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 사람이 읽을 수 있는 이름을 첫 번째(`name`) 인수로 `createMediaObject`에 전달합니다. 두 번째 인수는 콘텐츠 ID입니다.
-
-**iOS(Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "Blinding Light",
@@ -69,7 +71,9 @@ let mediaObject = Media.createMediaObjectWith(name: "Blinding Light",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+사람이 읽을 수 있는 이름을 첫 번째(`name`) 인수로 `createMediaObject`에 전달합니다. 두 번째 인수는 콘텐츠 ID입니다.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("Blinding Light",
@@ -81,9 +85,9 @@ var mediaInfo = Media.createMediaObject("Blinding Light",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
-`createMediaSession`을(를) 호출할 때 `mediaCollection.sessionDetails` 내에서 `friendlyName`을(를) 설정합니다.
+`createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `friendlyName`을(를) 설정합니다.
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,9 +109,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
-`mediaCollection.sessionDetails` 내의 `friendlyName`을(를) 사용하여 [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) 끝점을 호출합니다.
+`xdm.mediaCollection.sessionDetails` 내의 `friendlyName`을(를) 사용하여 [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) 끝점을 호출합니다.
 
 ```json
 {
@@ -130,7 +134,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 사람이 읽을 수 있는 이름을 첫 번째 인수로 `ADB.Media.createMediaObject`에 전달합니다.
 
@@ -146,7 +156,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+사람이 읽을 수 있는 이름을 첫 번째 인수로 `ADBMobile.media.createMediaObject`에 전달합니다.
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "Blinding Light",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 `sessionStart` POST 요청의 `params` 개체에 `media.name` 포함:
 
@@ -161,3 +186,5 @@ tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
 전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+
+>[!ENDTABS]

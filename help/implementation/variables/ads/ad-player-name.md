@@ -3,10 +3,10 @@ title: 광고 플레이어 이름
 description: 광고를 렌더링하는 플레이어의 이름을 설정합니다. 광고 플레이어는 기본 콘텐츠 플레이어와 다를 수 있습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 11%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.playerName` |
-| **XDM 컬렉션 필드** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.ad.playerName` |
 | **필수** | 예 |
 | **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |
 
-## Web SDK
+## 권장 구현 유형
 
-[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `mediaCollection.advertisingDetails` 내에서 `playerName`을(를) 설정합니다.
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `xdm.mediaCollection.advertisingDetails` 내에서 `playerName`을(를) 설정합니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 광고 플레이어 이름을 메타데이터 HashMap 인수의 `MediaConstants.AdMetadataKeys.AD_PLAYER` 키로 `trackEvent(AdStart)`에 전달합니다.
-
-**iOS(Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -62,7 +64,9 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+광고 플레이어 이름을 메타데이터 HashMap 인수의 `MediaConstants.AdMetadataKeys.AD_PLAYER` 키로 `trackEvent(AdStart)`에 전달합니다.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -71,9 +75,9 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
-`media.adStart`에 대해 `sendMediaEvent`을(를) 호출할 때 `mediaCollection.advertisingDetails` 내에서 `playerName`을(를) 설정합니다.
+`media.adStart`에 대해 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.advertisingDetails` 내에서 `playerName`을(를) 설정합니다.
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -92,9 +96,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
-`mediaCollection.advertisingDetails` 내에서 `playerName`을(를) 사용하여 [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) 끝점을 호출합니다.
+`xdm.mediaCollection.advertisingDetails` 내에서 `playerName`을(를) 사용하여 [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) 끝점을 호출합니다.
 
 ```json
 {
@@ -116,7 +120,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.AdMetadataKeys.AdPlayer`을(를) 사용하여 `contextData` 개체에 광고 플레이어 이름을 전달합니다.
 
@@ -127,7 +137,17 @@ contextData[ADB.Media.AdMetadataKeys.AdPlayer] = "Freewheel";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+광고 시작 이벤트를 추적할 때 컨텍스트 메타데이터 개체에 광고 플레이어 이름을 전달합니다.
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var metadata = { "a.media.ad.playerName": "Chromecast Player" };
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 `adStart` POST 요청의 `params` 개체에 `media.ad.playerName` 포함:
 
@@ -142,3 +162,5 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
 전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+
+>[!ENDTABS]

@@ -3,10 +3,10 @@ title: 광고 브레이크 완료
 description: 광고 브레이크의 모든 광고가 완료되었음을 알립니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 16%
+source-wordcount: '156'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 16%
 >
 >모든 `adBreakStart`에 일치하는 `adBreakComplete`이(가) 있어야 합니다. 닫는 북엔드가 없으면 광고 이벤트는 무시되고 광고 기간은 기본 콘텐츠에 귀속됩니다.
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.adBreakComplete"`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `AdBreakComplete` 이벤트 형식으로 `trackEvent`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+`AdBreakComplete` 이벤트 형식으로 `trackEvent`을(를) 호출합니다.
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.adBreakComplete"`(으)로 `sendMediaEvent` 호출:
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 [adBreakComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakcomplete) 끝점을 호출합니다.
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `AdBreakComplete` 이벤트 형식으로 `trackEvent` 호출:
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+`AdBreakComplete` 이벤트 형식으로 `trackEvent` 호출:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `adBreakComplete` POST 보내기:
 
@@ -108,3 +126,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
   "eventType": "adBreakComplete"
 }
 ```
+
+>[!ENDTABS]

@@ -15,14 +15,18 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 199
-ht-degree: 70%
+source-wordcount: 220
+ht-degree: 63%
 
 ---
 
 # 모바일 SDK 설치 {#install-mobile-sdks}
+
+>[!IMPORTANT]
+>
+>이 페이지에서는 Analytics 전용 Mobile SDK 구현에 대해 설명합니다. 권장 구현은 [Edge Network을 사용하여 Streaming Media 구현](/help/implementation/edge/edge-mobile-sdk.md)을 참조하십시오.
 
 Android 또는 iOS에서 모바일 앱용 Adobe Streaming Media 서비스를 구현하려면 다음을 설치하고 구성합니다.
 

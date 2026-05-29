@@ -3,7 +3,7 @@ title: 광고 길이
 description: 각 광고의 지속 시간을 초 단위로 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -28,7 +28,7 @@ ht-degree: 6%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 광고]](/help/reporting/media-reports-enable.md)를 사용하도록 설정한 경우 컨텍스트 데이터 `a.media.ad.length`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 데이터 피드 | `videoadlength`, `post_videoadlength` |
 | Audience Manager | `c_contextdata.a.media.ad.length` |
 

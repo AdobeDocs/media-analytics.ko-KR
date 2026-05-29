@@ -3,10 +3,10 @@ title: 상태 시작
 description: 미디어 플레이어가 추적된 플레이어 상태로 들어왔다는 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 13%
+source-wordcount: '192'
+ht-degree: 7%
 
 ---
 
@@ -18,9 +18,13 @@ ht-degree: 13%
 올바른 상태 이름: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 
 * **필수 구성 요소**: [세션 시작](../session/session-start.md)
-* **관련 지표**: 상태에 따라 다릅니다. [플레이어 상태 추적](/help/use-cases/player-state-tracking/implementation-and-reporting.md)을 참조하세요.
+* **관련 지표**: 상태에 따라 다릅니다. [플레이어 상태 추적](/help/implementation/events/player-state/overview.md)을 참조하세요.
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.statesUpdate"` 및 `statesStart`의 상태 이름으로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출합니다.
 
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 적절한 `MediaConstants.PlayerState` 상수에서 만든 상태 개체에 `trackPlayerStateStart`을(를) 사용합니다.
-
-**iOS(Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.FULLSCREEN)
@@ -67,7 +69,9 @@ let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerSt
 tracker.trackEvent(event: MediaEvent.StateStart, info: stateObject, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+적절한 `MediaConstants.PlayerState` 상수에서 만든 상태 개체에 `trackPlayerStateStart`을(를) 사용합니다.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
@@ -75,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.statesUpdate"` 및 `statesStart`의 상태 이름으로 `sendMediaEvent`을(를) 호출합니다.
 
@@ -91,7 +95,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 `statesStart`에서 상태 이름으로 [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) 끝점을 호출합니다.
 
@@ -113,7 +117,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/statesUpdate?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 적절한 `ADB.Media.PlayerState` 상수와 함께 `ADB.Media.createStateObject` 사용:
 
@@ -123,7 +133,17 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Fullscreen);
 tracker.trackPlayerStateStart(stateObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+적절한 `ADBMobile.media.PlayerState` 상수와 함께 `ADBMobile.media.createStateObject` 사용:
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.FullScreen);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `stateStart` POST 보내기:
 
@@ -136,3 +156,5 @@ tracker.trackPlayerStateStart(stateObject);
   }
 }
 ```
+
+>[!ENDTABS]

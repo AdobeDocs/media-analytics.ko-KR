@@ -3,10 +3,10 @@ title: 광고 브레이크 시작
 description: 광고 브레이크(하나 이상의 광고 시퀀스)의 시작 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 13%
+source-wordcount: '201'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 13%
 >
 >광고 이벤트(`adStart`, `adComplete`, `adSkip`)는 `adBreakStart` 및 `adBreakComplete` 북엔드 없이 무시됩니다. 광고 지속 시간이 없으면 광고 지속 시간은 집계된 보고 데이터에 영향을 주는 기본 콘텐츠 지속 시간으로 인한 것입니다.
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.adBreakStart"` 및 필수 `advertisingPodDetails`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 광고 브레이크 이름, 위치 및 시작 시간을 `createAdBreakObject`에 전달한 다음 `trackEvent`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -57,7 +59,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+광고 브레이크 이름, 위치 및 시작 시간을 `createAdBreakObject`에 전달한 다음 `trackEvent`을(를) 호출합니다.
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -67,7 +71,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.adBreakStart"` 및 필수 `advertisingPodDetails`(으)로 `sendMediaEvent` 호출:
 
@@ -87,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 필요한 `advertisingPodDetails`(으)로 [adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) 끝점을 호출합니다.
 
@@ -112,7 +116,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 광고 브레이크 이름, 위치 및 시작 시간을 `ADB.Media.createAdBreakObject`에 전달:
 
@@ -126,7 +136,21 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+광고 브레이크 이름, 위치 및 시작 시간을 `ADBMobile.media.createAdBreakObject`에 전달:
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",  // name
+  1,           // position
+  0            // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `adBreakStart` POST 보내기:
 
@@ -141,3 +165,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
   }
 }
 ```
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: Pod 위치
 description: 컨텐츠 내의 각 광고 브레이크의 오프셋을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Pod 위치는 플레이어가 [광고 브레이크 시작](/help/implementation/
 | --- | --- |
 | Adobe Analytics(처리 규칙) | `a.media.ad.podSecond`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
 | Adobe Analytics(분류) | [광고 pod](ad-pod.md) 차원의 분류 — 보고서 세트에 대해 **[[!UICONTROL 미디어 광고]](/help/reporting/media-reports-enable.md)**&#x200B;를 사용하도록 설정하면 Adobe에서 이 분류를 자동으로 만듭니다. 분류 값을 채우고 유지 관리합니다. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | 데이터 피드(처리 규칙) | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.ad.podSecond`을(를) 매핑하는 eVar) |
 | 데이터 피드(분류) | 해당 사항 없음 — 데이터 피드는 분류를 지원하지 않습니다. |
 | Audience Manager | `c_contextdata.a.media.ad.podSecond` |

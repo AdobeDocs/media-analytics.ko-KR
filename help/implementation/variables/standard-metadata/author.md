@@ -3,10 +3,10 @@ title: 작성자
 description: 콘텐츠 작성자를 설정합니다. 오디오북에 주로 사용됩니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 16%
+source-wordcount: '210'
+ht-degree: 10%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 16%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.author` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.author` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
-## Web SDK
+## 권장 구현 유형
 
-[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `mediaCollection.sessionDetails` 내에서 `author`을(를) 설정합니다.
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `author`을(를) 설정합니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 작성자를 HashMap 인수에 메타데이터 키로 `trackSessionStart`에 전달합니다. `MediaConstants.AudioMetadataKeys.AUTHOR` 사용.
-
-**iOS(Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -60,7 +62,9 @@ metadata[MediaConstants.AudioMetadataKeys.AUTHOR] = "Eleanor Clementine"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+작성자를 HashMap 인수에 메타데이터 키로 `trackSessionStart`에 전달합니다. `MediaConstants.AudioMetadataKeys.AUTHOR` 사용.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -69,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.AUTHOR] = "Eleanor Clementine"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `createMediaSession`을(를) 사용하여 `sessionDetails` 내에서 `author`을(를) 설정합니다.
 
@@ -87,9 +91,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
-`mediaCollection.sessionDetails` 내의 `author`을(를) 사용하여 [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) 끝점을 호출합니다.
+`xdm.mediaCollection.sessionDetails` 내의 `author`을(를) 사용하여 [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) 끝점을 호출합니다.
 
 ```json
 {
@@ -112,7 +116,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.AudioMetadataKeys.Author`을(를) 사용하여 `contextData` 개체에 작성자를 전달합니다.
 
@@ -123,7 +133,20 @@ contextData[ADB.Media.AudioMetadataKeys.Author] = "Eleanor Clementine";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+`trackSessionStart`을(를) 호출하기 전에 `ADBMobile.media.AudioMetadataKeys.AUTHOR`을(를) 사용하여 미디어 개체의 `StandardMediaMetadata` 속성에서 작성자를 설정하십시오.
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Track", "audio-123", 240,
+  ADBMobile.media.StreamType.AOD, ADBMobile.media.MediaType.Audio);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.AudioMetadataKeys.AUTHOR] = "Eleanor Clementine";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 `params` 개체에 `media.author` 포함:
 
@@ -138,3 +161,5 @@ tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
 전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+
+>[!ENDTABS]

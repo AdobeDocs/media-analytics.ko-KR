@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1521
-ht-degree: 82%
+source-wordcount: 1516
+ht-degree: 79%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 82%
 
 * [Adobe Analytics 릴리스 노트](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=ko)
 * [Customer Journey Analytics 릴리스 노트](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=ko)
-* [Adobe Experience Cloud 제품](https://business.adobe.com/kr/products/adobe-experience-cloud-products.html)의 최신 릴리스 업데이트
+* [Adobe CX Enterprise](https://business.adobe.com/kr/products/adobe-experience-cloud-products.html)의 최신 릴리스 업데이트
 
 * [Adobe Analytics 튜토리얼](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ko)
 
@@ -54,7 +54,7 @@ ht-degree: 82%
 | 기능 | 설명 | 목표 일자 |
 | ----------- | ---------- | ------- |
 | **스트리밍 미디어 서비스: 일정 데이터 지원** | 이제 과거 라이브 스트리밍 미디어 콘텐츠의 예약된 데이터를 업로드하여 시청자 수를 보다 쉽고 정확하게 추적할 수 있습니다.<p>다음은 일정 데이터 업로드가 지원되는 라이브 콘텐츠의 예입니다.</p><ul><li>FAST(무료 광고 지원 TV) 플랫폼</li><li>로컬 스트림</li><li>라이브 스포츠</li></ul><p>일정 데이터를 업로드하면 업로드 파일에서 지정한 시간 동안 실행된 개별 프로그램의 시청자 수 데이터를 추적할 수 있습니다. 특정 주제나 프로그램 세그먼트에 대한 시청자 수 데이터를 수집할 수도 있습니다.</p><p>이러한 기능은 스트리밍 미디어 컬렉션을 어떻게 구현하든 관계없이 사용할 수 있습니다.</p><p>이전에는 라이브 콘텐츠를 분석할 때 주어진 세션을 특정 프로그램에 정확하게 연결하는 것이 어려웠고, 주어진 세션을 개별 주제나 프로그램 세그먼트에 연결하는 것도 불가능했습니다.</p><p>자세한 내용은 [라이브 콘텐츠를 추적할 일정 데이터 업로드](/help/use-cases/track-schedule-data.md)를 참조하십시오.</p> | 롤아웃 시작: 2025년 10월 29일<p>일반 가용성: 2026년 상반기</p><p>(원래 2025년 10월 29일에 일반 공개할 예정)</p> |
-| Adobe Experience Platform으로 스트리밍 미디어 데이터를 수집하기 위한 XDM 필드를 업데이트했습니다 | 스트리밍 미디어 데이터를 Adobe Experience Platform으로 수집할 때, 스트리밍 미디어 매개변수 설명서의 “XDM 필드 경로” 제목 아래에 표시된 XDM 필드 경로는 더 이상 사용해서는 안 됩니다. 대신, 2025년 5월 9일 이전에 플랫폼으로 스트리밍 미디어 데이터를 수집하기 위해 Analytics 소스 커넥터를 구현한 고객은 스트리밍 미디어 매개변수 설명서의 “보고 XDM 필드 경로” 제목 아래에 표시된 대로 기존 구성을 mediaReporting 필드 경로로 마이그레이션해야 합니다.<p> 이러한 필드 경로는 [스트리밍 미디어 서비스 개요](../media-overview.md)에서 연결된 스트리밍 미디어 변수 페이지에 설명되어 있으며 &quot;사용되지 않음&quot;으로 표시됩니다. (2025년 5월 9일 이후에 Analytics 소스 커넥터를 구현하고 이미 mediaReporting XDM 경로만 사용하고 있는 고객은 아무런 조치가 필요하지 않습니다.)</p><p>더 이상 사용되지 않는 XDM 필드 경로에 대한 데이터 수집은 2025년 10월 말까지 계속됩니다. 그 후에는 사용되지 않는 필드 경로가 완전히 제거되어 Adobe Experience Platform 스키마 UI에서 더 이상 표시되지 않으며, 데이터는 mediaReporting 필드 경로만 사용하여 전송됩니다.</p><p>자세한 내용은 [Analytics Source Connector 구현을 업데이트된 XDM 스트리밍 미디어 필드로 마이그레이션](/help/use-cases/xdm-updates/updated-xdm-fields.md)을 참조하십시오.</p><p>마이그레이션 지원에 대해서는 Adobe Consulting 서비스 또는 계정 팀에 문의해 주십시오. </p> | 2025년 10월 |
+| Adobe Experience Platform으로 스트리밍 미디어 데이터를 수집하기 위한 XDM 필드를 업데이트했습니다 | 스트리밍 미디어 데이터를 Adobe Experience Platform으로 수집할 때, 스트리밍 미디어 매개변수 설명서의 “XDM 필드 경로” 제목 아래에 표시된 XDM 필드 경로는 더 이상 사용해서는 안 됩니다. 대신, 2025년 5월 9일 이전에 플랫폼으로 스트리밍 미디어 데이터를 수집하기 위해 Analytics 소스 커넥터를 구현한 고객은 스트리밍 미디어 매개변수 설명서의 “보고 XDM 필드 경로” 제목 아래에 표시된 대로 기존 구성을 mediaReporting 필드 경로로 마이그레이션해야 합니다.<p> 이러한 필드 경로는 [스트리밍 미디어 서비스 개요](../media-overview.md)에서 연결된 스트리밍 미디어 변수 페이지에 설명되어 있으며 &quot;사용되지 않음&quot;으로 표시됩니다. (2025년 5월 9일 이후에 Analytics 소스 커넥터를 구현하고 이미 mediaReporting XDM 경로만 사용하고 있는 고객은 아무런 조치가 필요하지 않습니다.)</p><p>더 이상 사용되지 않는 XDM 필드 경로에 대한 데이터 수집은 2025년 10월 말까지 계속됩니다. 그 후에는 사용되지 않는 필드 경로가 완전히 제거되어 Adobe Experience Platform 스키마 UI에서 더 이상 표시되지 않으며, 데이터는 mediaReporting 필드 경로만 사용하여 전송됩니다.</p><p>자세한 내용은 [Adobe Experience Platform 및 Customer Journey Analytics에 대한 Media Analytics 매개 변수 매핑](/help/implementation/parameters-mapping.md)을 참조하십시오.</p><p>마이그레이션 지원에 대해서는 Adobe Consulting 서비스 또는 계정 팀에 문의해 주십시오. </p> | 2025년 10월 |
 | 웹 SDK을 사용하여 Adobe Experience Platform Edge Network으로 웹 데이터 보내기 | 이제 [Adobe Experience Platform Web SDK을 사용하여 스트리밍 미디어 웹 데이터를 Adobe Experience Platform Edge Network으로 보낼 수 있습니다](/help/implementation/edge/edge-web-sdk.md). 이를 통해 더 개인화된 캠페인을 작성하고 더 개인화된 콘텐츠를 제공하여 보고할 더 많은 추적 데이터를 얻을 수 있습니다.<p>이 개선 사항으로 Customer Journey Analytics, RT-CDP, AJO, 이벤트 전달 등 모든 플랫폼 솔루션 전반에 걸쳐 웹 구현을 위한 통합 수집 방법이 확보됩니다. 이전까지 스트리밍 미디어 웹 데이터를 Edge Network로 보내는 유일한 방법은 Media Edge API를 사용하는 것이었습니다. | 2024년 5월 29일 목요일 |
 | Adobe Experience Platform Edge으로 Roku 데이터 보내기 | 이제 [Experience Platform Edge과 함께 Customer Journey Analytics 스트리밍 미디어 컬렉션을 설치](/help/implementation/edge/implementation-edge.md)할 때 Adobe Experience Platform Roku SDK을 사용하여 스트리밍 미디어 데이터를 Adobe Experience Platform에 보낼 수 있습니다. | 2024년 4월 12일 토요일 |
 | Media Collection: Experience Edge(API 및 Mobile SDK)와 통합 | 이제 Experience Edge API 및 Mobile SDK을 사용하여 Customer Journey Analytics Streaming Media Collection을 구현할 수 있습니다. 이를 통해 보다 개인화된 캠페인을 구축하고 보다 개인화된 콘텐츠를 제공하여 보고할 더 많은 추적 데이터를 생성할 수 있습니다.<p>이 개선 사항은 Customer Journey Analytics 보고, RT-CDP, AJO 및 이벤트 전달과 같은 모든 솔루션에 통합 수집 방법을 제공합니다.  [자세히 알아보기](/help/implementation/edge/implementation-edge.md) | 2023년 5월 12일 토요일 |
@@ -70,9 +70,9 @@ ht-degree: 82%
 
 | 기능 | 설명 | 목표 일자 |
 | ----------- | ---------- | ------- |
-| 여러 플레이어 상태 추적 | 미디어 컬렉션 API를 사용하여 여러 플레이어 상태 추적을 구현합니다. [자세히 알아보기](/help/use-cases/player-state-tracking/multiple-player-states.md) | 2022년 9월 |
+| 여러 플레이어 상태 추적 | 미디어 컬렉션 API를 사용하여 여러 플레이어 상태 추적을 구현합니다. [자세히 알아보기](/help/implementation/events/player-state/overview.md) | 2022년 9월 |
 | 이름이 변경된 XDM 필드 | 일관성을 유지하기 위해 이름이 변경된 XDM 필드 이름:<br>*오디오 및 비디오 매개변수<br>*광고 매개변수<br>*챕터 매개변수<br>*플레이어 상태 매개변수<br>*품질 매개변수 | 2022년 9월 |
-| Device Co-op 참조 | Adobe Experience Cloud Device Co-op 및 Experience Cloud ID 서비스 요구 사항에 대한 참조가 제거되었습니다. | 2022월 8월 |
+| Device Co-op 참조 | Device Co-op 및 ID 서비스 요구 사항에 대한 참조가 제거되었습니다. | 2022월 8월 |
 | 업데이트된 컬렉션 및 보고 필드 이름 및 XDM 패스 | 업데이트된 사항:<br>*오디오 및 비디오 매개변수<br>*광고 매개변수<br>*챕터 매개변수<br>*플레이어 상태 매개변수<br>*품질 매개변수 | 2022월 8월 |
 | 대상자 분당 평균 시청 시간 | Media Analytics 고객은 평균 분당 시청자 패널을 사용하여 평균적인 콘텐츠 소비에 대해 더 잘 이해할 수 있습니다. <br>평균 분당 시청자를 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 분당 시청자를 유선 TV 평균 분당 지표와 비교하거나 추가할 수 있습니다. 이 패널을 통해 기간 분류가 업데이트된 경우에도 사용자 정의 기간의 대상자 평균을 보다 유연하게 측정할 수 있습니다.  [자세히 알아보기](/help/reporting/workspace/average-minute-audience.md) | 2022년 3월 16일 목요일 |
 | 미디어 재생 소요 시간 패널 | 미디어 재생 소요 시간 패널을 통해 미디어 사용자가 선택한 세부 기간을 하루 동안 시청한 시간을 기준으로 시청률을 파악하는 방법에 대해 알아봅니다. <br>[미디어 재생 소요 시간 패널 (튜토리얼)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=kr) | 2022년 1월 |

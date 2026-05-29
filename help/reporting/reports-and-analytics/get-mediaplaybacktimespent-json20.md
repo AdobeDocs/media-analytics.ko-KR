@@ -17,10 +17,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 210
-ht-degree: 90%
+source-wordcount: 191
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 90%
 1. 출력을 초 단위로 원하는지 분 단위로 원하는지에 따라 요청 본문의 `elements` -> `id`를 `metrics/playback_time_spent_seconds` 또는 `metrics/playback_time_spent_minutes`로 설정하십시오.
 1. 충분한 양의 데이터를 요청합니다.
 
-   * 보고서에서 지정한 데이터 범위는 모든 동시 뷰어 데이터를 _비디오 세션이 종료된 시점에 수집합니다._
+   * 보고서에서 지정한 데이터 범위는 비디오 세션이 종료된 시점에 모든 동시 뷰어 데이터 _를 수집합니다._
 한 날 시작하여 자정 이후에(즉, 다음 날) 끝나는 세션을 고려해야 합니다.
 
    * 요청에서 의도한 기간에 하루 더 데이터를 요청하지만 분석에서 _*의도한 데이터만 사용합니다.*_
@@ -132,7 +132,7 @@ ht-degree: 90%
 
 
 <!--
-You can extract the Media Playback Time Spent report data using the Experience Cloud API Explorer as follows.
+You can extract the Media Playback Time Spent report data using the API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

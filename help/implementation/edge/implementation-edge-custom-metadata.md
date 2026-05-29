@@ -3,7 +3,7 @@ title: 사용자 지정 메타데이터 지원 - XDM 형식
 description: Experience Edge XDM 형식을 사용하여 미디어 추적 이벤트와 함께 사용자 지정 메타데이터를 보내는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -310,7 +310,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata`은(는) 이벤트를 사용하여 사용자 지정 메타데이터를 보내는 데 사용되는 **인바운드 API 경로**&#x200B;입니다. 처리 후 데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달되며 `mediaReporting.customMetadata` 및 최상위 병합된 필드로 Adobe Experience Platform에 저장됩니다.
+`xdm.mediaCollection.customMetadata`은(는) 이벤트를 사용하여 사용자 지정 메타데이터를 보내는 데 사용되는 **인바운드 API 경로**&#x200B;입니다. 처리 후 데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달되며 `xdm.mediaReporting.customMetadata` 및 최상위 병합된 필드로 Adobe Experience Platform에 저장됩니다.
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - 사용자 지정 메타데이터 필드는 XDM 스키마(예: `_mycompany`)에서 사용자 지정 필드로 정의되어야 하며 병합된 필드로 AEP에 저장하고 쿼리할 수 있습니다
 
   ![XDM 스키마의 사용자 지정 필드 정의](assets/custom_metadata.png)
-- 보고 및 쿼리를 위해 사용자 지정 메타데이터는 `mediaReporting.customMetadata`에서 사용할 수 있으며 최상위 병합된 필드로도 사용할 수 있습니다. 사용 사례에 가장 적합한 것을 사용하십시오.
+- 보고 및 쿼리를 위해 사용자 지정 메타데이터는 `xdm.mediaReporting.customMetadata`에서 사용할 수 있으며 최상위 병합된 필드로도 사용할 수 있습니다. 사용 사례에 가장 적합한 것을 사용하십시오.
 - 세그먼테이션, Journey Orchestration 및 Real-Time CDP 활성화에 액세스 가능
 
 ## 비헤이비어

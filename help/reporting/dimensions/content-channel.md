@@ -3,7 +3,7 @@ title: 콘텐츠 채널
 description: 각 세션이 재생되는 배포 스테이션, 네트워크 또는 속성을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 7%
@@ -28,7 +28,7 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.channel`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videochannel`, `post_videochannel` |
 | Audience Manager | `c_contextdata.a.media.channel` |
 

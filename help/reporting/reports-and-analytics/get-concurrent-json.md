@@ -2,10 +2,10 @@
 title: Concurrent Viewer JSON 보고서 데이터 가져오기
 description: Concurrent Viewer JSON 보고서 데이터 가져오기
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +20,7 @@ Analytics API의 _*1.4 버전*_&#x200B;을 사용하여 동시 뷰어 보고서 
 1. 요청 본문에서 `elements` -> `id`를 `videoconcurrentviewers`로 설정합니다.
 1. 충분한 양의 데이터를 요청합니다. 데이터에 간격이 없도록 3200개의 데이터 포인트가 권장됩니다.
 
-   * 보고서에서 지정한 데이터 범위는 모든 동시 뷰어 데이터를 _비디오 세션이 종료된 시점에 수집합니다._
+   * 보고서에서 지정한 데이터 범위는 비디오 세션이 종료된 시점에 모든 동시 뷰어 데이터 _를 수집합니다._
 따라서 한 날 시작하여 자정 이후에(즉, 다음 날) 끝나는 세션을 고려해야 합니다.
 
    * 하루 이상의 데이터를 요청하지만 분석에서는 _*첫 날의 데이터만 사용합니다.*_
@@ -56,7 +56,7 @@ Analytics API의 _*1.4 버전*_&#x200B;을 사용하여 동시 뷰어 보고서 
 ```
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
+You can extract the concurrent viewers report data using the API Explorer as follows. 
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

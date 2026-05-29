@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 5%
 
 이전 라이브 콘텐츠의 예약 데이터를 업로드하려면 Streaming Media 환경이 다음 사전 요구 사항을 충족해야 합니다.
 
-* [추적 개요](/help/use-cases/track-av-playback/track-core-overview.md)에 설명된 대로 예약 데이터를 업로드할 콘텐츠를 추적할 수 있도록 스트리밍 미디어 컬렉션을 활성화해야 합니다. <!--specifics??? -->
+* [추적 개요](/help/implementation/events/session/overview.md)에 설명된 대로 예약 데이터를 업로드할 콘텐츠를 추적할 수 있도록 스트리밍 미디어 컬렉션을 활성화해야 합니다. <!--specifics??? -->
 
 * Customer Journey Analytics에서 스트리밍 미디어 컬렉션 을 사용합니다. Adobe Analytics에서는 일정 데이터를 업로드하는 기능을 사용할 수 없습니다.
 
@@ -317,9 +317,9 @@ ht-degree: 5%
 
    만든 다음 Customer Journey Analytics에서 보고할 수 있는 차원의 다음 예를 고려하십시오.
 
-   * **[&quot;_에피소드 이름_&quot;](/help/reporting/dimensions/episode.md)**: 이 차원은 특정 시리즈의 성과가 가장 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
+   * **[[!UICONTROL 에피소드]](/help/reporting/dimensions/episode.md)**: 이 차원은 특정 시리즈의 가장 성과가 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
 
-   * **[자산 ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL 자산 ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. [Customer Journey Analytics에서 데이터 분석](#analyze-data-in-customer-journey-analytics)을 계속합니다.
 

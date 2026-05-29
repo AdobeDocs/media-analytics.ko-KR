@@ -3,10 +3,10 @@ title: 챕터 완료
 description: 챕터 세그먼트 재생이 완료되었음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 20%
+source-wordcount: '132'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 20%
 챕터 완료 이벤트는 챕터 재생이 완료되었음을 나타냅니다. 뷰어가 챕터의 끝에 도달하면 보냅니다. 뷰어가 챕터를 건너뛸 경우 대신 [챕터 건너뛰기](chapter-skip.md)를 보냅니다.
 
 * **필수 구성 요소**: [세션 시작](../session/session-start.md), [챕터 시작](chapter-start.md)
-* **관련 지표**: [챕터 완료](/help/reporting/metrics/chapter-completes.md)
+* **관련 지표**: [[!UICONTROL 챕터 완료]](/help/reporting/metrics/chapter-completes.md)
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.chapterComplete"`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `ChapterComplete` 이벤트 형식으로 `trackEvent`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.ChapterComplete, info: nil, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+`ChapterComplete` 이벤트 형식으로 `trackEvent`을(를) 호출합니다.
 
 ```kotlin
 tracker.trackEvent(Media.Event.ChapterComplete, null, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.chapterComplete"`(으)로 `sendMediaEvent` 호출:
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 [chapterComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chaptercomplete) 끝점 호출:
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ChapterComplete` 이벤트 형식으로 `trackEvent` 호출:
 
@@ -94,7 +104,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterComplete?configId={datast
 tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+`ChapterComplete` 이벤트 형식으로 `trackEvent` 호출:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `chapterComplete` POST 보내기:
 
@@ -104,3 +122,5 @@ tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
   "eventType": "chapterComplete"
 }
 ```
+
+>[!ENDTABS]

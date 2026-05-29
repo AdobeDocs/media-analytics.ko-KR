@@ -3,10 +3,10 @@ title: 광고 건너뛰기
 description: 뷰어가 광고를 건너뛰었다는 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 15%
+source-wordcount: '167'
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 15%
 >
 >이 이벤트는 단일 광고가 재생되는 경우에도 `adBreakStart` 및 `adBreakComplete` 북엔드로 둘러싸야 합니다. 이러한 북엔드가 없으면 광고 이벤트가 무시되고 광고 기간이 기본 콘텐츠 기간으로 계산됩니다.
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.adSkip"`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `AdSkip` 이벤트 형식으로 `trackEvent`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdSkip, info: nil, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+`AdSkip` 이벤트 형식으로 `trackEvent`을(를) 호출합니다.
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.adSkip"`(으)로 `sendMediaEvent` 호출:
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 [adSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adskip) 끝점을 호출합니다.
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adSkip?configId={datastreamID}" 
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `AdSkip` 이벤트 형식으로 `trackEvent` 호출:
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adSkip?configId={datastreamID}" 
 tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+`AdSkip` 이벤트 형식으로 `trackEvent` 호출:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `adSkip` POST 보내기:
 
@@ -108,3 +126,5 @@ tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
   "eventType": "adSkip"
 }
 ```
+
+>[!ENDTABS]

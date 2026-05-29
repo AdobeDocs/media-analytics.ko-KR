@@ -16,14 +16,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 131
-ht-degree: 82%
+source-wordcount: 153
+ht-degree: 70%
 
 ---
 
 # Media Analytics 확장을 사용하여 스트리밍 미디어 서비스 설치
+
+>[!IMPORTANT]
+>
+>이 페이지에서는 Analytics 전용 Media Analytics 확장 구현에 대해 설명합니다. 권장 구현은 [Edge Network을 사용하여 Streaming Media 구현](/help/implementation/edge/edge-web-sdk.md)을 참조하십시오.
 
 Adobe Media Analytics 확장 기능을 사용하여 Adobe 스트리밍 미디어 서비스를 구현할 수 있습니다. Media Analytics 확장은 Core JavaScript Media SDK(Media 3.x SDK)를 추가합니다. 이 확장은 태그 활성화 사이트 또는 프로젝트에 미디어 추적기 인스턴스를 추가하는 기능을 제공합니다.
 

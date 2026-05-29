@@ -3,7 +3,7 @@ title: 콘텐츠 다시 시작
 description: 이전에 중단된 재생을 재개한 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 9%
@@ -23,11 +23,11 @@ ht-degree: 9%
 
 ## 이 지표의 계산 방법
 
-[세션 시작](/help/implementation/events/session/session-start.md) 이벤트에서 `mediaCollection.sessionDetails.hasResume`이(가) `true`인 경우 미디어 백엔드가 이 플래그를 설정합니다. 플레이어는 명시적으로 세션을 다시 시작으로 플래그를 지정해야 합니다. 지표는 닫기 호출에 보고됩니다.
+[세션 시작](/help/implementation/events/session/session-start.md) 이벤트에서 `xdm.mediaCollection.sessionDetails.hasResume`이(가) `true`인 경우 미디어 백엔드가 이 플래그를 설정합니다. 플레이어는 명시적으로 세션을 다시 시작으로 플래그를 지정해야 합니다. 지표는 닫기 호출에 보고됩니다.
 
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.resume`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
 | Audience Manager | 해당 사항 없음 |
