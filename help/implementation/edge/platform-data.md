@@ -1,40 +1,33 @@
 ---
-title: Media Edge API 데이터 매핑 및 플랫폼 유효성 검사
+title: XDM 보고 스키마
 description: Adobe Experience Platform에서 경험 이벤트를 생성하는 Media Edge API 이벤트와 mediaReporting XDM 스키마를 사용하여 구현의 유효성을 검사하는 방법을 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85eid: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Media Edge API 데이터 매핑 및 플랫폼 유효성 검사
+# XDM 보고 스키마
 
-Media Edge API 또는 Media Edge SDK을 사용하여 미디어 추적 이벤트를 전송하면 Media Analytics 백엔드가 해당 이벤트를 처리하고 계산된 경험 이벤트를 Adobe Experience Platform 데이터 세트에 기록합니다. Platform에 도달하는 이벤트와 백엔드가 자동으로 계산하는 내용을 이해하면 구현을 검증하고 Customer Journey Analytics 또는 Adobe Analytics에서 정확한 보고서를 작성하는 데 도움이 됩니다.
+Adobe Experience Platform Edge Network을 사용하여 미디어 추적 이벤트를 전송하면 Media Analytics 백엔드가 해당 이벤트를 처리하고 계산된 Experience 이벤트를 Platform 데이터 세트에 기록합니다. Platform에 도달하는 이벤트와 백엔드가 자동으로 계산하는 내용을 이해하면 구현을 검증하고 Customer Journey Analytics 또는 Adobe Analytics에서 정확한 보고서를 작성하는 데 도움이 됩니다.
 
-Media Edge은 두 개의 고유한 XDM 스키마를 사용합니다.
+컬렉션 및 보고 파이프라인의 다른 부분에서 두 개의 고유한 XDM 스키마가 사용됩니다.
 
 | 스키마 | 네임스페이스 | 방향 | 용도 |
 |---|---|---|---|
-| 미디어 컬렉션 | `xdm.mediaCollection` | 클라이언트 → Adobe | 플레이어가 각 추적 이벤트에 대해 보내는 내용 |
-| 미디어 보고 | `xdm.mediaReporting` | Adobe → 플랫폼 | 처리 후 백엔드가 데이터 세트에 쓰는 내용 |
+| 미디어 컬렉션 | `xdm.mediaCollection` | 클라이언트 → Adobe | 플레이어가 각 추적 이벤트에 대해 보내는 내용입니다. [변수](/help/implementation/variables/)에서 사용됩니다. |
+| 미디어 보고 | `xdm.mediaReporting` | Adobe → 플랫폼 | 처리 후 백엔드가 데이터 세트에 쓰는 내용. [차원](/help/reporting/dimensions/overview.md) 및 [지표](/help/reporting/metrics/overview.md)에서 사용됩니다. |
 
-`mediaReporting`에 있지만 `mediaCollection` 페이로드에는 없는 필드는 세션의 전체 이벤트 시퀀스에서 파생된 **백 엔드 계산**&#x200B;입니다. 이러한 필드는 보내지 않습니다. Adobe에서 생성합니다.
+`mediaReporting`에 있지만 `mediaCollection` 페이로드에는 없는 필드는 세션의 전체 이벤트 시퀀스에서 파생됩니다. 이러한 필드는 보내지 않습니다. Adobe에서 생성합니다.
 
 ## Platform 데이터 세트에 작성하는 이벤트
 
