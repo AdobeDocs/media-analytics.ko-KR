@@ -24,7 +24,7 @@ ht-degree: 7%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.chapter.offset` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.chapter.offset` |
 | **필수** | 아니요(모바일 SDK), 예(Edge, Media Collection API) |
 | **전송 시점** | [챕터 시작](/help/implementation/events/chapters/chapter-start.md), 챕터 닫기 |

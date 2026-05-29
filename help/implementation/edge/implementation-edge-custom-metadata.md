@@ -337,7 +337,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ## 관련 설명서
 
 - [사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API(JSON 형식)
-- [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
+- [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
 - [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping) - XDM 필드에 대한 Analytics 컨텍스트 데이터 매핑
 
 <!--

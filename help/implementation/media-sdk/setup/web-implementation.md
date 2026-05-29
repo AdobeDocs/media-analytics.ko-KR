@@ -45,7 +45,7 @@ ht-degree: 78%
 
 * **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 및 `Experience Cloud Identity Service` 구현**
 
-  자세한 내용은 [JavaScript을 사용하여 Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [AppMeasurement을 사용하여 방문자 식별](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)을 참조하십시오.
+  자세한 내용은 [JavaScript을 사용하여 Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [AppMeasurement을 사용하여 방문자 식별](https://experienceleague.adobe.com/ko/docs/analytics/implementation/id/appmeasurement)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 API 포함**
 
