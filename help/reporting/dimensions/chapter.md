@@ -3,7 +3,7 @@ title: 챕터
 description: 자동 생성된 챕터 ID로 처리된 각 고유한 챕터를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 8%
@@ -22,7 +22,7 @@ ht-degree: 8%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 챕터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.chapter.name`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | 데이터 피드 | `videochapter`, `post_videochapter` |
 | Audience Manager | 해당 사항 없음 |
 

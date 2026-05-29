@@ -3,10 +3,10 @@ title: 세션 종료
 description: 뷰어가 콘텐츠를 중단하면 미디어 세션을 즉시 닫습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '300'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,11 @@ ht-degree: 8%
 * **필수 구성 요소**: [세션 시작](session-start.md)
 * **관련 지표**: 없음
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.sessionEnd"`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -40,23 +44,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 뷰어가 플레이어를 닫거나 다른 곳으로 이동하면 `trackSessionEnd`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 tracker.trackSessionEnd()
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+뷰어가 플레이어를 닫거나 다른 곳으로 이동하면 `trackSessionEnd`을(를) 호출합니다.
 
 ```kotlin
 tracker.trackSessionEnd()
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.sessionEnd"`(으)로 `sendMediaEvent` 호출:
 
@@ -71,7 +75,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 [sessionEnd](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionend) 끝점 호출:
 
@@ -92,7 +96,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 뷰어가 플레이어를 닫거나 다른 곳으로 이동하면 `trackSessionEnd`을(를) 호출합니다.
 
@@ -100,7 +110,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 tracker.trackSessionEnd();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+뷰어가 플레이어를 닫거나 다른 곳으로 이동하면 `trackSessionEnd`을(를) 호출합니다.
+
+```javascript
+ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `sessionEnd` POST 보내기:
 
@@ -110,3 +128,5 @@ tracker.trackSessionEnd();
   "eventType": "sessionEnd"
 }
 ```
+
+>[!ENDTABS]

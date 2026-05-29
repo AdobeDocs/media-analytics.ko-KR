@@ -5,29 +5,23 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 TQID: https://experienceleague.adobe.com/UBY26SeGZbGWHjwOm6-YZNET8fe5Gvvco7aIZ9Z7rZg
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-  - id: df312454-73c4-43f6-a90e-18f5043f074c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 472
-ht-degree: 93%
+source-wordcount: 449
+ht-degree: 78%
 
 ---
 
 # JavaScript을 사용하여 Media SDK 설치 {#install-web-sdks}
+
+>[!IMPORTANT]
+>
+>이 페이지에서는 Analytics 전용 JavaScript Web SDK 구현에 대해 설명합니다. 권장 구현은 [Edge Network을 사용하여 Streaming Media 구현](/help/implementation/edge/edge-web-sdk.md)을 참조하십시오.
 
 이 페이지의 정보에는 웹 독립형 SDK를 설치하고 JavaScript를 설정하는 방법이 설명되어 있습니다.
 
@@ -41,7 +35,7 @@ ht-degree: 93%
 
 * **미디어 애플리케이션에서 JavaScript용 `AppMeasurement` 및 `Experience Cloud Identity Service` 구현**
 
-  자세한 내용은 [JavaScript를 사용하여 분석 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [Experience Cloud ID 서비스 구현](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ko)을 참조하십시오.
+  자세한 내용은 [JavaScript을 사용하여 Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ko-KR) 및 [AppMeasurement을 사용하여 방문자 식별](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)을 참조하십시오.
 
 * **미디어 플레이어에서 다음 API 포함**
 
@@ -87,10 +81,6 @@ ht-degree: 93%
 
    Media SDK는 웹 페이지당 한 번 구성해야 하며, 구성은 생성된 모든 추적기 인스턴스에 적용됩니다.
 
-   >[!IMPORTANT]
-   >
-   > Media SDK(3.x)는 2.x SDK에 사용된 HB 엔드포인트와 다른 미디어 추적을 위해 Media Collection API를 사용합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
-
    다음은 샘플 `MediaConfig` 초기화입니다.
 
    ```js
@@ -120,6 +110,4 @@ ht-degree: 93%
 
 ## JavaScript 2.x에서 3.x로 마이그레이션
 
-2.x에서 3.x로 마이그레이션에 대한 자세한 정보는 [&#x200B; 2.x에서 3.x로 마이그레이션](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)을 참조하십시오.
-
-이전 콘텐츠의 경우, [레거시 구현](/help/legacy/media-sdk/setup/setup-overview.md)을 참조하십시오.
+2.x에서 3.x로 마이그레이션에 대한 자세한 내용은 [JS SDK 2.x에서 3.x로 마이그레이션](/help/implementation/media-sdk/setup/migrate-js-2x-to-3x.md)을 참조하십시오.

@@ -3,7 +3,7 @@ title: 사이트 ID
 description: 각 광고에 대한 광고 사이트 식별자를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**사이트 ID**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [사이트 ID](/help/implementation/variables/ads/site-id.md)를 참조하십시오.*
+*이 페이지는&#x200B;**사이트 ID**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [사이트 ID](/help/implementation/variables/ads/site-id.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 10%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | `a.media.ad.site`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | `a.media.ad.site`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 데이터 피드 | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.ad.site`을(를) 매핑하는 eVar) |
 | Audience Manager | `c_contextdata.a.media.ad.site` |
 

@@ -3,9 +3,9 @@ title: 스트리밍 미디어 이벤트 개요
 description: 미디어 이벤트 유형 및 전송 순서에 대해 알아봅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,3 @@ ht-degree: 0%
 ## 오류 이벤트
 
 [Error](error.md) 이벤트는 세션 중 재생 실패(실패한 스트림 요청, 코덱 오류 또는 외부 게재 실패)를 기록합니다. 의미 있는 오류가 발생할 때마다 보내십시오. 오류 이벤트로 인해 세션이 닫히지 않습니다. 재생이 계속될 수 있으며 후속 이벤트가 동일한 세션에서 추적됩니다. 오류를 복구할 수 없는 경우 세션 종료 와 함께 이 오류를 수행하여 세션을 명시적으로 닫습니다.
-
->[!MORELIKETHIS]
->
->* [JSON 유효성 검사 스키마](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md): 각 이벤트 유형에 대한 요청 페이로드 구조를 확인하십시오.
->* [이벤트 요청 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md): Media Collection API 끝점 참조
->* [세션 요청 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md): 이벤트를 보내기 전에 세션을 만듭니다.
->* [플레이어 상태 추적](/help/use-cases/player-state-tracking/implementation-and-reporting.md): 상태 시작 및 상태 종료 구현 세부 정보

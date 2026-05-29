@@ -5,22 +5,13 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -29,7 +20,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->이 문서에서 설명하는 기능은 릴리스의 제한된 테스트 단계에 있으며 사용자 환경에서 아직 사용하지 못할 수 있습니다. 기능이 일반적으로 제공되면 이 메모는 제거됩니다. 릴리스 프로세스에 대한 정보는 [Customer Journey Analytics 기능 릴리스](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/releases/releases)를 참조하십시오.
+>이 문서에서 설명하는 기능은 릴리스의 제한된 테스트 단계에 있으며 사용자 환경에서 아직 사용하지 못할 수 있습니다. 기능이 일반적으로 제공되면 이 메모는 제거됩니다. 릴리스 프로세스에 대한 정보는 [Customer Journey Analytics 기능 릴리스](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)를 참조하십시오.
 
 이전 라이브 스트리밍 미디어 콘텐츠의 예약 데이터를 업로드하여 라이브 콘텐츠의 시청률을 보다 쉽고 정확하게 추적할 수 있습니다. 개별 프로그램 및 특정 주제나 프로그램 세그먼트에 대한 시청률을 추적할 수 있습니다.
 
@@ -81,7 +72,7 @@ ht-degree: 5%
 
 이전 라이브 콘텐츠의 예약 데이터를 업로드하려면 Streaming Media 환경이 다음 사전 요구 사항을 충족해야 합니다.
 
-* [추적 개요](/help/use-cases/track-av-playback/track-core-overview.md)에 설명된 대로 예약 데이터를 업로드할 콘텐츠를 추적할 수 있도록 스트리밍 미디어 컬렉션을 활성화해야 합니다. <!--specifics??? -->
+* [추적 개요](/help/implementation/events/session/overview.md)에 설명된 대로 예약 데이터를 업로드할 콘텐츠를 추적할 수 있도록 스트리밍 미디어 컬렉션을 활성화해야 합니다. <!--specifics??? -->
 
 * Customer Journey Analytics에서 스트리밍 미디어 컬렉션 을 사용합니다. Adobe Analytics에서는 일정 데이터를 업로드하는 기능을 사용할 수 없습니다.
 
@@ -157,7 +148,7 @@ ht-degree: 5%
 
    1. 배치 ID를 사용하여 프로그램 예약 데이터 레코드가 포함된 .json 파일을 푸시합니다.
 
-      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
+      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
 
       cURL을 사용하여 일정 레코드가 있는 파일을 푸시하는 다음 예를 생각해 보십시오.
 
@@ -317,9 +308,9 @@ ht-degree: 5%
 
    만든 다음 Customer Journey Analytics에서 보고할 수 있는 차원의 다음 예를 고려하십시오.
 
-   * **[&quot;_에피소드 이름_&quot;](/help/reporting/dimensions/episode.md)**: 이 차원은 특정 시리즈의 성과가 가장 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
+   * **[[!UICONTROL 에피소드]](/help/reporting/dimensions/episode.md)**: 이 차원은 특정 시리즈의 가장 성과가 좋은 에피소드를 학습하는 데 도움이 될 수 있습니다.
 
-   * **[자산 ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL 자산 ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. [Customer Journey Analytics에서 데이터 분석](#analyze-data-in-customer-journey-analytics)을 계속합니다.
 

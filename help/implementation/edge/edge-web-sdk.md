@@ -5,29 +5,20 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
 TQID: https://experienceleague.adobe.com/yr1qlonZDoevoT-vFo-WknObsb-CegTihWEFZN5TdAE
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 6%
+source-wordcount: 563
+ht-degree: 5%
 
 ---
 
 # Adobe Experience Platform Web SDK을 사용하여 웹 데이터를 Edge으로 전송
 
-버전 2.20.0부터 Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)의 `streamingMedia` 구성 요소를 사용하여 웹 사이트에서 미디어 세션과 관련된 데이터를 수집할 수 있습니다. 수집된 데이터에는 미디어 재생, 일시 정지, 완료 및 기타 관련 이벤트에 대한 정보가 포함될 수 있습니다.
+버전 2.20.0부터 Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)의 `streamingMedia` 구성 요소를 사용하여 웹 사이트에서 미디어 세션과 관련된 데이터를 수집할 수 있습니다. 수집된 데이터에는 미디어 재생, 일시 정지, 완료 및 기타 관련 이벤트에 대한 정보가 포함될 수 있습니다.
 
 데이터가 수집되면 Adobe Experience Platform 및/또는 Adobe Analytics으로 전송하여 보고서를 생성할 수 있습니다. 이 기능은 웹 사이트에서의 미디어 소비 행동을 추적하고 이해하는 포괄적인 솔루션을 제공합니다.
 
@@ -82,15 +73,13 @@ alloy("configure", {
 });
 ```
 
-구성 방법에 대한 자세한 내용은 웹 SDK `streamingMedia` 구성 요소 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/configure/streamingmedia)를 참조하십시오.
+구성 방법에 대한 자세한 내용은 웹 SDK `streamingMedia` 구성 요소 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)를 참조하십시오.
 
 ### 3단계: Media JS SDK에서 마이그레이션할 때 미디어 추적기 인스턴스 가져오기
 
 Media JS SDK을 사용하는 고객을 위해 웹 SDK은 미디어 이벤트 처리와 같은 기존 Media JS 기능에 대한 지원을 포함하여 Media JS SDK에서 Web SDK으로 이동하는 마이그레이션 경로를 제공합니다.
 
-[!DNL Web SDK]에 Media Analytics 추적기를 검색하는 명령이 포함되어 있습니다. 이 명령을 사용하여 개체 인스턴스를 만든 다음 [Media JS 라이브러리](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)에서 제공한 것과 동일한 API를 사용하여 미디어 이벤트를 추적할 수 있습니다.
-
-지원되는 메서드에 대한 자세한 내용은 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) 설명서를 참조하십시오.
+웹 SDK에는 개체 인스턴스를 만드는 데 사용할 수 있는 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) 명령이 포함되어 있습니다. 그런 다음 [3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md)에서 제공한 API와 동일한 API를 사용하여 미디어 이벤트를 추적할 수 있습니다.
 
 아래 스니펫은 Media JS에서 미디어 추적기 인스턴스를 검색하는 방법을 보여 줍니다.
 

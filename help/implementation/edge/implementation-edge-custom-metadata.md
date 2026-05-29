@@ -3,7 +3,7 @@ title: 사용자 지정 메타데이터 지원 - XDM 형식
 description: Experience Edge XDM 형식을 사용하여 미디어 추적 이벤트와 함께 사용자 지정 메타데이터를 보내는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -55,7 +55,7 @@ Media Collection API 구현의 경우 [사용자 지정 메타데이터 지원](
 }
 ```
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 `customMetadata`은(는) `xdm` 루트 수준이 아닌 `mediaCollection` 내의 **배열**&#x200B;이어야 합니다.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 임시 플래그, 디버깅 변수 또는 Analytics 관련 처리 힌트와 같은 Adobe Analytics 데이터 세트에 **저장하지**&#x200B;해야 하는 Analytics의 메타데이터가 필요한 경우 `_data` 개체를 사용합니다.
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 `_data`을(를) 통해 전송된 데이터는 Adobe Experience Platform에 저장되지 않으며 Real-Time CDP, Journey Orchestration 또는 기타 AEP 서비스에 사용할 수 없습니다.
 
@@ -308,9 +308,9 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 ## 다운스트림 데이터 위치
 
-&lt;InlineAlert variant="info" slots="text" />
+<InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata`은(는) 이벤트를 사용하여 사용자 지정 메타데이터를 보내는 데 사용되는 **인바운드 API 경로**&#x200B;입니다. 처리 후 데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달되며 `mediaReporting.customMetadata` 및 최상위 병합된 필드로 Adobe Experience Platform에 저장됩니다.
+`xdm.mediaCollection.customMetadata`은(는) 이벤트를 사용하여 사용자 지정 메타데이터를 보내는 데 사용되는 **인바운드 API 경로**&#x200B;입니다. 처리 후 데이터는 컨텍스트 데이터 변수로 Adobe Analytics에 전달되며 `xdm.mediaReporting.customMetadata` 및 최상위 병합된 필드로 Adobe Experience Platform에 저장됩니다.
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - 사용자 지정 메타데이터 필드는 XDM 스키마(예: `_mycompany`)에서 사용자 지정 필드로 정의되어야 하며 병합된 필드로 AEP에 저장하고 쿼리할 수 있습니다
 
   ![XDM 스키마의 사용자 지정 필드 정의](assets/custom_metadata.png)
-- 보고 및 쿼리를 위해 사용자 지정 메타데이터는 `mediaReporting.customMetadata`에서 사용할 수 있으며 최상위 병합된 필드로도 사용할 수 있습니다. 사용 사례에 가장 적합한 것을 사용하십시오.
+- 보고 및 쿼리를 위해 사용자 지정 메타데이터는 `xdm.mediaReporting.customMetadata`에서 사용할 수 있으며 최상위 병합된 필드로도 사용할 수 있습니다. 사용 사례에 가장 적합한 것을 사용하십시오.
 - 세그먼테이션, Journey Orchestration 및 Real-Time CDP 활성화에 액세스 가능
 
 ## 비헤이비어
@@ -337,7 +337,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ## 관련 설명서
 
 - [사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API(JSON 형식)
-- [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
+- [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
 - [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping) - XDM 필드에 대한 Analytics 컨텍스트 데이터 매핑
 
 <!--

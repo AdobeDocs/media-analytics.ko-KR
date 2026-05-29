@@ -3,10 +3,10 @@ title: 챕터 시작
 description: 콘텐츠 내의 챕터 세그먼트 시작 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 15%
+source-wordcount: '178'
+ht-degree: 8%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 15%
 챕터 시작 이벤트는 콘텐츠 내의 챕터 시작 신호를 보냅니다. 챕터 추적은 선택 사항이며 코어 미디어 추적에는 필요하지 않습니다. 챕터를 겹칠 수 없습니다. 새 챕터를 시작하기 전에 [챕터 완료](chapter-complete.md) 또는 [챕터 건너뛰기](chapter-skip.md)를 보내 현재 챕터를 닫으십시오.
 
 * **필수 구성 요소**: [세션 시작](../session/session-start.md)
-* **관련 지표**: [챕터 시작](/help/reporting/metrics/chapter-starts.md)
+* **관련 지표**: [[!UICONTROL 챕터 시작]](/help/reporting/metrics/chapter-starts.md)
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.chapterStart"` 및 필수 `chapterDetails`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 챕터 이름, 위치, 길이 및 시작 시간을 `createChapterObject`에 전달한 다음 `trackEvent`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 let chapterObject = Media.createChapterObjectWith(name: "Pilot Episode - Opening",
@@ -55,7 +57,9 @@ let chapterObject = Media.createChapterObjectWith(name: "Pilot Episode - Opening
 tracker.trackEvent(event: MediaEvent.ChapterStart, info: chapterObject, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+챕터 이름, 위치, 길이 및 시작 시간을 `createChapterObject`에 전달한 다음 `trackEvent`을(를) 호출합니다.
 
 ```kotlin
 val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
@@ -66,7 +70,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.chapterStart"` 및 필수 `chapterDetails`(으)로 `sendMediaEvent` 호출:
 
@@ -87,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 필요한 `chapterDetails`을(를) 사용하여 [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart) 끝점을 호출합니다.
 
@@ -113,7 +117,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.createChapterObject`에 챕터 이름, 위치, 길이 및 시작 시간을 전달합니다.
 
@@ -128,7 +138,22 @@ var chapterInfo = ADB.Media.createChapterObject(
 tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+`ADBMobile.media.createChapterObject`에 챕터 이름, 위치, 길이 및 시작 시간을 전달합니다.
+
+```javascript
+var chapterInfo = ADBMobile.media.createChapterObject(
+  "Pilot Episode - Opening",  // name
+  1,                          // position
+  240,                        // length (seconds)
+  0                           // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `chapterStart` POST 보내기:
 
@@ -144,3 +169,5 @@ tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, null);
   }
 }
 ```
+
+>[!ENDTABS]

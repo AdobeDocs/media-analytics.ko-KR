@@ -3,10 +3,10 @@ title: 오류
 description: 미디어 플레이어에 오류가 발생했음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 16%
+source-wordcount: '168'
+ht-degree: 10%
 
 ---
 
@@ -16,11 +16,15 @@ ht-degree: 16%
 오류 이벤트는 미디어 플레이어에 오류가 발생했음을 나타냅니다. 오류를 추적해도 세션이 닫히지 않습니다. 오류가 발생하여 재생을 계속할 수 없는 경우 오류 이벤트 후에 [세션 종료](session/session-end.md)를 호출하십시오.
 
 * **필수 구성 요소**: [세션 시작](session/session-start.md)
-* **관련 지표**: [오류 영향을 받은 스트림](/help/reporting/metrics/error-impacted-streams.md)
+* **관련 지표**: [[!UICONTROL 오류 영향을 받은 스트림]](/help/reporting/metrics/error-impacted-streams.md)
 
 `errorDetails.source` 속성은 두 개의 값만 허용합니다. `player`(미디어 플레이어에서 발생한 오류)와 `external`(CDN 또는 네트워크와 같은 외부 소스에서 발생한 오류).
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.error"` 및 필수 `errorDetails`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -40,23 +44,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 오류 ID 문자열로 `trackError`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 tracker.trackError(errorId: "media-error-001")
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+오류 ID 문자열로 `trackError`을(를) 호출합니다.
 
 ```kotlin
 tracker.trackError("media-error-001")
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.error"` 및 필수 `errorDetails`(으)로 `sendMediaEvent` 호출:
 
@@ -75,7 +79,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 필요한 `errorDetails`(으)로 [오류](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/error/) 끝점을 호출합니다.
 
@@ -100,7 +104,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/error?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 오류 ID 문자열로 `trackError`을(를) 호출합니다.
 
@@ -108,7 +118,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/error?configId={datastreamID}" \
 tracker.trackError("media-error-001");
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+오류 ID 문자열로 `trackError`을(를) 호출합니다.
+
+```javascript
+ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `error` POST 보내기:
 
@@ -122,3 +140,5 @@ tracker.trackError("media-error-001");
   }
 }
 ```
+
+>[!ENDTABS]

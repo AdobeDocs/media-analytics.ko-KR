@@ -3,10 +3,10 @@ title: 일시 중지 시작
 description: 사용자가 미디어 재생을 일시 중지했음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 19%
+source-wordcount: '140'
+ht-degree: 10%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 19%
 일시 중지 시작 이벤트는 사용자가 재생을 일시 중지했음을 알립니다. 별도의 다시 시작 이벤트가 없습니다. 재생이 다시 시작될 때 [재생](play.md) 이벤트를 보내십시오.
 
 * **필수 구성 요소**: [세션 시작](../session/session-start.md)
-* **관련 지표**: [이벤트 일시 중지](/help/reporting/metrics/pause-events.md)
+* **관련 지표**: [[!UICONTROL 이벤트 일시 중지]](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >
 >다시 시작 이벤트 유형이 없습니다. 다시 시작은 `pauseStart` 이후에 [`play`](play.md) 이벤트를 보낼 때 추론됩니다.
 
-## Web SDK
+## 권장 구현 유형
+
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
 
 `eventType: "media.pauseStart"`(으)로 [`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview) 호출:
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 사용자가 재생을 일시 중지하면 `trackPause`을(를) 호출합니다.
-
-**iOS(Swift)**
 
 ```swift
 tracker.trackPause()
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+사용자가 재생을 일시 중지하면 `trackPause`을(를) 호출합니다.
 
 ```kotlin
 tracker.trackPause()
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
 `eventType: "media.pauseStart"`(으)로 `sendMediaEvent` 호출:
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
 [pauseStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/pausestart/) 끝점 호출:
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 사용자가 재생을 일시 중지하면 `trackPause`을(를) 호출합니다.
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 tracker.trackPause();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+사용자가 재생을 일시 중지하면 `trackPause`을(를) 호출합니다.
+
+```javascript
+ADBMobile.media.trackPause();
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `pauseStart` POST 보내기:
 
@@ -108,3 +126,5 @@ tracker.trackPause();
   "eventType": "pauseStart"
 }
 ```
+
+>[!ENDTABS]

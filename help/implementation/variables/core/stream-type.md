@@ -3,10 +3,10 @@ title: 스트림 유형
 description: 스트림 유형을 설정하여 미디어 스트림이 오디오 콘텐츠인지 비디오 콘텐츠인지 식별합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 10%
+source-wordcount: '312'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**스트림 형식**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [스트림 유형](/help/reporting/dimensions/stream-type.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**스트림 형식**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [스트림 유형](/help/reporting/dimensions/stream-type.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -26,14 +26,18 @@ ht-degree: 10%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.streamType` |
-| **XDM 컬렉션 필드** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.streamType` |
 | **필수** | 예 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
 
-## Web SDK
+## 권장 구현 유형
 
-[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `mediaCollection.sessionDetails` 내에서 `streamType`을(를) 설정합니다.
+>[!BEGINTABS]
+
+>[!TAB 웹 SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/kr/docs/experience-platform/collection/js/commands/sendevent/overview)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `streamType`을(를) 설정합니다.
 
 ```javascript
 alloy("sendEvent", {
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `Media.MediaType.Video` 또는 `Media.MediaType.Audio`을(를) `createMediaObject`에 `mediaType` 인수로 전달합니다. `createMediaObject`의 `streamType` 인수는 이 변수가 아닌 콘텐츠 형식 변수(VOD, Live 등)를 제어합니다.
-
-**iOS(Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "video-123",
@@ -71,7 +73,9 @@ let mediaObject = Media.createMediaObjectWith(name: "video-123",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android(Kotlin)**
+>[!TAB Android]
+
+`Media.MediaType.Video` 또는 `Media.MediaType.Audio`을(를) `createMediaObject`에 `mediaType` 인수로 전달합니다. `createMediaObject`의 `streamType` 인수는 이 변수가 아닌 콘텐츠 형식 변수(VOD, Live 등)를 제어합니다.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("video-123",
@@ -83,9 +87,9 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku(BrightScript)
+>[!TAB Roku]
 
-`createMediaSession`을(를) 호출할 때 `mediaCollection.sessionDetails` 내에서 `streamType`을(를) 설정합니다.
+`createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `streamType`을(를) 설정합니다.
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -107,9 +111,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB 미디어 Edge API]
 
-`mediaCollection.sessionDetails` 내의 `streamType`을(를) 사용하여 [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) 끝점을 호출합니다.
+`xdm.mediaCollection.sessionDetails` 내의 `streamType`을(를) 사용하여 [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) 끝점을 호출합니다.
 
 ```json
 {
@@ -132,7 +136,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 이전 구현 유형(Analytics 전용)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.MediaType.Video` 또는 `ADB.Media.MediaType.Audio`을(를) `Media.createMediaObject`에 다섯 번째 인수로 전달합니다.
 
@@ -148,7 +158,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+`ADBMobile.media.MediaType.Video` 또는 `ADBMobile.media.MediaType.Audio`을(를) `ADBMobile.media.createMediaObject`에 다섯 번째 인수로 전달합니다.
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 미디어 컬렉션 API]
 
 `sessionStart` POST 요청의 `params` 개체에 `media.streamType` 포함:
 
@@ -163,3 +188,5 @@ tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
 전체 요청 구조 및 모든 필수 필드에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+
+>[!ENDTABS]

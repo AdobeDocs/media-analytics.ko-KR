@@ -3,7 +3,7 @@ title: 시작 시간(차원)
 description: 첫 번째 프레임이 렌더링되기 전 경과 시간을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**시작 시간**&#x200B;차원을 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.timeToStart` 컨텍스트 데이터 변수에서 쌍을 이루는 [시작 시간(지표)](/help/reporting/metrics/time-to-start.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `mediaReporting.qoeDataDetails.timeToStart` 필드를 노출합니다. 이 변수를 수집하는 방법은 [시작 시간](/help/implementation/variables/quality/time-to-start.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**시작 시간**차원을 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.timeToStart` 컨텍스트 데이터 변수에서 쌍을 이루는 [시작 시간(지표)](/help/reporting/metrics/time-to-start.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.timeToStart` 필드를 노출합니다. 이 변수를 수집하는 방법은 [시작 시간](/help/implementation/variables/quality/time-to-start.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 품질]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.qoe.timeToStart`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 데이터 피드 | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 

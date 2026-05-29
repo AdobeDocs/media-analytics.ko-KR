@@ -3,7 +3,7 @@ title: 유형 표시
 description: 콘텐츠 형식(전체 에피소드, 미리보기, 클립 또는 기타)을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**표시 유형**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [유형 표시](/help/implementation/variables/standard-metadata/show-type.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**표시 유형**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [유형 표시](/help/implementation/variables/standard-metadata/show-type.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 10%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.type`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videoshowtype`, `post_videoshowtype` |
 | Audience Manager | `c_contextdata.a.media.type` |
 

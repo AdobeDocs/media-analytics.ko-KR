@@ -6,24 +6,14 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/6SPeRxCbhd8xZE-u0PlNpqXpZ9JWAS5hi41f7mjTBe0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1344
-ht-degree: 98%
+source-wordcount: 1337
+ht-degree: 86%
 
 ---
 
@@ -31,7 +21,7 @@ ht-degree: 98%
 
 ## 분석 데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | 문자열 | `sessionStart` | Adobe Analytics 서버의 URL |
 | `analytics.reportSuite` | Y | 문자열 | `sessionStart` | Analytics 보고 데이터를 식별하는 ID |
@@ -40,16 +30,16 @@ ht-degree: 98%
 
 ## 방문자 데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | 문자열 | `sessionStart` | Experience Cloud 조직 ID, Adobe Experience Cloud 관련 시스템 내에서 조직 식별 |
-| `visitor.marketingCloudUserId` | N | 문자열 | `sessionStart` | ECID(Experience Cloud 사용자 ID)입니다. 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만, Experience Cloud 앱 제품군에 액세스하는 데 필요합니다. |
+| `visitor.marketingCloudOrgId` | Y | 문자열 | `sessionStart` | IMS 조직 ID, Adobe CX Enterprise 내에서 조직 식별 |
+| `visitor.marketingCloudUserId` | N | 문자열 | `sessionStart` | Experience Cloud 사용자 ID(ECID). 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만 CX 엔터프라이즈 앱 및 서비스에 액세스하는 데 필요합니다. |
 | `visitor.aamLocationHint` | N | 정수 | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 - 값을 입력하지 않으면 값은 null입니다. |
 | `appInstallationId` | N | 문자열 | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
 
 ## 콘텐츠 데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | Y | 문자열 | `sessionStart` | 콘텐츠에 대한 고유 식별자 |
 | `media.name` | N | 문자열 | `sessionStart` | 사용자가 읽을 수 있는 콘텐츠 이름 |
@@ -62,7 +52,7 @@ ht-degree: 98%
 
 ## 콘텐츠 표준 메타데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | 문자열 | `sessionStart` | 스트림 형식(예: “HD”) |
 | `media.show` | N | 문자열 | `sessionStart` | 프로그램 또는 시리즈 이름 |
@@ -84,7 +74,7 @@ ht-degree: 98%
 
 ## 광고 데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | 문자열 | `adBreakStart` | 친숙한 광고 브레이크 이름 |
 | `media.ad.podIndex` | Y | 정수 | `adBreakStart` | 비디오에 있는 광고 pod 인덱스 |
@@ -97,7 +87,7 @@ ht-degree: 98%
 
 ## 광고 표준 메타데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | 문자열 | `adStart` | 광고에서 다루고 있는 제품의 회사 또는 브랜드입니다 |
 | `media.ad.campaignId` | N | 문자열 | `adStart` | 광고 캠페인의 ID |
@@ -108,7 +98,7 @@ ht-degree: 98%
 
 ## 챕터 데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | Y | 정수 | `chapterStart` | 콘텐츠에서 챕터의 위치 식별 |
 | `media.chapter.offset` | Y | 숫자 | `chapterStart` | 재생에서 챕터가 시작되는 시간(초) |
@@ -117,7 +107,7 @@ ht-degree: 98%
 
 ## 품질 데이터
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | 정수 | 임의 | 평균 비트율(bps)입니다. 평균 비트율은 재생 기간과 관련하여 재생 세션 중에 발생한 모든 비트율 값의 가중 평균으로. |
 | `media.qoe.droppedFrames` | N | 정수 | 임의 | 스트림의 드롭된 프레임 수 |
@@ -126,20 +116,20 @@ ht-degree: 98%
 
 ## CCPA(California Consumer Privacy Act) 매개 변수 {#ccpa-params}
 
-| 요청 키  | 필수 여부 | 요청 유형 키 | 시작 시기... |  설명  |
+| 요청 키 | 필수 여부 | 요청 유형 키 | 설정... | 설명 |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | 부울 | `sessionStart` | 최종 사용자가 Adobe Analytics와 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 참으로 설정합니다. |
+| `analytics.optOutServerSideForwarding` | N | 부울 | `sessionStart` | 최종 사용자가 Adobe Analytics과 다른 CX 엔터프라이즈 솔루션(예: Audience Manager) 간에 데이터를 공유하지 않기로 선택한 경우 참으로 설정합니다. |
 | `analytics.optOutShare` | N | 부울 | `sessionStart` | 최종 사용자가 데이터를 (예: 다른 Adobe Analytics 클라이언트로) 페더레이션하지 않기로 선택한 경우 참으로 설정합니다. |
 
 ## 추가 세부 정보 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-맵 `params` 내부에 Experience Cloud 사용자 ID(`MID` 또는 `MCID`라고도 함)를 포함하면 **visitor.marketingCloudUserId** 키를 사용하여 `sessionStart` 호출 시 Experience Cloud 사용자 ID를 전달합니다. 이 기능은 다른 Experience Cloud 제품과 이미 통합하고 MCID를 가져온 경우에 유용합니다.
+맵 `params` 내부에 Experience Cloud 사용자 ID(`MID` 또는 `MCID`라고도 함)를 포함하면 **visitor.marketingCloudUserId** 키를 사용하여 `sessionStart` 호출 시 Experience Cloud 사용자 ID를 전달합니다. 이 기능은 다른 CX 엔터프라이즈 제품과 이미 통합하고 MCID를 획득한 경우에 유용합니다.
 
 >[!NOTE]
 >
->MA(Media Analytics)는 Experience Cloud 앱 제품군(Adobe Analytics, Audience Manager, Target 등)에 통합되어 있습니다. 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _ECID는 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 것입니다._
+>MA(Media Analytics)는 CX 엔터프라이즈 애플리케이션 제품군(Adobe Analytics, Audience Manager, Target 등)과 통합됩니다. 이러한 앱에 액세스하려면 Experience Cloud ID가 필요합니다. _ECID는 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 것입니다._
 
 ### appInstallationId
 

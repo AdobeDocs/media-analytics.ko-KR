@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 84574afd9d39e0643e7f12f44e8729e947c2ec1b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 59%
+source-wordcount: '754'
+ht-degree: 35%
 
 ---
 
@@ -23,38 +23,36 @@ ht-degree: 59%
    + [지원되는 디바이스](getting-started/supported-devices.md)
    + [Streaming Media 서비스 구현 설명서](getting-started/implementation-documentation.md)
    + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
-   + 지원 종료 {#end-of-support}
-      + [Media Analytics Mobile SDK 지원 종료](additional-resources/end-of-support-faqs.md)
-      + 레거시 - 독립형 Media SDK에서 Launch로의 마이그레이션 {#sdk-to-launch}
-         + [개요](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-         + [Android - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-         + [iOS - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - Media SDK에서 Launch로의 마이그레이션](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
    + 이벤트 {#events}
       + [이벤트 개요](implementation/events/overview.md)
       + 세션 {#session}
+         + [컨텐츠 재생 추적](implementation/events/session/overview.md)
          + [세션 시작](implementation/events/session/session-start.md)
          + [세션 완료](implementation/events/session/session-complete.md)
          + [세션 종료](implementation/events/session/session-end.md)
       + 재생 {#playback}
+         + [재생 추적](implementation/events/playback/overview.md)
          + [재생](implementation/events/playback/play.md)
          + [일시 중지 시작](implementation/events/playback/pause-start.md)
          + [버퍼 시작](implementation/events/playback/buffer-start.md)
          + [비트율 변경](implementation/events/playback/bitrate-change.md)
          + [Ping](implementation/events/playback/ping.md)
       + 광고 {#ads}
+         + [광고 추적](implementation/events/ads/overview.md)
          + [광고 브레이크 시작](implementation/events/ads/ad-break-start.md)
          + [광고 시작](implementation/events/ads/ad-start.md)
          + [광고 완료](implementation/events/ads/ad-complete.md)
          + [광고 건너뛰기](implementation/events/ads/ad-skip.md)
          + [광고 브레이크 완료](implementation/events/ads/ad-break-complete.md)
       + 챕터 {#chapters}
+         + [챕터 추적](implementation/events/chapters/overview.md)
          + [챕터 시작](implementation/events/chapters/chapter-start.md)
          + [챕터 완료](implementation/events/chapters/chapter-complete.md)
          + [챕터 건너뛰기](implementation/events/chapters/chapter-skip.md)
       + 플레이어 상태 {#player-state}
+         + [플레이어 상태 추적](implementation/events/player-state/overview.md)
          + [상태 시작](implementation/events/player-state/state-start.md)
          + [상태 끝](implementation/events/player-state/state-end.md)
       + [오류](implementation/events/error.md)
@@ -123,7 +121,7 @@ ht-degree: 59%
          + [포커스](implementation/variables/player-state/in-focus.md)
          + [음소거](implementation/variables/player-state/mute.md)
          + [화면 속 화면](implementation/variables/player-state/picture-in-picture.md)
-   + Edge 구현(권장) {#edge-recommended}
+   + Edge 구현(권장) {#edge}
       + [사전 요구 사항](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK / 확장 {#media-edge-sdk}
          + [Media Edge SDK / 확장 기능 설정](/help/implementation/edge/implementation-edge.md)
@@ -131,15 +129,16 @@ ht-degree: 59%
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
       + [사용자 지정 메타데이터 지원](implementation/edge/implementation-edge-custom-metadata.md)
+      + [AEP 데이터 매핑 및 유효성 검사](/help/implementation/edge/platform-data.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
       + [사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+      + [미디어 보고서 지원](implementation/media-sdk/setup/media-reports-enable.md)
       + Media SDK / 확장 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+         + [JavaScript 웹 SDK API 참조](implementation/media-sdk/setup/js-3x-api-reference.md)
+         + [JS SDK 2.x에서 3.x로 마이그레이션](implementation/media-sdk/setup/migrate-js-2x-to-3x.md)
          + [Media Analytics 확장 기능](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDK {#ott-setup}
-            + [Chromecast SDK 설치](implementation/media-sdk/setup/set-up-chromecast.md)
-            + [Roku SDK 설치](implementation/media-sdk/setup/set-up-roku.md)
       + Media Collection API - 구현 {#streaming-media-apis}
          + [미디어 컬렉션](implementation/media-collection-api/mc-api-overview.md)
          + [API 빠른 시작](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
@@ -158,8 +157,15 @@ ht-degree: 59%
             + [시간 제한 조건](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+   + XDM 필드 마이그레이션 {#xdm-updates}
+      + [대상자 마이그레이션](implementation/migrate-audiences.md)
+      + [CJA 설정 마이그레이션](implementation/migrate-cja-setup.md)
+      + [데이터 준비 마이그레이션](implementation/migrate-dataprep.md)
+      + [프로필 마이그레이션](implementation/migrate-profiles.md)
+      + [미디어 매개 변수 매핑](implementation/parameters-mapping.md)
 + 보고 {#reporting}
    + 차원 {#dimensions}
+      + [차원 개요](reporting/dimensions/overview.md)
       + [광고](reporting/dimensions/ad.md)
       + [Pod 위치의 광고](reporting/dimensions/ad-in-pod-position.md)
       + [광고 길이](reporting/dimensions/ad-length.md)
@@ -221,6 +227,7 @@ ht-degree: 59%
       + [시작 시간(차원)](reporting/dimensions/time-to-start.md)
       + [총 버퍼 지속 시간(차원)](reporting/dimensions/total-buffer-duration.md)
    + 지표 {#metrics}
+      + [지표 개요](reporting/metrics/overview.md)
       + [광고 완료](reporting/metrics/ad-completes.md)
       + [광고 카운트](reporting/metrics/ad-count.md)
       + [광고 시작](reporting/metrics/ad-starts.md)
@@ -276,7 +283,6 @@ ht-degree: 59%
       + [총 중단 기간](reporting/metrics/total-stalling-duration.md)
       + [재생된 고유 시간](reporting/metrics/unique-time-played.md)
    + [계산된 지표](reporting/calculated-metrics.md)
-   + [미디어 보고서 지원](reporting/media-reports-enable.md)
    + Workspace의 미디어 패널 {#media-workspace-panels}
       + [미디어 대상자 평균 시간 패널](reporting/workspace/average-minute-audience.md)
       + [미디어 동시 뷰어 패널](reporting/workspace/media-concurrent-viewers-overview.md)
@@ -293,164 +299,13 @@ ht-degree: 59%
       + [동시 뷰어 데이터 가져오기](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [미디어 재생 소요 시간 데이터 가져오기](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 사용 사례 {#media-use-cases}
-   + [Media SDK 사용 사례](use-cases/cookbook/sdk-cookbook-overview.md)
-   + 플레이어 상태 추적 {#player-state-tracking}
-      + [개요](use-cases/player-state-tracking/player-state-overview.md)
-      + [표준 및 사용자 정의 상태](use-cases/player-state-tracking/standard-and-custom-states.md)
-      + [구현 및 보고](use-cases/player-state-tracking/implementation-and-reporting.md)
-      + [여러 플레이어 상태 추적](use-cases/player-state-tracking/multiple-player-states.md)
-      + [플레이어 상태 추적 예](use-cases/player-state-tracking/player-state-examples.md)
    + [일정 데이터 추적](/help/use-cases/track-schedule-data.md)
    + [다운로드한 콘텐츠 추적](use-cases/track-downloaded-content.md)
    + [페더레이션 미디어](use-cases/federated-media.md)
-   + [재생 중 애플리케이션 중단 처리](use-cases/cookbook/app-interrupts.md)
-   + [미디어 스트림 속성](use-cases/media-analytics-cookbook/media-dimensions.md)
-   + Analytics 소스 커넥터에 대한 XDM 필드 마이그레이션 {#xdm-updates}
-      + [소스 커넥터를 새 XDM 스트리밍 미디어 필드로 업데이트](/help/use-cases/xdm-updates/updated-xdm-fields.md)
-      + [대상자 마이그레이션](/help/use-cases/xdm-updates/migrate-audiences.md)
-      + [CJA 설정 마이그레이션](/help/use-cases/xdm-updates/migrate-cja-setup.md)
-      + [데이터 준비 마이그레이션](/help/use-cases/xdm-updates/migrate-dataprep.md)
-      + [프로필 마이그레이션](/help/use-cases/xdm-updates/migrate-profiles.md)
-      + [미디어 매개 변수 매핑](/help/use-cases/xdm-updates/parameters-mapping.md)
-   + [비활성 세션 다시 시작](use-cases/cookbook/resuming-inactive.md)
-   + [SceneGraph에서 Roku 추적](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [광고 사이의 간격 처리](use-cases/cookbook/fix-ad-play-ad.md)
-   + 타임라인 {#timelines}
-      + [챕터 시작과 끝](use-cases/timelines/chapter-start-end.md)
-      + [콘텐츠 끝까지 보기](use-cases/timelines/view-to-end-of-content.md)
-      + [세션 포기](use-cases/timelines/user-abandons-session.md)
-   + OTT 앱의 분석 사용 {#analytics-with-ott}
-      + [앱 상태 추적](use-cases/analytics-with-ott/track-app-states.md)
-      + [앱 작업 추적](use-cases/analytics-with-ott/track-app-actions.md)
-      + [사용자 ID 설정](use-cases/analytics-with-ott/set-user-ids.md)
-      + [OTT 및 Audience Manager](use-cases/analytics-with-ott/ott-am.md)
-      + [OTT 및 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
-+ 추적 {#tracking}
-   + [개요](use-cases/track-av-playback/track-core-overview.md)
-   + 코어 Streaming Media 재생 추적 {#track-core}
-      + [JavaScript 3.x에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-      + [Chromecast에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-      + [Roku에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-roku.md)
-   + 버퍼링 추적 {#track-buffering}
-      + [JavaScript 3.x에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-      + [Chromecast에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-      + [Roku에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-   + 찾기 추적 {#track-seeking}
-      + [JavaScript 3.x에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-      + [Chromecast에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-      + [Roku에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-   + 표준 메타데이터 구현 {#impl-std-metadata}
-      + [JavaScript 3.x에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-      + [Chromecast에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-      + [표준 메타데이터 매개변수 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-      + [Roku에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-      + [표준 메타데이터 매개변수 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-   + 광고 추적 {#track-ads}
-      + [개요](use-cases/track-ads/track-ads-overview.md)
-      + [JavaScript 3.x에서 광고 추적](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-      + [Chromecast에서 광고 추적](use-cases/track-ads/track-ads-chromecast.md)
-      + [Roku에서 광고 추적](use-cases/track-ads/track-ads-roku.md)
-      + 표준 광고 메타데이터 구현 {#impl-std-ad-metadata}
-         + [JavaScript 3.x에서 표준 광고 메타데이터 구현](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Roku에서 표준 광고 메타데이터 구현](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-   + 챕터 및 세그먼트 추적 {#track-chapters}
-      + [개요](use-cases/track-chapters/track-chapters-overview.md)
-      + [JavaScript 3.x에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-      + [Chromecast에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-chromecast.md)
-      + [Roku에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-roku.md)
-   + 체감 품질 추적 {#track-qos}
-      + [개요](use-cases/track-qos/track-qos-overview.md)
-      + [JavaScript 3.x에서 체감 품질 추적](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-      + [Chromecast에서 체감 품질 추적](use-cases/track-qos/track-qos-chromecast.md)
-      + [Roku에서 체감 품질 추적](use-cases/track-qos/track-qos-roku.md)
-   + 오류 추적 {#track-errors}
-      + [개요](use-cases/track-errors/track-errors-overview.md)
-      + [JavaScript 3.x에서 오류 추적](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-      + [Chromecast에서 오류 추적](use-cases/track-errors/track-errors-chromecast.md)
-      + [Roku에서 오류 추적](use-cases/track-errors/track-errors-roku.md)
+   + 시나리오 {#scenarios}
+      + [타임라인: 챕터](use-cases/scenarios/chapter-start-end.md)
+      + [타임라인: 끝까지 보기](use-cases/scenarios/view-to-end-of-content.md)
+      + [타임라인: 사용자가 세션을 중단함](use-cases/scenarios/user-abandons-session.md)
 + 개인 정보 보호 및 보안 {#streaming-media-privacy}
    + [옵트아웃 및 개인정보 보호 설정](privacy/opt-out-privacy.md)
    + [보안](privacy/security.md)
-+ 레거시 구현 {#legacy-implementations}
-   + [레거시 개요](legacy/setup/legacy-setup-overview.md)
-   + [레거시 — SDK 다운로드](legacy/legacy-download-sdks.md)
-   + 레거시 - Media SDK {#legacy-media-sdks}
-      + [레거시 - Media SDK 개요](legacy/media-sdk/setup/setup-overview.md)
-      + [Android 설정](legacy/media-sdk/setup/set-up-android.md)
-      + [iOS 설정](legacy/media-sdk/setup/set-up-ios.md)
-      + JavaScript 설정 {#setup-javascript}
-         + [JavaScript 2.x 설정](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-   + [하트비트 측정 정보](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Adobe 대상자 관리 지원](legacy/intro-to-ava/am-enablement.md)
-   + [사용자 정의 링크 구현](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + 이전 마일스톤 추적 {#legacy-milestone-tracking}
-      + [이전 마일스톤 추적](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [마일스톤을 VA로 마이그레이션](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-      + [마일스톤을 CL로 마이그레이션](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
-   + 유효성 검사 {#validation}
-      + [유효성 검사 개요](legacy/validation/validation-overview.md)
-      + [테스트 1: 표준 재생](legacy/validation/test1-standard-playback.md)
-      + [테스트 2: 미디어 중단](legacy/validation/test2-media-interrupt.md)
-      + [테스트 호출 세부 사항](legacy/validation/test-call-details.md)
-      + [하트비트 매개변수 설명](legacy/validation/heartbeat-params.md)
-      + 디버깅 {#debugging}
-         + [SDK 디버깅](legacy/validation/debugging/sdk-debugging.md)
-   + [이전 마이그레이션: VHL 1.x에서 VHL 2.x로](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [코드 비교 v1.x대 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
-   + [API 1x에서 2x로 추적](legacy/va-1x-to-2x/1x-2x-api-change.md)
-   + [레거시 - AVA 소개](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
-   + [클라이언트측 경로](legacy/intro-to-ava/implementation-paths/client-side-path.md)
-   + 이전 추적 {#track-av-playback}
-      + [Android에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-android.md)
-      + [iOS에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-ios.md)
-      + JavaScript에서 코어 재생 추적 {#track-core-javascript}
-         + [JavaScript 2.x에서 코어 재생 추적](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-         + [Android에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-         + [iOS에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-         + JavaScript에서 버퍼링 추적 {#track-buffering-js}
-            + [JavaScript 2.x에서 버퍼링 추적](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-         + [Android에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-         + [iOS에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-         + JavaScript에서 찾기 추적 {#track-seeking-js}
-            + [JavaScript 2.x에서 찾기 추적](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-         + [Android에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-         + [iOS에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-         + [iOS 메타데이터 키](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + JavaScript에서 표준 메타데이터 구현 {#impl-std-md-js}
-            + [JavaScript 2.x에서 표준 메타데이터 구현](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-      + 광고 추적 {#track-ads}
-         + [Android에서 광고 추적](use-cases/track-ads/track-ads-android.md)
-         + [iOS에서 광고 추적](use-cases/track-ads/track-ads-ios.md)
-         + JavaScript에서 광고 추적 {#track-ads-js}
-            + [JavaScript 2.x에서 광고 추적](use-cases/track-ads/track-ads-js/track-ads-js.md)
-            + [Android에서 표준 광고 메타데이터 구현](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-            + [iOS에서 표준 광고 메타데이터 구현](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-            + JavaScript에서 표준 광고 메타데이터 구현 {#impl-std-ad-md-js}
-               + [JavaScript 2.x에서 표준 광고 메타데이터 구현](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-      + 챕터 및 세그먼트 추적 {#track-chapters}
-         + [Android에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-android.md)
-         + [iOS에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-ios.md)
-         + JavaScript에서 챕터 및 세그먼트 추적 {#track-chapters-js}
-            + [JavaScript 2.x에서 챕터 및 세그먼트 추적](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [Android에서 체감 품질 추적](use-cases/track-qos/track-qos-android.md)
-         + [iOS에서 체감 품질 추적](use-cases/track-qos/track-qos-ios.md)
-         + JavaScript에서 체감 품질 추적 {#track-qos-js}
-            + [JavaScript 2.x에서 체감 품질 추적](use-cases/track-qos/track-qos-js/track-qos-js.md)
-      + 오류 추적 {#track-errors}
-         + [Android에서 오류 추적](use-cases/track-errors/track-errors-android.md)
-         + [iOS에서 오류 추적](use-cases/track-errors/track-errors-ios.md)
-         + JavaScript에서 오류 추적 {#track-errors-js}
-            + [JavaScript 2.x에서 오류 추적](use-cases/track-errors/track-errors-js/track-errors-js.md)
-      + 추적 시나리오 {#tracking-scenarios}
-         + [광고가 없는 VOD 재생](use-cases/tracking-scenarios/vod-no-intrs-details.md)
-         + [프리롤 광고가 있는 VOD 재생](use-cases/tracking-scenarios/vod-preroll-ads.md)
-         + [건너뛴 광고가 있는 VOD 재생](use-cases/tracking-scenarios/vod-skipped-ads.md)
-         + [한 개의 챕터가 있는 VOD 재생](use-cases/tracking-scenarios/vod-one-chapter.md)
-         + [건너뛴 챕터가 있는 VOD 재생](use-cases/tracking-scenarios/vod-skipped-chapter.md)
-         + [주요 콘텐츠에 찾기가 있는 VOD 재생](use-cases/tracking-scenarios/vod-seeking.md)
-         + [버퍼링이 있는 VOD 재생](use-cases/tracking-scenarios/vod-buffering.md)
-         + [VOD 여러 추적기 동시 실행](use-cases/tracking-scenarios/vod-multi-trackers.md)
-         + [VOD 여러 세션에 대한 한 개의 추적기](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-         + [라이브 주요 콘텐츠](use-cases/tracking-scenarios/live-main-content.md)
-         + [순차적 추적을 사용하는 라이브 주요 콘텐츠](use-cases/tracking-scenarios/live-sequential.md)

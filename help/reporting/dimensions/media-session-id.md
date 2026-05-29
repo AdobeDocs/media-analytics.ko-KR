@@ -3,7 +3,7 @@ title: 미디어 세션 ID
 description: 각 재생 세션을 고유하게 식별합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -21,8 +21,8 @@ ht-degree: 5%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | `a.media.vsid`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | `a.media.vsid`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videosessionid`, `post_videosessionid` |
 | Audience Manager | `c_contextdata.a.media.vsid` |
 

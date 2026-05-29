@@ -3,7 +3,7 @@ title: 광고 창
 description: 자동 생성된 pod ID로 키로 표시되는 각 고유한 광고 브레이크를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -22,7 +22,7 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 광고]](/help/reporting/media-reports-enable.md)를 사용하도록 설정한 경우 컨텍스트 데이터 `a.media.ad.pod`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | 데이터 피드 | `videoadpod`, `post_videoadpod` |
 | Audience Manager | 해당 사항 없음 |
 
