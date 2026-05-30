@@ -3,9 +3,9 @@ title: 스트리밍 미디어 이벤트 개요
 description: 미디어 이벤트 유형 및 전송 순서에 대해 알아봅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ ht-degree: 0%
 ## 오류 이벤트
 
 [Error](error.md) 이벤트는 세션 중 재생 실패(실패한 스트림 요청, 코덱 오류 또는 외부 게재 실패)를 기록합니다. 의미 있는 오류가 발생할 때마다 보내십시오. 오류 이벤트로 인해 세션이 닫히지 않습니다. 재생이 계속될 수 있으며 후속 이벤트가 동일한 세션에서 추적됩니다. 오류를 복구할 수 없는 경우 세션 종료 와 함께 이 오류를 수행하여 세션을 명시적으로 닫습니다.
+
+>[!MORELIKETHIS]
+>
+>* [변수 개요](/help/implementation/variables/overview.md): 이벤트가 Adobe으로 전달하는 데이터
+>* [차원 개요](/help/reporting/dimensions/overview.md): 이벤트가 채우는 보고 차원
+>* [지표 개요](/help/reporting/metrics/overview.md): 이벤트가 채우는 보고 지표
