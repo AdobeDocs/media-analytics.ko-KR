@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '753'
 ht-degree: 35%
 
 ---
@@ -57,6 +57,7 @@ ht-degree: 35%
          + [상태 끝](implementation/events/player-state/state-end.md)
       + [오류](implementation/events/error.md)
    + 변수 {#variables}
+      + [개요](implementation/variables/overview.md)
       + Core {#core}
          + [콘텐츠 채널](implementation/variables/core/content-channel.md)
          + [콘텐츠 ID](implementation/variables/core/content-id.md)
@@ -129,7 +130,7 @@ ht-degree: 35%
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
       + [사용자 지정 메타데이터 지원](implementation/edge/implementation-edge-custom-metadata.md)
-      + [AEP 데이터 매핑 및 유효성 검사](/help/implementation/edge/platform-data.md)
+      + [XDM 보고 스키마](/help/implementation/edge/platform-data.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
       + [사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + [미디어 보고서 지원](implementation/media-sdk/setup/media-reports-enable.md)

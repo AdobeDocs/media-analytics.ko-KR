@@ -3,7 +3,7 @@ title: 스트리밍 미디어 차원 개요
 description: Adobe Analytics 및 Customer Journey Analytics에서 스트리밍 미디어 차원을 채우고 구성하는 방법에 대해 알아봅니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ Streaming Media 차원은 다음 세 가지 주요 모집단 패턴을 따릅니
 
 >[!MORELIKETHIS]
 >
->* [지표 개요](../metrics/overview.md): 스트리밍 미디어 지표 참조
->* [매개 변수 매핑](/help/implementation/parameters-mapping.md): 전체 변수-열-XDM 참조
->* [미디어 세그먼트](/help/reporting/segments.md): 스트리밍 미디어 차원을 사용하는 기본 제공 세그먼트
+>* [이벤트 개요](/help/implementation/events/overview.md): 차원을 채우는 플레이어 이벤트
+>* [변수 개요](/help/implementation/variables/overview.md): 이벤트가 Adobe으로 전달하는 데이터
+>* [지표 개요](/help/reporting/metrics/overview.md): 변수가 채우는 보고 지표입니다
