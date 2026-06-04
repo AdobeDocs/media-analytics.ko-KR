@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '754'
 ht-degree: 35%
 
 ---
@@ -67,8 +67,10 @@ ht-degree: 35%
          + [콘텐츠 다시 시작](implementation/variables/core/content-resumes.md)
          + [컨텐츠 유형](implementation/variables/core/content-type.md)
          + [미디어 다운로드 플래그](implementation/variables/core/media-downloaded-flag.md)
+         + [앱 버전](implementation/variables/core/app-version.md)
          + [스트림 유형](implementation/variables/core/stream-type.md)
       + 표준 메타데이터 {#metadata}
+         + [광고 로드 유형](implementation/variables/standard-metadata/ad-load-type.md)
          + [앨범](implementation/variables/standard-metadata/album.md)
          + [아티스트](implementation/variables/standard-metadata/artist.md)
          + [자산 ID](implementation/variables/standard-metadata/asset-id.md)
@@ -123,24 +125,30 @@ ht-degree: 35%
          + [음소거](implementation/variables/player-state/mute.md)
          + [화면 속 화면](implementation/variables/player-state/picture-in-picture.md)
    + Edge 구현(권장) {#edge}
-      + [사전 요구 사항](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK / 확장 {#media-edge-sdk}
-         + [Media Edge SDK / 확장 기능 설정](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge 웹 SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
-      + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-      + [사용자 지정 메타데이터 지원](implementation/edge/implementation-edge-custom-metadata.md)
-      + [XDM 보고 스키마](/help/implementation/edge/platform-data.md)
+      + [Edge 구현 개요](/help/implementation/edge/overview.md)
+      + [Web SDK](/help/implementation/edge/web-sdk.md)
+      + [웹 SDK 태그 확장 기능](/help/implementation/edge/web-sdk-tags.md)
+      + [iOS](/help/implementation/edge/ios.md)
+      + [iOS 태그 확장](/help/implementation/edge/ios-tags.md)
+      + [Android](/help/implementation/edge/android.md)
+      + [Android 태그 확장](/help/implementation/edge/android-tags.md)
+      + [Roku](/help/implementation/edge/roku.md)
+      + [Media Edge API](/help/implementation/edge/media-edge-api.md)
+      + [사용자 지정 메타데이터 지원](/help/implementation/edge/custom-metadata.md)
+      + [XDM 보고 스키마](/help/implementation/edge/reporting-schema.md)
+      + XDM 필드 마이그레이션 {#xdm-updates}
+         + [대상자 마이그레이션](implementation/edge/migrate/migrate-audiences.md)
+         + [CJA 설정 마이그레이션](implementation/edge/migrate/migrate-cja-setup.md)
+         + [데이터 준비 마이그레이션](implementation/edge/migrate/migrate-dataprep.md)
+         + [프로필 마이그레이션](implementation/edge/migrate/migrate-profiles.md)
+         + [미디어 매개 변수 매핑](implementation/edge/migrate/parameters-mapping.md)
    + Adobe Analytics 전용 구현 {#analytics-only}
-      + [사전 요구 사항](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + [미디어 보고서 지원](implementation/media-sdk/setup/media-reports-enable.md)
-      + Media SDK / 확장 {#media-sdk}
-         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [JavaScript 웹 SDK API 참조](implementation/media-sdk/setup/js-3x-api-reference.md)
-         + [JS SDK 2.x에서 3.x로 마이그레이션](implementation/media-sdk/setup/migrate-js-2x-to-3x.md)
-         + [Media Analytics 확장 기능](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
-      + Media Collection API - 구현 {#streaming-media-apis}
+      + [Analytics 전용 구현 개요](/help/implementation/analytics-only/overview.md)
+      + [JavaScript](/help/implementation/analytics-only/javascript.md)
+      + [미디어 분석 태그 확장 기능](/help/implementation/analytics-only/javascript-tags.md)
+      + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [Media Collection API](/help/implementation/analytics-only/media-collection-api.md)
+      + Media Collection API 참조 {#streaming-media-apis}
          + [미디어 컬렉션](implementation/media-collection-api/mc-api-overview.md)
          + [API 빠른 시작](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [세션 요청](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -158,23 +166,22 @@ ht-degree: 35%
             + [시간 제한 조건](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + XDM 필드 마이그레이션 {#xdm-updates}
-      + [대상자 마이그레이션](implementation/migrate-audiences.md)
-      + [CJA 설정 마이그레이션](implementation/migrate-cja-setup.md)
-      + [데이터 준비 마이그레이션](implementation/migrate-dataprep.md)
-      + [프로필 마이그레이션](implementation/migrate-profiles.md)
-      + [미디어 매개 변수 매핑](implementation/parameters-mapping.md)
 + 보고 {#reporting}
+   + 보고 설정 {#reporting-setup}
+      + [Edge 구현](reporting/setup/edge-reporting.md)
+      + [Analytics 전용 구현](reporting/setup/analytics-reporting.md)
    + 차원 {#dimensions}
       + [차원 개요](reporting/dimensions/overview.md)
       + [광고](reporting/dimensions/ad.md)
       + [Pod 위치의 광고](reporting/dimensions/ad-in-pod-position.md)
       + [광고 길이](reporting/dimensions/ad-length.md)
+      + [광고 로드](reporting/dimensions/ad-load-type.md)
       + [광고 이름](reporting/dimensions/ad-name.md)
       + [광고 플레이어 이름](reporting/dimensions/ad-player-name.md)
       + [광고 창](reporting/dimensions/ad-pod.md)
       + [광고주](reporting/dimensions/advertiser.md)
       + [앨범](reporting/dimensions/album.md)
+      + [앱 버전](reporting/dimensions/app-version.md)
       + [아티스트](reporting/dimensions/artist.md)
       + [자산 ID](reporting/dimensions/asset-id.md)
       + [작성자](reporting/dimensions/author.md)

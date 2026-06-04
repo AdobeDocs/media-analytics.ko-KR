@@ -3,7 +3,7 @@ title: 유형 표시
 description: 문자열 정수 코드를 사용하여 콘텐츠 형식(전체 에피소드, 미리보기, 클립 또는 기타)을 식별합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -21,10 +21,10 @@ ht-degree: 8%
 
 show type 변수는 문자열 정수 코드를 사용하여 콘텐츠 형식을 식별합니다.
 
-- `"0"`: 전체 에피소드
-- `"1"`: 미리 보기 또는 예고편
-- `"2"`: 클립
-- `"3"`: 기타
+* `"0"`: 전체 에피소드
+* `"1"`: 미리 보기 또는 예고편
+* `"2"`: 클립
+* `"3"`: 기타
 
 참여를 측정할 때 트레일러 및 클립과 같은 짧은 형식의 콘텐츠에서 전체 프로그램 보기를 분리하는 데 사용합니다.
 

@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 700
 ht-degree: 0%
@@ -37,11 +37,11 @@ ht-degree: 0%
 >
 >데이터 손실을 방지하려면 이 섹션의 단계를 완료하기 전에 새 `mediaReporting` 필드를 사용하여 Analytics 소스 커넥터가 배포되었는지 확인하십시오.
 
-1. Adobe Experience Platform의 [!UICONTROL **소스**] 섹션 아래에서 [!UICONTROL **데이터 흐름**] 탭으로 이동합니다.
+1. Adobe Experience Platform의 **[!UICONTROL 소스]** 섹션 아래에서 **[!UICONTROL 데이터 흐름]** 탭으로 이동합니다.
 
 1. Adobe 데이터 수집을 통해 Adobe Analytics에서 Adobe Experience Platform으로 스트리밍 미디어 데이터를 가져오는 역할을 하는 데이터 흐름을 찾습니다.
 
-1. 더 이상 사용되지 않는 필드가 포함된 모든 사용자 지정 소스 매핑을 새 XDM 개체의 새 해당 필드로 대체하여 데이터 준비 설정을 수정하려면 [!UICONTROL **데이터 흐름 업데이트**]&#x200B;를 선택하십시오.
+1. 더 이상 사용되지 않는 필드가 포함된 모든 사용자 지정 소스 매핑을 새 XDM 개체의 새 해당 필드로 대체하여 데이터 준비 설정을 수정하려면 **[!UICONTROL 데이터 흐름 업데이트]**&#x200B;를 선택하십시오.
 
 1. 더 이상 사용되지 않는 &quot;미디어&quot; 개체에서 소스 필드가 포함된 매핑을 찾습니다.
 
@@ -55,19 +55,19 @@ ht-degree: 0%
 
 마이그레이션 지침을 더 쉽게 따르려면 단일 매핑이 포함된 다음 예제 데이터 흐름을 고려하십시오. 이 경우 마이그레이션 지침을 한 번만 적용해야 합니다.
 
-1. Adobe Experience Platform의 [!UICONTROL **소스**] 섹션 아래에서 [!UICONTROL **데이터 흐름**] 탭으로 이동합니다.
+1. Adobe Experience Platform의 **[!UICONTROL 소스]** 섹션 아래에서 **[!UICONTROL 데이터 흐름]** 탭으로 이동합니다.
 
 1. Adobe 데이터 수집을 통해 Adobe Analytics에서 Adobe Experience Platform으로 스트리밍 미디어 데이터를 가져오는 역할을 하는 데이터 흐름을 찾습니다.
 
 1. 아래 이미지에 표시된 대로 편집 UI를 입력하려면 **[!UICONTROL 데이터 흐름 업데이트]**&#x200B;를 선택하십시오.
 
-   ![AEP 데이터 흐름](assets/aep-dataflow.jpeg)
+   ![AEP 데이터 흐름](../../assets/aep-dataflow.jpeg)
 
 1. **[!UICONTROL 매핑]** 탭에서 **[!UICONTROL 사용자 지정]**&#x200B;을(를) 선택합니다.
 
 1. `media.mediaTimed` 필드를 소스로 사용하는 사용자 지정 매핑을 식별합니다.
 
-   ![AEP 데이터 흐름이 계속됨](assets/aep-dataflow2.jpeg)
+   ![AEP 데이터 흐름이 계속됨](../../assets/aep-dataflow2.jpeg)
 
    이 예제에서는 개발 조직의 스키마에 사용자 지정 필드 그룹을 만들었으므로 대상 필드는 `_dcbl` 아래에 있습니다. 사용자 정의 필드 그룹 경로는 조직 이름에 따라 다릅니다.
 
@@ -75,17 +75,17 @@ ht-degree: 0%
 
    예를 들어 Network의 경우 `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork의 통신원은 `xdm.mediaReporting.sessionDetails.network`입니다.
 
-   ![업데이트된 XDM 필드 패스](assets/xdm-field-path-old-and-new.jpeg)
+   ![업데이트된 XDM 필드 패스](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. **[!UICONTROL Source 필드]** 필드에서 `media.mediaTimed` 경로를 `mediaReporting` 경로로 바꿉니다. 대상 필드는 변경되지 않습니다.
 
-   ![AEP 데이터 흐름이 계속됨](assets/aep-dataflow3.jpeg)
+   ![AEP 데이터 흐름이 계속됨](../../assets/aep-dataflow3.jpeg)
 
 1. **[!UICONTROL 다음]**&#x200B;을(를) 선택하여 변경 내용을 저장합니다.
 
    상태가 **[!UICONTROL 처리 중]**(으)로 표시됩니다. 변경 사항이 적용되면 상태가 **[!UICONTROL 활성화됨]**(으)로 표시됩니다.
 
-   ![AEP 데이터 흐름이 계속됨](assets/aep-dataflow5.jpeg)
+   ![AEP 데이터 흐름이 계속됨](../../assets/aep-dataflow5.jpeg)
 
 ## 다른 데이터 유형을 사용하는 예
 
@@ -99,8 +99,8 @@ ht-degree: 0%
 
 사용자 지정 필드에 `media.mediaTimed`을(를) 매핑하는 중입니다.
 
-![AEP 데이터 흐름이 계속됨](assets/aep-dataflow6.jpeg)
+![AEP 데이터 흐름이 계속됨](../../assets/aep-dataflow6.jpeg)
 
 동일한 사용자 지정 필드에 `mediaReporting`을(를) 사용한 매핑:
 
-![AEP 데이터 흐름이 계속됨](assets/aep-dataflow7.jpeg)
+![AEP 데이터 흐름이 계속됨](../../assets/aep-dataflow7.jpeg)

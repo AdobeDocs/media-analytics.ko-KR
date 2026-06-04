@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -72,8 +72,8 @@ ht-degree: 3%
 
 **해결 방법:** 광고가 끝날 때 바로 호출하지 않고 각 광고(마지막 광고 제외)에 대한 AdComplete 호출을 지연시킵니다. 다음과 같이 호출을 배치합니다.
 
-- **광고 시작**&#x200B;마다: 이전 광고가 있고 아직 완료로 표시되지 않은 경우 새 광고에 대해 AdStart를 호출하는 AdComplete *이전*&#x200B;을(를) 호출합니다.
-- **광고 자산 끝**&#x200B;마다: AdComplete를 즉시 호출하지 마십시오. 지연합니다.
-- **광고 브레이크 완료**: 마지막 광고에 대해 AdComplete를 호출한 후(아직 호출되지 않은 경우) AdBreakComplete를 호출합니다.
+* **광고 시작**&#x200B;마다: 이전 광고가 있고 아직 완료로 표시되지 않은 경우 새 광고에 대해 AdStart를 호출하는 AdComplete *이전*&#x200B;을(를) 호출합니다.
+* **광고 자산 끝**&#x200B;마다: AdComplete를 즉시 호출하지 마십시오. 지연합니다.
+* **광고 브레이크 완료**: 마지막 광고에 대해 AdComplete를 호출한 후(아직 호출되지 않은 경우) AdBreakComplete를 호출합니다.
 
 이 패턴을 사용하면 AdComplete와 다음 AdStart가 연속해서 실행되므로 간격이 발생하지 않습니다.

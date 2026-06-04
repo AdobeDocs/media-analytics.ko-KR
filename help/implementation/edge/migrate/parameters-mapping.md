@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 1325
-ht-degree: 20%
+source-wordcount: 1331
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 20%
 
 ## Media Analytics 예약 변수
 
-2025년 10월부터 `media.mediaTimed` XDM 필드 경로는 완전히 더 이상 사용되지 않으며 `mediaReporting`(으)로 대체됩니다. 2025년 10월 이후에 수집된 데이터에는 `mediaReporting`개의 필드만 포함됩니다. 이전 데이터는 이전 필드 경로에서 사용할 수 있으며, 아래 표에 **이전 XDM 필드**&#x200B;에 반영됩니다.
+2025년 10월부터 Analytics 소스 커넥터에서 사용하는 `media.mediaTimed` XDM 필드 경로는 완전히 더 이상 사용되지 않으며 `mediaReporting`(으)로 대체됩니다. 2025년 10월 이후에 수집된 데이터에는 `mediaReporting`개의 필드만 포함됩니다. 이전 데이터는 이전 필드 경로에서 사용할 수 있으며, 아래 표에 **이전 XDM 필드**&#x200B;에 반영됩니다.
 
 ### Keep-alive 호출 동작
 

@@ -17,7 +17,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 1%
@@ -58,7 +58,7 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
 이전 필드와 새 필드 간에 매핑하려면 [콘텐츠 ID](/help/reporting/dimensions/content.md) 매개 변수와 [스트리밍 미디어 서비스](/help/media-overview.md)에 설명된 스트리밍 미디어 변수의 나머지 부분을 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
 
-![이전 및 새 XDM 필드 패스](assets/field-paths-updated.jpeg)
+![이전 및 새 XDM 필드 패스](../../assets/field-paths-updated.jpeg)
 
 ## 예
 
@@ -72,13 +72,13 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
 1. 더 이상 사용되지 않는 데이터 유형에서 이전 필드를 사용하는 지표 또는 차원을 찾습니다.
 
-   데이터 보기의 ![이전 필드 경로](assets/old-field-data-view.jpeg)
+   데이터 보기의 ![이전 필드 경로](../../assets/old-field-data-view.jpeg)
 
 1. [챕터 오프셋](/help/reporting/dimensions/chapter-offset.md) 문서에서 해당 새 필드를 확인하십시오.
 
 1. 데이터 보기에서 새 해당 필드를 찾습니다.
 
-   ![데이터 보기의 새 필드 경로](assets/new-field-data-view.jpeg)
+   ![데이터 보기의 새 필드 경로](../../assets/new-field-data-view.jpeg)
 
 1. 새 필드를 지표 또는 차원으로 드래그합니다.
 
@@ -92,43 +92,43 @@ Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot
 
 1. &quot;Case When&quot; 절을 파생된 필드로 드래그합니다.
 
-   ![데이터 보기를 만들려면 새 필드를 사용자 지정](assets/create-derived-field2.jpeg)
+   ![데이터 보기를 만들려면 새 필드를 사용자 지정](../../assets/create-derived-field2.jpeg)
 
-1. [챕터 이름](/help/reporting/dimensions/chapter-name.md) 페이지에 표시된 대로 **보고 XDM 필드 경로**&#x200B;의 값을 사용하여 [!UICONTROL **If**] 절을 채웁니다.
+1. [챕터 이름](/help/reporting/dimensions/chapter-name.md) 페이지에 표시된 대로 **보고 XDM 필드 경로**&#x200B;의 값을 사용하여 **[!UICONTROL If]** 절을 채웁니다.
 
-   ![챕터 이름](assets/chapter-name.jpeg)
+   ![챕터 이름](../../assets/chapter-name.jpeg)
 
-   ![챕터 이름](assets/chapter-name2.jpeg)
+   ![챕터 이름](../../assets/chapter-name2.jpeg)
 
-   ![파생 필드 조건](assets/derived-field-condition.jpeg)
+   ![파생 필드 조건](../../assets/derived-field-condition.jpeg)
 
-   ![파생 필드 챕터 이름](assets/derived-field-chapter-name.jpeg)
+   ![파생 필드 챕터 이름](../../assets/derived-field-chapter-name.jpeg)
 
 1. 더 이상 사용되지 않는 &quot;미디어&quot; 데이터 유형의 이전 필드를 사용하여 대체 값을 채웁니다.
 
-   ![대체 값](assets/fallback-value.jpeg)
+   ![대체 값](../../assets/fallback-value.jpeg)
 
-   ![대체 값](assets/fallback-value2.jpeg)
+   ![대체 값](../../assets/fallback-value2.jpeg)
 
    파생된 필드에 대한 최종 정의입니다.
 
-   ![파생 필드 완료](assets/derived-field-complete.jpeg)
+   ![파생 필드 완료](../../assets/derived-field-complete.jpeg)
 
 1. 파생된 필드를 업데이트하려면 더 이상 사용되지 않는 이전 필드(`media.mediaTimed`(으)로 시작하는 경로)를 사용하는 파생된 필드를 찾으십시오.
 
-   ![파생 필드](assets/old-derived-field.jpeg)
+   ![파생 필드](../../assets/old-derived-field.jpeg)
 
-1. 업데이트할 파생 필드 위로 마우스를 가져간 다음 [!UICONTROL **편집**] 아이콘을 선택합니다.
+1. 업데이트할 파생 필드 위로 마우스를 가져간 다음 **[!UICONTROL 편집]** 아이콘을 선택합니다.
 
 1. 이전 데이터 형식(`media.mediaTimed`(으)로 시작하는 경로)에서 모든 필드를 찾아 새 해당 필드로 바꿉니다.
 
-   ![이전 데이터 형식의 필드 찾기](assets/locate-fields-with-old-datatype.jpeg)
+   ![이전 데이터 형식의 필드 찾기](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. [콘텐츠 이름](/help/reporting/dimensions/content-name.md) 문서에서 해당 새 필드를 확인하십시오.
 
 1. 이전 필드를 새 필드로 바꿉니다.
 
-   ![새 필드](assets/derived-field-new.jpeg)
+   ![새 필드](../../assets/derived-field-new.jpeg)
 
 1. 더 이상 사용되지 않는 이전 &quot;미디어&quot; 데이터 유형의 필드를 사용하여 파생된 모든 필드에 대해 이 프로세스를 반복합니다.
 

@@ -17,7 +17,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 533
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 프로필 필터링을 이전 데이터 유형인 &quot;Media&quot;에서 새 데이터 유형인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 기존 프로필 필터링 규칙을 편집해야 합니다.
 
-1. Adobe Experience Platform의 [!UICONTROL **소스**] 섹션 아래에서 [!UICONTROL **데이터 흐름**] 탭으로 이동합니다.
+1. Adobe Experience Platform의 **[!UICONTROL 소스]** 섹션 아래에서 **[!UICONTROL 데이터 흐름]** 탭으로 이동합니다.
 
 1. Adobe 데이터 수집을 통해 Adobe Analytics에서 Adobe Experience Platform으로 스트리밍 미디어 데이터를 가져오는 역할을 하는 데이터 흐름을 찾습니다.
 
-1. 더 이상 사용되지 않는 필드가 포함된 모든 사용자 지정 규칙을 새 XDM 개체의 새 해당 필드로 대체하여 프로필 필터링 설정을 수정하려면 [!UICONTROL **데이터 흐름 업데이트**]&#x200B;를 선택하십시오.
+1. 더 이상 사용되지 않는 필드가 포함된 모든 사용자 지정 규칙을 새 XDM 개체의 새 해당 필드로 대체하여 프로필 필터링 설정을 수정하려면 **[!UICONTROL 데이터 흐름 업데이트]**&#x200B;를 선택하십시오.
 
 1. 더 이상 사용되지 않는 &quot;미디어&quot; 개체에서 필드가 포함된 필터를 찾습니다.
 
@@ -52,29 +52,29 @@ ht-degree: 0%
 
 마이그레이션 지침을 더 쉽게 따르려면 단일 프로필 필터링 규칙이 포함된 다음 예제 데이터 흐름을 고려하십시오. 이 경우 단일 규칙만 있으므로 마이그레이션 지침을 한 번만 적용해야 합니다.
 
-1. Adobe Experience Platform의 [!UICONTROL **소스**] 섹션 아래에서 [!UICONTROL **데이터 흐름**] 탭으로 이동합니다.
+1. Adobe Experience Platform의 **[!UICONTROL 소스]** 섹션 아래에서 **[!UICONTROL 데이터 흐름]** 탭으로 이동합니다.
 
 &#x200B;1. Adobe Analytics을 통해 Adobe Analytics에서 Adobe Experience Platform으로 스트리밍 미디어 데이터를 가져오는 역할을 하는 데이터 흐름을 찾습니다.
 
 1. 아래 이미지에 표시된 대로 편집 UI를 입력하려면 **[!UICONTROL 데이터 흐름 업데이트]**&#x200B;를 선택하십시오.
 
-   ![AEP 데이터 흐름 프로필](assets/aep-dataflow-profile.jpeg)
+   ![AEP 데이터 흐름 프로필](../../assets/aep-dataflow-profile.jpeg)
 
 1. **[!UICONTROL 다음]**&#x200B;을 선택하여 필터링 탭으로 이동합니다.
 
-   ![AEP 데이터 흐름 필터 탭](assets/aep-dataflow-filtering-profile.jpeg)
+   ![AEP 데이터 흐름 필터 탭](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. **[!UICONTROL 필터링]** 탭에서 `media.mediaTimed` 필드를 사용하는 필터링 규칙을 식별합니다.
 
-   ![AEP 데이터 흐름 필터 규칙](assets/dataflow-filtering-rules-profile.jpeg)
+   ![AEP 데이터 흐름 필터 규칙](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    media.mediaTimed 개체를 사용하는 각 필터에 대해 [스트리밍 미디어 서비스](/help/media-overview.md)에 설명된 스트리밍 미디어 변수를 사용하여 `mediaReporting` 개체에서 해당 응답자를 찾아 이전 필드와 새 필드 사이를 매핑합니다. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다. 예를 들어 [미디어 시작](/help/reporting/metrics/media-starts.md)의 경우 `media.mediaTimed.impressions.value`에 대한 받는 사람은 `xdm.mediaReporting.sessionDetails.isViewed`입니다.
 
-   ![새 XDM 필드 및 이전 XDM 필드](assets/xdm-fields-new-and-old.jpeg)
+   ![새 XDM 필드 및 이전 XDM 필드](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. 관련 `mediaReporting` 필드를 필터링 규칙으로 드래그하고 두 규칙 사이에 OR 연산자를 사용하십시오. 새 필드를 사용할 때 기존 규칙과 동일한 규칙을 추가합니다.
 
-   ![필터 규칙 추가](assets/add-filter-rules.jpeg)
+   ![필터 규칙 추가](../../assets/add-filter-rules.jpeg)
 
 1. **[!UICONTROL 다음]**&#x200B;을(를) 선택하여 변경 내용을 저장합니다.

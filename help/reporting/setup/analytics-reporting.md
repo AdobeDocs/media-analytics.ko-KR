@@ -1,41 +1,22 @@
 ---
-title: 미디어 보고서 지원
-description: 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 미디어 보고서 세트에 대해 알아봅니다.  미디어 데이터를 보내기 전에 미디어 보고서를 구성하려면 다음 단계를 따르십시오.
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: Analytics 전용 구현에 대한 보고 설정
+description: 스트리밍 미디어 데이터를 수집 및 보고할 수 있도록 Adobe Analytics에서 미디어 보고서 세트 모듈을 활성화합니다.
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 8%
 
 ---
 
-# 미디어 보고서 지원
+# Analytics 전용 구현에 대한 보고 설정
+
+Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려면 먼저 해당 데이터를 수신하는 각 보고서 세트가 적절한 미디어 모듈을 활성화하도록 구성되어야 합니다. 이 페이지에서는 이러한 모듈을 활성화하는 방법과 결과 보고서를 찾을 수 있는 위치를 설명합니다.
+
+* **필수 구성 요소**: Adobe Analytics 구현입니다. [Analytics 전용 구현 개요](/help/implementation/analytics-only/overview.md) 및 선택한 구현 메서드를 참조하십시오.
+
+## 보고서 세트에 대한 미디어 보고 활성화
 
 미디어 데이터를 보내기 전에 미디어 지표를 수집하는 각 보고서 세트를 구성해야 합니다.
 
@@ -44,11 +25,11 @@ ht-degree: 20%
 
    ![보고서 세트 관리자 메뉴 스크린샷](assets/media-reporting.png)
 
-1. **[!UICONTROL 미디어 보고]** 페이지에서 원하는 스트리밍 미디어 구성 요소를 사용하도록 설정합니다(아래 참조).
+1. **[!UICONTROL 미디어 보고]** 페이지에서 원하는 스트리밍 미디어 모듈을 사용하도록 설정합니다(아래 참조).
 
 1. **[!UICONTROL 저장].** 선택
 
-   이 보고서 세트가 이미 미디어 데이터를 수집하도록 구성된 경우 **[!UICONTROL 저장]**&#x200B;을 클릭하면 추가 구성 페이지가 표시됩니다. **[!UICONTROL 미디어 코어 측정]** 페이지가 표시되면 다음 단계를 계속 진행합니다.
+   이 보고서 세트가 이미 미디어 데이터를 수집하도록 구성된 경우 **[!UICONTROL 저장]**&#x200B;을 선택하면 추가 구성 페이지가 표시됩니다. **[!UICONTROL 미디어 코어 측정]** 페이지가 표시되면 다음 단계를 계속 진행합니다.
 
 ## 사용 가능한 스트리밍 미디어 모듈
 
@@ -141,7 +122,7 @@ ht-degree: 20%
       * [[!UICONTROL 총 버퍼 지속 시간]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL 비디오 메타데이터]**: 쇼, 시즌 및 장르와 같은 표준 비디오 콘텐츠 특성을 추적할 수 있습니다.
    * **차원:**
-      * [!UICONTROL 광고 로드]
+      * [[!UICONTROL 광고 로드]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL 일 파트]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL 에피소드]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL 장르]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ ht-degree: 20%
       * [[!UICONTROL 초점의 영향을 받은 스트림]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL 음소거의 영향을 받은 스트림]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL 화면 속 화면의 영향을 받은 스트림]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* [Workspace의 미디어 보고서](/help/reporting/workspace/media-workspace-templates.md)
+>* [차원 개요](/help/reporting/dimensions/overview.md)
+>* [지표 개요](/help/reporting/metrics/overview.md)

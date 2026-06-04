@@ -3,7 +3,7 @@ title: 스트리밍 미디어 차원 개요
 description: Adobe Analytics 및 Customer Journey Analytics에서 스트리밍 미디어 차원을 채우고 구성하는 방법에 대해 알아봅니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -29,7 +29,7 @@ Streaming Media 차원은 다음 세 가지 주요 모집단 패턴을 따릅니
 
 | 보고 시스템 | 차원 도착 방법 |
 | --- | --- |
-| Adobe Analytics | [컨텍스트 데이터 변수](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/contextdata)을 사용하여 채워집니다. 일부 차원은 이러한 컨텍스트 데이터 변수를 사용하여 자동으로 차원을 채우지만, 다른 차원은 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을 사용하여 채워야 합니다. 값을 자동으로 채우는 차원에는 먼저 해당 [스트리밍 미디어 보고서 세트 설정](../../implementation/media-sdk/setup/media-reports-enable.md)이 활성화되어 있어야 합니다. |
+| Adobe Analytics | [컨텍스트 데이터 변수](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/contextdata)을 사용하여 채워집니다. 일부 차원은 이러한 컨텍스트 데이터 변수를 사용하여 자동으로 차원을 채우지만, 다른 차원은 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을 사용하여 채워야 합니다. 값을 자동으로 채우는 차원에는 먼저 해당 [스트리밍 미디어 보고서 세트 설정](../setup/analytics-reporting.md)이 활성화되어 있어야 합니다. |
 | Customer Journey Analytics | 스트리밍 미디어 데이터를 포함하는 모든 데이터 집합에서 가져온 `xdm.mediaReporting.sessionDetails`의 XDM 필드. [데이터 보기 구성 요소 설정](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-dataviews/component-settings/overview) 내에서 원하는 설정으로 각 차원을 만들어야 합니다. |
 | 데이터 피드 | 자동으로 채워진 차원에는 고유한 데이터 피드 열 이름(`videostreamtype`, `videoname` 또는 `videolength`)이 있습니다. 처리 규칙이 필요한 차원에서는 `evar` 열 이름을 사용합니다. |
 | Audience Manager | Adobe Analytics에서 전달된 컨텍스트 데이터. Analytics에서 Audience Manager으로 서버측 전달이 구성된 경우에만 사용할 수 있습니다. |

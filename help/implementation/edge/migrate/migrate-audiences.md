@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ ht-degree: 1%
 
 이전 필드와 새 필드 간에 매핑하려면 [콘텐츠 ID](/help/reporting/dimensions/content.md) 매개 변수와 [스트리밍 미디어 서비스](/help/media-overview.md)에 설명된 스트리밍 미디어 변수의 나머지 부분을 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다.
 
-![이전 및 새 XDM 필드 패스](assets/field-paths-updated.jpeg)
+![이전 및 새 XDM 필드 패스](../../assets/field-paths-updated.jpeg)
 
 ## 예
 
 마이그레이션 지침을 더 쉽게 따르려면 단일 규칙이 있는 대상을 포함하는 다음 예를 고려하십시오. 대상에는 단일 규칙이 있으므로 마이그레이션 지침을 한 번만 적용해야 합니다.
 
-1. 오른쪽 상단에서 [!UICONTROL **대상자 편집**] 단추를 선택합니다.
+1. 오른쪽 상단에서 **[!UICONTROL 대상자 편집]** 단추를 선택합니다.
 
 1. 대상에 대해 구성된 규칙을 찾습니다.
 
-   ![대상자 편집](assets/audience-edit.jpeg)
+   ![대상자 편집](../../assets/audience-edit.jpeg)
 
-   ![대상자 편집](assets/audience-edit2.jpeg)
+   ![대상자 편집](../../assets/audience-edit2.jpeg)
 
 1. 규칙을 선택하여 구성을 엽니다.
 
-   ![대상자 편집](assets/audience-edit3.jpeg)
+   ![대상자 편집](../../assets/audience-edit3.jpeg)
 
 1. (선택 사항) 규칙에 사용된 필드의 경로를 보려면 필드 이름 근처에 있는 정보 버튼을 선택합니다.
 
-   ![대상자 편집](assets/audience-edit4.jpeg)
+   ![대상자 편집](../../assets/audience-edit4.jpeg)
 
 1. 필드 이름을 식별합니다(이 경우 &quot;미디어 시작&quot;).
 
-   ![대상자 편집](assets/audience-edit5.jpeg)
+   ![대상자 편집](../../assets/audience-edit5.jpeg)
 
 1. 이전 필드 간에 매핑하려면 [스트리밍 미디어 서비스](/help/media-overview.md)에 문서화된 스트리밍 미디어 변수를 참조하십시오. 이전 필드 경로는 &quot;XDM 필드 패스&quot; 속성에서 찾을 수 있고 새 필드 경로는 &quot;보고 XDM 필드 패스&quot; 속성에서 찾을 수 있습니다. 예를 들어 [Media Starts](/help/reporting/metrics/media-starts.md) 매개 변수의 경우 `media.mediaTimed.impressions.value`에 대한 대응 항목은 `xdm.mediaReporting.sessionDetails.isViewed`입니다.
 
-   ![업데이트된 XDM 경로](assets/updated-xdm-path.jpeg)
+   ![업데이트된 XDM 경로](../../assets/updated-xdm-path.jpeg)
 
 1. 새 필드를 사용하여 기존 규칙과 동일한 규칙을 추가합니다.
 
-   ![규칙 추가](assets/add-rule.jpeg)
+   ![규칙 추가](../../assets/add-rule.jpeg)
 
-   ![규칙 추가](assets/add-rule2.jpeg)
+   ![규칙 추가](../../assets/add-rule2.jpeg)
 
-   ![규칙 추가](assets/add-rule3.jpeg)
+   ![규칙 추가](../../assets/add-rule3.jpeg)
 
-1. 대상자를 저장하려면 [!UICONTROL **저장**]&#x200B;을 선택하십시오. 대상자가 여전히 예상대로 작동하는지 확인해야 하는 동안 이 설정을 유지할 수 있습니다.
+1. 대상자를 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오. 대상자가 여전히 예상대로 작동하는지 확인해야 하는 동안 이 설정을 유지할 수 있습니다.
 
-1. 유효성 검사가 완료되면 이전 필드를 제거한 다음 [!UICONTROL **저장**]&#x200B;을 선택하여 대상자를 저장합니다.
+1. 유효성 검사가 완료되면 이전 필드를 제거한 다음 **[!UICONTROL 저장]**&#x200B;을 선택하여 대상자를 저장합니다.
 
-   ![규칙 추가](assets/add-rule4.jpeg)
+   ![규칙 추가](../../assets/add-rule4.jpeg)
 
 1. 대상자의 유효성을 다시 검사합니다.
 

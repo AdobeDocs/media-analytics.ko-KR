@@ -3,7 +3,7 @@ title: 방송 시간대
 description: 콘텐츠가 브로드캐스트 또는 재생될 당시의 시간 버킷(아침, 오후, 프라임타임, 늦은 밤)을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.dayPart`에서 자동으로 수집됩니다. |
+| Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.dayPart`에서 자동으로 수집됩니다. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |

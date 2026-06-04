@@ -3,7 +3,7 @@ title: 미디어 경로
 description: 콘텐츠 ID를 경로 분석을 위한 트래픽 변수로 캡처합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 5%
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/media-reports-enable.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.name`에서 트래픽 변수(prop)로 자동으로 수집됩니다. |
+| Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.name`에서 트래픽 변수(prop)로 자동으로 수집됩니다. |
 | Customer Journey Analytics | 해당 없음 — 경로 분석에 [컨텐츠](content.md) 사용 |
 | 데이터 피드 | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
