@@ -3,7 +3,7 @@ title: 유형 표시
 description: 문자열 정수 코드를 사용하여 콘텐츠 형식(전체 에피소드, 미리보기, 클립 또는 기타)을 식별합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -15,23 +15,23 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**표시 형식**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [표시 형식](/help/reporting/dimensions/show-type.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**표시 형식**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [표시 형식](/help/reporting/dimensions/show-type.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
 show type 변수는 문자열 정수 코드를 사용하여 콘텐츠 형식을 식별합니다.
 
-- `"0"`: 전체 에피소드
-- `"1"`: 미리 보기 또는 예고편
-- `"2"`: 클립
-- `"3"`: 기타
+* `"0"`: 전체 에피소드
+* `"1"`: 미리 보기 또는 예고편
+* `"2"`: 클립
+* `"3"`: 기타
 
 참여를 측정할 때 트레일러 및 클립과 같은 짧은 형식의 콘텐츠에서 전체 프로그램 보기를 분리하는 데 사용합니다.
 
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.type` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.type` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
