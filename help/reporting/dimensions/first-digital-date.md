@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**첫 번째 디지털 날짜**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [첫 번째 디지털 날짜](/help/implementation/variables/standard-metadata/first-digital-date.md)를 참조하세요.*
+*이 페이지에서는&#x200B;**첫 번째 디지털 날짜**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [첫 번째 디지털 날짜](/help/implementation/variables/standard-metadata/first-digital-date.md)를 참조하세요.*
 
 >[!ENDSHADEBOX]
 

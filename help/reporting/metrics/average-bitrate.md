@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 세션당 원시 가중 평균 비트 전송률을 보고하는&#x200B;**평균 비트 전송률**이벤트 지표를 다룹니다. 버킷 차원에 대해서는 [평균 비트율(차원)](/help/reporting/dimensions/average-bitrate.md)을 참조하세요. 이 변수를 수집하는 방법은 [Bitrate](/help/implementation/variables/quality/bitrate.md)을(를) 참조하십시오.*
+*이 페이지에서는 세션당 원시 가중 평균 비트 전송률을 보고하는&#x200B;**평균 비트 전송률**&#x200B;이벤트 지표를 다룹니다. 버킷 차원에 대해서는 [평균 비트율(차원)](/help/reporting/dimensions/average-bitrate.md)을 참조하세요. 이 변수를 수집하는 방법은 [Bitrate](/help/implementation/variables/quality/bitrate.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

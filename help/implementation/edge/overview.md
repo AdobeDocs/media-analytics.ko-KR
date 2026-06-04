@@ -117,7 +117,7 @@ Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데
 
    +++ 를 확장하여 스키마에 사용자 지정 메타데이터 추가에 대한 지침을 봅니다.
 
-   1. **[!UICONTROL 계정 정보]** > **[!UICONTROL 할당된 조직]** > [!UICONTROL _**조직 이름**_] > **[!UICONTROL 테넌트]**&#x200B;를 선택하여 조직의 테넌트 이름을 찾습니다.
+   1. **[!UICONTROL 계정 정보]** > **[!UICONTROL 할당된 조직]** > [!UICONTROL _&#x200B;**조직 이름**&#x200B;_] > **[!UICONTROL 테넌트]**&#x200B;를 선택하여 조직의 테넌트 이름을 찾습니다.
 
       사용자 정의 필드는 이 경로를 통해 수신됩니다. (예: 테넌트 이름: _dcbl → myCustomField 경로: _dcbl.myCustomField.)
 

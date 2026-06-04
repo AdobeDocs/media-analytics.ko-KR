@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**삭제된 프레임**차원을 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.droppedFrameCount` 컨텍스트 데이터 변수에서 쌍을 이루는 [드롭된 프레임(지표)](/help/reporting/metrics/dropped-frames.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.droppedFrames` 필드를 노출합니다. 이 변수를 수집하는 방법은 [삭제된 프레임](/help/implementation/variables/quality/dropped-frames.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**삭제된 프레임**&#x200B;차원을 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.droppedFrameCount` 컨텍스트 데이터 변수에서 쌍을 이루는 [드롭된 프레임(지표)](/help/reporting/metrics/dropped-frames.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.droppedFrames` 필드를 노출합니다. 이 변수를 수집하는 방법은 [삭제된 프레임](/help/implementation/variables/quality/dropped-frames.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

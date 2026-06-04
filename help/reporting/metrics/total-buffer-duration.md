@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**총 버퍼 지속 시간**지표를 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.bufferTime` 컨텍스트 데이터 변수에서 쌍을 이루는 [총 버퍼 지속 시간(차원)](/help/reporting/dimensions/total-buffer-duration.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.bufferTime` 필드를 노출합니다.*
+*이 페이지에서는&#x200B;**총 버퍼 지속 시간**&#x200B;지표를 다룹니다. Adobe Analytics은 동일한 `a.media.qoe.bufferTime` 컨텍스트 데이터 변수에서 쌍을 이루는 [총 버퍼 지속 시간(차원)](/help/reporting/dimensions/total-buffer-duration.md)을 자동으로 채웁니다. Customer Journey Analytics은 차원 또는 지표로 사용할 수 있는 단일 `xdm.mediaReporting.qoeDataDetails.bufferTime` 필드를 노출합니다.*
 
 >[!ENDSHADEBOX]
 

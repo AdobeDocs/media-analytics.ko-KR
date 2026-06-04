@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**챕터 오프셋**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [챕터 오프셋](/help/implementation/variables/chapters/chapter-offset.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**챕터 오프셋**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [챕터 오프셋](/help/implementation/variables/chapters/chapter-offset.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

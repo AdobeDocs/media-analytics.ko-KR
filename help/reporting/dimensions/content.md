@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**콘텐츠**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 ID](/help/implementation/variables/core/content-id.md)을(를) 참조하십시오.*
+*이 페이지는&#x200B;**콘텐츠**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 ID](/help/implementation/variables/core/content-id.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**앱 버전**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [앱 버전](/help/reporting/dimensions/app-version.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**앱 버전**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [앱 버전](/help/reporting/dimensions/app-version.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

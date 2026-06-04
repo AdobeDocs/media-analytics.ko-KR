@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**앱 버전**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [앱 버전](/help/implementation/variables/core/app-version.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**앱 버전**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [앱 버전](/help/implementation/variables/core/app-version.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

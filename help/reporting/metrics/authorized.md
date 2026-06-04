@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**인증됨**보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [인증됨](/help/implementation/variables/standard-metadata/authorized.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**인증됨**&#x200B;보고 지표를 다룹니다. 이 변수를 수집하는 방법은 [인증됨](/help/implementation/variables/standard-metadata/authorized.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
