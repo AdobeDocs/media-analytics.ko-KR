@@ -16,7 +16,7 @@ JavaScript(3.x)용 Media SDK은 스트리밍 미디어 데이터를 Adobe Analyt
 
 * **필수 구성 요소**:
    * [Analytics 전용 구현 개요](overview.md)를 완료합니다.
-   * [AppMeasurement](https://experienceleague.adobe.com/ko/docs/analytics/implementation/js/overview) 및 [방문자 ID 서비스](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)를 구현합니다.
+   * [AppMeasurement](https://experienceleague.adobe.com/ko/docs/analytics/implementation/js/overview) 및 [방문자 ID 서비스](https://experienceleague.adobe.com/ko/docs/analytics/implementation/id/appmeasurement)를 구현합니다.
    * [JavaScript용 Media SDK 다운로드](/help/getting-started/download-sdks.md).
 
 ## SDK 설치 및 구성

@@ -26,11 +26,11 @@ ht-degree: 1%
 
 # 새 스트리밍 미디어 필드를 사용하도록 Customer Journey Analytics 마이그레이션
 
-이 문서에서는 &quot;Media&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 유형을 사용하는 Customer Journey Analytics 설치를 업데이트하여 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 유형을 사용해야 하는 방법에 대해 설명합니다.
+이 문서에서는 &quot;Media&quot;라는 Adobe 스트리밍 미디어 서비스 데이터 유형을 사용하는 Customer Journey Analytics 설치를 업데이트하여 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 유형을 사용해야 하는 방법에 대해 설명합니다.
 
 ## Customer Journey Analytics 마이그레이션
 
-Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 이전 데이터 형식을 사용하는 다음 설정을 업데이트해야 합니다.
+Customer Journey Analytics 설정을 이전 데이터 형식인 &quot;Media&quot;에서 새 데이터 형식인 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;(으)로 마이그레이션하려면 이전 데이터 형식을 사용하는 다음 설정을 업데이트해야 합니다.
 
 * 데이터 보기
 

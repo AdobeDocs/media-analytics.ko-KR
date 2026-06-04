@@ -27,7 +27,7 @@ ht-degree: 2%
 
 | 속성 | 값 |
 | --- | --- |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **미디어 컬렉션 API 매개 변수** | `media.sdkVersion` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB 웹 SDK]
 
-[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)을(를) 호출할 때 `streamingMedia` 구성 개체에 `appVersion`을(를) 설정합니다.
+[`configure`](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/commands/configure/streamingmedia)을(를) 호출할 때 `streamingMedia` 구성 개체에 `appVersion`을(를) 설정합니다.
 
 ```javascript
 alloy("configure", {

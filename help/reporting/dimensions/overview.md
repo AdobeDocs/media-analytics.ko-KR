@@ -23,14 +23,14 @@ Streaming Media 차원은 다음 세 가지 주요 모집단 패턴을 따릅니
 
 * **파생 값**: 미디어 백 엔드가 플레이어에서 제공한 값을 읽는 대신 누적된 재생 상태에서 계산하는 차원입니다. [[!UICONTROL 콘텐츠 세그먼트]](/help/reporting/dimensions/content-segment.md)은(는) 재생 과정에서 재생 헤드 위치에서 계산됩니다. [[!UICONTROL 미디어 경로]](/help/reporting/dimensions/media-path.md)은(는) 세션에서 콘텐츠와 광고 상태 사이의 전환을 추적합니다. 플레이어에서 이러한 차원을 재정의할 수 없습니다.
 
-* **분류**: 선택 사항입니다. 별도의 차원을 채우는 대신 [분류 세트](https://experienceleague.adobe.com/ko/docs/analytics/components/classifications/sets/overview)&#x200B;(Adobe Analytics) 또는 [조회 데이터 세트](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/create-datasets/cja-upgrade-dataset-lookup)&#x200B;(Customer Journey Analytics)를 사용하여 분류 데이터를 유지 관리할 수 있습니다.
+* **분류**: 선택 사항입니다. 별도의 차원을 채우는 대신 [분류 세트](https://experienceleague.adobe.com/ko/docs/analytics/components/classifications/sets/overview)&#x200B;(Adobe Analytics) 또는 [조회 데이터 세트](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/create-datasets/cja-upgrade-dataset-lookup)&#x200B;(Customer Journey Analytics)를 사용하여 분류 데이터를 유지 관리할 수 있습니다.
 
 ## 보고 시스템별 가용성
 
 | 보고 시스템 | 차원 도착 방법 |
 | --- | --- |
-| Adobe Analytics | [컨텍스트 데이터 변수](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/contextdata)을 사용하여 채워집니다. 일부 차원은 이러한 컨텍스트 데이터 변수를 사용하여 자동으로 차원을 채우지만, 다른 차원은 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을 사용하여 채워야 합니다. 값을 자동으로 채우는 차원에는 먼저 해당 [스트리밍 미디어 보고서 세트 설정](../setup/analytics-reporting.md)이 활성화되어 있어야 합니다. |
-| Customer Journey Analytics | 스트리밍 미디어 데이터를 포함하는 모든 데이터 집합에서 가져온 `xdm.mediaReporting.sessionDetails`의 XDM 필드. [데이터 보기 구성 요소 설정](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) 내에서 원하는 설정으로 각 차원을 만들어야 합니다. |
+| Adobe Analytics | [컨텍스트 데이터 변수](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/contextdata)을 사용하여 채워집니다. 일부 차원은 이러한 컨텍스트 데이터 변수를 사용하여 자동으로 차원을 채우지만, 다른 차원은 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을 사용하여 채워야 합니다. 값을 자동으로 채우는 차원에는 먼저 해당 [스트리밍 미디어 보고서 세트 설정](../setup/analytics-reporting.md)이 활성화되어 있어야 합니다. |
+| Customer Journey Analytics | 스트리밍 미디어 데이터를 포함하는 모든 데이터 집합에서 가져온 `xdm.mediaReporting.sessionDetails`의 XDM 필드. [데이터 보기 구성 요소 설정](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-dataviews/component-settings/overview) 내에서 원하는 설정으로 각 차원을 만들어야 합니다. |
 | 데이터 피드 | 자동으로 채워진 차원에는 고유한 데이터 피드 열 이름(`videostreamtype`, `videoname` 또는 `videolength`)이 있습니다. 처리 규칙이 필요한 차원에서는 `evar` 열 이름을 사용합니다. |
 | Audience Manager | Adobe Analytics에서 전달된 컨텍스트 데이터. Analytics에서 Audience Manager으로 서버측 전달이 구성된 경우에만 사용할 수 있습니다. |
 

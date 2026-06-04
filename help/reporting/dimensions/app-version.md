@@ -31,8 +31,8 @@ ht-degree: 4%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | Edge 구현을 사용할 때 XDM 필드 매핑을 통해 자동으로 수집됩니다. Analytics 전용 구현의 경우 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)을 사용하여 컨텍스트 데이터 `media.sdkVersion`을(를) 사용자 지정 eVar에 매핑합니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Edge 구현을 사용할 때 XDM 필드 매핑을 통해 자동으로 수집됩니다. Analytics 전용 구현의 경우 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)을 사용하여 컨텍스트 데이터 `media.sdkVersion`을(를) 사용자 지정 eVar에 매핑합니다. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | 전용 데이터 피드 열이 없습니다. Analytics 전용 구현의 경우 처리 규칙을 통해 구성된 사용자 지정 eVar의 데이터 피드 열을 사용하십시오. |
 | Audience Manager | `c_contextdata.media.sdkVersion`(Analytics 전용 구현) |
 

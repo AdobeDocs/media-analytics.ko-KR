@@ -28,13 +28,13 @@ ht-degree: 6%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.length`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->Adobe Analytics에서 이 값은 [콘텐츠](content.md) 차원의 **비디오 길이** 분류에도 해당합니다. 해당 분류를 별도로 채우고 유지 관리할 책임이 있습니다. Customer Journey Analytics은 이 차원을 직접 사용합니다. 원하는 경우 [값 버킷팅](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)을 사용할 수 있습니다.
+>Adobe Analytics에서 이 값은 [콘텐츠](content.md) 차원의 **비디오 길이** 분류에도 해당합니다. 해당 분류를 별도로 채우고 유지 관리할 책임이 있습니다. Customer Journey Analytics은 이 차원을 직접 사용합니다. 원하는 경우 [값 버킷팅](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)을 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
