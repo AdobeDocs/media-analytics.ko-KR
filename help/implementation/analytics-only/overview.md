@@ -3,7 +3,7 @@ title: Analytics 전용 구현 개요
 description: Analytics 전용 구현에 사용되는 스트리밍 미디어용 Adobe Analytics 추가 기능에 대한 사전 요구 사항 및 구현 방법입니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 5%
