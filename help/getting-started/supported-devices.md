@@ -14,10 +14,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 308
-ht-degree: 75%
+source-wordcount: 268
+ht-degree: 55%
 
 ---
 
@@ -31,30 +31,24 @@ Adobe 스트리밍 미디어 서비스는 다음을 포함한 모든 주요 장�
 
 SDK는 새 버전의 디바이스가 출시될 때 관례적으로 업데이트되므로, SDK를 사용하여 개별 플랫폼의 기본 플레이어 또는 사용 가능한 그 밖의 미디어 플레이어와 통합할 수 있습니다.
 
-현재 SDK가 지원되지 않는 디바이스의 경우나 구현을 사용자 정의해야 하는 상황에서는 Media Collection API 또는 Media Edge API를 구현할 수 있습니다. 이러한 API를 사용하면 디바이스에서 Adobe 스트리밍 미디어 서비스의 백엔드로 직접 RESTful API를 호출할 수 있습니다.
+현재 SDK이 지원되지 않는 디바이스의 경우나 구현을 사용자 정의해야 하는 상황에서는 Media Collection API 또는 Media Edge API를 사용할 수 있습니다. 이러한 API를 사용하면 디바이스에서 Adobe 스트리밍 미디어 서비스의 백엔드로 직접 RESTful API를 호출할 수 있습니다.
 
 아래 테이블은 현재 지원되는 디바이스 목록입니다. 디바이스가 목록에 없으면 고객 지원 센터나 솔루션 컨설턴트에게 해당 디바이스의 상태에 대해 문의하십시오.
 
-Edge에서 미디어를 구현하는 방법에 대한 자세한 내용은 [Experience Platform Edge을 사용하여 스트리밍 미디어 컬렉션 설치](/help/implementation/edge/overview.md)를 참조하십시오.
-
-| 스트리밍 플랫폼 및 디바이스 |  | Edge Network SDK/확장용 미디어 | Media Edge API | 태그 또는 AEP Mobile SDK가 포함된 미디어 확장 | Media SDK | Media Collection API |
-|:---|:---|:---:|:---:|:---:|:---:|:---:|
-| 웹/모바일 웹 | | | | | | |
-| | JavaScript 브라우저 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |
-| 모바일 앱 | | | | | | |
-| | iOS 디바이스 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | Android 디바이스 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | Windows 디바이스 | | ![지원됨](/help/assets/icon-blue-check.png) | | | ![지원됨](/help/assets/icon-blue-check.png) |
-| OTT | | | | | | |
-| | Apple TV (tvOS) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | Roku | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png)<br>(밝은 스크립트) | ![지원됨](/help/assets/icon-blue-check.png)<br>(기본) |
-| | Fire TV (Fire OS) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | Android TV | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | Chromecast | | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |
-| | 게임 콘솔 (예: Xbox ONE, Sony PS3/PS4) | | ![지원됨](/help/assets/icon-blue-check.png) | | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | 셋톱 박스 (예: Exfinity X1) | | ![지원됨](/help/assets/icon-blue-check.png) | | | ![지원됨](/help/assets/icon-blue-check.png) |
-| | 스마트 TV (예: Samsung, LG, Sony, Vizio) | | ![지원됨](/help/assets/icon-blue-check.png) | | | ![지원됨](/help/assets/icon-blue-check.png) |
-| 기타 | | | | | | |
-| | 새로운 연결된 디바이스 | | ![지원됨](/help/assets/icon-blue-check.png) | | | ![지원됨](/help/assets/icon-blue-check.png) |
-
-{style="table-layout:auto"}
+| 스트리밍 플랫폼 및 디바이스 |  | Edge Network 컬렉션 라이브러리 | Media Edge API | Analytics 전용 컬렉션 라이브러리 | Media Collection API<br>(Analytics 전용) |
+|:---|:---|:---:|:---:|:---:|:---:|
+| 웹/모바일 웹 | | | | | |
+| | JavaScript 브라우저 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |
+| 모바일 앱 | | | | | |
+| | iOS 장치 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | Android 장치 | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | Windows 장치 | | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| OTT | | | | | |
+| | Apple TV (tvOS) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | Roku | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | Fire TV (Fire OS) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | Android TV | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | Chromecast | | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) | ![지원됨](/help/assets/icon-blue-check.png) |
+| | 게임 콘솔(예: Xbox ONE, Sony PS3/PS4) | | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | 셋톱 박스(예: xfinity X1) | | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |
+| | 스마트 TV (예: Samsung, LG, Sony, Vizio) | | ![지원됨](/help/assets/icon-blue-check.png) | | ![지원됨](/help/assets/icon-blue-check.png) |

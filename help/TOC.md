@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 35%
+source-wordcount: '749'
+ht-degree: 34%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 35%
 # 스트리밍 미디어용 서비스 안내서 {#using}
 
 + [Adobe 스트리밍 미디어 서비스 안내서](media-overview.md)
-+ 릴리스 정보 {#release-notes}
-   + [스트리밍 미디어 서비스 릴리스 정보](additional-resources/release-notes.md)
++ [스트리밍 미디어 서비스 릴리스 정보](release-notes.md)
 + 시작하기 {#getting-started}
    + [사전 요구 사항](getting-started/prereqs.md)
    + [지원되는 디바이스](getting-started/supported-devices.md)
-   + [Streaming Media 서비스 구현 설명서](getting-started/implementation-documentation.md)
-   + [SDK, 라이브러리 및 확장 기능](getting-started/download-sdks.md)
+   + [Media SDK, 확장 프로그램 및 API 가져오기](getting-started/download-sdks.md)
 + 구현 {#implementation}
    + [구현 개요](implementation/overview.md)
    + 이벤트 {#events}

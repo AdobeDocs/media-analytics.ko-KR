@@ -20,10 +20,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 490
-ht-degree: 43%
+source-wordcount: 274
+ht-degree: 10%
 
 ---
 
@@ -31,28 +31,21 @@ ht-degree: 43%
 
 Adobe 스트리밍 미디어 서비스 구현을 시작하기 전에 다음 작업을 완료하십시오.
 
-1. **Adobe 스트리밍 미디어 서비스 개요 검토**<br>
-스트리밍 미디어 서비스 구현을 시작하기 전에 [Adobe 스트리밍 미디어 서비스 개요](/help/media-overview.md)를 검토하여 요구 사항을 충족하는지 확인하십시오.
-
 1. **가격 책정 모델 확인**<br>
 Customer Journey Analytics 스트리밍 미디어 컬렉션 추가 기능 및 스트리밍 미디어용 Adobe Analytics 추가 기능의 현재 가격 모델은 비디오 스트림을 기반으로 합니다. 추가 기능은 Adobe Analytics 및 Adobe용으로 별도로 판매되므로 필요한 경우 영업 담당자 또는 Adobe Experience Platform 계정 팀에 문의하십시오.
 
-1. **Adobe Analytics 보고서 사용**<br>
-Analytics 또는 Customer Journey Analytics에서 보고서를 활성화하고 수집 중인 컨텐츠 및 광고 데이터를 보려면 보고서를 활성화해야 합니다. [Analytics 전용 구현에 대한 보고 설정](/help/reporting/setup/analytics-reporting.md)을 참조하십시오.
+1. **Adobe Analytics 보고서 활성화** *(Analytics 전용 구현)*<br>
+Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 데이터를 보려면 보고서를 활성화해야 합니다. [Analytics 전용 구현에 대한 보고 설정](/help/reporting/setup/analytics-reporting.md)을 참조하십시오.
 
-1. **CX Enterprise에서 Adobe Experience Platform ID 서비스 구현**
+1. **ID 구성**<br>
 
-   **ID 서비스**&#x200B;를 통해 사용자 핵심 서비스의 CX 엔터프라이즈 핵심 서비스, 솔루션, 고객 특성 및 대상에 공통된 ID 프레임워크를 사용할 수 있습니다. 이 서비스는 영구적인 고유 ID를 사이트 방문자에게 할당하여 작동됩니다. 조직에서 ID 서비스를 구현하면 이 ID를 사용하여 다른 CX 엔터프라이즈 솔루션에서 동일한 사이트 방문자와 해당 데이터를 식별할 수 있습니다.
+   ID 구성 요구 사항은 구현 방법에 따라 다릅니다.
 
-   ![ID 서비스 그래픽](assets/mc_id_service_graphic.png)
+   * **Edge 구현**: ID는 Adobe Experience Platform ID 네임스페이스 구성을 통해 처리됩니다. 별도의 ID 서비스 설정이 필요하지 않습니다. 자세한 내용은 [Edge 구현 개요](/help/implementation/edge/overview.md)를 참조하십시오.
 
-   ID 서비스는 다른 솔루션별 ID(예: Analytics AID)를 대체할 수도 있습니다. [고객 ID 및 인증 상태](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko-KR) 기능을 통해 ID 서비스를 사용하면 고유한 고객 ID를 CX Enterprise에 전달할 수 있습니다. 단, ID 서비스는 이미 구독한 솔루션에서만 작동한다는 점을 잊지 마십시오. 다른 제품에 액세스할 수 있도록 등록하지 않았다면 ID 서비스에서는 액세스 권한을 제공하지 않습니다.
+   * **Analytics 전용 구현**: CX 엔터프라이즈 솔루션에서 방문자를 일관되게 식별하려면 Adobe Experience Platform ID 서비스를 사용하도록 설정해야 합니다. ID 서비스는 각 사이트 방문자에게 고유한 영구 ID를 할당하여 구독하는 모든 CX 엔터프라이즈 솔루션에서 해당 ID를 공유할 수 있도록 합니다.
 
-   ID 서비스는 많은 CX 엔터프라이즈 기능, 개선 사항 및 서비스의 필수 구성 요소입니다. 현재 ID 서비스는 [Analytics](https://www.adobe.com/kr/marketing-cloud/web-analytics.html), [Audience Manager](https://www.adobe.com/kr/marketing-cloud/data-management-platform.html) 및 [Target](https://www.adobe.com/kr/marketing-cloud/testing-targeting.html)을 지원합니다.
-
-   ID 서비스를 구현하지 않았다면 지금이 바로 마이그레이션 전략을 시작할 적기입니다. ID 서비스의 중요성과 역할에 대한 자세한 내용은 [Identity 서비스가 나의 레이더가 되어야 하는 이유](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)를 참조하십시오.
-
-   Experience Cloud ID에 대한 자세한 내용은 [Experience Cloud ID 개요](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ko) 및 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+     자세한 내용은 [Adobe Experience Platform Identity Service 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하세요.
 
 1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 
