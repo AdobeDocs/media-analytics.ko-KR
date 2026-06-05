@@ -68,8 +68,8 @@ ht-degree: 60%
 | --- | --- | --- |
 | **여러 플레이어 상태 추적** | 미디어 컬렉션 API를 사용하여 여러 플레이어 상태 추적을 구현합니다. [자세히 알아보기](/help/implementation/events/player-state/overview.md) | 2022년 9월 |
 | 이름이 변경된 XDM 필드 | 일관성을 위해 이름이 변경된 XDM 필드 이름:<ul><li>오디오 및 비디오 매개 변수</li><li>광고 매개변수</li><li>챕터 매개변수</li><li>플레이어 상태 매개변수</li><li>품질 매개변수</li></ul> | 2022년 9월 |
-| **미디어 동시 뷰어 패널** | 최대 동시성이 발생한 위치 또는 중단이 발생한 위치를 이해합니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 인사이트를 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 2022년 8월 9일 수요일 |
-| **미디어 재생 소요 시간 패널** | 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 인사이트를 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 인사이트를 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022년 8월 9일 수요일 |
+| **미디어 동시 뷰어 패널** | 최대 동시성이 발생한 위치 또는 중단이 발생한 위치를 이해합니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 인사이트를 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ko) | 2022년 8월 9일 수요일 |
+| **미디어 재생 소요 시간 패널** | 미디어 재생 소요 시간은 시청자 참여에 대한 가치 있는 인사이트를 제공하며 미디어 조직에서는 시간대 지정 기능이 있는 고급 소요 시간 분석을 통해 분 단위 사용자 참여에 대한 보다 심층적이고 세부적인 인사이트를 얻을 수 있습니다. 특정 시점에 미디어 스트림을 보는 데 소요된 시간을 관찰할 수 있습니다. 새로운 5분, 15분, 30분 단위를 포함하여 다양한 단위로 재생 시간을 분할할 수 있습니다. [자세히 알아보기](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ko) | 2022년 8월 9일 수요일 |
 | **평균 분당 시청 대상자** | Media Analytics 고객은 평균 분당 시청자 패널을 사용하여 평균적인 콘텐츠 소비에 대해 더 잘 이해할 수 있습니다. <br>평균 분당 시청자를 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 분당 시청자를 유선 TV 평균 분당 지표와 비교하거나 추가할 수 있습니다. 이 패널을 통해 기간 분류가 업데이트된 경우에도 사용자 정의 기간의 대상자 평균을 보다 유연하게 측정할 수 있습니다.  [자세히 알아보기](/help/reporting/workspace/average-minute-audience.md) | 2022년 3월 16일 목요일 |
 
 ## 2021
