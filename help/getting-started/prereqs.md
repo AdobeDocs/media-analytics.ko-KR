@@ -45,7 +45,7 @@ Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 
 
    * **Analytics 전용 구현**: CX 엔터프라이즈 솔루션에서 방문자를 일관되게 식별하려면 Adobe Experience Platform ID 서비스를 사용하도록 설정해야 합니다. ID 서비스는 각 사이트 방문자에게 고유한 영구 ID를 할당하여 구독하는 모든 CX 엔터프라이즈 솔루션에서 해당 ID를 공유할 수 있도록 합니다.
 
-     자세한 내용은 [Adobe Experience Platform Identity Service 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하세요.
+     자세한 내용은 [Adobe Experience Platform Identity Service 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하세요.
 
 1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 
