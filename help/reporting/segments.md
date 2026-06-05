@@ -26,7 +26,7 @@ ht-degree: 76%
 
 # 미디어 세그먼트{#segments}
 
-세그먼트를 사용하여 특성 또는 웹 사이트 상호 작용에 따라 방문자 하위 집합을 식별할 수 있습니다. 스트림 미디어 세그먼트를 사용하면 오디오, 라이브 또는 팟캐스트 스트림과 같은 방문자 스트림 유형을 식별할 수 있습니다. Adobe Analytics 세그먼트에 대한 자세한 내용은 Adobe Analytics 구성 요소 안내서에서 [세그먼트 정보](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview)를 참조하십시오.
+세그먼트를 사용하여 특성 또는 웹 사이트 상호 작용에 따라 방문자 하위 집합을 식별할 수 있습니다. 스트림 미디어 세그먼트를 사용하면 오디오, 라이브 또는 팟캐스트 스트림과 같은 방문자 스트림 유형을 식별할 수 있습니다. Adobe Analytics 세그먼트에 대한 자세한 내용은 Adobe Analytics 구성 요소 안내서에서 [세그먼트 정보](https://experienceleague.adobe.com/ko/docs/analytics/components/segmentation/seg-overview)를 참조하십시오.
 
 | 세그먼트 | 설명 | 규칙 |
 |---|---|---|
