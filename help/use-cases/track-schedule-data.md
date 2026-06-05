@@ -5,20 +5,11 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 1424
 ht-degree: 5%
@@ -29,7 +20,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->이 문서에서 설명하는 기능은 릴리스의 제한된 테스트 단계에 있으며 사용자 환경에서 아직 사용하지 못할 수 있습니다. 기능이 일반적으로 제공되면 이 메모는 제거됩니다. 릴리스 프로세스에 대한 정보는 [Customer Journey Analytics 기능 릴리스](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/releases/releases)를 참조하십시오.
+>이 문서에서 설명하는 기능은 릴리스의 제한된 테스트 단계에 있으며 사용자 환경에서 아직 사용하지 못할 수 있습니다. 기능이 일반적으로 제공되면 이 메모는 제거됩니다. 릴리스 프로세스에 대한 정보는 [Customer Journey Analytics 기능 릴리스](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)를 참조하십시오.
 
 이전 라이브 스트리밍 미디어 콘텐츠의 예약 데이터를 업로드하여 라이브 콘텐츠의 시청률을 보다 쉽고 정확하게 추적할 수 있습니다. 개별 프로그램 및 특정 주제나 프로그램 세그먼트에 대한 시청률을 추적할 수 있습니다.
 
@@ -157,7 +148,7 @@ ht-degree: 5%
 
    1. 배치 ID를 사용하여 프로그램 예약 데이터 레코드가 포함된 .json 파일을 푸시합니다.
 
-      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
+      일정 정보를 푸시하려면 [일괄 처리 수집 API 개요](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)에 설명된 대로 AEP 일괄 처리 API를 사용해야 합니다.
 
       cURL을 사용하여 일정 레코드가 있는 파일을 푸시하는 다음 예를 생각해 보십시오.
 
@@ -334,36 +325,3 @@ Customer Journey Analytics에서 과거 Live Streaming Media 데이터에 대해
 1. 과거의 라이브 스트리밍 미디어 데이터를 분석하는 데 필요한 테이블 또는 시각화를 만들어 프로젝트를 빌드합니다.
 
    프로젝트를 작성할 때 예약 데이터 파일에 포함하여 Adobe 고객 지원 센터에 전송한 정보를 사용합니다. 여기에는 일치하는 키, 차원 및 추가 메타데이터가 포함됩니다. 자세한 내용은 [일정 데이터 파일 요청 및 업로드](#request-and-upload-the-schedule-data-file)를 참조하십시오.
-
-
-
-
-<!-- 
-
-Extra
-
-Things they need to upload:
-Everything on that slide + other metadata
-You can't overlap 2 schedules.
-You can build a journey in AJO for the people who watch Mike, Mike, and Mike. e.g. 
-This is recurring.
-Available to all SKUs? "Increases cost for updated data by 22%, but included in the new higher tier Streaming Media SKU."
-
-You can now upload schedule data of past live content to more easily and accurately track viewership. Live content includes content from FAST (Free Ad Supported TV) platforms or local streams.
-You can track which programs a person viewed in a given session, or even which topics or program segments they viewed. These capabilities are available regardless of how you implemented Streaming Media Collection.
-Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.
-Schedule data uploads of live content in Streaming Media Collection includes the following capabilities:
-Upload schedules for past live content, regardless of your Streaming Media Collection implementation.
-Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
-For example, precise beginning and end times are not always known for a live sporting event until the event is over. Schedule data uploads allow you to get accurate reporting by updating the start and end times after the program finishes.
-Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
-For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
-These capabilities allow you to:
-Analyze show viewership to understand performance.
-Target users based on program viewership.
-Analyze viewership based on metadata like topic, sports league, sponsorship, and so forth.
-Target based on metadata viewership.
-Correct media metrics for show dimensions of live sports/events for easier analysis at scale.
-Increased ease of use for live sports
-
--->
