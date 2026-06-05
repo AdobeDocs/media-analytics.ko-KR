@@ -6,31 +6,20 @@ exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: Streaming Media, Segmentation
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/7RwJQtw-jHlMMV1yc80lUyEYIwIxR-3oh7vN04cPcRg
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 209
-ht-degree: 90%
+source-wordcount: 188
+ht-degree: 76%
 
 ---
 
 # 미디어 세그먼트{#segments}
 
-세그먼트를 사용하여 특성 또는 웹 사이트 상호 작용에 따라 방문자 하위 집합을 식별할 수 있습니다. 스트림 미디어 세그먼트를 사용하면 오디오, 라이브 또는 팟캐스트 스트림과 같은 방문자 스트림 유형을 식별할 수 있습니다. Adobe Analytics 세그먼트에 대한 정보는 Adobe Analytics 구성 요소 안내서에서 [세그먼트 및 컨테이너 정보](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ko)를 참조하십시오.
-
->[!NOTE]
->
->미디어 스트림 유형과 연관된 이 보고 세그먼트는 `streamType` 매개변수와 함께 18/9/13에 도입되었습니다.
+세그먼트를 사용하여 특성 또는 웹 사이트 상호 작용에 따라 방문자 하위 집합을 식별할 수 있습니다. 스트림 미디어 세그먼트를 사용하면 오디오, 라이브 또는 팟캐스트 스트림과 같은 방문자 스트림 유형을 식별할 수 있습니다. Adobe Analytics 세그먼트에 대한 자세한 내용은 Adobe Analytics 구성 요소 안내서에서 [세그먼트 정보](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview)를 참조하십시오.
 
 | 세그먼트 | 설명 | 규칙 |
 |---|---|---|

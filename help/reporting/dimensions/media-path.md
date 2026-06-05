@@ -3,9 +3,9 @@ title: 미디어 경로
 description: 콘텐츠 ID를 경로 분석을 위한 트래픽 변수로 캡처합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.name`에서 트래픽 변수(prop)로 자동으로 수집됩니다. |
-| Customer Journey Analytics | 해당 없음 — 경로 분석에 [컨텐츠](content.md) 사용 |
+| Customer Journey Analytics | 해당 없음 — 경로 분석에 [컨텐츠](content.md)를 사용합니다. |
 | 데이터 피드 | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -36,4 +36,4 @@ ht-degree: 5%
 
 ## 차원 항목
 
-각 항목은 방문 중에 보고된 콘텐츠 ID입니다. Adobe Analytics의 컨텐츠 > 미디어 경로에서 다음 페이지 흐름 및 이전 페이지 흐름 보고서를 사용하여 컨텐츠 간 탐색 경로를 봅니다.
+각 항목은 방문 중에 보고된 콘텐츠 ID입니다. 흐름 패널을 사용하여 콘텐츠 간 탐색 경로를 볼 수 있습니다.

@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 34%
+source-wordcount: '698'
+ht-degree: 32%
 
 ---
 
@@ -289,21 +289,7 @@ ht-degree: 34%
       + [총 중단 기간](reporting/metrics/total-stalling-duration.md)
       + [재생된 고유 시간](reporting/metrics/unique-time-played.md)
    + [계산된 지표](reporting/calculated-metrics.md)
-   + Workspace의 미디어 패널 {#media-workspace-panels}
-      + [미디어 대상자 평균 시간 패널](reporting/workspace/average-minute-audience.md)
-      + [미디어 동시 뷰어 패널](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [미디어 재생 소요 시간 패널](reporting/workspace/media-playback-time-spent.md)
-   + [Workspace의 미디어 보고서](reporting/workspace/media-workspace-templates.md)
    + [미디어 세그먼트](reporting/segments.md)
-   + 기본 미디어 보고서 {#media-default-reports}
-      + [기본 보고서 개요](reporting/reports-and-analytics/default-reports-overview.md)
-      + [미디어 개요](reporting/reports-and-analytics/media-reports-overview.md)
-      + [미디어 세부 정보](reporting/reports-and-analytics/media-reports-detail.md)
-      + [미디어 방송 시간 보고서](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [미디어 동시 뷰어 보고서](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 미디어 API {#media-api}
-      + [동시 뷰어 데이터 가져오기](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [미디어 재생 소요 시간 데이터 가져오기](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 사용 사례 {#media-use-cases}
    + [일정 데이터 추적](/help/use-cases/track-schedule-data.md)
    + [다운로드한 콘텐츠 추적](use-cases/track-downloaded-content.md)
