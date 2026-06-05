@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 793
 ht-degree: 60%
 
 ---
@@ -37,12 +37,17 @@ ht-degree: 60%
 
 **마지막 업데이트**: 2026년 6월 4일
 
-## 2025
+## 2026
 
 | 기능 | 설명 | 날짜 |
 | --- | --- | --- |
 | **일정 데이터 지원** | 이전 라이브 콘텐츠에 대해 예약된 데이터를 업로드하여 프로그램 또는 세그먼트별로 시청률을 추적합니다. 지원되는 콘텐츠 유형은 다음과 같습니다.<ul><li>FAST(무료 광고 지원 TV) 플랫폼</li><li>로컬 스트림</li><li>라이브 스포츠</li></ul>자세한 내용은 [라이브 콘텐츠를 추적할 일정 데이터 업로드](/help/use-cases/track-schedule-data.md) 사용 사례를 참조하십시오. | 롤아웃 시작: 2025년 10월 29일<p>일반 가용성: 2026년 10월</p> |
-| `mediaTimed` XDM 필드 사용 중단 | `mediaTimed` XDM 개체는 `mediaReporting` 필드 경로를 위해 더 이상 사용되지 않습니다. 2025년 5월 9일 이전에 Analytics 소스 커넥터를 구현한 고객은 구성을 마이그레이션해야 합니다. 자세한 내용은 다음 마이그레이션 안내서를 참조하십시오.<ul><li>[대상을 새 스트리밍 미디어 필드로 마이그레이션](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[새 스트리밍 미디어 필드를 사용하도록 Customer Journey Analytics 마이그레이션](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[사용자 지정 필드에 대한 데이터 준비를 새 스트리밍 미디어 필드로 마이그레이션](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[프로필을 새 스트리밍 미디어 필드로 마이그레이션](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025년 10월 |
+
+## 2025
+
+| 기능 | 설명 | 날짜 |
+| --- | --- | --- |
+| **`mediaTimed`XDM 필드 사용 중단** | `mediaTimed` XDM 개체는 `mediaReporting` 필드 경로를 위해 더 이상 사용되지 않습니다. 2025년 5월 9일 이전에 Analytics 소스 커넥터를 구현한 고객은 구성을 마이그레이션해야 합니다. 자세한 내용은 다음 마이그레이션 안내서를 참조하십시오.<ul><li>[대상을 새 스트리밍 미디어 필드로 마이그레이션](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[새 스트리밍 미디어 필드를 사용하도록 Customer Journey Analytics 마이그레이션](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[사용자 지정 필드에 대한 데이터 준비를 새 스트리밍 미디어 필드로 마이그레이션](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[프로필을 새 스트리밍 미디어 필드로 마이그레이션](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025년 10월 |
 
 ## 2024
 
