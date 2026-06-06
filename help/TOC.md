@@ -5,10 +5,10 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 32%
+source-wordcount: '694'
+ht-degree: 31%
 
 ---
 
@@ -164,6 +164,7 @@ ht-degree: 32%
             + [시간 제한 조건](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [이벤트 순서 제어](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [세션 응답이 느린 경우 큐에 이벤트 저장](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+   + [옵트아웃 및 개인 정보 설정](implementation/opt-out-privacy.md)
 + 보고 {#reporting}
    + 보고 설정 {#reporting-setup}
       + [Edge 구현](reporting/setup/edge-reporting.md)
@@ -298,6 +299,3 @@ ht-degree: 32%
       + [타임라인: 챕터](use-cases/scenarios/chapter-start-end.md)
       + [타임라인: 끝까지 보기](use-cases/scenarios/view-to-end-of-content.md)
       + [타임라인: 사용자가 세션을 중단함](use-cases/scenarios/user-abandons-session.md)
-+ 개인 정보 보호 및 보안 {#streaming-media-privacy}
-   + [옵트아웃 및 개인정보 보호 설정](privacy/opt-out-privacy.md)
-   + [보안](privacy/security.md)
