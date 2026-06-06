@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 31%
 
 ---
@@ -290,7 +290,7 @@ ht-degree: 31%
       + [총 중단 기간](reporting/metrics/total-stalling-duration.md)
       + [재생된 고유 시간](reporting/metrics/unique-time-played.md)
    + [계산된 지표](reporting/calculated-metrics.md)
-   + [미디어 세그먼트](reporting/segments.md)
+   + [세그먼트](reporting/segments.md)
 + 사용 사례 {#media-use-cases}
    + [일정 데이터 추적](/help/use-cases/track-schedule-data.md)
    + [다운로드한 콘텐츠 추적](use-cases/track-downloaded-content.md)
