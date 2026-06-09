@@ -3,29 +3,29 @@ title: Edge 구현 개요
 description: Edge Network을 통해 스트리밍 미디어 데이터를 수집하는 데 필요한 Adobe Experience Platform 스키마, 데이터 세트 및 데이터 스트림을 설정합니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1282'
 ht-degree: 4%
 
 ---
 
 # Edge 구현 개요
 
-Adobe Experience Platform Edge Network을 사용하면 여러 제품을 대상으로 한 데이터를 단일 엔드포인트로 보낸 다음, 적절한 정보를 각 제품에 전달할 수 있습니다. 이는 스트리밍 미디어 컬렉션을 구현하는 권장 방법이며, 단일 계기에서 Adobe Analytics과 Customer Journey Analytics을 모두 지원하는 유일한 방법입니다.
+Adobe Experience Platform Edge Network을 사용하면 여러 제품을 대상으로 한 데이터를 단일 엔드포인트로 보낸 다음, 적절한 정보를 각 제품에 전달할 수 있습니다. 이는 스트리밍 미디어 컬렉션을 구현하는 권장 방법이며, 단일 구현에서 Adobe Analytics과 Customer Journey Analytics을 모두 지원하는 유일한 방법입니다.
 
 각 Adobe 솔루션에 대해 제품별 계측이 필요한 기존 Media SDK 접근 방식과 달리 Edge 구현은 공유 XDM 데이터 모델 및 단일 데이터스트림을 사용합니다. 데이터는 SDK 또는 API에서 Edge Network으로 이동한 다음 데이터스트림에 구성된 Adobe 제품(Analytics, CJA, AJO 또는 RTCDP)으로 라우팅됩니다. 즉, 나중에 다운스트림 제품을 전환하거나 추가할 때 미디어 이벤트를 다시 측정할 필요가 없습니다.
 
-웹 SDK, 모바일 SDK(iOS 또는 Android), Roku SDK 또는 Media Edge API 등 사용하는 코드 베이스에 관계없이 먼저 스키마 만들기, 데이터 세트 만들기, 데이터 스트림 구성 등 이 페이지에 설명된 플랫폼 설정을 완료해야 합니다.
+사용하는 코드베이스에 관계없이 먼저 스키마 생성, 데이터 세트 생성 및 데이터 스트림 구성에 대해 이 페이지에 설명된 플랫폼 설정을 완료해야 합니다.
 
 ## 사전 요구 사항
 
 1. **일반 필수 구성 요소를 완료합니다.** [일반 필수 구성 요소](/help/getting-started/prereqs.md)를 참조하세요.
 
 1. **호환 가능한 Adobe 솔루션을 확인합니다.** 다음 중 하나 이상을 구현해야 합니다.
-   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ko) - Edge 기반 미디어 데이터의 기본 보고 대상
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko) - 동일한 데이터 스트림을 통해 CJA과 함께 또는 대신 지원됩니다.
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=ko) 또는 [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=ko) — 다음 중 하나를 구성할 때 데이터 스트림에 **[!UICONTROL Adobe Experience Platform]** 서비스를 추가하십시오
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ko): Edge 기반 미디어 데이터의 기본 보고 대상
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko): 동일한 데이터 스트림을 통해 CJA과 함께 또는 대신 지원됩니다
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=ko) 또는 [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=ko): 다음 중 하나를 구성할 때 데이터 스트림에 **[!UICONTROL Adobe Experience Platform]** 서비스를 추가하십시오
 
 ## Adobe Experience Platform에서 스키마 설정
 
@@ -158,7 +158,7 @@ Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데
 
    * Adobe 솔루션을 기반으로 데이터스트림에 적절한 서비스를 추가합니다. 서비스 추가에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ko#view-details)에서 &quot;데이터 스트림에 서비스 추가&quot;를 참조하십시오.
 
-      * **[!UICONTROL Adobe Analytics]**(Adobe Analytics을 사용하는 경우) — [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의합니다.
+      * **[!UICONTROL Adobe Analytics]**(Adobe Analytics을 사용하는 경우): [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의합니다.
 
       * **[!UICONTROL Adobe Experience Platform]**(Customer Journey Analytics, Adobe Journey Optimizer 또는 Real-Time Customer Data Platform을 사용하는 경우)
 
@@ -179,7 +179,7 @@ Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데
 | 웹 | [웹 SDK](web-sdk.md) | [웹 SDK 태그 확장](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS(태그)](ios-tags.md) |
 | Android | [Android](android.md) | [Android(태그)](android-tags.md) |
-| Roku | [Roku](roku.md) | — |
+| Roku | [Roku Edge](roku.md) | — |
 | API | [미디어 Edge API](media-edge-api.md) | — |
 
 ## 다음 단계

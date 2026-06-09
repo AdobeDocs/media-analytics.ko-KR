@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 1337
 ht-degree: 86%
@@ -44,7 +44,7 @@ ht-degree: 86%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | 문자열 | `sessionStart` | IMS 조직 ID, Adobe CX Enterprise 내에서 조직 식별 |
 | `visitor.marketingCloudUserId` | N | 문자열 | `sessionStart` | Experience Cloud 사용자 ID(ECID). 대부분의 시나리오에서 사용자를 식별하는 데 사용해야 하는 ID입니다. 하트비트 `marketingCloudUserId`는 Adobe Analytics의 `MID`와 같습니다. 이 매개 변수는 기술적으로 필요하지 않지만 CX 엔터프라이즈 앱 및 서비스에 액세스하는 데 필요합니다. |
-| `visitor.aamLocationHint` | N | 정수 | `sessionStart` | Adobe Audience Manager Edge 데이터 제공 - 값을 입력하지 않으면 값은 null입니다. |
+| `visitor.aamLocationHint` | N | 정수 | `sessionStart` | Adobe Audience Manager Edge 데이터를 제공합니다. 값을 입력하지 않으면 값은 null입니다. |
 | `appInstallationId` | N | 문자열 | `sessionStart` | appInstallationId가 앱 및 장치를 고유하게 식별함 |
 
 ## 콘텐츠 데이터

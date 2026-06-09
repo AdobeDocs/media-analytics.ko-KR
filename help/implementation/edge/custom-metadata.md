@@ -3,9 +3,9 @@ title: 사용자 지정 메타데이터 지원 - XDM 형식
 description: Experience Edge XDM 형식을 사용하여 미디어 추적 이벤트와 함께 사용자 지정 메타데이터를 보내는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '754'
 ht-degree: 5%
 
 ---
@@ -113,7 +113,7 @@ Media Collection API 구현의 경우 [사용자 지정 메타데이터 지원](
 ### 이름 지정 규칙
 
 * 밑줄을 사용하여 테넌트 네임스페이스가 있는 **XDM 형식:** 접두사입니다. 테넌트 사용자 지정 필드 그룹에 `_<tenant>.<struct_name>.<field_name>`과(와) 같은 구조를 만들 수도 있습니다.
-* **`_data`형식:** 필드가 `_data.__adobe.analytics.contextData` 아래에 배치됩니다. 필드 이름에는 밑줄 접두사가 필요하지 않습니다(예: `debugFlag`).
+* **`_data`형식:** 필드가 `_data.__adobe.analytics.contextData` 아래에 있습니다. 필드 이름에 밑줄 접두사가 필요하지 않습니다(예: `debugFlag`).
 
 ## 기본 컨텐츠 사용자 지정 메타데이터
 
@@ -250,7 +250,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 ## `_data` 개체 사용(Analytics 전용 메타데이터)
 
-임시 플래그, 디버깅 변수 또는 Analytics 관련 처리 힌트와 같은 Adobe Analytics 데이터 세트에 **저장하지**&#x200B;해야 하는 Analytics의 메타데이터가 필요한 경우 `_data` 개체를 사용합니다.
+Adobe Analytics 데이터 집합에 **저장하지**&#x200B;해야 하는 메타데이터가 AEP에 필요한 경우 `_data` 개체를 사용합니다. 예를 들면 임시 플래그, 디버깅 변수 또는 Analytics 관련 처리 힌트가 있습니다.
 
 &lt;InlineAlert variant="warning" slots="text" />
 
@@ -335,12 +335,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API(JSON 형식)
->* [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) — XDM 스키마 참조
->* [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping) - XDM 필드에 대한 Analytics 컨텍스트 데이터 매핑
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>* [미디어 컬렉션 API 사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping)

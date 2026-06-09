@@ -3,9 +3,9 @@ title: 앱 버전
 description: 미디어 플레이어 애플리케이션의 버전 문자열을 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`을(를) 사용하여 SDK 구성에서 앱 버전을 설정합니다.
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`의 `mediaHeartbeat` 섹션에서 `sdkVersion`을(를) 설정합니다. 이 필드는 Roku 2.x SDK 라이브러리 버전이 아닌 플레이어 애플리케이션 버전을 캡처합니다.
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB 미디어 컬렉션 API]

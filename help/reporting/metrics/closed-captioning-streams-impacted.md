@@ -3,7 +3,7 @@ title: 자막의 영향을 받는 스트림
 description: 뷰어가 캡션을 활성화한 세션을 한 번 이상 계산합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-**닫힌 캡션의 영향을 받은 스트림** 지표는 뷰어가 캡션을 사용하도록 설정한 세션을 한 번 이상 계산합니다. 지표는 세션 수준 부울입니다. 하나의 영향을 받은 스트림과 동일한 세션 카운트 내에서 여러 캡션이 전환됩니다. 총 캡션 사용 볼륨의 경우 [폐쇄 캡션 개수](closed-captioning-count.md)를 사용하십시오.
+**닫힌 캡션의 영향을 받은 스트림** 지표는 뷰어가 캡션을 사용하도록 설정한 세션을 한 번 이상 계산합니다. 지표는 세션 수준 부울입니다. 여러 캡션이 하나의 영향을 받은 스트림과 동일한 세션 카운트 내에서 전환됩니다. 총 캡션 사용 볼륨의 경우 [폐쇄 캡션 개수](closed-captioning-count.md)를 사용하십시오.
 
 ## 이 지표의 계산 방법
 

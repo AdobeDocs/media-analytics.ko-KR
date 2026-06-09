@@ -3,9 +3,9 @@ title: 초당 프레임
 description: 백엔드에 품질 보고를 위한 프레임 속도 컨텍스트가 있도록 QoE 개체에 대한 현재 프레임 속도를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '272'
 ht-degree: 7%
 
 ---
@@ -73,7 +73,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.qoeDataDetails` 내에서 `framesPerSecond`을(를) 설정합니다.
 
@@ -140,6 +140,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+프레임 속도를 세 번째 인수(`fps`)로 `adb_media_init_qosinfo`에 전달하고 `mediaUpdateQoS`(으)로 추적기를 업데이트하십시오.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

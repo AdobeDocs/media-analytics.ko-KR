@@ -5,9 +5,9 @@ user-guide-title: 스트리밍 미디어용 서비스 안내서
 breadcrumb-title: 스트리밍 미디어용 서비스 안내서
 user-guide-description: 스트리밍 미디어 서비스 구현. Media SDK 및 Media Collection API를 포함합니다.
 sub-product: media analytics
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '697'
 ht-degree: 31%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 31%
       + [iOS 태그 확장](/help/implementation/edge/ios-tags.md)
       + [Android](/help/implementation/edge/android.md)
       + [Android 태그 확장](/help/implementation/edge/android-tags.md)
-      + [Roku](/help/implementation/edge/roku.md)
+      + [Edge 로쿠](/help/implementation/edge/roku.md)
       + [Media Edge API](/help/implementation/edge/media-edge-api.md)
       + [사용자 지정 메타데이터 지원](/help/implementation/edge/custom-metadata.md)
       + [XDM 보고 스키마](/help/implementation/edge/reporting-schema.md)
@@ -145,6 +145,7 @@ ht-degree: 31%
       + [JavaScript](/help/implementation/analytics-only/javascript.md)
       + [미디어 분석 태그 확장 기능](/help/implementation/analytics-only/javascript-tags.md)
       + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [Roku 2.x](/help/implementation/analytics-only/roku-2x.md)
       + [Media Collection API](/help/implementation/analytics-only/media-collection-api.md)
       + Media Collection API 참조 {#streaming-media-apis}
          + [미디어 컬렉션](implementation/media-collection-api/mc-api-overview.md)

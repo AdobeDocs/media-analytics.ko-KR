@@ -3,10 +3,10 @@ title: 세션 완료
 description: 뷰어가 기본 콘텐츠의 끝에 도달했음을 신호로 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackComplete()
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.sessionComplete"`(으)로 `sendMediaEvent` 호출:
 
@@ -110,6 +110,14 @@ tracker.trackComplete();
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+미디어 플레이어가 콘텐츠의 끝에 도달하면 `mediaTrackComplete`을(를) 호출합니다.
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB 미디어 컬렉션 API]

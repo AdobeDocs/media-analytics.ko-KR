@@ -3,9 +3,9 @@ title: 컨텐츠 유형
 description: 스트림 형식(VOD, 라이브, 선형, 팟캐스트, 노래 등)을 식별하려면 컨텐츠 유형을 설정하십시오.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -89,7 +89,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `contentType`을(를) 설정합니다.
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_STREAM_TYPE_*` 상수를 네 번째(`streamType`) 인수로 `adb_media_init_mediainfo`에 전달합니다. Roku 2.x SDK에서 이 인수는 콘텐츠 형식(`vod`, `live`, `linear`)을 전달합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

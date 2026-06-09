@@ -3,10 +3,10 @@ title: 미디어 다운로드 플래그
 description: 세션을 다운로드된 오프라인 재생으로 표시하여 스트리밍된 세션과 별도로 보고되도록 합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `isDownloaded`을(를) `true`(으)로 설정:
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+다운로드한 컨텐츠 추적은 Roku 2.x SDK에서 사용할 수 없습니다. 다운로드한 미디어 재생을 보고하려면 [Roku Edge SDK](/help/implementation/edge/roku.md) 또는 [Media Collection API](/help/implementation/analytics-only/media-collection-api.md)를 사용하십시오.
 
 >[!TAB 미디어 컬렉션 API]
 

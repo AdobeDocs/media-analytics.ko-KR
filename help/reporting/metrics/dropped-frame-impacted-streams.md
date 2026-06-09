@@ -3,7 +3,7 @@ title: 드롭된 프레임의 영향을 받는 스트림
 description: 하나 이상의 프레임이 드롭된 세션을 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # 드롭된 프레임의 영향을 받는 스트림
 
-**드롭된 프레임 영향을 받은 스트림** 지표는 하나 이상의 프레임이 드롭된 세션을 계산합니다. 지표는 세션 수준 부울이며, 동일한 세션 수 내에서 여러 번의 드롭이 하나의 영향을 받은 스트림과 같습니다. 총 드롭 볼륨에 대해서는 [드롭된 프레임](dropped-frames.md)을 사용하십시오.
+**드롭된 프레임 영향을 받은 스트림** 지표는 하나 이상의 프레임이 드롭된 세션을 계산합니다. 지표는 세션 수준 부울이며, 동일한 세션 내에서 여러 번의 드롭이 하나의 영향을 받은 스트림과 계산됩니다. 총 드롭 볼륨에 대해서는 [드롭된 프레임](dropped-frames.md)을 사용하십시오.
 
 ## 이 지표의 계산 방법
 

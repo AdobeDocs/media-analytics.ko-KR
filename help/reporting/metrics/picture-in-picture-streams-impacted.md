@@ -3,7 +3,7 @@ title: 화면 속 화면의 영향을 받은 스트림
 description: 뷰어가 PIP(Picture-in-Picture)를 입력한 세션을 한 번 이상 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-**화면 속 화면의 영향을 받은 스트림** 지표는 뷰어가 화면 속 화면 재생을 한 번 이상 입력한 세션을 계산합니다. 지표는 세션 수준 부울입니다. 동일한 세션 내의 여러 PIP(Picture-in-Picture) 항목이 하나의 영향을 받은 스트림과 같습니다. 전체 PIP(Picture-in-Picture) 항목 볼륨에 대해 [PIP(Picture in Picture) 개수](picture-in-picture-count.md)를 사용합니다.
+**화면 속 화면의 영향을 받은 스트림** 지표는 뷰어가 화면 속 화면 재생을 한 번 이상 입력한 세션을 계산합니다. 지표는 세션 수준 부울입니다. 동일한 세션 내에 있는 여러 PIP(Picture-in-Picture) 항목은 하나의 영향을 받은 스트림과 계산됩니다. 전체 PIP(Picture-in-Picture) 항목 볼륨에 대해 [PIP(Picture in Picture) 개수](picture-in-picture-count.md)를 사용합니다.
 
 ## 이 지표의 계산 방법
 

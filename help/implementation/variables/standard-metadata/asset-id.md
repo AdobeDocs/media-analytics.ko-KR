@@ -3,9 +3,9 @@ title: 자산 ID
 description: EIDR 또는 TMS/Gracenote ID와 같은 미디어 에셋에 대한 안정적인 업계 식별자인 에셋 ID를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '295'
 ht-degree: 8%
 
 ---
@@ -77,7 +77,7 @@ metadata[MediaConstants.VideoMetadataKeys.ASSET_ID] = "89745363"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 사용하여 `sessionDetails` 내에서 `assetID`을(를) 설정합니다.
 
@@ -148,6 +148,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.ASSET_ID] = "89745363";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`mediaTrackSessionStart`을(를) 호출하기 전에 `MEDIA_VideoMetadataKeyASSET_ID`을(를) 사용하여 미디어 개체의 표준 메타데이터에서 자산 ID를 설정하십시오.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyASSET_ID] = "89745363"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

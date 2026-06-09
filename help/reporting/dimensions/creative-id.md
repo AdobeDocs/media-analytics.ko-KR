@@ -3,7 +3,7 @@ title: 광고 ID
 description: 광고 크리에이티브 식별자를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics(처리 규칙) | `a.media.ad.creative`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Adobe Analytics(분류) | [광고](ad.md) 차원의 분류 — 보고서 세트에 대해 **[[!UICONTROL 미디어 광고]](/help/reporting/setup/analytics-reporting.md)**&#x200B;가 활성화되면 Adobe에서 이 분류를 자동으로 만듭니다. 분류 값을 채우고 유지 관리합니다. |
+| Adobe Analytics(분류) | [Ad](ad.md) 차원의 분류입니다. 보고서 세트에 대해 **[[!UICONTROL 미디어 광고]](/help/reporting/setup/analytics-reporting.md)**&#x200B;를 사용하도록 설정하면 Adobe에서 이 분류를 자동으로 만듭니다. 분류 값을 채우고 유지 관리합니다. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 데이터 피드(처리 규칙) | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.ad.creative`을(를) 매핑하는 eVar) |
 | 데이터 피드(분류) | 해당 사항 없음 — 데이터 피드는 분류를 지원하지 않습니다. |

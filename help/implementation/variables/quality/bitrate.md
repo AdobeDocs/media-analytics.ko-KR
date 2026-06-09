@@ -3,10 +3,10 @@ title: 비트율
 description: 백엔드가 비트율 지표를 계산할 수 있도록 QoE 개체에서 현재 재생 비트율(kbps)을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 5%
 
 ---
 
@@ -81,7 +81,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `media.bitrateChange`과(와) 같은 품질 이벤트에 대해 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.qoeDataDetails` 내에서 `bitrate`을(를) 설정합니다.
 
@@ -156,6 +156,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+`adb_media_init_qosinfo`에 첫 번째 인수로 비트 전송률을 kbps로 전달하고 `mediaUpdateQoS`(으)로 추적기를 업데이트하세요.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

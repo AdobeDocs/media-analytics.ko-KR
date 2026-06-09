@@ -3,17 +3,17 @@ title: 세션 종료
 description: 뷰어가 콘텐츠를 중단하면 미디어 세션을 즉시 닫습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
 
 # 세션 종료
 
-세션 종료 이벤트는 미디어 추적 세션을 즉시 및 비가역적으로 닫습니다. 세션 종료는 하드 클로즈입니다. 세션이 전송되면 세션이 종료되고 더 이상 이벤트를 추적할 수 없습니다. 플레이어가 소멸되거나 페이지가 언로드되는 경우와 같이 추가 이벤트가 발생하지 않을 것이 확실한 경우에만 세션 종료를 사용합니다. 대부분의 경우, 여전히 도착할 수 있는 이벤트를 차단할 위험을 감수하기보다는 자연스럽게 세션이 만료되도록 허용하는 것이 더 안전합니다. 뷰어가 콘텐츠를 마치면 대신 [세션 완료](session-complete.md)를 호출하십시오.
+세션 종료 이벤트는 미디어 추적 세션을 즉시 및 비가역적으로 닫습니다. 세션 종료는 하드 클로즈입니다. 세션이 전송되면 종료되며 추가 이벤트를 추적할 수 없습니다. 플레이어가 소멸되거나 페이지가 언로드되는 경우와 같이 추가 이벤트가 발생하지 않을 것이 확실한 경우에만 세션 종료를 사용합니다. 대부분의 경우, 여전히 도착할 수 있는 이벤트를 차단할 위험을 감수하기보다는 자연스럽게 세션이 만료되도록 허용하는 것이 더 안전합니다. 뷰어가 콘텐츠를 마치면 대신 [세션 완료](session-complete.md)를 호출하십시오.
 
 명시적인 세션 종료가 없으면 이벤트가 없는 경우 10분 또는 플레이헤드 이동이 없는 경우 30분 후에 세션이 자동으로 닫힙니다.
 
@@ -60,7 +60,7 @@ tracker.trackSessionEnd()
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.sessionEnd"`(으)로 `sendMediaEvent` 호출:
 
@@ -116,6 +116,14 @@ tracker.trackSessionEnd();
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+뷰어가 플레이어를 닫거나 다른 곳으로 이동하면 `mediaTrackSessionEnd`을(를) 호출합니다.
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB 미디어 컬렉션 API]

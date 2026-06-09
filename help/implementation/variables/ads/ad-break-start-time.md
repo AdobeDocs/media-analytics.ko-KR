@@ -3,10 +3,10 @@ title: 광고 브레이크 시작 시간
 description: 콘텐츠 내부의 광고 브레이크 시작 시간(오프셋)을 초 단위로 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 7%
+source-wordcount: '259'
+ht-degree: 6%
 
 ---
 
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("mid-roll-1",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `media.adBreakStart`에 대해 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.advertisingPodDetails` 내에서 `offset`을(를) 설정합니다.
 
@@ -151,6 +151,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   90
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+`adb_media_init_adbreakinfo`에 두 번째 인수로 시작 시간을 초 단위로 전달합니다. Roku 매개 변수 순서: `name, startTime, position`을(를) 참고하십시오.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("mid-roll-1", 90.0, 2)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

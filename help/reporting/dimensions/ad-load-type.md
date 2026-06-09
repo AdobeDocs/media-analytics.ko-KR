@@ -3,7 +3,7 @@ title: 광고 로드
 description: 각 스트리밍 미디어 세션에 사용되는 광고 로드 유형을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -34,4 +34,4 @@ ht-degree: 7%
 
 ## 차원 항목
 
-각 항목은 세션 시작 시 설정된 리터럴 광고 로드 유형 문자열입니다. 값은 표준 열거형으로 제한되지 않습니다. 보고서에서 값이 예측 가능하게 롤업되도록 구현 간에 일관된 분류법을 정의합니다.
+각 항목은 세션 시작 시 설정된 리터럴 광고 로드 유형 문자열입니다. 값은 표준 열거형으로 제한되지 않습니다. 값이 보고서에 예측 가능하게 롤업되도록 구현 간에 일관된 분류법을 정의합니다.

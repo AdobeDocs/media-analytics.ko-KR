@@ -3,10 +3,10 @@ title: 시작 시간
 description: 백엔드가 time-to-first-frame 품질을 보고할 수 있도록 플레이어의 시작 시간(밀리초)을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 5%
 
 ---
 
@@ -89,7 +89,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `media.sessionStart`의 `xdm.mediaCollection.qoeDataDetails` 내에서 `timeToStart`을(를) 설정합니다.
 
@@ -169,6 +169,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0       // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+시작 시간을 두 번째 인수(`startupTime`)로 `adb_media_init_qosinfo`에 전달하고 `mediaUpdateQoS`(으)로 추적기를 업데이트하십시오.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

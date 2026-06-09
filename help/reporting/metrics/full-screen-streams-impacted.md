@@ -3,7 +3,7 @@ title: 전체 화면의 영향을 받은 스트림
 description: 뷰어가 전체 화면을 한 번 이상 입력한 세션을 계산합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-**전체 화면의 영향을 받은 스트림** 지표는 뷰어가 전체 화면으로 한 번 이상 입력한 세션을 계산합니다. 지표는 세션 수준 부울입니다. 동일한 세션 내에 있는 여러 전체 화면 항목이 하나의 영향을 받은 스트림과 같습니다. 전체 화면 시작 볼륨의 경우 [전체 화면 카운트](full-screen-count.md)를 사용하십시오.
+**전체 화면의 영향을 받은 스트림** 지표는 뷰어가 전체 화면으로 한 번 이상 입력한 세션을 계산합니다. 지표는 세션 수준 부울입니다. 동일한 세션 내에 있는 여러 전체 화면 항목은 하나의 영향을 받은 스트림과 계산됩니다. 전체 화면 시작 볼륨의 경우 [전체 화면 카운트](full-screen-count.md)를 사용하십시오.
 
 ## 이 지표의 계산 방법
 

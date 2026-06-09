@@ -3,10 +3,10 @@ title: 오류
 description: 미디어 플레이어에 오류가 발생했음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 10%
+source-wordcount: '187'
+ht-degree: 9%
 
 ---
 
@@ -60,7 +60,7 @@ tracker.trackError(errorId: "media-error-001")
 tracker.trackError("media-error-001")
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.error"` 및 필수 `errorDetails`(으)로 `sendMediaEvent` 호출:
 
@@ -124,6 +124,15 @@ tracker.trackError("media-error-001");
 
 ```javascript
 ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Roku 2.x]
+
+오류 ID와 오류 소스로 `mediaTrackError`을(를) 호출합니다. 플레이어 오류에 `ERROR_SOURCE_PLAYER` 상수 사용:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 ```
 
 >[!TAB 미디어 컬렉션 API]

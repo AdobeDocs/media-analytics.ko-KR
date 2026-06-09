@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 36%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 36%
 | 기능 | 설명 | 날짜 |
 | --- | --- | --- |
 | **웹 SDK 지원** | Web SDK 또는 Web SDK 태그 확장을 사용하여 Adobe Experience Platform Edge Network에 스트리밍 미디어 웹 데이터를 보내어 Customer Journey Analytics, Real-time CDP, Journey Optimizer 및 이벤트 전달과 같은 플랫폼 솔루션에서 통합 수집 방법을 활성화합니다. 자세한 내용은 [스트리밍 미디어용 웹 SDK 설정](/help/implementation/edge/web-sdk.md) 또는 [스트리밍 미디어용 웹 SDK 태그 확장 설정](/help/implementation/edge/web-sdk-tags.md)을 참조하십시오. | 2024년 5월 29일 목요일 |
-| **Roku 지원** | Roku SDK을 사용하여 Adobe Experience Platform에 스트리밍 미디어 데이터를 전송합니다. 자세한 내용은 [스트리밍 미디어용 Roku 설정](/help/implementation/edge/roku.md)을 참조하십시오. | 2024년 4월 12일 토요일 |
+| **Roku 지원** | Roku Edge SDK을 사용하여 Adobe Experience Platform에 스트리밍 미디어 데이터를 보냅니다. 자세한 내용은 [스트리밍 미디어용 Roku Edge 설정](/help/implementation/edge/roku.md)을 참조하십시오. | 2024년 4월 12일 토요일 |
 
 ## 2023
 

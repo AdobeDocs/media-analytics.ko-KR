@@ -3,9 +3,9 @@ title: 컨텐츠 플레이어 이름
 description: 콘텐츠를 렌더링한 플레이어를 식별할 플레이어 이름을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 6%
 
 ---
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `playerName`을(를) 설정합니다.
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.playerName": "Chromecast Player" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`의 `mediaHeartbeat` 섹션에서 `playerName`을(를) 설정합니다. 플레이어 이름은 세션당 값이 아닌 구성 값입니다.
+
+```json
+"mediaHeartbeat": {
+  "playerName": "Roku Player"
+}
 ```
 
 >[!TAB 미디어 컬렉션 API]

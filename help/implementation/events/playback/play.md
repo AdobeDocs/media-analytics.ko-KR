@@ -3,10 +3,10 @@ title: 재생
 description: 미디어 플레이어가 재생 상태에 들어왔다는 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 10%
+source-wordcount: '178'
+ht-degree: 9%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackPlay()
 tracker.trackPlay()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.play"`(으)로 `sendMediaEvent` 호출:
 
@@ -110,6 +110,14 @@ tracker.trackPlay();
 
 ```javascript
 ADBMobile.media.trackPlay();
+```
+
+>[!TAB Roku 2.x]
+
+미디어 플레이어가 재생을 시작하거나 다시 시작할 때 `mediaTrackPlay`을(를) 호출합니다.
+
+```brightscript
+ADBMobile().mediaTrackPlay()
 ```
 
 >[!TAB 미디어 컬렉션 API]

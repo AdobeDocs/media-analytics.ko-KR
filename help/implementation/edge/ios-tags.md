@@ -3,7 +3,7 @@ title: 태그를 사용하는 스트리밍 미디어용 iOS 설정
 description: Adobe 태그 확장을 사용하여 iOS에 대한 스트리밍 미디어 컬렉션을 구성합니다. Edge Network용 스트리밍 미디어 태그 확장.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -23,9 +23,9 @@ ht-degree: 0%
 1. 데이터 수집 UI에서 모바일 속성을 열고 **[!UICONTROL 확장]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 카탈로그]** 탭에서 **Edge Network용 Adobe 스트리밍 미디어** 확장을 찾아 **[!UICONTROL 설치]**&#x200B;를 선택합니다.
 1. 다음을 설정한 다음 저장합니다.
-   * **[!UICONTROL 채널]** — 각 세션에서 보고된 채널 이름.
-   * **[!UICONTROL 플레이어 이름]** — 사용 중인 미디어 플레이어의 이름입니다.
-   * **[!UICONTROL 응용 프로그램 버전]** — 플레이어 응용 프로그램의 버전입니다.
+   * **[!UICONTROL 채널]**: 각 세션에서 보고된 채널 이름입니다.
+   * **[!UICONTROL 플레이어 이름]**: 사용 중인 미디어 플레이어의 이름입니다.
+   * **[!UICONTROL 응용 프로그램 버전]**: 플레이어 응용 프로그램의 버전입니다.
 1. 변경 사항을 게시한 다음 `AEPCore`, `AEPEdge`, `AEPEdgeIdentity` 및 `AEPEdgeMedia` 종속성을 앱에 추가하고 Mobile Core에 등록합니다.
 
 ## 미디어 이벤트 추적

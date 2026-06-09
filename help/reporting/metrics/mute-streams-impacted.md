@@ -3,7 +3,7 @@ title: 음소거의 영향을 받는 스트림
 description: 뷰어가 오디오를 음소거한 세션을 한 번 이상 카운트합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-**음소거의 영향을 받은 스트림** 지표는 뷰어가 오디오를 음소거한 세션을 한 번 이상 계산합니다. 지표는 세션 수준 부울입니다. 하나의 영향을 받은 스트림과 동일한 세션 카운트 내에서 여러 개의 음소거 전환이 가능합니다. 총 음소거 볼륨은 [음소거 카운트](mute-count.md)를 사용합니다.
+**음소거의 영향을 받은 스트림** 지표는 뷰어가 오디오를 음소거한 세션을 한 번 이상 계산합니다. 지표는 세션 수준 부울입니다. 하나의 영향을 받은 스트림과 동일한 세션 카운트 내에서 여러 음소거 전환이 가능합니다. 총 음소거 볼륨은 [음소거 카운트](mute-count.md)를 사용합니다.
 
 ## 이 지표의 계산 방법
 

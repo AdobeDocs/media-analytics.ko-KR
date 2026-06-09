@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 575
-ht-degree: 32%
+source-wordcount: 625
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,7 @@ Edge 구현은 데이터를 한 번 수집하고 Adobe Experience Platform Edge 
 | [![Apple iOS 아이콘](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS/tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [스트리밍 미디어용 iOS 설정](/help/implementation/edge/ios.md) | [샘플](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![확장 아이콘](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android 태그 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [스트리밍 미디어용 Android 태그 확장 설정](/help/implementation/edge/android-tags.md) | |
 | [![확장 아이콘](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[iOS/tvOS 태그 확장](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [스트리밍 미디어용 iOS 태그 확장 설정](/help/implementation/edge/ios-tags.md) | |
-| [![Roku 아이콘](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku SDK](https://github.com/adobe/aepsdk-roku) | [스트리밍 미디어용 Roku 설정](/help/implementation/edge/roku.md) | [샘플](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![Roku 아이콘](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku Edge SDK](https://github.com/adobe/aepsdk-roku) | [스트리밍 미디어용 Roku Edge 설정](/help/implementation/edge/roku.md) | [샘플](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
 | [![API 아이콘](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[미디어 Edge API](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [Media Edge API 설정](/help/implementation/edge/media-edge-api.md) | [샘플](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
 ## Analytics 전용 구현 {#analytics-only-sdks}
@@ -56,4 +56,5 @@ Edge 구현은 데이터를 한 번 수집하고 Adobe Experience Platform Edge 
 | [![JavaScript 아이콘](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[미디어 SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [스트리밍 미디어용 JavaScript 설정](/help/implementation/analytics-only/javascript.md) | [샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | [![확장 아이콘](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko)<br>[미디어 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ko) | [스트리밍 미디어용 태그를 사용하여 JavaScript 설정](/help/implementation/analytics-only/javascript-tags.md) | [샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Chromecast 아이콘](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [스트리밍 미디어용 Chromecast 설정](/help/implementation/analytics-only/chromecast.md) | [샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![Roku 아이콘](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [스트리밍 미디어용 Roku 2.x 설정](/help/implementation/analytics-only/roku-2x.md) | [샘플](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
 | [![API 아이콘](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[미디어 컬렉션 API](/help/implementation/media-collection-api/mc-api-overview.md) | [미디어 컬렉션 API 설정](/help/implementation/analytics-only/media-collection-api.md) | |

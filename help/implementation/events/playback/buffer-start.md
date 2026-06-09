@@ -3,10 +3,10 @@ title: 버퍼 시작
 description: 미디어 플레이어가 버퍼링 상태에 들어갔음을 알립니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.bufferStart"`(으)로 `sendMediaEvent` 호출:
 
@@ -128,6 +128,20 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
 
 // Buffer ends
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB Roku 2.x]
+
+플레이어가 버퍼링 상태가 되면 `MEDIA_BUFFER_START`(으)로 `mediaTrackEvent`을(를) 호출하고 종료되면 `MEDIA_BUFFER_COMPLETE`을(를) 호출합니다.
+
+```brightscript
+adb = ADBMobile()
+
+' Buffer starts
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_START)
+
+' Buffer ends
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 ```
 
 >[!TAB 미디어 컬렉션 API]
