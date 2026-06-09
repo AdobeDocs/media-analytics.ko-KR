@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**미디어 다운로드 플래그**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [미디어 다운로드됨](/help/reporting/dimensions/media-downloaded-flag.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**미디어 다운로드 플래그**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [미디어 다운로드됨](/help/reporting/dimensions/media-downloaded-flag.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 

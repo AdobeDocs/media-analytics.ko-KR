@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**전체 화면**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [전체 화면의 영향을 받은 스트림](/help/reporting/metrics/full-screen-streams-impacted.md), [전체 화면 카운트](/help/reporting/metrics/full-screen-count.md) 및 [전체 화면 총 기간](/help/reporting/metrics/full-screen-total-duration.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**전체 화면**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [전체 화면의 영향을 받은 스트림](/help/reporting/metrics/full-screen-streams-impacted.md), [전체 화면 카운트](/help/reporting/metrics/full-screen-count.md) 및 [전체 화면 총 기간](/help/reporting/metrics/full-screen-total-duration.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 

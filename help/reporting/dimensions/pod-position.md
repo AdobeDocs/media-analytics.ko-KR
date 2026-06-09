@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**Pod 위치**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [광고 브레이크 시작 시간](/help/implementation/variables/ads/ad-break-start-time.md)을 참조하세요.*
+*이 페이지는&#x200B;**Pod 위치**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [광고 브레이크 시작 시간](/help/implementation/variables/ads/ad-break-start-time.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
