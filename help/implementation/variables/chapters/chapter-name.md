@@ -24,7 +24,7 @@ ht-degree: 8%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.chapter.friendlyName` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.chapter.friendlyName` |
 | **필수** | 아니요 |
 | **전송 시점** | [챕터 시작](/help/implementation/events/chapters/chapter-start.md), 챕터 닫기 |

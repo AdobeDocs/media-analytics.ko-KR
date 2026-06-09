@@ -24,7 +24,7 @@ ht-degree: 3%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.adLoad` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.adLoad` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TAB 웹 SDK]
 
-[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `adLoad`을(를) 설정합니다.
+[`createMediaSession`](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/commands/createmediasession)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `adLoad`을(를) 설정합니다.
 
 ```javascript
 alloy("createMediaSession", {

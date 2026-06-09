@@ -24,7 +24,7 @@ ht-degree: 9%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.campaign` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.ad.campaign` |
 | **필수** | 아니요 |
 | **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |

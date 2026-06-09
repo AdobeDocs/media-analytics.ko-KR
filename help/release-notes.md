@@ -68,7 +68,7 @@ ht-degree: 36%
 | --- | --- | --- |
 | **여러 플레이어 상태 추적** | 미디어 컬렉션 API를 사용하여 여러 [플레이어 상태 추적](/help/implementation/events/player-state/overview.md)을 구현합니다. | 2022년 9월 |
 | 이름이 변경된 XDM 필드 | 일관성을 위해 이름이 변경된 XDM 필드 이름:<ul><li>오디오 및 비디오 매개 변수</li><li>광고 매개변수</li><li>챕터 매개변수</li><li>플레이어 상태 매개변수</li><li>품질 매개변수</li></ul> | 2022년 9월 |
-| **Customer Journey Analytics에 패널 추가됨** | [미디어 동시 뷰어 패널](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) 및 [미디어 재생 소요 시간 패널](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)을 Customer Journey Analytics에 추가했습니다. | 2022년 8월 9일 수요일 |
+| **Customer Journey Analytics에 패널 추가됨** | [미디어 동시 뷰어 패널](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) 및 [미디어 재생 소요 시간 패널](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)을 Customer Journey Analytics에 추가했습니다. | 2022년 8월 9일 수요일 |
 | **평균 분당 시청 대상자** | [분당 평균 시청 시간 패널](https://experienceleague.adobe.com/ko/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)을 사용하여 평균 콘텐츠 소비에 대해 더 잘 이해할 수 있습니다. <br>평균 분당 시청자를 통해 모든 길이 또는 모든 장르의 프로그램을 비교할 수 있습니다. 또한 디지털 평균 분당 시청자를 유선 TV 평균 분당 지표와 비교하거나 추가할 수 있습니다. 이 패널을 통해 기간 분류가 업데이트된 경우에도 사용자 정의 기간의 대상자 평균을 보다 유연하게 측정할 수 있습니다. | 2022년 3월 16일 목요일 |
 
 ## 2021
@@ -81,5 +81,5 @@ ht-degree: 36%
 
 | 기능 | 설명 | 날짜 |
 | --- | --- | --- |
-| **미디어 동시 뷰어 패널** | [동시 뷰어 패널](https://experienceleague.adobe.com/ko/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)을 통해 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 인사이트를 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다.<br><br>[미디어 동시 뷰어 패널(튜토리얼)](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020년 9월, 2021년 1월 |
+| **미디어 동시 뷰어 패널** | [동시 뷰어 패널](https://experienceleague.adobe.com/ko/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)을 통해 최대 동시 시청 횟수가 발생한 위치 또는 드롭오프가 발생한 위치를 파악할 수 있습니다. 콘텐츠 및 뷰어 참여의 품질에 대한 중요한 인사이트를 얻고 볼륨 및 규모에 대한 문제 해결 또는 계획을 수립하는 데 도움이 됩니다.<br><br>[미디어 동시 뷰어 패널(튜토리얼)](https://experienceleague.adobe.com/ko/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020년 9월, 2021년 1월 |
 | **지원되는 디바이스 및 플랫폼** | 이제 AEP SDK가 포함된 미디어 실행 확장자는 다음과 같은 OTT 디바이스를 지원합니다. <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | 2020년 6월 |
