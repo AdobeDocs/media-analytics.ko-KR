@@ -3,10 +3,10 @@ title: 스트림 유형
 description: 스트림 유형을 설정하여 미디어 스트림이 오디오 콘텐츠인지 비디오 콘텐츠인지 식별합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '323'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**스트림 형식**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [스트림 유형](/help/reporting/dimensions/stream-type.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**스트림 형식**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [스트림 유형](/help/reporting/dimensions/stream-type.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.streamType` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.streamType` |
 | **필수** | 예 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -87,7 +87,7 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `streamType`을(를) 설정합니다.
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_TYPE_VIDEO` 또는 `MEDIA_TYPE_AUDIO`을(를) 다섯 번째(`mediaType`) 인수로 `adb_media_init_mediainfo`에 전달합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

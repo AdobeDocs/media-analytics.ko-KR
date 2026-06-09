@@ -3,10 +3,10 @@ title: 세션 시작
 description: 미디어 세션의 시작 신호를 보내고 모든 후속 이벤트에 필요한 세션 ID를 얻습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 5%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 필요한 세션 세부 정보로 `createMediaSession`을(를) 호출합니다.
 
@@ -162,6 +162,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`adb_media_init_mediainfo`을(를) 사용하여 미디어 개체를 작성하고 `mediaTrackSessionStart`을(를) 호출합니다. 선택적 두 번째 인수는 `a.media.*` 메타데이터 키의 연관 배열 또는 `invalid`을(를) 허용합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB 미디어 컬렉션 API]
 
 [세션 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)에 `sessionStart` POST를 보냅니다. 응답 `Location` 헤더에 모든 후속 이벤트 요청에 사용할 세션 ID가 포함되어 있습니다.
@@ -242,7 +253,7 @@ mediaObject[Media.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sessionDetails`에 `"hasResume": true` 추가:
 
@@ -325,6 +336,18 @@ var mediaObject = ADBMobile.media.createMediaObject(
 
 mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Roku 2.x]
+
+`mediaTrackSessionStart`을(를) 호출하기 전에 미디어 개체에 `resumed` 키를 설정합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

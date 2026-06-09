@@ -3,9 +3,9 @@ title: 컨텐츠 플레이어 이름
 description: 콘텐츠를 렌더링한 플레이어를 식별할 플레이어 이름을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 플레이어 이름**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 플레이어 이름](/help/reporting/dimensions/content-player-name.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**콘텐츠 플레이어 이름**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 플레이어 이름](/help/reporting/dimensions/content-player-name.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.playerName` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.playerName` |
 | **필수** | 예 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `playerName`을(를) 설정합니다.
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.playerName": "Chromecast Player" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`의 `mediaHeartbeat` 섹션에서 `playerName`을(를) 설정합니다. 플레이어 이름은 세션당 값이 아닌 구성 값입니다.
+
+```json
+"mediaHeartbeat": {
+  "playerName": "Roku Player"
+}
 ```
 
 >[!TAB 미디어 컬렉션 API]

@@ -3,10 +3,10 @@ title: 사이트 ID
 description: 광고 배치 사이트별로 구분을 활성화하려면 각 광고에 대한 광고 사이트 ID를 설정하십시오.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 11%
+source-wordcount: '229'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**사이트 ID**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [사이트 ID](/help/reporting/dimensions/site-id.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**사이트 ID**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [사이트 ID](/help/reporting/dimensions/site-id.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 11%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.site` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.ad.site` |
 | **필수** | 아니요 |
 | **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.SITE_ID] = "site-42"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `media.adStart`에 대해 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.advertisingDetails` 내에서 `siteID`을(를) 설정합니다.
 
@@ -146,6 +146,21 @@ var standardAdMetadata = {};
 standardAdMetadata[ADBMobile.media.AdMetadataKeys.SITE_ID] = "site-42";
 adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+표준 광고 메타데이터 개체에서 `MEDIA_AdMetadataKeySITE_ID`을(를) 사용하여 사이트 ID를 설정합니다.
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeySITE_ID] = "site-42"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

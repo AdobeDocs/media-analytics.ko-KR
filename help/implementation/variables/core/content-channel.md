@@ -3,10 +3,10 @@ title: 콘텐츠 채널
 description: 콘텐츠가 재생되는 배포 스테이션, 네트워크 또는 속성을 식별하도록 채널을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 채널**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 채널](/help/reporting/dimensions/content-channel.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**콘텐츠 채널**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 채널](/help/reporting/dimensions/content-channel.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.channel` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.channel` |
 | **필수** | 예 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `channel`을(를) 설정합니다.
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.channel": "Sports" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`의 `mediaHeartbeat` 섹션에서 `channel`을(를) 설정합니다. 채널은 세션당 값이 아닌 구성 값입니다.
+
+```json
+"mediaHeartbeat": {
+  "channel": "Sports"
+}
 ```
 
 >[!TAB 미디어 컬렉션 API]

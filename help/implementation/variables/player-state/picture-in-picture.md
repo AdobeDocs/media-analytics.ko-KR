@@ -3,9 +3,9 @@ title: 화면 속 화면
 description: 백엔드가 PiP 참여를 보고할 수 있도록 뷰어가 PIP(Picture-in-Picture) 재생에 들어가고 나가는 시점을 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '341'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**화면 속 화면**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [화면 속 화면](/help/reporting/metrics/picture-in-picture-streams-impacted.md), [화면 속 화면 카운트](/help/reporting/metrics/picture-in-picture-count.md) 및 [화면 속 화면 총 기간](/help/reporting/metrics/picture-in-picture-total-duration.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**화면 속 화면**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [화면 속 화면](/help/reporting/metrics/picture-in-picture-streams-impacted.md), [화면 속 화면 카운트](/help/reporting/metrics/picture-in-picture-count.md) 및 [화면 속 화면 총 기간](/help/reporting/metrics/picture-in-picture-total-duration.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "pictureInPicture"`이(가) 있는 항목) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "pictureInPicture"`이(가) 있는 항목) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **필수** | 아니요 |
 | **전송 시점** | [상태 시작](/help/implementation/events/player-state/state-start.md), [상태 끝](/help/implementation/events/player-state/state-end.md) |
@@ -87,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent`을(를) 사용하여 상태가 `statesStart`에 추가된 `media.statesUpdate` 이벤트를 보냅니다.
 
@@ -163,6 +163,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the viewer exits picture-in-picture:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+플레이어 상태 추적은 Roku 2.x SDK에서 사용할 수 없습니다. 플레이어 상태를 추적하려면 [Roku Edge SDK](/help/implementation/edge/roku.md)를 사용하십시오.
 
 >[!TAB 미디어 컬렉션 API]
 

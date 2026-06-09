@@ -3,9 +3,9 @@ title: 광고 브레이크 완료
 description: 광고 브레이크의 모든 광고가 완료되었음을 알립니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '165'
 ht-degree: 9%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.adBreakComplete"`(으)로 `sendMediaEvent` 호출:
 
@@ -114,6 +114,15 @@ tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_AD_BREAK_COMPLETE` 이벤트 형식으로 `mediaTrackEvent` 호출:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 ```
 
 >[!TAB 미디어 컬렉션 API]

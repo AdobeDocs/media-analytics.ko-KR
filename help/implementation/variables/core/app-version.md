@@ -3,9 +3,9 @@ title: 앱 버전
 description: 미디어 플레이어 애플리케이션의 버전 문자열을 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**앱 버전**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [앱 버전](/help/reporting/dimensions/app-version.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**앱 버전**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [앱 버전](/help/reporting/dimensions/app-version.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 | 속성 | 값 |
 | --- | --- |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **미디어 컬렉션 API 매개 변수** | `media.sdkVersion` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB 웹 SDK]
 
-[`configure`](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/commands/configure/streamingmedia)을(를) 호출할 때 `streamingMedia` 구성 개체에 `appVersion`을(를) 설정합니다.
+[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)을(를) 호출할 때 `streamingMedia` 구성 개체에 `appVersion`을(를) 설정합니다.
 
 ```javascript
 alloy("configure", {
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`을(를) 사용하여 SDK 구성에서 앱 버전을 설정합니다.
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`의 `mediaHeartbeat` 섹션에서 `sdkVersion`을(를) 설정합니다. 이 필드는 Roku 2.x SDK 라이브러리 버전이 아닌 플레이어 애플리케이션 버전을 캡처합니다.
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB 미디어 컬렉션 API]

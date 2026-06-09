@@ -3,7 +3,7 @@ title: 전체 화면의 영향을 받은 스트림
 description: 뷰어가 전체 화면을 한 번 이상 입력한 세션을 계산합니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 전체 화면&#x200B;**보고 지표의 영향을 받는**&#x200B;스트림을 다룹니다. 이 변수를 수집하는 방법은 [전체 화면](/help/implementation/variables/player-state/full-screen.md)을 참조하세요.*
+*이 페이지에서는 전체 화면&#x200B;**보고 지표의 영향을 받는**스트림을 다룹니다. 이 변수를 수집하는 방법은 [전체 화면](/help/implementation/variables/player-state/full-screen.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
-**전체 화면의 영향을 받은 스트림** 지표는 뷰어가 전체 화면으로 한 번 이상 입력한 세션을 계산합니다. 지표는 세션 수준 부울입니다. 동일한 세션 내에 있는 여러 전체 화면 항목이 하나의 영향을 받은 스트림과 같습니다. 전체 화면 시작 볼륨의 경우 [전체 화면 카운트](full-screen-count.md)를 사용하십시오.
+**전체 화면의 영향을 받은 스트림** 지표는 뷰어가 전체 화면으로 한 번 이상 입력한 세션을 계산합니다. 지표는 세션 수준 부울입니다. 동일한 세션 내에 있는 여러 전체 화면 항목은 하나의 영향을 받은 스트림과 계산됩니다. 전체 화면 시작 볼륨의 경우 [전체 화면 카운트](full-screen-count.md)를 사용하십시오.
 
 ## 이 지표의 계산 방법
 
@@ -28,6 +28,6 @@ ht-degree: 8%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 플레이어 상태 추적]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.states.fullscreen.set`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details) 항목 위치: `name = "fullscreen"`, 필드: `isSet` |
-| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/ko/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
+| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) 항목 위치: `name = "fullscreen"`, 필드: `isSet` |
+| 데이터 피드 | `event_list`, `post_event_list`([`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) 조회 참조) |
 | Audience Manager | `c_contextdata.a.media.states.fullscreen.set` |

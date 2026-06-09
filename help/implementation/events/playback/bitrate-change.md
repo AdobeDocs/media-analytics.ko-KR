@@ -3,10 +3,10 @@ title: 비트율 변경
 description: 재생 비트율이 변경되었음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 7%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.bitrateChange"` 및 `qoeDataDetails`의 새 비트율로 `sendMediaEvent`을(를) 호출합니다.
 
@@ -150,6 +150,18 @@ this._qosInfo = ADBMobile.media.createQoSObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+`adb_media_init_qosinfo`을(를) 사용하여 새 비트율로 QoS 개체를 만들고 `mediaUpdateQoS`(으)로 추적기를 업데이트한 다음 이벤트를 추적합니다. Roku 매개 변수 순서: `bitrate, startupTime, fps, droppedFrames`을(를) 참고하십시오.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB 미디어 컬렉션 API]

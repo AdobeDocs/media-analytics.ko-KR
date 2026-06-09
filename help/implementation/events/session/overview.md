@@ -6,25 +6,15 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-  - id: e992d880-33bc-4949-a648-aa7d410276cd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +41,7 @@ ht-degree: 2%
 ## 구현 단계
 
 1. **사용자가 재생을 트리거하는 시점을 식별합니다**(사용자가 재생을 클릭하거나 자동 재생이 실행됨). 컨텐츠 이름, ID, 길이, 스트림 유형 및 미디어 유형으로 미디어 개체를 만듭니다. 필드 정의는 [콘텐츠 이름](/help/implementation/variables/core/content-name.md), [콘텐츠 ID](/help/implementation/variables/core/content-id.md), [콘텐츠 길이](/help/implementation/variables/core/content-length.md), [스트림 유형](/help/implementation/variables/core/stream-type.md) 및 [콘텐츠 유형](/help/implementation/variables/core/content-type.md)을 참조하십시오.
-1. **메타데이터 첨부** — 표준 메타데이터(쇼, 시즌, 에피소드 등) 및 사용자 지정 컨텍스트 데이터 변수 간에 상관 관계를 설정할 수도 있습니다. 표준 메타데이터 키 참조에 대해서는 [표시](/help/implementation/variables/standard-metadata/show.md), [시즌](/help/implementation/variables/standard-metadata/season.md), [에피소드](/help/implementation/variables/standard-metadata/episode.md), [장르](/help/implementation/variables/standard-metadata/genre.md) 및 [네트워크](/help/implementation/variables/standard-metadata/network.md)를 참조하십시오.
+1. **메타데이터 첨부**: 표준 메타데이터(쇼, 시즌, 에피소드 등) 및 사용자 지정 컨텍스트 데이터 변수 간에 상관 관계를 설정할 수도 있습니다. 표준 메타데이터 키 참조에 대해서는 [표시](/help/implementation/variables/standard-metadata/show.md), [시즌](/help/implementation/variables/standard-metadata/season.md), [에피소드](/help/implementation/variables/standard-metadata/episode.md), [장르](/help/implementation/variables/standard-metadata/genre.md) 및 [네트워크](/help/implementation/variables/standard-metadata/network.md)를 참조하십시오.
 1. **세션 추적을 시작하려면 [세션 시작](/help/implementation/events/session/session-start.md)**&#x200B;을 호출합니다. 이렇게 하면 데이터와 메타데이터가 로드되고 QoS 측정을 시작할 시간이 시작됩니다. SessionStart는 첫 번째 프레임이 아닌 재생할 *intent*&#x200B;을(를) 추적합니다.
 1. **화면에서 콘텐츠의 첫 번째 프레임이 렌더링될 때 [재생](/help/implementation/events/playback/play.md)**&#x200B;을 호출합니다.
 1. 플레이어가 일시 중지되면 **[일시 중지 시작](/help/implementation/events/playback/pause-start.md)**&#x200B;을 호출합니다. 재생이 다시 시작되면 Play 를 다시 호출합니다. 별도의 다시 시작 이벤트가 없습니다.
@@ -64,7 +54,7 @@ ht-degree: 2%
 
 ## 코어 재생
 
-다음 예는 세션 시작부터 컨텐츠 완료 및 세션 종료까지의 전체 세션 흐름을 보여줍니다.
+다음 예는 세션 시작부터 콘텐츠 완료 및 세션 종료까지의 전체 세션 흐름을 보여줍니다.
 
 플랫폼별 구현 세부 정보는 [세션 시작](/help/implementation/events/session/session-start.md), [재생](/help/implementation/events/playback/play.md), [일시 중지 시작](/help/implementation/events/playback/pause-start.md), [세션 완료](/help/implementation/events/session/session-complete.md) 및 [세션 종료](/help/implementation/events/session/session-end.md)를 참조하십시오.
 
@@ -82,7 +72,7 @@ ht-degree: 2%
 
 ## 앱 중단 처리
 
-미디어 애플리케이션에서의 재생은 다양한 방식으로 중단될 수 있습니다. 즉, 사용자가 일시 정지를 누르고 앱이 백그라운드로 전환되고, 전화 통화가 도착합니다. 원인에 관계없이 추적 지침은 다음과 같습니다.
+미디어 application의 재생은 다양한 방법으로 중단될 수 있습니다. 예를 들어 사용자가 일시 정지를 누르거나, 앱이 백그라운드로 이동하거나, 전화가 오는 경우 등이 있습니다. 원인에 관계없이 추적 지침은 다음과 같습니다.
 
 1. 응용 프로그램이 중단되면 **PauseStart**&#x200B;를 호출합니다(배경으로 이동, 미디어 일시 중지 등).
 1. 애플리케이션이 전경으로 돌아가거나 미디어가 재생을 재개하면 **재생**&#x200B;을 호출합니다.

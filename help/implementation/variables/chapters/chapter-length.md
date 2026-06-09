@@ -3,10 +3,10 @@ title: 챕터 길이
 description: 각 챕터의 길이(초)를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 8%
+source-wordcount: '223'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**챕터 길이**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [챕터 길이](/help/reporting/dimensions/chapter-length.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**챕터 길이**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [챕터 길이](/help/reporting/dimensions/chapter-length.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.chapter.length` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.chapter.length` |
 | **필수** | 아니요(모바일 SDK), 예(Edge, Media Collection API) |
 | **전송 시점** | [챕터 시작](/help/implementation/events/chapters/chapter-start.md), 챕터 닫기 |
@@ -81,7 +81,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `media.chapterStart`에 대해 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.chapterDetails` 내에서 `length`을(를) 설정합니다.
 
@@ -158,6 +158,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
   0                           // startTime
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+챕터 길이를 세 번째 인수(`length`)로 `adb_media_init_chapterinfo`에 전달합니다.
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

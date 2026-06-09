@@ -3,9 +3,9 @@ title: 일시 중지 시작
 description: 사용자가 미디어 재생을 일시 중지했음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '150'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackPause()
 tracker.trackPause()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.pauseStart"`(으)로 `sendMediaEvent` 호출:
 
@@ -114,6 +114,14 @@ tracker.trackPause();
 
 ```javascript
 ADBMobile.media.trackPause();
+```
+
+>[!TAB Roku 2.x]
+
+사용자가 재생을 일시 중지하면 `mediaTrackPause`을(를) 호출합니다.
+
+```brightscript
+ADBMobile().mediaTrackPause()
 ```
 
 >[!TAB 미디어 컬렉션 API]

@@ -3,9 +3,9 @@ title: 드롭된 프레임
 description: 백엔드가 프레임 드롭 품질을 보고할 수 있도록 QoE 개체에서 드롭된 프레임의 실행 수를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '323'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**삭제된 프레임**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원 및 지표에 대해서는 [삭제된 프레임](/help/reporting/dimensions/dropped-frames.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**삭제된 프레임**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원 및 지표에 대해서는 [삭제된 프레임](/help/reporting/dimensions/dropped-frames.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.qoe.droppedFrameCount` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **필수** | 아니요 |
 | **전송 시점** | 품질 이벤트([비트율 변경](/help/implementation/events/playback/bitrate-change.md), [버퍼 시작](/help/implementation/events/playback/buffer-start.md), [오류](/help/implementation/events/error.md)), 세션 닫기 |
@@ -83,7 +83,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent`을(를) 호출할 때 `xdm.mediaCollection.qoeDataDetails` 내에서 `droppedFrames`을(를) 설정합니다.
 
@@ -150,6 +150,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames (cumulative total)
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+드롭된 누적 프레임 수를 네 번째 인수(`droppedFrames`)로 `adb_media_init_qosinfo`에 전달하고 추적기를 `mediaUpdateQoS`(으)로 업데이트하십시오.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 미디어 컬렉션 API]

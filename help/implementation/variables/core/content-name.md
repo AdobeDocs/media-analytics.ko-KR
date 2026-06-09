@@ -3,10 +3,10 @@ title: 콘텐츠 이름
 description: 콘텐츠의 친숙한 이름(사람이 읽을 수 있는 제목은 보고에 표시됨)을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 9%
+source-wordcount: '247'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 이름**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 이름](/help/reporting/dimensions/content-name.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**콘텐츠 이름**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 이름](/help/reporting/dimensions/content-name.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.friendlyName` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.friendlyName` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -85,7 +85,7 @@ var mediaInfo = Media.createMediaObject("Blinding Light",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `friendlyName`을(를) 설정합니다.
 
@@ -169,6 +169,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+사람이 읽을 수 있는 이름을 첫 번째 인수로 `adb_media_init_mediainfo`에 전달합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("Blinding Light", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

@@ -3,9 +3,9 @@ title: 플레이어 상태 추적
 description: 플레이어 상태 이벤트와 전체 화면, 음소거, 자막, PIP(Picture-in-Picture) 및 인포커스 상태를 추적하는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '656'
 ht-degree: 12%
 
 ---
@@ -149,7 +149,7 @@ tracker.trackEvent(Media.Event.StateStart, fullscreenState, null)
 tracker.trackEvent(Media.Event.StateEnd, fullscreenState, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 ```brightscript
 ' t0 — start mute and picture-in-picture together
@@ -290,6 +290,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, fullscreenState, nu
 // t2 — end full screen
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, fullscreenState, null);
 ```
+
+>[!TAB Roku 2.x]
+
+플레이어 상태 추적은 Roku 2.x SDK에서 사용할 수 없습니다. 플레이어 상태를 추적하려면 [Roku Edge SDK](/help/implementation/edge/roku.md)를 사용하십시오.
 
 >[!TAB 미디어 컬렉션 API]
 

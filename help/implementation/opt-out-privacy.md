@@ -6,21 +6,13 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -65,7 +57,7 @@ alloy("setConsent", {
 
 추적을 복원하려면 `"y"`을(를) `collect.val` 값으로 사용하여 `setConsent`을(를) 다시 호출하십시오.
 
-IAB TCF 2.0을 포함한 다른 형식은 웹 SDK 설명서에서 [setConsent 명령](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/setconsent)을 참조하십시오.
+IAB TCF 2.0을 포함한 다른 형식은 웹 SDK 설명서에서 [setConsent 명령](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)을 참조하십시오.
 
 >[!TAB iOS]
 
@@ -99,15 +91,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 자세한 내용은 AEP Mobile SDK 설명서에서 [개인 정보 및 GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)을 참조하십시오.
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-AEP Roku SDK은 Adobe 2.0 동의 표준과 함께 `setConsent()`을(를) 사용합니다. `collect.val`을(를) `"n"`(으)로 설정하면 스트리밍 미디어 이벤트를 포함한 모든 데이터 수집이 즉시 중지됩니다.
+Roku Edge SDK은 Adobe 2.0 동의 표준과 함께 `setConsent()`을(를) 사용합니다. `collect.val`을(를) `"n"`(으)로 설정하면 스트리밍 미디어 이벤트를 포함한 모든 데이터 수집이 즉시 중지됩니다.
 
 동의 값:
 
-* `"y"` — 옵트인(데이터 수집 허용)
-* `"n"` — 옵트아웃(데이터 수집이 제외됨)
-* `"p"` — 보류 중(사용자 결정 대기 중, 확인될 때까지 수집된 데이터 없음)
+* `"y"`: 옵트인(데이터 수집 허용)
+* `"n"`: 옵트아웃(데이터 수집이 제외됨)
+* `"p"`: 보류 중(사용자 결정 대기 중, 확인될 때까지 수집된 데이터 없음)
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +121,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 추적을 복원하려면 `collect.val`을(를) `"y"`(으)로 설정하고 `setConsent()`을(를) 다시 호출하십시오.
 
-`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` 키와 함께 `updateConfiguration()`을(를) 사용하여 SDK 초기화 시 기본 동의 값을 설정할 수도 있습니다. 자세한 내용은 [AEP Roku SDK 설명서](https://github.com/adobe/aepsdk-roku)를 참조하세요.
+`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` 키와 함께 `updateConfiguration()`을(를) 사용하여 SDK 초기화 시 기본 동의 값을 설정할 수도 있습니다. 자세한 내용은 [Roku Edge SDK 설명서](https://github.com/adobe/aepsdk-roku)를 참조하세요.
 
 >[!TAB 미디어 Edge API]
 
@@ -172,7 +164,7 @@ visitor.setOptOut(true);
 
 추적을 복원하려면 `false`을(를) `setOptOut()`에 전달합니다.
 
-자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
 
 >[!TAB Chromecast]
 
@@ -196,6 +188,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK은 `setPrivacyStatus`을(를) 사용하여 설정된 개인 정보 상태를 준수합니다. 상태를 `PRIVACY_STATUS_OPT_OUT`(으)로 설정하면 모든 데이터 수집이 제외됩니다.
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+추적을 복원하려면 상태를 다시 옵트인으로 설정합니다.
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+`ADBMobileConfig.json` 파일에서 SDK 초기화에서 기본 개인 정보 상태를 설정할 수도 있습니다.
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB 미디어 컬렉션 API]

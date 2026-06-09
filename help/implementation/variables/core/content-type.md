@@ -3,9 +3,9 @@ title: 컨텐츠 유형
 description: 스트림 형식(VOD, 라이브, 선형, 팟캐스트, 노래 등)을 식별하려면 컨텐츠 유형을 설정하십시오.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 형식**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 형식](/help/reporting/dimensions/content-type.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**콘텐츠 형식**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [콘텐츠 형식](/help/reporting/dimensions/content-type.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -29,7 +29,7 @@ ht-degree: 5%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.contentType` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.contentType` |
 | **필수** | 예 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -89,7 +89,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `contentType`을(를) 설정합니다.
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_STREAM_TYPE_*` 상수를 네 번째(`streamType`) 인수로 `adb_media_init_mediainfo`에 전달합니다. Roku 2.x SDK에서 이 인수는 콘텐츠 형식(`vod`, `live`, `linear`)을 전달합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

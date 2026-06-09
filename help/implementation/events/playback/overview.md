@@ -6,24 +6,14 @@ exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/Cc5T13Z1S15MyG-CxpxMoHX-ckULmIe0dfUOe7650DE
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889beid: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 231
 ht-degree: 2%
 
 ---
@@ -50,4 +40,4 @@ ht-degree: 2%
 1. 사용자가 재생을 일시 중지하면 **[일시 중지 시작](pause-start.md)**&#x200B;을 호출합니다. 재생이 다시 시작될 때 재생을 전송합니다.
 1. 플레이어가 데이터 대기 중이면 **[버퍼 시작](buffer-start.md)**&#x200B;을 호출합니다. XDM 기반 API에서 버퍼 끝은 다음 재생 이벤트를 전송할 때 추론됩니다. Mobile SDK에서도 버퍼링이 확인될 때 명시적으로 `BufferComplete`을(를) 호출합니다.
 1. **기본 콘텐츠 재생 중에는 10초마다, 광고 재생 중에는 1초마다 [Ping](ping.md)**&#x200B;을 호출합니다. Ping은 세션을 활성 상태로 유지하고 플레이헤드 이동을 기록합니다. Mobile SDK는 Ping을 자동으로 보냅니다. 다른 모든 플랫폼은 Ping을 수동으로 보내야 합니다.
-1. 플레이어가 새 비트율을 협상할 때마다 **[비트율 변경](bitrate-change.md)**&#x200B;을 호출합니다. 현재 QoE 데이터(비트율, 초당 프레임, 드롭된 프레임)를 포함하면 백엔드가 [평균 비트율](/help/reporting/metrics/average-bitrate.md) 및 관련 품질 지표를 계산할 수 있습니다.
+1. 플레이어가 새 비트율을 협상할 때마다 **[비트율 변경](bitrate-change.md)**&#x200B;을 호출합니다. 백엔드가 [평균 비트율](/help/reporting/metrics/average-bitrate.md) 및 관련 품질 지표를 계산할 수 있도록 현재 QoE 데이터(비트율, 초당 프레임, 드롭된 프레임)를 포함합니다.

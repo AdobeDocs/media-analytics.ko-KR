@@ -3,9 +3,9 @@ title: 비트율 변경
 description: 플레이어가 다른 비트율로 전환할 때마다 비트율 변경 이벤트를 실행합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '278'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 비트율 변경 이벤트를 구현하는 방법에 대해 설명합니다. 해당 보고 변수에 대해서는 [[!UICONTROL 비트율 변경] (차원)](/help/reporting/dimensions/bitrate-changes.md) 및 [[!UICONTROL 비트율 변경] (지표)](/help/reporting/metrics/bitrate-changes.md)을 참조하십시오.*
+*이 페이지에서는 비트율 변경 이벤트를 구현하는 방법에 대해 설명합니다. 해당 보고 변수에 대해서는 [[!UICONTROL 비트율 변경](차원)](/help/reporting/dimensions/bitrate-changes.md) 및 [[!UICONTROL 비트율 변경](지표)](/help/reporting/metrics/bitrate-changes.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `media.bitrateChange`과(와) 함께 `sendMediaEvent`을(를) 사용하여 비트율 변경을 신호로 보냅니다. `qoeDataDetails`에 새 비트율 포함:
 
@@ -149,6 +149,18 @@ var qosInfo = ADBMobile.media.createQoSObject(
 );
 ADBMobile.media.updateQoSObject(qosInfo);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+새 비트율로 QoS 개체를 업데이트한 다음 비트율 변경 이벤트를 실행합니다.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(4500.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB 미디어 컬렉션 API]

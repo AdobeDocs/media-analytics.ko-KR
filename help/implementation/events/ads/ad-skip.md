@@ -3,9 +3,9 @@ title: 광고 건너뛰기
 description: 뷰어가 광고를 건너뛰었다는 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '176'
 ht-degree: 8%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdSkip, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.adSkip"`(으)로 `sendMediaEvent` 호출:
 
@@ -114,6 +114,15 @@ tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_AD_SKIP` 이벤트 형식으로 `mediaTrackEvent` 호출:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 ```
 
 >[!TAB 미디어 컬렉션 API]

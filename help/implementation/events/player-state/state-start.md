@@ -3,10 +3,10 @@ title: 상태 시작
 description: 미디어 플레이어가 추적된 플레이어 상태로 들어왔다는 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 7%
+source-wordcount: '217'
+ht-degree: 6%
 
 ---
 
@@ -79,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `eventType: "media.statesUpdate"` 및 `statesStart`의 상태 이름으로 `sendMediaEvent`을(를) 호출합니다.
 
@@ -142,6 +142,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+플레이어 상태 추적은 Roku 2.x SDK에서 사용할 수 없습니다. 플레이어 상태를 추적하려면 [Roku Edge SDK](/help/implementation/edge/roku.md)를 사용하십시오.
 
 >[!TAB 미디어 컬렉션 API]
 

@@ -3,10 +3,10 @@ title: 시즌
 description: 시즌 별로 참여를 분류할 수 있도록 에피소드 콘텐츠에 대한 시즌 번호를 설정하십시오.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 9%
+source-wordcount: '250'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**시즌**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [시즌](/help/reporting/dimensions/season.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**시즌**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [시즌](/help/reporting/dimensions/season.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.season` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.season` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.SEASON] = "2"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `createMediaSession`을(를) 사용하여 `sessionDetails` 내에서 `season`을(를) 설정합니다.
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.SEASON] = "2";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`mediaTrackSessionStart`을(를) 호출하기 전에 `MEDIA_VideoMetadataKeySEASON`을(를) 사용하여 미디어 개체의 표준 메타데이터에서 시즌 번호를 설정합니다.
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeySEASON] = "2"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 미디어 컬렉션 API]

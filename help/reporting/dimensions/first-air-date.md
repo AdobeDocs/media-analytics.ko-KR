@@ -3,7 +3,7 @@ title: 최초 비행일
 description: 컨텐츠가 TV에 처음 방송된 날짜를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**첫 방송 날짜**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [첫 방송 날짜](/help/implementation/variables/standard-metadata/first-air-date.md)를 참조하세요.*
+*이 페이지에서는&#x200B;**첫 방송 날짜**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [첫 방송 날짜](/help/implementation/variables/standard-metadata/first-air-date.md)를 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,9 @@ ht-degree: 1%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics(처리 규칙) | `a.media.airDate`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Adobe Analytics(분류) | [컨텐츠(ID)](content.md) 차원의 분류 — 보고서 세트에 대해 **[[!UICONTROL 비디오 메타데이터]](/help/reporting/setup/analytics-reporting.md)**&#x200B;를 활성화하면 Adobe에서 이 분류를 자동으로 만듭니다. 분류 값을 채우고 유지 관리합니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics(처리 규칙) | `a.media.airDate`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Adobe Analytics(분류) | [콘텐츠(ID)](content.md) 차원의 분류입니다. 보고서 세트에 대해 **[[!UICONTROL 비디오 메타데이터]](/help/reporting/setup/analytics-reporting.md)**&#x200B;을(를) 사용하도록 설정하면 Adobe에서 이 분류를 자동으로 만듭니다. 분류 값을 채우고 유지 관리합니다. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드(처리 규칙) | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.airDate`을(를) 매핑하는 eVar) |
 | 데이터 피드(분류) | 해당 사항 없음 — 데이터 피드는 분류를 지원하지 않습니다. |
 | Audience Manager | `c_contextdata.a.media.airDate` |
@@ -46,7 +46,7 @@ Adobe은 보고서 세트에 대해 **[[!UICONTROL 비디오 메타데이터]](/
 
 ## 처리 규칙 접근 방식
 
-`a.media.airDate`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. 이 접근 방법에서는 분류 유지 관리 없이도 첫 번째 air 날짜를 히트당 값으로 캡처합니다.
+`a.media.airDate`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. 이 접근 방법에서는 분류 유지 관리 없이도 첫 번째 air 날짜를 히트당 값으로 캡처합니다.
 
 첫 번째 방송 날짜와 상위 [콘텐츠(ID)](content.md) 차원 간의 보장된 1:1 관계를 잃는 것이 단점입니다. 구현에서 이벤트 간에 동일한 콘텐츠 ID에 대해 일관되지 않은 값을 전송하는 경우 동일한 콘텐츠 아래에 여러 개의 첫 방송 날짜가 표시될 수 있습니다. 값 업데이트는 앞으로 이동하는 데이터에만 적용됩니다.
 
