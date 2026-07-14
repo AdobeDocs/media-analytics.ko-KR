@@ -65,7 +65,7 @@ alloy("setConsent", {
 
 추적을 복원하려면 `"y"`을(를) `collect.val` 값으로 사용하여 `setConsent`을(를) 다시 호출하십시오.
 
-IAB TCF 2.0을 포함한 다른 형식은 웹 SDK 설명서에서 [setConsent 명령](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)을 참조하십시오.
+IAB TCF 2.0을 포함한 다른 형식은 웹 SDK 설명서에서 [setConsent 명령](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/setconsent)을 참조하십시오.
 
 >[!TAB iOS]
 
@@ -172,7 +172,7 @@ visitor.setOptOut(true);
 
 추적을 복원하려면 `false`을(를) `setOptOut()`에 전달합니다.
 
-자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하십시오.
+자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
 
 >[!TAB Chromecast]
 
