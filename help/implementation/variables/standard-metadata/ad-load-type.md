@@ -3,19 +3,17 @@ title: 광고 로드 유형
 description: 스트리밍 세션에 대한 광고 로드 유형을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 3%
-
 ---
-
 
 # 광고 로드 유형
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**광고 로드 형식**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [광고 로드](/help/reporting/dimensions/ad-load-type.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**광고 로드 형식**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [광고 로드](/help/reporting/dimensions/ad-load-type.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 3%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.adLoad` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.adLoad` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -35,7 +33,7 @@ ht-degree: 3%
 
 >[!TAB 웹 SDK]
 
-[`createMediaSession`](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/commands/createmediasession)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `adLoad`을(를) 설정합니다.
+[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)을(를) 호출할 때 `xdm.mediaCollection.sessionDetails` 내에서 `adLoad`을(를) 설정합니다.
 
 ```javascript
 alloy("createMediaSession", {
@@ -181,6 +179,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

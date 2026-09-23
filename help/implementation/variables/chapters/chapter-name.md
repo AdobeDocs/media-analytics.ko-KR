@@ -3,19 +3,17 @@ title: 챕터 이름
 description: 챕터 제목별로 챕터 수준 보고를 분류할 수 있도록 각 챕터의 친숙한 이름을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
-
+source-wordcount: '234'
+ht-degree: 7%
 ---
-
 
 # 챕터 이름
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**챕터 이름**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [챕터 이름](/help/reporting/dimensions/chapter-name.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**챕터 이름**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [챕터 이름](/help/reporting/dimensions/chapter-name.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 8%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.chapter.friendlyName` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.chapter.friendlyName` |
 | **필수** | 아니요 |
 | **전송 시점** | [챕터 시작](/help/implementation/events/chapters/chapter-start.md), 챕터 닫기 |
@@ -186,6 +184,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

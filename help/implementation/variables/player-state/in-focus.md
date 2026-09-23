@@ -3,19 +3,17 @@ title: 포커스
 description: 백엔드가 포커스 참여를 보고할 수 있도록 플레이어가 뷰어의 화면에 포커스가 있는 시기를 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 5%
-
+source-wordcount: '354'
+ht-degree: 6%
 ---
-
 
 # 포커스
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**포커스 있음**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [초점의 영향을 받은 스트림](/help/reporting/metrics/in-focus-streams-impacted.md), [초점 카운트](/help/reporting/metrics/in-focus-count.md) 및 [초점 총 기간](/help/reporting/metrics/in-focus-total-duration.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**포커스 있음**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [초점의 영향을 받은 스트림](/help/reporting/metrics/in-focus-streams-impacted.md), [초점 카운트](/help/reporting/metrics/in-focus-count.md) 및 [초점 총 기간](/help/reporting/metrics/in-focus-total-duration.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "inFocus"`이(가) 있는 항목) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "inFocus"`이(가) 있는 항목) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **필수** | 아니요 |
 | **전송 시점** | [상태 시작](/help/implementation/events/player-state/state-start.md), [상태 끝](/help/implementation/events/player-state/state-end.md) |
@@ -182,6 +180,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

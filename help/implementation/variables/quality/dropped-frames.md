@@ -3,19 +3,17 @@ title: 드롭된 프레임
 description: 백엔드가 프레임 드롭 품질을 보고할 수 있도록 QoE 개체에서 드롭된 프레임의 실행 수를 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 5%
-
 ---
-
 
 # 드롭된 프레임
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**삭제된 프레임**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원 및 지표에 대해서는 [삭제된 프레임](/help/reporting/dimensions/dropped-frames.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**삭제된 프레임**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원 및 지표에 대해서는 [삭제된 프레임](/help/reporting/dimensions/dropped-frames.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +26,7 @@ ht-degree: 5%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.qoe.droppedFrameCount` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **필수** | 아니요 |
 | **전송 시점** | 품질 이벤트([비트율 변경](/help/implementation/events/playback/bitrate-change.md), [버퍼 시작](/help/implementation/events/playback/buffer-start.md), [오류](/help/implementation/events/error.md)), 세션 닫기 |
@@ -177,6 +175,6 @@ adb.mediaUpdateQoS(qosInfo)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

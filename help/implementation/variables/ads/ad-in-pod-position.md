@@ -3,19 +3,17 @@ title: Pod 위치의 광고
 description: 상위 광고 브레이크 내에 광고의 색인 위치를 설정합니다. 첫 번째 광고에는 색인 0이 있습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
-
+source-wordcount: '266'
+ht-degree: 6%
 ---
-
 
 # Pod 위치의 광고
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 pod 위치의&#x200B;**Ad**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [Pod 위치의 광고](/help/reporting/dimensions/ad-in-pod-position.md)를 참조하십시오.*
+*이 페이지에서는 pod 위치의&#x200B;**Ad**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [Pod 위치의 광고](/help/reporting/dimensions/ad-in-pod-position.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ pod의 광고 위치 변수는 상위 광고 브레이크 내에 있는 광고�
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.podPosition` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.ad.podPosition` |
 | **필수** | 예 |
 | **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |
@@ -184,6 +182,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

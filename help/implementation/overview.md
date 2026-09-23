@@ -8,26 +8,34 @@ exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 TQID: https://experienceleague.adobe.com/aFrxbzBLlf1ngetaM-GsNFXz6TUXi6Pic3quLVI297c
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+    internal-label: Methods
   - id: df312454-73c4-43f6-a90e-18f5043f074c
+    internal-label: Tags
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 66%
-
+source-wordcount: '526'
+ht-degree: 65%
 ---
-
 # Adobe Analytics 또는 Customer Journey Analytics용 스트리밍 미디어 서비스 구현
 
 Adobe 스트리밍 미디어 서비스를 구현하는 방법에는 여러 가지가 있습니다. 이 페이지에 설명된 구현 방법에 대해 지원되는 디바이스 및 플랫폼에 대한 자세한 비교는 [지원되는 디바이스 및 플랫폼](/help/getting-started/supported-devices.md)을 참조하십시오.
@@ -50,13 +58,13 @@ Adobe은 모든 신규 Adobe Analytics 또는 Customer Journey Analytics 고객�
 
 위에서 설명한 Edge 구현 방법은 Customer Journey Analytics와 Adobe Analytics, 특히 새로운 구현의 경우 권장됩니다.
 
-Edge 구현 방법 외에도 다른 구현 방법을 사용할 수 있습니다. 이러한 구현 방법은 Adobe Analytics와 함께 사용하도록 설계되었습니다. 그러나 다음 구현 방법을 사용하는 기존 고객은 [Analytics 소스 연결](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ko)을 생성하여 Customer Journey Analytics에서 데이터를 계속 사용할 수 있습니다.
+Edge 구현 방법 외에도 다른 구현 방법을 사용할 수 있습니다. 이러한 구현 방법은 Adobe Analytics와 함께 사용하도록 설계되었습니다. 그러나 다음 구현 방법을 사용하는 기존 고객은 [Analytics 소스 연결](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)을 생성하여 Customer Journey Analytics에서 데이터를 계속 사용할 수 있습니다.
 
 Adobe Analytics 전용 구현 방법은 스트리밍 미디어용 Adobe Analytics 추가 기능을 사용합니다. 필수 구성 요소 및 메서드 목록을 보려면 [Analytics 전용 구현 개요](/help/implementation/analytics-only/overview.md)를 참조하십시오.
 
 * **태그가 포함된 미디어 확장:** 오디오 및 비디오용 Adobe Media Analytics 확장 기능은 태그 활성화 사이트 또는 프로젝트에 미디어 추적기 인스턴스를 추가하는 기능을 제공합니다. 데이터는 Adobe Analytics로 전송됩니다.
 
-  태그가 포함된 미디어 확장 설치, 구성 및 구현에 대한 자세한 내용은 [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=ko)를 참조하십시오.
+  태그가 포함된 미디어 확장 설치, 구성 및 구현에 대한 자세한 내용은 [오디오 및 비디오 확장 기능용 Adobe Media Analytics(3.x SDK) 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)를 참조하십시오.
 
 * **Media SDK:** Media SDK를 사용하면 웹 사이트, 휴대폰, 연결된 TV, 태블릿, OTT 디바이스, 셋톱 박스 및 게임 콘솔을 포함한 여러 미디어 플랫폼을 측정할 수 있습니다. (자세한 내용은 [지원되는 디바이스 및 플랫폼](/help/getting-started/supported-devices.md)을 참조하십시오.)
 
@@ -66,7 +74,7 @@ Adobe Analytics 전용 구현 방법은 스트리밍 미디어용 Adobe Analytic
 
 * **Media Collection API:** Media Collection API는 사용자 정의가 가능하므로 사용자 정의 추적 기능이 필요한 애플리케이션과 Media SDK에서 지원되지 않는 디바이스에 사용할 수 있습니다. Media Collection API는 RESTful HTTP 호출을 사용하여 오디오 및 비디오 이벤트를 추적합니다. 데이터는 Adobe Analytics로 전송됩니다.
 
-  Media Collection API 사용에 대한 자세한 내용은 [Media Collection API](media-collection-api/mc-api-overview.md)를 참조하십시오.
+  Media Collection API 사용에 대한 자세한 내용은 [Media Collection API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)를 참조하십시오.
 
 
 ![Analytics 워크플로](assets/analytics-implementation.png)

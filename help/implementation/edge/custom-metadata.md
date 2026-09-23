@@ -3,19 +3,17 @@ title: 사용자 지정 메타데이터 지원 - XDM 형식
 description: Experience Edge XDM 형식을 사용하여 미디어 추적 이벤트와 함께 사용자 지정 메타데이터를 보내는 방법에 대해 알아봅니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 5%
-
 ---
-
 
 # 사용자 지정 메타데이터 지원 - XDM 형식
 
 Experience Edge API를 사용하면 `sessionStart`, `adStart` 및 `chapterStart` API 이벤트의 표준 XDM 필드와 함께 미디어 사용자 지정 메타데이터를 보낼 수 있습니다. XDM 형식을 통해 전송된 미디어 사용자 지정 메타데이터는 **Adobe Analytics** 및 **Adobe Experience Platform** 모두에 전달할 수 있습니다.
 
-Media Collection API 구현의 경우 [사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)을 참조하십시오.
+Media Collection API 구현의 경우 [사용자 지정 메타데이터 지원](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)을 참조하십시오.
 
 ## 개요
 
@@ -335,6 +333,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [미디어 컬렉션 API 사용자 지정 메타데이터 지원](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [미디어 컬렉션 API 사용자 지정 메타데이터 지원](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
+>* [미디어 컬렉션 세부 정보 데이터 형식](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Adobe Experience Platform Edge Network에 대한 데이터 변수 매핑](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping)

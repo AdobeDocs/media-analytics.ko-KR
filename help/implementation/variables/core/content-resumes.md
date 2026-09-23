@@ -3,19 +3,17 @@ title: 콘텐츠 다시 시작
 description: 백엔드가 콘텐츠 다시 시작 이벤트를 계산하도록 이전에 중단된 재생을 다시 시작하는 세션에 플래그를 지정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '302'
 ht-degree: 6%
-
 ---
-
 
 # 콘텐츠 다시 시작
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 다시 시작**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [[!UICONTROL 콘텐츠 다시 시작]](/help/reporting/metrics/content-resumes.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**콘텐츠 다시 시작**변수에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [[!UICONTROL 콘텐츠 다시 시작]](/help/reporting/metrics/content-resumes.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.resume` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | 해당 사항 없음 |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md) |
@@ -196,6 +194,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

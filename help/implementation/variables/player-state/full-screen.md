@@ -3,19 +3,17 @@ title: 전체 화면
 description: 백엔드가 전체 화면 참여를 보고할 수 있도록 뷰어가 전체 화면 재생에 들어가고 종료되는 시기를 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 6%
-
+source-wordcount: '348'
+ht-degree: 8%
 ---
-
 
 # 전체 화면
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**전체 화면**&#x200B;플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [전체 화면의 영향을 받은 스트림](/help/reporting/metrics/full-screen-streams-impacted.md), [전체 화면 카운트](/help/reporting/metrics/full-screen-count.md) 및 [전체 화면 총 기간](/help/reporting/metrics/full-screen-total-duration.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**전체 화면**플레이어 상태에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해 [전체 화면의 영향을 받은 스트림](/help/reporting/metrics/full-screen-streams-impacted.md), [전체 화면 카운트](/help/reporting/metrics/full-screen-count.md) 및 [전체 화면 총 기간](/help/reporting/metrics/full-screen-total-duration.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "fullscreen"`이(가) 있는 항목) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) 및 [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)&#x200B;(`name: "fullscreen"`이(가) 있는 항목) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **필수** | 아니요 |
 | **전송 시점** | [상태 시작](/help/implementation/events/player-state/state-start.md), [상태 끝](/help/implementation/events/player-state/state-end.md) |
@@ -195,6 +193,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

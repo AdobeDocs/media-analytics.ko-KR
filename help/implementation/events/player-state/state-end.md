@@ -3,13 +3,11 @@ title: 상태 끝
 description: 미디어 플레이어가 추적된 플레이어 상태를 종료했음을 신호로 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # 상태 끝
 
@@ -147,7 +145,7 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `stateEnd` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `stateEnd` POST 보내기:
 
 ```json
 {

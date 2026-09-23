@@ -3,19 +3,17 @@ title: 아티스트
 description: 오디오 콘텐츠의 공연 아티스트 이름을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '240'
 ht-degree: 9%
-
 ---
-
 
 # 아티스트
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**아티스트**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [아티스트](/help/reporting/dimensions/artist.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**아티스트**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [아티스트](/help/reporting/dimensions/artist.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Artist 변수는 오디오 콘텐츠에 대한 수행 중인 아티스트의 이
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.artist` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.artist` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]
