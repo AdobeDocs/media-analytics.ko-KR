@@ -52,7 +52,7 @@ Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 
 
    * **Analytics 전용 구현**: CX Enterprise 솔루션에서 방문자를 일관되게 식별하려면 Adobe 방문자 ID 서비스를 사용하도록 설정해야 합니다. 방문자 ID 서비스는 각 사이트 방문자에게 고유한 영구 ID를 할당하며, 이를 통해 구독하는 모든 CX Enterprise 솔루션에서 해당 ID를 공유할 수 있습니다.
 
-     자세한 내용은 [Adobe 방문자 ID 서비스 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하세요.
+     자세한 내용은 [Adobe 방문자 ID 서비스 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하세요.
 
 1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 

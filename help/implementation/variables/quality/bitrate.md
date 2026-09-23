@@ -22,7 +22,7 @@ bitrate 변수는 현재 재생 비트율입니다(초당 킬로비트). 플레�
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **필수** | 아니요 |
 | **전송 시점** | 품질 이벤트([비트율 변경](/help/implementation/events/playback/bitrate-change.md), [버퍼 시작](/help/implementation/events/playback/buffer-start.md), [오류](/help/implementation/events/error.md)), 세션 닫기 |

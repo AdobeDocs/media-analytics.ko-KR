@@ -16,7 +16,7 @@ Analytics 전용 구현은 스트리밍 미디어용 Adobe Analytics 추가 기�
 
 1. **일반 필수 구성 요소를 완료합니다.** [일반 필수 구성 요소](/help/getting-started/prereqs.md)를 참조하세요.
 
-1. **Adobe Analytics 구현을 확인하십시오.** Analytics 전용 스트리밍 미디어 구현에는 기본 Adobe Analytics 구현이 필요합니다. [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)을 참조하세요.
+1. **Adobe Analytics 구현을 확인하십시오.** Analytics 전용 스트리밍 미디어 구현에는 기본 Adobe Analytics 구현이 필요합니다. [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)을 참조하세요.
 
 1. **미디어 추적 서버 URL을 가져옵니다.** 미디어 추적 서버 URL(`collection-api-server` URL)은 Adobe Analytics 담당자에게 문의하십시오. 도메인은 일반적으로 `[your_namespace].hb-api.omtrdc.net` 패턴을 따릅니다.
 

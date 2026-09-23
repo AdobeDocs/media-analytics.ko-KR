@@ -22,7 +22,7 @@ MVPD(다중 채널 비디오 프로그래밍 배포자) 변수는 사용자가 �
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.pass.mvpd` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.pass.mvpd` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md), 세션 닫기 |
