@@ -3,13 +3,11 @@ title: Pod 위치의 광고
 description: 상위 광고 브레이크 내에 광고의 색인 위치를 설정합니다. 첫 번째 광고에는 색인 0이 있습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
-
+source-wordcount: '266'
+ht-degree: 6%
 ---
-
 
 # Pod 위치의 광고
 
@@ -184,6 +182,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

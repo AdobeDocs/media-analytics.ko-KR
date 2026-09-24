@@ -3,13 +3,11 @@ title: 앱 버전
 description: 미디어 플레이어 애플리케이션의 버전 문자열을 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '297'
 ht-degree: 2%
-
 ---
-
 
 # 앱 버전
 
@@ -177,6 +175,6 @@ var ADBMobileConfig = {
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

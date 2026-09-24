@@ -3,13 +3,11 @@ title: Analytics 전용 구현 개요
 description: Analytics 전용 구현에 사용되는 스트리밍 미디어용 Adobe Analytics 추가 기능에 대한 사전 요구 사항 및 구현 방법입니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '243'
 ht-degree: 5%
-
 ---
-
 # Analytics 전용 구현 개요
 
 Analytics 전용 구현은 스트리밍 미디어용 Adobe Analytics 추가 기능을 사용하여 Edge Network 없이 Adobe Analytics으로 직접 데이터를 전송합니다. 이러한 메서드는 계속 완벽하게 지원됩니다. 새로운 구현의 경우 Adobe은 Adobe Analytics 외에도 Customer Journey Analytics, Adobe Journey Optimizer 및 Real-Time CDP에서 데이터를 사용할 수 있도록 하므로 대신 [Edge 구현](/help/implementation/edge/overview.md)을 권장합니다.
@@ -33,7 +31,7 @@ Analytics 전용 구현은 스트리밍 미디어용 Adobe Analytics 추가 기�
 | 웹(JavaScript) | [JavaScript](javascript.md) | [Media Analytics 태그 확장](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
 | Roku | [Roku 2.x](roku-2x.md) | — |
-| API | [미디어 컬렉션 API](media-collection-api.md) | — |
+| API | [미디어 컬렉션 API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation) | — |
 
 ## 다음 단계
 

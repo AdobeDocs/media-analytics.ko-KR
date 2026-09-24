@@ -3,13 +3,11 @@ title: 콘텐츠 등급
 description: TV 유해 컨텐츠 가이드라인 또는 지역 등급 시스템으로 정의된 컨텐츠 등급을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 8%
-
+source-wordcount: '253'
+ht-degree: 7%
 ---
-
 
 # 콘텐츠 등급
 
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

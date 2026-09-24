@@ -3,13 +3,11 @@ title: 일시 중지 시작
 description: 사용자가 미디어 재생을 일시 중지했음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 10%
-
+source-wordcount: '159'
+ht-degree: 9%
 ---
-
 
 # 일시 중지 시작
 
@@ -126,7 +124,7 @@ ADBMobile().mediaTrackPause()
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `pauseStart` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `pauseStart` POST 보내기:
 
 ```json
 {

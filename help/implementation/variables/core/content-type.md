@@ -3,13 +3,11 @@ title: 컨텐츠 유형
 description: 스트림 형식(VOD, 라이브, 선형, 팟캐스트, 노래 등)을 식별하려면 컨텐츠 유형을 설정하십시오.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '343'
 ht-degree: 5%
-
 ---
-
 
 # 컨텐츠 유형
 
@@ -198,6 +196,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

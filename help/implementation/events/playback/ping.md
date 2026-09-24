@@ -3,13 +3,11 @@ title: Ping
 description: 하트비트를 전송하여 미디어 세션을 유지하고 일정한 간격으로 재생 진행률을 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '292'
 ht-degree: 1%
-
 ---
-
 
 # Ping
 
@@ -111,7 +109,7 @@ ADBMobile().mediaUpdatePlayhead(10)
 
 >[!TAB 미디어 컬렉션 API]
 
-타이머의 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `ping` POST를 보냅니다. `params` 개체 포함 안 함:
+타이머의 [이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `ping` POST를 보냅니다. `params` 개체 포함 안 함:
 
 ```json
 {

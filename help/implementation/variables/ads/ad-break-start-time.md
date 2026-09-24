@@ -3,13 +3,11 @@ title: 광고 브레이크 시작 시간
 description: 콘텐츠 내부의 광고 브레이크 시작 시간(오프셋)을 초 단위로 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '268'
 ht-degree: 6%
-
 ---
-
 
 # 광고 브레이크 시작 시간
 
@@ -178,6 +176,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

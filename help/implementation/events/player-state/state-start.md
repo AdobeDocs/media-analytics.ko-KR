@@ -3,13 +3,11 @@ title: 상태 시작
 description: 미디어 플레이어가 추적된 플레이어 상태로 들어왔다는 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '226'
 ht-degree: 6%
-
 ---
-
 
 # 상태 시작
 
@@ -149,7 +147,7 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `stateStart` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `stateStart` POST 보내기:
 
 ```json
 {

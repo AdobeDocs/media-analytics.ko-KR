@@ -3,13 +3,11 @@ title: 전체 화면
 description: 백엔드가 전체 화면 참여를 보고할 수 있도록 뷰어가 전체 화면 재생에 들어가고 종료되는 시기를 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 6%
-
+source-wordcount: '348'
+ht-degree: 8%
 ---
-
 
 # 전체 화면
 
@@ -195,6 +193,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

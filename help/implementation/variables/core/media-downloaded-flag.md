@@ -3,13 +3,11 @@ title: 미디어 다운로드 플래그
 description: 세션을 다운로드된 오프라인 재생으로 표시하여 스트리밍된 세션과 별도로 보고되도록 합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # 미디어 다운로드 플래그
 
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-다운로드한 컨텐츠 추적은 Roku 2.x SDK에서 사용할 수 없습니다. 다운로드한 미디어 재생을 보고하려면 [Roku Edge SDK](/help/implementation/edge/roku.md) 또는 [Media Collection API](/help/implementation/analytics-only/media-collection-api.md)를 사용하십시오.
+다운로드한 컨텐츠 추적은 Roku 2.x SDK에서 사용할 수 없습니다. 다운로드한 미디어 재생을 보고하려면 [Roku Edge SDK](/help/implementation/edge/roku.md) 또는 [Media Collection API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)를 사용하십시오.
 
 >[!TAB 미디어 컬렉션 API]
 
@@ -195,6 +193,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: 비트율 변경
 description: 재생 비트율이 변경되었음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '235'
 ht-degree: 6%
-
 ---
-
 
 # 비트율 변경
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 
 >[!TAB 미디어 컬렉션 API]
 
-`qoeData`에서 새 비트율을 사용하여 [이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `bitrateChange` POST를 보냅니다.
+`qoeData`에서 새 비트율을 사용하여 [이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `bitrateChange` POST를 보냅니다.
 
 ```json
 {

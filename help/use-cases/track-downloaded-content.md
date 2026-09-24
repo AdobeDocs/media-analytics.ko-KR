@@ -8,30 +8,37 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 721
-ht-degree: 93%
-
+source-wordcount: '729'
+ht-degree: 91%
 ---
-
 # 다운로드한 콘텐츠 추적{#track-downloaded-content}
 
 ## 개요 {#overview}
 
-다운로드한 콘텐츠 기능은 사용자가 오프라인 상태인 동안에 미디어 소비를 추적하는 기능을 제공합니다. 예를 들어 사용자가 모바일 디바이스에 앱을 다운로드하여 설치한 다음 앱을 사용하여 콘텐츠를 디바이스의 로컬 저장소에 다운로드합니다. 다운로드한 데이터를 추적하기 위해 Adobe는 다운로드한 콘텐츠 기능을 개발했습니다. 이 기능을 사용하면 사용자가 디바이스의 저장소에서 콘텐츠를 재생할 때 디바이스의 연결 상태에 관계없이 추적 데이터가 디바이스에 저장됩니다. 사용자가 재생 세션을 마치고 디바이스가 온라인 상태이면 저장된 추적 정보는 단일 페이로드 내의 Media Collection API 백 엔드로 전송됩니다. 그런 다음 저장된 추적 정보가 Media Collection API에서 평소대로 처리 및 보고됩니다.
+다운로드한 콘텐츠 기능은 사용자가 오프라인 상태인 동안에 미디어 소비를 추적하는 기능을 제공합니다. 예를 들어 사용자가 모바일 디바이스에 앱을 다운로드하여 설치한 다음 앱을 사용하여 콘텐츠를 디바이스의 로컬 저장소에 다운로드합니다. 다운로드한 데이터를 추적하기 위해 Adobe는 다운로드한 콘텐츠 기능을 개발했습니다. 이 기능을 사용하면 사용자가 디바이스의 저장소에서 콘텐츠를 재생할 때 디바이스의 연결 상태에 관계없이 추적 데이터가 디바이스에 저장됩니다. 사용자가 재생 세션을 마치고 디바이스가 다시 온라인 상태가 되면 저장된 추적 정보가 단일 페이로드로 Media Collection API 백 엔드에 전송됩니다. 그런 다음 저장된 추적 정보가 Media Collection API에서 평소대로 처리 및 보고됩니다.
 
 다음 두 가지 방법을 대조합니다.
 
@@ -56,14 +63,14 @@ ht-degree: 93%
 ### 이벤트 스키마
 
 다운로드한 콘텐츠 기능은 (표준) 온라인 Media Collection API의 오프라인 버전이므로, 플레이어가 이벤트 데이터를 배치 단위로 모아 백엔드로 전송할 때에도 온라인 호출 시 사용하는 것과 동일한 이벤트 스키마를 사용해야 합니다. 이들 스키마에 대한 자세한 내용은 다음을 참조하십시오.
-* [개요;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [이벤트 요청 확인](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+* [개요;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+* [이벤트 요청 확인](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)
 
 ### 이벤트 순서
 
 * 배치 페이로드의 첫 번째 이벤트는 Media Collection API를 사용할 때처럼 `sessionStart`여야 합니다.
 * 다운로드한 콘텐츠를 전송하는 백 엔드를 표시하려면 **`media.downloaded: true`**&#x200B;를 `sessionStart` 이벤트의 표준 메타데이터 매개변수(`params` 키)에 포함해야 합니다. 다운로드한 데이터를 보낼 때 이 매개변수가 없거나 거짓으로 설정되어 있으면 이 API는 400 응답 코드(잘못된 요청)를 반환합니다. 이 매개변수는 백 엔드에 다운로드한 콘텐츠와 라이브 콘텐츠를 구별합니다. `media.downloaded: true`가 활동 상태 세션에 설정되어 있는 경우 API에서 똑같이 400 응답 코드가 발생합니다.
-* 표시되는 순서로 플레이어 이벤트를 올바르게 저장하는 것은 구현에 따라 달라집니다.
+* 플레이어 이벤트를 표시된 순서대로 올바르게 저장하는 것은 구현의 책임입니다.
 
 ### 응답 코드
 

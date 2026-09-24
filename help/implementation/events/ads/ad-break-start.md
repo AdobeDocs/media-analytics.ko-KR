@@ -3,13 +3,11 @@ title: 광고 브레이크 시작
 description: 광고 브레이크(하나 이상의 광고 시퀀스)의 시작 신호를 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # 광고 브레이크 시작
 
@@ -163,7 +161,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `adBreakStart` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `adBreakStart` POST 보내기:
 
 ```json
 {

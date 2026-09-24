@@ -3,13 +3,11 @@ title: 챕터 이름
 description: 챕터 제목별로 챕터 수준 보고를 분류할 수 있도록 각 챕터의 친숙한 이름을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
-
+source-wordcount: '234'
+ht-degree: 7%
 ---
-
 
 # 챕터 이름
 
@@ -186,6 +184,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

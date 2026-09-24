@@ -3,13 +3,11 @@ title: 음소거
 description: 뷰어가 오디오를 음소거하고 음소거를 해제하는 시점을 추적하여 백엔드가 음소거 참여를 보고할 수 있도록 합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 6%
-
+source-wordcount: '328'
+ht-degree: 7%
 ---
-
 
 # 음소거
 
@@ -182,6 +180,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: 미디어 피드 유형
 description: '지역 또는 품질에 따라 달라지는 콘텐츠의 브로드캐스트 피드 유형(예: East-HD 또는 West-SD)을 식별합니다.'
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '270'
 ht-degree: 7%
-
 ---
-
 
 # 미디어 피드 유형
 
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 세션 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 세션 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)를 참조하십시오.
 
 >[!ENDTABS]

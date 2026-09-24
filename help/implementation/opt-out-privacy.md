@@ -8,23 +8,29 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 3fd9ffcb997e1570abb983107e69d183b1c8b311
+    internal-label: Privacy
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 798
+source-wordcount: '806'
 ht-degree: 3%
-
 ---
-
 # 옵트아웃 및 개인 정보 설정
 
 사용자가 추적을 옵트아웃하면 스트리밍 미디어 라이브러리는 즉시 모든 데이터 수집 활동을 중지합니다. 해당 사용자에 대해 세션 시작 호출, 하트비트 Ping 및 이벤트 추적 데이터가 Adobe 데이터 수집 서버로 전송되지 않습니다.
@@ -161,7 +167,7 @@ fetch("https://edge.adobedc.net/va/v2/sessions", {
 
 >[!TAB Media SDK JS 3.x]
 
-Media SDK JS 3.x 라이브러리는 Adobe 방문자 API(ID 서비스) 옵트아웃 상태를 따릅니다. 사용자가 방문자 API를 사용하여 옵트아웃하면 Media SDK은 모든 추적 호출을 자동으로 억제합니다.
+Media SDK JS 3.x 라이브러리는 Adobe 방문자 ID 서비스 옵트아웃 상태를 따릅니다. 사용자가 ID 서비스를 사용하여 옵트아웃하면 Media SDK은 모든 추적 호출을 자동으로 억제합니다.
 
 ```javascript
 var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
@@ -172,7 +178,7 @@ visitor.setOptOut(true);
 
 추적을 복원하려면 `false`을(를) `setOptOut()`에 전달합니다.
 
-자세한 내용은 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하십시오.
+자세한 내용은 [Adobe 방문자 ID 서비스](https://experienceleague.adobe.com/kr/docs/id-service/using/home)를 참조하십시오.
 
 >[!TAB Chromecast]
 
@@ -244,7 +250,7 @@ CCPA에서 부분 옵트아웃을 수행하려면 `sessionStart` 요청의 `para
 * `analytics.optOutServerSideForwarding`: Adobe Analytics과 다른 Experience Cloud 솔루션(예: Audience Manager) 간에 공유되는 데이터를 옵트아웃하려면 `true`(으)로 설정합니다.
 * `analytics.optOutShare`: 다른 Adobe Analytics 클라이언트와의 페더레이션 데이터 공유를 옵트아웃하려면 `true`(으)로 설정하십시오.
 
-사용 가능한 매개 변수의 전체 목록을 보려면 [Media Collection API 요청 매개 변수 참조](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)를 참조하십시오.
+사용 가능한 매개 변수의 전체 목록을 보려면 [Media Collection API 요청 매개 변수 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters)를 참조하십시오.
 
 >[!ENDTABS]
 

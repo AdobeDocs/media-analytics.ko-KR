@@ -3,13 +3,11 @@ title: 버퍼 시작
 description: 미디어 플레이어가 버퍼링 상태에 들어갔음을 알립니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '205'
 ht-degree: 7%
-
 ---
-
 
 # 버퍼 시작
 
@@ -146,7 +144,7 @@ adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `bufferStart` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `bufferStart` POST 보내기:
 
 ```json
 {

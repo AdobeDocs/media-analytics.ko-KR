@@ -3,13 +3,11 @@ title: 세션 시작
 description: 미디어 세션의 시작 신호를 보내고 모든 후속 이벤트에 필요한 세션 ID를 얻습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # 세션 시작
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB 미디어 컬렉션 API]
 
-[세션 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)에 `sessionStart` POST를 보냅니다. 응답 `Location` 헤더에 모든 후속 이벤트 요청에 사용할 세션 ID가 포함되어 있습니다.
+[세션 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)에 `sessionStart` POST를 보냅니다. 응답 `Location` 헤더에 모든 후속 이벤트 요청에 사용할 세션 ID가 포함되어 있습니다.
 
 ```json
 {

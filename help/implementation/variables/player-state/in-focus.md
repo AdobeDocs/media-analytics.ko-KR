@@ -3,13 +3,11 @@ title: 포커스
 description: 백엔드가 포커스 참여를 보고할 수 있도록 플레이어가 뷰어의 화면에 포커스가 있는 시기를 추적합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 5%
-
+source-wordcount: '354'
+ht-degree: 6%
 ---
-
 
 # 포커스
 
@@ -182,6 +180,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)를 참조하십시오.
+전체 요청 구조에 대해서는 [Media Collection API 이벤트 참조](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)를 참조하십시오.
 
 >[!ENDTABS]

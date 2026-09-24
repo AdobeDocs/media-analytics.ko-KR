@@ -3,13 +3,11 @@ title: 챕터 완료
 description: 챕터 세그먼트 재생이 완료되었음을 나타냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '150'
 ht-degree: 10%
-
 ---
-
 
 # 챕터 완료
 
@@ -123,7 +121,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_COMPLETE)
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `chapterComplete` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `chapterComplete` POST 보내기:
 
 ```json
 {

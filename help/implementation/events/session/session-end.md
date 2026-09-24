@@ -3,13 +3,11 @@ title: 세션 종료
 description: 뷰어가 콘텐츠를 중단하면 미디어 세션을 즉시 닫습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 4%
-
+source-wordcount: '323'
+ht-degree: 5%
 ---
-
 
 # 세션 종료
 
@@ -128,7 +126,7 @@ ADBMobile().mediaTrackSessionEnd()
 
 >[!TAB 미디어 컬렉션 API]
 
-[이벤트 끝점](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)에 `sessionEnd` POST 보내기:
+[이벤트 끝점](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)에 `sessionEnd` POST 보내기:
 
 ```json
 {
