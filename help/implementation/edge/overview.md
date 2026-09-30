@@ -3,13 +3,27 @@ title: Edge 구현 개요
 description: Edge Network을 통해 스트리밍 미디어 데이터를 수집하는 데 필요한 Adobe Experience Platform 스키마, 데이터 세트 및 데이터 스트림을 설정합니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 4%
-
+ht-degree: 5%
 ---
-
 # Edge 구현 개요
 
 Adobe Experience Platform Edge Network을 사용하면 여러 제품을 대상으로 한 데이터를 단일 엔드포인트로 보낸 다음, 적절한 정보를 각 제품에 전달할 수 있습니다. 이는 스트리밍 미디어 컬렉션을 구현하는 권장 방법이며, 단일 구현에서 Adobe Analytics과 Customer Journey Analytics을 모두 지원하는 유일한 방법입니다.
@@ -158,9 +172,9 @@ Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데
 
    * Adobe 솔루션을 기반으로 데이터스트림에 적절한 서비스를 추가합니다. 서비스 추가에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ko#view-details)에서 &quot;데이터 스트림에 서비스 추가&quot;를 참조하십시오.
 
-      * **[!UICONTROL Adobe Analytics]**(Adobe Analytics을 사용하는 경우): [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의합니다.
+     * **[!UICONTROL Adobe Analytics]**(Adobe Analytics을 사용하는 경우): [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의합니다.
 
-      * **[!UICONTROL Adobe Experience Platform]**(Customer Journey Analytics, Adobe Journey Optimizer 또는 Real-Time Customer Data Platform을 사용하는 경우)
+     * **[!UICONTROL Adobe Experience Platform]**(Customer Journey Analytics, Adobe Journey Optimizer 또는 Real-Time Customer Data Platform을 사용하는 경우)
 
      ![Adobe Analytics 서비스 추가](assets/datastream-add-service.png)
 

@@ -3,20 +3,30 @@ title: 스트리밍 미디어용 Roku Edge 설정
 description: 스트리밍 미디어 데이터를 Adobe Experience Platform으로 보내도록 Edge Network Roku SDK을 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # 스트리밍 미디어용 Roku Edge 설정
 
 [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku)&#x200B;(BrightScript)가 Roku 채널에서 미디어 세션 데이터를 수집하여 Edge Network으로 보냅니다. Roku는 코드로 구성되어 있으며 태그를 사용하지 않습니다.
 
 * **필수 구성 요소**:
-   * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
-   * [시작 안내서](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)에 설명된 대로 [GitHub 릴리스](https://github.com/adobe/aepsdk-roku/releases)에서 SDK을 다운로드하고 채널에 추가합니다.
+  * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
+  * [시작 안내서](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)에 설명된 대로 [GitHub 릴리스](https://github.com/adobe/aepsdk-roku/releases)에서 SDK을 다운로드하고 채널에 추가합니다.
 
 ## 미디어용 Roku Edge SDK 구성
 

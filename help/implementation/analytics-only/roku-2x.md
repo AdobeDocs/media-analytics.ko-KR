@@ -3,13 +3,23 @@ title: 스트리밍 미디어용 Roku 2.x 설정
 description: SceneGraph 채널을 비롯한 Analytics 전용 스트리밍 미디어 구현을 위한 Roku용 Adobe Media SDK 2.x를 설치하고 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
-
 ---
-
 # 스트리밍 미디어용 Roku 2.x 설정
 
 Roku(`adbmobile.brs`)용 Adobe Media SDK 2.x는 BrightScript로 작성된 Roku 채널의 스트리밍 미디어 데이터를 Adobe Analytics으로 직접 전송합니다. 또한 Audience Manager을 통해 대상 데이터를 수집하고 미디어 이벤트를 통해 참여를 측정합니다.
@@ -19,9 +29,9 @@ Roku(`adbmobile.brs`)용 Adobe Media SDK 2.x는 BrightScript로 작성된 Roku �
 >이 페이지에서는 Roku용 Analytics 전용 Media SDK 2.x에 대해 설명합니다. 새로운 구현의 경우 Adobe에서는 Adobe Analytics 외에도 Customer Journey Analytics, Adobe Journey Optimizer 및 Real-Time CDP에서 데이터를 사용할 수 있도록 하는 [Roku Edge SDK](/help/implementation/edge/roku.md)을(를) 권장합니다.
 
 * **필수 구성 요소**:
-   * [Analytics 전용 구현 개요](overview.md)를 완료합니다.
-   * [Roku용 Media SDK을 다운로드합니다](/help/getting-started/download-sdks.md).
-   * 미디어 플레이어에서 플레이어 이벤트를 구독하기 위한 API와 미디어 이름 및 플레이헤드 위치와 같은 플레이어 정보를 제공하는 API를 포함합니다.
+  * [Analytics 전용 구현 개요](overview.md)를 완료합니다.
+  * [Roku용 Media SDK을 다운로드합니다](/help/getting-started/download-sdks.md).
+  * 미디어 플레이어에서 플레이어 이벤트를 구독하기 위한 API와 미디어 이름 및 플레이헤드 위치와 같은 플레이어 정보를 제공하는 API를 포함합니다.
 
 ## SDK 설치
 

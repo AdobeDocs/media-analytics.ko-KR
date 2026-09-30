@@ -3,20 +3,30 @@ title: 스트리밍 미디어용 웹 SDK 태그 확장 설정
 description: Adobe Experience Platform Web SDK 태그 확장 기능에서 스트리밍 미디어 컬렉션을 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
-
 ---
-
 # 스트리밍 미디어용 웹 SDK 태그 확장 설정
 
 Adobe Experience Platform Web SDK 태그 확장을 사용하면 `alloy.js` 구성 코드 없이 데이터 수집 UI에서 스트리밍 미디어 컬렉션을 구성할 수 있습니다. 이 페이지에서는 태그 구성에 대해 설명합니다. 대신 코드에서 웹 SDK을 구성하려면 [스트리밍 미디어용 웹 SDK 설정](web-sdk.md)을 참조하십시오.
 
 * **필수 구성 요소**:
-   * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
-   * 웹 SDK 태그 확장을 설치하고 구성합니다. [웹 SDK 태그 확장 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/overview)를 참조하세요.
+  * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
+  * 웹 SDK 태그 확장을 설치하고 구성합니다. [웹 SDK 태그 확장 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/overview)를 참조하세요.
 
 ## 확장에서 스트리밍 미디어 구성
 

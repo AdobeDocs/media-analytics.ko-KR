@@ -3,13 +3,25 @@ title: 챕터 위치
 description: 콘텐츠 내의 각 챕터 인덱스를 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 2%
-
 ---
-
 
 # 챕터 위치
 
@@ -48,7 +60,7 @@ ht-degree: 2%
 
 `a.media.chapter.position`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. 이 접근 방법에서는 분류 유지 관리 없이도 챕터 위치를 히트당 값으로 캡처합니다.
 
-챕터 위치와 상위 [챕터](chapter.md) 차원 간의 보장된 1:1 관계를 잃게 됩니다. 구현에서 이벤트 간에 동일한 챕터 ID에 대해 일관되지 않은 값을 전송하는 경우 동일한 챕터 아래에 여러 위치가 나타날 수 있습니다. 값 업데이트는 앞으로 이동하는 데이터에만 적용됩니다.
+챕터 위치와 상위 [Chapter](chapter.md) 차원 간의 1:1 관계가 보장되지 않습니다. 구현에서 이벤트 간에 동일한 챕터 ID에 대해 일관되지 않은 값을 전송하는 경우 동일한 챕터 아래에 여러 위치가 나타날 수 있습니다. 값 업데이트는 앞으로 이동하는 데이터에만 적용됩니다.
 
 ## 차원 항목
 

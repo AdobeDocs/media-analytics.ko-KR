@@ -3,20 +3,30 @@ title: 스트리밍 미디어용 웹 SDK 설정
 description: Adobe Experience Platform 웹 SDK(alloy.js)를 구성하여 스트리밍 미디어 데이터를 Edge Network으로 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
-
 ---
-
 # 스트리밍 미디어용 웹 SDK 설정
 
 Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/js-overview)&#x200B;(`alloy.js`, 버전 2.20.0 이상)의 `streamingMedia` 구성 요소는 웹 사이트에서 미디어 세션 데이터를 수집하여 Edge Network으로 보냅니다. 이 페이지에서는 코드 내(`alloy.js`) 구성에 대해 설명합니다. 대신 태그를 통해 웹 SDK을 구성하려면 [스트리밍 미디어용 웹 SDK 태그 확장 설정](web-sdk-tags.md)을 참조하십시오.
 
 * **필수 구성 요소**:
-   * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
-   * 웹 SDK 2.20.0 이상을 설치합니다. [웹 SDK 설치](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/install/overview)를 참조하십시오.
+  * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
+  * 웹 SDK 2.20.0 이상을 설치합니다. [웹 SDK 설치](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/install/overview)를 참조하십시오.
 
 ## streamingMedia 구성 요소 구성
 

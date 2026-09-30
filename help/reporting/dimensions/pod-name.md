@@ -3,13 +3,25 @@ title: Pod 이름
 description: 각 광고 브레이크의 친숙한 이름을 보고합니다. 분류 또는 사용자 지정 처리 규칙을 사용하여 Adobe Analytics에서 수집합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 
 # Pod 이름
 
@@ -38,7 +50,7 @@ Pod 이름은 플레이어가 [광고 브레이크 시작](/help/implementation/
 
 보고서 세트에 대해 **[[!UICONTROL 미디어 광고]](/help/reporting/setup/analytics-reporting.md)**&#x200B;를 사용하도록 설정하면 Adobe에서 Pod 이름 분류 구조를 자동으로 만듭니다. [분류 세트](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)를 사용하여 분류를 채우고 유지 관리합니다.
 
-이 접근 방식은 각 pod ID와 알기 쉬운 이름 간에 보장된 1:1 관계를 제공합니다. 분류 업데이트는 해당 ID의 모든 내역 데이터에 소급하여 적용됩니다.
+이 접근 방식은 각 pod ID와 친숙한 이름 간에 보장된 1:1 관계를 제공합니다. 분류 업데이트는 해당 ID의 모든 내역 데이터에 소급하여 적용됩니다.
 
 >[!IMPORTANT]
 >
@@ -48,7 +60,7 @@ Pod 이름은 플레이어가 [광고 브레이크 시작](/help/implementation/
 
 `a.media.ad.podFriendlyName`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. 이 접근 방법에서는 분류 유지 관리 없이도 친숙한 이름을 히트당 값으로 캡처합니다.
 
-Pod 이름과 상위 [광고 pod](ad-pod.md) 차원 간에 보장된 1:1 관계를 잃게 됩니다. 구현에서 이벤트 간에 동일한 pod ID에 대해 일관되지 않은 값을 전송하는 경우 동일한 광고 pod 아래에 여러 이름이 표시될 수 있습니다. 값 업데이트는 앞으로 이동하는 데이터에만 적용됩니다.
+Pod 이름과 상위 [광고 pod](ad-pod.md) 차원 간의 1:1 관계가 보장되지 않습니다. 구현에서 이벤트 간에 동일한 pod ID에 대해 일관되지 않은 값을 전송하는 경우 동일한 광고 pod 아래에 여러 이름이 표시될 수 있습니다. 값 업데이트는 앞으로 이동하는 데이터에만 적용됩니다.
 
 ## 차원 항목
 

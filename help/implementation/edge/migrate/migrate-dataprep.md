@@ -4,27 +4,39 @@ description: 사용자 정의 필드에 대한 데이터 유형 데이터 준비
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
-TQID: https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA
+TQID: 'https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
+    internal-label: Data collection
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 700
+source-wordcount: '700'
 ht-degree: 0%
-
 ---
-
 # 사용자 정의 필드에 대한 데이터 준비를 새 스트리밍 미디어 필드로 마이그레이션
 
 이 문서에서는 Adobe 스트리밍 미디어 컬렉션 데이터에 대해 활성화된 Adobe 데이터 컬렉션 흐름 위에 존재하는 데이터 준비 서비스를 마이그레이션하는 프로세스에 대해 설명합니다. 마이그레이션은 &quot;Media&quot;라는 Adobe 스트리밍 미디어 컬렉션 데이터 형식에서 데이터 준비 매핑을 &quot;[미디어 보고 세부 정보](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;이라는 새로운 해당 데이터 형식을 사용하도록 전환합니다.

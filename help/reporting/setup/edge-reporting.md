@@ -3,13 +3,25 @@ title: Edge 구현에 대한 보고 설정
 description: Edge Network을 통해 수집된 스트리밍 미디어 데이터에 대해 보고하도록 Customer Journey Analytics을 구성합니다.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 6%
-
+ht-degree: 7%
 ---
-
 # Edge 구현에 대한 보고 설정
 
 Edge Network을 통해 스트리밍 미디어 컬렉션을 구현한 후 수집된 데이터에 대해 보고하도록 Customer Journey Analytics을 구성합니다.
@@ -34,13 +46,13 @@ Edge Network을 통해 스트리밍 미디어 컬렉션을 구현한 후 수집�
 
       | 구성 요소 | 유형 | XDM 경로 | 컨텍스트 레이블 |
       |---|---|---|---|
-      | [콘텐츠](/help/reporting/dimensions/content.md) | 차원 | `mediaReporting.sessionDetails.name` | 미디어: 컨텐츠 ID |
-      | [콘텐츠 이름](/help/reporting/dimensions/content-name.md) | 차원 | `mediaReporting.sessionDetails.friendlyName` | 미디어: 비디오 이름 |
+      | [콘텐츠](/help/reporting/dimensions/content.md) | 치수 | `mediaReporting.sessionDetails.name` | 미디어: 컨텐츠 ID |
+      | [콘텐츠 이름](/help/reporting/dimensions/content-name.md) | 치수 | `mediaReporting.sessionDetails.friendlyName` | 미디어: 비디오 이름 |
       | [콘텐츠 길이](/help/reporting/dimensions/content-length.md) | 차원 | `mediaReporting.sessionDetails.length` | 미디어: 비디오 길이 |
       | [표시](/help/reporting/dimensions/show.md) | 차원 | `mediaReporting.sessionDetails.show` | 미디어: 표시 |
       | [시즌](/help/reporting/dimensions/season.md) | 차원 | `mediaReporting.sessionDetails.season` | 미디어 : 시즌 |
       | [에피소드](/help/reporting/dimensions/episode.md) | 차원 | `mediaReporting.sessionDetails.episode` | 미디어: 에피소드 |
-      | 이벤트 유형 | 차원 | `eventType` | 미디어: 이벤트 유형 |
+      | 이벤트 유형 | 치수 | `eventType` | 미디어: 이벤트 유형 |
       | [콘텐츠 체류 시간](/help/reporting/metrics/content-time-spent.md) | 지표 | `mediaReporting.sessionDetails.timePlayed` | 미디어: 컨텐츠 체류 시간 |
       | [미디어 체류 시간](/help/reporting/metrics/media-time-spent.md) | 지표 | `mediaReporting.sessionDetails.totalTimePlayed` | 미디어: 미디어 사용 시간 |
       | [총 일시 중단 기간](/help/reporting/metrics/total-pause-duration.md) | 지표 | `mediaReporting.sessionDetails.pauseTime` | 미디어: 총 일시 중단 기간 |
