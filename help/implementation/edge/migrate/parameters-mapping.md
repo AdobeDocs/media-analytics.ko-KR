@@ -4,25 +4,35 @@ description: Analytics Source 커넥터 및 Customer Journey Analytics과 함께
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+TQID: 'https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1331
+source-wordcount: '1331'
 ht-degree: 19%
-
 ---
-
 # Adobe Experience Platform 및 Customer Journey Analytics에 대한 Media Analytics 매개 변수 매핑
 
 이 문서에서는 Adobe Experience Platform 및 Customer Journey Analytics 내에서 사용되는 모든 Media Analytics 매개 변수의 포괄적인 목록을 제공합니다. 각 매개 변수를 해당 XDM 필드 경로에 매핑하여 [Analytics Source 커넥터](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/adobe-applications/analytics) 또는 [분류용 Analytics Source 커넥터](https://experienceleague.adobe.com/kr/docs/experience-platform/sources/connectors/adobe-applications/classifications)를 통해 Adobe Analytics에서 플랫폼으로 가져온 데이터의 통합을 지원하기 위한 것입니다.
@@ -161,24 +171,24 @@ Customer Journey Analytics에서 연결을 설정하려면 다음을 수행하�
 각 조회 데이터 세트(분류 데이터 세트)에 대해 다음과 같이 구성합니다.
 
 * **비디오 데이터 세트**:
-   * 키: `_sandbox.key`
-   * 일치하는 키: `Asset ID (media.mediaTimed.primaryAssetReference._id)`
-   * 데이터 원본 형식: `Web Data`
+  * 키: `_sandbox.key`
+  * 일치하는 키: `Asset ID (media.mediaTimed.primaryAssetReference._id)`
+  * 데이터 원본 형식: `Web Data`
 
 * **videoad 데이터 세트**:
-   * 키: `_sandbox.key`
-   * 일치하는 키: `Ad ID (advertising.adAssetReference._id)`
-   * 데이터 원본 형식: `Web Data`
+  * 키: `_sandbox.key`
+  * 일치하는 키: `Ad ID (advertising.adAssetReference._id)`
+  * 데이터 원본 형식: `Web Data`
 
 * **videoadpod 데이터 세트**:
-   * 키: `_sandbox.key`
-   * 일치하는 키: `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
-   * 데이터 원본 형식: `Web Data`
+  * 키: `_sandbox.key`
+  * 일치하는 키: `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
+  * 데이터 원본 형식: `Web Data`
 
 * **videochapter 데이터 집합**:
-   * 키: `_sandbox.key`
-   * 일치하는 키: `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
-   * 데이터 원본 형식: `Web Data`
+  * 키: `_sandbox.key`
+  * 일치하는 키: `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
+  * 데이터 원본 형식: `Web Data`
 
 ### 보고 고려 사항
 
@@ -242,7 +252,7 @@ Adobe Analytics에서 사용자 지정 변수는 각 보고서 세트 내에 정
 | [[!UICONTROL Creative URL]](/help/reporting/dimensions/creative-url.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | 차원 |
 | [[!UICONTROL 배치 ID]](/help/reporting/dimensions/placement-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | 차원 |
 | 초당 프레임 | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>및<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 모두 |
-| Media SDK 오류 ID | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 지표 |
+| 미디어 SDK 오류 ID | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 지표 |
 | [[!UICONTROL 영향을 받는 스트림 중단]](/help/reporting/metrics/stall-impacted-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 지표 |
 | [[!UICONTROL 중단 이벤트]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 지표 |
 | [[!UICONTROL 총 중단 기간]](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 지표 |

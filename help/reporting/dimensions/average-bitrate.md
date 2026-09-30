@@ -3,19 +3,31 @@ title: 평균 비트율(차원)
 description: 각 세션의 버킷 평균 비트율을 100kbps 간격으로 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 7%
-
+source-wordcount: '170'
+ht-degree: 8%
 ---
-
 
 # 평균 비트율(차원)
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는 각 세션의 버킷 비트 전송률을 보고하는&#x200B;**평균 비트 전송률**&#x200B;차원을 다룹니다. 원시 가중 평균 지표에 대해서는 [평균 비트 전송률(지표)](/help/reporting/metrics/average-bitrate.md)을 참조하십시오. 이 변수를 수집하는 방법은 [Bitrate](/help/implementation/variables/quality/bitrate.md)을(를) 참조하십시오.*
+*이 페이지는 각 세션의 버킷 비트 전송률을 보고하는&#x200B;**평균 비트 전송률**차원을 다룹니다. 원시 가중 평균 지표에 대해서는 [평균 비트 전송률(지표)](/help/reporting/metrics/average-bitrate.md)을 참조하십시오. 이 변수를 수집하는 방법은 [Bitrate](/help/implementation/variables/quality/bitrate.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -26,7 +38,7 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 품질]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.qoe.bitrateAverageBucket`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 데이터 피드 | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 

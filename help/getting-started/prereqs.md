@@ -5,7 +5,7 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
+TQID: 'https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
     internal-label: Analytics
@@ -16,9 +16,17 @@ feature_v2:
     internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
     internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+  - id: a421fb65-2c82-457a-921c-28c46b697a39
+    internal-label: Analytics basics
 subfeature_v2:
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
     internal-label: Methods
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+  - id: c457b289-f974-4a67-a5b6-dec3ffa77675
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -29,7 +37,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 10%
@@ -52,7 +60,7 @@ Analytics에서 보고서를 활성화하고 수집 중인 콘텐츠 및 광고 
 
    * **Analytics 전용 구현**: CX Enterprise 솔루션에서 방문자를 일관되게 식별하려면 Adobe 방문자 ID 서비스를 사용하도록 설정해야 합니다. 방문자 ID 서비스는 각 사이트 방문자에게 고유한 영구 ID를 할당하며, 이를 통해 구독하는 모든 CX Enterprise 솔루션에서 해당 ID를 공유할 수 있습니다.
 
-     자세한 내용은 [Adobe 방문자 ID 서비스 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)를 참조하세요.
+     자세한 내용은 [Adobe 방문자 ID 서비스 설명서](https://experienceleague.adobe.com/docs/id-service/using/home.html)를 참조하세요.
 
 1. **구현 방식에 대한 추가 사전 요구 사항 보기**
 

@@ -3,13 +3,23 @@ title: Media Analytics 태그 확장 설정
 description: Adobe Media Analytics(3.x SDK) for Audio and Video 태그 확장 을 사용하여 Analytics 전용 스트리밍 미디어를 구현합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 12%
-
 ---
-
 # Media Analytics 태그 확장 설정
 
 오디오 및 비디오 태그 확장 용 Adobe Media Analytics(3.x SDK)는 수동으로 JavaScript을 설치하지 않고 태그를 통해 JavaScript(3.x)용 Media SDK을 배포합니다. 이 페이지에서는 태그 구성에 대해 설명합니다. 대신 코드에 SDK을 설치하려면 [스트리밍 미디어용 JavaScript 설정](javascript.md)을 참조하십시오. 새로운 구현의 경우 권장되는 [웹 SDK 태그 확장](/help/implementation/edge/web-sdk-tags.md) Edge 경로를 고려하십시오.

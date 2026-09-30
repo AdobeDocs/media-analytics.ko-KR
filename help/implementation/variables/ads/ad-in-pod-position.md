@@ -3,7 +3,19 @@ title: Pod 위치의 광고
 description: 상위 광고 브레이크 내에 광고의 색인 위치를 설정합니다. 첫 번째 광고에는 색인 0이 있습니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 6%
@@ -13,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는 pod 위치의&#x200B;**Ad**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [Pod 위치의 광고](/help/reporting/dimensions/ad-in-pod-position.md)를 참조하십시오.*
+*이 페이지에서는 pod 위치의&#x200B;**Ad**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대해서는 [Pod 위치의 광고](/help/reporting/dimensions/ad-in-pod-position.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ pod의 광고 위치 변수는 상위 광고 브레이크 내에 있는 광고�
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.ad.podPosition` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.ad.podPosition` |
 | **필수** | 예 |
 | **전송 시점** | [광고 시작](/help/implementation/events/ads/ad-start.md), 광고 닫기 |

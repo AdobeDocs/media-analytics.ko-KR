@@ -3,19 +3,31 @@ title: 방송 시간대
 description: 콘텐츠가 브로드캐스트 또는 재생될 당시의 시간 버킷(아침, 오후, 프라임타임, 늦은 밤)을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 8%
-
+source-wordcount: '151'
+ht-degree: 9%
 ---
-
 
 # 방송 시간대
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**일 파트**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [일 파트](/help/implementation/variables/standard-metadata/day-part.md)를 참조하십시오.*
+*이 페이지는&#x200B;**일 파트**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [일 파트](/help/implementation/variables/standard-metadata/day-part.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +40,7 @@ ht-degree: 8%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.dayPart`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |
 

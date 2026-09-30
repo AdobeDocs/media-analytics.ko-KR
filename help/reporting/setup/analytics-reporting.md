@@ -3,13 +3,25 @@ title: Analytics 전용 구현에 대한 보고 설정
 description: 스트리밍 미디어 데이터를 수집 및 보고할 수 있도록 Adobe Analytics에서 미디어 보고서 세트 모듈을 활성화합니다.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 11%
-
 ---
-
 # Analytics 전용 구현에 대한 보고 설정
 
 Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려면 먼저 해당 데이터를 수신하는 각 보고서 세트가 적절한 미디어 모듈을 활성화하도록 구성되어야 합니다. 이 페이지에서는 이러한 모듈을 활성화하는 방법과 결과 보고서를 찾을 수 있는 위치를 설명합니다.
@@ -39,30 +51,30 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++차원 및 지표를 보려면 선택
 
-   * **차원:**
-      * [[!UICONTROL 콘텐츠]](/help/reporting/dimensions/content.md)
-      * [[!UICONTROL 콘텐츠 채널]](/help/reporting/dimensions/content-channel.md)
-      * [[!UICONTROL 콘텐츠 길이(변수)]](/help/reporting/dimensions/content-length.md)
-      * [[!UICONTROL 콘텐츠 이름(변수)]](/help/reporting/dimensions/content-name.md)
-      * [[!UICONTROL 콘텐츠 플레이어 이름]](/help/reporting/dimensions/content-player-name.md)
-      * [[!UICONTROL 콘텐츠 세그먼트]](/help/reporting/dimensions/content-segment.md)
-      * [[!UICONTROL 콘텐츠 형식]](/help/reporting/dimensions/content-type.md)
-      * [[!UICONTROL 미디어 경로]](/help/reporting/dimensions/media-path.md)
-      * [[!UICONTROL 미디어 세션 ID]](/help/reporting/dimensions/media-session-id.md)
-      * [[!UICONTROL 스트림 형식]](/help/reporting/dimensions/stream-type.md)
-   * **지표:**
-      * [[!UICONTROL 평균 분당 시청 대상자]](/help/reporting/metrics/average-minute-audience.md)
-      * [[!UICONTROL 컨텐츠 완료]](/help/reporting/metrics/content-completes.md)
-      * [[!UICONTROL 콘텐츠 다시 시작]](/help/reporting/metrics/content-resumes.md)
-      * [[!UICONTROL 콘텐츠 세그먼트 보기]](/help/reporting/metrics/content-segment-views.md)
-      * [[!UICONTROL 콘텐츠 시작]](/help/reporting/metrics/content-starts.md)
-      * [[!UICONTROL 콘텐츠 체류 시간]](/help/reporting/metrics/content-time-spent.md)
-      * [[!UICONTROL 미디어 시작]](/help/reporting/metrics/media-starts.md)
-      * [[!UICONTROL 이벤트 일시 중지]](/help/reporting/metrics/pause-events.md)
-      * [[!UICONTROL 일시 중지된 영향을 받은 스트림]](/help/reporting/metrics/paused-impacted-streams.md)
-      * [[!UICONTROL 진행률 마커]](/help/reporting/metrics/progress-markers.md)
-      * [[!UICONTROL 총 일시 중단 기간]](/help/reporting/metrics/total-pause-duration.md)
-      * [[!UICONTROL 재생된 고유 시간]](/help/reporting/metrics/unique-time-played.md)
+  * **차원:**
+    * [[!UICONTROL 콘텐츠]](/help/reporting/dimensions/content.md)
+    * [[!UICONTROL 콘텐츠 채널]](/help/reporting/dimensions/content-channel.md)
+    * [[!UICONTROL 콘텐츠 길이(변수)]](/help/reporting/dimensions/content-length.md)
+    * [[!UICONTROL 콘텐츠 이름(변수)]](/help/reporting/dimensions/content-name.md)
+    * [[!UICONTROL 콘텐츠 플레이어 이름]](/help/reporting/dimensions/content-player-name.md)
+    * [[!UICONTROL 콘텐츠 세그먼트]](/help/reporting/dimensions/content-segment.md)
+    * [[!UICONTROL 콘텐츠 형식]](/help/reporting/dimensions/content-type.md)
+    * [[!UICONTROL 미디어 경로]](/help/reporting/dimensions/media-path.md)
+    * [[!UICONTROL 미디어 세션 ID]](/help/reporting/dimensions/media-session-id.md)
+    * [[!UICONTROL 스트림 형식]](/help/reporting/dimensions/stream-type.md)
+  * **지표:**
+    * [[!UICONTROL 평균 분당 시청 대상자]](/help/reporting/metrics/average-minute-audience.md)
+    * [[!UICONTROL 컨텐츠 완료]](/help/reporting/metrics/content-completes.md)
+    * [[!UICONTROL 콘텐츠 다시 시작]](/help/reporting/metrics/content-resumes.md)
+    * [[!UICONTROL 콘텐츠 세그먼트 보기]](/help/reporting/metrics/content-segment-views.md)
+    * [[!UICONTROL 콘텐츠 시작]](/help/reporting/metrics/content-starts.md)
+    * [[!UICONTROL 콘텐츠 체류 시간]](/help/reporting/metrics/content-time-spent.md)
+    * [[!UICONTROL 미디어 시작]](/help/reporting/metrics/media-starts.md)
+    * [[!UICONTROL 이벤트 일시 중지]](/help/reporting/metrics/pause-events.md)
+    * [[!UICONTROL 일시 중지된 영향을 받은 스트림]](/help/reporting/metrics/paused-impacted-streams.md)
+    * [[!UICONTROL 진행률 마커]](/help/reporting/metrics/progress-markers.md)
+    * [[!UICONTROL 총 일시 중단 기간]](/help/reporting/metrics/total-pause-duration.md)
+    * [[!UICONTROL 재생된 고유 시간]](/help/reporting/metrics/unique-time-played.md)
 
   +++
 
@@ -70,28 +82,28 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++차원, 분류 및 지표를 보려면 선택하십시오.
 
-   * **차원:**
-      * [[!UICONTROL 광고]](/help/reporting/dimensions/ad.md)
-      * [[!UICONTROL Pod 위치의 광고]](/help/reporting/dimensions/ad-in-pod-position.md)
-      * [[!UICONTROL 광고 길이(변수)]](/help/reporting/dimensions/ad-length.md)
-      * [[!UICONTROL 광고 이름(변수)]](/help/reporting/dimensions/ad-name.md)
-      * [[!UICONTROL 광고 플레이어 이름]](/help/reporting/dimensions/ad-player-name.md)
-      * [[!UICONTROL 광고 pod]](/help/reporting/dimensions/ad-pod.md)
-      * [[!UICONTROL 광고주]](/help/reporting/dimensions/advertiser.md)
-      * [[!UICONTROL 캠페인 ID]](/help/reporting/dimensions/campaign-id.md)
-   * **분류 차원:**
-      * [[!UICONTROL 자산 ID]](/help/reporting/dimensions/asset-id.md)
-      * [[!UICONTROL 콘텐츠 등급]](/help/reporting/dimensions/content-rating.md)
-      * [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md)
-      * [[!UICONTROL 첫 방송 날짜]](/help/reporting/dimensions/first-air-date.md)
-      * [[!UICONTROL 첫 번째 디지털 날짜]](/help/reporting/dimensions/first-digital-date.md)
-      * [[!UICONTROL Pod 이름]](/help/reporting/dimensions/pod-name.md)
-      * [[!UICONTROL Pod 위치]](/help/reporting/dimensions/pod-position.md)
-   * **지표:**
-      * [[!UICONTROL 광고 완료]](/help/reporting/metrics/ad-completes.md)
-      * [[!UICONTROL 광고 시작]](/help/reporting/metrics/ad-starts.md)
-      * [[!UICONTROL 광고 체류 시간]](/help/reporting/metrics/ad-time-spent.md)
-      * [[!UICONTROL 미디어 체류 시간]](/help/reporting/metrics/media-time-spent.md)
+  * **차원:**
+    * [[!UICONTROL 광고]](/help/reporting/dimensions/ad.md)
+    * [[!UICONTROL Pod 위치의 광고]](/help/reporting/dimensions/ad-in-pod-position.md)
+    * [[!UICONTROL 광고 길이(변수)]](/help/reporting/dimensions/ad-length.md)
+    * [[!UICONTROL 광고 이름(변수)]](/help/reporting/dimensions/ad-name.md)
+    * [[!UICONTROL 광고 플레이어 이름]](/help/reporting/dimensions/ad-player-name.md)
+    * [[!UICONTROL 광고 pod]](/help/reporting/dimensions/ad-pod.md)
+    * [[!UICONTROL 광고주]](/help/reporting/dimensions/advertiser.md)
+    * [[!UICONTROL 캠페인 ID]](/help/reporting/dimensions/campaign-id.md)
+  * **분류 차원:**
+    * [[!UICONTROL 자산 ID]](/help/reporting/dimensions/asset-id.md)
+    * [[!UICONTROL 콘텐츠 등급]](/help/reporting/dimensions/content-rating.md)
+    * [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md)
+    * [[!UICONTROL 첫 방송 날짜]](/help/reporting/dimensions/first-air-date.md)
+    * [[!UICONTROL 첫 번째 디지털 날짜]](/help/reporting/dimensions/first-digital-date.md)
+    * [[!UICONTROL Pod 이름]](/help/reporting/dimensions/pod-name.md)
+    * [[!UICONTROL Pod 위치]](/help/reporting/dimensions/pod-position.md)
+  * **지표:**
+    * [[!UICONTROL 광고 완료]](/help/reporting/metrics/ad-completes.md)
+    * [[!UICONTROL 광고 시작]](/help/reporting/metrics/ad-starts.md)
+    * [[!UICONTROL 광고 체류 시간]](/help/reporting/metrics/ad-time-spent.md)
+    * [[!UICONTROL 미디어 체류 시간]](/help/reporting/metrics/media-time-spent.md)
 
   +++
 
@@ -99,18 +111,18 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++차원, 분류 및 지표를 보려면 선택하십시오.
 
-   * **Dimension:**
-      * [[!UICONTROL 챕터]](/help/reporting/dimensions/chapter.md)
-   * **분류 차원:**
-      * [[!UICONTROL 챕터 길이]](/help/reporting/dimensions/chapter-length.md)
-      * [[!UICONTROL 챕터 이름]](/help/reporting/dimensions/chapter-name.md)
-      * [[!UICONTROL 챕터 오프셋]](/help/reporting/dimensions/chapter-offset.md)
-      * [[!UICONTROL 챕터 위치]](/help/reporting/dimensions/chapter-position.md)
-      * [[!UICONTROL 작성자]](/help/reporting/dimensions/originator.md)
-   * **지표:**
-      * [[!UICONTROL 챕터 완료]](/help/reporting/metrics/chapter-completes.md)
-      * [[!UICONTROL 챕터 시작]](/help/reporting/metrics/chapter-starts.md)
-      * [[!UICONTROL 챕터 체류 시간]](/help/reporting/metrics/chapter-time-spent.md)
+  * **Dimension:**
+    * [[!UICONTROL 챕터]](/help/reporting/dimensions/chapter.md)
+  * **분류 차원:**
+    * [[!UICONTROL 챕터 길이]](/help/reporting/dimensions/chapter-length.md)
+    * [[!UICONTROL 챕터 이름]](/help/reporting/dimensions/chapter-name.md)
+    * [[!UICONTROL 챕터 오프셋]](/help/reporting/dimensions/chapter-offset.md)
+    * [[!UICONTROL 챕터 위치]](/help/reporting/dimensions/chapter-position.md)
+    * [[!UICONTROL 작성자]](/help/reporting/dimensions/originator.md)
+  * **지표:**
+    * [[!UICONTROL 챕터 완료]](/help/reporting/metrics/chapter-completes.md)
+    * [[!UICONTROL 챕터 시작]](/help/reporting/metrics/chapter-starts.md)
+    * [[!UICONTROL 챕터 체류 시간]](/help/reporting/metrics/chapter-time-spent.md)
 
   +++
 
@@ -118,29 +130,29 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++차원 및 지표를 보려면 선택
 
-   * **차원:**
-      * [[!UICONTROL 평균 비트율]](/help/reporting/dimensions/average-bitrate.md)
-      * [[!UICONTROL 비트율 변경]](/help/reporting/dimensions/bitrate-changes.md)
-      * [[!UICONTROL 버퍼 이벤트]](/help/reporting/dimensions/buffer-events.md)
-      * [[!UICONTROL 삭제된 프레임]](/help/reporting/dimensions/dropped-frames.md)
-      * [[!UICONTROL 오류]](/help/reporting/dimensions/errors.md)
-      * [[!UICONTROL 외부 오류 ID]](/help/reporting/dimensions/external-error-ids.md)
-      * [[!UICONTROL 플레이어 SDK 오류 ID]](/help/reporting/dimensions/player-sdk-error-ids.md)
-      * [[!UICONTROL 시작 시간]](/help/reporting/dimensions/time-to-start.md)
-      * [[!UICONTROL 총 버퍼 지속 시간]](/help/reporting/dimensions/total-buffer-duration.md)
-   * **지표:**
-      * [[!UICONTROL 평균 비트율]](/help/reporting/metrics/average-bitrate.md)
-      * [[!UICONTROL 비트율 변경의 영향을 받은 스트림]](/help/reporting/metrics/bitrate-change-impacted-streams.md)
-      * [[!UICONTROL 비트율 변경]](/help/reporting/metrics/bitrate-changes.md)
-      * [[!UICONTROL 버퍼 이벤트]](/help/reporting/metrics/buffer-events.md)
-      * [[!UICONTROL 버퍼 영향을 받은 스트림]](/help/reporting/metrics/buffer-impacted-streams.md)
-      * [[!UICONTROL 드롭된 프레임 영향을 받은 스트림]](/help/reporting/metrics/dropped-frame-impacted-streams.md)
-      * [[!UICONTROL 삭제된 프레임]](/help/reporting/metrics/dropped-frames.md)
-      * [[!UICONTROL 시작 전 드롭]](/help/reporting/metrics/drops-before-start.md)
-      * [[!UICONTROL 오류 이벤트]](/help/reporting/metrics/error-events.md)
-      * [[!UICONTROL 오류 영향을 받은 스트림]](/help/reporting/metrics/error-impacted-streams.md)
-      * [[!UICONTROL 시작 시간]](/help/reporting/metrics/time-to-start.md)
-      * [[!UICONTROL 총 버퍼 지속 시간]](/help/reporting/metrics/total-buffer-duration.md)
+  * **차원:**
+    * [[!UICONTROL 평균 비트율]](/help/reporting/dimensions/average-bitrate.md)
+    * [[!UICONTROL 비트율 변경]](/help/reporting/dimensions/bitrate-changes.md)
+    * [[!UICONTROL 버퍼 이벤트]](/help/reporting/dimensions/buffer-events.md)
+    * [[!UICONTROL 삭제된 프레임]](/help/reporting/dimensions/dropped-frames.md)
+    * [[!UICONTROL 오류]](/help/reporting/dimensions/errors.md)
+    * [[!UICONTROL 외부 오류 ID]](/help/reporting/dimensions/external-error-ids.md)
+    * [[!UICONTROL 플레이어 SDK 오류 ID]](/help/reporting/dimensions/player-sdk-error-ids.md)
+    * [[!UICONTROL 시작 시간]](/help/reporting/dimensions/time-to-start.md)
+    * [[!UICONTROL 총 버퍼 지속 시간]](/help/reporting/dimensions/total-buffer-duration.md)
+  * **지표:**
+    * [[!UICONTROL 평균 비트율]](/help/reporting/metrics/average-bitrate.md)
+    * [[!UICONTROL 비트율 변경의 영향을 받은 스트림]](/help/reporting/metrics/bitrate-change-impacted-streams.md)
+    * [[!UICONTROL 비트율 변경]](/help/reporting/metrics/bitrate-changes.md)
+    * [[!UICONTROL 버퍼 이벤트]](/help/reporting/metrics/buffer-events.md)
+    * [[!UICONTROL 버퍼 영향을 받은 스트림]](/help/reporting/metrics/buffer-impacted-streams.md)
+    * [[!UICONTROL 드롭된 프레임 영향을 받은 스트림]](/help/reporting/metrics/dropped-frame-impacted-streams.md)
+    * [[!UICONTROL 삭제된 프레임]](/help/reporting/metrics/dropped-frames.md)
+    * [[!UICONTROL 시작 전 드롭]](/help/reporting/metrics/drops-before-start.md)
+    * [[!UICONTROL 오류 이벤트]](/help/reporting/metrics/error-events.md)
+    * [[!UICONTROL 오류 영향을 받은 스트림]](/help/reporting/metrics/error-impacted-streams.md)
+    * [[!UICONTROL 시작 시간]](/help/reporting/metrics/time-to-start.md)
+    * [[!UICONTROL 총 버퍼 지속 시간]](/help/reporting/metrics/total-buffer-duration.md)
 
   +++
 
@@ -148,19 +160,19 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++차원 및 지표를 보려면 선택
 
-   * **차원:**
-      * [[!UICONTROL 광고 로드]](/help/reporting/dimensions/ad-load-type.md)
-      * [[!UICONTROL 일 파트]](/help/reporting/dimensions/day-part.md)
-      * [[!UICONTROL 에피소드]](/help/reporting/dimensions/episode.md)
-      * [[!UICONTROL 장르]](/help/reporting/dimensions/genre.md)
-      * [[!UICONTROL 미디어 피드 유형]](/help/reporting/dimensions/media-feed-type.md)
-      * [[!UICONTROL MVPD]](/help/reporting/dimensions/mvpd.md)
-      * [[!UICONTROL 네트워크]](/help/reporting/dimensions/network.md)
-      * [[!UICONTROL 시즌]](/help/reporting/dimensions/season.md)
-      * [[!UICONTROL 표시]](/help/reporting/dimensions/show.md)
-      * [[!UICONTROL 표시 형식]](/help/reporting/dimensions/show-type.md)
-   * **지표:**
-      * [[!UICONTROL 인증됨]](/help/reporting/metrics/authorized.md)
+  * **차원:**
+    * [[!UICONTROL 광고 로드]](/help/reporting/dimensions/ad-load-type.md)
+    * [[!UICONTROL 일 파트]](/help/reporting/dimensions/day-part.md)
+    * [[!UICONTROL 에피소드]](/help/reporting/dimensions/episode.md)
+    * [[!UICONTROL 장르]](/help/reporting/dimensions/genre.md)
+    * [[!UICONTROL 미디어 피드 유형]](/help/reporting/dimensions/media-feed-type.md)
+    * [[!UICONTROL MVPD]](/help/reporting/dimensions/mvpd.md)
+    * [[!UICONTROL 네트워크]](/help/reporting/dimensions/network.md)
+    * [[!UICONTROL 시즌]](/help/reporting/dimensions/season.md)
+    * [[!UICONTROL 표시]](/help/reporting/dimensions/show.md)
+    * [[!UICONTROL 표시 형식]](/help/reporting/dimensions/show-type.md)
+  * **지표:**
+    * [[!UICONTROL 인증됨]](/help/reporting/metrics/authorized.md)
 
   +++
 
@@ -168,13 +180,13 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++차원을 보려면 선택
 
-   * **차원:**
-      * [[!UICONTROL 앨범]](/help/reporting/dimensions/album.md)
-      * [[!UICONTROL 아티스트]](/help/reporting/dimensions/artist.md)
-      * [[!UICONTROL 작성자]](/help/reporting/dimensions/author.md)
-      * [[!UICONTROL 레이블]](/help/reporting/dimensions/label.md)
-      * [[!UICONTROL 게시자]](/help/reporting/dimensions/publisher.md)
-      * [[!UICONTROL 스테이션]](/help/reporting/dimensions/station.md)
+  * **차원:**
+    * [[!UICONTROL 앨범]](/help/reporting/dimensions/album.md)
+    * [[!UICONTROL 아티스트]](/help/reporting/dimensions/artist.md)
+    * [[!UICONTROL 작성자]](/help/reporting/dimensions/author.md)
+    * [[!UICONTROL 레이블]](/help/reporting/dimensions/label.md)
+    * [[!UICONTROL 게시자]](/help/reporting/dimensions/publisher.md)
+    * [[!UICONTROL 스테이션]](/help/reporting/dimensions/station.md)
 
   +++
 
@@ -182,22 +194,22 @@ Analytics 전용 구현에서 스트리밍 미디어 데이터를 수집하려�
 
   +++지표를 보려면 선택
 
-   * **지표:**
-      * [[!UICONTROL 자막 개수]](/help/reporting/metrics/closed-captioning-count.md)
-      * [[!UICONTROL 자막 총 기간]](/help/reporting/metrics/closed-captioning-total-duration.md)
-      * [[!UICONTROL 전체 화면 수]](/help/reporting/metrics/full-screen-count.md)
-      * [[!UICONTROL 전체 화면 총 기간]](/help/reporting/metrics/full-screen-total-duration.md)
-      * [[!UICONTROL 포커스 카운트]](/help/reporting/metrics/in-focus-count.md)
-      * [[!UICONTROL 초점 총 기간]](/help/reporting/metrics/in-focus-total-duration.md)
-      * [[!UICONTROL 음소거 카운트]](/help/reporting/metrics/mute-count.md)
-      * [[!UICONTROL 음소거 총 기간]](/help/reporting/metrics/mute-total-duration.md)
-      * [[!UICONTROL 화면 속 화면 수]](/help/reporting/metrics/picture-in-picture-count.md)
-      * [[!UICONTROL 화면 속 화면 총 시간]](/help/reporting/metrics/picture-in-picture-total-duration.md)
-      * [[!UICONTROL 닫힌 캡션의 영향을 받은 스트림]](/help/reporting/metrics/closed-captioning-streams-impacted.md)
-      * [[!UICONTROL 전체 화면의 영향을 받은 스트림]](/help/reporting/metrics/full-screen-streams-impacted.md)
-      * [[!UICONTROL 초점의 영향을 받은 스트림]](/help/reporting/metrics/in-focus-streams-impacted.md)
-      * [[!UICONTROL 음소거의 영향을 받은 스트림]](/help/reporting/metrics/mute-streams-impacted.md)
-      * [[!UICONTROL 화면 속 화면의 영향을 받은 스트림]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+  * **지표:**
+    * [[!UICONTROL 자막 개수]](/help/reporting/metrics/closed-captioning-count.md)
+    * [[!UICONTROL 자막 총 기간]](/help/reporting/metrics/closed-captioning-total-duration.md)
+    * [[!UICONTROL 전체 화면 수]](/help/reporting/metrics/full-screen-count.md)
+    * [[!UICONTROL 전체 화면 총 기간]](/help/reporting/metrics/full-screen-total-duration.md)
+    * [[!UICONTROL 포커스 카운트]](/help/reporting/metrics/in-focus-count.md)
+    * [[!UICONTROL 초점 총 기간]](/help/reporting/metrics/in-focus-total-duration.md)
+    * [[!UICONTROL 음소거 카운트]](/help/reporting/metrics/mute-count.md)
+    * [[!UICONTROL 음소거 총 기간]](/help/reporting/metrics/mute-total-duration.md)
+    * [[!UICONTROL 화면 속 화면 수]](/help/reporting/metrics/picture-in-picture-count.md)
+    * [[!UICONTROL 화면 속 화면 총 시간]](/help/reporting/metrics/picture-in-picture-total-duration.md)
+    * [[!UICONTROL 닫힌 캡션의 영향을 받은 스트림]](/help/reporting/metrics/closed-captioning-streams-impacted.md)
+    * [[!UICONTROL 전체 화면의 영향을 받은 스트림]](/help/reporting/metrics/full-screen-streams-impacted.md)
+    * [[!UICONTROL 초점의 영향을 받은 스트림]](/help/reporting/metrics/in-focus-streams-impacted.md)
+    * [[!UICONTROL 음소거의 영향을 받은 스트림]](/help/reporting/metrics/mute-streams-impacted.md)
+    * [[!UICONTROL 화면 속 화면의 영향을 받은 스트림]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
 
   +++
 

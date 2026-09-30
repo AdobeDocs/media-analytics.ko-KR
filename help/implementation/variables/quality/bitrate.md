@@ -3,7 +3,19 @@ title: 비트율
 description: 백엔드가 비트율 지표를 계산할 수 있도록 QoE 개체에서 현재 재생 비트율(kbps)을 설정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 5%
@@ -13,7 +25,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**Bitrate**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 변수에 대해서는 [[!UICONTROL 평균 비트율] (차원)](/help/reporting/dimensions/average-bitrate.md) 및 [[!UICONTROL 평균 비트율] (지표)](/help/reporting/metrics/average-bitrate.md)을(를) 참조하십시오.*
+*이 페이지에서는&#x200B;**Bitrate**변수에 대한 데이터 수집을 다룹니다. 해당 보고 변수에 대해서는 [[!UICONTROL 평균 비트율](차원)](/help/reporting/dimensions/average-bitrate.md) 및 [[!UICONTROL 평균 비트율](지표)](/help/reporting/metrics/average-bitrate.md)을(를) 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ bitrate 변수는 현재 재생 비트율입니다(초당 킬로비트). 플레�
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager 트레이트** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **필수** | 아니요 |
 | **전송 시점** | 품질 이벤트([비트율 변경](/help/implementation/events/playback/bitrate-change.md), [버퍼 시작](/help/implementation/events/playback/buffer-start.md), [오류](/help/implementation/events/error.md)), 세션 닫기 |

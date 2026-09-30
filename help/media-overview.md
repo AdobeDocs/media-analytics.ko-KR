@@ -5,38 +5,59 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/EJ6osO9PkXBubSF7a7HebRJhpSTamNnghofASOs7E-E
+TQID: 'https://experienceleague.adobe.com/EJ6osO9PkXBubSF7a7HebRJhpSTamNnghofASOs7E-E'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+    internal-label: Methods
   - id: df312454-73c4-43f6-a90e-18f5043f074c
+    internal-label: Tags
   - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+    internal-label: Events
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Insights
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 606
+source-wordcount: '606'
 ht-degree: 53%
-
 ---
-
 # Adobe 스트리밍 미디어 서비스 개요
 
 ![Banner](./assets/media_analytics_banner.png)
@@ -63,13 +84,13 @@ Adobe 스트리밍 미디어 서비스는 스트리밍 미디어 공급업체를
 
 * **실시간 분석**: 미디어 시작과 같은 핵심 성능 지표를 활하여 여러 채널에 걸쳐 실시간 및 실용적인 결정을 내릴 수 있습니다.
 
-  스트리밍 미디어 서비스를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 인사이트를 통해 고객의 시청 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
+  스트리밍 미디어 서비스를 사용하면 비디오 및 오디오 지표를 평가하고 결합할 수 있는 지속 시간, 정지 및 시작에 대한 세부 정보를 거의 실시간으로 얻을 수 있습니다. 이러한 인사이트를 통해 고객의 시청 및 청취 습관을 이해하고 고도로 개인화된 추천으로 참여를 높일 수 있습니다.
 
 * **참여 유도**: 버퍼링 이벤트 수를 최소화하고, 콘텐츠 내에서 광고를 재생할 위치와 시점을 파악하여 사용자 참여를 유도함으로써 재방문을 제공하는 유연하고 간단한 경험을 제공합니다.
 
 * **전체적인 그림**: 모든 콘텐츠 배포자의 여러 데이터 포인트를 결합하여 모든 미디어 활동에 대한 전체 보기를 표시합니다. 가능한 모든 채널에서 참여 및 보기/듣기를 측정합니다.
 
-  Streaming Media 서비스를 사용하면 사이트 및 스트리밍 앱에서 전체 고객 여정을 추적하여 고객 경로 및 관심사를 시각화하고 향상된 추천을 제공하고 고객 경험을 개인화할 수 있습니다.  미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 성공 기준을 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 연결할 수 있습니다.
+  Streaming Media 서비스를 사용하면 사이트 및 스트리밍 앱에서 전체 고객 여정을 추적하여 고객 경로 및 관심사를 시각화하고 향상된 추천을 제공하고 고객 경험을 개인화할 수 있습니다.  미디어 측정을 사용하면 데이터를 여러 차원과 세그먼트로 분류하여 완전하고 자세한 분석을 수행하는 데 필요한 모든 메타데이터를 캡처할 수 있습니다. 그런 다음 데이터를 분석하고 완전히 소비된 미디어, 평균 체류 시간 및 완료된 광고에 성공 기준을 적용할 수 있습니다.
 
 * **주요 지표**: 프레임, 버퍼링 시간 및 평균 비트율과 같이 체감 품질(QoE)과 관련된 중요한 게재 지표를 측정합니다.
 

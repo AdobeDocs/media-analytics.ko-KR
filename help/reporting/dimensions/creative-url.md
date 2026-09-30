@@ -3,19 +3,31 @@ title: 광고 URL
 description: 각 광고 크리에이티브의 에셋 URL을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 10%
-
 ---
-
 
 # 광고 URL
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**Creative URL**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Creative URL](/help/implementation/variables/ads/creative-url.md)을 참조하세요.*
+*이 페이지는&#x200B;**Creative URL**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [Creative URL](/help/implementation/variables/ads/creative-url.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +39,8 @@ ht-degree: 10%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | `a.media.ad.creativeURL`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | `a.media.ad.creativeURL`을(를) eVar에 매핑하는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을(를) 만듭니다. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 데이터 피드 | `evar1`-`evar250`, `post_evar1`-`post_evar250`(처리 규칙이 `a.media.ad.creativeURL`을(를) 매핑하는 eVar) |
 | Audience Manager | `c_contextdata.a.media.ad.creativeURL` |
 

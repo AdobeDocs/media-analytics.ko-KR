@@ -5,25 +5,35 @@ uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/o23vjoaQPzd1F6J7a-kpGH-CEJmcJwvhBvWWgPf47DM
+TQID: 'https://experienceleague.adobe.com/o23vjoaQPzd1F6J7a-kpGH-CEJmcJwvhBvWWgPf47DM'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+    internal-label: Metadata
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: '1180'
 ht-degree: 99%
-
 ---
-
 # 타임라인: 챕터 {#timeline-3-chapters}
 
 ## VOD, 프리롤 광고, 일시 정지, 버퍼링, 콘텐츠 끝까지 보기
@@ -280,7 +290,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 | --- | :---: | :---: | --- |
 | 챕터 시작 이벤트 추적 | 23 | 1 | `/api/v1/sessions/{sid}/events` |
 
-재생 이벤트가 끝나면 첫 번째 챕터의 시작을 추적합니다.
+플레이 이벤트 후에 첫 번째 챕터의 시작을 추적합니다.
 
 ```json
 {
@@ -336,7 +346,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 버퍼링이 종료됨, 앱이 콘텐츠 재시작 추적 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
+| 버퍼링이 종료되면 앱이 콘텐츠 재개를 추적 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
 버퍼링은 3초 후에 종료되므로 플레이어를 &quot;재생 중&quot; 상태로 되돌려 놓습니다. 버퍼링에서 나온 다른 추적 재생 이벤트를 보내야 합니다.  **`bufferStart` 다음에 `play`를 호출하면 &quot;버퍼엔드&quot;가 백 엔드를 호출한다고 유추하므로** `bufferEnd` 이벤트가 필요하지 않습니다.
 
@@ -558,7 +568,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 | --- | :---: | :---: | --- |
 | 앱에서 ping 이벤트 보내기 | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-10초마다 백엔드를 ping합니다. 플레이어가 여전히 &quot;버퍼링&quot; 상태입니다. 사용자가 콘텐츠에서 20초 후에 멈췄습니다. 계속...
+10초마다 백엔드를 ping합니다. 플레이어가 여전히 &quot;버퍼링&quot; 상태입니다. 사용자가 콘텐츠의 20초 지점에서 멈춰 있습니다. 계속...
 
 ```json
 {
@@ -628,7 +638,7 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 | 작업 | 작업 타임라인(초) | 플레이헤드 위치(초) | 클라이언트 요청 |
 | --- | :---: | :---: | --- |
-| 사용자가 끝까지 콘텐츠 보기를 완료합니다. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
+| 사용자가 콘텐츠를 끝까지 시청합니다. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
 `sessionComplete`를 백엔드에 보내어 사용자가 전체 콘텐츠 보기를 완료했음을 나타냅니다.
 
@@ -645,4 +655,4 @@ Ping 타이머를 시작합니다. 그러면 첫 번째 Ping 이벤트는 프리
 
 >[!NOTE]
 >
->**검색 이벤트가 없습니까?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 이동할 때 특정 플레이어에서 그러한 이벤트를 많이 생성하여 수백 명의 사용자가 백엔드 서비스의 네트워크 대역폭에 쉽게 병목 현상을 일으킬 수 있기 때문입니다. Adobe는 플레이헤드 위치가 아니라 디바이스 타임스탬프를 기반으로 하트비트 지속 시간을 계산하여 검색 이벤트에 대한 명시적 지원을 해결합니다.
+>**검색 이벤트가 없습니까?**- `seekStart` 또는 `seekComplete` 이벤트에 대한 Media Collection API에 명시적인 지원이 없습니다. 최종 사용자가 이동할 때 특정 플레이어에서 그러한 이벤트를 많이 생성하여 수백 명의 사용자가 백엔드 서비스의 네트워크 대역폭에 쉽게 병목 현상을 일으킬 수 있기 때문입니다. Adobe는 플레이헤드 위치가 아니라 디바이스 타임스탬프를 기반으로 하트비트 지속 시간을 계산하여 검색 이벤트에 대한 명시적 지원 없이 이를 우회합니다.

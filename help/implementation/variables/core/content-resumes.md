@@ -3,7 +3,19 @@ title: 콘텐츠 다시 시작
 description: 백엔드가 콘텐츠 다시 시작 이벤트를 계산하도록 이전에 중단된 재생을 다시 시작하는 세션에 플래그를 지정합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 6%
@@ -13,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**콘텐츠 다시 시작**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [[!UICONTROL 콘텐츠 다시 시작]](/help/reporting/metrics/content-resumes.md)을 참조하십시오.*
+*이 페이지에서는&#x200B;**콘텐츠 다시 시작**변수에 대한 데이터 수집을 다룹니다. 해당 보고 지표에 대해서는 [[!UICONTROL 콘텐츠 다시 시작]](/help/reporting/metrics/content-resumes.md)을 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 6%
 | 속성 | 값 |
 | --- | --- |
 | **컨텍스트 데이터 변수** | `a.media.resume` |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager 트레이트** | 해당 사항 없음 |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md) |

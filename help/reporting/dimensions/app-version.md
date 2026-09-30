@@ -3,19 +3,31 @@ title: 앱 버전
 description: 각 스트리밍 세션에 사용되는 미디어 플레이어 애플리케이션의 버전을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 4%
-
 ---
-
 
 # 앱 버전
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**앱 버전**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [앱 버전](/help/implementation/variables/core/app-version.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**앱 버전**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [앱 버전](/help/implementation/variables/core/app-version.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -31,8 +43,8 @@ ht-degree: 4%
 
 | 보고 시스템 | 소스 |
 | --- | --- |
-| Adobe Analytics | Edge 구현을 사용할 때 XDM 필드 매핑을 통해 자동으로 수집됩니다. Analytics 전용 구현의 경우 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)을 사용하여 컨텍스트 데이터 `media.sdkVersion`을(를) 사용자 지정 eVar에 매핑합니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Edge 구현을 사용할 때 XDM 필드 매핑을 통해 자동으로 수집됩니다. Analytics 전용 구현의 경우 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)을 사용하여 컨텍스트 데이터 `media.sdkVersion`을(를) 사용자 지정 eVar에 매핑합니다. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | 전용 데이터 피드 열이 없습니다. Analytics 전용 구현의 경우 처리 규칙을 통해 구성된 사용자 지정 eVar의 데이터 피드 열을 사용하십시오. |
 | Audience Manager | `c_contextdata.media.sdkVersion`(Analytics 전용 구현) |
 

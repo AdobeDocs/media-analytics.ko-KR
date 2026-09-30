@@ -3,19 +3,31 @@ title: 콘텐츠 길이
 description: 세션 시작 시 설정된 각 미디어 세션의 총 기간(초)을 보고합니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 6%
-
+source-wordcount: '231'
+ht-degree: 7%
 ---
-
 
 # 콘텐츠 길이
 
 >[!BEGINSHADEBOX]
 
-*이 페이지는&#x200B;**콘텐츠 길이**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 길이](/help/implementation/variables/core/content-length.md)를 참조하십시오.*
+*이 페이지는&#x200B;**콘텐츠 길이**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [콘텐츠 길이](/help/implementation/variables/core/content-length.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,13 +40,13 @@ ht-degree: 6%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 미디어 코어]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.length`에서 자동으로 수집됩니다. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 데이터 피드 | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->Adobe Analytics에서 이 값은 [콘텐츠](content.md) 차원의 **비디오 길이** 분류에도 해당합니다. 해당 분류를 별도로 채우고 유지 관리할 책임이 있습니다. Customer Journey Analytics은 이 차원을 직접 사용합니다. 원하는 경우 [값 버킷팅](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)을 사용할 수 있습니다.
+>Adobe Analytics에서 이 값은 [콘텐츠](content.md) 차원의 **비디오 길이** 분류에도 해당합니다. 해당 분류를 별도로 채우고 유지 관리할 책임이 있습니다. Customer Journey Analytics은 이 차원을 직접 사용합니다. 원하는 경우 [값 버킷팅](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)을 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >

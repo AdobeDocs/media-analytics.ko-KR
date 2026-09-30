@@ -3,7 +3,19 @@ title: 앱 버전
 description: 미디어 플레이어 애플리케이션의 버전 문자열을 구성합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -13,7 +25,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**앱 버전**&#x200B;변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [앱 버전](/help/reporting/dimensions/app-version.md)을 참조하세요.*
+*이 페이지에서는&#x200B;**앱 버전**변수에 대한 데이터 수집을 다룹니다. 해당 보고 차원에 대한 [앱 버전](/help/reporting/dimensions/app-version.md)을 참조하세요.*
 
 >[!ENDSHADEBOX]
 
@@ -25,7 +37,7 @@ ht-degree: 2%
 
 | 속성 | 값 |
 | --- | --- |
-| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM 컬렉션 필드** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **미디어 컬렉션 API 매개 변수** | `media.sdkVersion` |
 | **필수** | 아니요 |
 | **전송 시점** | [세션 시작](/help/implementation/events/session/session-start.md) |
@@ -36,7 +48,7 @@ ht-degree: 2%
 
 >[!TAB 웹 SDK]
 
-[`configure`](https://experienceleague.adobe.com/ko/docs/experience-platform/collection/js/commands/configure/streamingmedia)을(를) 호출할 때 `streamingMedia` 구성 개체에 `appVersion`을(를) 설정합니다.
+[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)을(를) 호출할 때 `streamingMedia` 구성 개체에 `appVersion`을(를) 설정합니다.
 
 ```javascript
 alloy("configure", {

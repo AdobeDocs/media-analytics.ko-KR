@@ -3,18 +3,27 @@ title: 계산된 지표
 description: Adobe Analytics 및 Customer Journey Analytics의 스트리밍 미디어 보고를 위한 사용자 지정 계산된 지표입니다.
 feature: Metrics
 role: User, Admin
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
-
 ---
-
 # Streaming Media 계산된 지표
 
 Adobe 스트리밍 미디어 서비스에 대한 계산된 지표는 표준 스트리밍 미디어 지표에서 작성한 사용자 지정 지표이므로 구현을 변경하지 않고 평균 광고 체류 시간 또는 미디어 완료율과 같은 비율을 도출할 수 있습니다.
 
-Analysis Workspace에서 이러한 계산된 지표를 만들려면 [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/analytics/components/calculated-metrics/cm-overview) 또는 [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)에서 각각의 계산된 지표 개요를 참조하십시오.
+Analysis Workspace에서 이러한 계산된 지표를 만들려면 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) 또는 [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)에서 각각의 계산된 지표 개요를 참조하십시오.
 
 | 계산된 지표 | 설명 | 공식 |
 | --- | --- | --- |

@@ -3,13 +3,23 @@ title: 스트리밍 미디어용 Media Edge API 설정
 description: Media Edge API를 사용하여 스트리밍 미디어 데이터를 Edge Network으로 직접 전송합니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
-
 ---
-
 # 스트리밍 미디어용 Media Edge API 설정
 
 Web SDK, Mobile SDK 또는 Roku Edge SDK(예: 사용자 지정 또는 지원되지 않는 런타임)를 사용할 수 없는 경우 Media Edge API를 사용하여 스트리밍 미디어 데이터를 Edge Network으로 직접 전송할 수 있습니다. API는 RESTful HTTP 호출을 사용하며 완전히 사용자 지정할 수 있습니다.

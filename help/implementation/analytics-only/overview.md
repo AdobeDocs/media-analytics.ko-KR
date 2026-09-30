@@ -3,7 +3,23 @@ title: Analytics 전용 구현 개요
 description: Analytics 전용 구현에 사용되는 스트리밍 미디어용 Adobe Analytics 추가 기능에 대한 사전 요구 사항 및 구현 방법입니다.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 5%
@@ -16,7 +32,7 @@ Analytics 전용 구현은 스트리밍 미디어용 Adobe Analytics 추가 기�
 
 1. **일반 필수 구성 요소를 완료합니다.** [일반 필수 구성 요소](/help/getting-started/prereqs.md)를 참조하세요.
 
-1. **Adobe Analytics 구현을 확인하십시오.** Analytics 전용 스트리밍 미디어 구현에는 기본 Adobe Analytics 구현이 필요합니다. [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko)을 참조하세요.
+1. **Adobe Analytics 구현을 확인하십시오.** Analytics 전용 스트리밍 미디어 구현에는 기본 Adobe Analytics 구현이 필요합니다. [Adobe Analytics 구현](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)을 참조하세요.
 
 1. **미디어 추적 서버 URL을 가져옵니다.** 미디어 추적 서버 URL(`collection-api-server` URL)은 Adobe Analytics 담당자에게 문의하십시오. 도메인은 일반적으로 `[your_namespace].hb-api.omtrdc.net` 패턴을 따릅니다.
 

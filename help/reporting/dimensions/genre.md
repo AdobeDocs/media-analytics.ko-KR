@@ -3,19 +3,31 @@ title: 장르
 description: 컨텐츠 장르를 보고합니다. 다중 장르 컨텐츠는 라인 항목 간에 분할되며, 각 항목은 동일한 지표 가중치를 받습니다.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 7%
-
+source-wordcount: '181'
+ht-degree: 8%
 ---
-
 
 # 장르
 
 >[!BEGINSHADEBOX]
 
-*이 페이지에서는&#x200B;**장르**&#x200B;보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [장르](/help/implementation/variables/standard-metadata/genre.md)를 참조하십시오.*
+*이 페이지에서는&#x200B;**장르**보고 차원을 다룹니다. 이 변수를 수집하는 방법은 [장르](/help/implementation/variables/standard-metadata/genre.md)를 참조하십시오.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +40,7 @@ ht-degree: 7%
 | 보고 시스템 | 소스 |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL 비디오 메타데이터]](/help/reporting/setup/analytics-reporting.md)이(가) 활성화되면 컨텍스트 데이터 `a.media.genre`에서 자동으로 수집됩니다(목록 변수로 저장됨). |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting) 또는 [`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/data-types/session-details-reporting)&#x200B;(레거시) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) 또는 [`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting)&#x200B;(레거시) |
 | 데이터 피드 | `videogenre`, `post_videogenre` |
 | Audience Manager | `c_contextdata.a.media.genre` |
 

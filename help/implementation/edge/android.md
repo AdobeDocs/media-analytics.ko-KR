@@ -3,20 +3,30 @@ title: 스트리밍 미디어용 Android 설정
 description: Android에서 Adobe Experience Platform Mobile SDK을 구성하여 스트리밍 미디어 데이터를 Edge Network으로 보냅니다.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
-
 ---
-
 # 스트리밍 미디어용 Android 설정
 
 Adobe Streaming Media for Edge Network 확장(`EdgeMedia`)은 Android 앱에서 미디어 세션 데이터를 수집하여 Edge Network으로 보냅니다. 이 페이지에서는 코드 내 구성에 대해 설명합니다. 대신 Tags 모바일 속성을 통해 SDK을 구성하려면 [Tags를 사용하는 스트리밍 미디어용 Android 설정](android-tags.md)을 참조하십시오.
 
 * **필수 구성 요소**:
-   * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
-   * `Core`, `Edge`, `EdgeIdentity` 및 `EdgeMedia` 확장을 앱에 추가합니다. 설치 및 등록은 [Edge Network용 Adobe 스트리밍 미디어](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)를 참조하십시오.
+  * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
+  * `Core`, `Edge`, `EdgeIdentity` 및 `EdgeMedia` 확장을 앱에 추가합니다. 설치 및 등록은 [Edge Network용 Adobe 스트리밍 미디어](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)를 참조하십시오.
 
 ## Android용 미디어 구성
 
