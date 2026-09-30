@@ -38,14 +38,14 @@ Adobe Experience Platform Edge Network을 사용하면 여러 제품을 대상�
 
 1. **호환 가능한 Adobe 솔루션을 확인합니다.** 다음 중 하나 이상을 구현해야 합니다.
    * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ko): Edge 기반 미디어 데이터의 기본 보고 대상
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html): 동일한 데이터 스트림을 통해 CJA과 함께 또는 대신 지원됩니다
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=ko) 또는 [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html): 다음 중 하나를 구성할 때 데이터 스트림에 **[!UICONTROL Adobe Experience Platform]** 서비스를 추가하십시오
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ko): 동일한 데이터 스트림을 통해 CJA과 함께 또는 대신 지원됩니다
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=ko) 또는 [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=ko): 다음 중 하나를 구성할 때 데이터 스트림에 **[!UICONTROL Adobe Experience Platform]** 서비스를 추가하십시오
 
 ## Adobe Experience Platform에서 스키마 설정
 
 Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데이터 수집을 표준화하기 위해 공개적으로 문서화된 개방형 XDM(Experience Data Model) 표준을 만들었습니다.
 
-1. [UI에서 스키마 만들기 및 편집](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)에 설명된 대로 Adobe Experience Platform에서 스키마 만들기를 시작합니다.
+1. [UI에서 스키마 만들기 및 편집](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ko)에 설명된 대로 Adobe Experience Platform에서 스키마 만들기를 시작합니다.
 
 1. 스키마 세부 정보 페이지에서 **[!UICONTROL 경험 이벤트]**&#x200B;를 스키마의 기본 클래스로 선택합니다.
 
@@ -144,7 +144,7 @@ Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데
 
       ![사용자 지정 메타데이터 추가](assets/add-custom-fields.png)
 
-   1. 요청 페이로드의 사용자 지정 필드에 대해 [생성된 경로](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)을(를) 사용합니다.
+   1. 요청 페이로드의 사용자 지정 필드에 대해 [생성된 경로](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)을(를) 사용합니다.
 
       ![사용자 지정 메타데이터 추가](assets/custom-fields-path.png)
 
@@ -170,9 +170,9 @@ Adobe은 Adobe Experience Platform을 사용하는 애플리케이션 간에 데
 
      ![데이터 스트림을 만들고 스키마 선택](assets/datastream-create-schema.png)
 
-   * Adobe 솔루션을 기반으로 데이터스트림에 적절한 서비스를 추가합니다. 서비스 추가에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)에서 &quot;데이터 스트림에 서비스 추가&quot;를 참조하십시오.
+   * Adobe 솔루션을 기반으로 데이터스트림에 적절한 서비스를 추가합니다. 서비스 추가에 대한 자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ko#view-details)에서 &quot;데이터 스트림에 서비스 추가&quot;를 참조하십시오.
 
-     * **[!UICONTROL Adobe Analytics]**(Adobe Analytics을 사용하는 경우): [보고서 세트 만들기](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의합니다.
+     * **[!UICONTROL Adobe Analytics]**(Adobe Analytics을 사용하는 경우): [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)에 설명된 대로 보고서 세트를 정의합니다.
 
      * **[!UICONTROL Adobe Experience Platform]**(Customer Journey Analytics, Adobe Journey Optimizer 또는 Real-Time Customer Data Platform을 사용하는 경우)
 

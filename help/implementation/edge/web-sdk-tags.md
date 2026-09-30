@@ -26,7 +26,7 @@ Adobe Experience Platform Web SDK 태그 확장을 사용하면 `alloy.js` 구�
 
 * **필수 구성 요소**:
   * [Edge 구현 개요](overview.md)([!UICONTROL Media Analytics]이(가) 활성화된 스키마, 데이터 세트, 데이터 스트림)를 완료합니다.
-  * 웹 SDK 태그 확장을 설치하고 구성합니다. [웹 SDK 태그 확장 개요](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)를 참조하세요.
+  * 웹 SDK 태그 확장을 설치하고 구성합니다. [웹 SDK 태그 확장 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/overview)를 참조하세요.
 
 ## 확장에서 스트리밍 미디어 구성
 
@@ -49,6 +49,6 @@ Adobe Experience Platform Web SDK 태그 확장을 사용하면 `alloy.js` 구�
 
 >[!MORELIKETHIS]
 >
->* [웹 SDK 태그 확장 개요](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [웹 SDK 태그 확장 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [스트리밍 미디어용 웹 SDK 설정(코드)](web-sdk.md)
 >* [이벤트 개요](/help/implementation/events/overview.md)

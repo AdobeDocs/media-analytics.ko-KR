@@ -40,8 +40,8 @@ Streaming Media 지표는 다음과 같은 네 가지 기본 계산 패턴을 �
 
 | 보고 시스템 | 지표 도착 방법 |
 | --- | --- |
-| Adobe Analytics | [컨텍스트 데이터 변수](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/contextdata)을 사용하여 채워집니다. 일부 지표는 이러한 컨텍스트 데이터 변수를 사용하여 솔루션 이벤트를 자동으로 채우는 반면, 다른 지표는 [처리 규칙](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을 사용하여 사용자 지정 이벤트에 매핑해야 합니다. 값을 자동으로 채우는 지표에는 해당 [스트리밍 미디어 보고서 세트 설정](../setup/analytics-reporting.md)이 먼저 활성화되어 있어야 합니다. |
-| Customer Journey Analytics | 스트리밍 미디어 데이터를 포함하는 모든 데이터 집합에서 가져온 `xdm.mediaReporting.sessionDetails` 및 관련 노드의 XDM 필드. [데이터 보기 구성 요소 설정](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) 내에서 원하는 설정으로 각 지표를 만들어야 합니다. |
+| Adobe Analytics | [컨텍스트 데이터 변수](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/contextdata)을 사용하여 채워집니다. 일부 지표는 이러한 컨텍스트 데이터 변수를 사용하여 솔루션 이벤트를 자동으로 채우는 반면, 다른 지표는 [처리 규칙](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)을 사용하여 사용자 지정 이벤트에 매핑해야 합니다. 값을 자동으로 채우는 지표에는 해당 [스트리밍 미디어 보고서 세트 설정](../setup/analytics-reporting.md)이 먼저 활성화되어 있어야 합니다. |
+| Customer Journey Analytics | 스트리밍 미디어 데이터를 포함하는 모든 데이터 집합에서 가져온 `xdm.mediaReporting.sessionDetails` 및 관련 노드의 XDM 필드. [데이터 보기 구성 요소 설정](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-dataviews/component-settings/overview) 내에서 원하는 설정으로 각 지표를 만들어야 합니다. |
 | 데이터 피드 | 지표가 `event_list` 및 `post_event_list` 열에 이벤트 ID로 나타납니다. 각 피드 파일에는 스트리밍 미디어 지표를 포함하여 모든 지표에 대한 조회가 포함된 `events.csv` 파일이 포함되어 있습니다. |
 
 >[!MORELIKETHIS]
